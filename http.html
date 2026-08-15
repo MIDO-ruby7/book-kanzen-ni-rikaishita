@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — HTTP</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 2</b>Webのしくみ</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">25</div></div>
+      <div class="titles">
+        <h1>HTTP</h1>
+      </div>
+    </div>
+    <p class="subtitle">URLの前についてる謎の文字、の正体</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>クライアントとサーバーがリクエスト・レスポンスをやり取りするための共通ルール（プロトコル）。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>クライアントとサーバーが異なるメーカー・異なる実装で作られていても通信できるようにするには、共通のやり取りのルールが必要だった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>通信のたびに実装ごとの独自の手順でやり取りしており、互換性のない方式が乱立していた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>ルールを意識しない</th><th class="h-docker">HTTPというルールで理解</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">認識</td><td>通信は自動でつながるもの</td><td class="h-docker">共通ルールに従ってやり取りしている</td></tr>
+            <tr><td class="rowhead">やり取り</td><td>なんとなく届く</td><td class="h-docker">メソッド・ヘッダーで構造化されている</td></tr>
+            <tr><td class="rowhead">トラブル対応</td><td>わからず終い</td><td class="h-docker">仕様に沿って原因を切り分けられる</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>HTTP で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-network"/></svg><div class="cap">異なる機器同士でも通信できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-scale"/></svg><div class="cap">構造化されたやり取りができる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-file"/></svg><div class="cap">仕様書を読んで理解を深められる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>HTTPは「会話のルールブック」。<br>
+         ブラウザもサーバーもこのルールに従うから、作ったメーカーが違っても会話が成立する。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">発展形</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-cube"/></svg></div>
+        <div>
+          <div class="kw-name">HTTPS</div>
+          <p class="kw-desc">HTTPに暗号化（TLS）を追加した安全な通信。</p>
+          <span class="kw-page">P.26</span>
+        </div>
+      </div>
+    </div>
+    <div class="side-group">
+      <div class="group-label">構成要素</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-network"/></svg></div>
+        <div>
+          <div class="kw-name">Request</div>
+          <p class="kw-desc">クライアントがサーバーに送る依頼のデータ。</p>
+          <span class="kw-page">P.23</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-package"/></svg></div>
+        <div>
+          <div class="kw-name">Response</div>
+          <p class="kw-desc">サーバーがリクエストに対して返す結果。</p>
+          <span class="kw-page">P.24</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">25</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — Seeder</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 6</b>データベース</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">93</div></div>
+      <div class="titles">
+        <h1>Seeder</h1>
+      </div>
+    </div>
+    <p class="subtitle">「動作確認用のデータ」を毎回手打ちしなくていい仕組み</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>開発・テスト用のダミーデータを、コードで自動的に投入する仕組み。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>動作確認用のデータを管理画面やSQLで毎回手動で登録すると、環境を作り直すたびに同じ作業を繰り返す必要があった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>確認用データを、管理画面やSQLで毎回手動で入力していた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>手動入力</th><th class="h-docker">Seeder</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">再現性</td><td>毎回微妙に違うデータになる</td><td class="h-docker">同じデータをいつでも再現できる</td></tr>
+            <tr><td class="rowhead">手間</td><td>環境ごとに手で入力する</td><td class="h-docker">コマンド1つで一括投入できる</td></tr>
+            <tr><td class="rowhead">共有</td><td>テストデータが人によって違う</td><td class="h-docker">チームで同じテストデータを使える</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>Seeder で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-package"/></svg><div class="cap">確認用データを一括で投入できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-clock"/></svg><div class="cap">環境構築の時間を短縮できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-laptop"/></svg><div class="cap">チームで同じデータを共有できる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>シーダーは「テストデータの型紙」。<br>
+         毎回手で作る代わりに、コードに一度書けば使い回せる。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">一緒に使う仕組み</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-clock"/></svg></div>
+        <div>
+          <div class="kw-name">Migration</div>
+          <p class="kw-desc">テーブルの構造そのものを変更する仕組み。</p>
+          <span class="kw-page">P.92</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">93</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

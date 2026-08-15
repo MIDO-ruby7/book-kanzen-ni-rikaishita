@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — Status Code</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 4</b>API</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">66</div></div>
+      <div class="titles">
+        <h1>Status Code</h1>
+      </div>
+    </div>
+    <p class="subtitle">サーバーが返す「結果の一言」を数字にしたもの</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>リクエストの結果が成功か失敗か、失敗ならどんな理由かを伝える3桁の数字。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>エラーの内容をレスポンス本文の文章だけで判断していると、成功・失敗の区別や原因の特定に毎回時間がかかっていた。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>ステータスコードを見ない・意識しない実装では、エラーの原因を毎回レスポンスの中身の文章だけから推測するしかない。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>本文のメッセージだけで判断</th><th class="h-docker">Status Codeで判断</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">成功／失敗の判定</td><td>文章を読んで解釈</td><td class="h-docker">200番台か400/500番台かで機械的に判定</td></tr>
+            <tr><td class="rowhead">原因の切り分け</td><td>都度サーバーログを確認</td><td class="h-docker">404=見つからない、401=未認証など型で分かる</td></tr>
+            <tr><td class="rowhead">実装のしやすさ</td><td>文字列を都度パースして分岐</td><td class="h-docker">ステータスコードで分岐処理を書ける</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>Status Code で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-monitor"/></svg><div class="cap">成功／失敗を数字だけで機械的に判定</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-network"/></svg><div class="cap">404や500など原因の見当がつく</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-scale"/></svg><div class="cap">フロント側で分岐処理を書きやすい</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>200番台は成功、300番台はリダイレクト、400番台はリクエスト側のミス、500番台はサーバー側の問題、とざっくり覚えておくだけでも十分役に立つ。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連する語</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-server"/></svg></div>
+        <div>
+          <div class="kw-name">REST</div>
+          <p class="kw-desc">Status CodeはREST APIのレスポンスで結果を伝える手段。</p>
+          <span class="kw-page">P.63</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">66</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

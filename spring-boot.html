@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — Spring Boot</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto compact">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 8</b>バックエンド言語・フレームワーク</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">185</div></div>
+      <div class="titles">
+        <h1>Spring Boot</h1>
+      </div>
+    </div>
+    <p class="subtitle">Javaの「設定地獄」を解消し、すぐに動くアプリを作れるようにしたフレームワーク</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>煩雑だったSpringフレームワークの設定を自動化し、Javaで素早くアプリケーションを起動できるようにしたフレームワーク。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>従来のSpring FrameworkはXMLなどの設定ファイルが膨大になりがちで、「動かすまでが長い」<br>
+             と言われていた。この設定の煩雑さを解消し、Javaでもすぐに開発を始められるようにするために開発された。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>それまでのSpring Frameworkでは、DBやサーバーの接続設定をXMLなどで細かく記述し、動かすまでに多くの準備が必要だった。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>従来のSpring Framework</th><th class="h-docker">Spring Boot</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">設定方法</td><td>XMLなどで細かく記述</td><td class="h-docker">規約に沿えば自動設定（auto-configuration）</td></tr>
+            <tr><td class="rowhead">起動までの準備</td><td>多い（サーバー構築も別途）</td><td class="h-docker">組み込みサーバーで即座に起動</td></tr>
+            <tr><td class="rowhead">依存関係管理</td><td>個別に指定・バージョン調整</td><td class="h-docker">starterでまとめて管理</td></tr>
+            <tr><td class="rowhead">向いている場面</td><td>既存の大規模Springアプリ</td><td class="h-docker">新規のJavaアプリ・マイクロサービス</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>Spring Boot で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">すぐに動くアプリを構築できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-layers"/></svg><div class="cap">設定の大部分を自動化できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-scale"/></svg><div class="cap">エンタープライズ規模でも安定動作</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>Spring Bootは「Springの機能はそのままに、面倒な設定だけをなくす」<br>
+         という発想で作られたフレームワーク。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連する技術</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-cube"/></svg></div>
+        <div>
+          <div class="kw-name">Java</div>
+          <p class="kw-desc">JVM上で動作し、OSを問わず動かせる言語。</p>
+          <span class="kw-page">P.175</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">185</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

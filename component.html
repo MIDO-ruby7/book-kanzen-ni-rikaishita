@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — Component</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 7</b>フロントエンド</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">129</div></div>
+      <div class="titles">
+        <h1>Component</h1>
+      </div>
+    </div>
+    <p class="subtitle">画面を「部品」として組み立てる考え方</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>ボタンやカードなど、画面の一部をひとまとまりの部品として切り出し、組み合わせて画面を作る考え方。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>ページ全体でHTML/CSS/JSを書いていると、同じような見た目の部品をあちこちにコピペし、<br>
+             1箇所直すたびに全部を探して修正する必要があった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>それまではページ単位でHTML/CSS/JSをその都度書いていた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>ページ単位で記述</th><th class="h-docker">Component単位で部品化</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">再利用</td><td>似た見た目をコピペで量産</td><td class="h-docker">1つのComponentを呼び出すだけ</td></tr>
+            <tr><td class="rowhead">修正</td><td>使っている箇所を全部探して直す</td><td class="h-docker">Component本体を直せば全箇所に反映</td></tr>
+            <tr><td class="rowhead">状態と見た目</td><td>HTMLとJSが別ファイルで散らばりがち</td><td class="h-docker">StateやPropsとセットで1部品にまとまる</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>Component で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-cube"/></svg><div class="cap">見た目と振る舞いをひとまとめにできる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-package"/></svg><div class="cap">何度でも使い回せる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-layers"/></svg><div class="cap">組み合わせて画面を作れる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>ReactやVueは、このComponentという考え方を中心に画面を作るライブラリ。<br>
+         Componentの中身を決めるのがStateとProps。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連する技術</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-file"/></svg></div>
+        <div>
+          <div class="kw-name">State</div>
+          <p class="kw-desc">Componentが内部に持つ今の状態。</p>
+          <span class="kw-page">P.130</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-network"/></svg></div>
+        <div>
+          <div class="kw-name">Props</div>
+          <p class="kw-desc">親から子のComponentへ渡す値。</p>
+          <span class="kw-page">P.131</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-layers"/></svg></div>
+        <div>
+          <div class="kw-name">Virtual DOM</div>
+          <p class="kw-desc">Componentの変化を効率よく反映する仕組み。</p>
+          <span class="kw-page">P.137</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">129</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

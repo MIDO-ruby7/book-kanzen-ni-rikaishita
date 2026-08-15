@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — Go</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 8</b>バックエンド言語・フレームワーク</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">173</div></div>
+      <div class="titles">
+        <h1>Go</h1>
+      </div>
+    </div>
+    <p class="subtitle">Googleが「大規模開発のシンプルさ」のために作った言語</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>並行処理を言語レベルでサポートし、シンプルな文法と高速な実行を両立するGoogle製の言語。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>Googleの大規模なコードベースで、C++の複雑なビルドやJavaの冗長さに悩まされていたエンジニアたちが、<br>
+             「シンプルに書けて、速く動く」言語を目指して開発した。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>それまではC++やJavaで並行処理を書く場合、スレッドやロックを自前で細かく管理する必要があった。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>C++ / Java</th><th class="h-docker">Go</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">並行処理の書き方</td><td>スレッド・ロックを自前管理</td><td class="h-docker">goroutineで軽量に書ける</td></tr>
+            <tr><td class="rowhead">文法の量</td><td>多機能・複雑になりがち</td><td class="h-docker">意図的にシンプル</td></tr>
+            <tr><td class="rowhead">コンパイル</td><td>遅い・セットアップが重い場合も</td><td class="h-docker">高速コンパイル・単一バイナリ</td></tr>
+            <tr><td class="rowhead">向いている場面</td><td>大規模アプリ全般</td><td class="h-docker">インフラ・API・CLIツール</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>Go で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">高速に動作する</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-network"/></svg><div class="cap">並行処理を手軽に書ける</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-cube"/></svg><div class="cap">単一バイナリで配布できる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>Goは「書けることを増やす」より「書けることを絞る」方向に振り切った言語。<br>
+         選択肢を減らすことで、誰が書いても読みやすいコードになる。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連する技術</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-rocket"/></svg></div>
+        <div>
+          <div class="kw-name">Gin</div>
+          <p class="kw-desc">Goの速さを活かしたシンプルなWebフレームワーク。</p>
+          <span class="kw-page">P.183</span>
+        </div>
+      </div>
+    </div>
+    <div class="side-group">
+      <div class="group-label">比較する言語</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-wheel"/></svg></div>
+        <div>
+          <div class="kw-name">Rust</div>
+          <p class="kw-desc">速度に加えてメモリ安全性をコンパイル時に保証する言語。</p>
+          <span class="kw-page">P.176</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">173</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

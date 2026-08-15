@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — TCP</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 2</b>Webのしくみ</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">35</div></div>
+      <div class="titles">
+        <h1>TCP</h1>
+      </div>
+    </div>
+    <p class="subtitle">「届いたか確認する」通信、その名前</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>データが確実に届いたかを確認しながら通信するプロトコル。信頼性を重視する。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>ネットワーク上でデータが途中で失われたり順序が入れ替わったりする中で、送った内容が確実に、正しい順番で届くことを保証する仕組みが必要だった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>データを送りっぱなしにしており、途中で欠落したり順序が入れ替わったりしても検知・再送する手段がなかった。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>確認する仕組みを知らない頃</th><th class="h-docker">TCPとして理解</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">届いたかの確認</td><td>考えたことがない</td><td class="h-docker">受信確認（ACK）をしながら通信する</td></tr>
+            <tr><td class="rowhead">順序</td><td>気にしていない</td><td class="h-docker">送った順番通りに届くよう保証する</td></tr>
+            <tr><td class="rowhead">速度と引き換えに</td><td>特に意識しない</td><td class="h-docker">確認作業がある分、UDPより多少遅い</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>TCP で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-scale"/></svg><div class="cap">データの到達を確認しながら送れる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-network"/></svg><div class="cap">順序を保証して届けられる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-clock"/></svg><div class="cap">信頼性が必要な通信に向いている</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>TCPは「配達完了の確認を取る宅配便」。<br>
+         多少時間がかかっても、確実に・順番通りに届けることを優先する。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">対になる技術</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-rocket"/></svg></div>
+        <div>
+          <div class="kw-name">UDP</div>
+          <p class="kw-desc">確認を取らず、とにかく速さを優先するプロトコル。</p>
+          <span class="kw-page">P.36</span>
+        </div>
+      </div>
+    </div>
+    <div class="side-group">
+      <div class="group-label">関連キーワード</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-cube"/></svg></div>
+        <div>
+          <div class="kw-name">Port</div>
+          <p class="kw-desc">TCPが通信相手のアプリを特定するために使う番号。</p>
+          <span class="kw-page">P.30</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">35</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

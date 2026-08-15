@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — Index</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 6</b>データベース</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">89</div></div>
+      <div class="titles">
+        <h1>Index</h1>
+      </div>
+    </div>
+    <p class="subtitle">本の「索引」と同じ、検索を速くする仕組み</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>特定の列の検索を高速化するために作る、データの「索引」。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>索引がない状態でテーブルを検索すると、データ件数が増えるほど全件を読み比べる処理コストが増大し、検索が遅くなっていった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>索引がない状態で、テーブルを頭から全部読んで探していた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>インデックスなし</th><th class="h-docker">Index</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">検索方法</td><td>全件を1行ずつ確認する</td><td class="h-docker">索引から一気に絞り込む</td></tr>
+            <tr><td class="rowhead">速度</td><td>データが増えるほど遅くなる</td><td class="h-docker">大量データでも高速なまま</td></tr>
+            <tr><td class="rowhead">コスト</td><td>検索は速いが書き込みは軽い</td><td class="h-docker">書き込みや保存容量は少し増える</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>Index で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">大量データでも検索が高速なまま</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-clock"/></svg><div class="cap">待たされるページが減る</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-scale"/></svg><div class="cap">速さと更新コストのバランスを取れる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>インデックスは「本の索引」と同じ発想。<br>
+         全部読まなくても、目的のページに一直線で行ける。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連する要素</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-file"/></svg></div>
+        <div>
+          <div class="kw-name">Table</div>
+          <p class="kw-desc">インデックスが張られる表。</p>
+          <span class="kw-page">P.85</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-wheel"/></svg></div>
+        <div>
+          <div class="kw-name">Primary Key</div>
+          <p class="kw-desc">通常は自動でインデックスが張られる。</p>
+          <span class="kw-page">P.87</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">89</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

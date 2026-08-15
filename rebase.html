@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — Rebase</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 1</b>Git・GitHub</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">9</div></div>
+      <div class="titles">
+        <h1>Rebase</h1>
+      </div>
+    </div>
+    <p class="subtitle">枝分かれの歴史を、まっすぐに描き直す</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>ブランチの土台を最新のmainに乗せ替えて、履歴を一直線に整えること。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>mergeを繰り返すと履歴が枝分かれだらけになり、<br>
+             変更の流れが後から追いにくくなっていた。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>mergeでブランチを統合していた（統合の跡が履歴に残り、次第に複雑になる）。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>Merge</th><th class="h-docker">Rebase</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">履歴の見た目</td><td>枝分かれして複雑</td><td class="h-docker">一直線できれい</td></tr>
+            <tr><td class="rowhead">元のコミット</td><td>そのまま残る</td><td class="h-docker">新しいコミットとして積み直す</td></tr>
+            <tr><td class="rowhead">統合方法</td><td>最後にまとめて合流</td><td class="h-docker">土台から作り直して合流</td></tr>
+            <tr><td class="rowhead">向いている場面</td><td>チームの統合記録を残したい</td><td class="h-docker">自分のブランチをきれいに整えたい</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>Rebase で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-wheel"/></svg><div class="cap">履歴が一直線で見やすくなる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-file"/></svg><div class="cap">レビューしやすいコミットに整理</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-cloud"/></svg><div class="cap">最新のmainを取り込んで作業できる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>共有済みのブランチをrebaseすると事故のもと。自分のローカルブランチだけに使うのが基本。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連キーワード</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-scale"/></svg></div>
+        <div>
+          <div class="kw-name">Merge</div>
+          <p class="kw-desc">rebaseと並ぶ、もう一つの統合方法。</p>
+          <span class="kw-page">P.8</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-layers"/></svg></div>
+        <div>
+          <div class="kw-name">Branch</div>
+          <p class="kw-desc">土台を乗せ替える対象そのもの。</p>
+          <span class="kw-page">P.4</span>
+        </div>
+      </div>
+    </div>
+    <div class="side-group">
+      <div class="group-label">一緒に覚えたい言葉</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-monitor"/></svg></div>
+        <div>
+          <div class="kw-name">HEAD</div>
+          <p class="kw-desc">今いるコミットの位置を指す目印。</p>
+          
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-layers"/></svg></div>
+        <div>
+          <div class="kw-name">Squash</div>
+          <p class="kw-desc">複数のコミットを1つにまとめる操作。</p>
+          
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">9</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

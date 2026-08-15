@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — Port</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 2</b>Webのしくみ</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">30</div></div>
+      <div class="titles">
+        <h1>Port</h1>
+      </div>
+    </div>
+    <p class="subtitle">`:3000`って何？の答え</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>同じIPアドレス（住所）の中で、どのアプリ・サービス宛かを区別する番号。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>1台のサーバーでWebサーバーやメールサーバーなど複数のサービスを同時に動かすには、IPアドレスだけでは宛先を区別できなかった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>1台のマシンには1つのサービスしか動かせない前提で運用されており、複数サービスを同時提供する方法が確立されていなかった。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>ポートを意識しない頃</th><th class="h-docker">ポートとして理解</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">宛先の指定</td><td>IPアドレスだけで届くと思う</td><td class="h-docker">IPアドレス＋ポート番号で届く</td></tr>
+            <tr><td class="rowhead">複数サービス</td><td>1台1サービスだと思う</td><td class="h-docker">同じ機械で複数サービスを同時待受</td></tr>
+            <tr><td class="rowhead">トラブル対応</td><td>原因不明</td><td class="h-docker">ポート番号の衝突・未開放に気づける</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>Port で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-cube"/></svg><div class="cap">同じ機械で複数サービスを区別できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-network"/></svg><div class="cap">アプリ宛にピンポイントで届けられる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-scribble"/></svg><div class="cap">衝突や未開放のトラブルに気づける</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>ポートは「建物（IPアドレス）の中の部屋番号」。<br>
+         同じ建物でも、部屋番号が違えば全く別のサービスに届く。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連キーワード</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-network"/></svg></div>
+        <div>
+          <div class="kw-name">IP Address</div>
+          <p class="kw-desc">機器そのものの住所。ポートはその中の区分け。</p>
+          <span class="kw-page">P.29</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-scale"/></svg></div>
+        <div>
+          <div class="kw-name">TCP</div>
+          <p class="kw-desc">ポート番号を使って通信を確立するプロトコル。</p>
+          <span class="kw-page">P.35</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">30</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

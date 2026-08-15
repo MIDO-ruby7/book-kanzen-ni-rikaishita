@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — Cherry-pick</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 1</b>Git・GitHub</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">10</div></div>
+      <div class="titles">
+        <h1>Cherry-pick</h1>
+      </div>
+    </div>
+    <p class="subtitle">欲しい1つだけを、狙って摘み取る</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>他のブランチにある特定の1コミットだけを、狙って自分のブランチに取り込むこと。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>別ブランチの修正のうち1つだけを今のブランチにも反映したいのに、<br>
+             mergeだと全部ついてきてしまっていた。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>該当の修正をファイルを開いて目視で探し、コピペして手動で反映していた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>手動コピペ</th><th class="h-docker">Cherry-pick</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">取り込む範囲</td><td>ブランチ全体をmerge</td><td class="h-docker">狙った1コミットだけ</td></tr>
+            <tr><td class="rowhead">探す手間</td><td>ファイルを見比べて探す</td><td class="h-docker">コミット履歴から指定するだけ</td></tr>
+            <tr><td class="rowhead">履歴</td><td>反映元が分からなくなる</td><td class="h-docker">新しいコミットとして記録される</td></tr>
+            <tr><td class="rowhead">用途</td><td>全機能をまとめて統合したい</td><td class="h-docker">緊急のバグ修正だけ先に反映したい</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>Cherry-pick で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-image"/></svg><div class="cap">必要な修正だけピンポイントで反映</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">緊急のバグ修正をすぐ展開</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-layers"/></svg><div class="cap">ブランチ全体を統合せずに済む</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>バグ修正をmain以外の複数ブランチ（リリースブランチなど）に配りたいときによく使う。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連キーワード</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-file"/></svg></div>
+        <div>
+          <div class="kw-name">Commit</div>
+          <p class="kw-desc">cherry-pickで摘み取る対象の単位。</p>
+          <span class="kw-page">P.5</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-layers"/></svg></div>
+        <div>
+          <div class="kw-name">Branch</div>
+          <p class="kw-desc">摘み取った先の並行世界。</p>
+          <span class="kw-page">P.4</span>
+        </div>
+      </div>
+    </div>
+    <div class="side-group">
+      <div class="group-label">一緒に覚えたい言葉</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-rocket"/></svg></div>
+        <div>
+          <div class="kw-name">Hotfix</div>
+          <p class="kw-desc">本番の緊急バグを直すための修正のこと。</p>
+          
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-cube"/></svg></div>
+        <div>
+          <div class="kw-name">SHA</div>
+          <p class="kw-desc">コミットを一意に識別するハッシュ値。</p>
+          
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">10</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

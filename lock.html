@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — Lock</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 6</b>データベース</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">95</div></div>
+      <div class="titles">
+        <h1>Lock</h1>
+      </div>
+    </div>
+    <p class="subtitle">「同時に触ると壊れる」を防ぐ、データの鍵</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>複数の処理が同じデータに同時にアクセスしたときの衝突を防ぐ仕組み。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>同時アクセスを考慮せずに処理すると、複数の処理が同じデータへほぼ同時にアクセスした際、在庫チェックのようなチェックをすり抜けて不整合が生じる恐れがあった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>同時アクセスを考えず、処理は順番に実行されるものだと思い込んでいた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>ロックなし</th><th class="h-docker">Lock</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">同時アクセス</td><td>同じデータを同時に書き換えられる</td><td class="h-docker">一方が終わるまで待たせられる</td></tr>
+            <tr><td class="rowhead">整合性</td><td>在庫や残高の数が合わなくなる</td><td class="h-docker">1件ずつ確実に処理される</td></tr>
+            <tr><td class="rowhead">代償</td><td>事故が起きるまで気づきにくい</td><td class="h-docker">待ち時間や順番待ちが発生する</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>Lock で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-cube"/></svg><div class="cap">同時に書き換えられるのを防げる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-scale"/></svg><div class="cap">在庫や残高の整合性を守れる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-clock"/></svg><div class="cap">処理の順番を保証できる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>ロックは「今使ってます」の札。<br>
+         札がある間、他の人は順番待ちになる。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連する仕組み</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-scale"/></svg></div>
+        <div>
+          <div class="kw-name">Transaction</div>
+          <p class="kw-desc">複数の処理を1つの単位にまとめる仕組み。</p>
+          <span class="kw-page">P.94</span>
+        </div>
+      </div>
+    </div>
+    <div class="side-group">
+      <div class="group-label">ロックの種類</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-file"/></svg></div>
+        <div>
+          <div class="kw-name">行ロック</div>
+          <p class="kw-desc">更新中の1行だけをロックする方式。</p>
+          <span class="kw-page">P.96</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-layers"/></svg></div>
+        <div>
+          <div class="kw-name">テーブルロック</div>
+          <p class="kw-desc">テーブル全体をロックする方式。</p>
+          <span class="kw-page">P.97</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-network"/></svg></div>
+        <div>
+          <div class="kw-name">デッドロック</div>
+          <p class="kw-desc">ロック同士が待ち合って止まる状態。</p>
+          <span class="kw-page">P.98</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">95</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — Redis</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 6</b>データベース</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">108</div></div>
+      <div class="titles">
+        <h1>Redis</h1>
+      </div>
+    </div>
+    <p class="subtitle">メモリ上で爆速に動く「その場しのぎ」の頼れる相棒</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>データをメモリ上に持つことで、キャッシュやセッション管理などを高速に処理できるインメモリ型データストア。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>セッション情報やランキングのような一時的で頻繁にアクセスされるデータを毎回RDBに問い合わせると、応答速度がボトルネックになっていた。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>Redis導入前は、セッションやランキングのような一時的なデータもRDBに保存していた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>RDBに保存</th><th class="h-docker">Redisに保存</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">読み書きの速度</td><td>ディスクI/Oが発生する</td><td class="h-docker">メモリ上なので非常に速い</td></tr>
+            <tr><td class="rowhead">データの永続性</td><td>基本的に永続化されている</td><td class="h-docker">設定しないと再起動で消える</td></tr>
+            <tr><td class="rowhead">向いている用途</td><td>正確さが重要なデータ</td><td class="h-docker">セッション・ランキング・キャッシュ</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>Redis で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-clock"/></svg><div class="cap">読み書きが非常に速い</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-server"/></svg><div class="cap">キャッシュ・セッション管理に最適</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-scale"/></svg><div class="cap">ランキングなど独自の使い方ができる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>Redisは「消えてもいいデータの置き場所」として使うのが基本。<br>
+         重要なデータの唯一の保存先にはしない。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連するキーワード</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-clock"/></svg></div>
+        <div>
+          <div class="kw-name">Cache</div>
+          <p class="kw-desc">Redisはキャッシュの保存先として使われることが多い。</p>
+          <span class="kw-page">P.100</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-cloud"/></svg></div>
+        <div>
+          <div class="kw-name">MongoDB</div>
+          <p class="kw-desc">同じNoSQLでも、こちらはドキュメント指向データベース。</p>
+          <span class="kw-page">P.109</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">108</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

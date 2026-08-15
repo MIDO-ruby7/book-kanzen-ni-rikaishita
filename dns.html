@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — DNS</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 2</b>Webのしくみ</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">27</div></div>
+      <div class="titles">
+        <h1>DNS</h1>
+      </div>
+    </div>
+    <p class="subtitle">覚えられない数字を、覚えられる名前に変える仕組み</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>ドメイン名（www.example.comなど）をIPアドレスに変換する「インターネットの電話帳」。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>サーバーの住所であるIPアドレスは数字の羅列で覚えにくく、人間が扱いやすい名前でアクセスできる仕組みが必要だった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>接続先をIPアドレスの数字で直接指定するしかなく、覚えるにも共有するにも不便だった。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>名前解決を知らない頃</th><th class="h-docker">DNSとして理解</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">アクセス方法</td><td>ドメイン名を打つだけ</td><td class="h-docker">裏でIPアドレスに変換されている</td></tr>
+            <tr><td class="rowhead">障害時の見え方</td><td>なぜか繋がらない、で終わる</td><td class="h-docker">名前解決の失敗として切り分けられる</td></tr>
+            <tr><td class="rowhead">管理</td><td>意識しない</td><td class="h-docker">Aレコード・CNAMEなど設定を理解する</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>DNS で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-file"/></svg><div class="cap">名前からIPアドレスを引ける</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-network"/></svg><div class="cap">覚えやすい名前でアクセスできる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-scribble"/></svg><div class="cap">繋がらない原因を切り分けられる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>DNSは「インターネットの電話帳」。<br>
+         人間が覚えやすい名前と、機械が使う住所（IPアドレス）を結びつけてくれる。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連キーワード</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-monitor"/></svg></div>
+        <div>
+          <div class="kw-name">Domain</div>
+          <p class="kw-desc">DNSで管理される、覚えやすい名前そのもの。</p>
+          <span class="kw-page">P.28</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-network"/></svg></div>
+        <div>
+          <div class="kw-name">IP Address</div>
+          <p class="kw-desc">DNSが変換した先にある、機械の住所。</p>
+          <span class="kw-page">P.29</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">27</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — Proxy（フォワードプロキシ）</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto compact">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 2</b>Webのしくみ</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">43</div></div>
+      <div class="titles">
+        <h1>Proxy（フォワードプロキシ）</h1>
+      </div>
+    </div>
+    <p class="subtitle">「社内からは直接アクセスできません」の理由</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>クライアントの代わりにインターネットへアクセスし、結果を取り次いでくれる中継役のサーバー。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>社内の全端末から個別に外部へ直接アクセスすると、アクセス制御やログ管理を端末ごとに行う必要があり、統制が取れなかった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>クライアントがそれぞれ直接インターネット上のサーバーに接続しており、アクセス制御やキャッシュを一括で行う仕組みがなかった。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>直接接続しか知らない頃</th><th class="h-docker">プロキシを経由すると理解</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">接続経路</td><td>クライアントから直接サーバーへ</td><td class="h-docker">クライアント→プロキシ→サーバーと中継</td></tr>
+            <tr><td class="rowhead">メリット</td><td>特に意識しない</td><td class="h-docker">アクセス制御・キャッシュ・匿名化ができる</td></tr>
+            <tr><td class="rowhead">見え方</td><td>個々の機器がそのまま外に見える</td><td class="h-docker">外からはプロキシだけが見える</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>Proxy（フォワードプロキシ） で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-monitor"/></svg><div class="cap">クライアントの代わりに通信を中継できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-scale"/></svg><div class="cap">アクセス制限やログ管理をまとめて行える</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-cube"/></svg><div class="cap">内部のクライアント構成を外部から隠せる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>フォワードプロキシは「会社の代表窓口」。<br>
+         社員（クライアント）は直接取引先に行かず、窓口（プロキシ）を通して外部とやり取りする。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連キーワード</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-network"/></svg></div>
+        <div>
+          <div class="kw-name">VPN</div>
+          <p class="kw-desc">暗号化されたトンネルで社内ネットワークに接続する仕組み。</p>
+          <span class="kw-page">P.40</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-scale"/></svg></div>
+        <div>
+          <div class="kw-name">NAT</div>
+          <p class="kw-desc">プライベートIPとグローバルIPを変換する仕組み。</p>
+          <span class="kw-page">P.41</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">43</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — Rails</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 8</b>バックエンド言語・フレームワーク</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">177</div></div>
+      <div class="titles">
+        <h1>Rails</h1>
+      </div>
+    </div>
+    <p class="subtitle">「設定より規約」で、Webアプリ開発の定番の型を作ったフレームワーク</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>Ruby製のWebフレームワーク。「設定より規約（CoC）」の思想で、少ないコードでWebアプリを組み立てられる。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>Webアプリを作るたびに、ルーティングやDB接続など同じような設定を毎回書く必要があった。<br>
+             この繰り返しをなくすため、DHH（デイビッド・ハイネマイヤー・ハンソン）がRubyの表現力を活かして開発した。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>それまでのWebアプリ開発では、フレームワークごとに細かい設定ファイルを書き、命名やディレクトリ構成も一から決める必要があった。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>設定ベースのフレームワーク</th><th class="h-docker">Rails</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">開発方針</td><td>設定ファイルで細かく指定</td><td class="h-docker">規約に従えば設定不要（CoC）</td></tr>
+            <tr><td class="rowhead">DB操作</td><td>SQLを都度記述</td><td class="h-docker">ActiveRecordで直感的に操作</td></tr>
+            <tr><td class="rowhead">初期構築</td><td>構成をゼロから設計</td><td class="h-docker">rails newで即座に土台が完成</td></tr>
+            <tr><td class="rowhead">向いている場面</td><td>自由な設計が必要な場合</td><td class="h-docker">素早くWebサービスを立ち上げたい場合</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>Rails で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">短期間でWebアプリを構築できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-server"/></svg><div class="cap">MVCで役割を整理できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-package"/></svg><div class="cap">gemで機能を簡単に追加できる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>Railsの「設定より規約」は、迷う時間を減らすための思想。<br>
+         決まったやり方に乗れば、あとはビジネスロジックに集中できる。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連する技術</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-scribble"/></svg></div>
+        <div>
+          <div class="kw-name">Ruby</div>
+          <p class="kw-desc">書きやすさ・読みやすさを重視するプログラミング言語。</p>
+          <span class="kw-page">P.171</span>
+        </div>
+      </div>
+    </div>
+    <div class="side-group">
+      <div class="group-label">比較するフレームワーク</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-server"/></svg></div>
+        <div>
+          <div class="kw-name">Laravel</div>
+          <p class="kw-desc">PHP版のフルスタックフレームワーク。</p>
+          <span class="kw-page">P.184</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-layers"/></svg></div>
+        <div>
+          <div class="kw-name">Django</div>
+          <p class="kw-desc">Python版のフルスタックフレームワーク。</p>
+          <span class="kw-page">P.180</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">177</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

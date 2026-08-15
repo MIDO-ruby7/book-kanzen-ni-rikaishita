@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — コネクションプール</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 6</b>データベース</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">115</div></div>
+      <div class="titles">
+        <h1>コネクションプール</h1>
+      </div>
+    </div>
+    <p class="subtitle">DBとの「つなぎっぱなし」の回線をみんなで使い回す</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>DBへの接続をあらかじめ複数用意してプールしておき、リクエストごとに使い回すことで接続のオーバーヘッドを減らす仕組み。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>リクエストのたびにDBへの接続を新規に張ると、接続処理自体のコストが積み重なり、同時接続数の上限に達しやすかった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>コネクションプールを意識する前は、リクエストのたびにDBへの接続を新しく張っていた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>都度接続</th><th class="h-docker">コネクションプールで使い回し</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">接続確立のコスト</td><td>毎回発生する</td><td class="h-docker">あらかじめ用意した接続を使い回す</td></tr>
+            <tr><td class="rowhead">同時接続数の管理</td><td>意識しづらい</td><td class="h-docker">上限を決めて管理できる</td></tr>
+            <tr><td class="rowhead">接続不足時の挙動</td><td>エラーが発生しやすい</td><td class="h-docker">待機させて捌くこともできる</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>コネクションプール で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-clock"/></svg><div class="cap">接続確立の時間を節約できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-scale"/></svg><div class="cap">同時接続数を制御しやすい</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-server"/></svg><div class="cap">高負荷時も安定して捌ける</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>プールのサイズは「多ければ良い」ではない。<br>
+         DBサーバー側の上限やアプリのサーバー台数とのバランスを見て決める必要がある。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連するキーワード</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-network"/></svg></div>
+        <div>
+          <div class="kw-name">N+1</div>
+          <p class="kw-desc">クエリ数が増えるほど、接続の使い回し方も重要になる。</p>
+          <span class="kw-page">P.99</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-clock"/></svg></div>
+        <div>
+          <div class="kw-name">Cache</div>
+          <p class="kw-desc">接続や問い合わせそのものを減らす、もう1つの手段。</p>
+          <span class="kw-page">P.100</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">115</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

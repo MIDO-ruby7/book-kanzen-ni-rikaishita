@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — XML</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 3</b>データフォーマット</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">54</div></div>
+      <div class="titles">
+        <h1>XML</h1>
+      </div>
+    </div>
+    <p class="subtitle">今も現役の「タグで語る」データ形式</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>&lt;tag&gt;で囲んでデータの意味を表現する、開始・終了タグが特徴のマークアップ形式。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>システム間でデータをやり取りする際、値だけでなく意味や階層構造まで一緒に表現できる、共通のマークアップ形式が求められていた。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>JSONが普及する前は、Web APIも設定ファイルもXMLで書くのが当たり前だった。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>XML登場前（プレーンテキスト等）</th><th class="h-docker">XML</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">構造の表現</td><td>決まったルールがない</td><td class="h-docker">タグで階層と属性を表現</td></tr>
+            <tr><td class="rowhead">検証</td><td>独自ルールで確認</td><td class="h-docker">スキーマ（DTD/XSD）で検証できる</td></tr>
+            <tr><td class="rowhead">今の立ち位置</td><td>—</td><td class="h-docker">設定・帳票・SOAP系APIで現役</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>XML で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-layers"/></svg><div class="cap">タグ名だけで意味が伝わる可読性</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-scale"/></svg><div class="cap">スキーマで構造を厳密に検証できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-file"/></svg><div class="cap">帳票やドキュメント形式として今も現役</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>JSONの台頭でAPIの主役の座は譲ったが、<br>
+         厳密な検証が必要な業務システムや文書フォーマットとしては今もXMLが根強い。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">比較する技術</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-file"/></svg></div>
+        <div>
+          <div class="kw-name">JSON</div>
+          <p class="kw-desc">括弧で構造を表す軽量なデータ形式。今のAPIの主流。</p>
+          <span class="kw-page">P.51</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-scale"/></svg></div>
+        <div>
+          <div class="kw-name">スキーマ（Schema）</div>
+          <p class="kw-desc">データの形を定義し、正しいかどうかを検証する仕組み。</p>
+          <span class="kw-page">P.56</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">54</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

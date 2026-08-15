@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — Primary Key</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 6</b>データベース</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">87</div></div>
+      <div class="titles">
+        <h1>Primary Key</h1>
+      </div>
+    </div>
+    <p class="subtitle">「この行は絶対にこれ」と言い切るための印</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>テーブルの中で1件のレコードを一意に特定するための、重複しない値。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>名前やメールアドレスなど意味を持つ項目でレコードを特定すると、同じ値を持つ別のレコードまで誤って操作してしまう恐れがあった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>名前やメールアドレスなど、意味のある項目を頼りにレコードを特定していた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>名前で特定</th><th class="h-docker">Primary Key</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">一意性</td><td>同じ値の人が現れうる</td><td class="h-docker">絶対に重複しない値を保証する</td></tr>
+            <tr><td class="rowhead">変更</td><td>名前変更で特定方法が崩れる</td><td class="h-docker">値が変わらないIDで安定して参照</td></tr>
+            <tr><td class="rowhead">事故</td><td>別人のデータを誤更新しうる</td><td class="h-docker">常に狙った1件だけを操作できる</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>Primary Key で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-wheel"/></svg><div class="cap">常に1件だけを正確に特定できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-scale"/></svg><div class="cap">重複や誤更新を防げる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-network"/></svg><div class="cap">他の表からも安全に参照できる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>主キーは「この1件」を指し示す絶対的な住所。<br>
+         名前やメールではなく、専用のIDで管理するのが安全。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連する要素</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-package"/></svg></div>
+        <div>
+          <div class="kw-name">Record</div>
+          <p class="kw-desc">主キーで特定される1件分のデータ。</p>
+          <span class="kw-page">P.86</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-scale"/></svg></div>
+        <div>
+          <div class="kw-name">Foreign Key</div>
+          <p class="kw-desc">主キーを他の表から参照するキー。</p>
+          <span class="kw-page">P.88</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">87</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

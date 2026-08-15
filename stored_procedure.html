@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — Stored Procedure</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 6</b>データベース</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">111</div></div>
+      <div class="titles">
+        <h1>Stored Procedure</h1>
+      </div>
+    </div>
+    <p class="subtitle">DBの中に処理そのものを住まわせる</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>一連のSQL処理をDBサーバー側に手続きとして保存しておき、呼び出すだけで実行できるようにする仕組み。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>大量データの集計処理をアプリ側のコードで行うと、DBとアプリの間で何度もデータをやり取りする分だけ時間がかかっていた。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>ストアドプロシージャを使う前は、アプリ側のコードで処理を全部書いていた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>アプリ側で処理</th><th class="h-docker">ストアドプロシージャ</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">処理速度（通信回数）</td><td>DBとのやり取りが多く発生する</td><td class="h-docker">DB内で完結し通信を減らせる</td></tr>
+            <tr><td class="rowhead">バージョン管理のしやすさ</td><td>Gitで差分・レビューがしやすい</td><td class="h-docker">DB側にあり管理が難しくなりがち</td></tr>
+            <tr><td class="rowhead">複数アプリからの利用</td><td>アプリごとに実装しがち</td><td class="h-docker">同じ処理を共通で呼び出せる</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>Stored Procedure で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-network"/></svg><div class="cap">DBとアプリ間の通信を減らせる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-wheel"/></svg><div class="cap">複雑な処理をDB内で完結できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-layers"/></svg><div class="cap">複数アプリから同じ処理を呼び出せる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>便利だが「ロジックがDBの中に隠れる」のはチーム開発では諸刃の剣。<br>
+         採用するなら管理・レビュー方法もセットで決めておきたい。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連するキーワード</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-image"/></svg></div>
+        <div>
+          <div class="kw-name">View（ビュー）</div>
+          <p class="kw-desc">処理ではなく、SELECT文をまとめて名前をつける仕組み。</p>
+          <span class="kw-page">P.110</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">111</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

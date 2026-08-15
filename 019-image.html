@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — Image</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<article class="entry recto">
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 7</b>Docker</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">305</div></div>
+      <div class="titles"><h1><ruby>Image<rt>イメージ</rt></ruby></h1></div>
+    </div>
+    <p class="subtitle">コンテナを作るための「設計図」</p>
+
+    <div class="head-lower">
+      <div class="cat-col">
+        <svg><use href="icons.svg#ic-image"/></svg>
+        <div class="cat-label">インフラ<br>コンテナ</div>
+      </div>
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>アプリと必要なものを 1 枚に固めた、コンテナのもとになる読み取り専用のテンプレート。</p>
+      </div>
+    </div>
+
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>同じ環境を何度でも・どこでも再現するために、<br>
+             状態を 1 つに固めておきたいから。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-layers"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>手順書を見ながら、サーバーへ必要なものを手動でインストールしていた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>手動構築</th><th class="h-docker">イメージ</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">環境の再現</td><td>手順書頼み</td><td class="h-docker">イメージで同じ</td></tr>
+            <tr><td class="rowhead">共有方法</td><td>手順書を渡す</td><td class="h-docker">イメージごと渡す</td></tr>
+            <tr><td class="rowhead">個人差</td><td>人によって違う</td><td class="h-docker">必ず同じになる</td></tr>
+            <tr><td class="rowhead">管理</td><td>バラバラ</td><td class="h-docker">レジストリで管理</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>イメージで何ができる？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-layers"/></svg><div class="cap">層を重ねて作る</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-package"/></svg><div class="cap">どこでも同じを再現</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-cloud"/></svg><div class="cap">レジストリで共有</div></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>イメージは「焼き型」。同じ型から、同じコンテナを何個でも作れる。</p>
+    </div>
+
+  </div>
+
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+
+    <div class="side-group">
+      <div class="group-label">一緒に使う技術</div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-cube"/></svg></div>
+        <div>
+          <div class="kw-name">Container</div>
+          <p class="kw-desc">イメージから生まれた、動くアプリの箱。</p>
+          <span class="kw-page">P.309</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-cube"/></svg></div>
+        <div>
+          <div class="kw-name">Docker</div>
+          <p class="kw-desc">イメージを作り・動かす代表的なツール。</p>
+          <span class="kw-page">P.301</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-group">
+      <div class="group-label">次に読むなら</div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-file"/></svg></div>
+        <div>
+          <div class="kw-name">Docker Compose</div>
+          <p class="kw-desc">複数のイメージをまとめて動かす設定。</p>
+          <span class="kw-page">P.321</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-memo">
+      <div class="lbl">キーワードメモ</div>
+      <p>イメージは層（レイヤー）の積み重ね。差分だけ足すので軽い。</p>
+    </div>
+  </aside>
+
+  <footer class="page-foot">
+    <span class="folio">305</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+</article>
+</body>
+</html>

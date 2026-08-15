@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — MongoDB</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 6</b>データベース</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">109</div></div>
+      <div class="titles">
+        <h1>MongoDB</h1>
+      </div>
+    </div>
+    <p class="subtitle">テーブルの形を決めずに突っ走れるNoSQL</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>スキーマ（テーブル構造）を事前に固定せず、JSONに近い形式でデータを柔軟に保存できるNoSQLデータベース。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>仕様が固まっていない段階で頻繁にカラムを変更すると、そのたびにマイグレーションを書く必要があり、開発の負担になっていた。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>RDB一本で作っていた頃は、スキーマ変更のたびにマイグレーションと向き合っていた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>RDB（スキーマ固定）</th><th class="h-docker">MongoDB（スキーマレス）</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">データ構造の自由度</td><td>カラム追加にマイグレーションが必要</td><td class="h-docker">構造を決めずに保存できる</td></tr>
+            <tr><td class="rowhead">JOIN（結合）のしやすさ</td><td>テーブルをまたいで結合しやすい</td><td class="h-docker">結合は基本的に苦手</td></tr>
+            <tr><td class="rowhead">データの整合性</td><td>DB側である程度保証される</td><td class="h-docker">アプリ側で保証する必要がある</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>MongoDB で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-layers"/></svg><div class="cap">構造が変わりやすいデータを扱いやすい</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-file"/></svg><div class="cap">JSON形式のデータをそのまま保存できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-network"/></svg><div class="cap">水平方向にスケールさせやすい</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>「スキーマレス」は自由な分だけ、整合性を守るのはアプリ側の責任になる。<br>
+         何でもMongoDBにするのではなく、向いているデータの形かどうかを見極める。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連するキーワード</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-layers"/></svg></div>
+        <div>
+          <div class="kw-name">正規化</div>
+          <p class="kw-desc">RDBの正規化とは対照的な、構造を固定しない考え方。</p>
+          <span class="kw-page">P.101</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-clock"/></svg></div>
+        <div>
+          <div class="kw-name">Redis</div>
+          <p class="kw-desc">同じNoSQLでも、こちらはインメモリのキー・バリュー型。</p>
+          <span class="kw-page">P.108</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">109</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

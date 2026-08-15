@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — N+1</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 6</b>データベース</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">99</div></div>
+      <div class="titles">
+        <h1>N+1</h1>
+      </div>
+    </div>
+    <p class="subtitle">ループの中でクエリを撃ちまくってしまう大罪</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>一覧表示のループの中で関連データを都度取得してしまい、件数分だけSQLが増えてしまう問題。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>一覧画面でループの中から関連データを都度呼び出す実装では、表示件数と同じ回数だけSQLが発行され、件数が増えるほど処理が重くなっていた。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>気づかないうちは、ループの中で関連データを呼び出すコードを普通に書いていた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>気づかず書いたコード</th><th class="h-docker">eager loadingで対策</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">発行されるクエリ数</td><td>1＋N回</td><td class="h-docker">1〜2回</td></tr>
+            <tr><td class="rowhead">表示速度</td><td>件数に比例して遅くなる</td><td class="h-docker">件数が増えてもほぼ一定</td></tr>
+            <tr><td class="rowhead">気づき方</td><td>本番で遅くなって発覚しがち</td><td class="h-docker">gemやログで事前に検出できる</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>N+1 で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-clock"/></svg><div class="cap">一覧の表示が速くなる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-scale"/></svg><div class="cap">件数が増えても劣化しにくい</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-network"/></svg><div class="cap">クエリ数を意識する癖がつく</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>N+1は「ループ1回につきクエリ1回」が積み重なった結果。<br>
+         件数が10倍になればクエリも10倍、だから一覧画面ほど痛手が大きい。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連するキーワード</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-clock"/></svg></div>
+        <div>
+          <div class="kw-name">Cache</div>
+          <p class="kw-desc">同じ問い合わせを何度もしないための一時保管。</p>
+          <span class="kw-page">P.100</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-package"/></svg></div>
+        <div>
+          <div class="kw-name">コネクションプール</div>
+          <p class="kw-desc">クエリが増えると接続数の上限にも響いてくる。</p>
+          <span class="kw-page">P.115</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">99</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

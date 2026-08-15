@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — Fork</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 1</b>Git・GitHub</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">3</div></div>
+      <div class="titles">
+        <h1>Fork</h1>
+      </div>
+    </div>
+    <p class="subtitle">許可なしで、自分だけの改造版を作る技</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>他人のリポジトリを、自分のGitHubアカウント配下に複製して自由に改造できるようにする機能。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>編集権限のないリポジトリに直接手を加えることはできないが、<br>
+             自分なりに改造したり、OSSに貢献したい場面が増えていた。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>コードをダウンロードして、別プロジェクトとしてゼロから作り直していた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>コードの複製</th><th class="h-docker">Fork</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">元との関係</td><td>切れる（ただのコピー）</td><td class="h-docker">履歴・つながりを保ったまま複製</td></tr>
+            <tr><td class="rowhead">貢献のしやすさ</td><td>差分を伝える手段がない</td><td class="h-docker">Pull Requestで提案できる</td></tr>
+            <tr><td class="rowhead">編集権限</td><td>不要（そもそも別物になる）</td><td class="h-docker">不要（フォーク先は自分のもの）</td></tr>
+            <tr><td class="rowhead">元の更新の追従</td><td>手動で見比べるしかない</td><td class="h-docker">元リポジトリの変更を取り込める</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>Fork で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-network"/></svg><div class="cap">OSSへの貢献ができる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-cube"/></svg><div class="cap">自分の実験場として自由に改造</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-scale"/></svg><div class="cap">元に迷惑をかけずに試せる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>Fork してから Pull Request を送るまでが、OSS開発の基本パターン。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連キーワード</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-network"/></svg></div>
+        <div>
+          <div class="kw-name">OSS</div>
+          <p class="kw-desc">ソースコードが公開されたソフトウェア。</p>
+          <span class="kw-page">P.15</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-laptop"/></svg></div>
+        <div>
+          <div class="kw-name">コントリビュート</div>
+          <p class="kw-desc">プロジェクトへ改善を還元すること。</p>
+          <span class="kw-page">P.16</span>
+        </div>
+      </div>
+    </div>
+    <div class="side-group">
+      <div class="group-label">一緒に覚えたい言葉</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-rocket"/></svg></div>
+        <div>
+          <div class="kw-name">Pull Request</div>
+          <p class="kw-desc">変更を元のリポジトリに取り込んでもらう提案。</p>
+          
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-server"/></svg></div>
+        <div>
+          <div class="kw-name">Upstream</div>
+          <p class="kw-desc">フォーク元の本家リポジトリを指す言葉。</p>
+          
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">3</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

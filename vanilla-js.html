@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — バニラ（Vanilla JS）</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 7</b>フロントエンド</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">125</div></div>
+      <div class="titles">
+        <h1>バニラ（Vanilla JS）</h1>
+      </div>
+    </div>
+    <p class="subtitle">フレームワークなしの「素のJavaScript」</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>ReactやVueなどのライブラリを使わず、標準機能だけで書くJavaScriptのこと。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>昔はjQueryのようなライブラリを使うのが当たり前で、<br>
+             素のJSで書くことがむしろ珍しくなり、「何も足していない」定番フレーバーになぞらえて呼ばれ始めた。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>それまではブラウザごとの挙動の違いを吸収するために、jQueryなどが重宝されていた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>jQuery</th><th class="h-docker">バニラJS（標準API）</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">要素の取得</td><td>$('#id') のように書く</td><td class="h-docker">document.querySelector() のように書く</td></tr>
+            <tr><td class="rowhead">依存</td><td>ライブラリの読み込みが必須</td><td class="h-docker">追加ライブラリ不要</td></tr>
+            <tr><td class="rowhead">ブラウザ対応差</td><td>jQueryが吸収してくれた</td><td class="h-docker">標準APIが揃った今はほぼ気にしなくてよい</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>バニラ（Vanilla JS） で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-package"/></svg><div class="cap">追加のライブラリなしで動く</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-file"/></svg><div class="cap">標準APIだけで完結する</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-wheel"/></svg><div class="cap">書き方の自由度は自分次第</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>昔はブラウザごとの挙動差を吸収するためにjQueryが重宝されたが、<br>
+         標準APIが整った今はバニラJSだけで十分書けることが増えた。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連する技術</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-wheel"/></svg></div>
+        <div>
+          <div class="kw-name">JavaScript</div>
+          <p class="kw-desc">バニラJSの元になる標準言語。</p>
+          <span class="kw-page">P.123</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-network"/></svg></div>
+        <div>
+          <div class="kw-name">DOM</div>
+          <p class="kw-desc">バニラJSが標準APIで直接操作する対象。</p>
+          <span class="kw-page">P.127</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">125</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

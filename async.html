@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — 非同期（Asynchronous）</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 7</b>フロントエンド</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">138</div></div>
+      <div class="titles">
+        <h1>非同期（Asynchronous）</h1>
+      </div>
+    </div>
+    <p class="subtitle">「待ち時間」のあいだ他の処理を進める考え方</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>通信やファイル読み込みなど、時間のかかる処理の完了を待たずに、他の処理を並行して進められるようにする考え方。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>JavaScriptは基本的に処理を1つずつ順番にこなすため、<br>
+             通信などの時間がかかる処理をそのまま待つ書き方をすると、その間ブラウザ全体が固まってしまう。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>それまでは同期処理として、1つの処理が終わるまで次を待つのが基本だった。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>同期処理</th><th class="h-docker">非同期処理</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">通信中の挙動</td><td>結果が返るまで他の処理が止まる</td><td class="h-docker">結果を待たずに他の処理を続けられる</td></tr>
+            <tr><td class="rowhead">画面の反応</td><td>通信中は固まったように見えることがある</td><td class="h-docker">通信中も操作を受け付けられる</td></tr>
+            <tr><td class="rowhead">書き方の歴史</td><td>コールバック関数を渡す(コールバック地獄)</td><td class="h-docker">Promiseやasync・awaitで整理</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>非同期（Asynchronous） で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-clock"/></svg><div class="cap">通信中も画面が固まらない</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-network"/></svg><div class="cap">複数の処理を並行して進められる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-wheel"/></svg><div class="cap">書き方はPromiseなどで進化してきた</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>「非同期」という考え方自体は昔からあったが、<br>
+         書き方はコールバック→Promise→async/awaitの順に読みやすく進化してきた。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連する技術</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-scale"/></svg></div>
+        <div>
+          <div class="kw-name">Promise</div>
+          <p class="kw-desc">非同期処理の結果をまとめて扱うオブジェクト。</p>
+          <span class="kw-page">P.139</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-wheel"/></svg></div>
+        <div>
+          <div class="kw-name">async・await</div>
+          <p class="kw-desc">Promiseを同期処理のように書ける構文。</p>
+          <span class="kw-page">P.140</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-clock"/></svg></div>
+        <div>
+          <div class="kw-name">Event</div>
+          <p class="kw-desc">非同期の発生をきっかけにする仕組み。</p>
+          <span class="kw-page">P.128</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">138</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

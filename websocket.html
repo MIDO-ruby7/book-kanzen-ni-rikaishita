@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — WebSocket</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 5</b>通信プロトコル</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">72</div></div>
+      <div class="titles">
+        <h1>WebSocket</h1>
+      </div>
+    </div>
+    <p class="subtitle">「聞かれるまで話せない」HTTPの壁を壊した通信方式</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>一度接続を確立したら、サーバーとクライアントが双方向にいつでもデータを送り合える通信の仕組み。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>チャットや通知のようにリアルタイム性が求められる機能を通常のHTTPリクエストで実現しようとすると、一定間隔でAPIを呼び続ける（ポーリング）必要があり、サーバー負荷が増大していた。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>通常のHTTPリクエスト/レスポンス（Ch2）は、クライアントが聞かない限りサーバーからは何も送られてこない。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>HTTPのポーリング</th><th class="h-docker">WebSocket</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">通信の方向</td><td>クライアントから聞きに行く一方通行</td><td class="h-docker">接続後は双方向にいつでも送れる</td></tr>
+            <tr><td class="rowhead">リアルタイム性</td><td>一定間隔でしか更新されない</td><td class="h-docker">変化があった瞬間に届く</td></tr>
+            <tr><td class="rowhead">向いている場面</td><td>通常のページ表示</td><td class="h-docker">チャット・通知・対戦ゲームなど</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>WebSocket で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-network"/></svg><div class="cap">接続したまま双方向にやり取りできる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-clock"/></svg><div class="cap">リアルタイムに近い速さで更新が届く</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-scale"/></svg><div class="cap">ポーリングに比べてサーバー負荷を抑えられる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>WebSocketは最初にHTTPで接続してから、<br>
+         そのまま専用の通信路に"アップグレード"する仕組み。<br>
+         チャットや通知、株価のようなリアルタイム更新が必要な画面でよく使われる。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連する語</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-layers"/></svg></div>
+        <div>
+          <div class="kw-name">Pub/Sub</div>
+          <p class="kw-desc">変化があった相手に自動で知らせる、より広い仕組み。</p>
+          <span class="kw-page">P.74</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-cloud"/></svg></div>
+        <div>
+          <div class="kw-name">Webhook</div>
+          <p class="kw-desc">こちらもイベント発生時に通知する仕組みだが、通信の形が異なる。</p>
+          <span class="kw-page">P.73</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">72</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

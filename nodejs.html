@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — Node.js</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 7</b>フロントエンド</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">143</div></div>
+      <div class="titles">
+        <h1>Node.js</h1>
+      </div>
+    </div>
+    <p class="subtitle">JavaScript を「ブラウザの外」で動かした技術</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>ブラウザの中でしか実行できなかった JavaScript を、サーバーやPC上で動かせるようにするランタイム。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>JavaScript はブラウザの中でしか実行できず、<br>
+             サーバーサイドは別の言語で書くしかなかった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>サーバーサイドは Ruby・PHP・Java など、フロントとは別の言語で書いていた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>サーバー専用言語</th><th class="h-docker">Node.js</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">言語</td><td>Ruby / PHP / Java など</td><td class="h-docker">JavaScript（フロントと共通）</td></tr>
+            <tr><td class="rowhead">実行エンジン</td><td>各言語専用のランタイム</td><td class="h-docker">Chrome の V8 エンジン</td></tr>
+            <tr><td class="rowhead">得意分野</td><td>汎用処理全般</td><td class="h-docker">I/O待ちが多い並行処理</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>Node.js で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-server"/></svg><div class="cap">サーバーサイドをJSで書ける</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-network"/></svg><div class="cap">フロントとバックの言語を統一</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-package"/></svg><div class="cap">npmエコシステムを利用可能</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>Node.js は「JSをどこでも動かす」の元祖。<br>
+         この後 Bun・Deno という2つの後継が生まれることになる。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">仲間のランタイム</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-rocket"/></svg></div>
+        <div>
+          <div class="kw-name">Bun</div>
+          <p class="kw-desc">Node.js互換で起動・実行をまるごと高速化。</p>
+          <span class="kw-page">P.144</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-scale"/></svg></div>
+        <div>
+          <div class="kw-name">Deno</div>
+          <p class="kw-desc">Node.js作者が作り直した安全志向のランタイム。</p>
+          <span class="kw-page">P.145</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">143</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

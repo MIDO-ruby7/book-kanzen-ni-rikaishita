@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — gRPC</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 5</b>通信プロトコル</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">71</div></div>
+      <div class="titles">
+        <h1>gRPC</h1>
+      </div>
+    </div>
+    <p class="subtitle">サーバー同士の会話をHTTPより速く・厳密にする通信方式</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>Googleが開発した、サーバー同士の内部通信を高速かつ型安全に行うための通信の仕組み。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>マイクロサービス間の通信でJSON形式のREST APIを多用すると、サービス数が増えるほど通信量・処理コストが積み重なり、パフォーマンスが課題になっていた。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>これまでのHTTPリクエスト/レスポンス型の通信（Ch2で扱ったもの）は、人が読めるテキスト（JSON等）でやり取りするため分かりやすい反面、データ量や速度の面で不利になることがあった。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>HTTP + JSON</th><th class="h-docker">gRPC</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">データ形式</td><td>人が読めるテキスト（JSON）</td><td class="h-docker">バイナリ形式（Protocol Buffers）</td></tr>
+            <tr><td class="rowhead">速度・データ量</td><td>比較的大きく遅い</td><td class="h-docker">軽量で高速</td></tr>
+            <tr><td class="rowhead">向いている場面</td><td>ブラウザとのやり取り</td><td class="h-docker">サーバー同士の内部通信</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>gRPC で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">バイナリ形式で高速に通信できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-server"/></svg><div class="cap">マイクロサービス間の通信に向いている</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-scale"/></svg><div class="cap">スキーマ（型定義）から複数言語のコードを生成</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>gRPCはブラウザからそのまま呼ぶのには向いておらず、<br>
+         主にサーバー同士・マイクロサービス間の通信で使われる。人に見せる画面のAPIはREST/GraphQL、社内の裏側はgRPC、という使い分けもよくある。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連する語</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-server"/></svg></div>
+        <div>
+          <div class="kw-name">REST</div>
+          <p class="kw-desc">URLと動詞で操作を表現する、人にも読みやすいAPI設計。</p>
+          <span class="kw-page">P.63</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-scale"/></svg></div>
+        <div>
+          <div class="kw-name">スキーマ（Schema）</div>
+          <p class="kw-desc">gRPCも通信するデータの形をスキーマとして定義する。</p>
+          <span class="kw-page">P.56</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">71</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

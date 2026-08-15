@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — Nuxt.js</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 7</b>フロントエンド</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">149</div></div>
+      <div class="titles">
+        <h1>Nuxt.js</h1>
+      </div>
+    </div>
+    <p class="subtitle">Vueにとっての Next.js 的存在</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>Vueにルーティングやサーバーサイドレンダリングなどを標準搭載した、本番運用向けフレームワーク。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>Vueも同様に、ルーティングやSSRを個別に組み合わせる必要があり、<br>
+             プロジェクトごとに構成がバラつく問題があった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>Vueのみの構成では、vue-routerなどを個別に追加し、SSRも自前でサーバーを用意していた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>Vueのみ（素の構成）</th><th class="h-docker">Nuxt.js</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">ルーティング</td><td>vue-routerを個別設定</td><td class="h-docker">ファイル配置だけで自動生成</td></tr>
+            <tr><td class="rowhead">描画方式</td><td>基本CSRのみ</td><td class="h-docker">SSR / SSG / ISRを選択可能</td></tr>
+            <tr><td class="rowhead">設定ファイル</td><td>プロジェクトごとにバラバラ</td><td class="h-docker">規約で統一される</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>Nuxt.js で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-network"/></svg><div class="cap">ファイルベースでルーティング自動化</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-server"/></svg><div class="cap">SSR/SSGを標準サポート</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-layers"/></svg><div class="cap">Vueのモジュールを組み込みやすい</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>NextとNuxtは「Reactの流儀」「Vueの流儀」という<br>
+         差分のペア、と覚えておくと整理しやすい。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">土台の技術</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-layers"/></svg></div>
+        <div>
+          <div class="kw-name">Vue</div>
+          <p class="kw-desc">HTMLに近い書き味のコンポーネント指向フレームワーク。</p>
+          <span class="kw-page">P.147</span>
+        </div>
+      </div>
+    </div>
+    <div class="side-group">
+      <div class="group-label">比較する技術</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-network"/></svg></div>
+        <div>
+          <div class="kw-name">Next.js</div>
+          <p class="kw-desc">ReactにとってのNuxt.js的な存在。</p>
+          <span class="kw-page">P.148</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">149</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

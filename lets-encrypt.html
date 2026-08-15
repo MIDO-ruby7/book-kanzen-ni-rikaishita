@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — Let's Encrypt</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 2</b>Webのしくみ</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">39</div></div>
+      <div class="titles">
+        <h1>Let's Encrypt</h1>
+      </div>
+    </div>
+    <p class="subtitle">「証明書、無料でいいの？」と最初は疑った</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>SSL証明書を無料・自動で発行してくれる認証局。個人開発のサイトも簡単にHTTPS化できる。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>SSL証明書の取得に費用と手続きがかかるため、個人サイトや小規模プロジェクトでは常時HTTPS化が後回しにされがちだった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>SSL証明書は有料の認証局に申請し、書類確認などの手続きを経て取得するものだった。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>有料・手続き重視の時代</th><th class="h-docker">Let's Encrypt</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">費用</td><td>有料が当たり前</td><td class="h-docker">無料で発行できる</td></tr>
+            <tr><td class="rowhead">発行手続き</td><td>書類・審査に時間がかかる</td><td class="h-docker">ドメイン所有の自動確認のみで発行</td></tr>
+            <tr><td class="rowhead">更新</td><td>手動で更新申請</td><td class="h-docker">自動更新の仕組みを組める（有効期限は短め）</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>Let's Encrypt で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-cloud"/></svg><div class="cap">無料でSSL証明書を発行できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">発行から設定まで自動化できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-clock"/></svg><div class="cap">個人サイトでも気軽にHTTPS化できる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>Let's Encryptのおかげで、<br>
+         「常時HTTPS」が個人サイトでも当たり前になった。無料の裏には非営利団体による運営がある。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連キーワード</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-file"/></svg></div>
+        <div>
+          <div class="kw-name">SSL証明書</div>
+          <p class="kw-desc">Let's Encryptが発行してくれる証明書そのもの。</p>
+          <span class="kw-page">P.38</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-cube"/></svg></div>
+        <div>
+          <div class="kw-name">HTTPS</div>
+          <p class="kw-desc">この証明書によって実現される暗号化通信。</p>
+          <span class="kw-page">P.26</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">39</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

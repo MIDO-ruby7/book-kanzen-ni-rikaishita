@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — Commit</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 1</b>Git・GitHub</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">5</div></div>
+      <div class="titles">
+        <h1>Commit</h1>
+      </div>
+    </div>
+    <p class="subtitle">「セーブ」に理由を添える1コマ</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>変更内容を、メッセージ付きで記録の1コマとして保存すること。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>どこまで手を加えたか、何のための変更だったかが<br>
+             後から分からなくなっていた。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>作業のキリのいいところで、ファイルをまるごと別名保存していた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>別名保存</th><th class="h-docker">Commit</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">記録の単位</td><td>ファイル全体をまるごと</td><td class="h-docker">変更した差分だけ</td></tr>
+            <tr><td class="rowhead">変更理由</td><td>ファイル名や記憶に頼る</td><td class="h-docker">コミットメッセージに残す</td></tr>
+            <tr><td class="rowhead">巻き戻し</td><td>前のファイルを探し出す</td><td class="h-docker">特定のコミットにすぐ戻れる</td></tr>
+            <tr><td class="rowhead">差分確認</td><td>目視で見比べる</td><td class="h-docker">diffで一目瞭然</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>Commit で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-file"/></svg><div class="cap">変更履歴が全部残る</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-clock"/></svg><div class="cap">いつでもその時点に戻れる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-pen"/></svg><div class="cap">「なぜ直したか」が記録に残る</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>「小さく・こまめに」コミットするのが基本。1コミット1テーマが読みやすい。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連キーワード</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-layers"/></svg></div>
+        <div>
+          <div class="kw-name">Branch</div>
+          <p class="kw-desc">コミットを積み重ねる並行世界。</p>
+          <span class="kw-page">P.4</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-rocket"/></svg></div>
+        <div>
+          <div class="kw-name">Push</div>
+          <p class="kw-desc">コミットをリモートに送る操作。</p>
+          <span class="kw-page">P.6</span>
+        </div>
+      </div>
+    </div>
+    <div class="side-group">
+      <div class="group-label">一緒に覚えたい言葉</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-layers"/></svg></div>
+        <div>
+          <div class="kw-name">Staging Area</div>
+          <p class="kw-desc">コミットする変更を仮に置いておく場所。</p>
+          
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-monitor"/></svg></div>
+        <div>
+          <div class="kw-name">Diff</div>
+          <p class="kw-desc">変更前後の差分を表示する仕組み。</p>
+          
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">5</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

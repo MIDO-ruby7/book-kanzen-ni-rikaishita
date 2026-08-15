@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — ESLint</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 7</b>フロントエンド</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">151</div></div>
+      <div class="titles">
+        <h1>ESLint</h1>
+      </div>
+    </div>
+    <p class="subtitle">「動くけど危ないコード」を書いた瞬間に教えてくれる仕組み</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>コードのルール違反やバグの芽を、実行する前に静的解析で指摘してくれるLinter。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>未使用変数や書き方のばらつき、うっかりバグにレビューまで<br>
+             気づけず、レビューコストや事故が増えていた。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>それまでは、コードレビューで人力で指摘するか、規約を文書として共有するだけだった。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>人力レビュー・規約文書</th><th class="h-docker">ESLint</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">チェックのタイミング</td><td>レビュー時（後追い）</td><td class="h-docker">保存・コミット時（即座）</td></tr>
+            <tr><td class="rowhead">基準のブレ</td><td>レビュアーによって差が出る</td><td class="h-docker">ルールとして統一・自動化</td></tr>
+            <tr><td class="rowhead">対応範囲</td><td>見つけたものだけ</td><td class="h-docker">プロジェクト全体を機械的に走査</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>ESLint で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-scale"/></svg><div class="cap">ルール違反を自動検出</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-wheel"/></svg><div class="cap">保存時に自動修正も可能</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-network"/></svg><div class="cap">チーム全体でルールを統一</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>「レビューで毎回同じ指摘をする」を無くすための仕組み。<br>
+         この後、速さを競う後継ツールが次々と生まれる。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">高速化を競う後継</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-rocket"/></svg></div>
+        <div>
+          <div class="kw-name">Biome</div>
+          <p class="kw-desc">Lintと整形をRustで1本にまとめたツール。</p>
+          <span class="kw-page">P.152</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-rocket"/></svg></div>
+        <div>
+          <div class="kw-name">OXC</div>
+          <p class="kw-desc">パーサーからRustで作り直すプロジェクト。</p>
+          <span class="kw-page">P.153</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">151</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

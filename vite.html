@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — Vite</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 7</b>フロントエンド</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">150</div></div>
+      <div class="titles">
+        <h1>Vite</h1>
+      </div>
+    </div>
+    <p class="subtitle">ビルドを「待つ」時代を終わらせた開発サーバー</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>ブラウザのESモジュール機能を使って、開発中の画面表示をほぼ一瞬で反映するビルドツール。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>従来のビルドツールは、ファイルを1つ書き換えるたびに<br>
+             プロジェクト全体をバンドルし直す必要があり、待ち時間が長かった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>従来はWebpackなどでJS全体を事前にバンドルしてからブラウザに渡していた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>Webpack等（バンドル型）</th><th class="h-docker">Vite</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">開発時の起動</td><td>全体をバンドルしてから起動</td><td class="h-docker">ESモジュールでそのまま配信</td></tr>
+            <tr><td class="rowhead">変更の反映</td><td>変更範囲によって再バンドル</td><td class="h-docker">変更ファイルだけ即時反映（高速HMR）</td></tr>
+            <tr><td class="rowhead">本番ビルド</td><td>同じ仕組みでビルド</td><td class="h-docker">Rollupで最適化ビルド</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>Vite で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-clock"/></svg><div class="cap">開発サーバーの起動が高速</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-wheel"/></svg><div class="cap">保存した瞬間に画面へ反映</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-package"/></svg><div class="cap">本番用ビルドは別途最適化</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>「開発中の体感速度」に振り切ったツール、という差分。<br>
+         React/Vueどちらの開発でも定番になっている。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連する技術</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-layers"/></svg></div>
+        <div>
+          <div class="kw-name">React</div>
+          <p class="kw-desc">Viteの定番テンプレートの1つ。</p>
+          <span class="kw-page">P.146</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-scale"/></svg></div>
+        <div>
+          <div class="kw-name">ESLint</div>
+          <p class="kw-desc">開発時のコードチェックを担うLinter。</p>
+          <span class="kw-page">P.151</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">150</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

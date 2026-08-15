@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — Deno</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 7</b>フロントエンド</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">145</div></div>
+      <div class="titles">
+        <h1>Deno</h1>
+      </div>
+    </div>
+    <p class="subtitle">Node.js を作った人が「作り直した」ランタイム</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>デフォルトでは何もアクセスできず、TypeScriptをそのまま実行できる安全志向のJSランタイム。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>Node.js は自由度が高い反面、npmパッケージが暗黙に<br>
+             ファイルやネットワークへアクセスでき、安全性への不安があった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>Node.js では、パッケージは特に制限なくファイル・ネットワーク・環境変数へアクセスできていた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>Node.js</th><th class="h-docker">Deno</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">権限</td><td>デフォルトで全許可</td><td class="h-docker">デフォルトで全拒否（明示許可制）</td></tr>
+            <tr><td class="rowhead">TypeScript</td><td>別途トランスパイル設定が必要</td><td class="h-docker">標準でそのまま実行可能</td></tr>
+            <tr><td class="rowhead">パッケージ管理</td><td>npm + node_modules</td><td class="h-docker">URL importも可能（npm互換も追加済）</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>Deno で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-scale"/></svg><div class="cap">ファイル/ネット権限を明示指定</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-file"/></svg><div class="cap">TypeScriptをそのまま実行</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-cloud"/></svg><div class="cap">Deno Deployで手軽にデプロイ</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>Node.js の作者 Ryan Dahl が「あの設計は失敗だった」と<br>
+         反省して作り直した、という差分エピソードの持ち主。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">比較する技術</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-server"/></svg></div>
+        <div>
+          <div class="kw-name">Node.js</div>
+          <p class="kw-desc">JSをブラウザの外で動かす元祖ランタイム。</p>
+          <span class="kw-page">P.143</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-rocket"/></svg></div>
+        <div>
+          <div class="kw-name">Bun</div>
+          <p class="kw-desc">Node.js互換で速さに振り切ったランタイム。</p>
+          <span class="kw-page">P.144</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">145</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

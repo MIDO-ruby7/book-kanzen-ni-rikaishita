@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — Server</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 2</b>Webのしくみ</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">22</div></div>
+      <div class="titles">
+        <h1>Server</h1>
+      </div>
+    </div>
+    <p class="subtitle">「なんかサーバー落ちてるらしい」の"サーバー"の正体</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>クライアントからの要求（リクエスト）を受け取り、処理して結果を返す側のプログラムや機械。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>1台のマシンの中で要求を受け付ける役割と処理する役割が混在していると、負荷が集中した際にどこがボトルネックかを切り分けにくかった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>「重い処理をしてくれる場所」という程度の理解にとどまり、担うべき役割が明確に定義されていなかった。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>ふわっとした理解</th><th class="h-docker">サーバーの役割で理解</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">正体</td><td>ブラックボックス</td><td class="h-docker">要求を処理して返すプログラム</td></tr>
+            <tr><td class="rowhead">形</td><td>1台の機械だと思い込む</td><td class="h-docker">クラウド上の仮想サーバーのことも多い</td></tr>
+            <tr><td class="rowhead">落ちる原因</td><td>わからず終い</td><td class="h-docker">プロセス停止・リソース枯渇など具体的に絞れる</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>Server で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-server"/></svg><div class="cap">リクエストを受け取って処理できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-network"/></svg><div class="cap">複数のクライアントに同時対応できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-cloud"/></svg><div class="cap">クラウド上でも同じ役割を果たせる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>サーバーは「場所」ではなく「役割」。<br>
+         同じマシンでも、動かすプログラム次第でクライアントにもサーバーにもなれると知って霧が晴れた。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">対になる技術</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-laptop"/></svg></div>
+        <div>
+          <div class="kw-name">Client</div>
+          <p class="kw-desc">サーバーに要求を送る側。ブラウザやアプリなど。</p>
+          <span class="kw-page">P.21</span>
+        </div>
+      </div>
+    </div>
+    <div class="side-group">
+      <div class="group-label">関連キーワード</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-network"/></svg></div>
+        <div>
+          <div class="kw-name">Request</div>
+          <p class="kw-desc">クライアントがサーバーに送る依頼のデータ。</p>
+          <span class="kw-page">P.23</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">22</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

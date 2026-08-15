@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — UUID</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 6</b>データベース</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">104</div></div>
+      <div class="titles">
+        <h1>UUID</h1>
+      </div>
+    </div>
+    <p class="subtitle">連番じゃない「ぶつからないID」</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>ランダム性の高い長い文字列でIDを作り、複数の場所で同時に発行してもぶつからないようにする仕組み。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>auto incrementの連番IDをそのままURLなどで公開すると、IDから件数や作成順序といった情報が推測されてしまう恐れがあった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>それまではauto increment（連番）のPrimary Keyを、そのまま外部にも見せていた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>auto increment（連番）</th><th class="h-docker">UUID</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">採番のタイミング</td><td>DBへの登録時に決まる</td><td class="h-docker">アプリ側で事前に決められる</td></tr>
+            <tr><td class="rowhead">複数サーバーでの衝突</td><td>採番がぶつかる可能性がある</td><td class="h-docker">ほぼ衝突しない</td></tr>
+            <tr><td class="rowhead">外部公開時の推測しやすさ</td><td>連番から件数が推測できる</td><td class="h-docker">推測されにくい</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>UUID で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-network"/></svg><div class="cap">分散環境でも安全に採番できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-cube"/></svg><div class="cap">連番から件数を推測されにくい</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-clock"/></svg><div class="cap">登録前にIDを決めておける</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>UUIDは便利だが、文字列が長い分インデックスも重くなりがち。<br>
+         「全部UUIDにする」のではなく、必要な場所だけ使うのが現実的。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連するキーワード</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-file"/></svg></div>
+        <div>
+          <div class="kw-name">ER図</div>
+          <p class="kw-desc">Primary KeyをUUIDにするかは設計段階で決めておきたい。</p>
+          <span class="kw-page">P.103</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">104</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

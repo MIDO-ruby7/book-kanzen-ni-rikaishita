@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — ES Modules</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 7</b>フロントエンド</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">126</div></div>
+      <div class="titles">
+        <h1>ES Modules</h1>
+      </div>
+    </div>
+    <p class="subtitle">JavaScriptファイルを「部品」として輸出入する仕組み</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>import/exportを使って、JavaScriptのコードをファイル単位で分割・再利用できるようにする標準の仕組み。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>昔は&lt;script&gt;タグを並べる順番でグローバル変数がぶつかったり、<br>
+             ファイル同士の依存関係がコードから追えなかったりした。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>それまでは&lt;script&gt;タグを並べる順番に頼って、グローバル空間を共有していた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>グローバルスクリプト</th><th class="h-docker">ES Modules</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">ファイル分割</td><td>&lt;script&gt;タグの数だけ読み込み順に注意</td><td class="h-docker">import/exportで依存関係を明示</td></tr>
+            <tr><td class="rowhead">変数の衝突</td><td>グローバル空間を全ファイルで共有</td><td class="h-docker">ファイルごとにスコープが分離</td></tr>
+            <tr><td class="rowhead">再利用</td><td>コピペで使い回すことも多かった</td><td class="h-docker">exportした関数やクラスをimportするだけ</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>ES Modules で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-package"/></svg><div class="cap">必要な部分だけimportできる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-network"/></svg><div class="cap">依存関係がコードから追える</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-layers"/></svg><div class="cap">ビルドツールとも相性がよい</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>ES ModulesはNode.jsのCommonJS（require/module.exports）と並ぶ、<br>
+         もう一つの「部品分け」の方式。ブラウザが標準対応したことで主流になった。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連する技術</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-wheel"/></svg></div>
+        <div>
+          <div class="kw-name">JavaScript</div>
+          <p class="kw-desc">ES Modulesが分割対象とする言語。</p>
+          <span class="kw-page">P.123</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">126</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

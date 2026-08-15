@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — Session</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 2</b>Webのしくみ</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">32</div></div>
+      <div class="titles">
+        <h1>Session</h1>
+      </div>
+    </div>
+    <p class="subtitle">「セッション切れました」のセッションとは何か</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>ログインから終了までの、ユーザーとサーバーの一連のやり取りをひとまとまりとして管理する仕組み。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>Cookieだけでは重要な情報をブラウザ側に平文で持たせることになり、改ざんや漏えいのリスクなくユーザーの状態を管理する方法が必要だった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>ユーザーの状態を示す情報をすべてブラウザ側のCookieに直接持たせており、内容を書き換えられるリスクがあった。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>Cookieだけで完結すると思う頃</th><th class="h-docker">セッションとして理解</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">情報の置き場所</td><td>ブラウザ（Cookie）だけ</td><td class="h-docker">サーバー側にも状態を保持</td></tr>
+            <tr><td class="rowhead">Cookieの役割</td><td>情報そのものを持つ</td><td class="h-docker">セッションIDという鍵だけを持つ</td></tr>
+            <tr><td class="rowhead">期限切れ</td><td>原因不明で困る</td><td class="h-docker">有効期限やログアウトで切れると理解</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>Session で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-clock"/></svg><div class="cap">ログインから終了までを管理できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-server"/></svg><div class="cap">サーバー側で状態を安全に保持できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-scale"/></svg><div class="cap">期限切れの挙動を理解できる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>セッションは「サーバー側のロッカー」、Cookieは「そのロッカーの鍵」。<br>
+         鍵（セッションID）だけをブラウザに持たせ、中身はサーバー側で管理する。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連キーワード</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-package"/></svg></div>
+        <div>
+          <div class="kw-name">Cookie</div>
+          <p class="kw-desc">セッションIDなどを保存する、ブラウザ側の小さなデータ。</p>
+          <span class="kw-page">P.31</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-scale"/></svg></div>
+        <div>
+          <div class="kw-name">JWT</div>
+          <p class="kw-desc">サーバー側に状態を持たない、別の認証情報の持ち方。</p>
+          <span class="kw-page">P.33</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">32</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

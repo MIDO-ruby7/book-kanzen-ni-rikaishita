@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — Event</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 7</b>フロントエンド</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">128</div></div>
+      <div class="titles">
+        <h1>Event</h1>
+      </div>
+    </div>
+    <p class="subtitle">「クリックされた」を合図にコードを動かす仕組み</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>クリックやキー入力など、ユーザーやブラウザの動作をきっかけにJavaScriptの処理を実行させる仕組み。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>JavaScriptは基本的に上から順番に実行されるだけなので、<br>
+             「ボタンが押されたら」のようにタイミングを待って処理を始めたい場面に対応できなかった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>それまでは、状態が変わっていないか定期的にチェックし続ける発想しかなかった。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>定期的な状態チェック</th><th class="h-docker">Event</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">処理の開始</td><td>定期的に状態をチェックし続ける</td><td class="h-docker">発生したその瞬間に呼ばれる</td></tr>
+            <tr><td class="rowhead">無駄な処理</td><td>何も起きてなくてもチェックし続ける</td><td class="h-docker">何も起きなければ何もしない</td></tr>
+            <tr><td class="rowhead">コードの書き方</td><td>if文で状態を監視</td><td class="h-docker">addEventListenerで登録するだけ</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>Event で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-wheel"/></svg><div class="cap">クリックや入力に反応できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-network"/></svg><div class="cap">複数の処理を同時に待ち受けられる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-clock"/></svg><div class="cap">非同期処理ともよく組み合わせる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>「onClick」のような名前を見たら、だいたいこのEventの仕組みが背後にある。<br>
+         Reactなどのライブラリは、これをより宣言的に書けるようにしている。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連する技術</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-network"/></svg></div>
+        <div>
+          <div class="kw-name">DOM</div>
+          <p class="kw-desc">Eventを取り付ける対象の要素。</p>
+          <span class="kw-page">P.127</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-clock"/></svg></div>
+        <div>
+          <div class="kw-name">非同期（Asynchronous）</div>
+          <p class="kw-desc">Eventの発生を待つ考え方の土台。</p>
+          <span class="kw-page">P.138</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-cube"/></svg></div>
+        <div>
+          <div class="kw-name">Component</div>
+          <p class="kw-desc">Eventへの反応をまとめて持つ部品。</p>
+          <span class="kw-page">P.129</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">128</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

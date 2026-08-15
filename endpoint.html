@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — Endpoint</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 4</b>API</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">62</div></div>
+      <div class="titles">
+        <h1>Endpoint</h1>
+      </div>
+    </div>
+    <p class="subtitle">APIという建物の、それぞれの「入り口」</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>APIの中で、特定の機能やデータにアクセスするための個別のURL。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>APIを1つの窓口としてまとめて捉えると、機能ごとにどこへリクエストを送ればよいかが分かりにくく、個々の入り口を明確に区別する必要があった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>APIを「1つの大きな窓口」とだけ捉えていると、実際にどこにリクエストを送ればいいのか迷う。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>APIをひとまとめに捉える</th><th class="h-docker">Endpointという単位で捉える</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">粒度</td><td>サービス全体</td><td class="h-docker">機能ごとのURL（/users, /postsなど）</td></tr>
+            <tr><td class="rowhead">見つけ方</td><td>ドキュメントを一から読む</td><td class="h-docker">仕様書で機能とURLが対応している</td></tr>
+            <tr><td class="rowhead">変更の影響</td><td>APIが変わったと大雑把に捉える</td><td class="h-docker">どのエンドポイントが変わったか特定できる</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>Endpoint で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-network"/></svg><div class="cap">機能ごとにURLを分けて設計できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-file"/></svg><div class="cap">/users や /posts のような単位で管理</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-scale"/></svg><div class="cap">ドキュメントやログでも扱いやすい単位</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>エンドポイントは「APIの中の1つの窓口」というイメージ。<br>
+         /api/v1/users のようなURLの、動詞（GET/POST）とセットで1つの操作を表す。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連する語</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-network"/></svg></div>
+        <div>
+          <div class="kw-name">API</div>
+          <p class="kw-desc">アプリ同士がやり取りするための窓口全体。</p>
+          <span class="kw-page">P.61</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-pen"/></svg></div>
+        <div>
+          <div class="kw-name">slug</div>
+          <p class="kw-desc">URLの一部に使われる、人にも読める識別子。</p>
+          <span class="kw-page">P.67</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-server"/></svg></div>
+        <div>
+          <div class="kw-name">REST</div>
+          <p class="kw-desc">URLと動詞で操作を表現するAPI設計スタイル。</p>
+          <span class="kw-page">P.63</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">62</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

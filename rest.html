@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — REST</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 4</b>API</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">63</div></div>
+      <div class="titles">
+        <h1>REST</h1>
+      </div>
+    </div>
+    <p class="subtitle">URLと動詞だけで意味を伝えるAPI設計の作法</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>URL（名詞）とHTTPメソッド（動詞）の組み合わせで、操作の意味を表現するAPI設計のスタイル。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>APIの設計者ごとにURLの命名や動詞の使い方がバラバラだと、規模が大きくなるほど一貫性が失われ、他の開発者が理解しづらくなっていた。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>RESTを意識しない設計では、操作ごとにURLをその都度考えて命名することになり、統一感がなくなりがちだった。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>RESTを意識しないAPI</th><th class="h-docker">REST</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">URL設計</td><td>/getUser, /deleteUser など動詞混じり</td><td class="h-docker">/users のように名詞のみ</td></tr>
+            <tr><td class="rowhead">操作の表現</td><td>URLの中に動詞を書く</td><td class="h-docker">GET/POST/PUT/DELETEなどHTTPメソッドで表現</td></tr>
+            <tr><td class="rowhead">一貫性</td><td>設計者ごとにルールがブレる</td><td class="h-docker">リソース単位で統一しやすい</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>REST で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-server"/></svg><div class="cap">URLをリソース（名詞）だけで設計できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-network"/></svg><div class="cap">HTTPメソッドで操作の意味を表現</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-scale"/></svg><div class="cap">設計者が変わってもルールがブレにくい</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>RESTは「REpresentational State Transfer」の略で、<br>
+         厳密には設計思想（アーキテクチャスタイル）の名前。<br>
+         実務では「URLは名詞、操作はHTTPメソッドで」くらいの理解で十分戦える。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">比較する技術</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-cube"/></svg></div>
+        <div>
+          <div class="kw-name">GraphQL</div>
+          <p class="kw-desc">必要なデータだけを1つのエンドポイントで取得できる設計。</p>
+          <span class="kw-page">P.64</span>
+        </div>
+      </div>
+    </div>
+    <div class="side-group">
+      <div class="group-label">関連する語</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-network"/></svg></div>
+        <div>
+          <div class="kw-name">Endpoint</div>
+          <p class="kw-desc">RESTのURL設計の対象になる、個々の入り口。</p>
+          <span class="kw-page">P.62</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-monitor"/></svg></div>
+        <div>
+          <div class="kw-name">Status Code</div>
+          <p class="kw-desc">REST APIのレスポンスで結果を伝える3桁の数字。</p>
+          <span class="kw-page">P.66</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">63</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

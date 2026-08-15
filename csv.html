@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — CSV</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 3</b>データフォーマット</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">55</div></div>
+      <div class="titles">
+        <h1>CSV</h1>
+      </div>
+    </div>
+    <p class="subtitle">Excelとの橋渡し役、カンマ区切りの素朴な形式</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>値をカンマ（,）で区切って1行1レコードを表す、最もシンプルな表形式のデータ形式。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>表形式のデータをExcelやスプレッドシートでそのまま開けるようにするには、JSONやXMLのような入れ子構造を持たない、単純な区切り文字形式が必要だった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>JSONやXMLのような入れ子構造を表すデータ形式に対して、CSVは表形式のデータをそのまま渡したいときに使われる。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>JSON</th><th class="h-docker">CSV</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">構造</td><td>入れ子（ネスト）を表現できる</td><td class="h-docker">1行1レコードの平坦な表のみ</td></tr>
+            <tr><td class="rowhead">開きやすさ</td><td>エディタやコードで確認</td><td class="h-docker">Excelやスプレッドシートでそのまま開ける</td></tr>
+            <tr><td class="rowhead">向いている場面</td><td>APIのレスポンス</td><td class="h-docker">ダウンロードデータ・大量データの受け渡し</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>CSV で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-file"/></svg><div class="cap">Excelやスプレッドシートでそのまま開ける</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-package"/></svg><div class="cap">大量データの入出力・ダウンロードに使う</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-scale"/></svg><div class="cap">仕組みが単純で他システムとも連携しやすい</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>CSVは「Comma-Separated Values」の略。<br>
+         値の中にカンマや改行があると引用符で囲む必要があり、単純に見えて実は細かいルールがある。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">比較する技術</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-file"/></svg></div>
+        <div>
+          <div class="kw-name">JSON</div>
+          <p class="kw-desc">括弧で構造を表す軽量なデータ形式。ネスト構造も表現できる。</p>
+          <span class="kw-page">P.51</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">55</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

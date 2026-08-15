@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — UDP</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 2</b>Webのしくみ</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">36</div></div>
+      <div class="titles">
+        <h1>UDP</h1>
+      </div>
+    </div>
+    <p class="subtitle">「確認より速さ」を選んだ通信</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>データが届いたかの確認をせず、とにかく速く送ることを優先するプロトコル。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>動画配信やリアルタイム通信では、確認応答による遅延よりも速度が優先され、多少のデータ欠落を許容してでも高速に送る仕組みが求められた。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>TCPのように確認応答を取りながら通信しており、リアルタイム性が求められる用途では確認のオーバーヘッドが遅延として無視できなかった。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>TCPの発想しか知らない頃</th><th class="h-docker">UDPとして理解</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">届いたかの確認</td><td>必ず確認するものだと思う</td><td class="h-docker">確認せず送りっぱなしにできる</td></tr>
+            <tr><td class="rowhead">速度</td><td>確認作業の分、多少遅れると思う</td><td class="h-docker">確認がない分、圧倒的に速い</td></tr>
+            <tr><td class="rowhead">向いている場面</td><td>特に区別しない</td><td class="h-docker">動画配信・ゲームなど多少の欠落を許容できる場面</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>UDP で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">確認を省いて高速に送れる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-network"/></svg><div class="cap">リアルタイム性が求められる通信に向く</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-scale"/></svg><div class="cap">多少のデータ欠落を許容できる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>UDPは「確認は取らないから代わりに速い宅配便」。<br>
+         多少荷物が届かなくても、止まらず配り続けることを優先する。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">対になる技術</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-scale"/></svg></div>
+        <div>
+          <div class="kw-name">TCP</div>
+          <p class="kw-desc">確認を取りながら確実に届けるプロトコル。</p>
+          <span class="kw-page">P.35</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">36</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

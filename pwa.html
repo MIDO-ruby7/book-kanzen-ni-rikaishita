@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — PWA</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 7</b>フロントエンド</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">158</div></div>
+      <div class="titles">
+        <h1>PWA</h1>
+      </div>
+    </div>
+    <p class="subtitle">アプリストアを経由せず、Webサイトを「アプリっぽく」使わせる仕組み</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>ホーム画面への追加やオフライン動作など、通常のWebサイトにネイティブアプリに近い体験を持たせる技術。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>ネイティブアプリはストア審査やインストールの手間があり、<br>
+             「開くだけで使えて、でもアプリっぽい体験も欲しい」という要望があった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>それまでは、ネイティブアプリ（iOS/Android別）かElectronのようなデスクトップ包装で「アプリらしさ」を実現していた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>ネイティブアプリ / Electron</th><th class="h-docker">PWA</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">配布方法</td><td>ストア経由 / インストーラー配布</td><td class="h-docker">URLを開くだけ・ホーム画面に追加</td></tr>
+            <tr><td class="rowhead">オフライン対応</td><td>各プラットフォームの機能で実装</td><td class="h-docker">Service Workerで実現</td></tr>
+            <tr><td class="rowhead">審査</td><td>ストア審査が必要な場合あり</td><td class="h-docker">審査不要（Webの延長）</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>PWA で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-laptop"/></svg><div class="cap">ホーム画面に追加できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-cloud"/></svg><div class="cap">オフラインでも一部動作</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">ストア審査なしで配信・更新</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>「インストールの壁を越えずにアプリっぽさを出す」<br>
+         という差分の落とし所。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">比較する技術</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-monitor"/></svg></div>
+        <div>
+          <div class="kw-name">Electron</div>
+          <p class="kw-desc">Web技術でデスクトップアプリを作る仕組み。</p>
+          <span class="kw-page">P.157</span>
+        </div>
+      </div>
+    </div>
+    <div class="side-group">
+      <div class="group-label">関連する指標</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-clock"/></svg></div>
+        <div>
+          <div class="kw-name">Core Web Vitals</div>
+          <p class="kw-desc">ページの体感品質を数値化する指標。</p>
+          <span class="kw-page">P.162</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">158</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

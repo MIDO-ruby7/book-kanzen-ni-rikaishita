@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — Kubernetes</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<article class="entry verso">
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 9</b>クラウド/インフラ</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">441</div></div>
+      <div class="titles"><h1><ruby>Kubernetes<rt>クバネティス</rt></ruby></h1></div>
+    </div>
+    <p class="subtitle">大量のコンテナを「自動で」まわす司令塔</p>
+
+    <div class="head-lower">
+      <div class="cat-col">
+        <svg><use href="icons.svg#ic-wheel"/></svg>
+        <div class="cat-label">インフラ<br>運用基盤</div>
+      </div>
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>たくさんのコンテナを、複数のサーバ上で自動で配置・維持・回復してくれる仕組み。</p>
+      </div>
+    </div>
+
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>コンテナが増えすぎて、<br>
+             人手で配置・監視・再起動しきれなくなったから。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>Compose や手動スクリプトで、1 台ずつ管理・監視していた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>Docker Compose</th><th class="h-docker">Kubernetes</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">規模</td><td>1 台想定</td><td class="h-docker">多数のサーバ</td></tr>
+            <tr><td class="rowhead">障害時</td><td>手で対応</td><td class="h-docker">自動で復旧</td></tr>
+            <tr><td class="rowhead">スケール</td><td>手動</td><td class="h-docker">自動で増減</td></tr>
+            <tr><td class="rowhead">用途</td><td>開発中心</td><td class="h-docker">本番運用</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>Kubernetes で何ができる？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-network"/></svg><div class="cap">複数サーバに自動配置</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-clock"/></svg><div class="cap">落ちても自動で復旧</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-scale"/></svg><div class="cap">負荷に応じて増減</div></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>k8s は「コンテナの管制塔」。あるべき状態を宣言すれば、あとは勝手に保つ。</p>
+    </div>
+
+  </div>
+
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+
+    <div class="side-group">
+      <div class="group-label">比較する技術</div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-file"/></svg></div>
+        <div>
+          <div class="kw-name">Docker Compose</div>
+          <p class="kw-desc">1 台でまとめてコンテナを動かす設定。</p>
+          <span class="kw-page">P.321</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-group">
+      <div class="group-label">一緒に使う技術</div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-cube"/></svg></div>
+        <div>
+          <div class="kw-name">Container</div>
+          <p class="kw-desc">Kubernetes が配置・管理する最小単位。</p>
+          <span class="kw-page">P.309</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-cube"/></svg></div>
+        <div>
+          <div class="kw-name">Docker</div>
+          <p class="kw-desc">動かすコンテナ・イメージを作る土台。</p>
+          <span class="kw-page">P.301</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-group">
+      <div class="group-label">次に読むなら</div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-image"/></svg></div>
+        <div>
+          <div class="kw-name">Image</div>
+          <p class="kw-desc">各コンテナのもとになる設計図。</p>
+          <span class="kw-page">P.305</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-memo">
+      <div class="lbl">キーワードメモ</div>
+      <p>「宣言的」に理想状態を書く。ズレたら自動で直しにいく。</p>
+    </div>
+  </aside>
+
+  <footer class="page-foot">
+    <span class="folio">441</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+</article>
+</body>
+</html>

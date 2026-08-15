@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — Client</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 2</b>Webのしくみ</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">21</div></div>
+      <div class="titles">
+        <h1>Client</h1>
+      </div>
+    </div>
+    <p class="subtitle">「お客さん」だと思っていたら、ブラウザのことだった</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>サーバーに要求（リクエスト）を送る側。ブラウザやスマホアプリなど、自分が直接触っている画面のこと。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>アプリケーションを「要求する側」と「処理する側」に分けずに設計すると、機能が増えるほど役割の境界があいまいになり、どこで何を処理しているかを追いにくくなっていた。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>システムを役割分担のない一枚岩として扱い、要求する部分と応答する部分を明確に区別していなかった。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>区別しない頃</th><th class="h-docker">クライアント/サーバーで理解</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">見え方</td><td>システム全体がひとかたまり</td><td class="h-docker">要求する側＝クライアントと分かる</td></tr>
+            <tr><td class="rowhead">実体</td><td>漠然としたイメージ</td><td class="h-docker">ブラウザ・アプリ・CLIなど具体的な形</td></tr>
+            <tr><td class="rowhead">役割</td><td>切り分けられない</td><td class="h-docker">表示・入力・要求の送信を担当</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>Client で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-laptop"/></svg><div class="cap">画面の表示や入力を担当できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-network"/></svg><div class="cap">サーバーに要求を送れる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-scale"/></svg><div class="cap">サーバーとの役割分担を説明できる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>クライアントは「使う人」ではなく「要求するプログラム」。<br>
+         人間ではなくブラウザやアプリを指すと知ってから、先輩との会話がかみ合うようになった。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">対になる技術</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-server"/></svg></div>
+        <div>
+          <div class="kw-name">Server</div>
+          <p class="kw-desc">クライアントからの要求を受け取り、処理して返す側。</p>
+          <span class="kw-page">P.22</span>
+        </div>
+      </div>
+    </div>
+    <div class="side-group">
+      <div class="group-label">やり取りの中身</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-network"/></svg></div>
+        <div>
+          <div class="kw-name">Request</div>
+          <p class="kw-desc">クライアントがサーバーに送る依頼のデータ。</p>
+          <span class="kw-page">P.23</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-package"/></svg></div>
+        <div>
+          <div class="kw-name">Response</div>
+          <p class="kw-desc">サーバーがリクエストに対して返す結果。</p>
+          <span class="kw-page">P.24</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">21</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

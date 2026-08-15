@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — Docker Compose</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<article class="entry verso">
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 7</b>Docker</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">321</div></div>
+      <div class="titles"><h1><ruby>Compose<rt>コンポーズ</rt></ruby></h1></div>
+    </div>
+    <p class="subtitle">複数コンテナを「1 枚の設定」でまとめて動かす</p>
+
+    <div class="head-lower">
+      <div class="cat-col">
+        <svg><use href="icons.svg#ic-file"/></svg>
+        <div class="cat-label">インフラ<br>ツール</div>
+      </div>
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>何個ものコンテナの構成を 1 つのファイルに書いて、まとめて起動・停止できるツール。</p>
+      </div>
+    </div>
+
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>Web・DB・キャッシュなど複数のコンテナを、<br>
+             毎回手で起動するのが大変だったから。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p><code>docker run</code> でコンテナを 1 個ずつ手動で起動していた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>docker run</th><th class="h-docker">Compose</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">対象</td><td>1 コンテナずつ</td><td class="h-docker">まとめて一括</td></tr>
+            <tr><td class="rowhead">設定</td><td>コマンドに毎回</td><td class="h-docker">ファイルに固定</td></tr>
+            <tr><td class="rowhead">再現性</td><td>手順に依存</td><td class="h-docker">誰でも同じ</td></tr>
+            <tr><td class="rowhead">起動</td><td>何度もコマンド</td><td class="h-docker">up 一発</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>Compose で何ができる？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-file"/></svg><div class="cap">構成をファイル化</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">up で一括起動</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-network"/></svg><div class="cap">依存関係を自動解決</div></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>Compose は「構成の設計図」。開発環境を“ファイルごと”配れるのが強み。</p>
+    </div>
+
+  </div>
+
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+
+    <div class="side-group">
+      <div class="group-label">一緒に使う技術</div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-cube"/></svg></div>
+        <div>
+          <div class="kw-name">Docker</div>
+          <p class="kw-desc">コンテナを作り・動かす土台のツール。</p>
+          <span class="kw-page">P.301</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-cube"/></svg></div>
+        <div>
+          <div class="kw-name">Container</div>
+          <p class="kw-desc">Compose がまとめて動かす対象。</p>
+          <span class="kw-page">P.309</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-group">
+      <div class="group-label">次に読むなら</div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-wheel"/></svg></div>
+        <div>
+          <div class="kw-name">Kubernetes</div>
+          <p class="kw-desc">大規模・本番向けのコンテナ運用基盤。</p>
+          <span class="kw-page">P.441</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-memo">
+      <div class="lbl">キーワードメモ</div>
+      <p>書くのは compose.yaml。誰が動かしても同じ環境が立ち上がる。</p>
+    </div>
+  </aside>
+
+  <footer class="page-foot">
+    <span class="folio">321</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+</article>
+</body>
+</html>

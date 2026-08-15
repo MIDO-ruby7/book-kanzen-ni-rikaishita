@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — Domain</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 2</b>Webのしくみ</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">28</div></div>
+      <div class="titles">
+        <h1>Domain</h1>
+      </div>
+    </div>
+    <p class="subtitle">「ドメイン取った？」の"ドメイン"は住所の名前だった</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>インターネット上の住所（IPアドレス）に付けられた、人間が読める名前。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>IPアドレスが変わってもアクセス先を一定に保ちたい、複数のサービスを覚えやすい名前で区別したいという要求があった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>サービスへのアクセスをIPアドレスの数字に依存しており、サーバーを移設するたびにアクセス方法が変わってしまっていた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>名前を意識しない頃</th><th class="h-docker">ドメインとして理解</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">認識</td><td>リンクを辿るだけの存在</td><td class="h-docker">取得・更新して管理する資産</td></tr>
+            <tr><td class="rowhead">構造</td><td>ただの文字列</td><td class="h-docker">www.example.comのような階層構造</td></tr>
+            <tr><td class="rowhead">費用</td><td>無料だと思っていた</td><td class="h-docker">年単位でレジストラに更新料を払う</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>Domain で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-monitor"/></svg><div class="cap">覚えやすい名前で発信できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-file"/></svg><div class="cap">DNSに登録してIPアドレスと紐付けられる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-scale"/></svg><div class="cap">自分の名前として管理・更新できる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>ドメインは「インターネット上の店名・住所」。<br>
+         取得しただけでは終わらず、更新し続けないと他人に取られてしまう。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連キーワード</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-file"/></svg></div>
+        <div>
+          <div class="kw-name">DNS</div>
+          <p class="kw-desc">ドメイン名をIPアドレスに変換する仕組み。</p>
+          <span class="kw-page">P.27</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-file"/></svg></div>
+        <div>
+          <div class="kw-name">SSL証明書</div>
+          <p class="kw-desc">ドメインが本物であることを証明する電子証明書。</p>
+          <span class="kw-page">P.38</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">28</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

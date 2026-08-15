@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — async・await</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 7</b>フロントエンド</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">140</div></div>
+      <div class="titles">
+        <h1>async・await</h1>
+      </div>
+    </div>
+    <p class="subtitle">非同期処理を「同期っぽく」読める書き方</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>Promiseを使った非同期処理を、あたかも上から順番に処理しているかのように書けるようにする構文。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>Promiseの.then()は読みやすくなったとはいえ、処理が増えると.then()が連なって見づらく、<br>
+             変数の受け渡しも複雑になりがちだった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>それまではPromiseの.then()を数珠つなぎにする書き方が中心だった。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>Promiseの.then()</th><th class="h-docker">async・await</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">見た目</td><td>.then()を数珠つなぎにする</td><td class="h-docker">awaitを付けるだけで上から順に読める</td></tr>
+            <tr><td class="rowhead">エラー処理</td><td>.catch()をチェーンにつなげる</td><td class="h-docker">try/catchという馴染みのある書き方が使える</td></tr>
+            <tr><td class="rowhead">変数の受け渡し</td><td>.then()の引数として受け取る</td><td class="h-docker">通常の変数のように代入して使える</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>async・await で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-file"/></svg><div class="cap">同期処理のような自然な見た目</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-scale"/></svg><div class="cap">try/catchでエラー処理できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-wheel"/></svg><div class="cap">中身の仕組みはPromiseのまま</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>async/awaitは魔法ではなく、Promiseを読みやすく書くための「糖衣構文」。<br>
+         中身の非同期処理そのものは変わらない。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連する技術</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-scale"/></svg></div>
+        <div>
+          <div class="kw-name">Promise</div>
+          <p class="kw-desc">async・awaitの土台になっているオブジェクト。</p>
+          <span class="kw-page">P.139</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-clock"/></svg></div>
+        <div>
+          <div class="kw-name">非同期（Asynchronous）</div>
+          <p class="kw-desc">async・awaitが扱う処理の考え方。</p>
+          <span class="kw-page">P.138</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">140</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

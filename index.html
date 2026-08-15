@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — Docker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============================================================
+     1項目 = 1ページ。
+     このファイルを template.html からコピーして、
+     ①番号/タイトル/カテゴリ ②本文・図・表 ③サイドバー
+     を差し替えれば別項目のページになる。
+     アイコンは icons.svg の #ID を <use> で参照。
+     ============================================================ -->
+<article class="entry verso">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 7</b>Docker</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">301</div></div>
+      <div class="titles">
+        <h1><ruby>Docker<rt>ドッカー</rt></ruby></h1>
+      </div>
+    </div>
+    <p class="subtitle">「私の PC では動きます」を終わらせた技術</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>アプリとその実行に必要なものを「箱」に入れて、どこでも同じように動かす仕組み。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>環境（OS・ライブラリ・設定など）の違いで、<br>
+             「ローカルでは動くのに、本番では動かない」が頻発していた。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>仮想マシン（VM）を使って、OSごと分離していた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>VM（仮想マシン）</th><th class="h-docker">Docker</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">分離の単位</td><td>OSごと</td><td class="h-docker">アプリ＋必要なものだけ</td></tr>
+            <tr><td class="rowhead">重さ・起動</td><td>重い・遅い</td><td class="h-docker">軽い・速い</td></tr>
+            <tr><td class="rowhead">再現性・配布</td><td>環境の用意が大変</td><td class="h-docker">同じ箱を渡せる</td></tr>
+            <tr><td class="rowhead">向いている場面</td><td>OSごと分離したいとき</td><td class="h-docker">開発・テスト・配布</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>Docker で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-clock"/></svg><div class="cap">すぐに起動できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-laptop"/></svg><div class="cap">同じ環境を共有できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-package"/></svg><div class="cap">配布・デプロイが簡単</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>Docker は「環境ごとアプリを運ぶ」イメージ。<br>
+         必要なものを一つの箱にまとめるから、どこでも同じように動く。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+
+    <div class="side-group">
+      <div class="group-label">比較する技術</div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-monitor"/></svg></div>
+        <div>
+          <div class="kw-name">VM（仮想マシン）</div>
+          <p class="kw-desc">OSごと分離する仮想化技術。重いが強い分離ができる。</p>
+          <span class="kw-page">P.401</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-group">
+      <div class="group-label">一緒に使う技術</div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-file"/></svg></div>
+        <div>
+          <div class="kw-name">Docker Compose</div>
+          <p class="kw-desc">複数のコンテナをまとめて定義・実行するツール。</p>
+          <span class="kw-page">P.321</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-cube"/></svg></div>
+        <div>
+          <div class="kw-name">Container</div>
+          <p class="kw-desc">Docker で作られるアプリ実行の単位。</p>
+          <span class="kw-page">P.309</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-image"/></svg></div>
+        <div>
+          <div class="kw-name">Image</div>
+          <p class="kw-desc">コンテナを作るための設計図（テンプレート）。</p>
+          <span class="kw-page">P.305</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-group">
+      <div class="group-label">次に読むなら</div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-wheel"/></svg></div>
+        <div>
+          <div class="kw-name">Kubernetes</div>
+          <p class="kw-desc">コンテナを大規模に自動で管理・運用するプラットフォーム。</p>
+          <span class="kw-page">P.441</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-memo">
+      <div class="lbl">キーワードメモ</div>
+      <p>箱に入れるものは、アプリや設定、ライブラリなど。中身は自由に作れる。</p>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">301</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

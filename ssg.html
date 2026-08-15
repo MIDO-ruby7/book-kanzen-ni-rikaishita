@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — SSG</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 7</b>フロントエンド</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">134</div></div>
+      <div class="titles">
+        <h1>SSG</h1>
+      </div>
+    </div>
+    <p class="subtitle">ビルド時にあらかじめHTMLを作っておく方式</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>アクセスのたびに生成するSSRとは違い、ビルドの時点で全ページのHTMLを事前に作っておく方式。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>SSRはアクセスされるたびにサーバーでHTMLを生成するため、<br>
+             内容がほとんど変わらないページでも毎回同じ処理を繰り返し、サーバー負荷や速度の面で無駄が多かった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>それまではSSRで、リクエストが来るたびにサーバーがHTMLを生成していた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>SSR</th><th class="h-docker">SSG</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">HTML生成のタイミング</td><td>リクエストが来るたびに生成</td><td class="h-docker">ビルド時にあらかじめ全部生成</td></tr>
+            <tr><td class="rowhead">サーバーの負荷</td><td>アクセスごとに処理が発生</td><td class="h-docker">生成済みファイルを配るだけ</td></tr>
+            <tr><td class="rowhead">内容の更新</td><td>リクエスト時点の最新データを反映できる</td><td class="h-docker">再ビルドしないと内容が更新されない</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>SSG で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-clock"/></svg><div class="cap">配信がとにかく速い</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-server"/></svg><div class="cap">サーバー負荷がほぼゼロ</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-wheel"/></svg><div class="cap">更新のたびに再ビルドが必要</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>SSGは「変化の少ないページ」向きの方式。<br>
+         更新頻度が高いページで鮮度も速さも欲しい場合に生まれたのがISR。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連するレンダリング方式</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-server"/></svg></div>
+        <div>
+          <div class="kw-name">SSR</div>
+          <p class="kw-desc">アクセスのたびにHTMLを生成する方式。</p>
+          <span class="kw-page">P.133</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-rocket"/></svg></div>
+        <div>
+          <div class="kw-name">ISR</div>
+          <p class="kw-desc">SSGを裏側で少しずつ更新する方式。</p>
+          <span class="kw-page">P.135</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">134</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

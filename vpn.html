@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — VPN</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 2</b>Webのしくみ</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">40</div></div>
+      <div class="titles">
+        <h1>VPN</h1>
+      </div>
+    </div>
+    <p class="subtitle">「社内ネットワークに繋いで」と言われて焦った日</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>インターネット上に暗号化された専用の通信路（トンネル）を作り、離れた場所からでも安全に社内ネットワークなどに接続する仕組み。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>拠点や自宅など、離れた場所から社内ネットワークへ安全に接続する手段が求められたが、専用線の敷設には多額の費用がかかった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>社外から社内ネットワークへアクセスするには、専用線を敷設するか、直接出社するしかなかった。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>専用線・出社前提</th><th class="h-docker">VPN</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">接続方法</td><td>専用線の敷設や出社が必要</td><td class="h-docker">インターネット経由で仮想的な専用線を作る</td></tr>
+            <tr><td class="rowhead">コスト</td><td>専用線は高額</td><td class="h-docker">ソフトウェアで低コストに実現</td></tr>
+            <tr><td class="rowhead">安全性</td><td>物理的に隔離されている</td><td class="h-docker">暗号化されたトンネルで安全性を確保</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>VPN で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-network"/></svg><div class="cap">外部から社内ネットワークに安全に接続できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-cube"/></svg><div class="cap">通信を暗号化してトンネルを作れる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-laptop"/></svg><div class="cap">リモートワークでも同じ環境で作業できる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>VPNは「インターネットの中に作る秘密の通路」。<br>
+         公共の道路（インターネット）の中に、覗かれないトンネルを掘るイメージ。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連キーワード</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-scale"/></svg></div>
+        <div>
+          <div class="kw-name">NAT</div>
+          <p class="kw-desc">プライベートIPとグローバルIPを変換する仕組み。</p>
+          <span class="kw-page">P.41</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-monitor"/></svg></div>
+        <div>
+          <div class="kw-name">Proxy（フォワードプロキシ）</div>
+          <p class="kw-desc">クライアントの代わりに通信を中継する仕組み。</p>
+          <span class="kw-page">P.43</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">40</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

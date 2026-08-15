@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — Biome</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 7</b>フロントエンド</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">152</div></div>
+      <div class="titles">
+        <h1>Biome</h1>
+      </div>
+    </div>
+    <p class="subtitle">ESLintより速く、Prettierの仕事も1本でこなすツール</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>Lint（コードチェック）とFormat（整形）をRust製の1つのツールでまとめて高速に行うツール。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>ESLintとPrettierを両方使うのが定番だったが、設定ファイルが<br>
+             2つになり、プロジェクトが大きくなるほど実行が遅くなっていた。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>従来はESLint（Lint用）とPrettier（整形用）をそれぞれJavaScriptで実装し、組み合わせて使っていた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>ESLint + Prettier（組み合わせ）</th><th class="h-docker">Biome</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">役割</td><td>Lintと整形を別ツールで担当</td><td class="h-docker">1つのツールでLint+整形</td></tr>
+            <tr><td class="rowhead">実装言語</td><td>JavaScript</td><td class="h-docker">Rust（高速）</td></tr>
+            <tr><td class="rowhead">設定ファイル</td><td>2つ（.eslintrc / .prettierrc）</td><td class="h-docker">1つに統一</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>Biome で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-clock"/></svg><div class="cap">Lint・整形が高速</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-package"/></svg><div class="cap">1ツールで設定が完結</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-file"/></svg><div class="cap">ESLint設定からの移行支援あり</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>「速さ」で殴る系ツールの1つ。<br>
+         この流れはさらにOXCへと続いていく。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">比較する技術</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-scale"/></svg></div>
+        <div>
+          <div class="kw-name">ESLint</div>
+          <p class="kw-desc">JS実装の老舗Linter。</p>
+          <span class="kw-page">P.151</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-rocket"/></svg></div>
+        <div>
+          <div class="kw-name">OXC</div>
+          <p class="kw-desc">パース処理からRustで高速化する次の一手。</p>
+          <span class="kw-page">P.153</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">152</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

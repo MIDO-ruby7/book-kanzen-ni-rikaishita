@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — Pub/Sub</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 5</b>通信プロトコル</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">74</div></div>
+      <div class="titles">
+        <h1>Pub/Sub</h1>
+      </div>
+    </div>
+    <p class="subtitle">送り手と受け手を「知り合わせない」通知の仕組み</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>発行者（Publisher）がメッセージを送り、購読者（Subscriber）が仲介役を通じて受け取る非同期の通信モデル。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>1つのイベント（注文など）を複数の送信先（在庫システム・通知システムなど）に連携する際、送信元のコードに宛先を直接書き込んでいくと、宛先が増えるたびに送信元の修正が必要になっていた。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>Webhookのように送信元が受信先を直接知っている構成では、通知先が増えるたびに送信元の実装を修正する必要がある。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>Webhookで直接送る</th><th class="h-docker">Pub/Sub</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">送信先の把握</td><td>送信元が受信先のURLを知っている</td><td class="h-docker">送信元は仲介役（トピック）に送るだけ</td></tr>
+            <tr><td class="rowhead">受信先の追加</td><td>送信元のコードを修正して追加</td><td class="h-docker">購読するだけで新しい受信先を追加できる</td></tr>
+            <tr><td class="rowhead">関係性</td><td>送信元と受信先が密結合</td><td class="h-docker">間にトピックを挟んで疎結合</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>Pub/Sub で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-layers"/></svg><div class="cap">送信元と受信先を直接つながずに済む</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-network"/></svg><div class="cap">受信先を後から自由に追加できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-scale"/></svg><div class="cap">複数のサービスへの同時通知に向いている</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>Pub/Subは「Publish（発行）/ Subscribe（購読）」の略。<br>
+         Webhookが1対1の電話だとすると、Pub/Subは1つの掲示板（トピック）に貼り出して、見たい人が見に来るイメージ。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連する語</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-cloud"/></svg></div>
+        <div>
+          <div class="kw-name">Webhook</div>
+          <p class="kw-desc">こちらは送信元が受信先を直接知っている、1対1に近い通知方式。</p>
+          <span class="kw-page">P.73</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-network"/></svg></div>
+        <div>
+          <div class="kw-name">WebSocket</div>
+          <p class="kw-desc">こちらは接続を保ったまま双方向にやり取りする通信方式。</p>
+          <span class="kw-page">P.72</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">74</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

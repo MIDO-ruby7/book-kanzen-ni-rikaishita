@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — Pull</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 1</b>Git・GitHub</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">7</div></div>
+      <div class="titles">
+        <h1>Pull</h1>
+      </div>
+    </div>
+    <p class="subtitle">みんなの最新を、自分の手元に引き寄せる</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>リモートリポジトリの最新の変更を、自分の手元に取り込むこと。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>チームメンバーが加えた変更を、自分の環境にも反映させる必要があった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>最新ファイルを送ってもらい、自分の変更と手作業で見比べながら統合していた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>手動マージ</th><th class="h-docker">Pull</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">取得方法</td><td>送ってもらう・都度依頼</td><td class="h-docker">git pull で自動取得</td></tr>
+            <tr><td class="rowhead">統合作業</td><td>目視で見比べて手作業</td><td class="h-docker">fetch＋mergeで自動統合</td></tr>
+            <tr><td class="rowhead">最新性</td><td>聞かないと分からない</td><td class="h-docker">いつでも最新を取得できる</td></tr>
+            <tr><td class="rowhead">衝突対応</td><td>気づきにくい</td><td class="h-docker">コンフリクトとして明示される</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>Pull で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-cloud"/></svg><div class="cap">常にチームの最新に追いつける</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-layers"/></svg><div class="cap">自分の変更と自動で統合される</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-scale"/></svg><div class="cap">衝突があればその場で気づける</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>pull は「fetch＋merge」の合わせ技。中身を分けて考えると仕組みが理解しやすい。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連キーワード</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-rocket"/></svg></div>
+        <div>
+          <div class="kw-name">Push</div>
+          <p class="kw-desc">自分の変更をリモートに送る操作。</p>
+          <span class="kw-page">P.6</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-scale"/></svg></div>
+        <div>
+          <div class="kw-name">Merge</div>
+          <p class="kw-desc">pull の中で行われている統合処理。</p>
+          <span class="kw-page">P.8</span>
+        </div>
+      </div>
+    </div>
+    <div class="side-group">
+      <div class="group-label">一緒に覚えたい言葉</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-cloud"/></svg></div>
+        <div>
+          <div class="kw-name">Fetch</div>
+          <p class="kw-desc">リモートの変更を取得だけしてmergeしない操作。</p>
+          
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-rocket"/></svg></div>
+        <div>
+          <div class="kw-name">Pull Request</div>
+          <p class="kw-desc">コードレビューを経て取り込む提案の仕組み。</p>
+          
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">7</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

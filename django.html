@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — Django</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 8</b>バックエンド言語・フレームワーク</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">180</div></div>
+      <div class="titles">
+        <h1>Django</h1>
+      </div>
+    </div>
+    <p class="subtitle">「電池付属」でWebアプリに必要な機能をひとまとめにしたフレームワーク</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>認証・管理画面・ORMなど、Webアプリに必要な機能を標準で備えたPython製のフルスタックフレームワーク。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>新聞社のニュースサイトを短納期で量産する必要があり、認証や管理画面など「毎回必要になる機能」を<br>
+             一つ一つ自作していては間に合わなかった。この課題から、必要な機能を最初から揃えた「電池付属（batteries included）」の思想で開発された。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>それまでのPython製Webフレームワークは、ルーティングなど最小限の機能しか持たず、認証や管理画面は別途ライブラリを探して組み合わせる必要があった。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>軽量フレームワーク（Flaskなど）</th><th class="h-docker">Django</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">付属機能</td><td>最小限（必要なら自分で追加）</td><td class="h-docker">認証・管理画面・ORMなど標準搭載</td></tr>
+            <tr><td class="rowhead">管理画面</td><td>自作が必要</td><td class="h-docker">自動生成される（Django Admin）</td></tr>
+            <tr><td class="rowhead">構成の自由度</td><td>高い</td><td class="h-docker">やや決まった型に沿う</td></tr>
+            <tr><td class="rowhead">向いている場面</td><td>小規模・独自構成のAPI</td><td class="h-docker">機能が多い業務系Webアプリ</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>Django で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-layers"/></svg><div class="cap">必要な機能が最初から揃っている</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-server"/></svg><div class="cap">管理画面が自動で手に入る</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">大規模なWebアプリを素早く構築できる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>Djangoの「電池付属」は、必要なものを探し回る時間をなくす思想。<br>
+         迷ったら「まずDjangoにある機能を使う」で進められる。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連する技術</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-file"/></svg></div>
+        <div>
+          <div class="kw-name">Python</div>
+          <p class="kw-desc">シンプルな文法を持つプログラミング言語。</p>
+          <span class="kw-page">P.172</span>
+        </div>
+      </div>
+    </div>
+    <div class="side-group">
+      <div class="group-label">比較するフレームワーク</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-rocket"/></svg></div>
+        <div>
+          <div class="kw-name">FastAPI</div>
+          <p class="kw-desc">型ヒントを活かした高速なAPIフレームワーク。</p>
+          <span class="kw-page">P.181</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-file"/></svg></div>
+        <div>
+          <div class="kw-name">Flask</div>
+          <p class="kw-desc">必要な機能だけを足していく軽量フレームワーク。</p>
+          <span class="kw-page">P.182</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-server"/></svg></div>
+        <div>
+          <div class="kw-name">Rails</div>
+          <p class="kw-desc">Ruby版のフルスタックフレームワーク。</p>
+          <span class="kw-page">P.177</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">180</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

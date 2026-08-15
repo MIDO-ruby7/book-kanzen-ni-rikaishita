@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — i18n（国際化）</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 7</b>フロントエンド</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">161</div></div>
+      <div class="titles">
+        <h1>i18n（国際化）</h1>
+      </div>
+    </div>
+    <p class="subtitle">「日本語しか出ない」から卒業するための下ごしらえ</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>アプリの文言や日付・通貨の表記を、言語や地域ごとに切り替えられるようにする仕組み・対応のこと。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>最初は日本語だけを想定して文言をコードに直接書いていたが、<br>
+             海外展開が必要になり、全箇所を洗い出す羽目になった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>それまでは、表示文言をコンポーネントの中に直接ハードコーディングしていた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>文言を直接ハードコーディング</th><th class="h-docker">i18n対応</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">文言の管理</td><td>コード内に直接記述</td><td class="h-docker">言語ごとの辞書ファイルに分離</td></tr>
+            <tr><td class="rowhead">言語切り替え</td><td>対応不可（作り直しが必要）</td><td class="h-docker">辞書を差し替えるだけで対応</td></tr>
+            <tr><td class="rowhead">日付・通貨表記</td><td>決め打ちの書式</td><td class="h-docker">ロケールに応じて自動整形</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>i18n（国際化） で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-network"/></svg><div class="cap">言語ごとに辞書ファイルを切り替え</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-file"/></svg><div class="cap">日付・通貨をロケール対応で表示</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-wheel"/></svg><div class="cap">後から言語追加がしやすい</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>「後からやろう」が一番コストが膨らみやすい対応の1つ、<br>
+         という差分の教訓。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連する語</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-scale"/></svg></div>
+        <div>
+          <div class="kw-name">a11y（アクセシビリティ）</div>
+          <p class="kw-desc">誰もが使える設計にするための視点。</p>
+          <span class="kw-page">P.160</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">161</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

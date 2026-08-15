@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — Electron</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 7</b>フロントエンド</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">157</div></div>
+      <div class="titles">
+        <h1>Electron</h1>
+      </div>
+    </div>
+    <p class="subtitle">Webの技術だけでデスクトップアプリを作る発想</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>HTML・CSS・JavaScriptで書いた画面を、そのままWindows/Mac用のデスクトップアプリとして動かす仕組み。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>デスクトップアプリを作るには、OSごとに別の言語・UI部品を<br>
+             覚えて実装する必要があり、コストが高かった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>それまでは、C++/C#/SwiftなどOSごとのネイティブ言語・フレームワークで別々に実装していた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>ネイティブ実装（OSごと）</th><th class="h-docker">Electron</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">言語</td><td>C++ / C# / Swiftなど</td><td class="h-docker">HTML / CSS / JavaScript</td></tr>
+            <tr><td class="rowhead">対応OS</td><td>OSごとに別実装が必要</td><td class="h-docker">1つのコードで複数OSに対応</td></tr>
+            <tr><td class="rowhead">代表例</td><td>—</td><td class="h-docker">VS Code / Slack / Discordなど</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>Electron で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-monitor"/></svg><div class="cap">1つのコードで複数OSに対応</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-laptop"/></svg><div class="cap">Web技術の知識をそのまま流用</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-package"/></svg><div class="cap">ブラウザ機能ごとアプリに同梱</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>アプリ内にChromiumを丸ごと同梱するため、<br>
+         動作は重めになりがち、というのが差分の裏側。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">比較する技術</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-laptop"/></svg></div>
+        <div>
+          <div class="kw-name">PWA</div>
+          <p class="kw-desc">ストア審査なしでアプリっぽさを出す別解。</p>
+          <span class="kw-page">P.158</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">157</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

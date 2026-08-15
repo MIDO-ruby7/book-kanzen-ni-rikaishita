@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — Migration</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 6</b>データベース</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">92</div></div>
+      <div class="titles">
+        <h1>Migration</h1>
+      </div>
+    </div>
+    <p class="subtitle">DBの設計変更を「手作業SQL」から解放した仕組み</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>テーブルの追加・変更などのDB設計変更を、コードの形で記録・管理する仕組み。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>本番環境に手作業でALTER TABLEなどのSQLを実行すると、環境ごとにカラムの型や状態がずれ、リリース後にエラーが発生しやすかった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>テーブル変更のSQLを、環境ごとに手作業で実行していた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>手作業でSQL</th><th class="h-docker">Migration</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">再現性</td><td>環境ごとに結果がズレうる</td><td class="h-docker">同じ変更を全環境に確実に反映</td></tr>
+            <tr><td class="rowhead">履歴</td><td>いつ何を変えたか分からない</td><td class="h-docker">変更履歴がコードとして残る</td></tr>
+            <tr><td class="rowhead">共有</td><td>口頭やメモで伝達しがち</td><td class="h-docker">コードをチームで共有・レビューできる</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>Migration で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-clock"/></svg><div class="cap">変更履歴を時系列で管理できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-laptop"/></svg><div class="cap">全環境に同じ変更を確実に反映できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-scale"/></svg><div class="cap">変更をコードとしてレビューできる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>マイグレーションは「DB版のバージョン管理」。<br>
+         手でSQLを打つ前に、まずマイグレーションを疑う。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">一緒に使う仕組み</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-package"/></svg></div>
+        <div>
+          <div class="kw-name">Seeder</div>
+          <p class="kw-desc">確認用データを自動投入する仕組み。</p>
+          <span class="kw-page">P.93</span>
+        </div>
+      </div>
+    </div>
+    <div class="side-group">
+      <div class="group-label">関連する要素</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-cube"/></svg></div>
+        <div>
+          <div class="kw-name">RDBMS</div>
+          <p class="kw-desc">マイグレーションで変更する対象。</p>
+          <span class="kw-page">P.83</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">92</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

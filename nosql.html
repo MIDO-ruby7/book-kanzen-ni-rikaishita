@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — NoSQL</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 6</b>データベース</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">84</div></div>
+      <div class="titles">
+        <h1>NoSQL</h1>
+      </div>
+    </div>
+    <p class="subtitle">「表」の形にこだわらないデータベースの総称</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>テーブルの形に縛られず、柔軟な形でデータを保存できるデータベースの総称。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>サービスの急成長で、ユーザーごとに項目が異なるようなデータをRDBの固定された表構造に収めようとすると、カラムが増え続けて設計が破綻しかねなかった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>RDB（表構造）だけを使って、あらゆる種類のデータを管理しようとしていた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>RDBのみ</th><th class="h-docker">NoSQL</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">データの形</td><td>事前に列を固定する必要がある</td><td class="h-docker">形が違うデータも自由に保存できる</td></tr>
+            <tr><td class="rowhead">スケール</td><td>1台のサーバーで頑張りがち</td><td class="h-docker">複数台に分散しやすい</td></tr>
+            <tr><td class="rowhead">向いている場面</td><td>整合性重視の業務データ</td><td class="h-docker">ログ・キャッシュなど柔軟なデータ</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>NoSQL で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-layers"/></svg><div class="cap">形の違うデータも柔軟に保存できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-cloud"/></svg><div class="cap">大量データを分散して扱える</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">読み書きを高速化しやすい</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>NoSQLは「RDBの代わり」ではなく「使い分ける相棒」。<br>
+         データの性質に合わせて選べばいい。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">対になる考え方</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-layers"/></svg></div>
+        <div>
+          <div class="kw-name">RDB</div>
+          <p class="kw-desc">表同士を関係で結びつけるデータの考え方。</p>
+          <span class="kw-page">P.82</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-cube"/></svg></div>
+        <div>
+          <div class="kw-name">RDBMS</div>
+          <p class="kw-desc">RDBを実装したソフトウェア。</p>
+          <span class="kw-page">P.83</span>
+        </div>
+      </div>
+    </div>
+    <div class="side-group">
+      <div class="group-label">代表的な製品</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-cloud"/></svg></div>
+        <div>
+          <div class="kw-name">Redis</div>
+          <p class="kw-desc">高速なキー・バリュー型データベース。</p>
+          
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-cloud"/></svg></div>
+        <div>
+          <div class="kw-name">MongoDB</div>
+          <p class="kw-desc">柔軟なドキュメント型データベース。</p>
+          
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">84</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

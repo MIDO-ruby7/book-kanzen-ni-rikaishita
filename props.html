@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — Props</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 7</b>フロントエンド</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">131</div></div>
+      <div class="titles">
+        <h1>Props</h1>
+      </div>
+    </div>
+    <p class="subtitle">親から子のComponentへ渡す「荷物」</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>親のComponentから子のComponentへ、表示内容や設定値を渡すためのデータ。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>同じボタンComponentでも「送信」と表示したい場所と「キャンセル」と表示したい場所がある。<br>
+             Componentは使い回しつつ、表示内容だけ呼び出し側で変えたいというニーズがあった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>それまではComponentごとに文言を書き換えたコピーを作っていた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>コピーして文言を変更</th><th class="h-docker">Propsで外から渡す</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">表示の出し分け</td><td>ボタンごとにComponentをコピーして文言を変更</td><td class="h-docker">1つのComponentにPropsで文言を渡す</td></tr>
+            <tr><td class="rowhead">修正のしやすさ</td><td>コピーした数だけ修正が必要</td><td class="h-docker">Component本体を直せば全箇所に反映</td></tr>
+            <tr><td class="rowhead">データの向き</td><td>決まっていない</td><td class="h-docker">親→子への一方向</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>Props で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-network"/></svg><div class="cap">呼び出し側から表示内容を指定できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-package"/></svg><div class="cap">Componentを使い回しやすくなる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-layers"/></svg><div class="cap">Stateと組み合わせて使う</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>Propsは「親から子への一方向」の受け渡し。<br>
+         逆に子から親へ伝えたい時は、関数をPropsとして渡してもらい、それを呼び出す形にする。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連する技術</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-cube"/></svg></div>
+        <div>
+          <div class="kw-name">Component</div>
+          <p class="kw-desc">Propsを受け取る部品。</p>
+          <span class="kw-page">P.129</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-file"/></svg></div>
+        <div>
+          <div class="kw-name">State</div>
+          <p class="kw-desc">Propsのもとになることが多いデータ。</p>
+          <span class="kw-page">P.130</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">131</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

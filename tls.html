@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — TLS</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 2</b>Webのしくみ</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">37</div></div>
+      <div class="titles">
+        <h1>TLS</h1>
+      </div>
+    </div>
+    <p class="subtitle">HTTPSの"S"の中身を作っている技術</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>通信を暗号化し、相手が本物であることも確認する仕組み。HTTPSの安全性を支えている。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>旧来のSSLに脆弱性が発見され、暗号方式を強化しつつ互換性を保った新しい暗号化の仕組みが必要になった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>SSLという名称の暗号化方式が使われていたが、既知の脆弱性が積み重なり安全性を維持できなくなっていた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>SSL（旧世代）</th><th class="h-docker">TLS（後継）</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">名前</td><td>SSL 2.0/3.0</td><td class="h-docker">TLS 1.0〜1.3として進化</td></tr>
+            <tr><td class="rowhead">安全性</td><td>脆弱性が見つかり非推奨に</td><td class="h-docker">暗号方式を強化して安全性を維持</td></tr>
+            <tr><td class="rowhead">現状の呼び方</td><td>慣習で"SSL証明書"と呼ばれ続ける</td><td class="h-docker">実体はTLSで通信している</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>TLS で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-cube"/></svg><div class="cap">通信内容を暗号化できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-scale"/></svg><div class="cap">通信相手が本物か確認できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-network"/></svg><div class="cap">古いバージョンを無効化して安全性を保てる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>「SSL証明書」という呼び方は残っているが、<br>
+         実際に通信を守っているのは後継技術のTLS。名前だけが昔のまま定着している。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連キーワード</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-cube"/></svg></div>
+        <div>
+          <div class="kw-name">HTTPS</div>
+          <p class="kw-desc">TLSによって暗号化されたHTTP通信。</p>
+          <span class="kw-page">P.26</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-file"/></svg></div>
+        <div>
+          <div class="kw-name">SSL証明書</div>
+          <p class="kw-desc">TLS通信で相手の身元を証明する電子証明書。</p>
+          <span class="kw-page">P.38</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-cloud"/></svg></div>
+        <div>
+          <div class="kw-name">Let's Encrypt</div>
+          <p class="kw-desc">無料でSSL証明書を発行してくれる認証局。</p>
+          <span class="kw-page">P.39</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">37</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

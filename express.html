@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — Express</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 8</b>バックエンド言語・フレームワーク</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">178</div></div>
+      <div class="titles">
+        <h1>Express</h1>
+      </div>
+    </div>
+    <p class="subtitle">Node.jsに最小限の骨組みだけを足した、軽量Webフレームワーク</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>Node.js上で動く、必要なものだけを自分で組み合わせるミニマルなWebフレームワーク。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>Node.jsだけでWebサーバーを書こうとすると、ルーティングやリクエスト処理を毎回自前で実装する必要があった。<br>
+             この定型作業を薄いレイヤーで肩代わりするために開発された。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>それまではNode.jsの標準モジュール（http）だけを使い、ルーティングなどを自分でゴリゴリ実装する必要があった。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>Node.js標準（httpモジュール）</th><th class="h-docker">Express</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">ルーティング</td><td>自前で分岐処理を実装</td><td class="h-docker">app.get()などで簡潔に記述</td></tr>
+            <tr><td class="rowhead">機能の追加</td><td>全て自作</td><td class="h-docker">ミドルウェアを差し込むだけ</td></tr>
+            <tr><td class="rowhead">構成の自由度</td><td>低い（そもそも骨組みがない）</td><td class="h-docker">高い（薄いので好きに組める）</td></tr>
+            <tr><td class="rowhead">向いている場面</td><td>極小のスクリプト</td><td class="h-docker">API・軽量なWebサーバー</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>Express で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-server"/></svg><div class="cap">最小限の記述でAPIを作れる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-layers"/></svg><div class="cap">ミドルウェアで機能を拡張できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-scale"/></svg><div class="cap">構成を自由に設計できる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>Expressは「機能を持たせすぎない」ことが強み。<br>
+         薄いからこそ、必要なライブラリだけを自分で組み合わせられる。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">比較するフレームワーク</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-cloud"/></svg></div>
+        <div>
+          <div class="kw-name">Hono</div>
+          <p class="kw-desc">Edge環境向けに生まれた、より軽量なフレームワーク。</p>
+          <span class="kw-page">P.179</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">178</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

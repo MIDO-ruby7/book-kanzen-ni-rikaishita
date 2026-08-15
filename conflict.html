@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — Conflict</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 1</b>Git・GitHub</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">11</div></div>
+      <div class="titles">
+        <h1>Conflict</h1>
+      </div>
+    </div>
+    <p class="subtitle">同時に手を加えた瞬間に鳴る警報</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>同じ箇所を複数人が別々に変更していて、Gitが自動で統合できなくなった状態。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>複数人が同じファイルの同じ箇所を同時に編集すると、<br>
+             片方の変更が知らないうちに消えてしまうことがあった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>後から保存した人のファイルで上書きされ、先の変更は静かに消えていた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>無自覚な上書き</th><th class="h-docker">Conflict</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">検出</td><td>気づかれない</td><td class="h-docker">明示的に警告される</td></tr>
+            <tr><td class="rowhead">消える変更</td><td>静かに消えてしまう</td><td class="h-docker">両方残った上で選べる</td></tr>
+            <tr><td class="rowhead">解決方法</td><td>誰かに聞いて復元する</td><td class="h-docker">該当箇所を見て手で選ぶ</td></tr>
+            <tr><td class="rowhead">発生タイミング</td><td>上書き保存の瞬間</td><td class="h-docker">merge・pull時に判明する</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>Conflict で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-scale"/></svg><div class="cap">変更が知らずに消えなくなる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-monitor"/></svg><div class="cap">衝突箇所だけピンポイントで確認</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-pen"/></svg><div class="cap">どちらを残すか自分で選べる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>コンフリクトは「事故」ではなく「事前に気づけてラッキー」くらいの気持ちで直すもの。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連キーワード</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-scale"/></svg></div>
+        <div>
+          <div class="kw-name">Merge</div>
+          <p class="kw-desc">コンフリクトが表面化しやすい統合操作。</p>
+          <span class="kw-page">P.8</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-cloud"/></svg></div>
+        <div>
+          <div class="kw-name">Pull</div>
+          <p class="kw-desc">コンフリクトが判明するもう一つの場面。</p>
+          <span class="kw-page">P.7</span>
+        </div>
+      </div>
+    </div>
+    <div class="side-group">
+      <div class="group-label">一緒に覚えたい言葉</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-monitor"/></svg></div>
+        <div>
+          <div class="kw-name">マージツール</div>
+          <p class="kw-desc">衝突箇所を見比べながら解決を助けるツール。</p>
+          
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-file"/></svg></div>
+        <div>
+          <div class="kw-name">Diff</div>
+          <p class="kw-desc">変更前後の違いを比較する表示形式。</p>
+          
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">11</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

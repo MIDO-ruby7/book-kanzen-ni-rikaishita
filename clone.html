@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — Clone</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 1</b>Git・GitHub</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">2</div></div>
+      <div class="titles">
+        <h1>Clone</h1>
+      </div>
+    </div>
+    <p class="subtitle">まるごと持ち帰れる、プロジェクトのコピー機</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>リモートリポジトリの中身を、変更履歴つきで手元にまるごとコピーしてくること。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>他のPCやメンバーの環境に、同じプロジェクトを履歴ごと持ってくる方法が必要だった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>リポジトリの中身をZIPでダウンロードして展開していた（履歴は付いてこない）。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>ZIPダウンロード</th><th class="h-docker">Clone</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">手に入るもの</td><td>最新ファイルのみ</td><td class="h-docker">全履歴つきのコピー</td></tr>
+            <tr><td class="rowhead">更新の追従</td><td>そのつどダウンロードし直す</td><td class="h-docker">pullで差分だけ取得</td></tr>
+            <tr><td class="rowhead">変更の反映</td><td>できない・別送するしかない</td><td class="h-docker">push・pullで同期できる</td></tr>
+            <tr><td class="rowhead">初期セットアップ</td><td>展開してまた一からやり直し</td><td class="h-docker">git clone のひと言で完了</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>Clone で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-package"/></svg><div class="cap">履歴ごと丸ごと持ってこれる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-laptop"/></svg><div class="cap">どのPCでも同じ環境を再現</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-clock"/></svg><div class="cap">続きの作業をすぐ始められる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>cloneするのは最初の1回だけ。2回目以降は pull で差分だけを取ってくる。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連キーワード</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-server"/></svg></div>
+        <div>
+          <div class="kw-name">Repository</div>
+          <p class="kw-desc">変更履歴をまとめて記録する保管庫。</p>
+          <span class="kw-page">P.1</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-cloud"/></svg></div>
+        <div>
+          <div class="kw-name">Pull</div>
+          <p class="kw-desc">クローン後、最新の変更を取り込む操作。</p>
+          <span class="kw-page">P.7</span>
+        </div>
+      </div>
+    </div>
+    <div class="side-group">
+      <div class="group-label">一緒に覚えたい言葉</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-network"/></svg></div>
+        <div>
+          <div class="kw-name">Origin</div>
+          <p class="kw-desc">cloneした際に自動で付くリモートの標準名。</p>
+          
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-scale"/></svg></div>
+        <div>
+          <div class="kw-name">SSH</div>
+          <p class="kw-desc">安全に通信するための鍵認証の仕組み。</p>
+          
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">2</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — SQLite</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 6</b>データベース</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">107</div></div>
+      <div class="titles">
+        <h1>SQLite</h1>
+      </div>
+    </div>
+    <p class="subtitle">サーバーいらずの「ファイル1つで完結するDB」</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>サーバープロセスを立てず、1つのファイルとしてデータベースを扱える軽量なリレーショナルデータベース。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>個人開発や簡単な検証のたびに本格的なDBサーバーを構築するのは、規模に見合わないコストがかかっていた。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>SQLiteを知る前は、小さいアプリでも毎回サーバー型のRDBを立てて使っていた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>サーバー型RDB</th><th class="h-docker">SQLite</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">セットアップの手軽さ</td><td>サーバーの起動・設定が必要</td><td class="h-docker">ファイル1つで即使える</td></tr>
+            <tr><td class="rowhead">同時書き込みへの強さ</td><td>複数接続の同時書き込みに強い</td><td class="h-docker">同時書き込みは苦手</td></tr>
+            <tr><td class="rowhead">向いている用途</td><td>本番の複数人利用</td><td class="h-docker">試作・テスト・小規模用途</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>SQLite で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-laptop"/></svg><div class="cap">インストール不要ですぐ試せる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-clock"/></svg><div class="cap">テスト・開発環境で高速に動く</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-file"/></svg><div class="cap">ファイル1つで持ち運べる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>SQLiteは「試作・テスト・小規模」の相棒。<br>
+         同時アクセスが多い本番サービスでは、素直にMySQLやPostgreSQLに切り替えた方がいい。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">比較する技術</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-server"/></svg></div>
+        <div>
+          <div class="kw-name">MySQL</div>
+          <p class="kw-desc">本番の複数人利用に向く定番RDB。</p>
+          <span class="kw-page">P.105</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-server"/></svg></div>
+        <div>
+          <div class="kw-name">PostgreSQL</div>
+          <p class="kw-desc">機能重視ならこちらのRDB。</p>
+          <span class="kw-page">P.106</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">107</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

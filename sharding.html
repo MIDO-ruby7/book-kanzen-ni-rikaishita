@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — Sharding</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 6</b>データベース</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">113</div></div>
+      <div class="titles">
+        <h1>Sharding</h1>
+      </div>
+    </div>
+    <p class="subtitle">1つのDBじゃ抱えきれなくなったデータを「横に分ける」</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>1つの大きなテーブル・DBを複数のサーバーに分割して、それぞれに一部のデータだけを持たせる仕組み。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>サービスの成長でデータ量・アクセス数が増えると、1台のDBサーバーだけでは処理を捌ききれなくなっていった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>シャーディング前は、1台のDBサーバーにスペックを盛って（スケールアップして）対応していた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>スケールアップ（1台を強化）</th><th class="h-docker">シャーディング（複数台に分割）</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">対応できるデータ量</td><td>1台のスペックが上限になる</td><td class="h-docker">台数を増やして拡張できる</td></tr>
+            <tr><td class="rowhead">JOIN・トランザクション</td><td>同じDB内なら容易</td><td class="h-docker">シャードをまたぐと難しくなる</td></tr>
+            <tr><td class="rowhead">構成の複雑さ</td><td>シンプル</td><td class="h-docker">分割ルールの設計・運用が複雑になる</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>Sharding で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-layers"/></svg><div class="cap">1台の限界を超えて扱える</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-network"/></svg><div class="cap">台数を増やして負荷分散できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-scale"/></svg><div class="cap">成長に合わせて拡張できる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>シャーディングは強力だが後戻りが大変な設計判断。<br>
+         「本当に今シャーディングが必要か」は、まずレプリケーションやキャッシュで粘れないか検討してから。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連するキーワード</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-network"/></svg></div>
+        <div>
+          <div class="kw-name">レプリケーション</div>
+          <p class="kw-desc">分割ではなく複製で負荷を分散する、もう1つの手段。</p>
+          <span class="kw-page">P.114</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-scale"/></svg></div>
+        <div>
+          <div class="kw-name">ACID</div>
+          <p class="kw-desc">DBを分割するほど、この4性質を保つのが難しくなる。</p>
+          <span class="kw-page">P.112</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">113</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

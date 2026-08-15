@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — View（ビュー）</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 6</b>データベース</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">110</div></div>
+      <div class="titles">
+        <h1>View（ビュー）</h1>
+      </div>
+    </div>
+    <p class="subtitle">よく使うSQLに名前をつけて「見た目だけのテーブル」にする</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>複雑なSELECT文をあらかじめ定義しておき、あたかも1つのテーブルであるかのように参照できるようにする仕組み。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>複数テーブルをJOINする同じ集計ロジックのSQLをあちこちのコードに書くと、修正漏れによって画面ごとに結果が食い違う不整合が起きやすかった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>ビューを知らない頃は、同じJOIN・集計ロジックのSQLをあちこちに書いていた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>都度SQLを書く</th><th class="h-docker">ビューを使う</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">SQLの重複</td><td>あちこちに同じSQLが散らばる</td><td class="h-docker">ビューとして1箇所にまとまる</td></tr>
+            <tr><td class="rowhead">修正時に直す箇所</td><td>書いた分だけ全部直す必要がある</td><td class="h-docker">ビューの定義を直せばよい</td></tr>
+            <tr><td class="rowhead">実データの保存</td><td>該当しない</td><td class="h-docker">ビュー自体は実体を持たない</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>View（ビュー） で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-file"/></svg><div class="cap">複雑なSQLを使い回せる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-scale"/></svg><div class="cap">ロジックを1箇所にまとめられる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-image"/></svg><div class="cap">テーブルのように扱える</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>ビューはあくまで「保存されたSELECT文」で、実データは持たない。<br>
+         頻繁に叩く重い集計は、マテリアライズドビューやキャッシュも検討したい。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連するキーワード</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-wheel"/></svg></div>
+        <div>
+          <div class="kw-name">Stored Procedure</div>
+          <p class="kw-desc">SELECT文だけでなく、処理そのものをDB側に置く仕組み。</p>
+          <span class="kw-page">P.111</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-clock"/></svg></div>
+        <div>
+          <div class="kw-name">Cache</div>
+          <p class="kw-desc">重い集計を都度計算させたくない点はビューと共通。</p>
+          <span class="kw-page">P.100</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">110</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — a11y（アクセシビリティ）</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 7</b>フロントエンド</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">160</div></div>
+      <div class="titles">
+        <h1>a11y（アクセシビリティ）</h1>
+      </div>
+    </div>
+    <p class="subtitle">「使える人」を無意識に絞り込んでいないか、を問い直す視点</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>視覚・聴覚・身体的な違いなどに関わらず、誰もがWebサイトを使えるようにする設計・実装の総称。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>見た目や動作の実装ばかりに気を取られ、スクリーンリーダーや<br>
+             キーボード操作だけで使うユーザーへの配慮が後回しになっていた。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>それまでは「動けばOK」「見た目が良ければOK」という基準で実装され、a11yは余力があれば対応する程度だった。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>見た目・動作優先の実装</th><th class="h-docker">a11y対応の実装</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">対象ユーザー</td><td>標準的な操作ができる人が前提</td><td class="h-docker">視覚/聴覚/身体的な違いがある人も含む</td></tr>
+            <tr><td class="rowhead">チェック項目</td><td>デザイン通りに動くか</td><td class="h-docker">altテキスト・コントラスト比・操作性も確認</td></tr>
+            <tr><td class="rowhead">評価軸</td><td>見た目の完成度</td><td class="h-docker">WCAGなどの基準への準拠度</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>a11y（アクセシビリティ） で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-scale"/></svg><div class="cap">誰でも使える設計を評価軸に追加</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-file"/></svg><div class="cap">altテキストやラベルを適切に付与</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-network"/></svg><div class="cap">キーボードのみでも操作可能に</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>「アクセシビリティ対応」は追加機能ではなく、<br>
+         「そもそも誰が使えなかったか」を問い直す作業、という差分。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連する語</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-network"/></svg></div>
+        <div>
+          <div class="kw-name">i18n（国際化）</div>
+          <p class="kw-desc">言語や地域による差分を吸収する対応。</p>
+          <span class="kw-page">P.161</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-clock"/></svg></div>
+        <div>
+          <div class="kw-name">Core Web Vitals</div>
+          <p class="kw-desc">速度など体感品質を測る指標。</p>
+          <span class="kw-page">P.162</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">160</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

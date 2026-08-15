@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — TOML</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 3</b>データフォーマット</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">53</div></div>
+      <div class="titles">
+        <h1>TOML</h1>
+      </div>
+    </div>
+    <p class="subtitle">「インデントミスに悩みたくない」から生まれた設定形式</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>key = value の並びで設定を書く、あいまいさの少ないシンプルな設定ファイル形式。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>パッケージ管理ツールの設定ファイルには、複雑な入れ子構造よりも誰が読んでも一意に解釈できるシンプルな記法が向いていた。あいまいさの少ない設定形式が求められた。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>YAMLは表現力が高い分、インデントの深さやリストの書き方に複数の流儀があり、ツールによって解釈が割れることがあった。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>YAML</th><th class="h-docker">TOML</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">書き方の自由度</td><td>高い（複数の書き方がある）</td><td class="h-docker">低い（迷いにくい）</td></tr>
+            <tr><td class="rowhead">ネスト表現</td><td>インデントで表現</td><td class="h-docker">[section] で区切る</td></tr>
+            <tr><td class="rowhead">向いている場面</td><td>複雑な設定・CI定義</td><td class="h-docker">ツールの設定ファイル1枚</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>TOML で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-pen"/></svg><div class="cap">key = value で直感的に書ける</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-package"/></svg><div class="cap">Cargo.tomlなどパッケージ設定の定番</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-scale"/></svg><div class="cap">書き方のブレが少なく読み間違えにくい</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>TOMLは「Tom's Obvious, Minimal Language」の略。<br>
+         名前の通り「誰が読んでも解釈がブレない」ことを目指して設計されている。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">比較する技術</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-scribble"/></svg></div>
+        <div>
+          <div class="kw-name">YAML</div>
+          <p class="kw-desc">インデントで階層構造を表す設定ファイル形式。</p>
+          <span class="kw-page">P.52</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-file"/></svg></div>
+        <div>
+          <div class="kw-name">JSON</div>
+          <p class="kw-desc">括弧で構造を表すデータ形式。プログラムからの生成向き。</p>
+          <span class="kw-page">P.51</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">53</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

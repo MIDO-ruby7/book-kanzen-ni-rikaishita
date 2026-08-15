@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — OpenAPI</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 4</b>API</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">65</div></div>
+      <div class="titles">
+        <h1>OpenAPI</h1>
+      </div>
+    </div>
+    <p class="subtitle">「口頭で伝えていたAPI仕様」をファイルにした約束事</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>APIのエンドポイントや入出力の形を、YAMLやJSONで記述する仕様のフォーマット。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>API仕様が文書化されていない現場では、フロントエンドとバックエンドの間でレスポンス形式のすり合わせを、その都度コードを読んで行う必要があった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>OpenAPIがない現場では、API仕様はドキュメントに手書きするか、コードを読んで確認するしかなかった。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>手書きの仕様書・口頭確認</th><th class="h-docker">OpenAPI</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">仕様の形</td><td>Wordやスプレッドシートに個別記述</td><td class="h-docker">決まったフォーマット（YAML/JSON）</td></tr>
+            <tr><td class="rowhead">実装との整合</td><td>更新を忘れて仕様と実装がズレる</td><td class="h-docker">ツールで検証・モックまで生成できる</td></tr>
+            <tr><td class="rowhead">共有のしやすさ</td><td>ファイルを都度共有</td><td class="h-docker">Swagger UIなどでそのまま閲覧できる</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>OpenAPI で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-file"/></svg><div class="cap">API仕様を1つのファイルにまとめられる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-monitor"/></svg><div class="cap">Swagger UIなどでブラウザから確認できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-package"/></svg><div class="cap">モックサーバーやクライアントコードを自動生成</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>OpenAPIは元々「Swagger」という名前のツールから始まった仕様。<br>
+         APIの仕様書をコードと同じように"読める形式"で管理できるのが最大のメリット。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連する語</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-network"/></svg></div>
+        <div>
+          <div class="kw-name">API</div>
+          <p class="kw-desc">OpenAPIはこのAPIの仕様を記述するためのフォーマット。</p>
+          <span class="kw-page">P.61</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-scale"/></svg></div>
+        <div>
+          <div class="kw-name">スキーマ（Schema）</div>
+          <p class="kw-desc">OpenAPIの中でリクエスト・レスポンスの形を定義する仕組み。</p>
+          <span class="kw-page">P.56</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">65</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<!-- {{TITLE}} は項目名に置き換える（ブラウザのタブ名になるだけ） -->
+<title>{{TITLE}}</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============================================================
+     1項目 = 1ページ の雛形。
+     このファイルをコピーして中身を差し替えれば別ページになる。
+       手順:
+       1. cp template.html 063-xxx.html
+       2. 下の {{...}} を書き換える
+       3. vivliostyle.config.js の entry に 063-xxx.html を追加
+
+     図（アイコン）の差し替え:
+       <use href="icons.svg#ID"/> の ID を変えるだけ。
+       使えるID: ic-cube / ic-monitor / ic-file / ic-image / ic-wheel
+                 ic-clock / ic-laptop / ic-package / ic-scribble / ic-pen
+       新しい図が必要なら icons.svg に <symbol id="ic-xxx"> を足す。
+     ============================================================ -->
+<article class="entry">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>{{CHAPTER}}</b>{{CHAPTER_NAME}}</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">{{NO}}</div></div>
+      <div class="titles">
+        <h1><ruby>{{TERM}}<rt>{{TERM_RUBY}}</rt></ruby></h1>
+      </div>
+    </div>
+    <p class="subtitle">{{SUBTITLE}}</p>
+
+    <div class="head-lower">
+      <div class="cat-col">
+        <svg><use href="icons.svg#{{CAT_ICON}}"/></svg>
+        <div class="cat-label">{{CAT_LABEL}}</div>
+      </div>
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>{{ONELINE}}</p>
+      </div>
+    </div>
+
+    <!-- ① テキスト＋図（任意）。図が不要なら .with-fig を外して <p> だけにする -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>{{Q1}}</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>{{A1}}</p>
+          <span class="fig"><svg><use href="icons.svg#{{Q1_ICON}}"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② テキスト＋比較表（任意）。表が不要なら <table> ごと削除 -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>{{Q2}}</h2>
+      <div class="body">
+        <p>{{A2}}</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>{{COL_A}}</th><th class="h-docker">{{COL_B}}</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">{{ROW1}}</td><td>{{R1A}}</td><td class="h-docker">{{R1B}}</td></tr>
+            <tr><td class="rowhead">{{ROW2}}</td><td>{{R2A}}</td><td class="h-docker">{{R2B}}</td></tr>
+            <tr><td class="rowhead">{{ROW3}}</td><td>{{R3A}}</td><td class="h-docker">{{R3B}}</td></tr>
+            <tr><td class="rowhead">{{ROW4}}</td><td>{{R4A}}</td><td class="h-docker">{{R4B}}</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ アイコン3連（任意） -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>{{Q3}}</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#{{T1_ICON}}"/></svg><div class="cap">{{T1}}</div></div>
+          <div class="cell"><svg><use href="icons.svg#{{T2_ICON}}"/></svg><div class="cap">{{T2}}</div></div>
+          <div class="cell"><svg><use href="icons.svg#{{T3_ICON}}"/></svg><div class="cap">{{T3}}</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>{{MEMO}}</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー（関連キーワード） ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+
+    <!-- グループは必要なだけ増減できる。1グループ内の .kw も増減自由 -->
+    <div class="side-group">
+      <div class="group-label">{{GROUP1}}</div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#{{KW1_ICON}}"/></svg></div>
+        <div>
+          <div class="kw-name">{{KW1_NAME}}</div>
+          <p class="kw-desc">{{KW1_DESC}}</p>
+          <span class="kw-page">{{KW1_PAGE}}</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-memo">
+      <div class="lbl">キーワードメモ</div>
+      <p>{{SIDE_MEMO}}</p>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">{{NO}}</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

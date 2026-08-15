@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — Reset</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 1</b>Git・GitHub</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">13</div></div>
+      <div class="titles">
+        <h1>Reset</h1>
+      </div>
+    </div>
+    <p class="subtitle">今いる場所を、指定の地点まで巻き戻す</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>コミットの位置を過去に戻し、それ以降の変更をなかったことにする（または手元に戻す）こと。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>直前のコミットを間違えたり、手元の作業をやり直したいのに<br>
+             古いファイルが見つからないことがあった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>バックアップフォルダから昔のバージョンのファイルを探し出して上書きしていた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>旧ファイル探し</th><th class="h-docker">Reset</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">戻し方</td><td>昔のファイルを探して上書き</td><td class="h-docker">コミットを指定して戻すだけ</td></tr>
+            <tr><td class="rowhead">戻る範囲</td><td>フォルダ単位でバラバラ</td><td class="h-docker">リポジトリ全体を正確に指定</td></tr>
+            <tr><td class="rowhead">変更の扱い</td><td>上書きすると消えてしまう</td><td class="h-docker">オプションで手元に残せる</td></tr>
+            <tr><td class="rowhead">共有後の利用</td><td>特に区別なく使ってしまう</td><td class="h-docker">共有済みの履歴では避けるべき</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>Reset で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-wheel"/></svg><div class="cap">直前のコミットをやり直せる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-layers"/></svg><div class="cap">手元の変更を段階的に戻せる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-clock"/></svg><div class="cap">昔のファイルを探し回らずに済む</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>pushして共有済みの履歴をresetすると他の人と食い違ってしまう。そこはrevertの出番。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連キーワード</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-clock"/></svg></div>
+        <div>
+          <div class="kw-name">Revert</div>
+          <p class="kw-desc">resetより安全な、共有履歴向けの巻き戻し。</p>
+          <span class="kw-page">P.12</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-file"/></svg></div>
+        <div>
+          <div class="kw-name">Commit</div>
+          <p class="kw-desc">resetで戻す先を指定する単位。</p>
+          <span class="kw-page">P.5</span>
+        </div>
+      </div>
+    </div>
+    <div class="side-group">
+      <div class="group-label">一緒に覚えたい言葉</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-monitor"/></svg></div>
+        <div>
+          <div class="kw-name">HEAD</div>
+          <p class="kw-desc">今いるコミットの位置を指す目印。</p>
+          
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-file"/></svg></div>
+        <div>
+          <div class="kw-name">Working Tree</div>
+          <p class="kw-desc">今実際に作業しているファイル群のこと。</p>
+          
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">13</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

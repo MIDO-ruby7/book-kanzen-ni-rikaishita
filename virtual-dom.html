@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — Virtual DOM</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 7</b>フロントエンド</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">137</div></div>
+      <div class="titles">
+        <h1>Virtual DOM</h1>
+      </div>
+    </div>
+    <p class="subtitle">本物のDOMを直接触らないための「下書き」</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>実際のDOMを直接操作する代わりに、メモリ上に仮のツリーを作り、変化した部分だけを計算してから本物のDOMに反映する仕組み。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>本物のDOMを直接何度も書き換えると、ブラウザが都度レイアウトの再計算を行うため、<br>
+             Stateが頻繁に変わる画面では動作が重くなりがちだった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>それまではStateが変わるたびに、本物のDOMを直接書き換えていた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>DOMを直接操作</th><th class="h-docker">Virtual DOM経由</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">更新の単位</td><td>変更のたびに本物のDOMを書き換え</td><td class="h-docker">メモリ上の仮想ツリーで差分を計算してからまとめて反映</td></tr>
+            <tr><td class="rowhead">パフォーマンス</td><td>更新が多いと重くなりやすい</td><td class="h-docker">差分だけ反映するので効率的</td></tr>
+            <tr><td class="rowhead">書き方</td><td>DOM操作を自分で細かく制御</td><td class="h-docker">Stateの変化を宣言するだけで反映は任せられる</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>Virtual DOM で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-layers"/></svg><div class="cap">差分だけを計算して反映</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-cube"/></svg><div class="cap">本物のDOM操作を減らせる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-wheel"/></svg><div class="cap">Stateの変化に強い</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>「仮想」とはいえ実体はただのJavaScriptのオブジェクト。<br>
+         ReactはこのVirtual DOMを比較（diff）する仕組みで有名になった。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連する技術</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-network"/></svg></div>
+        <div>
+          <div class="kw-name">DOM</div>
+          <p class="kw-desc">Virtual DOMが最終的に反映する本物の木構造。</p>
+          <span class="kw-page">P.127</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-file"/></svg></div>
+        <div>
+          <div class="kw-name">State</div>
+          <p class="kw-desc">Virtual DOMが差分を計算するきっかけになるデータ。</p>
+          <span class="kw-page">P.130</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-cube"/></svg></div>
+        <div>
+          <div class="kw-name">Component</div>
+          <p class="kw-desc">Virtual DOMを使って更新される部品の単位。</p>
+          <span class="kw-page">P.129</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">137</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — Table</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 6</b>データベース</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">85</div></div>
+      <div class="titles">
+        <h1>Table</h1>
+      </div>
+    </div>
+    <p class="subtitle">データを行と列で整理する「表」そのもの</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>データを行（レコード）と列（カラム）に整理して格納する、データベースの基本単位。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>データを決まった形式のないテキストや配列にそのまま書き込むと、後から検索や更新を正確に行うことができなかった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>テキストや配列に、決まった形もなくデータを書き並べていた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>形が不定</th><th class="h-docker">Table</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">構造</td><td>毎回バラバラな形式になる</td><td class="h-docker">列でルールが決まっている</td></tr>
+            <tr><td class="rowhead">検索</td><td>どこに何があるか探す</td><td class="h-docker">列名で欲しいデータを取り出せる</td></tr>
+            <tr><td class="rowhead">追加</td><td>書式がブレやすい</td><td class="h-docker">同じ形式のレコードとして追加できる</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>Table で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-layers"/></svg><div class="cap">同じ形式でデータを並べられる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">列名で欲しいデータをすぐ取り出せる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-scale"/></svg><div class="cap">型やルールでデータの形を保てる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>テーブルは「エクセルの表」に近いイメージ。<br>
+         列（カラム）でルールを決め、行（レコード）でデータを積む。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">構成する要素</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-package"/></svg></div>
+        <div>
+          <div class="kw-name">Record</div>
+          <p class="kw-desc">テーブルの1行分のデータ。</p>
+          <span class="kw-page">P.86</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-wheel"/></svg></div>
+        <div>
+          <div class="kw-name">Primary Key</div>
+          <p class="kw-desc">1件を一意に特定する値。</p>
+          <span class="kw-page">P.87</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-scale"/></svg></div>
+        <div>
+          <div class="kw-name">Foreign Key</div>
+          <p class="kw-desc">他の表とつながりを持たせるキー。</p>
+          <span class="kw-page">P.88</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">85</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

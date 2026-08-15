@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — Zustand</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 7</b>フロントエンド</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">164</div></div>
+      <div class="titles">
+        <h1>Zustand</h1>
+      </div>
+    </div>
+    <p class="subtitle">Reduxの「お作法の多さ」に疲れた人たちが選んだ軽量な状態管理</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>Action/Reducerのような決まった手順を省き、少ないコードでReactの状態を共有できる軽量な状態管理ライブラリ。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>Reduxは状態を予測可能に保てる一方、覚えることや書く量が<br>
+             多く、小〜中規模の画面にはオーバースペックに感じられていた。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>それまでは、状態管理といえばRedux一択で、小さな機能追加にもRedux一式の手順を書いていた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>Redux（手順が多い）</th><th class="h-docker">Zustand</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">書く量</td><td>Action/Reducer/Dispatchを定義</td><td class="h-docker">1つの関数でストアを定義するだけ</td></tr>
+            <tr><td class="rowhead">学習コスト</td><td>専用の設計思想を理解する必要</td><td class="h-docker">素のJSの感覚に近く読み書きしやすい</td></tr>
+            <tr><td class="rowhead">向いている規模</td><td>大規模・チーム開発向け</td><td class="h-docker">小〜中規模でも導入しやすい</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>Zustand で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-wheel"/></svg><div class="cap">少ないコードで状態を共有</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-scribble"/></svg><div class="cap">覚えることが少ない</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-package"/></svg><div class="cap">必要な機能だけ後から追加可能</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>「Reduxほど厳格でなくていい」という現場の本音から<br>
+         生まれた選択肢、という差分。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">比較する技術</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-layers"/></svg></div>
+        <div>
+          <div class="kw-name">Redux</div>
+          <p class="kw-desc">手順は多いが予測可能性の高い状態管理。</p>
+          <span class="kw-page">P.163</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-layers"/></svg></div>
+        <div>
+          <div class="kw-name">Pinia</div>
+          <p class="kw-desc">Vue版の似た立ち位置の状態管理。</p>
+          <span class="kw-page">P.165</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">164</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

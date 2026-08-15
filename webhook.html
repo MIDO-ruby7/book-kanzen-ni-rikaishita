@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — Webhook</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 5</b>通信プロトコル</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">73</div></div>
+      <div class="titles">
+        <h1>Webhook</h1>
+      </div>
+    </div>
+    <p class="subtitle">「向こうから電話がかかってくる」通知の仕組み</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>サービス側で何かが起きたときに、登録しておいたURLへ自動でリクエストを送ってくれる仕組み。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>外部サービスの状態変化（決済完了など）を検知するために定期的にAPIを呼び続けると、確認間隔ぶんのタイムラグが生じ、サーバー負荷も無駄にかかっていた。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>Webhookがない場合、外部サービスの状態変化を知るには、こちらから定期的にAPIを叩いて確認（ポーリング）するしかない。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>定期的なポーリング</th><th class="h-docker">Webhook</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">確認の主体</td><td>自分から定期的に聞きに行く</td><td class="h-docker">相手が変化した瞬間に知らせてくれる</td></tr>
+            <tr><td class="rowhead">タイムラグ</td><td>ポーリングの間隔ぶん遅れる</td><td class="h-docker">ほぼリアルタイムに届く</td></tr>
+            <tr><td class="rowhead">実装の準備</td><td>APIを叩くコードだけでよい</td><td class="h-docker">通知を受け取るURL（受け口）を用意する</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>Webhook で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-cloud"/></svg><div class="cap">外部サービスからの通知を受け取れる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-clock"/></svg><div class="cap">ポーリングよりリアルタイムに近い</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-network"/></svg><div class="cap">決済・デプロイ通知など幅広く使われる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>Webhookは「登録したURLに向かって、相手がPOSTリクエストを送ってくる」だけの単純な仕組み。GitHubのPush通知やStripeの決済結果通知などで馴染み深い。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連する語</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-layers"/></svg></div>
+        <div>
+          <div class="kw-name">Pub/Sub</div>
+          <p class="kw-desc">Webhookと同じく通知の仕組みだが、間に仲介役を挟む点が異なる。</p>
+          <span class="kw-page">P.74</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-network"/></svg></div>
+        <div>
+          <div class="kw-name">Endpoint</div>
+          <p class="kw-desc">Webhookの通知を受け取るための窓口として自分のAPIに用意する。</p>
+          <span class="kw-page">P.62</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">73</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

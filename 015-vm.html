@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — VM</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<article class="entry recto">
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 9</b>クラウド/インフラ</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">401</div></div>
+      <div class="titles"><h1><ruby>VM<rt>ブイエム</rt></ruby></h1></div>
+    </div>
+    <p class="subtitle">「1台の中に、もう1台の PC」を作る技術</p>
+
+    <div class="head-lower">
+      <div class="cat-col">
+        <svg><use href="icons.svg#ic-server"/></svg>
+        <div class="cat-label">インフラ<br>仮想化</div>
+      </div>
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>物理マシンの上に、OS ごと丸ごとの“もう一台”を立ち上げて動かす仕組み。</p>
+      </div>
+    </div>
+
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>高性能なサーバを 1 つの用途で遊ばせず、<br>
+             独立した複数の環境に分けて使いたかったから。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>物理サーバーを 1 台に 1 用途で購入・設置していた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>物理サーバー</th><th class="h-docker">VM（仮想マシン）</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">1 台の使い方</td><td>1 用途のみ</td><td class="h-docker">複数に分割できる</td></tr>
+            <tr><td class="rowhead">コスト</td><td>用途の数だけ購入</td><td class="h-docker">1 台で済む</td></tr>
+            <tr><td class="rowhead">柔軟性</td><td>増やすには購入</td><td class="h-docker">すぐ追加できる</td></tr>
+            <tr><td class="rowhead">分離</td><td>物理的に完全に別</td><td class="h-docker">OS レベルで分離</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>VM で何ができる？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-monitor"/></svg><div class="cap">別 OS をそのまま動かせる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-package"/></svg><div class="cap">環境を丸ごと保存できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-clock"/></svg><div class="cap">スナップショットで戻せる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>VM は「箱ごと PC」。重いぶん、OS レベルで完全に分けられるのが強み。</p>
+    </div>
+
+  </div>
+
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+
+    <div class="side-group">
+      <div class="group-label">比較する技術</div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-cube"/></svg></div>
+        <div>
+          <div class="kw-name">Docker</div>
+          <p class="kw-desc">アプリを箱に入れて軽く動かす技術。</p>
+          <span class="kw-page">P.301</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-group">
+      <div class="group-label">一緒に使う技術</div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-cube"/></svg></div>
+        <div>
+          <div class="kw-name">Container</div>
+          <p class="kw-desc">アプリ単位で分ける、軽い実行環境。</p>
+          <span class="kw-page">P.309</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-group">
+      <div class="group-label">次に読むなら</div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-wheel"/></svg></div>
+        <div>
+          <div class="kw-name">Kubernetes</div>
+          <p class="kw-desc">大量のコンテナを自動で運用する仕組み。</p>
+          <span class="kw-page">P.441</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-memo">
+      <div class="lbl">キーワードメモ</div>
+      <p>仮想化は「1 台を分ける」発想。分け方の細かさで VM とコンテナに分かれる。</p>
+    </div>
+  </aside>
+
+  <footer class="page-foot">
+    <span class="folio">401</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+</article>
+</body>
+</html>

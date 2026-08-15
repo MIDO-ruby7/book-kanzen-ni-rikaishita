@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — CSSフレームワーク</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 7</b>フロントエンド</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">141</div></div>
+      <div class="titles">
+        <h1>CSSフレームワーク</h1>
+      </div>
+    </div>
+    <p class="subtitle">よく使うデザインをあらかじめ用意しておく道具箱</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>ボタンやレイアウトなど、よく使うデザインパーツのCSSをあらかじめ用意しておき、クラス名を付けるだけで使えるようにしたもの。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>CSSは自由度が高い分、余白や色、レイアウトなどの細部を一から調整するのに時間がかかり、<br>
+             デザイナーがいないチームでは見た目の統一も難しかった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>それまではCSSを一から書いて、見た目を1つずつ作り込んでいた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>CSSを一から書く</th><th class="h-docker">CSSフレームワーク</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">見た目の作成</td><td>余白・色・角丸などを1つずつ指定</td><td class="h-docker">用意されたクラスを付けるだけ</td></tr>
+            <tr><td class="rowhead">デザインの統一感</td><td>チームやページごとにばらつきが出やすい</td><td class="h-docker">フレームワークのルールで自然と揃う</td></tr>
+            <tr><td class="rowhead">学習コスト</td><td>CSSの知識が幅広く必要</td><td class="h-docker">クラス名の一覧を覚えれば書き始められる</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>CSSフレームワーク で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-package"/></svg><div class="cap">クラス名を付けるだけで見た目が整う</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-scale"/></svg><div class="cap">チーム内でデザインが揃いやすい</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-wheel"/></svg><div class="cap">独自色を出すにはカスタマイズが必要</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>BootstrapやTailwind CSSなどが代表格。<br>
+         似た役割にUIコンポーネントライブラリがあるが、そちらはボタンなどの「部品」そのものを提供する点が違う。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連する技術</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-image"/></svg></div>
+        <div>
+          <div class="kw-name">CSS</div>
+          <p class="kw-desc">CSSフレームワークの土台になる言語。</p>
+          <span class="kw-page">P.122</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-cube"/></svg></div>
+        <div>
+          <div class="kw-name">UIコンポーネントライブラリ</div>
+          <p class="kw-desc">見た目に加えて動きまで含む部品を提供するもの。</p>
+          <span class="kw-page">P.142</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">141</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

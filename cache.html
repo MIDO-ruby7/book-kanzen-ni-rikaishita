@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — Cache</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 6</b>データベース</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">100</div></div>
+      <div class="titles">
+        <h1>Cache</h1>
+      </div>
+    </div>
+    <p class="subtitle">同じ答えを何度も計算しないための一時保管</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>一度取得・計算した結果を保存しておき、次回以降はそれを使い回して高速化する仕組み。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>同じ集計や問い合わせをアクセスのたびにDBへ直接投げ直すと、内容が変わっていなくても毎回同じ処理コストがかかっていた。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>キャッシュを知る前は、表示のたびに毎回DBへ直接問い合わせていた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>毎回DBに問い合わせ</th><th class="h-docker">キャッシュを使う</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">応答時間</td><td>毎回の処理時間がかかる</td><td class="h-docker">2回目以降はほぼ即返る</td></tr>
+            <tr><td class="rowhead">DBへの負荷</td><td>常にフルで問い合わせる</td><td class="h-docker">負荷を大きく減らせる</td></tr>
+            <tr><td class="rowhead">データの鮮度</td><td>常に最新</td><td class="h-docker">古い値を返す期間が発生しうる</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>Cache で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-clock"/></svg><div class="cap">応答が速くなる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-server"/></svg><div class="cap">DBへの負荷を減らせる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-scale"/></svg><div class="cap">速さと鮮度のトレードオフを学べる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>キャッシュは「賞味期限つきのメモ」。<br>
+         便利だけど、いつ・どう消すか（キャッシュ無効化）を決めておかないと、<br>
+         古いデータを返し続ける事故になる。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連するキーワード</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-cloud"/></svg></div>
+        <div>
+          <div class="kw-name">Redis</div>
+          <p class="kw-desc">メモリ上で動く、キャッシュの置き場所として定番。</p>
+          <span class="kw-page">P.108</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-network"/></svg></div>
+        <div>
+          <div class="kw-name">N+1</div>
+          <p class="kw-desc">ループ内クエリの多発も、キャッシュで緩和できることがある。</p>
+          <span class="kw-page">P.99</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">100</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

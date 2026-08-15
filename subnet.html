@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — サブネット（Subnet）</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 2</b>Webのしくみ</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">42</div></div>
+      <div class="titles">
+        <h1>サブネット（Subnet）</h1>
+      </div>
+    </div>
+    <p class="subtitle">IPアドレスを"部署ごと"に区切る発想</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>1つのネットワークを、用途や部署などの単位で複数の小さなネットワークに分割する仕組み。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>ネットワーク全体を1つの区画のまま運用すると、障害の影響範囲が広がりやすく、用途ごとのアクセス制御も難しかった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>ネットワークを1つの大きな区画としてまとめて管理しており、用途や部署ごとに細かく制御する手段がなかった。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>1つの大きなネットワーク</th><th class="h-docker">サブネットで分割</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">管理単位</td><td>全部まとめて1つ</td><td class="h-docker">用途ごと（公開用・非公開用など）に分割</td></tr>
+            <tr><td class="rowhead">障害の影響範囲</td><td>全体に波及しやすい</td><td class="h-docker">範囲を区切って影響を限定できる</td></tr>
+            <tr><td class="rowhead">セキュリティ</td><td>一律の設定しかできない</td><td class="h-docker">区画ごとに細かくアクセス制御できる</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>サブネット（Subnet） で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-layers"/></svg><div class="cap">ネットワークを用途ごとに分割できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-scale"/></svg><div class="cap">区画ごとにアクセス制御できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-network"/></svg><div class="cap">障害やトラブルの影響範囲を限定できる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>サブネットは「大きなオフィスのフロア分け」。<br>
+         全員を1フロアに詰め込まず、部署ごとに区切ることで管理しやすくする。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連キーワード</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-network"/></svg></div>
+        <div>
+          <div class="kw-name">IP Address</div>
+          <p class="kw-desc">サブネットが分割の対象とする住所そのもの。</p>
+          <span class="kw-page">P.29</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-scale"/></svg></div>
+        <div>
+          <div class="kw-name">NAT</div>
+          <p class="kw-desc">プライベートIPとグローバルIPを変換する仕組み。</p>
+          <span class="kw-page">P.41</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">42</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

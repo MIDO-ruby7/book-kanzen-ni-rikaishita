@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — ORM</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 6</b>データベース</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">91</div></div>
+      <div class="titles">
+        <h1>ORM</h1>
+      </div>
+    </div>
+    <p class="subtitle">SQLを書かずにデータベースを操作する翻訳者</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>プログラムのオブジェクトとテーブルを対応させ、SQLを直接書かずに操作できるようにする仕組み。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>SQL文を文字列として自分で組み立てると、値の埋め込み方を誤った際にSQLインジェクションの脆弱性を作り込んでしまう恐れがあった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>SQL文を自分で組み立てて、文字列としてそのまま実行していた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>SQL直書き</th><th class="h-docker">ORM</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">書き方</td><td>SQL文を文字列で組み立てる</td><td class="h-docker">コードのオブジェクトとして操作</td></tr>
+            <tr><td class="rowhead">安全性</td><td>書き方次第で脆弱性を作りうる</td><td class="h-docker">安全な形に自動で変換してくれる</td></tr>
+            <tr><td class="rowhead">可搬性</td><td>DB製品ごとにSQLを書き分ける</td><td class="h-docker">同じコードで複数のDBに対応しやすい</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>ORM で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-layers"/></svg><div class="cap">SQLを意識せずデータ操作できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-scale"/></svg><div class="cap">安全な形にSQLを組み立ててくれる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">コードの記述量を減らせる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>ORMは「コードとSQLの通訳」。<br>
+         楽になる分、裏で何のSQLが実行されているかは知っておきたい。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連する要素</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-pen"/></svg></div>
+        <div>
+          <div class="kw-name">SQL</div>
+          <p class="kw-desc">ORMが裏側で組み立てている言語。</p>
+          <span class="kw-page">P.90</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-cube"/></svg></div>
+        <div>
+          <div class="kw-name">RDBMS</div>
+          <p class="kw-desc">ORMが最終的に操作するソフトウェア。</p>
+          <span class="kw-page">P.83</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">91</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

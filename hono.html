@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — Hono</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 8</b>バックエンド言語・フレームワーク</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">179</div></div>
+      <div class="titles">
+        <h1>Hono</h1>
+      </div>
+    </div>
+    <p class="subtitle">Cloudflare WorkersなどのEdge環境向けに生まれた、超軽量フレームワーク</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>TypeScriptで書かれ、Node.js以外のEdgeランタイムでも高速に動く軽量Webフレームワーク。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>Cloudflare WorkersのようなEdge環境ではNode.js前提のExpressがそのまま動かず、実行時間の制約も厳しい。<br>
+             この環境でも軽く速く動くフレームワークとして開発された。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>それまでExpressのようなフレームワークはNode.js環境を前提にしており、Edgeランタイムでは動作しないか、動いても重かった。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>Express（Node.js前提）</th><th class="h-docker">Hono</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">動作環境</td><td>Node.js前提</td><td class="h-docker">Cloudflare Workers等マルチランタイム対応</td></tr>
+            <tr><td class="rowhead">起動の軽さ</td><td>比較的重い</td><td class="h-docker">超軽量・高速起動</td></tr>
+            <tr><td class="rowhead">型の扱い</td><td>JavaScriptが中心</td><td class="h-docker">TypeScriptファースト</td></tr>
+            <tr><td class="rowhead">向いている場面</td><td>通常のサーバー</td><td class="h-docker">Edge・サーバーレス環境</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>Hono で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-cloud"/></svg><div class="cap">Edge環境でも高速に動く</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">起動が軽くレスポンスが速い</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-layers"/></svg><div class="cap">複数のランタイムで動かせる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>Honoは「どこでも同じように速く動く」ことを目指したフレームワーク。<br>
+         Node.js専用ではない設計が、Edgeコンピューティング時代に合っている。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">比較するフレームワーク</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-server"/></svg></div>
+        <div>
+          <div class="kw-name">Express</div>
+          <p class="kw-desc">Node.js向けの定番の軽量フレームワーク。</p>
+          <span class="kw-page">P.178</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">179</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

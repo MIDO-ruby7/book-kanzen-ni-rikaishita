@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — 正規化</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 6</b>データベース</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">101</div></div>
+      <div class="titles">
+        <h1>正規化</h1>
+      </div>
+    </div>
+    <p class="subtitle">同じデータをあちこちに置かないための設計ルール</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>データの重複を減らすために、テーブルを目的ごとに分割して整理する設計手法。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>1つのテーブルに同じ情報を繰り返し書き込むと、一部だけ更新を反映し忘れて、同じ対象なのにデータが食い違ってしまう恐れがあった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>正規化を知らないうちは、1つの大きなテーブルに情報を全部詰め込んでいた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>正規化前（1テーブルに詰め込み）</th><th class="h-docker">正規化後（テーブルを分割）</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">データの重複</td><td>同じ情報を何度も書く</td><td class="h-docker">重複を減らせる</td></tr>
+            <tr><td class="rowhead">更新のしやすさ</td><td>直し漏れが起きやすい</td><td class="h-docker">1箇所直せば反映される</td></tr>
+            <tr><td class="rowhead">JOINの発生</td><td>ほぼ不要</td><td class="h-docker">テーブルをまたぐ分だけ増える</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>正規化 で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-scale"/></svg><div class="cap">更新漏れを防げる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-layers"/></svg><div class="cap">データの整合性を保ちやすい</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-package"/></svg><div class="cap">無駄な容量を減らせる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>正規化は「同じ情報は1箇所にだけ書く」がゴール。<br>
+         ただしやりすぎるとJOINだらけで遅くなるので、非正規化とのバランスが大事になる。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">差分ペア</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-rocket"/></svg></div>
+        <div>
+          <div class="kw-name">非正規化</div>
+          <p class="kw-desc">あえて重複を持たせて読み取りを速くする、正規化の逆張り。</p>
+          <span class="kw-page">P.102</span>
+        </div>
+      </div>
+    </div>
+    <div class="side-group">
+      <div class="group-label">関連するキーワード</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-file"/></svg></div>
+        <div>
+          <div class="kw-name">ER図</div>
+          <p class="kw-desc">正規化した結果のテーブル関係を絵にしたもの。</p>
+          <span class="kw-page">P.103</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">101</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

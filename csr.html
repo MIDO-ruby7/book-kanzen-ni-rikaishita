@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — CSR</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 7</b>フロントエンド</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">132</div></div>
+      <div class="titles">
+        <h1>CSR</h1>
+      </div>
+    </div>
+    <p class="subtitle">ブラウザ側でHTMLを組み立てる方式</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>サーバーからは最小限のHTMLとJavaScriptだけを送り、実際の画面はブラウザ側のJavaScriptが組み立てる方式。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>ReactやVueのようなComponent志向のライブラリが普及し、<br>
+             画面遷移のたびにサーバーへ問い合わせず、ブラウザ内で高速に画面を差し替えたいというニーズが強まった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>それまではアクセスのたびにサーバーが完成したHTMLを生成して返していた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>旧来のサーバーレンダリング</th><th class="h-docker">CSR</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">初回表示までの流れ</td><td>サーバーが完成形のHTMLを返す</td><td class="h-docker">空に近いHTMLを返し、JSが画面を組み立てる</td></tr>
+            <tr><td class="rowhead">画面遷移</td><td>ページごとにサーバーへリクエスト</td><td class="h-docker">遷移後の差分だけJSが書き換え</td></tr>
+            <tr><td class="rowhead">サーバーの負荷</td><td>表示のたびにHTMLを生成</td><td class="h-docker">初回以降はデータだけ返せばよい</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>CSR で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-wheel"/></svg><div class="cap">ページ遷移がヌルサクになる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-cube"/></svg><div class="cap">Component中心に作りやすい</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-clock"/></svg><div class="cap">初期表示にはJS読み込みの時間がかかる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>CSRは「見た目を組み立てる仕事」をサーバーからブラウザに移した方式。<br>
+         その分、初回表示が遅くなりやすいという弱点をSSRが補う。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連するレンダリング方式</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-cube"/></svg></div>
+        <div>
+          <div class="kw-name">Component</div>
+          <p class="kw-desc">CSRで画面を組み立てる部品の単位。</p>
+          <span class="kw-page">P.129</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-server"/></svg></div>
+        <div>
+          <div class="kw-name">SSR</div>
+          <p class="kw-desc">サーバー側で先にHTMLを完成させる方式。</p>
+          <span class="kw-page">P.133</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-wheel"/></svg></div>
+        <div>
+          <div class="kw-name">Hydration</div>
+          <p class="kw-desc">届いたHTMLにあとから動きを与える処理。</p>
+          <span class="kw-page">P.136</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">132</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

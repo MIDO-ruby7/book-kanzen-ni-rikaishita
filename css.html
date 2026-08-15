@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — CSS</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 7</b>フロントエンド</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">122</div></div>
+      <div class="titles">
+        <h1>CSS</h1>
+      </div>
+    </div>
+    <p class="subtitle">見た目を文章の中身から切り離した言語</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>色・余白・レイアウトなど「見た目」だけをHTMLから分離して指定する言語。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>昔はHTMLタグそのものに色やフォントを直接埋め込んでいたため、<br>
+             デザインを変えるたびに全ページのタグを書き換える必要があった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>それまではHTMLタグに直接、見た目の指定を書き込んでいた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>HTMLに直接指定</th><th class="h-docker">CSS</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">見た目の変更</td><td>全ページのタグを書き換え</td><td class="h-docker">1つのファイルを直せば全体に反映</td></tr>
+            <tr><td class="rowhead">保守性</td><td>HTMLとデザインが密結合</td><td class="h-docker">構造(HTML)と見た目(CSS)を分離</td></tr>
+            <tr><td class="rowhead">再利用</td><td>ページごとに書き直す</td><td class="h-docker">クラス指定で使い回せる</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>CSS で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-image"/></svg><div class="cap">色・余白・フォントを一括管理できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-monitor"/></svg><div class="cap">画面サイズに応じて見た目を変えられる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-wheel"/></svg><div class="cap">アニメーションも表現できる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>「HTMLは構造、CSSは見た目」と覚えると迷わない。<br>
+         CSSフレームワークを使うと、この見た目の指定を一から書かずに済む。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連する技術</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-file"/></svg></div>
+        <div>
+          <div class="kw-name">HTML</div>
+          <p class="kw-desc">CSSが見た目を整える対象の文書構造。</p>
+          <span class="kw-page">P.121</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-package"/></svg></div>
+        <div>
+          <div class="kw-name">CSSフレームワーク</div>
+          <p class="kw-desc">よく使うCSSをあらかじめ用意した道具箱。</p>
+          <span class="kw-page">P.141</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">122</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

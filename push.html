@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — Push</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 1</b>Git・GitHub</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">6</div></div>
+      <div class="titles">
+        <h1>Push</h1>
+      </div>
+    </div>
+    <p class="subtitle">手元の作業をチームに届けるひと押し</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>ローカルで積み上げたコミットを、リモートリポジトリに送って反映させること。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>手元で進めた作業の内容を、チームやサーバーに反映する手段が必要だった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>修正したファイルをメールやチャットで送ったり、FTPでアップロードしていた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>ファイル送付</th><th class="h-docker">Push</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">共有方法</td><td>メール・チャットで送付</td><td class="h-docker">コマンド一つで送信</td></tr>
+            <tr><td class="rowhead">反映されるもの</td><td>ファイルの最新版だけ</td><td class="h-docker">変更履歴ごと</td></tr>
+            <tr><td class="rowhead">衝突</td><td>気づかず上書きされがち</td><td class="h-docker">衝突があれば警告される</td></tr>
+            <tr><td class="rowhead">手間</td><td>そのつどファイルを探して送る</td><td class="h-docker">git push のひと言</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>Push で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">コマンド一つでチームに共有</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-cloud"/></svg><div class="cap">変更履歴ごとサーバーに反映</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-wheel"/></svg><div class="cap">デプロイの起点にもなる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>pushする前に一度 pull して最新を取り込んでおくと、衝突に慌てずに済む。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連キーワード</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-file"/></svg></div>
+        <div>
+          <div class="kw-name">Commit</div>
+          <p class="kw-desc">pushする変更の記録の単位。</p>
+          <span class="kw-page">P.5</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-cloud"/></svg></div>
+        <div>
+          <div class="kw-name">Pull</div>
+          <p class="kw-desc">逆にリモートの変更を取り込む操作。</p>
+          <span class="kw-page">P.7</span>
+        </div>
+      </div>
+    </div>
+    <div class="side-group">
+      <div class="group-label">一緒に覚えたい言葉</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-rocket"/></svg></div>
+        <div>
+          <div class="kw-name">CI/CD</div>
+          <p class="kw-desc">pushをきっかけに自動テスト・デプロイする仕組み。</p>
+          
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-scale"/></svg></div>
+        <div>
+          <div class="kw-name">Force Push</div>
+          <p class="kw-desc">履歴を強制的に上書きするpush。取り扱い注意。</p>
+          
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">6</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — SSL証明書</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 2</b>Webのしくみ</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">38</div></div>
+      <div class="titles">
+        <h1>SSL証明書</h1>
+      </div>
+    </div>
+    <p class="subtitle">「証明書の期限切れ」で赤くなる画面の正体</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>サイトの運営者が本物であることを証明する電子証明書。TLS通信で使われる。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>通信を暗号化するだけでは、接続先のサーバーが本物かどうかまでは保証できず、なりすましを見抜く手段が必要だった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>接続先が本物かどうかを、URLの見た目やドメイン名の印象だけで判断するしかなかった。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>見た目で判断する頃</th><th class="h-docker">証明書で判断</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">本人確認</td><td>URLの見た目だけで判断</td><td class="h-docker">認証局が発行した証明書で確認</td></tr>
+            <tr><td class="rowhead">期限</td><td>意識しない</td><td class="h-docker">有効期限があり、切れると警告が出る</td></tr>
+            <tr><td class="rowhead">取得方法</td><td>存在を知らない</td><td class="h-docker">認証局に申請、または自動発行サービスを使う</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>SSL証明書 で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-file"/></svg><div class="cap">サイト運営者の身元を証明できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-scale"/></svg><div class="cap">なりすましサイトと区別できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-cube"/></svg><div class="cap">TLSによる暗号化通信の土台になる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>SSL証明書は「サイトの身分証明書」。<br>
+         期限が切れると「本人確認ができない状態」になるので、ブラウザが警告を出す。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連キーワード</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-cube"/></svg></div>
+        <div>
+          <div class="kw-name">TLS</div>
+          <p class="kw-desc">この証明書を使って暗号化通信を行う仕組み。</p>
+          <span class="kw-page">P.37</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-cloud"/></svg></div>
+        <div>
+          <div class="kw-name">Let's Encrypt</div>
+          <p class="kw-desc">この証明書を無料・自動で発行してくれるサービス。</p>
+          <span class="kw-page">P.39</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">38</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

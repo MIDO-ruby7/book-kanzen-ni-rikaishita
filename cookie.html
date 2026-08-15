@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — Cookie</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 2</b>Webのしくみ</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">31</div></div>
+      <div class="titles">
+        <h1>Cookie</h1>
+      </div>
+    </div>
+    <p class="subtitle">ログインしっぱなしにできる、あの仕組み</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>ブラウザに保存される小さなデータ。サーバーがユーザーを識別するために使う。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>HTTPは1回のやり取りごとに関係がリセットされる仕組みのため、ログイン状態などをリクエストをまたいで維持する方法が必要だった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>リクエストごとに関係がリセットされ、ページを移動するたびにログイン情報などの状態が失われていた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>状態を覚える仕組みがない頃</th><th class="h-docker">Cookieで状態を覚える</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">ページ移動</td><td>毎回ログアウトされる</td><td class="h-docker">ログイン状態を維持できる</td></tr>
+            <tr><td class="rowhead">保存場所</td><td>なし</td><td class="h-docker">ブラウザ側に小さなデータとして保存</td></tr>
+            <tr><td class="rowhead">できること</td><td>都度ログインが必要</td><td class="h-docker">カート内容やログインを継続できる</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>Cookie で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-package"/></svg><div class="cap">ログイン状態を維持できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-clock"/></svg><div class="cap">一定期間データを保持できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-scale"/></svg><div class="cap">サーバーがユーザーを識別できる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>CookieはHTTPの「一期一会」を克服する仕組み。<br>
+         ブラウザに小さなメモを持たせておくことで、サーバーが「前回と同じ人」だと気づける。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連キーワード</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-clock"/></svg></div>
+        <div>
+          <div class="kw-name">Session</div>
+          <p class="kw-desc">Cookieを使って実現される、ログイン状態などの管理。</p>
+          <span class="kw-page">P.32</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-scale"/></svg></div>
+        <div>
+          <div class="kw-name">JWT</div>
+          <p class="kw-desc">署名付きトークンでログイン情報を持ち運ぶ方式。</p>
+          <span class="kw-page">P.33</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">31</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

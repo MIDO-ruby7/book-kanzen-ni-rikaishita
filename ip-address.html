@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — IP Address</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 2</b>Webのしくみ</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">29</div></div>
+      <div class="titles">
+        <h1>IP Address</h1>
+      </div>
+    </div>
+    <p class="subtitle">ドメインの奥にある、本当の"住所"</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>インターネットに繋がる機器1台1台に割り振られる、数字だけの住所。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>インターネットに繋がる無数の機器の中から通信相手を一意に特定する、共通の住所の仕組みが必要だった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>機器同士の接続先を特定する統一的な方法がなく、ネットワークごとに独自の識別方法に頼っていた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>住所を意識しない頃</th><th class="h-docker">IPアドレスとして理解</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">接続の仕組み</td><td>なんとなく繋がる</td><td class="h-docker">正確な住所を指定して接続している</td></tr>
+            <tr><td class="rowhead">種類</td><td>区別なし</td><td class="h-docker">グローバルIP／プライベートIPの違い</td></tr>
+            <tr><td class="rowhead">トラブル対応</td><td>原因不明</td><td class="h-docker">pingやIPで疎通確認ができる</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>IP Address で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-network"/></svg><div class="cap">機器を一意に特定できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-scale"/></svg><div class="cap">グローバル/プライベートを区別できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-scribble"/></svg><div class="cap">pingなどで疎通確認ができる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>IPアドレスは「機械だけがわかる本当の住所」。<br>
+         ドメイン名はその住所につけた、人間用のあだ名にすぎない。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連キーワード</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-file"/></svg></div>
+        <div>
+          <div class="kw-name">DNS</div>
+          <p class="kw-desc">ドメイン名をIPアドレスに変換する仕組み。</p>
+          <span class="kw-page">P.27</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-cube"/></svg></div>
+        <div>
+          <div class="kw-name">Port</div>
+          <p class="kw-desc">同じIPアドレスの中で、アプリを区別する番号。</p>
+          <span class="kw-page">P.30</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-scale"/></svg></div>
+        <div>
+          <div class="kw-name">NAT</div>
+          <p class="kw-desc">プライベートIPとグローバルIPを変換する仕組み。</p>
+          <span class="kw-page">P.41</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">29</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

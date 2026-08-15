@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — OXC</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 7</b>フロントエンド</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">153</div></div>
+      <div class="titles">
+        <h1>OXC</h1>
+      </div>
+    </div>
+    <p class="subtitle">JSツールチェイン全部をRustで書き直す、という荒業</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>パーサー・Linter・整形・ビルドまで、JS周辺ツールをまとめてRustで高速に作り直すプロジェクト。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>Biomeで Lint+整形は速くなったが、パース（コード解析）自体や<br>
+             ビルドまで含めた全体は、まだJS実装のツールが多く残っていた。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>それまでは、Lintと整形はBiomeやESLintのように個別最適化され、パーサーやバンドラーは各ツールがバラバラに実装していた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>JS実装のツール群（個別最適化）</th><th class="h-docker">OXC</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">対象範囲</td><td>Lint / 整形など個別ツール</td><td class="h-docker">パーサー〜ビルドまで一貫してRust化</td></tr>
+            <tr><td class="rowhead">速度</td><td>ツールごとに差がある</td><td class="h-docker">全体を通してネイティブ速度</td></tr>
+            <tr><td class="rowhead">採用状況</td><td>各社が個別に高速化を試す</td><td class="h-docker">Viteなど他ツールへの組み込みが進行中</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>OXC で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">パース処理からネイティブ高速化</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-network"/></svg><div class="cap">他ツールへの組み込みが進行中</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-wheel"/></svg><div class="cap">JSツールチェイン全体を刷新</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>ESLint → Biome → OXCと続く「Lintツールの高速化競争」の<br>
+         最新章。次はどこまで速くなるか。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">高速化競争のはじまり</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-scale"/></svg></div>
+        <div>
+          <div class="kw-name">ESLint</div>
+          <p class="kw-desc">JS実装の老舗Linter。</p>
+          <span class="kw-page">P.151</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-rocket"/></svg></div>
+        <div>
+          <div class="kw-name">Biome</div>
+          <p class="kw-desc">Rustで1本化した中継地点。</p>
+          <span class="kw-page">P.152</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">153</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

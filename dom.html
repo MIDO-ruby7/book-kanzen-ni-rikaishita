@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — DOM</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 7</b>フロントエンド</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">127</div></div>
+      <div class="titles">
+        <h1>DOM</h1>
+      </div>
+    </div>
+    <p class="subtitle">ブラウザがHTMLを「木構造」として持ったメモリ上の姿</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>ブラウザが読み込んだHTMLを、JavaScriptから操作できるようツリー状のオブジェクトとして表現したもの。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>HTMLはただの文字列（テキスト）なので、そのままではJavaScriptから<br>
+             「このボタンの色を変える」といった操作ができなかった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>それまではHTMLをただの文字列として扱うしかなく、JSから直接触れなかった。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>HTML文字列そのまま</th><th class="h-docker">DOM（オブジェクトの木）</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">JSからの操作</td><td>文字列を書き換えても反映されない</td><td class="h-docker">getElementByIdなどで直接操作できる</td></tr>
+            <tr><td class="rowhead">構造の把握</td><td>テキストを読んで判断するしかない</td><td class="h-docker">親子・兄弟関係をたどれる</td></tr>
+            <tr><td class="rowhead">更新</td><td>ページ全体を再解釈</td><td class="h-docker">該当ノードだけ差し替え可能</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>DOM で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-file"/></svg><div class="cap">要素を取得・変更できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-wheel"/></svg><div class="cap">イベントを取り付けられる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-layers"/></svg><div class="cap">一部のノードだけ書き換えられる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>「HTMLを解析してできた操作用の木」がDOM。<br>
+         Virtual DOMは、この本物のDOMを直接触る代わりに仮の木で差分計算してから反映する工夫。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連する技術</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-file"/></svg></div>
+        <div>
+          <div class="kw-name">HTML</div>
+          <p class="kw-desc">DOMのもとになる文書構造。</p>
+          <span class="kw-page">P.121</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-clock"/></svg></div>
+        <div>
+          <div class="kw-name">Event</div>
+          <p class="kw-desc">DOMの要素に取り付ける反応の仕組み。</p>
+          <span class="kw-page">P.128</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-layers"/></svg></div>
+        <div>
+          <div class="kw-name">Virtual DOM</div>
+          <p class="kw-desc">本物のDOMの代わりに使う仮想の木。</p>
+          <span class="kw-page">P.137</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">127</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

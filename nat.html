@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — NAT</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 2</b>Webのしくみ</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">41</div></div>
+      <div class="titles">
+        <h1>NAT</h1>
+      </div>
+    </div>
+    <p class="subtitle">自宅のPCが全部同じ"グローバルIP"に見える理由</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>家庭や社内など、限られた場所だけで使うプライベートIPと、インターネット上のグローバルIPを変換する仕組み。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>インターネットに接続する機器の数に対して、割り当て可能なグローバルIPアドレスの数が不足していた。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>接続する機器1台ごとに個別のグローバルIPアドレスを割り当てる前提で運用されていた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>1台1グローバルIPだと思う頃</th><th class="h-docker">NATとして理解</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">IPの割り当て</td><td>機器ごとに別のグローバルIPが必要</td><td class="h-docker">家庭内はプライベートIP、外向きは共通のグローバルIP</td></tr>
+            <tr><td class="rowhead">IPアドレス不足</td><td>特に意識しない</td><td class="h-docker">限られたグローバルIPを節約できる</td></tr>
+            <tr><td class="rowhead">見え方</td><td>各機器が別々に見えると思う</td><td class="h-docker">外からは同じグローバルIPの中の1台に見える</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>NAT で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-scale"/></svg><div class="cap">プライベートIPとグローバルIPを変換できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-network"/></svg><div class="cap">限られたグローバルIPを節約できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-cube"/></svg><div class="cap">内部のネットワーク構成を外部から隠せる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>NATは「マンションの代表電話番号」。<br>
+         部屋（プライベートIP）はバラバラでも、外から見える番号（グローバルIP）は1つにまとめられる。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連キーワード</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-network"/></svg></div>
+        <div>
+          <div class="kw-name">IP Address</div>
+          <p class="kw-desc">NATが変換する対象、プライベート/グローバルの住所。</p>
+          <span class="kw-page">P.29</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-layers"/></svg></div>
+        <div>
+          <div class="kw-name">サブネット（Subnet）</div>
+          <p class="kw-desc">プライベートIPを整理して区切る仕組み。</p>
+          <span class="kw-page">P.42</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">41</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

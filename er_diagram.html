@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — ER図</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 6</b>データベース</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">103</div></div>
+      <div class="titles">
+        <h1>ER図</h1>
+      </div>
+    </div>
+    <p class="subtitle">テーブル同士の関係を絵にした設計図</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>テーブルの構造と、テーブル同士のつながり（1対多など）を図で表したもの。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>テーブル数が多いプロジェクトでは、コードやSQLを読むだけではテーブル同士の関係性を把握しづらかった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>ER図がない、もしくは古いままの現場では、ドキュメントを読んでも関係が分からなかった。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>ER図なし・古いまま</th><th class="h-docker">ER図を整備・更新</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">新規参入者の理解速度</td><td>コードを読み解く必要がある</td><td class="h-docker">図を見れば全体像がつかめる</td></tr>
+            <tr><td class="rowhead">設計変更時の影響範囲</td><td>見落としやすい</td><td class="h-docker">関係を辿って確認しやすい</td></tr>
+            <tr><td class="rowhead">共有のしやすさ</td><td>口頭・文章で説明が必要</td><td class="h-docker">図1枚で共有できる</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>ER図 で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-file"/></svg><div class="cap">全体構造が一目でわかる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-scale"/></svg><div class="cap">設計レビューがしやすい</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-layers"/></svg><div class="cap">変更の影響範囲を追いやすい</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>ER図は正しく更新され続けて初めて価値を持つ。<br>
+         古いER図は「嘘の地図」になるので、スキーマ変更時は必ず一緒に直す。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連するキーワード</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-layers"/></svg></div>
+        <div>
+          <div class="kw-name">正規化</div>
+          <p class="kw-desc">ER図に描かれるテーブル分割の考え方そのもの。</p>
+          <span class="kw-page">P.101</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-rocket"/></svg></div>
+        <div>
+          <div class="kw-name">非正規化</div>
+          <p class="kw-desc">正規化した図をあえて崩す判断も、ER図の上で検討する。</p>
+          <span class="kw-page">P.102</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">103</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

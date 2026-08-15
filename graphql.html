@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — GraphQL</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 4</b>API</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">64</div></div>
+      <div class="titles">
+        <h1>GraphQL</h1>
+      </div>
+    </div>
+    <p class="subtitle">「欲しいデータだけちょうだい」を叶えるAPIの仕組み</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>欲しい項目だけを指定して、1回のリクエストでまとめて取得できるAPIの問い合わせ言語。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>画面に必要なデータを揃えるためにREST APIを複数回呼び出す実装では、リクエスト回数が増え、過不足のあるデータが返ってくることも多かった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>RESTでは、1つのエンドポイントが返すデータの形はあらかじめ固定されている。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>REST</th><th class="h-docker">GraphQL</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">取得できるデータ</td><td>エンドポイントごとに固定</td><td class="h-docker">欲しい項目だけ自分で指定</td></tr>
+            <tr><td class="rowhead">リクエスト回数</td><td>画面に必要な分だけ複数回</td><td class="h-docker">1回のリクエストでまとめて取得</td></tr>
+            <tr><td class="rowhead">過不足</td><td>使わない項目まで返ってくることがある</td><td class="h-docker">過不足なく必要な分だけ返る</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>GraphQL で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-cube"/></svg><div class="cap">必要な項目だけを指定して取得できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-network"/></svg><div class="cap">複数のリソースを1回のリクエストで取得</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-scale"/></svg><div class="cap">型（スキーマ）でデータの形が保証される</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>GraphQLは1つのURL（エンドポイント）に対して、<br>
+         クエリという"欲しいデータの形"を送ることで動く。RESTとどちらが良いというより、画面が必要とするデータの複雑さで使い分けるもの。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">比較する技術</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-server"/></svg></div>
+        <div>
+          <div class="kw-name">REST</div>
+          <p class="kw-desc">URLと動詞で操作を表現するAPI設計スタイル。</p>
+          <span class="kw-page">P.63</span>
+        </div>
+      </div>
+    </div>
+    <div class="side-group">
+      <div class="group-label">関連する語</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-scale"/></svg></div>
+        <div>
+          <div class="kw-name">スキーマ（Schema）</div>
+          <p class="kw-desc">GraphQLでもデータの形を定義するために使われる。</p>
+          <span class="kw-page">P.56</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">64</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

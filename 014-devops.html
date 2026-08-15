@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — DevOps</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 14</b>デプロイ・CI/CD</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">701</div></div>
+      <div class="titles">
+        <h1>DevOps</h1>
+      </div>
+    </div>
+    <p class="subtitle">「開発」と「運用」の壁をなくす考え方</p>
+
+    <div class="head-lower">
+      <div class="cat-col">
+        <svg><use href="icons.svg#ic-layers"/></svg>
+        <div class="cat-label">開発<br>運用</div>
+      </div>
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>開発（Dev）と運用（Ops）を一体で動かし、高速かつ安定したリリースを継続的に実現する文化・考え方。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>開発チームは「素早く変更する」、運用チームは「安定させる」という<br>
+             相反する目標を持ち、リリースのたびに摩擦・遅延・障害が繰り返されていたから。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>Dev（開発）と Ops（運用）は別チームで、「作る人」と「動かす人」の間に高い壁があった。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>従来の体制</th><th class="h-docker">DevOps</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">チーム構成</td><td>Dev と Ops が分断</td><td class="h-docker">一体で動く</td></tr>
+            <tr><td class="rowhead">リリース頻度</td><td>数か月に1回・手動</td><td class="h-docker">頻繁・自動化</td></tr>
+            <tr><td class="rowhead">障害対応</td><td>責任の押し付け合い</td><td class="h-docker">同じゴールで動く</td></tr>
+            <tr><td class="rowhead">品質管理</td><td>後工程でまとめてテスト</td><td class="h-docker">常時テスト・監視</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>DevOps で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">デプロイサイクルが速くなる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-clock"/></svg><div class="cap">自動化でミスが減る</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-network"/></svg><div class="cap">開発と運用が同じ目標で動ける</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>DevOps はツールより「文化」。CI/CD や IaC はその実現手段の一つ。<br>
+         SRE は信頼性に特化した DevOps の実践形。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+
+    <div class="side-group">
+      <div class="group-label">実現手段</div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-rocket"/></svg></div>
+        <div>
+          <div class="kw-name">CI/CD</div>
+          <p class="kw-desc">コードを自動でビルド・テスト・デプロイする仕組み。DevOps の中心的プラクティス。</p>
+          <span class="kw-page">P.705</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-file"/></svg></div>
+        <div>
+          <div class="kw-name">IaC</div>
+          <p class="kw-desc">インフラをコードで定義・管理する。自動化の土台。</p>
+          <span class="kw-page">P.851</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-group">
+      <div class="group-label">関連する役割・文化</div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-scale"/></svg></div>
+        <div>
+          <div class="kw-name">SRE</div>
+          <p class="kw-desc">信頼性を専門に担う役職・プラクティス。DevOps の実践形。</p>
+          <span class="kw-page">P.1351</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-memo">
+      <div class="lbl">キーワードメモ</div>
+      <p>「Dev」と「Ops」を合わせた造語。2009年頃から広まった。</p>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">701</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

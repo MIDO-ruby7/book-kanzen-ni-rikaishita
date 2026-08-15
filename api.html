@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — API</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 4</b>API</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">61</div></div>
+      <div class="titles">
+        <h1>API</h1>
+      </div>
+    </div>
+    <p class="subtitle">「画面を見せずに機能だけ貸す」ための窓口</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>アプリやサービス同士が、決められたルールに沿ってやり取りするための"窓口"。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>外部サービスの機能やデータを自分のアプリから利用したいとき、画面をスクレイピングする以外に構造化された取得手段がなかった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>外部のサービスが持つ機能やデータを使いたいとき、以前は画面ごと取り込む（スクレイピング）しかなかった。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>画面のスクレイピング</th><th class="h-docker">API</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">取得する対象</td><td>見た目込みのHTML全体</td><td class="h-docker">必要なデータだけ</td></tr>
+            <tr><td class="rowhead">安定性</td><td>デザイン変更で簡単に壊れる</td><td class="h-docker">仕様が変わらない限り安定</td></tr>
+            <tr><td class="rowhead">やり取りの形</td><td>人が読む前提のページ</td><td class="h-docker">プログラムが読む前提のデータ</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>API で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-network"/></svg><div class="cap">他社のサービスの機能をそのまま使える</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-scale"/></svg><div class="cap">決まったルールでデータだけをやり取り</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-cloud"/></svg><div class="cap">フロントとサーバーの間の窓口にもなる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>APIは「Application Programming Interface」の略。<br>
+         「プログラム同士が会話するための窓口」くらいに考えるとイメージしやすい。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連する語</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-network"/></svg></div>
+        <div>
+          <div class="kw-name">Endpoint</div>
+          <p class="kw-desc">APIの窓口の中の、個別の入り口となるURL。</p>
+          <span class="kw-page">P.62</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-server"/></svg></div>
+        <div>
+          <div class="kw-name">REST</div>
+          <p class="kw-desc">APIの設計スタイルの1つ。URLと動詞で操作を表す。</p>
+          <span class="kw-page">P.63</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-cube"/></svg></div>
+        <div>
+          <div class="kw-name">GraphQL</div>
+          <p class="kw-desc">必要なデータだけを1回で取得できるAPIの仕組み。</p>
+          <span class="kw-page">P.64</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">61</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — SSR</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 7</b>フロントエンド</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">133</div></div>
+      <div class="titles">
+        <h1>SSR</h1>
+      </div>
+    </div>
+    <p class="subtitle">サーバー側でHTMLを完成させてから届ける方式</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>ブラウザで組み立てる前に、サーバー側で完成したHTMLを生成してから返す方式。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>CSRは初回表示までJSの読み込み・実行を待つ必要があり、<br>
+             表示が遅れたり検索エンジンが内容をうまく認識できないという課題があった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>それまではCSRで、空のHTMLとJSを送ってからブラウザ側が画面を組み立てていた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>CSR</th><th class="h-docker">SSR</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">初回表示までの流れ</td><td>空のHTML+JSを送りブラウザが組み立てる</td><td class="h-docker">サーバーが完成したHTMLを生成して送る</td></tr>
+            <tr><td class="rowhead">表示速度（初回）</td><td>JSの読み込み・実行を待つ</td><td class="h-docker">HTMLが届いた時点で見た目は表示される</td></tr>
+            <tr><td class="rowhead">SEO</td><td>検索エンジンが内容を認識しづらい場合がある</td><td class="h-docker">最初から完成したHTMLなので認識されやすい</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>SSR で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-clock"/></svg><div class="cap">初回表示が速い</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-network"/></svg><div class="cap">検索エンジンに強い</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-wheel"/></svg><div class="cap">表示後にHydrationでJSを有効化する必要がある</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>SSRは「初回だけサーバーで完成品を作る」方式。<br>
+         ただしアクセスのたびに生成し直すので負荷は上がる。変化が少ないページはSSGの方が効率的。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連するレンダリング方式</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-laptop"/></svg></div>
+        <div>
+          <div class="kw-name">CSR</div>
+          <p class="kw-desc">ブラウザ側でHTMLを組み立てる方式。</p>
+          <span class="kw-page">P.132</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-server"/></svg></div>
+        <div>
+          <div class="kw-name">SSG</div>
+          <p class="kw-desc">ビルド時にあらかじめHTMLを作る方式。</p>
+          <span class="kw-page">P.134</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-wheel"/></svg></div>
+        <div>
+          <div class="kw-name">Hydration</div>
+          <p class="kw-desc">SSRで届いたHTMLにあとから動きを与える処理。</p>
+          <span class="kw-page">P.136</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">133</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

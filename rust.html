@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — Rust</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 8</b>バックエンド言語・フレームワーク</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">176</div></div>
+      <div class="titles">
+        <h1>Rust</h1>
+      </div>
+    </div>
+    <p class="subtitle">「速さ」と「安全」を、実行時ではなくコンパイル時に両立させる言語</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>メモリ管理の安全性をコンパイラがチェックすることで、C/C++並みの速度と高い安全性を両立する言語。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>C/C++は高速だが、メモリの解放忘れや二重解放といったバグが実行時にクラッシュや脆弱性を引き起こしやすかった。<br>
+             この「速いが危ない」を解消するため、Mozillaが開発した。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>それまでのC/C++では、メモリの確保・解放をプログラマが手動で管理し、ミスがあっても実行するまで気づけないことが多かった。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>C / C++</th><th class="h-docker">Rust</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">メモリ管理</td><td>手動（解放忘れのリスクあり）</td><td class="h-docker">コンパイラが所有権をチェック</td></tr>
+            <tr><td class="rowhead">バグの発見</td><td>実行時にクラッシュして判明</td><td class="h-docker">コンパイル時にエラーとして検出</td></tr>
+            <tr><td class="rowhead">実行速度</td><td>速い</td><td class="h-docker">同等に速い</td></tr>
+            <tr><td class="rowhead">向いている場面</td><td>OS・組み込み・ゲームなど</td><td class="h-docker">同上＋WebAssemblyなど</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>Rust で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-scale"/></svg><div class="cap">安全性と速度を両立できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-cube"/></svg><div class="cap">メモリ安全性をコンパイル時に保証</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">C/C++並みの実行速度</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>Rustの「所有権」という仕組みは、書くときは厳しく感じるが、<br>
+         その分「動いてしまえばまず落ちない」コードになる。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">比較する言語</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-wheel"/></svg></div>
+        <div>
+          <div class="kw-name">Go</div>
+          <p class="kw-desc">シンプルさと開発速度を重視した言語。</p>
+          <span class="kw-page">P.173</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">176</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

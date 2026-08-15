@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — Redux</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 7</b>フロントエンド</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">163</div></div>
+      <div class="titles">
+        <h1>Redux</h1>
+      </div>
+    </div>
+    <p class="subtitle">「どのコンポーネントの状態が正しいんだっけ」を終わらせた仕組み</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>アプリ全体の状態（State）を1箇所にまとめて管理する、React向けの状態管理ライブラリ。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>画面が複雑になるにつれ、Props経由で何段もコンポーネントを<br>
+             跨いで状態を渡す「バケツリレー」が発生し、変更箇所を追えなくなっていた。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>それまでは、Reactの標準機能（useState/Props）だけで、必要な状態を親から子へ渡していた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>useState + Propsのバケツリレー</th><th class="h-docker">Redux</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">状態の置き場所</td><td>各コンポーネントに分散</td><td class="h-docker">ストアという1箇所に集約</td></tr>
+            <tr><td class="rowhead">更新方法</td><td>各コンポーネントで直接更新</td><td class="h-docker">Action/Reducerという決まった手順で更新</td></tr>
+            <tr><td class="rowhead">追跡のしやすさ</td><td>どこで変わったか追いにくい</td><td class="h-docker">変更履歴を1本の流れとして追跡可能</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>Redux で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-layers"/></svg><div class="cap">状態を1箇所のストアに集約</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-network"/></svg><div class="cap">離れたコンポーネント間でも状態共有</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-scale"/></svg><div class="cap">決まった手順でしか状態を変更できない</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>自由度を下げる代わりに「予測可能性」を手に入れた、<br>
+         という差分のトレードオフ。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">土台の技術</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-layers"/></svg></div>
+        <div>
+          <div class="kw-name">React</div>
+          <p class="kw-desc">コンポーネント単位でUIを組み立てるライブラリ。</p>
+          <span class="kw-page">P.146</span>
+        </div>
+      </div>
+    </div>
+    <div class="side-group">
+      <div class="group-label">軽量な後継</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-layers"/></svg></div>
+        <div>
+          <div class="kw-name">Zustand</div>
+          <p class="kw-desc">手順の少ない軽量な状態管理。</p>
+          <span class="kw-page">P.164</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">163</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>
