@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — Terminal</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 12</b>Linux・ターミナル</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">600</div></div>
+      <div class="titles">
+        <h1>Terminal</h1>
+      </div>
+    </div>
+    <p class="subtitle">文字でコンピュータと話す窓口</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>キーボード入力と文字出力でOSやプログラムとやり取りするための端末（エミュレータ含む）のこと。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>GUIだけでは自動化やリモート作業、細かい制御がしづらい。<br>
+             文字の入出力で機械を直接操る窓口が必要だった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>全部をマウスとウィンドウで操作し、繰り返し作業も手でやっていた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>GUIだけの操作</th><th class="h-docker">Terminal</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">自動化</td><td>マクロや手作業</td><td class="h-docker">コマンドとスクリプトで再現</td></tr>
+            <tr><td class="rowhead">リモート</td><td>画面転送が重いことも</td><td class="h-docker">SSHで文字だけ届く</td></tr>
+            <tr><td class="rowhead">記録</td><td>操作履歴が残らない</td><td class="h-docker">履歴やログに残しやすい</td></tr>
+            <tr><td class="rowhead">学習曲線</td><td>低い入口</td><td class="h-docker">最初は記号の海</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>Terminal で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-monitor"/></svg><div class="cap">文字コマンドでOSを操作できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">同じ操作をスクリプトにできる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-network"/></svg><div class="cap">リモートサーバー作業の入口になる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>「ターミナル」は窓、「シェル」はその中で動く通訳、と分けると迷子になりにくい。<br>
+         黒い画面そのものが怖い対象ではない。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連キーワード</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-file"/></svg></div>
+        <div>
+          <div class="kw-name">Shell</div>
+          <p class="kw-desc">コマンドを解釈して実行するプログラム。</p>
+          <span class="kw-page">P.601</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-file"/></svg></div>
+        <div>
+          <div class="kw-name">Bash</div>
+          <p class="kw-desc">定番のシェル。</p>
+          <span class="kw-page">P.602</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-monitor"/></svg></div>
+        <div>
+          <div class="kw-name">Ghostty</div>
+          <p class="kw-desc">端末エミュレータの一例。</p>
+          <span class="kw-page">P.617</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">600</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

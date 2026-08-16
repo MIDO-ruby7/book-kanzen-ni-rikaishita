@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — Playwright</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 10</b>テスト</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">520</div></div>
+      <div class="titles">
+        <h1>Playwright</h1>
+      </div>
+    </div>
+    <p class="subtitle">複数ブラウザを、一つのAPIで操るE2E</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>Microsoft製のブラウザ自動操作ライブラリ。Chromium / Firefox / WebKit を統一APIで扱える。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>E2Eはブラウザ差とフレーク（ちらつき失敗）がつきもの。<br>
+             安定して複数ブラウザを同じ脚本で回したかった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>SeleniumやPuppeteerで単一ブラウザを叩き、待機やセレクタに苦労していた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>従来のブラウザ自動化</th><th class="h-docker">Playwright</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">ブラウザ</td><td>ドライバ管理が面倒</td><td class="h-docker">主要ブラウザを統一的に</td></tr>
+            <tr><td class="rowhead">待機</td><td>sleepに頼りがち</td><td class="h-docker">自動待機が強力</td></tr>
+            <tr><td class="rowhead">トレース</td><td>自前で工夫</td><td class="h-docker">トレース・動画などが充実</td></tr>
+            <tr><td class="rowhead">言語</td><td>さまざま</td><td class="h-docker">JS/TSほか複数言語公式</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>Playwright で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-monitor"/></svg><div class="cap">実ユーザーに近いE2Eを安定して書ける</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-layers"/></svg><div class="cap">複数ブラウザでの差分を拾える</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-file"/></svg><div class="cap">失敗時のトレースでデバッグしやすい</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>「Puppeteerの進化形」として語られることもあるが、出自も思想も別物。<br>
+         フレークとの戦いはツールが強くなってもゼロにはならない。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連キーワード</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-monitor"/></svg></div>
+        <div>
+          <div class="kw-name">E2E Test</div>
+          <p class="kw-desc">Playwrightの主用途。</p>
+          <span class="kw-page">P.502</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-package"/></svg></div>
+        <div>
+          <div class="kw-name">Puppeteer</div>
+          <p class="kw-desc">Chrome操作の先輩格。</p>
+          <span class="kw-page">P.521</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-rocket"/></svg></div>
+        <div>
+          <div class="kw-name">スモークテスト</div>
+          <p class="kw-desc">薄いE2Eとして回すことも。</p>
+          <span class="kw-page">P.512</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">520</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

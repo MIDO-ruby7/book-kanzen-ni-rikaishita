@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — ping</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 12</b>Linux・ターミナル</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">613</div></div>
+      <div class="titles">
+        <h1>ping</h1>
+      </div>
+    </div>
+    <p class="subtitle">向こうは生きてる？ の最小確認</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>ICMPなどで相手ホストに応答を求め、到達性と往復時間を見る基本的なネットワーク診断コマンド。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>「繋がらない」の原因が相手ダウンなのか、自分側なのか、経路なのか切り分けたい。<br>
+             最短の生存確認が必要だった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>アプリを開いて失敗するか、人に「今どう？」と聞くか、しかなかった。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>アプリ失敗だけ見る</th><th class="h-docker">ping</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">確認粒度</td><td>アプリ全体</td><td class="h-docker">ホスト到達の最小単位</td></tr>
+            <tr><td class="rowhead">遅延</td><td>体感</td><td class="h-docker">RTTが数値で見える</td></tr>
+            <tr><td class="rowhead">切り分け</td><td>曖昧</td><td class="h-docker">ネットワーク層の第一手</td></tr>
+            <tr><td class="rowhead">限界</td><td>——</td><td class="h-docker">ICMPが塞がれると無力</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>ping で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-network"/></svg><div class="cap">相手ホストの生存を素早く確認できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-clock"/></svg><div class="cap">遅延の目安を測れる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-pen"/></svg><div class="cap">障害切り分けの第一手にできる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>pingが通らなくても、HTTPは通ることがある（ICMPブロック）。<br>
+         万能ではないが、それでも最初の一打になりやすい。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連キーワード</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-network"/></svg></div>
+        <div>
+          <div class="kw-name">curl</div>
+          <p class="kw-desc">アプリ層の到達確認。</p>
+          <span class="kw-page">P.614</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-network"/></svg></div>
+        <div>
+          <div class="kw-name">IP Address</div>
+          <p class="kw-desc">pingの宛先（Ch2）。</p>
+          <span class="kw-page">P.29</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-network"/></svg></div>
+        <div>
+          <div class="kw-name">DNS</div>
+          <p class="kw-desc">名前解決の次に疑うポイント（Ch2）。</p>
+          <span class="kw-page">P.27</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">613</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

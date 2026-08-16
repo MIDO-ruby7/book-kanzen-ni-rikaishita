@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — ブラックボックステスト</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 10</b>テスト</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">516</div></div>
+      <div class="titles">
+        <h1>ブラックボックステスト</h1>
+      </div>
+    </div>
+    <p class="subtitle">中身は知らぬ、入出力だけ見る</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>内部実装を知らなくても（見なくても）、仕様上の入力に対する出力や振る舞いを確認するテスト。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>実装者以外も品質を確認したかったし、実装に引っ張られたテストでは仕様漏れに気づけない。<br>
+             外側からの検証が必要だった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>テストも開発者の頭の中の実装イメージに合わせて書かれ、仕様書とのズレが見逃されがちだった。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>実装に寄り添う確認</th><th class="h-docker">ブラックボックス</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">必要な知識</td><td>コード構造</td><td class="h-docker">仕様・要求</td></tr>
+            <tr><td class="rowhead">見つかりやすいもの</td><td>実装バグ</td><td class="h-docker">仕様不一致・抜け</td></tr>
+            <tr><td class="rowhead">技法</td><td>経路網羅など</td><td class="h-docker">同値分割・境界値など</td></tr>
+            <tr><td class="rowhead">実行者</td><td>開発者中心</td><td class="h-docker">QAや利用者視点も取りやすい</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>ブラックボックステスト で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-monitor"/></svg><div class="cap">仕様どおりかを外側から検証できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-file"/></svg><div class="cap">実装変更に強いテストにしやすい</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-network"/></svg><div class="cap">開発以外の視点を取り込みやすい</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>E2Eや受け入れテストはブラックボックス寄りが多い。<br>
+         白も黒も、片方だけだと盲点ができる。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連キーワード</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-layers"/></svg></div>
+        <div>
+          <div class="kw-name">ホワイトボックステスト</div>
+          <p class="kw-desc">中身を見る対の立場。</p>
+          <span class="kw-page">P.515</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-layers"/></svg></div>
+        <div>
+          <div class="kw-name">同値分割</div>
+          <p class="kw-desc">黒箱で使う代表技法。</p>
+          <span class="kw-page">P.514</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-monitor"/></svg></div>
+        <div>
+          <div class="kw-name">E2E Test</div>
+          <p class="kw-desc">黒箱で回すことが多い層。</p>
+          <span class="kw-page">P.502</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">516</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — カバレッジ</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 10</b>テスト</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">508</div></div>
+      <div class="titles">
+        <h1>カバレッジ</h1>
+      </div>
+    </div>
+    <p class="subtitle">テストがコードの何割を撫でたか</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>テスト実行によって実行されたコードの割合。行・分岐などの単位で測ることが多い。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>「テスト書いた」と言っても、通っていない分岐だらけかもしれない。<br>
+             どこが未検証か、可視化する指標が必要だった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>テストの十分さは、感覚とコードレビューのコメント頼みだった。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>感覚での十分さ</th><th class="h-docker">カバレッジ</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">見え方</td><td>書いた気になる</td><td class="h-docker">通った行・分岐が見える</td></tr>
+            <tr><td class="rowhead">目標管理</td><td>曖昧</td><td class="h-docker">数値目標を置ける（功罪あり）</td></tr>
+            <tr><td class="rowhead">弱点発見</td><td>属人的</td><td class="h-docker">未カバー箇所が地図になる</td></tr>
+            <tr><td class="rowhead">誤解</td><td>——</td><td class="h-docker">100%＝バグゼロではない</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>カバレッジ で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-scale"/></svg><div class="cap">未テスト箇所を可視化できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-monitor"/></svg><div class="cap">PRでカバー率の変化を追える</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-file"/></svg><div class="cap">重要な経路の穴を見つけやすくなる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>カバレッジは「下限の健康診断」であって「満点の賞状」ではない。<br>
+         意味のないテストで数値だけ盛る行為は、現場の名物悪習。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連キーワード</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-cube"/></svg></div>
+        <div>
+          <div class="kw-name">Unit Test</div>
+          <p class="kw-desc">カバレッジ計測の主戦場。</p>
+          <span class="kw-page">P.500</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-layers"/></svg></div>
+        <div>
+          <div class="kw-name">ホワイトボックステスト</div>
+          <p class="kw-desc">内部構造を見て網羅を考える。</p>
+          <span class="kw-page">P.515</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-package"/></svg></div>
+        <div>
+          <div class="kw-name">Jest</div>
+          <p class="kw-desc">カバレッジ計測がしやすいランナー例。</p>
+          <span class="kw-page">P.518</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">508</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

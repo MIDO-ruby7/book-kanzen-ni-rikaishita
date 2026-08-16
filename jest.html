@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — Jest</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 10</b>テスト</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">518</div></div>
+      <div class="titles">
+        <h1>Jest</h1>
+      </div>
+    </div>
+    <p class="subtitle">JavaScriptテストの「とりあえずこれ」だった王者</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>Meta（旧Facebook）発のJavaScriptテストフレームワーク。ランナー・アサーション・モックが一式そろっている。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>JSのテストはランナーと断言ライブラリとモックがバラバラで、組み合わせが面倒だった。<br>
+             ゼロコンフィグ寄りの一体型が求められた。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>Mocha + Chai + Sinon などを自分で繋いで、設定ファイルと戦っていた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>寄せ集め構成</th><th class="h-docker">Jest</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">セットアップ</td><td>複数ライブラリの配線</td><td class="h-docker">一式が最初から入っている</td></tr>
+            <tr><td class="rowhead">スナップショット</td><td>別途用意</td><td class="h-docker">標準機能</td></tr>
+            <tr><td class="rowhead">モック</td><td>ライブラリ依存</td><td class="h-docker">jest.fn などが標準</td></tr>
+            <tr><td class="rowhead">エコシステム</td><td>選択が多い</td><td class="h-docker">React界隈で特に普及</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>Jest で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-package"/></svg><div class="cap">JS/TSのユニットテストをすぐ始められる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-image"/></svg><div class="cap">スナップショットテストがしやすい</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-cube"/></svg><div class="cap">モジュールモックが標準で使える</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>近年は Vitest に流れる案件も多いが、資産と記事量ではまだ巨艦。<br>
+         「Jestの書き方」は他ランナーでも通じる共通語彙になりやすい。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連キーワード</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-package"/></svg></div>
+        <div>
+          <div class="kw-name">Vitest</div>
+          <p class="kw-desc">Vite親和の高速オルタナティブ。</p>
+          <span class="kw-page">P.519</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-cube"/></svg></div>
+        <div>
+          <div class="kw-name">Unit Test</div>
+          <p class="kw-desc">Jestの主戦場。</p>
+          <span class="kw-page">P.500</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-image"/></svg></div>
+        <div>
+          <div class="kw-name">スナップショットテスト</div>
+          <p class="kw-desc">Jestが広めた手法の一つ。</p>
+          <span class="kw-page">P.510</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">518</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

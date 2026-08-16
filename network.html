@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — Network</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 13</b>Docker</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">317</div></div>
+      <div class="titles">
+        <h1>Network</h1>
+      </div>
+    </div>
+    <p class="subtitle">コンテナ同士が「同じ部屋」で話せる仕組み</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>Docker上でコンテナ同士や外の世界をつなぐ、仮想的なネットワークの単位。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>コンテナを起動しても、名前解決や通信経路がバラバラだとアプリ同士がつながらない。<br>
+             「どのコンテナが同じ網にいるか」を明示する仕組みが必要だった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>ネットワークを意識する前は、ホストのIPやポート番号を直書きしてコンテナ間をつないでいた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>ホスト依存のつなぎ方</th><th class="h-docker">Docker Network</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">名前解決</td><td>IPやポートを覚える</td><td class="h-docker">コンテナ名で呼び合える</td></tr>
+            <tr><td class="rowhead">分離</td><td>全部が同じ平面に見えがち</td><td class="h-docker">網ごとに通信範囲を分けられる</td></tr>
+            <tr><td class="rowhead">Composeとの相性</td><td>手動で橋渡し</td><td class="h-docker">networks: で宣言すればつながる</td></tr>
+            <tr><td class="rowhead">外への公開</td><td>全部ホスト経由になりやすい</td><td class="h-docker">必要なポートだけ公開できる</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>Network で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-network"/></svg><div class="cap">コンテナ同士を名前でつなげる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-layers"/></svg><div class="cap">環境ごとに通信範囲を分離できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-cube"/></svg><div class="cap">Composeと組み合わせて構成を宣言できる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>bridge / host / none などドライバの種類がある。<br>
+         まずは「同じ network に乗せる＝会話できる部屋に入れる」と覚えると楽。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連キーワード</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-cube"/></svg></div>
+        <div>
+          <div class="kw-name">Container</div>
+          <p class="kw-desc">実際に動いているプロセスの箱。</p>
+          <span class="kw-page">P.309</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-layers"/></svg></div>
+        <div>
+          <div class="kw-name">Docker Compose</div>
+          <p class="kw-desc">複数コンテナとネットワークをまとめて定義。</p>
+          <span class="kw-page">P.321</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-package"/></svg></div>
+        <div>
+          <div class="kw-name">Volume</div>
+          <p class="kw-desc">データをコンテナの外に残す仕組み。</p>
+          <span class="kw-page">P.313</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">317</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

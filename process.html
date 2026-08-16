@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — Process</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 12</b>Linux・ターミナル</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">607</div></div>
+      <div class="titles">
+        <h1>Process</h1>
+      </div>
+    </div>
+    <p class="subtitle">いま動いているプログラムの「個体」</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>実行中のプログラムのインスタンス。メモリ空間やPIDなどの資源を持ち、OSに管理される。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>同じプログラムでも、同時に複数動かしたり、個別に止めたりしたい。<br>
+             「実行中の個体」という単位が必要だった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>コンピュータは一度に一つの作業、あるいはアプリ単位の粗い管理しか意識しなかった。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>アプリ＝動いているもの</th><th class="h-docker">Process</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">識別</td><td>ウィンドウの見た目</td><td class="h-docker">PIDなどで一意に管理</td></tr>
+            <tr><td class="rowhead">隔離</td><td>弱い理解</td><td class="h-docker">メモリ空間が分かれる</td></tr>
+            <tr><td class="rowhead">終了</td><td>閉じる</td><td class="h-docker">シグナルで制御できる</td></tr>
+            <tr><td class="rowhead">親子</td><td>見えにくい</td><td class="h-docker">起動関係を追える</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>Process で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-cube"/></svg><div class="cap">動いているプログラムを個体として扱える</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-pen"/></svg><div class="cap">問題のプロセスだけを調査・終了できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-server"/></svg><div class="cap">サーバー上の多重実行を理解できる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>「プロセスが死ぬ／殺す」は語彙章への伏線。<br>
+         ps / top / kill はこの概念の実地訓練。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連キーワード</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-layers"/></svg></div>
+        <div>
+          <div class="kw-name">Thread</div>
+          <p class="kw-desc">プロセスの中の実行の流れ。</p>
+          <span class="kw-page">P.608</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-server"/></svg></div>
+        <div>
+          <div class="kw-name">Daemon</div>
+          <p class="kw-desc">常駐するプロセスの形態。</p>
+          <span class="kw-page">P.610</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-network"/></svg></div>
+        <div>
+          <div class="kw-name">SSH</div>
+          <p class="kw-desc">遠隔でプロセスを扱う入口。</p>
+          <span class="kw-page">P.605</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">607</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

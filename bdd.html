@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — BDD</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 10</b>テスト</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">507</div></div>
+      <div class="titles">
+        <h1>BDD</h1>
+      </div>
+    </div>
+    <p class="subtitle">「Given / When / Then」で仕様を会話する</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>Behavior-Driven Development。振る舞いを自然言語に近い形で書き、開発・QA・企画の認識を揃えるアプローチ。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>テストはエンジニアの内側で閉じてしまい、ビジネス側の「そう動いてほしい」とずれやすかった。<br>
+             共通の言葉で振る舞いを書きたかった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>仕様書は別文書、テストはコード、口頭の認識合わせは会議、と情報が分裂していた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>仕様とテストが別物</th><th class="h-docker">BDD</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">書き方</td><td>実装寄りのassert</td><td class="h-docker">Given/When/Thenなど振る舞い</td></tr>
+            <tr><td class="rowhead">読み手</td><td>エンジニア中心</td><td class="h-docker">非エンジニアも参加しやすい</td></tr>
+            <tr><td class="rowhead">目的</td><td>正しさの検証</td><td class="h-docker">認識合わせ＋検証</td></tr>
+            <tr><td class="rowhead">成果物</td><td>テストコード</td><td class="h-docker">実行可能な仕様に近づく</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>BDD で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-file"/></svg><div class="cap">仕様をテスト可能な文章に落とせる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-network"/></svg><div class="cap">職種をまたいで認識を揃えやすい</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-scale"/></svg><div class="cap">受け入れ条件を自動化しやすくなる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>Cucumber や Jest の describe/it の書き方にもBDDの香りがある。<br>
+         形式に固執せず、「振る舞いの言葉で書けているか」が本質。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連キーワード</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-rocket"/></svg></div>
+        <div>
+          <div class="kw-name">TDD</div>
+          <p class="kw-desc">テスト先行のサイクル。BDDと併記されやすい。</p>
+          <span class="kw-page">P.506</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-monitor"/></svg></div>
+        <div>
+          <div class="kw-name">E2E Test</div>
+          <p class="kw-desc">振る舞いシナリオの実行場所になりやすい。</p>
+          <span class="kw-page">P.502</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-file"/></svg></div>
+        <div>
+          <div class="kw-name">テスト設計</div>
+          <p class="kw-desc">何を書くかを決める上流。</p>
+          <span class="kw-page">P.517</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">507</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

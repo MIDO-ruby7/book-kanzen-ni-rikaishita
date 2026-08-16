@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — ハイブリッドアプリ</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 9</b>モバイル</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">453</div></div>
+      <div class="titles">
+        <h1>ハイブリッドアプリ</h1>
+      </div>
+    </div>
+    <p class="subtitle">Webの中身を、アプリの皮で包む</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>HTML/CSS/JSなどのWeb技術で画面を作り、ネイティブの殻（WebViewなど）で包んでストア配布するアプリ。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>iOSとAndroidで二重開発は痛い。一方でストア掲載やプッシュ通知など、<br>
+             「アプリであること」のメリットは捨てたくなかった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>完全ネイティブで二台分作るか、モバイルWebだけで我慢するかの二択になりがちだった。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>ネイティブ二刀流 or モバイルWeb</th><th class="h-docker">ハイブリッドアプリ</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">コード共有</td><td>プラットフォームごと</td><td class="h-docker">Web部分を大きく共有できる</td></tr>
+            <tr><td class="rowhead">ストア配布</td><td>ネイティブなら可／Webは不可</td><td class="h-docker">アプリとして配布できる</td></tr>
+            <tr><td class="rowhead">性能・一体感</td><td>ネイティブが有利</td><td class="h-docker">WebView次第で差が出る</td></tr>
+            <tr><td class="rowhead">更新</td><td>ストア審査が基本</td><td class="h-docker">中身のWebはサーバー更新しやすいことも</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>ハイブリッドアプリ で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-layers"/></svg><div class="cap">Webスキルでアプリの体裁を取れる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-package"/></svg><div class="cap">一つのコードベースで両OSに寄せやすい</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-cloud"/></svg><div class="cap">コンテンツ更新をサーバー側に寄せられる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>Cordova / Capacitor 系が代表格。<br>
+         「アプリに見えるWeb」なので、体感の滑らかさでネイティブやRN/Flutterに負ける場面もある。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連キーワード</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-cube"/></svg></div>
+        <div>
+          <div class="kw-name">ネイティブアプリ</div>
+          <p class="kw-desc">OS公式APIで作る本流。</p>
+          <span class="kw-page">P.452</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-cube"/></svg></div>
+        <div>
+          <div class="kw-name">React Native</div>
+          <p class="kw-desc">WebViewではなくネイティブ部品を使う道。</p>
+          <span class="kw-page">P.454</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-monitor"/></svg></div>
+        <div>
+          <div class="kw-name">PWA</div>
+          <p class="kw-desc">インストール感をWebのまま近づける別路線。</p>
+          <span class="kw-page">P.158</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">453</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

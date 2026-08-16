@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — 正規表現</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 12</b>Linux・ターミナル</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">611</div></div>
+      <div class="titles">
+        <h1>正規表現</h1>
+      </div>
+    </div>
+    <p class="subtitle">文字列の模様を、記号で狩る</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>文字列のパターンを簡潔に記述し、検索・置換・抽出に使う表記法（と、それを解釈するエンジン）。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>ログやテキストから「メールっぽいもの」「数字3桁」を人手で拾うのは限界。<br>
+             模様でマッチする言語が必要だった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>完全一致検索か、プログラミングのループで一文字ずつ判定していた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>完全一致／手書き判定</th><th class="h-docker">正規表現</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">柔軟性</td><td>低い</td><td class="h-docker">パターンで幅を持たせられる</td></tr>
+            <tr><td class="rowhead">記述量</td><td>コードが長くなりがち</td><td class="h-docker">短い式で表現できることも</td></tr>
+            <tr><td class="rowhead">可読性</td><td>——</td><td class="h-docker">書きすぎると暗号になる</td></tr>
+            <tr><td class="rowhead">用途</td><td>単純検索</td><td class="h-docker">grep / バリデーション / 置換</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>正規表現 で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-pen"/></svg><div class="cap">複雑な文字列条件を短く書ける</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-file"/></svg><div class="cap">ログ抽出や一括置換ができる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-scale"/></svg><div class="cap">入力バリデーションの道具になる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>「正規表現でパース」はHTML相手だと有名な罠。<br>
+         まずは ^ $ . * + ? [] () の最小セットから。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連キーワード</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-file"/></svg></div>
+        <div>
+          <div class="kw-name">grep系</div>
+          <p class="kw-desc">正規表現検索の代表コマンド（近い言葉）。</p>
+          
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-pen"/></svg></div>
+        <div>
+          <div class="kw-name">Vim</div>
+          <p class="kw-desc">正規表現置換が強い編集器。</p>
+          <span class="kw-page">P.615</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-file"/></svg></div>
+        <div>
+          <div class="kw-name">Shell</div>
+          <p class="kw-desc">パイプと組み合わせて使う舞台。</p>
+          <span class="kw-page">P.601</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">611</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

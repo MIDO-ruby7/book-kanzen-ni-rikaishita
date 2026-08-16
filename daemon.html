@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — Daemon</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 12</b>Linux・ターミナル</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">610</div></div>
+      <div class="titles">
+        <h1>Daemon</h1>
+      </div>
+    </div>
+    <p class="subtitle">裏方として常駐し続けるプロセス</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>ユーザー操作に紐づかず、バックグラウンドで待ち受け・定期作業などを行う常駐プロセス。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>WebサーバーやSSHのように、「誰かがログインしている間だけ」では足りないサービスがある。<br>
+             常に待機する裏方が必要だった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>必要なときだけプログラムを起動し、終わったら終了——が基本モデルだった。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>都度起動のプログラム</th><th class="h-docker">Daemon</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">寿命</td><td>作業と一緒に終わる</td><td class="h-docker">長く常駐する</td></tr>
+            <tr><td class="rowhead">対話</td><td>ユーザーと向き合う</td><td class="h-docker">裏で待ち受ける</td></tr>
+            <tr><td class="rowhead">管理</td><td>手元で起動</td><td class="h-docker">サービスマネージャで管理</td></tr>
+            <tr><td class="rowhead">例</td><td>CLIツール</td><td class="h-docker">sshd / cron / nginx など</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>Daemon で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-server"/></svg><div class="cap">サービスを常時待ち受けさせられる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-clock"/></svg><div class="cap">定期・イベント駆動の裏方を置ける</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-layers"/></svg><div class="cap">systemdなどで起動管理できる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>名前はギリシャ神話のダイモーン（守護霊）由来とされる。<br>
+         Windowsでいうサービスに近い感覚。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連キーワード</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-cube"/></svg></div>
+        <div>
+          <div class="kw-name">Process</div>
+          <p class="kw-desc">デーモンもプロセスの一種。</p>
+          <span class="kw-page">P.607</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-network"/></svg></div>
+        <div>
+          <div class="kw-name">SSH</div>
+          <p class="kw-desc">sshd が代表例。</p>
+          <span class="kw-page">P.605</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-clock"/></svg></div>
+        <div>
+          <div class="kw-name">Cron</div>
+          <p class="kw-desc">定期実行のデーモン利用。</p>
+          <span class="kw-page">P.609</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">610</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

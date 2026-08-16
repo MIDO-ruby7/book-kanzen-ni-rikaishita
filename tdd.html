@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — TDD</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 10</b>テスト</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">506</div></div>
+      <div class="titles">
+        <h1>TDD</h1>
+      </div>
+    </div>
+    <p class="subtitle">テストを先に書いて、実装を後から引っ張る</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>Test-Driven Development。失敗するテストを先に書き、通る最小実装→リファクタ、を回す開発手法。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>作り終わってからテストを足すと、「今の実装に合わせたテスト」になりやすい。<br>
+             先に期待を固定して、設計を引き出したかった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>実装→手動確認→余裕があればテスト、の順番がデフォルトだった。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>実装ファースト</th><th class="h-docker">TDD</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">順番</td><td>コード→テスト</td><td class="h-docker">テスト→コード→リファクタ</td></tr>
+            <tr><td class="rowhead">設計への影響</td><td>後付けになりがち</td><td class="h-docker">使いやすさが先に決まる</td></tr>
+            <tr><td class="rowhead">フィードバック</td><td>動かし始めてから</td><td class="h-docker">数分単位の短いループ</td></tr>
+            <tr><td class="rowhead">過剰実装</td><td>つい作り込みがち</td><td class="h-docker">赤→緑の範囲に収まりやすい</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>TDD で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">小さなフィードバックループで進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-scale"/></svg><div class="cap">過剰な設計を抑えやすい</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-file"/></svg><div class="cap">仕様の意図がテストとして残る</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>宗教ではなくツール。向く領域（純粋ロジック）と向かない領域（探索的UI）がある。<br>
+         「赤・緑・リファクタ」を一度体験すると、用語の感触が掴める。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連キーワード</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-file"/></svg></div>
+        <div>
+          <div class="kw-name">BDD</div>
+          <p class="kw-desc">振る舞い・事例の言葉で仕様を書く寄り。</p>
+          <span class="kw-page">P.507</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-cube"/></svg></div>
+        <div>
+          <div class="kw-name">Unit Test</div>
+          <p class="kw-desc">TDDで最もよく回す粒度。</p>
+          <span class="kw-page">P.500</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-wheel"/></svg></div>
+        <div>
+          <div class="kw-name">リファクタリング</div>
+          <p class="kw-desc">緑のあとに必ず来る工程（設計章）。</p>
+          
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">506</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>
