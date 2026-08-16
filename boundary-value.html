@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — 境界値分析</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 10</b>テスト</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">513</div></div>
+      <div class="titles">
+        <h1>境界値分析</h1>
+      </div>
+    </div>
+    <p class="subtitle">バグは端っこに宿る、という経験則</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>仕様の境界（0と1、最大値の前後など）を重点的に試すテスト設計の技法。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>条件分岐のバグは、真ん中の普通の値より、境界の前後で顕在化しやすい。<br>
+             限られた手数でそこを突きたかった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>適当な代表値をいくつか入れて「動いた」ことにしていた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>適当な代表値</th><th class="h-docker">境界値分析</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">選ぶ値</td><td>感覚</td><td class="h-docker">境界とその前後を意図的に</td></tr>
+            <tr><td class="rowhead">バグ検出</td><td>運が絡む</td><td class="h-docker">典型的なオフバイワンを狙い撃ち</td></tr>
+            <tr><td class="rowhead">ケース数</td><td>ばらつく</td><td class="h-docker">必要最小に近づけやすい</td></tr>
+            <tr><td class="rowhead">根拠</td><td>説明しにくい</td><td class="h-docker">設計として説明できる</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>境界値分析 で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-scale"/></svg><div class="cap">オフバイワン系の欠陥を狙いやすい</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-file"/></svg><div class="cap">テストケースに設計根拠を持たせられる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-cube"/></svg><div class="cap">少ないケースで危険地帯をカバーできる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>「1〜100」なら 0,1,100,101 が定番セット。<br>
+         同値分割とセットで覚えるとテスト設計が急に大人になる。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連キーワード</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-layers"/></svg></div>
+        <div>
+          <div class="kw-name">同値分割</div>
+          <p class="kw-desc">同じ扱いのグループから代表を取る技法。</p>
+          <span class="kw-page">P.514</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-monitor"/></svg></div>
+        <div>
+          <div class="kw-name">ブラックボックステスト</div>
+          <p class="kw-desc">仕様ベースで境界を見る立場。</p>
+          <span class="kw-page">P.516</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-file"/></svg></div>
+        <div>
+          <div class="kw-name">テスト設計</div>
+          <p class="kw-desc">技法を組み合わせる上流工程。</p>
+          <span class="kw-page">P.517</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">513</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — ホワイトボックステスト</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 10</b>テスト</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">515</div></div>
+      <div class="titles">
+        <h1>ホワイトボックステスト</h1>
+      </div>
+    </div>
+    <p class="subtitle">中身の配線を見てから試す</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>プログラムの内部構造（分岐や経路）を理解したうえで、その経路を通すように設計するテスト。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>仕様どおりの入出力だけでは、通っていない分岐やエラーハンドリングが残る。<br>
+             コードを見て網羅したかった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>仕様書の項目を外側から叩くだけで、実装の裏道は見ないことが多かった。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>外側からの確認だけ</th><th class="h-docker">ホワイトボックス</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">視点</td><td>仕様・画面</td><td class="h-docker">分岐・経路・内部状態</td></tr>
+            <tr><td class="rowhead">設計者</td><td>誰でも可能なことも</td><td class="h-docker">コードが読める人向き</td></tr>
+            <tr><td class="rowhead">強み</td><td>——</td><td class="h-docker">死にコードや抜け経路を見つけやすい</td></tr>
+            <tr><td class="rowhead">弱み</td><td>——</td><td class="h-docker">実装に引きずられ仕様漏れに気づきにくい</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>ホワイトボックステスト で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-layers"/></svg><div class="cap">分岐網羅など構造ベースの確認ができる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-scale"/></svg><div class="cap">カバレッジと相性が良い</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-file"/></svg><div class="cap">リファクタ前後の経路維持を支えられる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>「白箱」＝中が見える、の意味。<br>
+         ユニットテストの多くはホワイトボックス寄り、と捉えると整理しやすい。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連キーワード</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-monitor"/></svg></div>
+        <div>
+          <div class="kw-name">ブラックボックステスト</div>
+          <p class="kw-desc">中を見ない対の立場。</p>
+          <span class="kw-page">P.516</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-scale"/></svg></div>
+        <div>
+          <div class="kw-name">カバレッジ</div>
+          <p class="kw-desc">構造網羅の指標。</p>
+          <span class="kw-page">P.508</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-cube"/></svg></div>
+        <div>
+          <div class="kw-name">Unit Test</div>
+          <p class="kw-desc">白箱になりやすい粒度。</p>
+          <span class="kw-page">P.500</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">515</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

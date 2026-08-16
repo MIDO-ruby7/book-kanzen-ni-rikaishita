@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — pip</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 11</b>パッケージ管理・バージョン管理</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">557</div></div>
+      <div class="titles">
+        <h1>pip</h1>
+      </div>
+    </div>
+    <p class="subtitle">Pythonの「とりあえず入れる」定番コマンド</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>Pythonの標準的なパッケージインストーラ。PyPIからパッケージを取得して環境に入れる。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>Pythonの第三者ライブラリを、手作業でパスに置く運用は限界だった。<br>
+             標準の入れ方が必要になった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>ソースをダウンロードして setup.py を叩くか、OSのパッケージに頼っていた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>手動配置</th><th class="h-docker">pip</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">入手</td><td>探して展開</td><td class="h-docker">pip install で取得</td></tr>
+            <tr><td class="rowhead">版管理</td><td>曖昧</td><td class="h-docker">requirements やロックで固定</td></tr>
+            <tr><td class="rowhead">環境</td><td>システム全体を汚しがち</td><td class="h-docker">venvと組み合わせるのが定石</td></tr>
+            <tr><td class="rowhead">公開</td><td>個別</td><td class="h-docker">PyPIへアップロードする流れ</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>pip で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-package"/></svg><div class="cap">PyPIのパッケージを簡単に入れられる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-file"/></svg><div class="cap">requirements.txt で一覧共有できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-layers"/></svg><div class="cap">仮想環境と組み合わせて隔離できる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>pipだけだと「環境の分離」はしてくれない。<br>
+         venv / pyenv / poetry / uv などとセットで語られることが多い。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連キーワード</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-layers"/></svg></div>
+        <div>
+          <div class="kw-name">pyenv</div>
+          <p class="kw-desc">Python本体のバージョン管理。</p>
+          <span class="kw-page">P.566</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-package"/></svg></div>
+        <div>
+          <div class="kw-name">パッケージ</div>
+          <p class="kw-desc">pipが扱う単位。</p>
+          <span class="kw-page">P.550</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-file"/></svg></div>
+        <div>
+          <div class="kw-name">ロックファイル</div>
+          <p class="kw-desc">詩やuvなど上位ツール側で強化されがち。</p>
+          <span class="kw-page">P.553</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">557</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

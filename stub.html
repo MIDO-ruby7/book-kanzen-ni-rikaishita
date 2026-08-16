@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — Stub</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 10</b>テスト</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">504</div></div>
+      <div class="titles">
+        <h1>Stub</h1>
+      </div>
+    </div>
+    <p class="subtitle">「この値を返すよ」だけ用意した薄い代役</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>テストのために、依存先の代わりとして決め打ちの戻り値や状態だけを返す簡易実装。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>ロジックのテストに必要なのは「今は成功扱いのユーザーが返る」など結果だけで、<br>
+             本物の複雑さや呼び出し検証までは不要なことが多かった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>毎回フルのモックフレームワークで厳格に振る舞いまで検証するか、本物に繋ぐか、になりがちだった。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>本物 or 厳格Mock</th><th class="h-docker">Stub</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">目的</td><td>結合や相互作用の検証</td><td class="h-docker">決め打ちの入力・応答を渡す</td></tr>
+            <tr><td class="rowhead">複雑さ</td><td>高くなりやすい</td><td class="h-docker">薄く保てる</td></tr>
+            <tr><td class="rowhead">検証</td><td>呼ばれ方まで見ることが多い</td><td class="h-docker">戻り値の用意が主</td></tr>
+            <tr><td class="rowhead">読みやすさ</td><td>セットアップが長い</td><td class="h-docker">意図が短く書ける</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>Stub で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-file"/></svg><div class="cap">テストに必要な応答だけを用意できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-cube"/></svg><div class="cap">本番実装の重さをテストから外せる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-clock"/></svg><div class="cap">セットアップを短くできる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>Stubは「答えてくれる看板」、Mockは「行動をチェックする監視カメラ」イメージ。<br>
+         現場では両方とも「モック」と呼ぶことも多いので、会話の文脈確認を。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連キーワード</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-cube"/></svg></div>
+        <div>
+          <div class="kw-name">Mock</div>
+          <p class="kw-desc">呼び出しまで検証する寄り。</p>
+          <span class="kw-page">P.503</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-file"/></svg></div>
+        <div>
+          <div class="kw-name">Fixture</div>
+          <p class="kw-desc">データ側の固定セット。</p>
+          <span class="kw-page">P.505</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-cube"/></svg></div>
+        <div>
+          <div class="kw-name">Unit Test</div>
+          <p class="kw-desc">Stubがよく出る場所。</p>
+          <span class="kw-page">P.500</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">504</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

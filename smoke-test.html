@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — スモークテスト</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 10</b>テスト</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">512</div></div>
+      <div class="titles">
+        <h1>スモークテスト</h1>
+      </div>
+    </div>
+    <p class="subtitle">電源入れて、煙が出ないかだけ見る</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>ビルドやデプロイ直後に、起動・主要導線など最小限が動くかを短時間で確認するテスト。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>重いフルテストを回す前に、そもそも起動しない・ログインできない、を早く知りたかった。<br>
+             薄い安全確認が必要だった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>デプロイしたら、とりあえずトップページをブラウザで開いてみる——が儀式だった。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>人手の「開けてみた」</th><th class="h-docker">スモークテスト</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">深さ</td><td>その場の気分</td><td class="h-docker">事前に決めた最小セット</td></tr>
+            <tr><td class="rowhead">速さ</td><td>人待ち</td><td class="h-docker">短時間で機械実行</td></tr>
+            <tr><td class="rowhead">目的</td><td>雰囲気確認</td><td class="h-docker">致命傷の早期発見</td></tr>
+            <tr><td class="rowhead">位置づけ</td><td>非公式</td><td class="h-docker">パイプラインの門番にできる</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>スモークテスト で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">壊れたデプロイをすぐ止められる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-clock"/></svg><div class="cap">重いテストの前に足切りできる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-monitor"/></svg><div class="cap">主要導線の生存を確認できる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>名前は電子工作の「煙が出たら失敗」由来とも言われる。<br>
+         深い保証は別テストに任せ、門番に徹するのが上品。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連キーワード</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-monitor"/></svg></div>
+        <div>
+          <div class="kw-name">E2E Test</div>
+          <p class="kw-desc">もっと厚いシナリオ確認。</p>
+          <span class="kw-page">P.502</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-clock"/></svg></div>
+        <div>
+          <div class="kw-name">回帰テスト</div>
+          <p class="kw-desc">広さ・深さのある再確認。</p>
+          <span class="kw-page">P.511</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-wheel"/></svg></div>
+        <div>
+          <div class="kw-name">CI</div>
+          <p class="kw-desc">スモークを自動で回す場所（Ch14）。</p>
+          
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">512</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

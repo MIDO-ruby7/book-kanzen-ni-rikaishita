@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — Mock</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 10</b>テスト</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">503</div></div>
+      <div class="titles">
+        <h1>Mock</h1>
+      </div>
+    </div>
+    <p class="subtitle">本物のふりをして、呼び出しを監視する代役</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>テスト中に本物の依存（APIやDBなど）の代わりに置き、戻り値や「呼ばれたか」を制御・検証する偽物。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>外部サービスが落ちていたり、課金APIを本当に叩いたりすると、テストが不安定で高くつく。<br>
+             依存を切り離しつつ、相互作用は確認したかった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>テストでも本番と同じDBや外部APIに繋ぎ、環境ごとしんどい思いをしていた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>本物依存のままテスト</th><th class="h-docker">Mockを使う</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">安定性</td><td>ネットや相手次第</td><td class="h-docker">ローカルで決定的に動かせる</td></tr>
+            <tr><td class="rowhead">検証できること</td><td>結果中心</td><td class="h-docker">「どう呼ばれたか」も見られる</td></tr>
+            <tr><td class="rowhead">速さ</td><td>I/O待ちが発生</td><td class="h-docker">メモリ上で一瞬</td></tr>
+            <tr><td class="rowhead">危険</td><td>課金やメール誤送信</td><td class="h-docker">副作用を止められる</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>Mock で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-cube"/></svg><div class="cap">外部依存を止めて単体テストできる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-scale"/></svg><div class="cap">呼び出し回数や引数を検証できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-clock"/></svg><div class="cap">テストを速く安定させられる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>Mock / Stub / Fake / Spy は用語が混線しやすい。<br>
+         ざっくり「振る舞いを検証したいならMock寄り」と覚える入口でよい。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連キーワード</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-file"/></svg></div>
+        <div>
+          <div class="kw-name">Stub</div>
+          <p class="kw-desc">決まった値を返すことに寄せた代役。</p>
+          <span class="kw-page">P.504</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-cube"/></svg></div>
+        <div>
+          <div class="kw-name">Unit Test</div>
+          <p class="kw-desc">Mockの出番が多い土俵。</p>
+          <span class="kw-page">P.500</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-file"/></svg></div>
+        <div>
+          <div class="kw-name">Fixture</div>
+          <p class="kw-desc">入力データ側の固定化。</p>
+          <span class="kw-page">P.505</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">503</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

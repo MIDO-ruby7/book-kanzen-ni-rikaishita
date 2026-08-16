@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — nvm</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 11</b>パッケージ管理・バージョン管理</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">564</div></div>
+      <div class="titles">
+        <h1>nvm</h1>
+      </div>
+    </div>
+    <p class="subtitle">Nodeの版を、ディレクトリ気分で着替る</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>Node Version Manager。シェル上で複数のNode.jsバージョンをインストールし、切り替えて使う。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>プロジェクトごとに要求するNodeの版が違い、システムの単一Nodeでは足りなくなった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>公式インストーラやOSパッケージで入れたNodeを、全プロジェクトで共有していた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>システムに一つのNode</th><th class="h-docker">nvm</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">複数版</td><td>難しい</td><td class="h-docker">并存して切り替え</td></tr>
+            <tr><td class="rowhead">プロジェクト</td><td>手動で合わせる</td><td class="h-docker">.nvmrc で自動寄りに</td></tr>
+            <tr><td class="rowhead">入れ直し</td><td>大ごと</td><td class="h-docker">版単位で追加・削除</td></tr>
+            <tr><td class="rowhead">影響範囲</td><td>OS全体</td><td class="h-docker">ユーザー環境に閉じやすい</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>nvm で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-layers"/></svg><div class="cap">プロジェクトごとにNode版を合わせられる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-package"/></svg><div class="cap">新しいLTSを試しやすい</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-file"/></svg><div class="cap">.nvmrcで版を共有できる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>fnm / volta / mise など後継・代替も多い。<br>
+         概念学習の入口としてnvmはまだ強い。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連キーワード</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-layers"/></svg></div>
+        <div>
+          <div class="kw-name">mise</div>
+          <p class="kw-desc">多言語をまとめる上位互換寄り。</p>
+          <span class="kw-page">P.563</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-package"/></svg></div>
+        <div>
+          <div class="kw-name">npm</div>
+          <p class="kw-desc">切り替えたNodeに付いてくるマネージャ。</p>
+          <span class="kw-page">P.554</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-server"/></svg></div>
+        <div>
+          <div class="kw-name">Node.js</div>
+          <p class="kw-desc">対象ランタイム。</p>
+          <span class="kw-page">P.143</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">564</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

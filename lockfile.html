@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — ロックファイル</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 11</b>パッケージ管理・バージョン管理</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">553</div></div>
+      <div class="titles">
+        <h1>ロックファイル</h1>
+      </div>
+    </div>
+    <p class="subtitle">「昨日と同じ入り方」を封印するファイル</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>依存解決の結果（実際に入ったパッケージと版）を記録し、インストールを再現可能にするファイル。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>package.json などの範囲指定だけだと、日が変わると別バージョンが入ることがある。<br>
+             チームとCIで完全に同じ木が欲しかった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>「だいたい同じ依存」で開発し、本番だけ微妙に違うバージョンで落ちる事故が起きていた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>範囲指定だけ</th><th class="h-docker">ロックファイルあり</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">再現性</td><td>インストール時点に依存</td><td class="h-docker">同じ結果を再現しやすい</td></tr>
+            <tr><td class="rowhead">CI</td><td>揺れる</td><td class="h-docker">固定できる</td></tr>
+            <tr><td class="rowhead">レビュー</td><td>何が入るか見えにくい</td><td class="h-docker">差分で更新内容が見える</td></tr>
+            <tr><td class="rowhead">コミット</td><td>し忘れることも</td><td class="h-docker">リポジトリに含めるのが基本</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>ロックファイル で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-file"/></svg><div class="cap">依存ツリーを固定できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-scale"/></svg><div class="cap">環境差による「自分だけ動く」を減らせる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-clock"/></svg><div class="cap">更新内容を差分としてレビューできる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>package-lock.json / yarn.lock / pnpm-lock.yaml / Gemfile.lock / Cargo.lock など仲間が多い。<br>
+         消して再生成は最終手段——まず差分を読もう。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連キーワード</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-network"/></svg></div>
+        <div>
+          <div class="kw-name">依存関係</div>
+          <p class="kw-desc">ロックされる対象。</p>
+          <span class="kw-page">P.551</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-package"/></svg></div>
+        <div>
+          <div class="kw-name">npm</div>
+          <p class="kw-desc">package-lock.json の世界。</p>
+          <span class="kw-page">P.554</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-package"/></svg></div>
+        <div>
+          <div class="kw-name">pnpm</div>
+          <p class="kw-desc">pnpm-lock.yaml の世界。</p>
+          <span class="kw-page">P.556</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">553</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

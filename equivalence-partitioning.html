@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — 同値分割</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 10</b>テスト</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">514</div></div>
+      <div class="titles">
+        <h1>同値分割</h1>
+      </div>
+    </div>
+    <p class="subtitle">同じ扱いの値は、代表一人で十分</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>入力を「同じ結果になるグループ」に分け、各グループから代表値だけを試すテスト設計技法。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>取りうる入力を全部試すのは不可能。<br>
+             でもランダムだと抜けが怖い。グループ化して効率化したかった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>思いつく値を並べるか、全数に近い組み合わせを試みて疲弊していた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>思いつき／全数寄り</th><th class="h-docker">同値分割</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">ケース選定</td><td>場当たり</td><td class="h-docker">パーティションから代表を選ぶ</td></tr>
+            <tr><td class="rowhead">抜けの議論</td><td>しにくい</td><td class="h-docker">「どの区画を見たか」で話せる</td></tr>
+            <tr><td class="rowhead">量</td><td>爆発しがち</td><td class="h-docker">区画数に抑えられる</td></tr>
+            <tr><td class="rowhead">境界</td><td>別途意識が必要</td><td class="h-docker">境界値分析と併用が定石</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>同値分割 で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-layers"/></svg><div class="cap">入力空間を整理してテストできる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-clock"/></svg><div class="cap">無駄な重複ケースを減らせる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-file"/></svg><div class="cap">カバレッジの議論を仕様ベースにできる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>「有効同値」と「無効同値」を分けるのがコツ。<br>
+         エラー系を忘れると、ハッピーパスだけのテストになる。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連キーワード</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-scale"/></svg></div>
+        <div>
+          <div class="kw-name">境界値分析</div>
+          <p class="kw-desc">区画の端を突く姉妹技法。</p>
+          <span class="kw-page">P.513</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-file"/></svg></div>
+        <div>
+          <div class="kw-name">テスト設計</div>
+          <p class="kw-desc">これらの技法を使う工程。</p>
+          <span class="kw-page">P.517</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-monitor"/></svg></div>
+        <div>
+          <div class="kw-name">ブラックボックステスト</div>
+          <p class="kw-desc">内部を見ずに仕様から区画する。</p>
+          <span class="kw-page">P.516</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">514</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — Integration Test</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 10</b>テスト</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">501</div></div>
+      <div class="titles">
+        <h1>Integration Test</h1>
+      </div>
+    </div>
+    <p class="subtitle">つなぎ目で、初めて起きる事故を拾う</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>複数のモジュールや、DB・APIなどの外部をつないだ状態で、連携が正しいかを確かめるテスト。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>単体では正しくても、つなぐと型やトランザクション、設定の食い違いで落ちることがある。<br>
+             「結合した姿」を見るテストが必要になった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>ユニットテストは通るのに、実際にDBを繋ぐと落ちる——を本番近くで初めて知る、がよくあった。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>単体だけ／手動結合</th><th class="h-docker">Integration Test</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">見る範囲</td><td>部品の内側</td><td class="h-docker">部品の境界と相互作用</td></tr>
+            <tr><td class="rowhead">依存</td><td>モックで消しがち</td><td class="h-docker">本物かそれに近いものを使う</td></tr>
+            <tr><td class="rowhead">速さ</td><td>非常に速い</td><td class="h-docker">ユニットより遅い</td></tr>
+            <tr><td class="rowhead">見つかるバグ</td><td>ロジック誤り</td><td class="h-docker">配線・設定・契約のずれ</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>Integration Test で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-layers"/></svg><div class="cap">モジュール間の契約ずれを早期に見つけられる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-server"/></svg><div class="cap">DBやAPIとの実連携を検証できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-scale"/></svg><div class="cap">E2Eより狭く、原因を追いやすい</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>「どこからが結合か」は宗教戦争になりやすい。<br>
+         チームで境界を一文で定義しておくだけで、テストの粒度が安定する。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連キーワード</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-cube"/></svg></div>
+        <div>
+          <div class="kw-name">Unit Test</div>
+          <p class="kw-desc">もっと小さい単位のテスト。</p>
+          <span class="kw-page">P.500</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-monitor"/></svg></div>
+        <div>
+          <div class="kw-name">E2E Test</div>
+          <p class="kw-desc">ユーザー操作に近い端到端のテスト。</p>
+          <span class="kw-page">P.502</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-file"/></svg></div>
+        <div>
+          <div class="kw-name">Fixture</div>
+          <p class="kw-desc">結合時に使う固定の試験データ。</p>
+          <span class="kw-page">P.505</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">501</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

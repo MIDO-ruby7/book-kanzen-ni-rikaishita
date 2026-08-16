@@ -1,20 +1,25 @@
 # 未実装ワード一覧（章別）
 
 `book-memo.md`（全31章＋Appendix＋新章の企画メモ）と `content.js`（実装済みデータ）を突き合わせた差分。
-実装済み: 159語（Ch1〜8, Ch13, Ch14, Ch16の一部）
-未実装: 約349語
+実装済み: 229語（Ch1〜12, Ch13, Ch14, Ch16の一部）
+未実装: 約279語
 
-## 章別リスト
+## 今ターンで実装したもの（2026-08-16）
+
+- Ch2: イントラネット（P.44）
+- Ch6: ダンプ（P.116）
+- Ch9 モバイル: 9語（P.450–458）
+- Ch10 テスト: 22語（P.500–521）
+- Ch11 パッケージ管理・バージョン管理: 17語（P.550–566）
+- Ch12 Linux・ターミナル: 19語（P.600–618）
+- Ch13: Network（P.317）
+
+バッチ用ソース: `scripts/batch-ch9-12.js` / `batch-ch11.js` / `batch-ch12.js` / `merge-batch.js`
+
+## 章別リスト（未実装）
 
 | 章 | 未実装語数 | 内容 |
 |---|---|---|
-| Ch2 Webのしくみ | 1 | イントラネット |
-| Ch6 データベース | 1 | ダンプ |
-| Ch9 モバイル | 9 | iOS / Android / ネイティブアプリ / ハイブリッドアプリ / React Native / Flutter / Dart / Swift / Kotlin |
-| Ch10 テスト | 22 | Unit Test / Integration Test / E2E Test / Mock / Stub / Fixture / TDD / BDD / カバレッジ / デバッグ / スナップショットテスト / 回帰テスト / スモークテスト / 境界値分析 / 同値分割 / ホワイトボックステスト / ブラックボックステスト / テスト設計 / Jest / Vitest / Playwright / Puppeteer |
-| Ch11 パッケージ管理・バージョン管理 | 17 | パッケージ / 依存関係 / セマンティックバージョニング / ロックファイル / npm / yarn / pnpm / pip / gem / cargo / go mod / Homebrew / apt / mise / nvm / rbenv / pyenv |
-| Ch12 Linux・ターミナル | 19 | Terminal / Shell / Bash / Zsh / PATH / SSH / Environment Variable / Process / Thread / Cron / Daemon / 正規表現 / パーミッション / ping / curl / Vim / Markdown / Ghostty / .env |
-| Ch13 Docker | 1 | Network（既存5語に追加） |
 | Ch14 デプロイ・CI/CD | 17 | ローカル / ステージング / 本番 / Build / Bundle / Artifact / Release / Rollback / CI / CD / Pipeline / Canary Release / Blue/Green Deployment / GitHub Actions / CircleCI / Vercel / Netlify（DevOpsのみ実装済） |
 | Ch15 開発プロセス | 15 | PMBOK / ウォーターフォール / WBS / ガントチャート / マイルストーン / ステークホルダー / スコープ / アジャイル / スクラム / スプリント / レトロスペクティブ / ベロシティ / コードレビュー / ペアプロ / イシュー |
 | Ch16 クラウド・インフラ | 19 | Cloud / オンプレミス / IaaS / PaaS / SaaS / VPC / Load Balancer / CDN / Object Storage / Serverless / Reverse Proxy / Nginx / トポロジー / リージョン / AZ / 可用性 / SLA / SLO / SLI（VM/K8sのみ実装済） |
@@ -44,5 +49,7 @@
 ## 進め方メモ
 
 - 章単位でバッチ実装する想定（例: Ch9〜12 → Ch13〜16 …）
+- **次バッチ候補**: Ch14〜17（デプロイ・開発プロセス・クラウド概念・IaC）
 - ページ番号はチャプター×50の体系（`book-memo.md` 参照）
 - サイドバーの相互参照は同一バッチ内で解決
+- 1ページ2語候補（CI/CD、IaaS/PaaS/SaaS、SLA/SLO/SLI など）は `book-memo.md` の整理メモを参照

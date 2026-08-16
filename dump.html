@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — ダンプ（Dump）</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 6</b>データベース</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">116</div></div>
+      <div class="titles">
+        <h1>ダンプ（Dump）</h1>
+      </div>
+    </div>
+    <p class="subtitle">データベースの「中身ごと書き出し」</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>テーブルの定義やデータの中身を、ファイルとして丸ごと書き出すこと（またはそのファイル）。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>本番のデータを別環境に移したり、障害時に戻したりするには、DBの中身をファイルとして持ち出せる必要があった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>ダンプという発想の前は、必要な行を手でSELECTしてCSVにしたり、サーバごとコピーしたりしていた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>手作業での持ち出し</th><th class="h-docker">ダンプで一括書き出し</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">取得単位</td><td>必要な表を個別に抽出</td><td class="h-docker">スキーマごと・DBごと書き出せる</td></tr>
+            <tr><td class="rowhead">再現性</td><td>手順が人依存になりやすい</td><td class="h-docker">同じコマンドで何度でも取れる</td></tr>
+            <tr><td class="rowhead">復元</td><td>INSERTを手で組み立てる</td><td class="h-docker">ダンプファイルを流し込めば復元</td></tr>
+            <tr><td class="rowhead">用途</td><td>ちょっとした確認向き</td><td class="h-docker">バックアップ・移行・検証データに</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>ダンプ（Dump） で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-package"/></svg><div class="cap">DBのスナップショットをファイルにできる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-clock"/></svg><div class="cap">障害時にバックアップから戻せる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-laptop"/></svg><div class="cap">本番相当のデータを開発環境に持ち込める</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>mysqldump や pg_dump の「dump」は、まさにこのダンプ。<br>
+         個人情報入りのダンプをそのままチャットに貼るのは事故の定番ルート。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連キーワード</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-file"/></svg></div>
+        <div>
+          <div class="kw-name">Migration</div>
+          <p class="kw-desc">スキーマ変更をコードとして管理する仕組み。</p>
+          <span class="kw-page">P.92</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-package"/></svg></div>
+        <div>
+          <div class="kw-name">Seeder</div>
+          <p class="kw-desc">初期データやテスト用データを流し込む仕組み。</p>
+          <span class="kw-page">P.93</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">116</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

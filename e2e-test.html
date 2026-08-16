@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — E2E Test</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 10</b>テスト</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">502</div></div>
+      <div class="titles">
+        <h1>E2E Test</h1>
+      </div>
+    </div>
+    <p class="subtitle">ユーザーの操作を、ロボットが最後までやる</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>画面操作やAPI呼び出しなど、システムを端から端まで通して、利用シナリオが成立するかを確かめるテスト。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>部品も結合も正しくても、「会員登録してログインして購入する」が通るかは別問題。<br>
+             ユーザー視点の一本道を自動で歩きたかった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>リリース前に人がブラウザを手で操作し、チェックリストを消化するのが普通だった。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>人手のシナリオ確認</th><th class="h-docker">E2E Test</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">再現性</td><td>担当者の手癖に依存</td><td class="h-docker">同じ手順を何度でも実行</td></tr>
+            <tr><td class="rowhead">コスト</td><td>人時がかかる</td><td class="h-docker">初期構築は重いが繰り返しは安い</td></tr>
+            <tr><td class="rowhead">速さ</td><td>遅い</td><td class="h-docker">自動化しても結合より重い</td></tr>
+            <tr><td class="rowhead">壊れやすさ</td><td>——</td><td class="h-docker">UI変更でテストも折れやすい</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>E2E Test で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-monitor"/></svg><div class="cap">重要シナリオの退行を自動検知できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-clock"/></svg><div class="cap">夜中のCIでも同じ確認を回せる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">リリース判断の材料を機械的に増やせる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>全部をE2Eにすると遅くて脆い。<br>
+         ピラミッドの頂点——数は少なく、商売に効く道だけ、が定石。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連キーワード</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-package"/></svg></div>
+        <div>
+          <div class="kw-name">Playwright</div>
+          <p class="kw-desc">モダンなE2E自動化ツール。</p>
+          <span class="kw-page">P.520</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-package"/></svg></div>
+        <div>
+          <div class="kw-name">Puppeteer</div>
+          <p class="kw-desc">Chromeを操作する自動化ライブラリ。</p>
+          <span class="kw-page">P.521</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-rocket"/></svg></div>
+        <div>
+          <div class="kw-name">スモークテスト</div>
+          <p class="kw-desc">「とりあえず起動するか」の薄い確認。</p>
+          <span class="kw-page">P.512</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">502</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

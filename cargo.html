@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — cargo</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 11</b>パッケージ管理・バージョン管理</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">559</div></div>
+      <div class="titles">
+        <h1>cargo</h1>
+      </div>
+    </div>
+    <p class="subtitle">Rustの公式・ビルドもテストも届ける万能箱</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>Rustの公式パッケージマネージャ兼ビルドツール。crates.ioからの依存取得とビルドを一体で担う。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>言語が新しくても、依存取得・ビルド・テストがバラバラだと学習コストが跳ねる。<br>
+             最初から一体のツールチェーンが望まれた。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>他言語のように、ビルドシステムとパッケージマネージャを別々に学ぶ必要があった。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>ツール分裂モデル</th><th class="h-docker">cargo</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">依存</td><td>別ツール</td><td class="h-docker">Cargo.toml で宣言</td></tr>
+            <tr><td class="rowhead">ビルド</td><td>別システム</td><td class="h-docker">cargo build</td></tr>
+            <tr><td class="rowhead">テスト</td><td>別ランナーが多い</td><td class="h-docker">cargo test が標準</td></tr>
+            <tr><td class="rowhead">公開</td><td>手順が多様</td><td class="h-docker">cargo publish へ一本化</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>cargo で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-package"/></svg><div class="cap">crate依存を公式手順で管理できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">ビルドとテストを同じCLIで回せる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-file"/></svg><div class="cap">Cargo.lockで再現ビルドしやすい</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>Rustを入れるとだいたいcargoも一緒に来る。<br>
+         「言語＋cargo」がセットの学習単位、と覚えると早い。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連キーワード</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-package"/></svg></div>
+        <div>
+          <div class="kw-name">パッケージ</div>
+          <p class="kw-desc">crateと呼ばれる単位。</p>
+          <span class="kw-page">P.550</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-file"/></svg></div>
+        <div>
+          <div class="kw-name">ロックファイル</div>
+          <p class="kw-desc">Cargo.lock。</p>
+          <span class="kw-page">P.553</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-file"/></svg></div>
+        <div>
+          <div class="kw-name">Rust</div>
+          <p class="kw-desc">cargoの宿主言語。</p>
+          <span class="kw-page">P.176</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">559</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

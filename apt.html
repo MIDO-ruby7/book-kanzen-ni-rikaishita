@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — apt</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 11</b>パッケージ管理・バージョン管理</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">562</div></div>
+      <div class="titles">
+        <h1>apt</h1>
+      </div>
+    </div>
+    <p class="subtitle">Debian系Linuxの公式なお買い物カゴ</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>Debian/Ubuntuなどで使うパッケージ管理コマンド。OSのソフトウェアを安全に入れたり更新したりする。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>Linuxにソフトを入れる方法がソースビルド中心だと、依存地獄と更新追従がつらい。<br>
+             ディストリ公式の解決が必要だった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>tarballを展開して ./configure &amp;&amp; make が通過儀礼だった。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>ソースからの導入</th><th class="h-docker">apt</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">依存解決</td><td>自分で集める</td><td class="h-docker">パッケージマネージャが解決</td></tr>
+            <tr><td class="rowhead">更新</td><td>手作業</td><td class="h-docker">apt upgrade で追従</td></tr>
+            <tr><td class="rowhead">削除</td><td>残骸管理が難しい</td><td class="h-docker">アンインストール手順がある</td></tr>
+            <tr><td class="rowhead">信頼</td><td>ダウンロード元まちまち</td><td class="h-docker">ディストリのリポジトリ</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>apt で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-server"/></svg><div class="cap">OSのソフトウェアを標準手順で管理できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-scale"/></svg><div class="cap">セキュリティ更新を追従しやすい</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-package"/></svg><div class="cap">サーバー構築を自動化しやすい</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>apt はフロントエンド、実体には dpkg などが控える。<br>
+         コンテナのDockerfileでも最もよく見るコマンドの一つ。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連キーワード</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-package"/></svg></div>
+        <div>
+          <div class="kw-name">Homebrew</div>
+          <p class="kw-desc">Mac側の類似体験。</p>
+          <span class="kw-page">P.561</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-package"/></svg></div>
+        <div>
+          <div class="kw-name">パッケージ</div>
+          <p class="kw-desc">debなどの単位。</p>
+          <span class="kw-page">P.550</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-monitor"/></svg></div>
+        <div>
+          <div class="kw-name">Shell</div>
+          <p class="kw-desc">aptを叩く場所（Ch12）。</p>
+          <span class="kw-page">P.601</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">562</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

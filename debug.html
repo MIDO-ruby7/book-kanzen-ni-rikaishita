@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — デバッグ</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 10</b>テスト</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">509</div></div>
+      <div class="titles">
+        <h1>デバッグ</h1>
+      </div>
+    </div>
+    <p class="subtitle">バグを「見つける・理解する・潰す」作業全体</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>プログラムの不具合原因を特定し、修正して確認するまでの一連の活動。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>動くはずのプログラムが期待どおり動かないとき、勘で直すと別の場所が壊れる。<br>
+             再現→仮説→検証の手順が必要になった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>printデバッグと気合、そして「一度消して書き直す」が頼りだった。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>勘と再実装</th><th class="h-docker">意図的なデバッグ</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">再現</td><td>運任せ</td><td class="h-docker">手順を固定して何度も見る</td></tr>
+            <tr><td class="rowhead">観測</td><td>ログを散らかす</td><td class="h-docker">ブレークポイントや段階的検証</td></tr>
+            <tr><td class="rowhead">仮説</td><td>思いつき修正</td><td class="h-docker">仮説を立ててから変える</td></tr>
+            <tr><td class="rowhead">回帰防止</td><td>その場しのぎ</td><td class="h-docker">テストに残せる</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>デバッグ で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-pen"/></svg><div class="cap">原因を切り分けて確実に潰せる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-monitor"/></svg><div class="cap">デバッガで実行時の状態を覗ける</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-file"/></svg><div class="cap">再発防止のテストやログ改善につなげられる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>デバッグの半分は「再現手順を短くする」こと。<br>
+         再現できないバグは、まだバグではなく都市伝説。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連キーワード</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-file"/></svg></div>
+        <div>
+          <div class="kw-name">ログ</div>
+          <p class="kw-desc">本番でデバッグするときの手がかり（観測章へ）。</p>
+          
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-clock"/></svg></div>
+        <div>
+          <div class="kw-name">回帰テスト</div>
+          <p class="kw-desc">直した穴が再び開かないか確認。</p>
+          <span class="kw-page">P.511</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-cube"/></svg></div>
+        <div>
+          <div class="kw-name">Unit Test</div>
+          <p class="kw-desc">仮説検証を高速にする道具。</p>
+          <span class="kw-page">P.500</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">509</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

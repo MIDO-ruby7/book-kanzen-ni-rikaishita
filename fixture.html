@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — Fixture</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 10</b>テスト</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">505</div></div>
+      <div class="titles">
+        <h1>Fixture</h1>
+      </div>
+    </div>
+    <p class="subtitle">テストの舞台装置と小道具一式</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>テストを走らせるためにあらかじめ用意する、固定のデータや状態・環境のこと。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>毎回手でユーザーを作ったりDBを初期化したりしていると、テストの本題より準備が長くなる。<br>
+             同じ前提を再利用したかった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>テスト関数の中に、データのINSERTやファイル配置をベタ書きしていた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>テスト内に準備を直書き</th><th class="h-docker">Fixture</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">再利用</td><td>コピペが増える</td><td class="h-docker">共通の前提を使い回せる</td></tr>
+            <tr><td class="rowhead">読みやすさ</td><td>本題が埋もれる</td><td class="h-docker">「何を試すか」が前面に出る</td></tr>
+            <tr><td class="rowhead">一貫性</td><td>テストごとに微妙に違う</td><td class="h-docker">同じ初期状態から始められる</td></tr>
+            <tr><td class="rowhead">メンテ</td><td>変更が散らばる</td><td class="h-docker">一箇所に寄せやすい</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>Fixture で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-package"/></svg><div class="cap">試験データをまとめて管理できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-clock"/></svg><div class="cap">テストの準備コードを短くできる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-scale"/></svg><div class="cap">前提条件のばらつきを減らせる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>フレームワークによって「fixture」の指すものが少し違う（pytest、Rails、Jest…）。<br>
+         共通して言えるのは「テストの前提を外出しする」という発想。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連キーワード</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-package"/></svg></div>
+        <div>
+          <div class="kw-name">Seeder</div>
+          <p class="kw-desc">アプリ側の初期データ投入に近い概念。</p>
+          <span class="kw-page">P.93</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-layers"/></svg></div>
+        <div>
+          <div class="kw-name">Integration Test</div>
+          <p class="kw-desc">Fixtureの出番が多い層。</p>
+          <span class="kw-page">P.501</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-wheel"/></svg></div>
+        <div>
+          <div class="kw-name">Factory</div>
+          <p class="kw-desc">動的にテストデータを作る派（一緒に覚えたい）。</p>
+          
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">505</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

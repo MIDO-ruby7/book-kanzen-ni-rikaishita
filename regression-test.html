@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — 回帰テスト</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 10</b>テスト</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">511</div></div>
+      <div class="titles">
+        <h1>回帰テスト</h1>
+      </div>
+    </div>
+    <p class="subtitle">直したつもりが、昔のバグを呼び戻していないか</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>変更後に、以前できていたことが壊れていないかを確認するテスト（またはその活動）。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>機能追加のたびに、関係ない画面が壊れることがあった。<br>
+             「昔は動いていたこと」を継続的に守りたかった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>リリース前に、思い出した範囲を人手でざっと触る——が回帰確認の実体だった。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>思い出し手動確認</th><th class="h-docker">回帰テスト</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">範囲</td><td>担当者の記憶頼み</td><td class="h-docker">守るシナリオを資産化</td></tr>
+            <tr><td class="rowhead">タイミング</td><td>リリース直前に集中</td><td class="h-docker">変更のたびに自動で実行可</td></tr>
+            <tr><td class="rowhead">抜け</td><td>起きやすい</td><td class="h-docker">完全ではないが再現性がある</td></tr>
+            <tr><td class="rowhead">コスト</td><td>人の時間が毎回必要</td><td class="h-docker">初期投資＋実行コスト</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>回帰テスト で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-clock"/></svg><div class="cap">過去の不具合の再発を防ぎやすい</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">変更のたびに安全網をかけられる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-scale"/></svg><div class="cap">リファクタの勇気を増やせる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>回帰テストは特定のフレームワーク名ではない。<br>
+         ユニットでもE2Eでも、「昔の正しさを守る」目的なら回帰。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連キーワード</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-rocket"/></svg></div>
+        <div>
+          <div class="kw-name">スモークテスト</div>
+          <p class="kw-desc">もっと薄い「死んでないか」確認。</p>
+          <span class="kw-page">P.512</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-monitor"/></svg></div>
+        <div>
+          <div class="kw-name">E2E Test</div>
+          <p class="kw-desc">回帰の実行形態のひとつ。</p>
+          <span class="kw-page">P.502</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-pen"/></svg></div>
+        <div>
+          <div class="kw-name">デバッグ</div>
+          <p class="kw-desc">回帰で落ちたあと必ず来る工程。</p>
+          <span class="kw-page">P.509</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">511</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

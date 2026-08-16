@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — curl</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 12</b>Linux・ターミナル</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">614</div></div>
+      <div class="titles">
+        <h1>curl</h1>
+      </div>
+    </div>
+    <p class="subtitle">URLを、コマンド一行で持ってくる</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>HTTPなど様々なプロトコルでデータを送受信できるコマンドラインツール。API確認の定番。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>ブラウザなしで、HTTPのリクエスト／レスポンスを再現・確認したかった。<br>
+             スクリプトからも同じ手段が欲しかった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>ブラウザの開発者ツールか、専用GUIクライアントに頼っていた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>ブラウザ／GUIクライアント</th><th class="h-docker">curl</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">再現</td><td>手順が重い</td><td class="h-docker">一行で同じリクエスト</td></tr>
+            <tr><td class="rowhead">自動化</td><td>しづらい</td><td class="h-docker">シェルからすぐ呼べる</td></tr>
+            <tr><td class="rowhead">ヘッダ</td><td>GUIで設定</td><td class="h-docker">-H などで明示</td></tr>
+            <tr><td class="rowhead">学習</td><td>画面操作</td><td class="h-docker">HTTPの生に近い感触</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>curl で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-network"/></svg><div class="cap">APIをターミナルから叩ける</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-file"/></svg><div class="cap">ヘッダや本文を細かく制御できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">スクリプトやCIに組み込める</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>コピーしたcurl例の -H Authorization をそのままチャットに貼る事故に注意。<br>
+         「叩く」という語彙の実演会場でもある。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連キーワード</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-network"/></svg></div>
+        <div>
+          <div class="kw-name">HTTP</div>
+          <p class="kw-desc">curlが最もよく話す相手（Ch2）。</p>
+          <span class="kw-page">P.25</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-network"/></svg></div>
+        <div>
+          <div class="kw-name">ping</div>
+          <p class="kw-desc">もっと下の層の生存確認。</p>
+          <span class="kw-page">P.613</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-cloud"/></svg></div>
+        <div>
+          <div class="kw-name">API</div>
+          <p class="kw-desc">curlで試す対象（Ch4）。</p>
+          <span class="kw-page">P.61</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">614</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

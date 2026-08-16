@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — パーミッション</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 12</b>Linux・ターミナル</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">612</div></div>
+      <div class="titles">
+        <h1>パーミッション</h1>
+      </div>
+    </div>
+    <p class="subtitle">誰が、読む・書く・実行できるかの鍵</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>ファイルやディレクトリに対し、ユーザ／グループ／その他が読み書き実行できるかを表す権限設定。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>多人で使うUNIXでは、他人の秘密ファイルを読めたり、システムファイルを消せてしまっては困る。<br>
+             アクセス制御の基本単位が必要だった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>単一ユーザー前提か、物理的に触れる人だけが操作できる、という世界だった。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>権限の概念が薄い</th><th class="h-docker">パーミッション</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">制御</td><td>ほぼ全部可能</td><td class="h-docker">rwxを主体に制限</td></tr>
+            <tr><td class="rowhead">表記</td><td>——</td><td class="h-docker">記号（rwx）や8進数（755）</td></tr>
+            <tr><td class="rowhead">所有</td><td>曖昧</td><td class="h-docker">user/groupが紐づく</td></tr>
+            <tr><td class="rowhead">事故</td><td>消し放題</td><td class="h-docker">権限不足／過剰の両方に注意</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>パーミッション で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-scale"/></svg><div class="cap">ファイルアクセスを主体ごとに制限できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-file"/></svg><div class="cap">chmod/chownで制御できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-server"/></svg><div class="cap">サーバー公開時の最小権限を設計できる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>chmod 777 は「とりあえず動いた」の代名詞であり、本番では警鐘。<br>
+         ディレクトリの実行ビットは「中に入れるか」の意味になる点が初見殺し。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連キーワード</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-network"/></svg></div>
+        <div>
+          <div class="kw-name">SSH</div>
+          <p class="kw-desc">秘密鍵ファイルの権限が厳しい。</p>
+          <span class="kw-page">P.605</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-file"/></svg></div>
+        <div>
+          <div class="kw-name">.env</div>
+          <p class="kw-desc">中身を守る権限設計が重要。</p>
+          <span class="kw-page">P.618</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-cube"/></svg></div>
+        <div>
+          <div class="kw-name">Process</div>
+          <p class="kw-desc">どのユーザー権限で走るかが効く。</p>
+          <span class="kw-page">P.607</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">612</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

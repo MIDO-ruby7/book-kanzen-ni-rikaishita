@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — セマンティックバージョニング</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 11</b>パッケージ管理・バージョン管理</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">552</div></div>
+      <div class="titles">
+        <h1>セマンティックバージョニング</h1>
+      </div>
+    </div>
+    <p class="subtitle">MAJOR.MINOR.PATCH に意味を込める</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>バージョン番号を major.minor.patch の形で付け、互換性の破り方にルールを持たせる約束（SemVer）。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>「1.2」と「1.10」のどちらが新しいか、更新して安全かも番号からは読み取れなかった。<br>
+             互換の意思表示が番号に必要だった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>日付や気分でバージョンを上げ、利用者はリリースノートを精読するしかなかった。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>気分バージョン</th><th class="h-docker">SemVer</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">破壊的変更</td><td>番号から不明</td><td class="h-docker">MAJORを上げる</td></tr>
+            <tr><td class="rowhead">後方互換の機能追加</td><td>不明</td><td class="h-docker">MINORを上げる</td></tr>
+            <tr><td class="rowhead">バグ修正</td><td>不明</td><td class="h-docker">PATCHを上げる</td></tr>
+            <tr><td class="rowhead">依存の指定</td><td>難しい</td><td class="h-docker">^や〜で意図を書ける</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>セマンティックバージョニング で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-scale"/></svg><div class="cap">更新の危険度を番号から推測できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-file"/></svg><div class="cap">依存指定にルールを持たせられる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-network"/></svg><div class="cap">ライブラリ作者と利用者の契約になる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>0.x は「まだ壊してもよい」期間、という文化もある。<br>
+         逆に major を上げない破壊変更は、信頼を削るショートカット。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連キーワード</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-file"/></svg></div>
+        <div>
+          <div class="kw-name">ロックファイル</div>
+          <p class="kw-desc">SemVer範囲の解決結果を固定。</p>
+          <span class="kw-page">P.553</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-network"/></svg></div>
+        <div>
+          <div class="kw-name">依存関係</div>
+          <p class="kw-desc">バージョン範囲が効く場所。</p>
+          <span class="kw-page">P.551</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-package"/></svg></div>
+        <div>
+          <div class="kw-name">npm</div>
+          <p class="kw-desc">SemVerが日常になる世界。</p>
+          <span class="kw-page">P.554</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">552</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

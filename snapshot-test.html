@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — スナップショットテスト</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 10</b>テスト</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">510</div></div>
+      <div class="titles">
+        <h1>スナップショットテスト</h1>
+      </div>
+    </div>
+    <p class="subtitle">「前と同じ見た目／出力か」を写真で比べる</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>コンポーネントの出力やUIの結果を保存し、次回以降の実行結果と差分比較するテスト手法。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>UIの細かい文言やクラス名の変化を、全部手でassertするのは現実的でない。<br>
+             「前回からの変化」自体を検知したかった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>見た目の確認は目視、または重要な要素だけを個別assertしていた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>目視／個別assert</th><th class="h-docker">スナップショット</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">記述量</td><td>多い／抜けやすい</td><td class="h-docker">一発で出力全体を固定</td></tr>
+            <tr><td class="rowhead">変更検知</td><td>見落としがある</td><td class="h-docker">差分として必ず出る</td></tr>
+            <tr><td class="rowhead">意図</td><td>何を守るか明示しやすい</td><td class="h-docker">更新時にレビューが必要</td></tr>
+            <tr><td class="rowhead">脆さ</td><td>——</td><td class="h-docker">リファクタでも折れやすい</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>スナップショットテスト で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-image"/></svg><div class="cap">UIの意図しない変化を検知できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-clock"/></svg><div class="cap">細かいassertを書く時間を節約できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-file"/></svg><div class="cap">差分レビューで変更意図を確認できる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>スナップショットを「とりあえず更新」するのはテスト自殺。<br>
+         差分を読んでからapproveする習慣が本体。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連キーワード</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-package"/></svg></div>
+        <div>
+          <div class="kw-name">Jest</div>
+          <p class="kw-desc">toMatchSnapshot が有名。</p>
+          <span class="kw-page">P.518</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-package"/></svg></div>
+        <div>
+          <div class="kw-name">Vitest</div>
+          <p class="kw-desc">同様の機能を持つ高速ランナー。</p>
+          <span class="kw-page">P.519</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-clock"/></svg></div>
+        <div>
+          <div class="kw-name">回帰テスト</div>
+          <p class="kw-desc">変化検知という目的が近い。</p>
+          <span class="kw-page">P.511</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">510</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

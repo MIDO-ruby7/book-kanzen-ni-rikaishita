@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — Bash</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 12</b>Linux・ターミナル</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">602</div></div>
+      <div class="titles">
+        <h1>Bash</h1>
+      </div>
+    </div>
+    <p class="subtitle">Linuxサーバーでいちばん遭遇する方言</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>Bourne Again SHell。Linuxやスクリプト文化で標準に近い位置にいるシェル。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>古いBourne shellの互換を保ちつつ、実用的な機能を足した対話・スクリプト用シェルが必要だった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>shの最小主義か、ベンダーごとの独自シェルに分かれていた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>素のsh／独自シェル</th><th class="h-docker">Bash</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">普及</td><td>環境差が大きい</td><td class="h-docker">Linuxで事実上の共通語</td></tr>
+            <tr><td class="rowhead">スクリプト</td><td>機能が限られることも</td><td class="h-docker">配列や関数などが実用的</td></tr>
+            <tr><td class="rowhead">学習資源</td><td>分散</td><td class="h-docker">事例と記事が圧倒的</td></tr>
+            <tr><td class="rowhead">対話</td><td>素朴</td><td class="h-docker">補完や履歴も実用レベル</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>Bash で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-server"/></svg><div class="cap">サーバー上の作業・スクリプトの共通土台になる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-file"/></svg><div class="cap">シェルスクリプトを書きやすい</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-package"/></svg><div class="cap">CIやコンテナの入口コマンドになりやすい</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>スクリプト先頭の #!/bin/bash は「このファイルはBashで読んで」の宣言。<br>
+         #!/bin/sh との違いで刺さるバグは、あるあるの関門。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連キーワード</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-file"/></svg></div>
+        <div>
+          <div class="kw-name">Zsh</div>
+          <p class="kw-desc">対話体験で選ばれやすい兄弟。</p>
+          <span class="kw-page">P.603</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-file"/></svg></div>
+        <div>
+          <div class="kw-name">Shell</div>
+          <p class="kw-desc">上位概念。</p>
+          <span class="kw-page">P.601</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-clock"/></svg></div>
+        <div>
+          <div class="kw-name">Cron</div>
+          <p class="kw-desc">Bashスクリプトの実行タイミング役。</p>
+          <span class="kw-page">P.609</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">602</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

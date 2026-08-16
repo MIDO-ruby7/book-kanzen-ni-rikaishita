@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — npm</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 11</b>パッケージ管理・バージョン管理</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">554</div></div>
+      <div class="titles">
+        <h1>npm</h1>
+      </div>
+    </div>
+    <p class="subtitle">Nodeの荷物を運ぶ、公式の配達便</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>Node.js付属のパッケージマネージャ。npmレジストリからパッケージを入れ、scriptsも実行する。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>JSの再利用部品が増えるにつれ、ダウンロード・依存解決・公開を標準化する道具が必要になった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>スクリプトをファイルで共有するか、Gitリポジトリを직접参照する運用が多かった。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>手動入手</th><th class="h-docker">npm</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">インストール</td><td>ダウンロードして配置</td><td class="h-docker">npm install で解決</td></tr>
+            <tr><td class="rowhead">メタデータ</td><td>README頼み</td><td class="h-docker">package.json に集約</td></tr>
+            <tr><td class="rowhead">実行</td><td>パスを覚える</td><td class="h-docker">npm scripts で統一</td></tr>
+            <tr><td class="rowhead">公開</td><td>個別配布</td><td class="h-docker">レジストリに publish</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>npm で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-package"/></svg><div class="cap">JSパッケージを標準手順で入れられる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-file"/></svg><div class="cap">scriptsで開発コマンドを共有できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-cloud"/></svg><div class="cap">自作パッケージを公開できる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>npmはツール名でありレジストリ名でもある。<br>
+         yarn/pnpmに乗り換えても、レジストリはnpmのまま、がよくある構図。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連キーワード</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-package"/></svg></div>
+        <div>
+          <div class="kw-name">yarn</div>
+          <p class="kw-desc">代替クライアントの代表格。</p>
+          <span class="kw-page">P.555</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-package"/></svg></div>
+        <div>
+          <div class="kw-name">pnpm</div>
+          <p class="kw-desc">ディスク効率に振る代替。</p>
+          <span class="kw-page">P.556</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-file"/></svg></div>
+        <div>
+          <div class="kw-name">ロックファイル</div>
+          <p class="kw-desc">package-lock.json。</p>
+          <span class="kw-page">P.553</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">554</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

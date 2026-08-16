@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — yarn</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 11</b>パッケージ管理・バージョン管理</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">555</div></div>
+      <div class="titles">
+        <h1>yarn</h1>
+      </div>
+    </div>
+    <p class="subtitle">npmに対抗して生まれた、もう一つのクライアント</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>Facebook発のJavaScriptパッケージマネージャ。高速化やロックファイル体験を武器に普及した。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>npmの当時の速さ・決定性・DXに不満があり、代替クライアントが求められた。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>npm install の遅さと、環境差によるずれが日常だった（当時）。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>当時のnpm体験</th><th class="h-docker">yarn</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">ロック</td><td>弱かった時期がある</td><td class="h-docker">yarn.lock で強く固定</td></tr>
+            <tr><td class="rowhead">速さ</td><td>遅く感じることが</td><td class="h-docker">キャッシュや並列で改善を狙う</td></tr>
+            <tr><td class="rowhead">UI</td><td>素朴</td><td class="h-docker">進捗やワークスペース体験を強化</td></tr>
+            <tr><td class="rowhead">互換</td><td>——</td><td class="h-docker">npmレジストリを利用可能</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>yarn で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-package"/></svg><div class="cap">JS依存を代替クライアントで管理できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-layers"/></svg><div class="cap">モノレポ（workspaces）運用に乗りやすい</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-file"/></svg><div class="cap">ロックファイルで再現性を担保できる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>Classic と Berry（yarn 2+）で別物感がある。<br>
+         チームのREADMEに「どのYarnか」が書いてあると救われる。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連キーワード</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-package"/></svg></div>
+        <div>
+          <div class="kw-name">npm</div>
+          <p class="kw-desc">比較対象でありエコシステムの中心。</p>
+          <span class="kw-page">P.554</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-package"/></svg></div>
+        <div>
+          <div class="kw-name">pnpm</div>
+          <p class="kw-desc">もう一つの有力代替。</p>
+          <span class="kw-page">P.556</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-file"/></svg></div>
+        <div>
+          <div class="kw-name">ロックファイル</div>
+          <p class="kw-desc">yarn.lock。</p>
+          <span class="kw-page">P.553</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">555</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>
