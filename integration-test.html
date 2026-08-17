@@ -7,7 +7,7 @@
 </head>
 <body>
 
-<article class="entry verso">
+<article class="entry recto compact">
 
   <!-- ===== 本文 ===== -->
   <div class="main">
@@ -35,8 +35,7 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>単体では正しくても、つなぐと型やトランザクション、設定の食い違いで落ちることがある。<br>
-             「結合した姿」を見るテストが必要になった。</p>
+          <p>単体では正しくても、つなぐと型やトランザクション、設定の食い違いで落ちることがある。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -47,7 +46,7 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>ユニットテストは通るのに、実際にDBを繋ぐと落ちる——を本番近くで初めて知る、がよくあった。</p>
+        <p>結合確認はステージングで人手、またはユニット＋モックだけだった。</p>
         <table class="cmp">
           <thead>
             <tr><th></th><th>単体だけ／手動結合</th><th class="h-docker">Integration Test</th></tr>
@@ -68,9 +67,9 @@
       <h2>Integration Test で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-layers"/></svg><div class="cap">モジュール間の契約ずれを早期に見つけられる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-layers"/></svg><div class="cap">モジュール間の契約ずれを拾える</div></div>
           <div class="cell"><svg><use href="icons.svg#ic-server"/></svg><div class="cap">DBやAPIとの実連携を検証できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-scale"/></svg><div class="cap">E2Eより狭く、原因を追いやすい</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-scale"/></svg><div class="cap">E2Eより狭く原因を追いやすい</div></div>
         </div>
       </div>
     </section>
@@ -78,8 +77,7 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>「どこからが結合か」は宗教戦争になりやすい。<br>
-         チームで境界を一文で定義しておくだけで、テストの粒度が安定する。</p>
+      <p>「どこからが結合か」は宗教戦争になりやすい。</p>
     </div>
 
   </div>

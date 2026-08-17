@@ -35,8 +35,7 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>従来のSpring FrameworkはXMLなどの設定ファイルが膨大になりがちで、「動かすまでが長い」<br>
-             と言われていた。この設定の煩雑さを解消し、Javaでもすぐに開発を始められるようにするために開発された。</p>
+          <p>Springの設定と依存が重く、小さく始めたいJavaプロジェクトには敷居が高かった。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -53,7 +52,7 @@
             <tr><th></th><th>従来のSpring Framework</th><th class="h-docker">Spring Boot</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">設定方法</td><td>XMLなどで細かく記述</td><td class="h-docker">規約に沿えば自動設定（auto-configuration）</td></tr>
+            <tr><td class="rowhead">設定方法</td><td>XML等で細かく記述</td><td class="h-docker">規約に沿えば自動設定（auto-configuration）</td></tr>
             <tr><td class="rowhead">起動までの準備</td><td>多い（サーバー構築も別途）</td><td class="h-docker">組み込みサーバーで即座に起動</td></tr>
             <tr><td class="rowhead">依存関係管理</td><td>個別に指定・バージョン調整</td><td class="h-docker">starterでまとめて管理</td></tr>
             <tr><td class="rowhead">向いている場面</td><td>既存の大規模Springアプリ</td><td class="h-docker">新規のJavaアプリ・マイクロサービス</td></tr>
@@ -78,8 +77,7 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>Spring Bootは「Springの機能はそのままに、面倒な設定だけをなくす」<br>
-         という発想で作られたフレームワーク。</p>
+      <p>「設定より規約」。足りない部分だけ設定ファイルで上書きする思想。</p>
     </div>
 
   </div>

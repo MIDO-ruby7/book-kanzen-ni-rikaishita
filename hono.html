@@ -7,7 +7,7 @@
 </head>
 <body>
 
-<article class="entry recto">
+<article class="entry recto compact">
 
   <!-- ===== 本文 ===== -->
   <div class="main">
@@ -35,8 +35,7 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>Cloudflare WorkersのようなEdge環境ではNode.js前提のExpressがそのまま動かず、実行時間の制約も厳しい。<br>
-             この環境でも軽く速く動くフレームワークとして開発された。</p>
+          <p>Edge環境ではNode.js前提のExpressが動かず、軽量フレームワークが必要だった。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -78,8 +77,7 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>Honoは「どこでも同じように速く動く」ことを目指したフレームワーク。<br>
-         Node.js専用ではない設計が、Edgeコンピューティング時代に合っている。</p>
+      <p>Cloudflare Workers等のEdge向き。Expressより薄く、ランタイム制約に強い。</p>
     </div>
 
   </div>

@@ -7,7 +7,7 @@
 </head>
 <body>
 
-<article class="entry recto">
+<article class="entry recto compact">
 
   <!-- ===== 本文 ===== -->
   <div class="main">
@@ -52,8 +52,8 @@
             <tr><th></th><th>RESTを意識しないAPI</th><th class="h-docker">REST</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">URL設計</td><td>/getUser, /deleteUser など動詞混じり</td><td class="h-docker">/users のように名詞のみ</td></tr>
-            <tr><td class="rowhead">操作の表現</td><td>URLの中に動詞を書く</td><td class="h-docker">GET/POST/PUT/DELETEなどHTTPメソッドで表現</td></tr>
+            <tr><td class="rowhead">URL設計</td><td>/getUser, /deleteUser 等動詞混じり</td><td class="h-docker">/users のように名詞のみ</td></tr>
+            <tr><td class="rowhead">操作の表現</td><td>URLの中に動詞を書く</td><td class="h-docker">GET/POST/PUT/DELETE等HTTPメソッドで表現</td></tr>
             <tr><td class="rowhead">一貫性</td><td>設計者ごとにルールがブレる</td><td class="h-docker">リソース単位で統一しやすい</td></tr>
           </tbody>
         </table>
@@ -76,9 +76,7 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>RESTは「REpresentational State Transfer」の略で、<br>
-         厳密には設計思想（アーキテクチャスタイル）の名前。<br>
-         実務では「URLは名詞、操作はHTTPメソッドで」くらいの理解で十分戦える。</p>
+      <p>RESTは設計思想の名前。実務では「URLは名詞、操作はHTTPメソッドで」で十分。</p>
     </div>
 
   </div>

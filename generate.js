@@ -30,6 +30,11 @@ function renderSidebar(groups) {
     </div>`).join('');
 }
 
+function needsCompact(entry) {
+  if (entry.compact) return true;
+  return (entry.term || '').length > 12 || (entry.subtitle || '').length > 22;
+}
+
 function renderPage(entry, ch, parity) {
   const tableRows = (entry.q2_table.rows || []).map(([label, before, after]) =>
     `<tr><td class="rowhead">${esc(label)}</td><td>${esc(before)}</td><td class="h-docker">${esc(after)}</td></tr>`
@@ -55,7 +60,7 @@ function renderPage(entry, ch, parity) {
 </head>
 <body>
 
-<article class="entry ${parity}${entry.compact ? " compact" : ""}">
+<article class="entry ${parity}${needsCompact(entry) ? ' compact' : ''}">
 
   <!-- ===== 本文 ===== -->
   <div class="main">

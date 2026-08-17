@@ -7,7 +7,7 @@
 </head>
 <body>
 
-<article class="entry recto">
+<article class="entry recto compact">
 
   <!-- ===== 本文 ===== -->
   <div class="main">
@@ -54,7 +54,7 @@
           <tbody>
             <tr><td class="rowhead">通信の方向</td><td>クライアントから聞きに行く一方通行</td><td class="h-docker">接続後は双方向にいつでも送れる</td></tr>
             <tr><td class="rowhead">リアルタイム性</td><td>一定間隔でしか更新されない</td><td class="h-docker">変化があった瞬間に届く</td></tr>
-            <tr><td class="rowhead">向いている場面</td><td>通常のページ表示</td><td class="h-docker">チャット・通知・対戦ゲームなど</td></tr>
+            <tr><td class="rowhead">向いている場面</td><td>通常のページ表示</td><td class="h-docker">チャット・通知・対戦ゲーム等</td></tr>
           </tbody>
         </table>
       </div>
@@ -76,9 +76,7 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>WebSocketは最初にHTTPで接続してから、<br>
-         そのまま専用の通信路に"アップグレード"する仕組み。<br>
-         チャットや通知、株価のようなリアルタイム更新が必要な画面でよく使われる。</p>
+      <p>HTTP接続をアップグレードして双方向通信に切り替える。チャット・通知向き。</p>
     </div>
 
   </div>

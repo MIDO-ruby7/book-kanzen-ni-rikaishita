@@ -7,7 +7,7 @@
 </head>
 <body>
 
-<article class="entry recto">
+<article class="entry recto compact">
 
   <!-- ===== 本文 ===== -->
   <div class="main">
@@ -35,8 +35,7 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>Node.js は便利だったが、起動の遅さや<br>
-             package.json 周りの遅さへの不満が積み重なっていた。</p>
+          <p>Node.jsは便利だが、起動の遅さやツールの分散がボトルネックになった。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -55,7 +54,7 @@
           <tbody>
             <tr><td class="rowhead">実行エンジン</td><td>V8</td><td class="h-docker">JavaScriptCore（Safari系）</td></tr>
             <tr><td class="rowhead">パッケージ管理</td><td>npm / yarn を別途利用</td><td class="h-docker">標準搭載で高速</td></tr>
-            <tr><td class="rowhead">ツール構成</td><td>node + npm + Jest など別々</td><td class="h-docker">1つのバイナリに統合</td></tr>
+            <tr><td class="rowhead">ツール構成</td><td>node + npm + Jest 等別々</td><td class="h-docker">1つのバイナリに統合</td></tr>
           </tbody>
         </table>
       </div>
@@ -77,8 +76,7 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>Node.js互換を意識しているので、既存コードもだいたいそのまま動く。<br>
-         「速さ」で殴る系ツールの先駆け。</p>
+      <p>Node互換を保ちつつ、実行・パッケージ管理・テストを1バイナリに統合。</p>
     </div>
 
   </div>
