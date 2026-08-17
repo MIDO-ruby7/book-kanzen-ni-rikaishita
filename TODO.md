@@ -1,8 +1,8 @@
 # 未実装ワード一覧（章別）
 
 `book-memo.md`（全31章＋Appendix＋新章の企画メモ）と `content.js`（実装済みデータ）を突き合わせた差分。
-実装済み: 229語（Ch1〜12, Ch13, Ch14, Ch16の一部）
-未実装: 約279語
+実装済み: 230語（Ch1〜12, Ch13, Ch14, Ch16の一部）
+未実装: 約278語
 
 ## 今ターンで実装したもの（2026-08-16）
 
@@ -22,7 +22,7 @@
 |---|---|---|
 | Ch14 デプロイ・CI/CD | 17 | ローカル / ステージング / 本番 / Build / Bundle / Artifact / Release / Rollback / CI / CD / Pipeline / Canary Release / Blue/Green Deployment / GitHub Actions / CircleCI / Vercel / Netlify（DevOpsのみ実装済） |
 | Ch15 開発プロセス | 15 | PMBOK / ウォーターフォール / WBS / ガントチャート / マイルストーン / ステークホルダー / スコープ / アジャイル / スクラム / スプリント / レトロスペクティブ / ベロシティ / コードレビュー / ペアプロ / イシュー |
-| Ch16 クラウド・インフラ | 19 | Cloud / オンプレミス / IaaS / PaaS / SaaS / VPC / Load Balancer / CDN / Object Storage / Serverless / Reverse Proxy / Nginx / トポロジー / リージョン / AZ / 可用性 / SLA / SLO / SLI（VM/K8sのみ実装済） |
+| Ch16 クラウド・インフラ | 18 | Cloud / オンプレミス / IaaS / PaaS / SaaS / VPC / Load Balancer / CDN / Object Storage / Reverse Proxy / Nginx / トポロジー / リージョン / AZ / 可用性 / SLA / SLO / SLI（VM/K8s/サーバレスアーキテクチャのみ実装済） |
 | Ch17 IaC | 7 | IaC / 宣言的構成 / 冪等性 / Terraform / Ansible / Helm / Pulumi |
 | Ch18 AWS | 18 | EC2 / ECS / ECR / Fargate / Lambda / S3 / RDS / DynamoDB / CloudFront / Route 53 / IAM / ALB / API Gateway / SQS / CloudWatch / X-Ray / ダイレクトコネクト / トランジットゲートウェイ |
 | Ch19 GCP | 7 | Cloud Run / GKE / Cloud Storage / Cloud SQL / Cloud Functions / Cloud CDN / Artifact Registry |
