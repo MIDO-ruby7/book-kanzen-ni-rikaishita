@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — サーバレスアーキテクチャ</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 16</b>クラウド・仮想化</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">445</div></div>
+      <div class="titles">
+        <h1>サーバレスアーキテクチャ</h1>
+      </div>
+    </div>
+    <p class="subtitle">サーバーを「常時起動」させない設計の考え方</p>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>サーバーの用意や運用をクラウド側に任せ、イベントが来たときだけ処理を動かすアーキテクチャの考え方。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>常時サーバーを立てておくと、トラフィックが少ない時間帯も料金と運用コストがかかる。<br>
+             スケールや障害対応も、自分で面倒を見る必要があった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>EC2やVMのように、OSごとサーバーを借りて常時稼働させる構成が一般的だった。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>常時稼働サーバー</th><th class="h-docker">サーバレスアーキテクチャ</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">サーバー管理</td><td>OS・パッチ・容量を自分で面倒見</td><td class="h-docker">実行基盤はクラウド側が面倒見</td></tr>
+            <tr><td class="rowhead">課金</td><td>起動している時間分を払う</td><td class="h-docker">実行時間・リクエスト数に応じて</td></tr>
+            <tr><td class="rowhead">スケール</td><td>手動設定や別途の仕組みが必要</td><td class="h-docker">イベント量に応じて自動で増減</td></tr>
+            <tr><td class="rowhead">向いている用途</td><td>常時接続が必要なアプリ</td><td class="h-docker">断続的・突発的な処理</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>サーバレスアーキテクチャ で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-cloud"/></svg><div class="cap">APIやバッチをイベント駆動で動かせる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-clock"/></svg><div class="cap">アイドル時間の運用コストを抑えられる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">小さく始めて需要に合わせて広げやすい</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>「サーバーがない」わけではなく、サーバー管理を見えなくした設計。<br>
+         LambdaやCloud Functionsが代表例。常時接続（WebSocket等）には向かないこともある。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">比較する構成</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-server"/></svg></div>
+        <div>
+          <div class="kw-name">VM</div>
+          <p class="kw-desc">OSごと借りて常時動かす従来型。</p>
+          <span class="kw-page">P.401</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-wheel"/></svg></div>
+        <div>
+          <div class="kw-name">Kubernetes</div>
+          <p class="kw-desc">コンテナを常時管理する別アプローチ。</p>
+          <span class="kw-page">P.441</span>
+        </div>
+      </div>
+    </div>
+    <div class="side-group">
+      <div class="group-label">一緒に覚えたい言葉</div>
+      
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-file"/></svg></div>
+        <div>
+          <div class="kw-name">FaaS</div>
+          <p class="kw-desc">Function as a Service。関数単位で動かすサーバレスの形。</p>
+          
+        </div>
+      </div>
+      <div class="kw">
+        <div class="kw-icon"><svg><use href="icons.svg#ic-cloud"/></svg></div>
+        <div>
+          <div class="kw-name">Lambda</div>
+          <p class="kw-desc">AWSの代表的なサーバレス実行環境（Ch18）。</p>
+          
+        </div>
+      </div>
+    </div>
+    <div class="side-memo">
+      <div class="lbl">キーワードメモ</div>
+      <p>「サーバーレス＝サーバー不要」ではなく、「サーバー運用を意識しなくていい」が近い。</p>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">445</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

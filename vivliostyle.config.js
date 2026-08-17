@@ -165,6 +165,7 @@ module.exports = {
     '042-compose.html',                // 321 Docker Compose (Ch13)
     '015-vm.html',                     // 401 VM (Ch16)
     '089-kubernetes.html',             // 441 Kubernetes (Ch16)
+    'serverless-architecture.html',    // 445 サーバレスアーキテクチャ (Ch16)
     'ios.html',                        // 450 iOS (Ch9)
     'android.html',                    // 451 Android (Ch9)
     'native-app.html',                 // 452 ネイティブアプリ (Ch9)
