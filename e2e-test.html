@@ -20,7 +20,6 @@
         <h1>E2E Test</h1>
       </div>
     </div>
-    <p class="subtitle">ユーザーの操作を、ロボットが最後までやる</p>
 
     <div class="head-lower">
       <div class="oneline">
@@ -35,8 +34,7 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>部品も結合も正しくても、「会員登録してログインして購入する」が通るかは別問題。<br>
-             ユーザー視点の一本道を自動で歩きたかった。</p>
+          <p>部品も結合も正しくても、「会員登録してログインして購入する」が通るかは別問題。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -50,19 +48,19 @@
         <p>リリース前に人がブラウザを手で操作し、チェックリストを消化するのが普通だった。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>人手のシナリオ確認</th><th class="h-docker">E2E Test</th></tr>
+            <tr><th></th><th>手動確認中心</th><th class="h-docker">E2E Test</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">再現性</td><td>担当者の手癖に依存</td><td class="h-docker">同じ手順を何度でも実行</td></tr>
-            <tr><td class="rowhead">コスト</td><td>人時がかかる</td><td class="h-docker">初期構築は重いが繰り返しは安い</td></tr>
-            <tr><td class="rowhead">速さ</td><td>遅い</td><td class="h-docker">自動化しても結合より重い</td></tr>
-            <tr><td class="rowhead">壊れやすさ</td><td>——</td><td class="h-docker">UI変更でテストも折れやすい</td></tr>
+            <tr><td class="rowhead">見る範囲</td><td>画面の一部</td><td class="h-docker">ユーザー操作の一連の流れ</td></tr>
+            <tr><td class="rowhead">再現性</td><td>担当者の記憶に依存</td><td class="h-docker">スクリプトで繰り返せる</td></tr>
+            <tr><td class="rowhead">コスト</td><td>人時がかかる</td><td class="h-docker">初期構築後は繰り返しが安い</td></tr>
+            <tr><td class="rowhead">弱点</td><td>見落とし</td><td class="h-docker">UI変更でテストも折れやすい</td></tr>
           </tbody>
         </table>
       </div>
     </section>
 
-    <!-- ③ -->
+
     <section class="qa">
       <span class="badge">3</span>
       <h2>E2E Test で何ができるようになった？</h2>
@@ -74,13 +72,6 @@
         </div>
       </div>
     </section>
-
-    <!-- ひとことメモ -->
-    <div class="memo">
-      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>全部をE2Eにすると遅くて脆い。<br>
-         ピラミッドの頂点——数は少なく、商売に効く道だけ、が定石。</p>
-    </div>
 
   </div>
 
@@ -107,6 +98,10 @@
           <span class="kw-page">P.521</span>
         </div>
       </div>
+    </div>
+    <div class="side-group">
+      <div class="group-label">一緒に覚えたい言葉</div>
+      
       <div class="kw">
         <div class="kw-icon"><svg><use href="icons.svg#ic-rocket"/></svg></div>
         <div>

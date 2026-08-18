@@ -7,7 +7,7 @@
 </head>
 <body>
 
-<article class="entry recto">
+<article class="entry verso">
 
   <!-- ===== 本文 ===== -->
   <div class="main">
@@ -17,10 +17,9 @@
     <div class="title-row">
       <div class="num-col"><div class="number">27</div></div>
       <div class="titles">
-        <h1>DNS</h1>
+        <h1><ruby>DNS<rt>ディーエヌエス</rt></ruby></h1>
       </div>
     </div>
-    <p class="subtitle">覚えられない数字を、覚えられる名前に変える仕組み</p>
 
     <div class="head-lower">
       <div class="oneline">
@@ -54,31 +53,24 @@
           <tbody>
             <tr><td class="rowhead">アクセス方法</td><td>ドメイン名を打つだけ</td><td class="h-docker">裏でIPアドレスに変換されている</td></tr>
             <tr><td class="rowhead">障害時の見え方</td><td>なぜか繋がらない、で終わる</td><td class="h-docker">名前解決の失敗として切り分けられる</td></tr>
-            <tr><td class="rowhead">管理</td><td>意識しない</td><td class="h-docker">Aレコード・CNAMEなど設定を理解する</td></tr>
+            <tr><td class="rowhead">管理</td><td>意識しない</td><td class="h-docker">Aレコード・CNAME等設定を理解する</td></tr>
           </tbody>
         </table>
       </div>
     </section>
 
-    <!-- ③ -->
+
     <section class="qa">
       <span class="badge">3</span>
-      <h2>DNS で何ができるようになった？</h2>
+      <h2>誰がいつ作った？</h2>
       <div class="body">
-        <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-file"/></svg><div class="cap">名前からIPアドレスを引ける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-network"/></svg><div class="cap">覚えやすい名前でアクセスできる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-scribble"/></svg><div class="cap">繋がらない原因を切り分けられる</div></div>
-        </div>
+        <dl class="fact-list">
+          <div class="fact-row"><dt>作った人</dt><dd>Paul Mockapetris</dd></div>
+          <div class="fact-row"><dt>時期</dt><dd>1983年</dd></div>
+          <div class="fact-row"><dt>文脈</dt><dd>IPアドレスと名前を対応づける分散的な仕組みとして設計された。</dd></div>
+        </dl>
       </div>
     </section>
-
-    <!-- ひとことメモ -->
-    <div class="memo">
-      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>DNSは「インターネットの電話帳」。<br>
-         人間が覚えやすい名前と、機械が使う住所（IPアドレス）を結びつけてくれる。</p>
-    </div>
 
   </div>
 
@@ -92,11 +84,15 @@
       <div class="kw">
         <div class="kw-icon"><svg><use href="icons.svg#ic-monitor"/></svg></div>
         <div>
-          <div class="kw-name">Domain</div>
+          <div class="kw-name"><ruby>Domain<rt>ドメイン</rt></ruby></div>
           <p class="kw-desc">DNSで管理される、覚えやすい名前そのもの。</p>
           <span class="kw-page">P.28</span>
         </div>
       </div>
+    </div>
+    <div class="side-group">
+      <div class="group-label">一緒に覚えたい言葉</div>
+      
       <div class="kw">
         <div class="kw-icon"><svg><use href="icons.svg#ic-network"/></svg></div>
         <div>

@@ -102,12 +102,11 @@ body { margin: 0; }
 .titles { padding-left: 7mm; }
 .titles h1 { margin: 0; font-size: 37pt; font-weight: 800; line-height: 1; }
 .titles h1 rt { font-size: 7.5pt; font-weight: 600; color: var(--ink-soft); }
-.subtitle { margin: 3mm 0 0 32mm; font-size: 11pt; font-weight: 700; }
+.subtitle { display: none; }
 
 /* 用語名・サブタイトルが長く複数行に折り返す項目だけ、見出し周りを詰める
    （本文テキストは変更せず、該当ページのみ generate.js が compact クラスを付与） */
 .entry.compact .titles h1 { font-size: 25pt; line-height: 1.05; }
-.entry.compact .subtitle { font-size: 9.5pt; margin-top: 2mm; }
 .entry.compact .head-lower { margin-top: 2.5mm; }
 .entry.compact .qa { margin-top: 1.5mm; padding-top: 1.5mm; }
 
@@ -160,10 +159,34 @@ body { margin: 0; }
 /* =========================================================
    ひとことメモ
    ========================================================= */
-.memo { margin-top: 2.5mm; background: var(--teal-panel); border-radius: 2mm; padding: 2.8mm 5mm; }
-.memo .lbl { display: flex; align-items: center; gap: 2mm; color: var(--teal-dark); font-weight: 700; font-size: 10.5pt; margin-bottom: 2mm; }
-.memo .lbl svg { width: 5mm; height: 5mm; }
-.memo p { margin: 0; }
+.memo { display: none; }
+
+/* ③：由来／使用例 */
+.fact-list { margin: 0; }
+.fact-row {
+  display: grid;
+  grid-template-columns: 16mm 1fr;
+  gap: 0 4mm;
+  padding: 1.6mm 0;
+  border-bottom: 1px solid var(--rule);
+}
+.fact-row:last-child { border-bottom: none; }
+.fact-row dt { font-weight: 700; color: var(--teal-dark); }
+.fact-row dd { margin: 0; }
+
+.example-block {
+  margin-top: 2.5mm;
+  padding: 2.5mm 3mm;
+  border-radius: 2mm;
+  background: var(--panel);
+}
+.example-block code {
+  display: block;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 8pt;
+  line-height: 1.45;
+  white-space: pre-wrap;
+}
 
 /* =========================================================
    サイドバー：関連キーワード
@@ -178,6 +201,7 @@ body { margin: 0; }
 .kw .kw-icon { color: var(--ink); }
 .kw .kw-icon svg { width: 10mm; height: 10mm; }
 .kw .kw-name { font-size: 10.5pt; font-weight: 700; line-height: 1.25; }
+.kw .kw-name rt { font-size: 6.8pt; font-weight: 600; color: var(--ink-soft); }
 .kw .kw-desc { font-size: 7.8pt; line-height: 1.45; margin: 1mm 0 1.5mm; color: var(--ink-soft); }
 .kw .kw-page { display: inline-block; font-size: 7.5pt; color: var(--ink-soft); border: 1px solid var(--rule-strong); border-radius: 1mm; padding: .3mm 2mm; }
 

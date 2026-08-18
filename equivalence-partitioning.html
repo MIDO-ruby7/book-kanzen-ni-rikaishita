@@ -20,7 +20,6 @@
         <h1>同値分割</h1>
       </div>
     </div>
-    <p class="subtitle">同じ扱いの値は、代表一人で十分</p>
 
     <div class="head-lower">
       <div class="oneline">
@@ -35,8 +34,7 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>取りうる入力を全部試すのは不可能。<br>
-             でもランダムだと抜けが怖い。グループ化して効率化したかった。</p>
+          <p>取りうる入力を全部試すのは不可能。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -50,19 +48,19 @@
         <p>思いつく値を並べるか、全数に近い組み合わせを試みて疲弊していた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>思いつき／全数寄り</th><th class="h-docker">同値分割</th></tr>
+            <tr><th></th><th>ランダム／総当たり</th><th class="h-docker">同値分割</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">ケース選定</td><td>場当たり</td><td class="h-docker">パーティションから代表を選ぶ</td></tr>
-            <tr><td class="rowhead">抜けの議論</td><td>しにくい</td><td class="h-docker">「どの区画を見たか」で話せる</td></tr>
-            <tr><td class="rowhead">量</td><td>爆発しがち</td><td class="h-docker">区画数に抑えられる</td></tr>
-            <tr><td class="rowhead">境界</td><td>別途意識が必要</td><td class="h-docker">境界値分析と併用が定石</td></tr>
+            <tr><td class="rowhead">考え方</td><td>とにかく試す</td><td class="h-docker">同じ結果の塊に分ける</td></tr>
+            <tr><td class="rowhead">効率</td><td>ケースが膨らむ</td><td class="h-docker">代表値で済ませられる</td></tr>
+            <tr><td class="rowhead">見落とし</td><td>運任せ</td><td class="h-docker">境界とセットで設計</td></tr>
+            <tr><td class="rowhead">向いている</td><td>小さな入力</td><td class="h-docker">入力条件の整理</td></tr>
           </tbody>
         </table>
       </div>
     </section>
 
-    <!-- ③ -->
+
     <section class="qa">
       <span class="badge">3</span>
       <h2>同値分割 で何ができるようになった？</h2>
@@ -74,13 +72,6 @@
         </div>
       </div>
     </section>
-
-    <!-- ひとことメモ -->
-    <div class="memo">
-      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>「有効同値」と「無効同値」を分けるのがコツ。<br>
-         エラー系を忘れると、ハッピーパスだけのテストになる。</p>
-    </div>
 
   </div>
 
@@ -107,6 +98,10 @@
           <span class="kw-page">P.517</span>
         </div>
       </div>
+    </div>
+    <div class="side-group">
+      <div class="group-label">一緒に覚えたい言葉</div>
+      
       <div class="kw">
         <div class="kw-icon"><svg><use href="icons.svg#ic-monitor"/></svg></div>
         <div>

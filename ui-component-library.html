@@ -7,7 +7,7 @@
 </head>
 <body>
 
-<article class="entry recto compact">
+<article class="entry verso compact">
 
   <!-- ===== 本文 ===== -->
   <div class="main">
@@ -20,7 +20,6 @@
         <h1>UIコンポーネントライブラリ</h1>
       </div>
     </div>
-    <p class="subtitle">動くパーツごと完成させて配ってくれる道具箱</p>
 
     <div class="head-lower">
       <div class="oneline">
@@ -35,8 +34,7 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>CSSフレームワークは見た目こそ整えてくれるが、モーダルの開閉などの「動き」の部分は<br>
-             JavaScriptを自分で書く必要があり、Componentごと一から作るのは手間が大きかった。</p>
+          <p>ボタンやフォームなど定番UI部品を、毎回個別実装する負担を減らす必要があった。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -53,15 +51,15 @@
             <tr><th></th><th>CSSフレームワーク</th><th class="h-docker">UIコンポーネントライブラリ</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">提供される範囲</td><td>見た目（クラス名）のみ</td><td class="h-docker">見た目＋開閉などの動作込みのComponent</td></tr>
-            <tr><td class="rowhead">実装コスト</td><td>モーダルなどの開閉ロジックは自分で書く</td><td class="h-docker">importして使うだけで動く</td></tr>
+            <tr><td class="rowhead">提供される範囲</td><td>見た目（クラス名）のみ</td><td class="h-docker">見た目＋開閉等の動作込みのComponent</td></tr>
+            <tr><td class="rowhead">実装コスト</td><td>モーダル等の開閉ロジックは自分で書く</td><td class="h-docker">importして使うだけで動く</td></tr>
             <tr><td class="rowhead">カスタマイズ性</td><td>自由度が高い分すべて自作</td><td class="h-docker">用意されたPropsの範囲での調整が中心</td></tr>
           </tbody>
         </table>
       </div>
     </section>
 
-    <!-- ③ -->
+
     <section class="qa">
       <span class="badge">3</span>
       <h2>UIコンポーネントライブラリ で何ができるようになった？</h2>
@@ -73,13 +71,6 @@
         </div>
       </div>
     </section>
-
-    <!-- ひとことメモ -->
-    <div class="memo">
-      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>React向けのMUIやshadcn/ui、Vue向けのVuetifyなどが代表例。<br>
-         CSSフレームワークが「見た目の材料」なら、こちらは「完成した部品」を提供するイメージ。</p>
-    </div>
 
   </div>
 
@@ -106,6 +97,10 @@
           <span class="kw-page">P.129</span>
         </div>
       </div>
+    </div>
+    <div class="side-group">
+      <div class="group-label">一緒に覚えたい言葉</div>
+      
       <div class="kw">
         <div class="kw-icon"><svg><use href="icons.svg#ic-network"/></svg></div>
         <div>

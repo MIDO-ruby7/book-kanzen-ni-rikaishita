@@ -20,7 +20,6 @@
         <h1>apt</h1>
       </div>
     </div>
-    <p class="subtitle">Debian系Linuxの公式なお買い物カゴ</p>
 
     <div class="head-lower">
       <div class="oneline">
@@ -35,8 +34,7 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>Linuxにソフトを入れる方法がソースビルド中心だと、依存地獄と更新追従がつらい。<br>
-             ディストリ公式の解決が必要だった。</p>
+          <p>Linuxにソフトを入れる方法がソースビルド中心だと、依存地獄と更新追従がつらい。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -62,25 +60,18 @@
       </div>
     </section>
 
-    <!-- ③ -->
+
     <section class="qa">
       <span class="badge">3</span>
-      <h2>apt で何ができるようになった？</h2>
+      <h2>使用例</h2>
       <div class="body">
-        <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-server"/></svg><div class="cap">OSのソフトウェアを標準手順で管理できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-scale"/></svg><div class="cap">セキュリティ更新を追従しやすい</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-package"/></svg><div class="cap">サーバー構築を自動化しやすい</div></div>
+        <p>Ubuntu系でパッケージ一覧更新と導入を行う例。</p>
+        <div class="example-block">
+<code>sudo apt update</code>
+<code>sudo apt install git</code>
         </div>
       </div>
     </section>
-
-    <!-- ひとことメモ -->
-    <div class="memo">
-      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>apt はフロントエンド、実体には dpkg などが控える。<br>
-         コンテナのDockerfileでも最もよく見るコマンドの一つ。</p>
-    </div>
 
   </div>
 
@@ -107,6 +98,10 @@
           <span class="kw-page">P.550</span>
         </div>
       </div>
+    </div>
+    <div class="side-group">
+      <div class="group-label">一緒に覚えたい言葉</div>
+      
       <div class="kw">
         <div class="kw-icon"><svg><use href="icons.svg#ic-monitor"/></svg></div>
         <div>

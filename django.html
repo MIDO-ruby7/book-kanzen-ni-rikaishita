@@ -7,7 +7,7 @@
 </head>
 <body>
 
-<article class="entry verso">
+<article class="entry recto">
 
   <!-- ===== 本文 ===== -->
   <div class="main">
@@ -20,7 +20,6 @@
         <h1>Django</h1>
       </div>
     </div>
-    <p class="subtitle">「電池付属」でWebアプリに必要な機能をひとまとめにしたフレームワーク</p>
 
     <div class="head-lower">
       <div class="oneline">
@@ -35,8 +34,7 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>新聞社のニュースサイトを短納期で量産する必要があり、認証や管理画面など「毎回必要になる機能」を<br>
-             一つ一つ自作していては間に合わなかった。この課題から、必要な機能を最初から揃えた「電池付属（batteries included）」の思想で開発された。</p>
+          <p>PythonでWebアプリを作る際、認証・管理画面・DB接続を毎回個別実装する負担が大きかった。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -53,7 +51,7 @@
             <tr><th></th><th>軽量フレームワーク（Flaskなど）</th><th class="h-docker">Django</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">付属機能</td><td>最小限（必要なら自分で追加）</td><td class="h-docker">認証・管理画面・ORMなど標準搭載</td></tr>
+            <tr><td class="rowhead">付属機能</td><td>最小限（必要なら自分で追加）</td><td class="h-docker">認証・管理画面・ORM等標準搭載</td></tr>
             <tr><td class="rowhead">管理画面</td><td>自作が必要</td><td class="h-docker">自動生成される（Django Admin）</td></tr>
             <tr><td class="rowhead">構成の自由度</td><td>高い</td><td class="h-docker">やや決まった型に沿う</td></tr>
             <tr><td class="rowhead">向いている場面</td><td>小規模・独自構成のAPI</td><td class="h-docker">機能が多い業務系Webアプリ</td></tr>
@@ -62,7 +60,7 @@
       </div>
     </section>
 
-    <!-- ③ -->
+
     <section class="qa">
       <span class="badge">3</span>
       <h2>Django で何ができるようになった？</h2>
@@ -74,13 +72,6 @@
         </div>
       </div>
     </section>
-
-    <!-- ひとことメモ -->
-    <div class="memo">
-      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>Djangoの「電池付属」は、必要なものを探し回る時間をなくす思想。<br>
-         迷ったら「まずDjangoにある機能を使う」で進められる。</p>
-    </div>
 
   </div>
 

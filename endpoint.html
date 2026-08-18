@@ -7,7 +7,7 @@
 </head>
 <body>
 
-<article class="entry verso">
+<article class="entry recto">
 
   <!-- ===== 本文 ===== -->
   <div class="main">
@@ -20,7 +20,6 @@
         <h1>Endpoint</h1>
       </div>
     </div>
-    <p class="subtitle">APIという建物の、それぞれの「入り口」</p>
 
     <div class="head-lower">
       <div class="oneline">
@@ -52,7 +51,7 @@
             <tr><th></th><th>APIをひとまとめに捉える</th><th class="h-docker">Endpointという単位で捉える</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">粒度</td><td>サービス全体</td><td class="h-docker">機能ごとのURL（/users, /postsなど）</td></tr>
+            <tr><td class="rowhead">粒度</td><td>サービス全体</td><td class="h-docker">機能ごとのURL（/users, /posts等）</td></tr>
             <tr><td class="rowhead">見つけ方</td><td>ドキュメントを一から読む</td><td class="h-docker">仕様書で機能とURLが対応している</td></tr>
             <tr><td class="rowhead">変更の影響</td><td>APIが変わったと大雑把に捉える</td><td class="h-docker">どのエンドポイントが変わったか特定できる</td></tr>
           </tbody>
@@ -60,7 +59,7 @@
       </div>
     </section>
 
-    <!-- ③ -->
+
     <section class="qa">
       <span class="badge">3</span>
       <h2>Endpoint で何ができるようになった？</h2>
@@ -72,13 +71,6 @@
         </div>
       </div>
     </section>
-
-    <!-- ひとことメモ -->
-    <div class="memo">
-      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>エンドポイントは「APIの中の1つの窓口」というイメージ。<br>
-         /api/v1/users のようなURLの、動詞（GET/POST）とセットで1つの操作を表す。</p>
-    </div>
 
   </div>
 
@@ -105,6 +97,10 @@
           <span class="kw-page">P.67</span>
         </div>
       </div>
+    </div>
+    <div class="side-group">
+      <div class="group-label">一緒に覚えたい言葉</div>
+      
       <div class="kw">
         <div class="kw-icon"><svg><use href="icons.svg#ic-server"/></svg></div>
         <div>

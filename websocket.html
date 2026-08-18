@@ -7,7 +7,7 @@
 </head>
 <body>
 
-<article class="entry recto">
+<article class="entry verso">
 
   <!-- ===== 本文 ===== -->
   <div class="main">
@@ -20,7 +20,6 @@
         <h1>WebSocket</h1>
       </div>
     </div>
-    <p class="subtitle">「聞かれるまで話せない」HTTPの壁を壊した通信方式</p>
 
     <div class="head-lower">
       <div class="oneline">
@@ -54,32 +53,24 @@
           <tbody>
             <tr><td class="rowhead">通信の方向</td><td>クライアントから聞きに行く一方通行</td><td class="h-docker">接続後は双方向にいつでも送れる</td></tr>
             <tr><td class="rowhead">リアルタイム性</td><td>一定間隔でしか更新されない</td><td class="h-docker">変化があった瞬間に届く</td></tr>
-            <tr><td class="rowhead">向いている場面</td><td>通常のページ表示</td><td class="h-docker">チャット・通知・対戦ゲームなど</td></tr>
+            <tr><td class="rowhead">向いている場面</td><td>通常のページ表示</td><td class="h-docker">チャット・通知・対戦ゲーム等</td></tr>
           </tbody>
         </table>
       </div>
     </section>
 
-    <!-- ③ -->
+
     <section class="qa">
       <span class="badge">3</span>
-      <h2>WebSocket で何ができるようになった？</h2>
+      <h2>誰がいつ作った？</h2>
       <div class="body">
-        <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-network"/></svg><div class="cap">接続したまま双方向にやり取りできる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-clock"/></svg><div class="cap">リアルタイムに近い速さで更新が届く</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-scale"/></svg><div class="cap">ポーリングに比べてサーバー負荷を抑えられる</div></div>
-        </div>
+        <dl class="fact-list">
+          <div class="fact-row"><dt>作った人</dt><dd>IETF</dd></div>
+          <div class="fact-row"><dt>時期</dt><dd>2011年</dd></div>
+          <div class="fact-row"><dt>文脈</dt><dd>RFC 6455 として標準化され、双方向通信の定番になった。</dd></div>
+        </dl>
       </div>
     </section>
-
-    <!-- ひとことメモ -->
-    <div class="memo">
-      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>WebSocketは最初にHTTPで接続してから、<br>
-         そのまま専用の通信路に"アップグレード"する仕組み。<br>
-         チャットや通知、株価のようなリアルタイム更新が必要な画面でよく使われる。</p>
-    </div>
 
   </div>
 
@@ -98,6 +89,10 @@
           <span class="kw-page">P.74</span>
         </div>
       </div>
+    </div>
+    <div class="side-group">
+      <div class="group-label">一緒に覚えたい言葉</div>
+      
       <div class="kw">
         <div class="kw-icon"><svg><use href="icons.svg#ic-cloud"/></svg></div>
         <div>

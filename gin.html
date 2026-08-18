@@ -7,7 +7,7 @@
 </head>
 <body>
 
-<article class="entry recto">
+<article class="entry verso">
 
   <!-- ===== 本文 ===== -->
   <div class="main">
@@ -20,7 +20,6 @@
         <h1>Gin</h1>
       </div>
     </div>
-    <p class="subtitle">Goの速さを活かしきる、シンプルなWebフレームワーク</p>
 
     <div class="head-lower">
       <div class="oneline">
@@ -35,8 +34,7 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>Goの標準ライブラリ（net/http）だけでWebサーバーを書くと、ルーティングやミドルウェアの処理が<br>
-             冗長になりがちだった。Goの速さを活かしつつ、書きやすさも両立させるために開発された。</p>
+          <p>Go標準のnet/httpだけでは、ルーティングやミドルウェアの記述が冗長になりがちだった。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -53,7 +51,7 @@
             <tr><th></th><th>net/http（標準ライブラリ）</th><th class="h-docker">Gin</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">ルーティング</td><td>自前で条件分岐を実装</td><td class="h-docker">router.GET()などで簡潔に記述</td></tr>
+            <tr><td class="rowhead">ルーティング</td><td>自前で条件分岐を実装</td><td class="h-docker">router.GET()等で簡潔に記述</td></tr>
             <tr><td class="rowhead">ミドルウェア</td><td>仕組みを自作</td><td class="h-docker">標準で組み込み・追加が容易</td></tr>
             <tr><td class="rowhead">実行速度</td><td>速い</td><td class="h-docker">標準ライブラリに迫る速さを維持</td></tr>
             <tr><td class="rowhead">向いている場面</td><td>極小のAPI</td><td class="h-docker">REST API・マイクロサービス</td></tr>
@@ -62,7 +60,7 @@
       </div>
     </section>
 
-    <!-- ③ -->
+
     <section class="qa">
       <span class="badge">3</span>
       <h2>Gin で何ができるようになった？</h2>
@@ -74,13 +72,6 @@
         </div>
       </div>
     </section>
-
-    <!-- ひとことメモ -->
-    <div class="memo">
-      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>GinはGoの「速いが冗長になりがち」という弱点を、<br>
-         書きやすさで補ったフレームワーク。</p>
-    </div>
 
   </div>
 

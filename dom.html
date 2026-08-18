@@ -7,7 +7,7 @@
 </head>
 <body>
 
-<article class="entry verso">
+<article class="entry recto">
 
   <!-- ===== 本文 ===== -->
   <div class="main">
@@ -20,7 +20,6 @@
         <h1>DOM</h1>
       </div>
     </div>
-    <p class="subtitle">ブラウザがHTMLを「木構造」として持ったメモリ上の姿</p>
 
     <div class="head-lower">
       <div class="oneline">
@@ -35,8 +34,7 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>HTMLはただの文字列（テキスト）なので、そのままではJavaScriptから<br>
-             「このボタンの色を変える」といった操作ができなかった。</p>
+          <p>HTMLはただの文字列（テキスト）なので、そのままではJavaScriptから。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -53,7 +51,7 @@
             <tr><th></th><th>HTML文字列そのまま</th><th class="h-docker">DOM（オブジェクトの木）</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">JSからの操作</td><td>文字列を書き換えても反映されない</td><td class="h-docker">getElementByIdなどで直接操作できる</td></tr>
+            <tr><td class="rowhead">JSからの操作</td><td>文字列を書き換えても反映されない</td><td class="h-docker">getElementById等で直接操作できる</td></tr>
             <tr><td class="rowhead">構造の把握</td><td>テキストを読んで判断するしかない</td><td class="h-docker">親子・兄弟関係をたどれる</td></tr>
             <tr><td class="rowhead">更新</td><td>ページ全体を再解釈</td><td class="h-docker">該当ノードだけ差し替え可能</td></tr>
           </tbody>
@@ -61,7 +59,7 @@
       </div>
     </section>
 
-    <!-- ③ -->
+
     <section class="qa">
       <span class="badge">3</span>
       <h2>DOM で何ができるようになった？</h2>
@@ -73,13 +71,6 @@
         </div>
       </div>
     </section>
-
-    <!-- ひとことメモ -->
-    <div class="memo">
-      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>「HTMLを解析してできた操作用の木」がDOM。<br>
-         Virtual DOMは、この本物のDOMを直接触る代わりに仮の木で差分計算してから反映する工夫。</p>
-    </div>
 
   </div>
 
@@ -106,6 +97,10 @@
           <span class="kw-page">P.128</span>
         </div>
       </div>
+    </div>
+    <div class="side-group">
+      <div class="group-label">一緒に覚えたい言葉</div>
+      
       <div class="kw">
         <div class="kw-icon"><svg><use href="icons.svg#ic-layers"/></svg></div>
         <div>

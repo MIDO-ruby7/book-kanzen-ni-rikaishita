@@ -7,7 +7,7 @@
 </head>
 <body>
 
-<article class="entry verso">
+<article class="entry recto">
 
   <!-- ===== 本文 ===== -->
   <div class="main">
@@ -20,7 +20,6 @@
         <h1>Status Code</h1>
       </div>
     </div>
-    <p class="subtitle">サーバーが返す「結果の一言」を数字にしたもの</p>
 
     <div class="head-lower">
       <div class="oneline">
@@ -53,14 +52,14 @@
           </thead>
           <tbody>
             <tr><td class="rowhead">成功／失敗の判定</td><td>文章を読んで解釈</td><td class="h-docker">200番台か400/500番台かで機械的に判定</td></tr>
-            <tr><td class="rowhead">原因の切り分け</td><td>都度サーバーログを確認</td><td class="h-docker">404=見つからない、401=未認証など型で分かる</td></tr>
+            <tr><td class="rowhead">原因の切り分け</td><td>都度サーバーログを確認</td><td class="h-docker">404=見つからない、401=未認証等型で分かる</td></tr>
             <tr><td class="rowhead">実装のしやすさ</td><td>文字列を都度パースして分岐</td><td class="h-docker">ステータスコードで分岐処理を書ける</td></tr>
           </tbody>
         </table>
       </div>
     </section>
 
-    <!-- ③ -->
+
     <section class="qa">
       <span class="badge">3</span>
       <h2>Status Code で何ができるようになった？</h2>
@@ -72,12 +71,6 @@
         </div>
       </div>
     </section>
-
-    <!-- ひとことメモ -->
-    <div class="memo">
-      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>200番台は成功、300番台はリダイレクト、400番台はリクエスト側のミス、500番台はサーバー側の問題、とざっくり覚えておくだけでも十分役に立つ。</p>
-    </div>
 
   </div>
 

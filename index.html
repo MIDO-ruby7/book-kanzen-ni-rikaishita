@@ -85,8 +85,7 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>Docker は「環境ごとアプリを運ぶ」イメージ。<br>
-         必要なものを一つの箱にまとめるから、どこでも同じように動く。</p>
+      <p>Image → Container → Compose の順で読むと、箱の作り方から運び方までつながる。</p>
     </div>
 
   </div>
@@ -96,52 +95,28 @@
     <h2 class="side-title">関連キーワード</h2>
 
     <div class="side-group">
-      <div class="group-label">比較する技術</div>
+      <div class="group-label">関連キーワード</div>
       <div class="kw">
         <div class="kw-icon"><svg><use href="icons.svg#ic-monitor"/></svg></div>
         <div>
           <div class="kw-name">VM（仮想マシン）</div>
-          <p class="kw-desc">OSごと分離する仮想化技術。重いが強い分離ができる。</p>
+          <p class="kw-desc">OSごと分離する従来型。Dockerと比較の定番。</p>
           <span class="kw-page">P.401</span>
         </div>
       </div>
-    </div>
-
-    <div class="side-group">
-      <div class="group-label">一緒に使う技術</div>
       <div class="kw">
         <div class="kw-icon"><svg><use href="icons.svg#ic-file"/></svg></div>
         <div>
           <div class="kw-name">Docker Compose</div>
-          <p class="kw-desc">複数のコンテナをまとめて定義・実行するツール。</p>
+          <p class="kw-desc">複数コンテナをまとめて定義・実行。</p>
           <span class="kw-page">P.321</span>
         </div>
       </div>
       <div class="kw">
-        <div class="kw-icon"><svg><use href="icons.svg#ic-cube"/></svg></div>
-        <div>
-          <div class="kw-name">Container</div>
-          <p class="kw-desc">Docker で作られるアプリ実行の単位。</p>
-          <span class="kw-page">P.309</span>
-        </div>
-      </div>
-      <div class="kw">
-        <div class="kw-icon"><svg><use href="icons.svg#ic-image"/></svg></div>
-        <div>
-          <div class="kw-name">Image</div>
-          <p class="kw-desc">コンテナを作るための設計図（テンプレート）。</p>
-          <span class="kw-page">P.305</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="side-group">
-      <div class="group-label">次に読むなら</div>
-      <div class="kw">
         <div class="kw-icon"><svg><use href="icons.svg#ic-wheel"/></svg></div>
         <div>
           <div class="kw-name">Kubernetes</div>
-          <p class="kw-desc">コンテナを大規模に自動で管理・運用するプラットフォーム。</p>
+          <p class="kw-desc">コンテナを大規模に自動運用する仕組み。</p>
           <span class="kw-page">P.441</span>
         </div>
       </div>
