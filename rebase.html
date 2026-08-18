@@ -20,7 +20,6 @@
         <h1>Rebase</h1>
       </div>
     </div>
-    <p class="subtitle">枝分かれの歴史を、まっすぐに描き直す</p>
 
     <div class="head-lower">
       <div class="oneline">
@@ -61,24 +60,18 @@
       </div>
     </section>
 
-    <!-- ③ -->
+
     <section class="qa">
       <span class="badge">3</span>
-      <h2>Rebase で何ができるようになった？</h2>
+      <h2>使用例</h2>
       <div class="body">
-        <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-wheel"/></svg><div class="cap">履歴が一直線で見やすくなる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-file"/></svg><div class="cap">レビューしやすいコミットに整理</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-cloud"/></svg><div class="cap">最新のmainを取り込んで作業できる</div></div>
+        <p>作業ブランチを main の最新の上に載せ直す例。</p>
+        <div class="example-block">
+<code>git fetch origin</code>
+<code>git rebase origin/main</code>
         </div>
       </div>
     </section>
-
-    <!-- ひとことメモ -->
-    <div class="memo">
-      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>共有済みのブランチをrebaseすると事故のもと。自分のローカルブランチだけに使うのが基本。</p>
-    </div>
 
   </div>
 

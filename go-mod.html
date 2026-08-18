@@ -7,7 +7,7 @@
 </head>
 <body>
 
-<article class="entry verso compact">
+<article class="entry verso">
 
   <!-- ===== 本文 ===== -->
   <div class="main">
@@ -20,7 +20,6 @@
         <h1>go mod</h1>
       </div>
     </div>
-    <p class="subtitle">Goモジュールで依存をプロジェクトに根付かせる</p>
 
     <div class="head-lower">
       <div class="oneline">
@@ -35,7 +34,7 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>GOPATH時代は配置場所とバージョン管理が独特で、再現や複数版共存がつらかった。</p>
+          <p>GOPATH時代は配置場所とバージョン管理が独特で、再現や複数版共存が難しかった。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -61,24 +60,18 @@
       </div>
     </section>
 
-    <!-- ③ -->
+
     <section class="qa">
       <span class="badge">3</span>
-      <h2>go mod で何ができるようになった？</h2>
+      <h2>使用例</h2>
       <div class="body">
-        <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-package"/></svg><div class="cap">モジュールとして依存を宣言できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-file"/></svg><div class="cap">go.sumで取得内容を検証できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-layers"/></svg><div class="cap">GOPATHから解放された開発ができる</div></div>
+        <p>依存追加と整理解の基本例。</p>
+        <div class="example-block">
+<code>go get github.com/gin-gonic/gin</code>
+<code>go mod tidy</code>
         </div>
       </div>
     </section>
-
-    <!-- ひとことメモ -->
-    <div class="memo">
-      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>「go modules」全体を指して「go mod」と言うことも多い。</p>
-    </div>
 
   </div>
 

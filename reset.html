@@ -20,7 +20,6 @@
         <h1>Reset</h1>
       </div>
     </div>
-    <p class="subtitle">今いる場所を、指定の地点まで巻き戻す</p>
 
     <div class="head-lower">
       <div class="oneline">
@@ -35,7 +34,7 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>直前のコミットを間違えたり、手元の作業をやり直したいのに。</p>
+          <p>誤ったコミットや手元の変更を、履歴の単位で安全に戻す操作が必要だった。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -61,24 +60,17 @@
       </div>
     </section>
 
-    <!-- ③ -->
+
     <section class="qa">
       <span class="badge">3</span>
-      <h2>Reset で何ができるようになった？</h2>
+      <h2>使用例</h2>
       <div class="body">
-        <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-wheel"/></svg><div class="cap">直前のコミットをやり直せる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-layers"/></svg><div class="cap">手元の変更を段階的に戻せる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-clock"/></svg><div class="cap">昔のファイルを探し回らずに済む</div></div>
+        <p>直前コミットだけ外し、変更は手元に残す例。</p>
+        <div class="example-block">
+<code>git reset --soft HEAD~1</code>
         </div>
       </div>
     </section>
-
-    <!-- ひとことメモ -->
-    <div class="memo">
-      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>pushして共有済みの履歴をresetすると他の人と食い違ってしまう。そこはrevertの出番。</p>
-    </div>
 
   </div>
 

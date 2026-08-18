@@ -174,7 +174,14 @@ module.exports = {
                 }
               ]
             }
-          ]
+          ],
+          "command_example": {
+            "heading": "使用例",
+            "description": "GitHub上のリポジトリを手元へ複製する例。",
+            "lines": [
+              "git clone https://github.com/example/repo.git"
+            ]
+          }
         },
         {
           "id": "fork",
@@ -356,7 +363,7 @@ module.exports = {
           "category": "バージョン管理・Git",
           "icon": "ic-file",
           "oneline": "変更内容を、メッセージ付きで記録の1コマとして保存すること。",
-          "q1_text": "どこまで・何のための変更かが後から分からなくなっていた。",
+          "q1_text": "変更のまとまりを、理由つきで履歴に記録する単位が必要だった。",
           "q2_intro": "作業のキリのいいところで、ファイルをまるごと別名保存していた。",
           "q2_table": {
             "col_before": "別名保存",
@@ -432,7 +439,14 @@ module.exports = {
                 }
               ]
             }
-          ]
+          ],
+          "command_example": {
+            "heading": "使用例",
+            "description": "変更を記録する最小例。",
+            "lines": [
+              "git commit -m \"fix: update login flow\""
+            ]
+          }
         },
         {
           "id": "push",
@@ -518,7 +532,14 @@ module.exports = {
                 }
               ]
             }
-          ]
+          ],
+          "command_example": {
+            "heading": "使用例",
+            "description": "現在のブランチのコミットをリモートへ送る例。",
+            "lines": [
+              "git push origin main"
+            ]
+          }
         },
         {
           "id": "pull",
@@ -604,7 +625,14 @@ module.exports = {
                 }
               ]
             }
-          ]
+          ],
+          "command_example": {
+            "heading": "使用例",
+            "description": "リモートの最新変更を取り込む例。",
+            "lines": [
+              "git pull origin main"
+            ]
+          }
         },
         {
           "id": "merge",
@@ -777,7 +805,15 @@ module.exports = {
                 }
               ]
             }
-          ]
+          ],
+          "command_example": {
+            "heading": "使用例",
+            "description": "作業ブランチを main の最新の上に載せ直す例。",
+            "lines": [
+              "git fetch origin",
+              "git rebase origin/main"
+            ]
+          }
         },
         {
           "id": "cherry-pick",
@@ -863,7 +899,14 @@ module.exports = {
                 }
               ]
             }
-          ]
+          ],
+          "command_example": {
+            "heading": "使用例",
+            "description": "別ブランチの特定コミットだけ取り込む例。",
+            "lines": [
+              "git cherry-pick a1b2c3d"
+            ]
+          }
         },
         {
           "id": "conflict",
@@ -1030,7 +1073,14 @@ module.exports = {
                 }
               ]
             }
-          ]
+          ],
+          "command_example": {
+            "heading": "使用例",
+            "description": "過去コミットを打ち消す新しいコミットを作る例。",
+            "lines": [
+              "git revert HEAD"
+            ]
+          }
         },
         {
           "id": "reset",
@@ -1040,7 +1090,7 @@ module.exports = {
           "category": "バージョン管理・履歴操作",
           "icon": "ic-wheel",
           "oneline": "コミットの位置を過去に戻し、それ以降の変更をなかったことにする（または手元に戻す）こと。",
-          "q1_text": "直前のコミットを間違えたり、手元の作業をやり直したいのに。",
+          "q1_text": "誤ったコミットや手元の変更を、履歴の単位で安全に戻す操作が必要だった。",
           "q2_intro": "バックアップフォルダから昔のバージョンのファイルを探し出して上書きしていた。",
           "q2_table": {
             "col_before": "旧ファイル探し",
@@ -1116,7 +1166,19 @@ module.exports = {
                 }
               ]
             }
-          ]
+          ],
+          "command_example": {
+            "heading": "使用例",
+            "description": "直前コミットだけ外し、変更は手元に残す例。",
+            "lines": [
+              "git reset --soft HEAD~1"
+            ]
+          },
+          "who_when": {
+            "who": "Linus Torvalds ら",
+            "when": "2005年ごろ",
+            "context": "Gitの初期からある履歴操作コマンド。"
+          }
         },
         {
           "id": "tag",
@@ -1202,7 +1264,15 @@ module.exports = {
                 }
               ]
             }
-          ]
+          ],
+          "command_example": {
+            "heading": "使用例",
+            "description": "リリース版の目印を付ける例。",
+            "lines": [
+              "git tag v1.0.0",
+              "git push origin v1.0.0"
+            ]
+          }
         },
         {
           "id": "oss",
@@ -1212,7 +1282,7 @@ module.exports = {
           "category": "OSS・オープンソース",
           "icon": "ic-network",
           "oneline": "ソースコードを公開し、誰でも自由に閲覧・改造・再配布してよいソフトウェアのこと。",
-          "q1_text": "高価なソフトウェアや、中身がブラックボックスなソフトウェアに。",
+          "q1_text": "ソフトウェアの中身を検証・改良できず、利用者が改善に参加できない状況を変える必要があった。",
           "q2_intro": "企業が作った非公開のソフトウェアを購入し、決められた機能をそのまま使っていた。",
           "q2_table": {
             "col_before": "非公開ソフトウェア",
@@ -1251,7 +1321,7 @@ module.exports = {
             },
             {
               "icon": "ic-rocket",
-              "cap": "コントリビュートで恩返しできる"
+              "cap": "改善を還元できる"
             }
           ],
           "memo": "OSSにも著作権とライセンスがある。「公開＝何をしてもいい」わけではない点に注意。",
@@ -1288,7 +1358,13 @@ module.exports = {
                 }
               ]
             }
-          ]
+          ],
+          "who_when": {
+            "who": "Eric Raymond・Bruce Perens ら",
+            "when": "1998年",
+            "context": "「Open Source Software」という呼び名が広まり、自由ソフトウェアの考え方を実務に伝えやすくした。"
+          },
+          "q3_heading": "誰がいつ作った？"
         },
         {
           "id": "contribute",
@@ -1386,7 +1462,6 @@ module.exports = {
           "id": "client",
           "page": 21,
           "term": "Client",
-          "subtitle": "「お客さん」だと思っていたら、ブラウザのことだった",
           "category": "ネットワークの基本",
           "icon": "ic-laptop",
           "oneline": "サーバーに要求（リクエスト）を送る側。ブラウザやスマホアプリなど、自分が直接触っている画面のこと。",
@@ -1427,7 +1502,6 @@ module.exports = {
               "cap": "サーバーとの役割分担を説明できる"
             }
           ],
-          "memo": "人間ではなくブラウザやアプリを指すと知ってから、先輩との会話がかみ合うようになった。",
           "sidebar_groups": [
             {
               "label": "対になる技術",
@@ -1463,7 +1537,6 @@ module.exports = {
           "id": "server",
           "page": 22,
           "term": "Server",
-          "subtitle": "「なんかサーバー落ちてるらしい」の\"サーバー\"の正体",
           "category": "ネットワークの基本",
           "icon": "ic-server",
           "oneline": "クライアントからの要求（リクエスト）を受け取り、処理して結果を返す側のプログラムや機械。",
@@ -1504,7 +1577,6 @@ module.exports = {
               "cap": "クラウド上でも同じ役割を果たせる"
             }
           ],
-          "memo": "サーバーは「場所」ではなく「役割」。",
           "sidebar_groups": [
             {
               "label": "対になる技術",
@@ -1534,7 +1606,6 @@ module.exports = {
           "id": "request",
           "page": 23,
           "term": "Request",
-          "subtitle": "「APIを叩く」の\"叩く\"の中身、それがリクエスト",
           "category": "HTTP通信",
           "icon": "ic-network",
           "oneline": "クライアントがサーバーに送る「これをやってほしい」という依頼のデータ。",
@@ -1575,7 +1646,6 @@ module.exports = {
               "cap": "API仕様書を読めるようになる"
             }
           ],
-          "memo": "リクエストは「お願いの手紙」。",
           "sidebar_groups": [
             {
               "label": "対になる技術",
@@ -1605,7 +1675,6 @@ module.exports = {
           "id": "response",
           "page": 24,
           "term": "Response",
-          "subtitle": "エラー画面の裏側で返ってきていた「返事」",
           "category": "HTTP通信",
           "icon": "ic-package",
           "oneline": "サーバーがリクエストに対して返す結果。ステータスコードと中身（ボディ）がセットになっている。",
@@ -1646,7 +1715,6 @@ module.exports = {
               "cap": "エラーの原因を特定しやすくなる"
             }
           ],
-          "memo": "中身（ボディ）だけでなく、頭についている数字（ステータスコード）にも情報が詰まっている。",
           "sidebar_groups": [
             {
               "label": "対になる技術",
@@ -1676,7 +1744,6 @@ module.exports = {
           "id": "http",
           "page": 25,
           "term": "HTTP",
-          "subtitle": "URLの前についてる謎の文字、の正体",
           "category": "通信プロトコル",
           "icon": "ic-layers",
           "oneline": "クライアントとサーバーがリクエスト・レスポンスをやり取りするための共通ルール（プロトコル）。",
@@ -1717,7 +1784,6 @@ module.exports = {
               "cap": "仕様書を読んで理解を深められる"
             }
           ],
-          "memo": "ブラウザもサーバーもこのルールに従うから、作ったメーカーが違っても会話が成立する。",
           "sidebar_groups": [
             {
               "label": "発展形",
@@ -1747,13 +1813,17 @@ module.exports = {
                 }
               ]
             }
-          ]
+          ],
+          "who_when": {
+            "who": "Tim Berners-Lee ら",
+            "when": "1990年前後",
+            "context": "World Wide Web の文書転送プロトコルとして設計された。"
+          }
         },
         {
           "id": "https",
           "page": 26,
           "term": "HTTPS",
-          "subtitle": "「Sがついてるだけ」じゃなかった、鍵マークの意味",
           "category": "通信プロトコル",
           "icon": "ic-cube",
           "oneline": "HTTPの通信をTLSで暗号化したもの。途中で盗み見・改ざんされにくくする仕組み。",
@@ -1794,7 +1864,6 @@ module.exports = {
               "cap": "改ざんを検知できる"
             }
           ],
-          "memo": "中身が見えなくなるだけでなく、宛先が本物かどうかも確認できるようになる。",
           "sidebar_groups": [
             {
               "label": "元になった技術",
@@ -1824,13 +1893,17 @@ module.exports = {
                 }
               ]
             }
-          ]
+          ],
+          "who_when": {
+            "who": "Netscape ら",
+            "when": "1994年ごろ",
+            "context": "HTTPにTLS/SSLを組み合わせ、安全なWeb通信を行う形として普及した。"
+          }
         },
         {
           "id": "dns",
           "page": 27,
           "term": "DNS",
-          "subtitle": "覚えられない数字を、覚えられる名前に変える仕組み",
           "category": "名前解決",
           "icon": "ic-file",
           "oneline": "ドメイン名（www.example.comなど）をIPアドレスに変換する「インターネットの電話帳」。",
@@ -1871,7 +1944,6 @@ module.exports = {
               "cap": "繋がらない原因を切り分けられる"
             }
           ],
-          "memo": "人間が覚えやすい名前と、機械が使う住所（IPアドレス）を結びつけてくれる。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -1890,13 +1962,17 @@ module.exports = {
                 }
               ]
             }
-          ]
+          ],
+          "who_when": {
+            "who": "Paul Mockapetris",
+            "when": "1983年",
+            "context": "IPアドレスと名前を対応づける分散的な仕組みとして設計された。"
+          }
         },
         {
           "id": "domain",
           "page": 28,
           "term": "Domain",
-          "subtitle": "「ドメイン取った？」の\"ドメイン\"は住所の名前だった",
           "category": "名前解決",
           "icon": "ic-monitor",
           "oneline": "インターネット上の住所（IPアドレス）に付けられた、人間が読める名前。",
@@ -1937,7 +2013,6 @@ module.exports = {
               "cap": "自分の名前として管理・更新できる"
             }
           ],
-          "memo": "取得しただけでは終わらない。更新を止めると他人に取られる。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -1962,7 +2037,6 @@ module.exports = {
           "id": "ip-address",
           "page": 29,
           "term": "IP Address",
-          "subtitle": "ドメインの奥にある、本当の\"住所\"",
           "category": "名前解決",
           "icon": "ic-network",
           "oneline": "インターネットに繋がる機器1台1台に割り振られる、数字だけの住所。",
@@ -2003,7 +2077,6 @@ module.exports = {
               "cap": "pingなどで疎通確認ができる"
             }
           ],
-          "memo": "ドメイン名はその住所につけた、人間用のあだ名にすぎない。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -2034,7 +2107,6 @@ module.exports = {
           "id": "port",
           "page": 30,
           "term": "Port",
-          "subtitle": "`:3000`って何？の答え",
           "category": "名前解決",
           "icon": "ic-cube",
           "oneline": "同じIPアドレス（住所）の中で、どのアプリ・サービス宛かを区別する番号。",
@@ -2075,7 +2147,6 @@ module.exports = {
               "cap": "衝突や未開放のトラブルに気づける"
             }
           ],
-          "memo": "同じ建物でも、部屋番号が違えば全く別のサービスに届く。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -2100,7 +2171,6 @@ module.exports = {
           "id": "cookie",
           "page": 31,
           "term": "Cookie",
-          "subtitle": "ログインしっぱなしにできる、あの仕組み",
           "category": "状態管理・認証",
           "icon": "ic-package",
           "oneline": "ブラウザに保存される小さなデータ。サーバーがユーザーを識別するために使う。",
@@ -2141,7 +2211,6 @@ module.exports = {
               "cap": "サーバーがユーザーを識別できる"
             }
           ],
-          "memo": "CookieはHTTPの「一期一会」を克服する仕組み。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -2166,7 +2235,6 @@ module.exports = {
           "id": "session",
           "page": 32,
           "term": "Session",
-          "subtitle": "「セッション切れました」のセッションとは何か",
           "category": "状態管理・認証",
           "icon": "ic-clock",
           "oneline": "ログインから終了までの、ユーザーとサーバーの一連のやり取りをひとまとまりとして管理する仕組み。",
@@ -2207,7 +2275,6 @@ module.exports = {
               "cap": "期限切れの挙動を理解できる"
             }
           ],
-          "memo": "鍵（セッションID）だけをブラウザに持たせ、中身はサーバー側で管理する。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -2232,7 +2299,6 @@ module.exports = {
           "id": "jwt",
           "page": 33,
           "term": "JWT",
-          "subtitle": "セッションを使わないログイン、の裏側",
           "category": "状態管理・認証",
           "icon": "ic-scale",
           "oneline": "ユーザー情報を署名付きのトークンに詰め込んで持ち運ぶ、サーバー側に状態を持たない認証方式。",
@@ -2273,7 +2339,6 @@ module.exports = {
               "cap": "署名で改ざんを検知できる"
             }
           ],
-          "memo": "中身は誰でも読めるが、署名があるから偽造や改ざんはすぐバレる。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -2304,7 +2369,6 @@ module.exports = {
           "id": "header",
           "page": 34,
           "term": "Header",
-          "subtitle": "本文じゃない、荷物の\"送り状\"の部分",
           "category": "HTTP通信",
           "icon": "ic-layers",
           "oneline": "リクエストやレスポンスの本体（ボディ）とは別に付け加える、付加情報の集まり。",
@@ -2345,7 +2409,6 @@ module.exports = {
               "cap": "通信のトラブルを切り分けやすくなる"
             }
           ],
-          "memo": "中身（本文）そのものではなく、宛先や種類・認証情報といった付加情報が書かれている。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -2370,7 +2433,6 @@ module.exports = {
           "id": "tcp",
           "page": 35,
           "term": "TCP",
-          "subtitle": "「届いたか確認する」通信、その名前",
           "category": "トランスポート層",
           "icon": "ic-scale",
           "oneline": "データが確実に届いたかを確認しながら通信するプロトコル。信頼性を重視する。",
@@ -2411,7 +2473,6 @@ module.exports = {
               "cap": "信頼性が必要な通信に向いている"
             }
           ],
-          "memo": "多少時間がかかっても、確実に・順番通りに届けることを優先する。",
           "sidebar_groups": [
             {
               "label": "対になる技術",
@@ -2441,7 +2502,6 @@ module.exports = {
           "id": "udp",
           "page": 36,
           "term": "UDP",
-          "subtitle": "「確認より速さ」を選んだ通信",
           "category": "トランスポート層",
           "icon": "ic-rocket",
           "oneline": "データが届いたかの確認をせず、とにかく速く送ることを優先するプロトコル。",
@@ -2482,7 +2542,6 @@ module.exports = {
               "cap": "多少のデータ欠落を許容できる"
             }
           ],
-          "memo": "多少荷物が届かなくても、止まらず配り続けることを優先する。",
           "sidebar_groups": [
             {
               "label": "対になる技術",
@@ -2501,7 +2560,6 @@ module.exports = {
           "id": "tls",
           "page": 37,
           "term": "TLS",
-          "subtitle": "HTTPSの\"S\"の中身を作っている技術",
           "category": "暗号化・証明書",
           "icon": "ic-cube",
           "oneline": "通信を暗号化し、相手が本物であることも確認する仕組み。HTTPSの安全性を支えている。",
@@ -2542,7 +2600,6 @@ module.exports = {
               "cap": "古いバージョンを無効化して安全性を保てる"
             }
           ],
-          "memo": "「SSL証明書」という呼び方は残っているが、",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -2573,7 +2630,6 @@ module.exports = {
           "id": "ssl-certificate",
           "page": 38,
           "term": "SSL証明書",
-          "subtitle": "「証明書の期限切れ」で赤くなる画面の正体",
           "category": "暗号化・証明書",
           "icon": "ic-file",
           "oneline": "サイトの運営者が本物であることを証明する電子証明書。TLS通信で使われる。",
@@ -2614,7 +2670,6 @@ module.exports = {
               "cap": "TLSによる暗号化通信の土台になる"
             }
           ],
-          "memo": "期限が切れると「本人確認ができない状態」になるので、ブラウザが警告を出す。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -2639,7 +2694,6 @@ module.exports = {
           "id": "lets-encrypt",
           "page": 39,
           "term": "Let's Encrypt",
-          "subtitle": "「証明書、無料でいいの？」と最初は疑った",
           "category": "暗号化・証明書",
           "icon": "ic-cloud",
           "oneline": "SSL証明書を無料・自動で発行してくれる認証局。個人開発のサイトも簡単にHTTPS化できる。",
@@ -2680,7 +2734,6 @@ module.exports = {
               "cap": "個人サイトでも気軽にHTTPS化できる"
             }
           ],
-          "memo": "Let's Encryptのおかげで、",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -2705,7 +2758,6 @@ module.exports = {
           "id": "vpn",
           "page": 40,
           "term": "VPN",
-          "subtitle": "「社内ネットワークに繋いで」と言われて焦った日",
           "category": "ネットワーク構成",
           "icon": "ic-network",
           "oneline": "インターネット上に暗号化された専用の通信路（トンネル）を作り、離れた場所からでも安全に社内ネットワークなどに接続する仕組み。",
@@ -2746,7 +2798,6 @@ module.exports = {
               "cap": "リモートワークでも同じ環境で作業できる"
             }
           ],
-          "memo": "公共の道路（インターネット）の中に、覗かれないトンネルを掘るイメージ。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -2771,7 +2822,6 @@ module.exports = {
           "id": "nat",
           "page": 41,
           "term": "NAT",
-          "subtitle": "自宅のPCが全部同じ\"グローバルIP\"に見える理由",
           "category": "ネットワーク構成",
           "icon": "ic-scale",
           "oneline": "家庭や社内など、限られた場所だけで使うプライベートIPと、インターネット上のグローバルIPを変換する仕組み。",
@@ -2812,7 +2862,6 @@ module.exports = {
               "cap": "内部のネットワーク構成を外部から隠せる"
             }
           ],
-          "memo": "NATは「マンションの代表電話番号」。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -2837,7 +2886,6 @@ module.exports = {
           "id": "subnet",
           "page": 42,
           "term": "サブネット（Subnet）",
-          "subtitle": "IPアドレスを\"部署ごと\"に区切る発想",
           "category": "ネットワーク構成",
           "icon": "ic-layers",
           "oneline": "1つのネットワークを、用途や部署などの単位で複数の小さなネットワークに分割する仕組み。",
@@ -2878,7 +2926,6 @@ module.exports = {
               "cap": "障害やトラブルの影響範囲を限定できる"
             }
           ],
-          "memo": "全員を1フロアに詰め込まず、部署ごとに区切ることで管理しやすくする。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -2904,7 +2951,6 @@ module.exports = {
           "page": 43,
           "term": "Proxy（フォワードプロキシ）",
           "compact": true,
-          "subtitle": "「社内からは直接アクセスできません」の理由",
           "category": "ネットワーク構成",
           "icon": "ic-monitor",
           "oneline": "クライアントの代わりにインターネットへアクセスし、結果を取り次いでくれる中継役のサーバー。",
@@ -2945,7 +2991,6 @@ module.exports = {
               "cap": "内部のクライアント構成を外部から隠せる"
             }
           ],
-          "memo": "社員（クライアント）は直接取引先に行かず、窓口（プロキシ）を通して外部とやり取りする。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -2970,7 +3015,6 @@ module.exports = {
           "id": "intranet",
           "page": 44,
           "term": "イントラネット",
-          "subtitle": "インターネットの「社内版」閉じた世界",
           "category": "ネットワーク構成",
           "icon": "ic-network",
           "oneline": "インターネットと同じ技術を使いながら、社内など限られた範囲だけで閉じたネットワークのこと。",
@@ -3016,7 +3060,6 @@ module.exports = {
               "cap": "インターネットと同じ技術で学べる"
             }
           ],
-          "memo": "社内Wikiや勤怠システムはだいたいこの世界の住人。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -3047,7 +3090,6 @@ module.exports = {
           "id": "json",
           "page": 51,
           "term": "JSON",
-          "subtitle": "「閉じタグの海」から抜け出したデータの書き方",
           "category": "データフォーマット",
           "icon": "ic-file",
           "oneline": "{ }と[ ]だけで表現する、JavaScriptのオブジェクトそのままの見た目のデータ形式。",
@@ -3088,7 +3130,6 @@ module.exports = {
               "cap": "配列とオブジェクトだけで大抵表現できる"
             }
           ],
-          "memo": "JSONは「JavaScript Object Notation」の略。",
           "sidebar_groups": [
             {
               "label": "比較する技術",
@@ -3118,13 +3159,17 @@ module.exports = {
                 }
               ]
             }
-          ]
+          ],
+          "who_when": {
+            "who": "Douglas Crockford",
+            "when": "2001年前後",
+            "context": "JavaScript由来の軽量データ交換形式として整理・普及した。"
+          }
         },
         {
           "id": "yaml",
           "page": 52,
           "term": "YAML",
-          "subtitle": "インデントだけで構造を語る、設定ファイルの定番",
           "category": "データフォーマット",
           "icon": "ic-scribble",
           "oneline": "波括弧を使わず、インデント（字下げ）だけで階層構造を表現するデータ形式。",
@@ -3165,7 +3210,6 @@ module.exports = {
               "cap": "GitHub ActionsやCIの定義に使われる"
             }
           ],
-          "memo": "YAMLは「YAML Ain't Markup Language」の再帰的な略称。",
           "sidebar_groups": [
             {
               "label": "比較する技術",
@@ -3190,7 +3234,6 @@ module.exports = {
           "id": "toml",
           "page": 53,
           "term": "TOML",
-          "subtitle": "「インデントミスに悩みたくない」から生まれた設定形式",
           "category": "データフォーマット",
           "icon": "ic-pen",
           "oneline": "key = value の並びで設定を書く、あいまいさの少ないシンプルな設定ファイル形式。",
@@ -3231,7 +3274,6 @@ module.exports = {
               "cap": "書き方のブレが少なく読み間違えにくい"
             }
           ],
-          "memo": "名前の通り「誰が読んでも解釈がブレない」ことを目指して設計されている。",
           "sidebar_groups": [
             {
               "label": "比較する技術",
@@ -3256,7 +3298,6 @@ module.exports = {
           "id": "xml",
           "page": 54,
           "term": "XML",
-          "subtitle": "今も現役の「タグで語る」データ形式",
           "category": "データフォーマット",
           "icon": "ic-layers",
           "oneline": "<tag>で囲んでデータの意味を表現する、開始・終了タグが特徴のマークアップ形式。",
@@ -3297,7 +3338,6 @@ module.exports = {
               "cap": "帳票やドキュメント形式として今も現役"
             }
           ],
-          "memo": "JSONの台頭でAPIの主役の座は譲ったが、",
           "sidebar_groups": [
             {
               "label": "比較する技術",
@@ -3322,7 +3362,6 @@ module.exports = {
           "id": "csv",
           "page": 55,
           "term": "CSV",
-          "subtitle": "Excelとの橋渡し役、カンマ区切りの素朴な形式",
           "category": "データフォーマット",
           "icon": "ic-file",
           "oneline": "値をカンマ（,）で区切って1行1レコードを表す、最もシンプルな表形式のデータ形式。",
@@ -3363,7 +3402,6 @@ module.exports = {
               "cap": "仕組みが単純で他システムとも連携しやすい"
             }
           ],
-          "memo": "値の中にカンマや改行があると引用符で囲む必要があり、単純に見えて実は細かいルールがある。",
           "sidebar_groups": [
             {
               "label": "比較する技術",
@@ -3382,7 +3420,6 @@ module.exports = {
           "id": "schema",
           "page": 56,
           "term": "スキーマ（Schema）",
-          "subtitle": "「このデータ、形は合ってる？」に答える設計図",
           "category": "データフォーマット",
           "icon": "ic-scale",
           "oneline": "データがどんな項目を持ち、どんな型・制約であるべきかを定義した\"データの設計図\"。",
@@ -3423,7 +3460,6 @@ module.exports = {
               "cap": "DBやAPI、設定ファイルなど幅広く使う"
             }
           ],
-          "memo": "スキーマはDBのテーブル定義だけでなく、",
           "sidebar_groups": [
             {
               "label": "関連する語",
@@ -3454,7 +3490,6 @@ module.exports = {
           "id": "api",
           "page": 61,
           "term": "API",
-          "subtitle": "「画面を見せずに機能だけ貸す」ための窓口",
           "category": "API",
           "icon": "ic-network",
           "oneline": "アプリやサービス同士が、決められたルールに沿ってやり取りするための\"窓口\"。",
@@ -3495,7 +3530,6 @@ module.exports = {
               "cap": "フロントとサーバーの間の窓口にもなる"
             }
           ],
-          "memo": "「プログラム同士が会話するための窓口」くらいに考えるとイメージしやすい。",
           "sidebar_groups": [
             {
               "label": "関連する語",
@@ -3526,7 +3560,6 @@ module.exports = {
           "id": "endpoint",
           "page": 62,
           "term": "Endpoint",
-          "subtitle": "APIという建物の、それぞれの「入り口」",
           "category": "API",
           "icon": "ic-network",
           "oneline": "APIの中で、特定の機能やデータにアクセスするための個別のURL。",
@@ -3567,7 +3600,6 @@ module.exports = {
               "cap": "ドキュメントやログでも扱いやすい単位"
             }
           ],
-          "memo": "エンドポイントは「APIの中の1つの窓口」というイメージ。",
           "sidebar_groups": [
             {
               "label": "関連する語",
@@ -3598,7 +3630,6 @@ module.exports = {
           "id": "rest",
           "page": 63,
           "term": "REST",
-          "subtitle": "URLと動詞だけで意味を伝えるAPI設計の作法",
           "category": "API",
           "icon": "ic-server",
           "oneline": "URL（名詞）とHTTPメソッド（動詞）の組み合わせで、操作の意味を表現するAPI設計のスタイル。",
@@ -3639,7 +3670,6 @@ module.exports = {
               "cap": "設計者が変わってもルールがブレにくい"
             }
           ],
-          "memo": "RESTは設計思想の名前。実務では「URLは名詞、操作はHTTPメソッドで」で十分。",
           "sidebar_groups": [
             {
               "label": "比較する技術",
@@ -3669,13 +3699,17 @@ module.exports = {
                 }
               ]
             }
-          ]
+          ],
+          "who_when": {
+            "who": "Roy Fielding",
+            "when": "2000年",
+            "context": "博士論文で提唱されたWeb向けのアーキテクチャスタイル。"
+          }
         },
         {
           "id": "graphql",
           "page": 64,
           "term": "GraphQL",
-          "subtitle": "「欲しいデータだけちょうだい」を叶えるAPIの仕組み",
           "category": "API",
           "icon": "ic-cube",
           "oneline": "欲しい項目だけを指定して、1回のリクエストでまとめて取得できるAPIの問い合わせ言語。",
@@ -3716,7 +3750,6 @@ module.exports = {
               "cap": "型（スキーマ）でデータの形が保証される"
             }
           ],
-          "memo": "1つのURLに欲しいデータの形を送る。RESTと優劣より、画面の複雑さで使い分ける。",
           "sidebar_groups": [
             {
               "label": "比較する技術",
@@ -3740,13 +3773,17 @@ module.exports = {
                 }
               ]
             }
-          ]
+          ],
+          "who_when": {
+            "who": "Facebook",
+            "when": "2012年開発・2015年公開",
+            "context": "複雑な画面に必要なデータだけ取得するために作られた。"
+          }
         },
         {
           "id": "openapi",
           "page": 65,
           "term": "OpenAPI",
-          "subtitle": "「口頭で伝えていたAPI仕様」をファイルにした約束事",
           "category": "API",
           "icon": "ic-file",
           "oneline": "APIのエンドポイントや入出力の形を、YAMLやJSONで記述する仕様のフォーマット。",
@@ -3787,7 +3824,6 @@ module.exports = {
               "cap": "モックサーバーやクライアントコードを自動生成"
             }
           ],
-          "memo": "元はSwagger。API仕様をコードと同じ形式で管理できるのが強み。",
           "sidebar_groups": [
             {
               "label": "関連する語",
@@ -3812,7 +3848,6 @@ module.exports = {
           "id": "status_code",
           "page": 66,
           "term": "Status Code",
-          "subtitle": "サーバーが返す「結果の一言」を数字にしたもの",
           "category": "API",
           "icon": "ic-monitor",
           "oneline": "リクエストの結果が成功か失敗か、失敗ならどんな理由かを伝える3桁の数字。",
@@ -3853,7 +3888,6 @@ module.exports = {
               "cap": "フロント側で分岐処理を書きやすい"
             }
           ],
-          "memo": "200番台は成功、300番台はリダイレクト、400番台はリクエスト側のミス、500番台はサーバー側の問題、とざっくり覚えておくだけでも十分役に立つ。",
           "sidebar_groups": [
             {
               "label": "関連する語",
@@ -3872,7 +3906,6 @@ module.exports = {
           "id": "slug",
           "page": 67,
           "term": "slug",
-          "subtitle": "URLの中に生きる、人が読める識別子",
           "category": "API",
           "icon": "ic-pen",
           "oneline": "記事やページを識別するために使う、URLに埋め込める短い文字列（例: /posts/how-to-use-docker）。",
@@ -3913,7 +3946,6 @@ module.exports = {
               "cap": "SEOやシェア時の見た目が改善する"
             }
           ],
-          "memo": "slugは基本的に「小文字・半角英数・ハイフン区切り」で作るのが定番。",
           "sidebar_groups": [
             {
               "label": "関連する語",
@@ -3938,7 +3970,6 @@ module.exports = {
           "id": "grpc",
           "page": 71,
           "term": "gRPC",
-          "subtitle": "サーバー同士の会話をHTTPより速く・厳密にする通信方式",
           "category": "通信プロトコル",
           "icon": "ic-rocket",
           "oneline": "Googleが開発した、サーバー同士の内部通信を高速かつ型安全に行うための通信の仕組み。",
@@ -3979,7 +4010,6 @@ module.exports = {
               "cap": "スキーマ（型定義）から複数言語のコードを生成"
             }
           ],
-          "memo": "主にサーバー同士の通信向き。画面APIはREST/GraphQL、裏側はgRPC、の使い分けも多い。",
           "sidebar_groups": [
             {
               "label": "関連する語",
@@ -4004,7 +4034,6 @@ module.exports = {
           "id": "websocket",
           "page": 72,
           "term": "WebSocket",
-          "subtitle": "「聞かれるまで話せない」HTTPの壁を壊した通信方式",
           "category": "通信プロトコル",
           "icon": "ic-network",
           "oneline": "一度接続を確立したら、サーバーとクライアントが双方向にいつでもデータを送り合える通信の仕組み。",
@@ -4045,7 +4074,6 @@ module.exports = {
               "cap": "ポーリングに比べてサーバー負荷を抑えられる"
             }
           ],
-          "memo": "HTTP接続をアップグレードして双方向通信に切り替える。チャット・通知向き。",
           "sidebar_groups": [
             {
               "label": "関連する語",
@@ -4064,13 +4092,17 @@ module.exports = {
                 }
               ]
             }
-          ]
+          ],
+          "who_when": {
+            "who": "IETF",
+            "when": "2011年",
+            "context": "RFC 6455 として標準化され、双方向通信の定番になった。"
+          }
         },
         {
           "id": "webhook",
           "page": 73,
           "term": "Webhook",
-          "subtitle": "「向こうから電話がかかってくる」通知の仕組み",
           "category": "通信プロトコル",
           "icon": "ic-cloud",
           "oneline": "サービス側で何かが起きたときに、登録しておいたURLへ自動でリクエストを送ってくれる仕組み。",
@@ -4111,7 +4143,6 @@ module.exports = {
               "cap": "決済・デプロイ通知など幅広く使われる"
             }
           ],
-          "memo": "Webhookは「登録したURLに向かって、相手がPOSTリクエストを送ってくる」だけの単純な仕組み。GitHubのPush通知やStripeの決済結果通知などで馴染み深い。",
           "sidebar_groups": [
             {
               "label": "関連する語",
@@ -4136,7 +4167,6 @@ module.exports = {
           "id": "pubsub",
           "page": 74,
           "term": "Pub/Sub",
-          "subtitle": "送り手と受け手を「知り合わせない」通知の仕組み",
           "category": "通信プロトコル",
           "icon": "ic-layers",
           "oneline": "発行者（Publisher）がメッセージを送り、購読者（Subscriber）が仲介役を通じて受け取る非同期の通信モデル。",
@@ -4177,7 +4207,6 @@ module.exports = {
               "cap": "複数のサービスへの同時通知に向いている"
             }
           ],
-          "memo": "Webhookが1対1の電話なら、Pub/Subは掲示板に貼って見に来るイメージ。",
           "sidebar_groups": [
             {
               "label": "関連する語",
@@ -4208,7 +4237,6 @@ module.exports = {
           "id": "database",
           "page": 81,
           "term": "Database",
-          "subtitle": "データを「ファイルの海」から救い出した仕組み",
           "category": "データベース・基礎",
           "icon": "ic-server",
           "oneline": "データを一箇所にまとめて、複数人で安全に読み書きでき、検索しやすく保存する仕組み。",
@@ -4249,7 +4277,6 @@ module.exports = {
               "cap": "ルールでデータの整合性を守れる"
             }
           ],
-          "memo": "保存するだけでなく、壊れないように守ってくれる。",
           "sidebar_groups": [
             {
               "label": "データベースの種類",
@@ -4285,7 +4312,6 @@ module.exports = {
           "id": "rdb",
           "page": 82,
           "term": "RDB",
-          "subtitle": "表と表の「関係」でデータを整理する考え方",
           "category": "データベース・基礎",
           "icon": "ic-layers",
           "oneline": "行と列を持つ「表（テーブル）」同士を関連付けてデータを管理する方式。",
@@ -4326,7 +4352,6 @@ module.exports = {
               "cap": "複雑な業務データも整理できる"
             }
           ],
-          "memo": "分けた分だけ、整合性を保つ仕組みが必要になる。",
           "sidebar_groups": [
             {
               "label": "実装ソフトと対になる考え方",
@@ -4368,7 +4393,6 @@ module.exports = {
           "id": "rdbms",
           "page": 83,
           "term": "RDBMS",
-          "subtitle": "RDBの考え方を実際に動かすソフトウェア",
           "category": "データベース・基礎",
           "icon": "ic-cube",
           "oneline": "RDB（関係データベース）の考え方を実装し、実際にデータを保存・操作できるようにするソフトウェア。",
@@ -4409,7 +4433,6 @@ module.exports = {
               "cap": "クラウドサービスとしても使える"
             }
           ],
-          "memo": "RDBは考え方、RDBMSはそれを動かす実物。",
           "sidebar_groups": [
             {
               "label": "関連する考え方",
@@ -4439,7 +4462,6 @@ module.exports = {
           "id": "nosql",
           "page": 84,
           "term": "NoSQL",
-          "subtitle": "「表」の形にこだわらないデータベースの総称",
           "category": "データベース・基礎",
           "icon": "ic-network",
           "oneline": "テーブルの形に縛られず、柔軟な形でデータを保存できるデータベースの総称。",
@@ -4480,7 +4502,6 @@ module.exports = {
               "cap": "読み書きを高速化しやすい"
             }
           ],
-          "memo": "データの性質に合わせて選べばいい。",
           "sidebar_groups": [
             {
               "label": "対になる考え方",
@@ -4520,7 +4541,6 @@ module.exports = {
           "id": "table",
           "page": 85,
           "term": "Table",
-          "subtitle": "データを行と列で整理する「表」そのもの",
           "category": "データベース・構造",
           "icon": "ic-file",
           "oneline": "データを行（レコード）と列（カラム）に整理して格納する、データベースの基本単位。",
@@ -4561,7 +4581,6 @@ module.exports = {
               "cap": "型やルールでデータの形を保てる"
             }
           ],
-          "memo": "列（カラム）でルールを決め、行（レコード）でデータを積む。",
           "sidebar_groups": [
             {
               "label": "構成する要素",
@@ -4592,7 +4611,6 @@ module.exports = {
           "id": "record",
           "page": 86,
           "term": "Record",
-          "subtitle": "テーブルに積まれる「1件分」のデータ",
           "category": "データベース・構造",
           "icon": "ic-package",
           "oneline": "テーブルの中の1行分、つまり「1件分」としてまとまったデータ。",
@@ -4633,7 +4651,6 @@ module.exports = {
               "cap": "主キーで1件を確実に特定できる"
             }
           ],
-          "memo": "Excelでいう「1行分のデータ」と同じ感覚。",
           "sidebar_groups": [
             {
               "label": "関連する要素",
@@ -4658,7 +4675,6 @@ module.exports = {
           "id": "primary-key",
           "page": 87,
           "term": "Primary Key",
-          "subtitle": "「この行は絶対にこれ」と言い切るための印",
           "category": "データベース・構造",
           "icon": "ic-wheel",
           "oneline": "テーブルの中で1件のレコードを一意に特定するための、重複しない値。",
@@ -4699,7 +4715,6 @@ module.exports = {
               "cap": "他の表からも安全に参照できる"
             }
           ],
-          "memo": "名前やメールではなく、専用のIDで管理するのが安全。",
           "sidebar_groups": [
             {
               "label": "関連する要素",
@@ -4724,7 +4739,6 @@ module.exports = {
           "id": "foreign-key",
           "page": 88,
           "term": "Foreign Key",
-          "subtitle": "親を消したら子供が迷子になる、を防ぐ仕組み",
           "category": "データベース・構造",
           "icon": "ic-scale",
           "oneline": "別のテーブルの主キーを参照して、テーブル同士の関係を表す値。",
@@ -4765,7 +4779,6 @@ module.exports = {
               "cap": "存在しないデータへの参照を防げる"
             }
           ],
-          "memo": "親を消すときに子がどうなるかを、DBに約束させられる。",
           "sidebar_groups": [
             {
               "label": "関連する要素",
@@ -4790,7 +4803,6 @@ module.exports = {
           "id": "db-index",
           "page": 89,
           "term": "Index",
-          "subtitle": "本の「索引」と同じ、検索を速くする仕組み",
           "category": "データベース・構造",
           "icon": "ic-rocket",
           "oneline": "特定の列の検索を高速化するために作る、データの「索引」。",
@@ -4831,7 +4843,6 @@ module.exports = {
               "cap": "速さと更新コストのバランスを取れる"
             }
           ],
-          "memo": "全部読まなくても、目的のページに一直線で行ける。",
           "sidebar_groups": [
             {
               "label": "関連する要素",
@@ -4856,7 +4867,6 @@ module.exports = {
           "id": "sql",
           "page": 90,
           "term": "SQL",
-          "subtitle": "データベースに話しかけるための共通言語",
           "category": "データベース・操作",
           "icon": "ic-pen",
           "oneline": "データベースに対して、検索・追加・更新・削除を指示するための言語。",
@@ -4897,7 +4907,6 @@ module.exports = {
               "cap": "多くのDB製品で同じ知識が使える"
             }
           ],
-          "memo": "製品が変わっても、基本の文法はほぼそのまま通用する。",
           "sidebar_groups": [
             {
               "label": "関連する要素",
@@ -4922,7 +4931,6 @@ module.exports = {
           "id": "orm",
           "page": 91,
           "term": "ORM",
-          "subtitle": "SQLを書かずにデータベースを操作する翻訳者",
           "category": "データベース・操作",
           "icon": "ic-layers",
           "oneline": "プログラムのオブジェクトとテーブルを対応させ、SQLを直接書かずに操作できるようにする仕組み。",
@@ -4963,7 +4971,6 @@ module.exports = {
               "cap": "コードの記述量を減らせる"
             }
           ],
-          "memo": "楽になる分、裏で何のSQLが実行されているかは知っておきたい。",
           "sidebar_groups": [
             {
               "label": "関連する要素",
@@ -4988,7 +4995,6 @@ module.exports = {
           "id": "migration",
           "page": 92,
           "term": "Migration",
-          "subtitle": "DBの設計変更を「手作業SQL」から解放した仕組み",
           "category": "データベース・運用",
           "icon": "ic-clock",
           "oneline": "テーブルの追加・変更などのDB設計変更を、コードの形で記録・管理する仕組み。",
@@ -5029,7 +5035,6 @@ module.exports = {
               "cap": "変更をコードとしてレビューできる"
             }
           ],
-          "memo": "手でSQLを打つ前に、まずマイグレーションを疑う。",
           "sidebar_groups": [
             {
               "label": "一緒に使う仕組み",
@@ -5059,7 +5064,6 @@ module.exports = {
           "id": "seeder",
           "page": 93,
           "term": "Seeder",
-          "subtitle": "「動作確認用のデータ」を毎回手打ちしなくていい仕組み",
           "category": "データベース・運用",
           "icon": "ic-package",
           "oneline": "開発・テスト用のダミーデータを、コードで自動的に投入する仕組み。",
@@ -5100,7 +5104,6 @@ module.exports = {
               "cap": "チームで同じデータを共有できる"
             }
           ],
-          "memo": "毎回手で作る代わりに、コードに一度書けば使い回せる。",
           "sidebar_groups": [
             {
               "label": "一緒に使う仕組み",
@@ -5119,7 +5122,6 @@ module.exports = {
           "id": "transaction",
           "page": 94,
           "term": "Transaction",
-          "subtitle": "「途中でやめる」ができない一連の処理をまとめる仕組み",
           "category": "データベース・運用",
           "icon": "ic-scale",
           "oneline": "複数の処理を「全部成功」か「全部やり直し」のどちらかにまとめる仕組み。",
@@ -5160,7 +5162,6 @@ module.exports = {
               "cap": "複数処理を1つの単位で扱える"
             }
           ],
-          "memo": "中途半端な状態を、DBが絶対に見せない。",
           "sidebar_groups": [
             {
               "label": "関連する仕組み",
@@ -5190,7 +5191,6 @@ module.exports = {
           "id": "lock",
           "page": 95,
           "term": "Lock",
-          "subtitle": "「同時に触ると壊れる」を防ぐ、データの鍵",
           "category": "データベース・排他制御",
           "icon": "ic-cube",
           "oneline": "複数の処理が同じデータに同時にアクセスしたときの衝突を防ぐ仕組み。",
@@ -5231,7 +5231,6 @@ module.exports = {
               "cap": "処理の順番を保証できる"
             }
           ],
-          "memo": "札がある間、他の人は順番待ちになる。",
           "sidebar_groups": [
             {
               "label": "関連する仕組み",
@@ -5273,7 +5272,6 @@ module.exports = {
           "id": "row-lock",
           "page": 96,
           "term": "行ロック",
-          "subtitle": "「その1行だけ」を貸し切るロック",
           "category": "データベース・排他制御",
           "icon": "ic-file",
           "oneline": "更新中の1行（レコード）だけをロックし、他の行はそのまま操作できるようにする仕組み。",
@@ -5314,7 +5312,6 @@ module.exports = {
               "cap": "必要最小限の範囲だけ制御できる"
             }
           ],
-          "memo": "無関係な行まで巻き込まない分、待ち時間が短くて済む。",
           "q3_heading": "行ロックで何ができるようになった？",
           "sidebar_groups": [
             {
@@ -5340,7 +5337,6 @@ module.exports = {
           "id": "table-lock",
           "page": 97,
           "term": "テーブルロック",
-          "subtitle": "表まるごとを貸し切る、強力だが荒っぽいロック",
           "category": "データベース・排他制御",
           "icon": "ic-layers",
           "oneline": "テーブル全体をロックし、他の処理からの読み書きを丸ごと止める仕組み。",
@@ -5381,7 +5377,6 @@ module.exports = {
               "cap": "用途に応じてロックの粒度を選べる"
             }
           ],
-          "memo": "強力な分、使いどころを選ばないと待ち行列を作ってしまう。",
           "q3_heading": "テーブルロックで何ができるようになった？",
           "sidebar_groups": [
             {
@@ -5407,7 +5402,6 @@ module.exports = {
           "id": "deadlock",
           "page": 98,
           "term": "デッドロック",
-          "subtitle": "お互いが相手の鍵を待ち続けて、永遠に進めなくなる状態",
           "category": "データベース・排他制御",
           "icon": "ic-network",
           "oneline": "複数の処理が互いに相手のロック解放を待ち合って、どちらも先に進めなくなる状態。",
@@ -5448,7 +5442,6 @@ module.exports = {
               "cap": "ロック順序を揃えて予防できる"
             }
           ],
-          "memo": "どちらかが折れない限り、待ち続けても解決しない。",
           "q3_heading": "デッドロックにどう対応できる？",
           "sidebar_groups": [
             {
@@ -5480,7 +5473,6 @@ module.exports = {
           "id": "n_plus_one",
           "page": 99,
           "term": "N+1",
-          "subtitle": "ループの中でクエリを撃ちまくってしまう大罪",
           "category": "データベース・パフォーマンス",
           "icon": "ic-network",
           "oneline": "一覧表示のループの中で関連データを都度取得してしまい、件数分だけSQLが増えてしまう問題。",
@@ -5521,7 +5513,6 @@ module.exports = {
               "cap": "クエリ数を意識する癖がつく"
             }
           ],
-          "memo": "件数が10倍になればクエリも10倍、だから一覧画面ほど痛手が大きい。",
           "sidebar_groups": [
             {
               "label": "関連するキーワード",
@@ -5546,7 +5537,6 @@ module.exports = {
           "id": "cache",
           "page": 100,
           "term": "Cache",
-          "subtitle": "同じ答えを何度も計算しないための一時保管",
           "category": "データベース・パフォーマンス",
           "icon": "ic-clock",
           "oneline": "一度取得・計算した結果を保存しておき、次回以降はそれを使い回して高速化する仕組み。",
@@ -5587,7 +5577,6 @@ module.exports = {
               "cap": "速さと鮮度のトレードオフを学べる"
             }
           ],
-          "memo": "便利だけど、いつ・どう消すか（キャッシュ無効化）を決めておかないと、",
           "sidebar_groups": [
             {
               "label": "関連するキーワード",
@@ -5612,7 +5601,6 @@ module.exports = {
           "id": "normalization",
           "page": 101,
           "term": "正規化",
-          "subtitle": "同じデータをあちこちに置かないための設計ルール",
           "category": "データベース・設計",
           "icon": "ic-layers",
           "oneline": "データの重複を減らすために、テーブルを目的ごとに分割して整理する設計手法。",
@@ -5653,7 +5641,6 @@ module.exports = {
               "cap": "無駄な容量を減らせる"
             }
           ],
-          "memo": "ただしやりすぎるとJOINだらけで遅くなるので、非正規化とのバランスが大事になる。",
           "sidebar_groups": [
             {
               "label": "差分ペア",
@@ -5683,7 +5670,6 @@ module.exports = {
           "id": "denormalization",
           "page": 102,
           "term": "非正規化",
-          "subtitle": "「正しさ」より「速さ」を選ぶ設計判断",
           "category": "データベース・設計",
           "icon": "ic-rocket",
           "oneline": "正規化で分けたデータをあえて重複させて持たせ、JOINを減らして読み取りを速くする設計。",
@@ -5724,7 +5710,6 @@ module.exports = {
               "cap": "集計値をキャッシュ的に持てる"
             }
           ],
-          "memo": "重複データを更新するたびに複数箇所を直す責任とセットで導入する必要がある。",
           "sidebar_groups": [
             {
               "label": "差分ペア",
@@ -5754,7 +5739,6 @@ module.exports = {
           "id": "er_diagram",
           "page": 103,
           "term": "ER図",
-          "subtitle": "テーブル同士の関係を絵にした設計図",
           "category": "データベース・設計",
           "icon": "ic-file",
           "oneline": "テーブルの構造と、テーブル同士のつながり（1対多など）を図で表したもの。",
@@ -5795,7 +5779,6 @@ module.exports = {
               "cap": "変更の影響範囲を追いやすい"
             }
           ],
-          "memo": "ER図は正しく更新され続けて初めて価値を持つ。",
           "sidebar_groups": [
             {
               "label": "関連するキーワード",
@@ -5820,7 +5803,6 @@ module.exports = {
           "id": "uuid",
           "page": 104,
           "term": "UUID",
-          "subtitle": "連番じゃない「ぶつからないID」",
           "category": "データベース・設計",
           "icon": "ic-cube",
           "oneline": "ランダム性の高い長い文字列でIDを作り、複数の場所で同時に発行してもぶつからないようにする仕組み。",
@@ -5861,7 +5843,6 @@ module.exports = {
               "cap": "登録前にIDを決めておける"
             }
           ],
-          "memo": "UUIDは便利だが、文字列が長い分インデックスも重くなりがち。",
           "sidebar_groups": [
             {
               "label": "関連するキーワード",
@@ -5880,7 +5861,6 @@ module.exports = {
           "id": "mysql",
           "page": 105,
           "term": "MySQL",
-          "subtitle": "「とりあえずこれ」で選ばれ続ける定番RDB",
           "category": "データベース・RDBMS",
           "icon": "ic-server",
           "oneline": "世界中の現場で長く使われてきた、実績重視のオープンソースリレーショナルデータベース。",
@@ -5921,7 +5901,6 @@ module.exports = {
               "cap": "中〜大規模まで実績で安心できる"
             }
           ],
-          "memo": "MySQLは「みんな使っているから安心」を選定理由にできる数少ない技術。",
           "sidebar_groups": [
             {
               "label": "比較する技術",
@@ -5946,7 +5925,6 @@ module.exports = {
           "id": "postgresql",
           "page": 106,
           "term": "PostgreSQL",
-          "subtitle": "「機能で選ぶ」ならこっち、なRDB",
           "category": "データベース・RDBMS",
           "icon": "ic-server",
           "oneline": "JSON型や高度な検索機能など、機能の豊富さに定評があるオープンソースリレーショナルデータベース。",
@@ -5987,7 +5965,6 @@ module.exports = {
               "cap": "SQL標準準拠で挙動を追いやすい"
             }
           ],
-          "memo": "「MySQLかPostgreSQLか」は宗教論争になりがちだが、",
           "sidebar_groups": [
             {
               "label": "比較する技術",
@@ -6006,7 +5983,6 @@ module.exports = {
           "id": "sqlite",
           "page": 107,
           "term": "SQLite",
-          "subtitle": "サーバーいらずの「ファイル1つで完結するDB」",
           "category": "データベース・RDBMS",
           "icon": "ic-laptop",
           "oneline": "サーバープロセスを立てず、1つのファイルとしてデータベースを扱える軽量なリレーショナルデータベース。",
@@ -6047,7 +6023,6 @@ module.exports = {
               "cap": "ファイル1つで持ち運べる"
             }
           ],
-          "memo": "SQLiteは「試作・テスト・小規模」の相棒。",
           "sidebar_groups": [
             {
               "label": "比較する技術",
@@ -6072,7 +6047,6 @@ module.exports = {
           "id": "redis",
           "page": 108,
           "term": "Redis",
-          "subtitle": "メモリ上で爆速に動く「その場しのぎ」の頼れる相棒",
           "category": "データベース・NoSQL",
           "icon": "ic-cloud",
           "oneline": "データをメモリ上に持つことで、キャッシュやセッション管理などを高速に処理できるインメモリ型データストア。",
@@ -6113,7 +6087,6 @@ module.exports = {
               "cap": "ランキングなど独自の使い方ができる"
             }
           ],
-          "memo": "重要なデータの唯一の保存先にはしない。",
           "sidebar_groups": [
             {
               "label": "関連するキーワード",
@@ -6138,7 +6111,6 @@ module.exports = {
           "id": "mongodb",
           "page": 109,
           "term": "MongoDB",
-          "subtitle": "テーブルの形を決めずに突っ走れるNoSQL",
           "category": "データベース・NoSQL",
           "icon": "ic-cloud",
           "oneline": "スキーマ（テーブル構造）を事前に固定せず、JSONに近い形式でデータを柔軟に保存できるNoSQLデータベース。",
@@ -6179,7 +6151,6 @@ module.exports = {
               "cap": "水平方向にスケールさせやすい"
             }
           ],
-          "memo": "「スキーマレス」は自由な分だけ、整合性を守るのはアプリ側の責任になる。",
           "sidebar_groups": [
             {
               "label": "関連するキーワード",
@@ -6204,7 +6175,6 @@ module.exports = {
           "id": "view",
           "page": 110,
           "term": "View（ビュー）",
-          "subtitle": "よく使うSQLに名前をつけて「見た目だけのテーブル」にする",
           "category": "データベース・RDBMS",
           "icon": "ic-image",
           "oneline": "複雑なSELECT文をあらかじめ定義しておき、あたかも1つのテーブルであるかのように参照できるようにする仕組み。",
@@ -6245,7 +6215,6 @@ module.exports = {
               "cap": "テーブルのように扱える"
             }
           ],
-          "memo": "ビューはあくまで「保存されたSELECT文」で、実データは持たない。",
           "sidebar_groups": [
             {
               "label": "関連するキーワード",
@@ -6270,7 +6239,6 @@ module.exports = {
           "id": "stored_procedure",
           "page": 111,
           "term": "Stored Procedure",
-          "subtitle": "DBの中に処理そのものを住まわせる",
           "category": "データベース・RDBMS",
           "icon": "ic-wheel",
           "oneline": "一連のSQL処理をDBサーバー側に手続きとして保存しておき、呼び出すだけで実行できるようにする仕組み。",
@@ -6311,7 +6279,6 @@ module.exports = {
               "cap": "複数アプリから同じ処理を呼び出せる"
             }
           ],
-          "memo": "採用するなら管理・レビュー方法もセットで決めておきたい。",
           "sidebar_groups": [
             {
               "label": "関連するキーワード",
@@ -6330,7 +6297,6 @@ module.exports = {
           "id": "acid",
           "page": 112,
           "term": "ACID",
-          "subtitle": "「データが壊れない」ことを約束する4つの性質",
           "category": "データベース・トランザクション",
           "icon": "ic-scale",
           "oneline": "原子性・一貫性・独立性・永続性という、トランザクションが満たすべき4つの性質の頭文字。",
@@ -6371,7 +6337,6 @@ module.exports = {
               "cap": "障害後もデータが消えない"
             }
           ],
-          "memo": "逆にNoSQLの多くは、ACIDの一部を緩めることで速度やスケーラビリティを稼いでいる。",
           "sidebar_groups": [
             {
               "label": "関連するキーワード",
@@ -6396,7 +6361,6 @@ module.exports = {
           "id": "sharding",
           "page": 113,
           "term": "Sharding",
-          "subtitle": "1つのDBじゃ抱えきれなくなったデータを「横に分ける」",
           "category": "データベース・スケーリング",
           "icon": "ic-layers",
           "oneline": "1つの大きなテーブル・DBを複数のサーバーに分割して、それぞれに一部のデータだけを持たせる仕組み。",
@@ -6437,7 +6401,6 @@ module.exports = {
               "cap": "成長に合わせて拡張できる"
             }
           ],
-          "memo": "シャーディングは強力だが後戻りが大変な設計判断。",
           "sidebar_groups": [
             {
               "label": "関連するキーワード",
@@ -6462,7 +6425,6 @@ module.exports = {
           "id": "replication",
           "page": 114,
           "term": "レプリケーション",
-          "subtitle": "同じデータを複数のDBにコピーして「読み取りを分散」",
           "category": "データベース・スケーリング",
           "icon": "ic-network",
           "oneline": "1つのDBのデータを別のDBサーバーに複製し続け、読み取りアクセスなどを分散させる仕組み。",
@@ -6503,7 +6465,6 @@ module.exports = {
               "cap": "バックアップとしても使える"
             }
           ],
-          "memo": "「更新した直後に自分で見るデータ」は特に注意が必要。",
           "sidebar_groups": [
             {
               "label": "関連するキーワード",
@@ -6522,7 +6483,6 @@ module.exports = {
           "id": "connection_pool",
           "page": 115,
           "term": "コネクションプール",
-          "subtitle": "DBとの「つなぎっぱなし」の回線をみんなで使い回す",
           "category": "データベース・パフォーマンス",
           "icon": "ic-package",
           "oneline": "DBへの接続をあらかじめ複数用意してプールしておき、リクエストごとに使い回すことで接続のオーバーヘッドを減らす仕組み。",
@@ -6563,7 +6523,6 @@ module.exports = {
               "cap": "高負荷時も安定して捌ける"
             }
           ],
-          "memo": "DBサーバー側の上限やアプリのサーバー台数とのバランスを見て決める必要がある。",
           "sidebar_groups": [
             {
               "label": "関連するキーワード",
@@ -6588,7 +6547,6 @@ module.exports = {
           "id": "dump",
           "page": 116,
           "term": "ダンプ（Dump）",
-          "subtitle": "データベースの「中身ごと書き出し」",
           "category": "データベース・運用",
           "icon": "ic-file",
           "oneline": "テーブルの定義やデータの中身を、ファイルとして丸ごと書き出すこと（またはそのファイル）。",
@@ -6634,7 +6592,6 @@ module.exports = {
               "cap": "本番相当のデータを開発環境に持ち込める"
             }
           ],
-          "memo": "本番データをそのまま持ち込むのは危険。マスキングや匿名化をセットに。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -6665,7 +6622,6 @@ module.exports = {
           "id": "html",
           "page": 121,
           "term": "HTML",
-          "subtitle": "Webページの骨組みを作るマークアップ言語",
           "category": "フロントエンド・基礎技術",
           "icon": "ic-file",
           "oneline": "見出しや段落、画像などの「要素」を並べて、Webページの構造を作るための言語。",
@@ -6706,7 +6662,6 @@ module.exports = {
               "cap": "ブラウザさえあれば誰でも見られる"
             }
           ],
-          "memo": "HTMLが担うのは「文章の意味・構造」。",
           "sidebar_groups": [
             {
               "label": "セットで使う技術",
@@ -6737,7 +6692,6 @@ module.exports = {
           "id": "css",
           "page": 122,
           "term": "CSS",
-          "subtitle": "見た目を文章の中身から切り離した言語",
           "category": "フロントエンド・基礎技術",
           "icon": "ic-image",
           "oneline": "色・余白・レイアウトなど「見た目」だけをHTMLから分離して指定する言語。",
@@ -6778,7 +6732,6 @@ module.exports = {
               "cap": "アニメーションも表現できる"
             }
           ],
-          "memo": "「HTMLは構造、CSSは見た目」と覚えると迷わない。",
           "sidebar_groups": [
             {
               "label": "関連する技術",
@@ -6803,7 +6756,6 @@ module.exports = {
           "id": "javascript",
           "page": 123,
           "term": "JavaScript",
-          "subtitle": "ブラウザに「動き」を与えたプログラミング言語",
           "category": "フロントエンド・基礎技術",
           "icon": "ic-wheel",
           "oneline": "Webページ内で計算や画面操作を行い、ユーザー操作に応じて動的に変化させる言語。",
@@ -6844,7 +6796,6 @@ module.exports = {
               "cap": "サーバーと通信もできる"
             }
           ],
-          "memo": "TypeScriptはこのJavaScriptに型を足したもの。",
           "sidebar_groups": [
             {
               "label": "関連する技術",
@@ -6875,7 +6826,6 @@ module.exports = {
           "id": "typescript",
           "page": 124,
           "term": "TypeScript",
-          "subtitle": "JavaScriptに「型」の安全ベルトをつけた言語",
           "category": "フロントエンド・基礎技術",
           "icon": "ic-scale",
           "oneline": "JavaScriptに型情報を追加し、実行前にバグの芽をエディタ上で検出できるようにした言語。",
@@ -6916,7 +6866,6 @@ module.exports = {
               "cap": "コンパイル時にミスに気づける"
             }
           ],
-          "memo": "「動くけど正しいか実行するまでわからない」JSに対し、",
           "sidebar_groups": [
             {
               "label": "関連する技術",
@@ -6941,7 +6890,6 @@ module.exports = {
           "id": "vanilla-js",
           "page": 125,
           "term": "バニラ（Vanilla JS）",
-          "subtitle": "フレームワークなしの「素のJavaScript」",
           "category": "フロントエンド・基礎技術",
           "icon": "ic-package",
           "oneline": "ReactやVueなどのライブラリを使わず、標準機能だけで書くJavaScriptのこと。",
@@ -6982,7 +6930,6 @@ module.exports = {
               "cap": "書き方の自由度は自分次第"
             }
           ],
-          "memo": "標準APIが整った今はバニラJSだけで十分書けることが増えた。",
           "sidebar_groups": [
             {
               "label": "関連する技術",
@@ -7007,7 +6954,6 @@ module.exports = {
           "id": "es-modules",
           "page": 126,
           "term": "ES Modules",
-          "subtitle": "JavaScriptファイルを「部品」として輸出入する仕組み",
           "category": "フロントエンド・基礎技術",
           "icon": "ic-layers",
           "oneline": "import/exportを使って、JavaScriptのコードをファイル単位で分割・再利用できるようにする標準の仕組み。",
@@ -7048,7 +6994,6 @@ module.exports = {
               "cap": "ビルドツールとも相性がよい"
             }
           ],
-          "memo": "もう一つの「部品分け」の方式。ブラウザが標準対応したことで主流になった。",
           "sidebar_groups": [
             {
               "label": "関連する技術",
@@ -7067,7 +7012,6 @@ module.exports = {
           "id": "dom",
           "page": 127,
           "term": "DOM",
-          "subtitle": "ブラウザがHTMLを「木構造」として持ったメモリ上の姿",
           "category": "フロントエンド・基礎技術",
           "icon": "ic-network",
           "oneline": "ブラウザが読み込んだHTMLを、JavaScriptから操作できるようツリー状のオブジェクトとして表現したもの。",
@@ -7108,7 +7052,6 @@ module.exports = {
               "cap": "一部のノードだけ書き換えられる"
             }
           ],
-          "memo": "「HTMLを解析してできた操作用の木」がDOM。",
           "sidebar_groups": [
             {
               "label": "関連する技術",
@@ -7139,7 +7082,6 @@ module.exports = {
           "id": "event",
           "page": 128,
           "term": "Event",
-          "subtitle": "「クリックされた」を合図にコードを動かす仕組み",
           "category": "フロントエンド・基礎技術",
           "icon": "ic-clock",
           "oneline": "クリックやキー入力など、ユーザーやブラウザの動作をきっかけにJavaScriptの処理を実行させる仕組み。",
@@ -7180,7 +7122,6 @@ module.exports = {
               "cap": "非同期処理ともよく組み合わせる"
             }
           ],
-          "memo": "Reactなどのライブラリは、これをより宣言的に書けるようにしている。",
           "sidebar_groups": [
             {
               "label": "関連する技術",
@@ -7211,7 +7152,6 @@ module.exports = {
           "id": "component",
           "page": 129,
           "term": "Component",
-          "subtitle": "画面を「部品」として組み立てる考え方",
           "category": "フロントエンド・UI設計",
           "icon": "ic-cube",
           "oneline": "ボタンやカードなど、画面の一部をひとまとまりの部品として切り出し、組み合わせて画面を作る考え方。",
@@ -7252,7 +7192,6 @@ module.exports = {
               "cap": "組み合わせて画面を作れる"
             }
           ],
-          "memo": "Componentの中身を決めるのがStateとProps。",
           "sidebar_groups": [
             {
               "label": "関連する技術",
@@ -7283,7 +7222,6 @@ module.exports = {
           "id": "state",
           "page": 130,
           "term": "State",
-          "subtitle": "Componentが内部に持つ「今の状態」",
           "category": "フロントエンド・UI設計",
           "icon": "ic-file",
           "oneline": "開閉中かどうか、入力中の文字など、Componentが内部で持ち続ける「今の状態」のデータ。",
@@ -7324,7 +7262,6 @@ module.exports = {
               "cap": "Propsとして子に渡すこともできる"
             }
           ],
-          "memo": "「Stateが変わったら画面も変わる」という考え方が、ReactやVueの核。",
           "sidebar_groups": [
             {
               "label": "関連する技術",
@@ -7355,7 +7292,6 @@ module.exports = {
           "id": "props",
           "page": 131,
           "term": "Props",
-          "subtitle": "親から子のComponentへ渡す「荷物」",
           "category": "フロントエンド・UI設計",
           "icon": "ic-network",
           "oneline": "親のComponentから子のComponentへ、表示内容や設定値を渡すためのデータ。",
@@ -7396,7 +7332,6 @@ module.exports = {
               "cap": "Stateと組み合わせて使う"
             }
           ],
-          "memo": "逆に子から親へ伝えたい時は、関数をPropsとして渡してもらい、それを呼び出す形にする。",
           "sidebar_groups": [
             {
               "label": "関連する技術",
@@ -7421,7 +7356,6 @@ module.exports = {
           "id": "csr",
           "page": 132,
           "term": "CSR",
-          "subtitle": "ブラウザ側でHTMLを組み立てる方式",
           "category": "フロントエンド・レンダリング",
           "icon": "ic-laptop",
           "oneline": "サーバーからは最小限のHTMLとJavaScriptだけを送り、実際の画面はブラウザ側のJavaScriptが組み立てる方式。",
@@ -7462,7 +7396,6 @@ module.exports = {
               "cap": "初期表示にはJS読み込みの時間がかかる"
             }
           ],
-          "memo": "その分、初回表示が遅くなりやすいという弱点をSSRが補う。",
           "sidebar_groups": [
             {
               "label": "関連するレンダリング方式",
@@ -7493,7 +7426,6 @@ module.exports = {
           "id": "ssr",
           "page": 133,
           "term": "SSR",
-          "subtitle": "サーバー側でHTMLを完成させてから届ける方式",
           "category": "フロントエンド・レンダリング",
           "icon": "ic-server",
           "oneline": "ブラウザで組み立てる前に、サーバー側で完成したHTMLを生成してから返す方式。",
@@ -7534,7 +7466,6 @@ module.exports = {
               "cap": "表示後にHydrationでJSを有効化する必要がある"
             }
           ],
-          "memo": "ただしアクセスのたびに生成し直すので負荷は上がる。変化が少ないページはSSGの方が効率的。",
           "sidebar_groups": [
             {
               "label": "関連するレンダリング方式",
@@ -7565,7 +7496,6 @@ module.exports = {
           "id": "ssg",
           "page": 134,
           "term": "SSG",
-          "subtitle": "ビルド時にあらかじめHTMLを作っておく方式",
           "category": "フロントエンド・レンダリング",
           "icon": "ic-server",
           "oneline": "アクセスのたびに生成するSSRとは違い、ビルドの時点で全ページのHTMLを事前に作っておく方式。",
@@ -7606,7 +7536,6 @@ module.exports = {
               "cap": "更新のたびに再ビルドが必要"
             }
           ],
-          "memo": "更新頻度が高いページで鮮度も速さも欲しい場合に生まれたのがISR。",
           "sidebar_groups": [
             {
               "label": "関連するレンダリング方式",
@@ -7631,7 +7560,6 @@ module.exports = {
           "id": "isr",
           "page": 135,
           "term": "ISR",
-          "subtitle": "静的なのに「裏側でこっそり」更新される方式",
           "category": "フロントエンド・レンダリング",
           "icon": "ic-rocket",
           "oneline": "SSGの速さを保ちながら、一定時間ごとや条件に応じて裏側でページを再生成し、内容の鮮度も両立させる方式。",
@@ -7672,7 +7600,6 @@ module.exports = {
               "cap": "裏側で必要なページだけ更新"
             }
           ],
-          "memo": "Next.jsなどのフレームワークが対応していることが多い。",
           "sidebar_groups": [
             {
               "label": "関連するレンダリング方式",
@@ -7697,7 +7624,6 @@ module.exports = {
           "id": "hydration",
           "page": 136,
           "term": "Hydration",
-          "subtitle": "届いたHTMLに「あとから」命を吹き込む処理",
           "category": "フロントエンド・レンダリング",
           "icon": "ic-wheel",
           "oneline": "SSR/SSGで先に届いたHTMLに対して、ブラウザ側でJavaScriptを結びつけ、クリックなどに反応できる状態にする処理。",
@@ -7738,7 +7664,6 @@ module.exports = {
               "cap": "完了までクリックしても反応しないことがある"
             }
           ],
-          "memo": "この待ち時間を減らす工夫（部分的なHydrationなど）も近年進んでいる。",
           "sidebar_groups": [
             {
               "label": "関連するレンダリング方式",
@@ -7769,7 +7694,6 @@ module.exports = {
           "id": "virtual-dom",
           "page": 137,
           "term": "Virtual DOM",
-          "subtitle": "本物のDOMを直接触らないための「下書き」",
           "category": "フロントエンド・レンダリング",
           "icon": "ic-layers",
           "oneline": "実際のDOMを直接操作する代わりに、メモリ上に仮のツリーを作り、変化した部分だけを計算してから本物のDOMに反映する仕組み。",
@@ -7810,7 +7734,6 @@ module.exports = {
               "cap": "Stateの変化に強い"
             }
           ],
-          "memo": "「仮想」とはいえ実体はただのJavaScriptのオブジェクト。",
           "sidebar_groups": [
             {
               "label": "関連する技術",
@@ -7841,7 +7764,6 @@ module.exports = {
           "id": "async",
           "page": 138,
           "term": "非同期（Asynchronous）",
-          "subtitle": "「待ち時間」のあいだ他の処理を進める考え方",
           "category": "JavaScript・非同期処理",
           "icon": "ic-clock",
           "oneline": "通信やファイル読み込みなど、時間のかかる処理の完了を待たずに、他の処理を並行して進められるようにする考え方。",
@@ -7882,7 +7804,6 @@ module.exports = {
               "cap": "書き方はPromiseなどで進化してきた"
             }
           ],
-          "memo": "「非同期」という考え方自体は昔からあったが、",
           "sidebar_groups": [
             {
               "label": "関連する技術",
@@ -7913,7 +7834,6 @@ module.exports = {
           "id": "promise",
           "page": 139,
           "term": "Promise",
-          "subtitle": "「いつか終わる処理」の結果を表す約束手形",
           "category": "JavaScript・非同期処理",
           "icon": "ic-scale",
           "oneline": "非同期処理の結果（成功か失敗か）を、あとから受け取れる形でまとめて扱えるようにするオブジェクト。",
@@ -7954,7 +7874,6 @@ module.exports = {
               "cap": "async・awaitでさらに読みやすく書ける"
             }
           ],
-          "memo": "「コールバック地獄」を解消するために生まれたのがPromise。",
           "sidebar_groups": [
             {
               "label": "関連する技術",
@@ -7979,7 +7898,6 @@ module.exports = {
           "id": "async-await",
           "page": 140,
           "term": "async・await",
-          "subtitle": "非同期処理を「同期っぽく」読める書き方",
           "category": "JavaScript・非同期処理",
           "icon": "ic-wheel",
           "oneline": "Promiseを使った非同期処理を、あたかも上から順番に処理しているかのように書けるようにする構文。",
@@ -8020,7 +7938,6 @@ module.exports = {
               "cap": "中身の仕組みはPromiseのまま"
             }
           ],
-          "memo": "糖衣構文。中身の非同期処理はPromiseのまま。",
           "sidebar_groups": [
             {
               "label": "関連する技術",
@@ -8045,7 +7962,6 @@ module.exports = {
           "id": "css-framework",
           "page": 141,
           "term": "CSSフレームワーク",
-          "subtitle": "よく使うデザインをあらかじめ用意しておく道具箱",
           "category": "フロントエンド・スタイリング",
           "icon": "ic-package",
           "oneline": "ボタンやレイアウトなど、よく使うデザインパーツのCSSをあらかじめ用意しておき、クラス名を付けるだけで使えるようにしたもの。",
@@ -8086,7 +8002,6 @@ module.exports = {
               "cap": "独自色を出すにはカスタマイズが必要"
             }
           ],
-          "memo": "BootstrapやTailwind CSSなどが代表格。",
           "sidebar_groups": [
             {
               "label": "関連する技術",
@@ -8112,11 +8027,10 @@ module.exports = {
           "page": 142,
           "term": "UIコンポーネントライブラリ",
           "compact": true,
-          "subtitle": "動くパーツごと完成させて配ってくれる道具箱",
           "category": "フロントエンド・スタイリング",
           "icon": "ic-cube",
           "oneline": "ボタンやモーダルなど、見た目だけでなく開閉などの動作（振る舞い）まで含んだComponentを、そのまま使える形で提供するライブラリ。",
-          "q1_text": "ボタンやフォームを毎回CSSから作ると、見た目と挙動のブレが起きやすかった。",
+          "q1_text": "ボタンやフォームなど定番UI部品を、毎回個別実装する負担を減らす必要があった。",
           "q2_intro": "それまではCSSフレームワークで見た目だけ整え、動きの部分は自分で実装していた。",
           "q2_table": {
             "col_before": "CSSフレームワーク",
@@ -8153,7 +8067,6 @@ module.exports = {
               "cap": "Props経由で細かく調整できる"
             }
           ],
-          "memo": "React向けのMUIやshadcn/ui、Vue向けのVuetifyなどが代表例。",
           "sidebar_groups": [
             {
               "label": "関連する技術",
@@ -8184,7 +8097,6 @@ module.exports = {
           "id": "nodejs",
           "page": 143,
           "term": "Node.js",
-          "subtitle": "JavaScript を「ブラウザの外」で動かした技術",
           "category": "ランタイム",
           "icon": "ic-server",
           "oneline": "ブラウザの中でしか実行できなかった JavaScript を、サーバーやPC上で動かせるようにするランタイム。",
@@ -8225,7 +8137,6 @@ module.exports = {
               "cap": "npmエコシステムを利用可能"
             }
           ],
-          "memo": "この後 Bun・Deno という2つの後継が生まれることになる。",
           "sidebar_groups": [
             {
               "label": "仲間のランタイム",
@@ -8250,11 +8161,10 @@ module.exports = {
           "id": "bun",
           "page": 144,
           "term": "Bun",
-          "subtitle": "Node.js の「遅さ」をまとめて解決しようとしたランタイム",
           "category": "ランタイム",
           "icon": "ic-rocket",
           "oneline": "Node.js互換を保ちながら、実行・パッケージ管理・テストまで1つのバイナリで高速化したランタイム。",
-          "q1_text": "Node.jsは便利だが、起動の遅さやツールの分散がボトルネックになった。",
+          "q1_text": "Node.js周辺では、起動速度とツール分散をまとめて改善する需要が高まっていた。",
           "q2_intro": "Node.js では、実行は node、パッケージ管理は npm、テストは Jest のように道具を組み合わせていた。",
           "q2_table": {
             "col_before": "Node.js（組み合わせ型）",
@@ -8291,7 +8201,6 @@ module.exports = {
               "cap": "テストランナーも標準装備"
             }
           ],
-          "memo": "Node互換を保ちつつ、実行・パッケージ管理・テストを1バイナリに統合。",
           "sidebar_groups": [
             {
               "label": "比較する技術",
@@ -8316,7 +8225,6 @@ module.exports = {
           "id": "deno",
           "page": 145,
           "term": "Deno",
-          "subtitle": "Node.js を作った人が「作り直した」ランタイム",
           "category": "ランタイム",
           "icon": "ic-scale",
           "oneline": "デフォルトでは何もアクセスできず、TypeScriptをそのまま実行できる安全志向のJSランタイム。",
@@ -8357,7 +8265,6 @@ module.exports = {
               "cap": "Deno Deployで手軽にデプロイ"
             }
           ],
-          "memo": "反省して作り直した、という差分エピソードの持ち主。",
           "sidebar_groups": [
             {
               "label": "比較する技術",
@@ -8382,7 +8289,6 @@ module.exports = {
           "id": "react",
           "page": 146,
           "term": "React",
-          "subtitle": "画面を「部品」の組み合わせで作る発想を広めたライブラリ",
           "category": "フレームワーク",
           "icon": "ic-layers",
           "oneline": "UIを再利用可能なコンポーネント単位で組み立てるためのJavaScriptライブラリ。",
@@ -8423,7 +8329,6 @@ module.exports = {
               "cap": "Next.jsなど周辺エコシステムが豊富"
             }
           ],
-          "memo": "宣言的UIの発想。それまでは全部手動だった。",
           "sidebar_groups": [
             {
               "label": "比較する技術",
@@ -8459,7 +8364,6 @@ module.exports = {
           "id": "vue",
           "page": 147,
           "term": "Vue",
-          "subtitle": "HTMLに近い書き味で始められる、もう1つの人気フレームワーク",
           "category": "フレームワーク",
           "icon": "ic-layers",
           "oneline": "テンプレート構文でHTMLに近い書き方をしながら、コンポーネント単位で画面を作れるフレームワーク。",
@@ -8500,7 +8404,6 @@ module.exports = {
               "cap": "公式ドキュメントが読みやすい"
             }
           ],
-          "memo": "別解、という差分の関係。",
           "sidebar_groups": [
             {
               "label": "比較する技術",
@@ -8536,7 +8439,6 @@ module.exports = {
           "id": "nextjs",
           "page": 148,
           "term": "Next.js",
-          "subtitle": "Reactだけでは決めきれない「ルーティングどうする問題」を解決したフレームワーク",
           "category": "フレームワーク",
           "icon": "ic-network",
           "oneline": "Reactにルーティングやサーバーサイドレンダリングなどを標準搭載した、本番運用向けフレームワーク。",
@@ -8577,7 +8479,6 @@ module.exports = {
               "cap": "Vercelへワンコマンドでデプロイ"
             }
           ],
-          "memo": "肩代わりしてくれる、という差分。",
           "sidebar_groups": [
             {
               "label": "土台の技術",
@@ -8607,7 +8508,6 @@ module.exports = {
           "id": "nuxtjs",
           "page": 149,
           "term": "Nuxt.js",
-          "subtitle": "Vueにとっての Next.js 的存在",
           "category": "フレームワーク",
           "icon": "ic-network",
           "oneline": "Vueにルーティングやサーバーサイドレンダリングなどを標準搭載した、本番運用向けフレームワーク。",
@@ -8648,7 +8548,6 @@ module.exports = {
               "cap": "Vueのモジュールを組み込みやすい"
             }
           ],
-          "memo": "差分のペア、と覚えておくと整理しやすい。",
           "sidebar_groups": [
             {
               "label": "土台の技術",
@@ -8678,7 +8577,6 @@ module.exports = {
           "id": "vite",
           "page": 150,
           "term": "Vite",
-          "subtitle": "ビルドを「待つ」時代を終わらせた開発サーバー",
           "category": "ツール",
           "icon": "ic-rocket",
           "oneline": "ブラウザのESモジュール機能を使って、開発中の画面表示をほぼ一瞬で反映するビルドツール。",
@@ -8719,7 +8617,6 @@ module.exports = {
               "cap": "本番用ビルドは別途最適化"
             }
           ],
-          "memo": "React/Vueどちらの開発でも定番になっている。",
           "sidebar_groups": [
             {
               "label": "関連する技術",
@@ -8744,7 +8641,6 @@ module.exports = {
           "id": "eslint",
           "page": 151,
           "term": "ESLint",
-          "subtitle": "「動くけど危ないコード」を書いた瞬間に教えてくれる仕組み",
           "category": "ツール",
           "icon": "ic-scale",
           "oneline": "コードのルール違反やバグの芽を、実行する前に静的解析で指摘してくれるLinter。",
@@ -8785,7 +8681,6 @@ module.exports = {
               "cap": "チーム全体でルールを統一"
             }
           ],
-          "memo": "この後、速さを競う後継ツールが次々と生まれる。",
           "sidebar_groups": [
             {
               "label": "高速化を競う後継",
@@ -8810,7 +8705,6 @@ module.exports = {
           "id": "biome",
           "page": 152,
           "term": "Biome",
-          "subtitle": "ESLintより速く、Prettierの仕事も1本でこなすツール",
           "category": "ツール",
           "icon": "ic-rocket",
           "oneline": "Lint（コードチェック）とFormat（整形）をRust製の1つのツールでまとめて高速に行うツール。",
@@ -8851,7 +8745,6 @@ module.exports = {
               "cap": "ESLint設定からの移行支援あり"
             }
           ],
-          "memo": "「速さ」で殴る系ツールの1つ。",
           "sidebar_groups": [
             {
               "label": "比較する技術",
@@ -8876,7 +8769,6 @@ module.exports = {
           "id": "oxc",
           "page": 153,
           "term": "OXC",
-          "subtitle": "JSツールチェイン全部をRustで書き直す、という荒業",
           "category": "ツール",
           "icon": "ic-rocket",
           "oneline": "パーサー・Linter・整形・ビルドまで、JS周辺ツールをまとめてRustで高速に作り直すプロジェクト。",
@@ -8917,7 +8809,6 @@ module.exports = {
               "cap": "JSツールチェイン全体を刷新"
             }
           ],
-          "memo": "最新章。次はどこまで速くなるか。",
           "sidebar_groups": [
             {
               "label": "高速化競争のはじまり",
@@ -8942,7 +8833,6 @@ module.exports = {
           "id": "tailwindcss",
           "page": 154,
           "term": "Tailwind CSS",
-          "subtitle": "「クラス名を考える時間」を無くしたCSSの書き方",
           "category": "ツール",
           "icon": "ic-scribble",
           "oneline": "あらかじめ用意された小さなユーティリティクラスをHTMLに直接並べてスタイルを作るCSSフレームワーク。",
@@ -8983,7 +8873,6 @@ module.exports = {
               "cap": "未使用クラスはビルド時に自動除去"
             }
           ],
-          "memo": "思想の差分。賛否ある分だけ広く使われている。",
           "sidebar_groups": [
             {
               "label": "組み合わせる技術",
@@ -9008,7 +8897,6 @@ module.exports = {
           "id": "mui",
           "page": 155,
           "term": "MUI",
-          "subtitle": "ボタンやフォームを1から作らなくていい、部品まるごとの詰め合わせ",
           "category": "ツール",
           "icon": "ic-layers",
           "oneline": "Googleのマテリアルデザインに沿ったボタン・フォームなどのReact用UIコンポーネント集。",
@@ -9049,7 +8937,6 @@ module.exports = {
               "cap": "テーマ設定で配色を一括変更"
             }
           ],
-          "memo": "という差分の対比で覚えるとわかりやすい。",
           "sidebar_groups": [
             {
               "label": "比較する技術",
@@ -9074,7 +8961,6 @@ module.exports = {
           "id": "shadcn-ui",
           "page": 156,
           "term": "shadcn/ui",
-          "subtitle": "「ライブラリ」ではなく「コピペするコード」という新発想のUI集",
           "category": "ツール",
           "icon": "ic-scribble",
           "oneline": "MUIのような既製部品ライブラリではなく、必要な分だけコードをプロジェクトにコピーして使うUIコンポーネント集。",
@@ -9115,7 +9001,6 @@ module.exports = {
               "cap": "Tailwind CSSと組み合わせて使う"
             }
           ],
-          "memo": "発想転換、という差分。",
           "sidebar_groups": [
             {
               "label": "比較する技術",
@@ -9140,7 +9025,6 @@ module.exports = {
           "id": "electron",
           "page": 157,
           "term": "Electron",
-          "subtitle": "Webの技術だけでデスクトップアプリを作る発想",
           "category": "ツール",
           "icon": "ic-monitor",
           "oneline": "HTML・CSS・JavaScriptで書いた画面を、そのままWindows/Mac用のデスクトップアプリとして動かす仕組み。",
@@ -9181,7 +9065,6 @@ module.exports = {
               "cap": "ブラウザ機能ごとアプリに同梱"
             }
           ],
-          "memo": "動作は重めになりがち、というのが差分の裏側。",
           "sidebar_groups": [
             {
               "label": "比較する技術",
@@ -9200,7 +9083,6 @@ module.exports = {
           "id": "pwa",
           "page": 158,
           "term": "PWA",
-          "subtitle": "アプリストアを経由せず、Webサイトを「アプリっぽく」使わせる仕組み",
           "category": "Web技術",
           "icon": "ic-laptop",
           "oneline": "ホーム画面への追加やオフライン動作など、通常のWebサイトにネイティブアプリに近い体験を持たせる技術。",
@@ -9241,7 +9123,6 @@ module.exports = {
               "cap": "ストア審査なしで配信・更新"
             }
           ],
-          "memo": "という差分の落とし所。",
           "sidebar_groups": [
             {
               "label": "比較する技術",
@@ -9271,7 +9152,6 @@ module.exports = {
           "id": "webassembly",
           "page": 159,
           "term": "WebAssembly",
-          "subtitle": "ブラウザでJavaScript以外の言語を高速に動かす仕組み",
           "category": "Web技術",
           "icon": "ic-cube",
           "oneline": "C/C++/Rustなどで書いたコードをブラウザ上でネイティブに近い速度で実行できるバイナリ形式。",
@@ -9312,7 +9192,6 @@ module.exports = {
               "cap": "C/Rust資産をWebに持ち込める"
             }
           ],
-          "memo": "発想の差分。",
           "sidebar_groups": [
             {
               "label": "関連する技術",
@@ -9331,7 +9210,6 @@ module.exports = {
           "id": "a11y",
           "page": 160,
           "term": "a11y（アクセシビリティ）",
-          "subtitle": "「使える人」を無意識に絞り込んでいないか、を問い直す視点",
           "category": "Web品質",
           "icon": "ic-scale",
           "oneline": "視覚・聴覚・身体的な違いなどに関わらず、誰もがWebサイトを使えるようにする設計・実装の総称。",
@@ -9372,7 +9250,6 @@ module.exports = {
               "cap": "キーボードのみでも操作可能に"
             }
           ],
-          "memo": "「アクセシビリティ対応」は追加機能ではなく、",
           "sidebar_groups": [
             {
               "label": "関連する語",
@@ -9397,7 +9274,6 @@ module.exports = {
           "id": "i18n",
           "page": 161,
           "term": "i18n（国際化）",
-          "subtitle": "「日本語しか出ない」から卒業するための下ごしらえ",
           "category": "Web品質",
           "icon": "ic-network",
           "oneline": "アプリの文言や日付・通貨の表記を、言語や地域ごとに切り替えられるようにする仕組み・対応のこと。",
@@ -9438,7 +9314,6 @@ module.exports = {
               "cap": "後から言語追加がしやすい"
             }
           ],
-          "memo": "という差分の教訓。",
           "sidebar_groups": [
             {
               "label": "関連する語",
@@ -9457,7 +9332,6 @@ module.exports = {
           "id": "core-web-vitals",
           "page": 162,
           "term": "Core Web Vitals",
-          "subtitle": "「なんとなく重い」を数値で説明できるようにした指標",
           "category": "Web品質",
           "icon": "ic-clock",
           "oneline": "表示速度・操作反応・レイアウトのガタつきなど、Webページの体感品質を3つの指標で数値化したもの。",
@@ -9498,7 +9372,6 @@ module.exports = {
               "cap": "レイアウトのガタつきをCLSで測定"
             }
           ],
-          "memo": "終わらせるための指標。",
           "sidebar_groups": [
             {
               "label": "関連する語",
@@ -9523,7 +9396,6 @@ module.exports = {
           "id": "redux",
           "page": 163,
           "term": "Redux",
-          "subtitle": "「どのコンポーネントの状態が正しいんだっけ」を終わらせた仕組み",
           "category": "状態管理",
           "icon": "ic-layers",
           "oneline": "アプリ全体の状態（State）を1箇所にまとめて管理する、React向けの状態管理ライブラリ。",
@@ -9564,7 +9436,6 @@ module.exports = {
               "cap": "決まった手順でしか状態を変更できない"
             }
           ],
-          "memo": "という差分のトレードオフ。",
           "sidebar_groups": [
             {
               "label": "土台の技術",
@@ -9594,7 +9465,6 @@ module.exports = {
           "id": "zustand",
           "page": 164,
           "term": "Zustand",
-          "subtitle": "Reduxの「お作法の多さ」に疲れた人たちが選んだ軽量な状態管理",
           "category": "状態管理",
           "icon": "ic-layers",
           "oneline": "Action/Reducerのような決まった手順を省き、少ないコードでReactの状態を共有できる軽量な状態管理ライブラリ。",
@@ -9635,7 +9505,6 @@ module.exports = {
               "cap": "必要な機能だけ後から追加可能"
             }
           ],
-          "memo": "生まれた選択肢、という差分。",
           "sidebar_groups": [
             {
               "label": "比較する技術",
@@ -9660,7 +9529,6 @@ module.exports = {
           "id": "pinia",
           "page": 165,
           "term": "Pinia",
-          "subtitle": "Vue公式が選んだ、Vuexに代わる状態管理",
           "category": "状態管理",
           "icon": "ic-layers",
           "oneline": "Vue公式が推奨する、TypeScriptとの相性やシンプルさを重視した状態管理ライブラリ。",
@@ -9701,7 +9569,6 @@ module.exports = {
               "cap": "複数ストアに分割して管理しやすい"
             }
           ],
-          "memo": "「シンプル化」の流れは共通、という差分のまとめ。",
           "sidebar_groups": [
             {
               "label": "土台の技術",
@@ -9737,7 +9604,6 @@ module.exports = {
           "id": "ruby",
           "page": 171,
           "term": "Ruby",
-          "subtitle": "「人間が読みやすい」を設計思想の中心に置いた言語",
           "category": "プログラミング言語",
           "icon": "ic-scribble",
           "oneline": "書きやすさ・読みやすさを最優先に設計された、Ruby on Railsの生みの親でもあるプログラミング言語。",
@@ -9783,7 +9649,6 @@ module.exports = {
               "cap": "豊富なgemで機能を拡張できる"
             }
           ],
-          "memo": "同じ処理でも複数の書き方が許されているのは、この思想の表れ。",
           "sidebar_groups": [
             {
               "label": "関連する技術",
@@ -9813,7 +9678,6 @@ module.exports = {
           "id": "python",
           "page": 172,
           "term": "Python",
-          "subtitle": "シンプルな文法で、Web開発からAI・データ分析まで橋渡しする言語",
           "category": "プログラミング言語",
           "icon": "ic-file",
           "oneline": "インデントで構造を表す簡潔な文法を持ち、Web開発・データ分析・機械学習まで幅広く使われる言語。",
@@ -9859,7 +9723,6 @@ module.exports = {
               "cap": "ライブラリが豊富"
             }
           ],
-          "memo": "どのファイルを見てもコードの見た目が揃うのはこのため。",
           "sidebar_groups": [
             {
               "label": "関連する技術",
@@ -9901,7 +9764,6 @@ module.exports = {
           "id": "go",
           "page": 173,
           "term": "Go",
-          "subtitle": "Googleが「大規模開発のシンプルさ」のために作った言語",
           "category": "プログラミング言語",
           "icon": "ic-wheel",
           "oneline": "並行処理を言語レベルでサポートし、シンプルな文法と高速な実行を両立するGoogle製の言語。",
@@ -9947,7 +9809,6 @@ module.exports = {
               "cap": "単一バイナリで配布できる"
             }
           ],
-          "memo": "選択肢を減らすことで、誰が書いても読みやすいコードになる。",
           "sidebar_groups": [
             {
               "label": "関連する技術",
@@ -9977,7 +9838,6 @@ module.exports = {
           "id": "php",
           "page": 174,
           "term": "PHP",
-          "subtitle": "「Webページに動きをつける」ために生まれ、今もWebを支える言語",
           "category": "プログラミング言語",
           "icon": "ic-file",
           "oneline": "HTMLに埋め込んで使える手軽さから広まり、大規模なWebサービスの基盤にもなっているサーバーサイド言語。",
@@ -10023,7 +9883,6 @@ module.exports = {
               "cap": "CMS・ECの基盤として定番"
             }
           ],
-          "memo": "WordPressをはじめ、今も世界中のWebサイトを裏で支えている。",
           "sidebar_groups": [
             {
               "label": "関連する技術",
@@ -10053,7 +9912,6 @@ module.exports = {
           "id": "java",
           "page": 175,
           "term": "Java",
-          "subtitle": "「どこでも同じように動く」を掲げ、大規模開発の標準になった言語",
           "category": "プログラミング言語",
           "icon": "ic-cube",
           "oneline": "JVM上で動作し、書いたコードをOSを問わず動かせることを武器に、企業システムの定番であり続ける言語。",
@@ -10099,7 +9957,6 @@ module.exports = {
               "cap": "企業システムの定番として実績豊富"
             }
           ],
-          "memo": "冗長と言われつつも、この安定感が今も選ばれ続ける理由。",
           "sidebar_groups": [
             {
               "label": "関連する技術",
@@ -10129,7 +9986,6 @@ module.exports = {
           "id": "rust",
           "page": 176,
           "term": "Rust",
-          "subtitle": "「速さ」と「安全」を、実行時ではなくコンパイル時に両立させる言語",
           "category": "プログラミング言語",
           "icon": "ic-wheel",
           "oneline": "メモリ管理の安全性をコンパイラがチェックすることで、C/C++並みの速度と高い安全性を両立する言語。",
@@ -10175,7 +10031,6 @@ module.exports = {
               "cap": "C/C++並みの実行速度"
             }
           ],
-          "memo": "その分「動いてしまえばまず落ちない」コードになる。",
           "sidebar_groups": [
             {
               "label": "比較する言語",
@@ -10194,11 +10049,10 @@ module.exports = {
           "id": "rails",
           "page": 177,
           "term": "Rails",
-          "subtitle": "「設定より規約」で、Webアプリ開発の定番の型を作ったフレームワーク",
           "category": "Webフレームワーク",
           "icon": "ic-server",
           "oneline": "Ruby製のWebフレームワーク。「設定より規約（CoC）」の思想で、少ないコードでWebアプリを組み立てられる。",
-          "q1_text": "RubyでWebアプリを作るとき、ルーティングからDBまで毎回設計し直すのがつらかった。",
+          "q1_text": "RubyでWebアプリを作る際、ルーティングやDB接続を毎回個別に組み立てる負担が大きかった。",
           "q2_intro": "それまでのWebアプリ開発では、フレームワークごとに細かい設定ファイルを書き、命名やディレクトリ構成も一から決める必要があった。",
           "q2_table": {
             "col_before": "設定ベースのフレームワーク",
@@ -10240,7 +10094,6 @@ module.exports = {
               "cap": "gemで機能を簡単に追加できる"
             }
           ],
-          "memo": "Convention over Configuration。規約に乗れば設定が少なく済む。",
           "sidebar_groups": [
             {
               "label": "関連する技術",
@@ -10276,7 +10129,6 @@ module.exports = {
           "id": "express",
           "page": 178,
           "term": "Express",
-          "subtitle": "Node.jsに最小限の骨組みだけを足した、軽量Webフレームワーク",
           "category": "Webフレームワーク",
           "icon": "ic-server",
           "oneline": "Node.js上で動く、必要なものだけを自分で組み合わせるミニマルなWebフレームワーク。",
@@ -10322,7 +10174,6 @@ module.exports = {
               "cap": "構成を自由に設計できる"
             }
           ],
-          "memo": "薄いからこそ、必要なライブラリだけを自分で組み合わせられる。",
           "sidebar_groups": [
             {
               "label": "比較するフレームワーク",
@@ -10341,11 +10192,10 @@ module.exports = {
           "id": "hono",
           "page": 179,
           "term": "Hono",
-          "subtitle": "Cloudflare WorkersなどのEdge環境向けに生まれた、超軽量フレームワーク",
           "category": "Webフレームワーク",
           "icon": "ic-cloud",
           "oneline": "TypeScriptで書かれ、Node.js以外のEdgeランタイムでも高速に動く軽量Webフレームワーク。",
-          "q1_text": "Edge環境ではNode.js前提のExpressが動かず、軽量フレームワークが必要だった。",
+          "q1_text": "Edge環境ではNode.js前提のフレームワークがそのまま動かず、軽量な実装が求められた。",
           "q2_intro": "それまでExpressのようなフレームワークはNode.js環境を前提にしており、Edgeランタイムでは動作しないか、動いても重かった。",
           "q2_table": {
             "col_before": "Express（Node.js前提）",
@@ -10387,7 +10237,6 @@ module.exports = {
               "cap": "複数のランタイムで動かせる"
             }
           ],
-          "memo": "Cloudflare Workers等のEdge向き。Expressより薄く、ランタイム制約に強い。",
           "sidebar_groups": [
             {
               "label": "比較するフレームワーク",
@@ -10406,11 +10255,10 @@ module.exports = {
           "id": "django",
           "page": 180,
           "term": "Django",
-          "subtitle": "「電池付属」でWebアプリに必要な機能をひとまとめにしたフレームワーク",
           "category": "Webフレームワーク",
           "icon": "ic-layers",
           "oneline": "認証・管理画面・ORMなど、Webアプリに必要な機能を標準で備えたPython製のフルスタックフレームワーク。",
-          "q1_text": "PythonでWebアプリを作るたび、認証・管理画面・DB接続をゼロから書くのが非効率だった。",
+          "q1_text": "PythonでWebアプリを作る際、認証・管理画面・DB接続を毎回個別実装する負担が大きかった。",
           "q2_intro": "それまでのPython製Webフレームワークは、ルーティングなど最小限の機能しか持たず、認証や管理画面は別途ライブラリを探して組み合わせる必要があった。",
           "q2_table": {
             "col_before": "軽量フレームワーク（Flaskなど）",
@@ -10452,7 +10300,6 @@ module.exports = {
               "cap": "大規模なWebアプリを素早く構築できる"
             }
           ],
-          "memo": "batteries included。全部入りだが、その分フレームワークの流儀に寄せる。",
           "sidebar_groups": [
             {
               "label": "関連する技術",
@@ -10494,7 +10341,6 @@ module.exports = {
           "id": "fastapi",
           "page": 181,
           "term": "FastAPI",
-          "subtitle": "型ヒントを書くだけでAPI仕様書まで自動生成される、モダンなAPIフレームワーク",
           "category": "Webフレームワーク",
           "icon": "ic-rocket",
           "oneline": "Pythonの型ヒントを使って、高速なAPIサーバーとドキュメントを同時に生成できるフレームワーク。",
@@ -10540,7 +10386,6 @@ module.exports = {
               "cap": "型ヒントでバグを早期発見できる"
             }
           ],
-          "memo": "バリデーションとドキュメント生成の入力として使い倒しているのが特徴。",
           "sidebar_groups": [
             {
               "label": "関連する技術",
@@ -10576,7 +10421,6 @@ module.exports = {
           "id": "flask",
           "page": 182,
           "term": "Flask",
-          "subtitle": "必要な部品だけを自分で足していく、Python製の軽量フレームワーク",
           "category": "Webフレームワーク",
           "icon": "ic-file",
           "oneline": "最小限の機能だけを持ち、必要なライブラリを自分で組み合わせて育てていくPython製の軽量フレームワーク。",
@@ -10622,7 +10466,6 @@ module.exports = {
               "cap": "小規模〜中規模に向いている"
             }
           ],
-          "memo": "FlaskはDjangoの「全部入り」に対する、",
           "sidebar_groups": [
             {
               "label": "関連する技術",
@@ -10658,7 +10501,6 @@ module.exports = {
           "id": "gin",
           "page": 183,
           "term": "Gin",
-          "subtitle": "Goの速さを活かしきる、シンプルなWebフレームワーク",
           "category": "Webフレームワーク",
           "icon": "ic-rocket",
           "oneline": "Go言語の標準ライブラリだけでは冗長になりがちなルーティング処理を、シンプルな記法で扱えるようにしたWebフレームワーク。",
@@ -10704,7 +10546,6 @@ module.exports = {
               "cap": "ミドルウェアを手軽に追加できる"
             }
           ],
-          "memo": "書きやすさで補ったフレームワーク。",
           "sidebar_groups": [
             {
               "label": "関連する技術",
@@ -10723,7 +10564,6 @@ module.exports = {
           "id": "laravel",
           "page": 184,
           "term": "Laravel",
-          "subtitle": "「PHPは冗長」という評判を覆した、モダンなフルスタックフレームワーク",
           "category": "Webフレームワーク",
           "icon": "ic-server",
           "oneline": "認証・ルーティング・ORMなどを整った形で備え、PHPでのWebアプリ開発を一気にモダンにしたフレームワーク。",
@@ -10769,7 +10609,6 @@ module.exports = {
               "cap": "豊富なパッケージで拡張できる"
             }
           ],
-          "memo": "引き戻した立役者ともいわれるフレームワーク。",
           "sidebar_groups": [
             {
               "label": "関連する技術",
@@ -10800,11 +10639,10 @@ module.exports = {
           "page": 185,
           "term": "Spring Boot",
           "compact": true,
-          "subtitle": "Javaの「設定地獄」を解消し、すぐに動くアプリを作れるようにしたフレームワーク",
           "category": "Webフレームワーク",
           "icon": "ic-layers",
           "oneline": "煩雑だったSpringフレームワークの設定を自動化し、Javaで素早くアプリケーションを起動できるようにしたフレームワーク。",
-          "q1_text": "Springの設定と依存が重く、小さく始めたいJavaプロジェクトには敷居が高かった。",
+          "q1_text": "SpringベースのJava開発では、初期設定と依存構成の準備負担が大きかった。",
           "q2_intro": "それまでのSpring Frameworkでは、DBやサーバーの接続設定をXMLなどで細かく記述し、動かすまでに多くの準備が必要だった。",
           "q2_table": {
             "col_before": "従来のSpring Framework",
@@ -10846,7 +10684,6 @@ module.exports = {
               "cap": "エンタープライズ規模でも安定動作"
             }
           ],
-          "memo": "「設定より規約」。足りない部分だけ設定ファイルで上書きする思想。",
           "sidebar_groups": [
             {
               "label": "関連する技術",
@@ -10871,7 +10708,6 @@ module.exports = {
           "id": "ios",
           "page": 450,
           "term": "iOS",
-          "subtitle": "Appleのスマホ・タブレット専用OS",
           "category": "モバイル・プラットフォーム",
           "icon": "ic-laptop",
           "oneline": "iPhoneやiPad向けのオペレーティングシステム。App Store経由での配布が基本。",
@@ -10917,7 +10753,6 @@ module.exports = {
               "cap": "端末×OSの組み合わせが少ない"
             }
           ],
-          "memo": "iPadOSもセットで意識することが多い。シミュレータ・実機・審査が最初の壁。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -10948,7 +10783,6 @@ module.exports = {
           "id": "android",
           "page": 451,
           "term": "Android",
-          "subtitle": "世界シェア最大のスマホOS",
           "category": "モバイル・プラットフォーム",
           "icon": "ic-monitor",
           "oneline": "Googleが中心となって育てる、オープン寄りのスマートフォン向けOS。多様なメーカーの端末で動く。",
@@ -10994,7 +10828,6 @@ module.exports = {
               "cap": "端末差を前提にテスト設計できる"
             }
           ],
-          "memo": "端末・OSバージョンの差が大きい。エミュレータと実機の両方が必要になりがち。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -11025,7 +10858,6 @@ module.exports = {
           "id": "native-app",
           "page": 452,
           "term": "ネイティブアプリ",
-          "subtitle": "そのOS専用の「本番装備」で作るアプリ",
           "category": "モバイル・アプリ形態",
           "icon": "ic-cube",
           "oneline": "iOSやAndroidが用意した公式の言語・API・UI部品で作る、プラットフォーム直結のアプリ。",
@@ -11071,7 +10903,6 @@ module.exports = {
               "cap": "ストア配布・更新の流れに乗る"
             }
           ],
-          "memo": "だからこそ後からハイブリッドやクロスプラットフォームが流行る。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -11102,11 +10933,10 @@ module.exports = {
           "id": "hybrid-app",
           "page": 453,
           "term": "ハイブリッドアプリ",
-          "subtitle": "Webの中身を、アプリの皮で包む",
           "category": "モバイル・アプリ形態",
           "icon": "ic-layers",
           "oneline": "HTML/CSS/JSなどのWeb技術で画面を作り、ネイティブの殻（WebViewなど）で包んでストア配布するアプリ。",
-          "q1_text": "iOSとAndroidで二重開発は痛い。一方でストア掲載やプッシュ通知など、「アプリであること」のメリットは捨てたくなかった。",
+          "q1_text": "ネイティブ機能を使いたい一方で、iOSとAndroidを別実装する負担を減らす必要があった。",
           "q2_intro": "完全ネイティブで二台分作るか、モバイルWebだけで我慢するかの二択になりがちだった。",
           "q2_table": {
             "col_before": "ネイティブ二刀流 or モバイルWeb",
@@ -11148,7 +10978,6 @@ module.exports = {
               "cap": "ネイティブ機能はブリッジで足せる"
             }
           ],
-          "memo": "Cordova / Capacitor 系が代表格。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -11179,11 +11008,10 @@ module.exports = {
           "id": "react-native",
           "page": 454,
           "term": "React Native",
-          "subtitle": "Reactの書き方で、ネイティブUIを駆動する",
           "category": "クロスプラットフォーム",
           "icon": "ic-cube",
           "oneline": "Reactのコンポーネント発想で画面を書き、実際の描画はiOS/Androidのネイティブ部品に任せるフレームワーク。",
-          "q1_text": "Reactに慣れたチームが、WebViewではなくネイティブUIをJSで書きたかった。",
+          "q1_text": "Reactの開発体験を活かしつつ、ネイティブUIを共通コードで扱う需要があった。",
           "q2_intro": "選択肢は「SwiftとKotlinで二重開発」か「ハイブリッド（WebView）」に偏りがちだった。",
           "q2_table": {
             "col_before": "二重ネイティブ / WebViewハイブリッド",
@@ -11225,7 +11053,6 @@ module.exports = {
               "cap": "足りない部分はネイティブで補える"
             }
           ],
-          "memo": "「Learn once, write anywhere」が近い。橋渡しの話は別途深掘り。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -11256,7 +11083,6 @@ module.exports = {
           "id": "flutter",
           "page": 455,
           "term": "Flutter",
-          "subtitle": "UIも描画も、自分たちのエンジンで描く",
           "category": "クロスプラットフォーム",
           "icon": "ic-layers",
           "oneline": "Dart言語と独自の描画エンジンで、iOS/Android（ほか）に同じ見た目のUIを描くUIキット。",
@@ -11302,7 +11128,6 @@ module.exports = {
               "cap": "一つのコードベースでマルチ向けに展開しやすい"
             }
           ],
-          "memo": "Widget の入れ子が世界のすべて。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -11333,12 +11158,11 @@ module.exports = {
           "id": "dart",
           "page": 456,
           "term": "Dart",
-          "subtitle": "Flutterと一緒に覚える言語",
           "category": "モバイル・言語",
           "icon": "ic-file",
           "oneline": "Googleが開発したプログラミング言語。いまはFlutterアプリを書くための主役として知られる。",
           "q1_text": "大規模なクライアントアプリ向けに、習得しやすく、ツールチェーンも一体で使える言語が欲しかった。",
-          "q2_intro": "モバイルでは Swift / Kotlin、クロスでは JavaScript が候補の中心で、Dartは「知る人ぞ知る」側だった。",
+          "q2_intro": "モバイルでは Swift / Kotlin、クロスでは JavaScript が候補の中心だった。",
           "q2_table": {
             "col_before": "Flutter以前の印象",
             "col_after": "Flutterと組んだDart",
@@ -11379,7 +11203,6 @@ module.exports = {
               "cap": "Hot Reloadで試行錯誤が速い"
             }
           ],
-          "memo": "Flutter専用だが、型やasync/awaitは他言語にも通じる。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -11410,7 +11233,6 @@ module.exports = {
           "id": "swift",
           "page": 457,
           "term": "Swift",
-          "subtitle": "Apple純正、モダン寄りの主力言語",
           "category": "モバイル・言語",
           "icon": "ic-file",
           "oneline": "Appleが開発したプログラミング言語。iOS/macOSなどのアプリ開発でObjective-Cに代わって第一言語になった。",
@@ -11456,7 +11278,6 @@ module.exports = {
               "cap": "SwiftUIなど新しいUI枠組みに乗れる"
             }
           ],
-          "memo": "Ch8から外し、モバイル章に置いているのはそのため。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -11487,7 +11308,6 @@ module.exports = {
           "id": "kotlin",
           "page": 458,
           "term": "Kotlin",
-          "subtitle": "Android公式が「こっち推すね」と言った言語",
           "category": "モバイル・言語",
           "icon": "ic-file",
           "oneline": "JetBrainsが作った言語で、Androidアプリ開発の第一言語としてGoogleも推奨。Javaと仲が良い。",
@@ -11533,7 +11353,6 @@ module.exports = {
               "cap": "コルーチンで非同期を扱いやすい"
             }
           ],
-          "memo": "サーバーサイドやマルチプラットフォーム（KMP）にも広がっている。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -11570,7 +11389,6 @@ module.exports = {
           "id": "unit-test",
           "page": 500,
           "term": "Unit Test",
-          "subtitle": "いちばん小さい単位を、単体で殴る",
           "category": "テストの種類",
           "icon": "ic-cube",
           "oneline": "関数やクラスなど、プログラムの最小単位が期待どおり動くかを検証するテスト。",
@@ -11616,7 +11434,6 @@ module.exports = {
               "cap": "リグレッションを自動で防ぎやすくなる"
             }
           ],
-          "memo": "「ユニットの境界」はチームごとにブレる。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -11647,7 +11464,6 @@ module.exports = {
           "id": "integration-test",
           "page": 501,
           "term": "Integration Test",
-          "subtitle": "つなぎ目で、初めて起きる事故を拾う",
           "category": "テストの種類",
           "icon": "ic-layers",
           "oneline": "複数のモジュールや、DB・APIなどの外部をつないだ状態で、連携が正しいかを確かめるテスト。",
@@ -11693,7 +11509,6 @@ module.exports = {
               "cap": "E2Eより狭く原因を追いやすい"
             }
           ],
-          "memo": "「どこからが結合か」は宗教戦争になりやすい。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -11724,7 +11539,6 @@ module.exports = {
           "id": "e2e-test",
           "page": 502,
           "term": "E2E Test",
-          "subtitle": "ユーザーの操作を、ロボットが最後までやる",
           "category": "テストの種類",
           "icon": "ic-monitor",
           "oneline": "画面操作やAPI呼び出しなど、システムを端から端まで通して、利用シナリオが成立するかを確かめるテスト。",
@@ -11770,7 +11584,6 @@ module.exports = {
               "cap": "リリース判断の材料を機械的に増やせる"
             }
           ],
-          "memo": "全部をE2Eにすると遅くて脆い。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -11801,7 +11614,6 @@ module.exports = {
           "id": "mock",
           "page": 503,
           "term": "Mock",
-          "subtitle": "本物のふりをして、呼び出しを監視する代役",
           "category": "テストダブル",
           "icon": "ic-cube",
           "oneline": "テスト中に本物の依存（APIやDBなど）の代わりに置き、戻り値や「呼ばれたか」を制御・検証する偽物。",
@@ -11847,7 +11659,6 @@ module.exports = {
               "cap": "テストを速く安定させられる"
             }
           ],
-          "memo": "ざっくり「振る舞いを検証したいならMock寄り」と覚える入口でよい。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -11878,7 +11689,6 @@ module.exports = {
           "id": "stub",
           "page": 504,
           "term": "Stub",
-          "subtitle": "「この値を返すよ」だけ用意した薄い代役",
           "category": "テストダブル",
           "icon": "ic-file",
           "oneline": "テストのために、依存先の代わりとして決め打ちの戻り値や状態だけを返す簡易実装。",
@@ -11924,7 +11734,6 @@ module.exports = {
               "cap": "セットアップを短くできる"
             }
           ],
-          "memo": "現場では両方とも「モック」と呼ぶことも多いので、会話の文脈確認を。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -11955,7 +11764,6 @@ module.exports = {
           "id": "fixture",
           "page": 505,
           "term": "Fixture",
-          "subtitle": "テストの舞台装置と小道具一式",
           "category": "テストの基盤",
           "icon": "ic-package",
           "oneline": "テストを走らせるためにあらかじめ用意する、固定のデータや状態・環境のこと。",
@@ -12001,7 +11809,6 @@ module.exports = {
               "cap": "前提条件のばらつきを減らせる"
             }
           ],
-          "memo": "共通して言えるのは「テストの前提を外出しする」という発想。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -12031,7 +11838,6 @@ module.exports = {
           "id": "tdd",
           "page": 506,
           "term": "TDD",
-          "subtitle": "テストを先に書いて、実装を後から引っ張る",
           "category": "テストの進め方",
           "icon": "ic-rocket",
           "oneline": "Test-Driven Development。失敗するテストを先に書き、通る最小実装→リファクタ、を回す開発手法。",
@@ -12077,7 +11883,6 @@ module.exports = {
               "cap": "仕様の意図がテストとして残る"
             }
           ],
-          "memo": "「赤・緑・リファクタ」を一度体験すると、用語の感触が掴める。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -12107,7 +11912,6 @@ module.exports = {
           "id": "bdd",
           "page": 507,
           "term": "BDD",
-          "subtitle": "「Given / When / Then」で仕様を会話する",
           "category": "テストの進め方",
           "icon": "ic-file",
           "oneline": "Behavior-Driven Development。振る舞いを自然言語に近い形で書き、開発・QA・企画の認識を揃えるアプローチ。",
@@ -12153,7 +11957,6 @@ module.exports = {
               "cap": "受け入れ条件を自動化しやすくなる"
             }
           ],
-          "memo": "形式に固執せず、「振る舞いの言葉で書けているか」が本質。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -12184,7 +11987,6 @@ module.exports = {
           "id": "coverage",
           "page": 508,
           "term": "カバレッジ",
-          "subtitle": "テストがコードの何割を撫でたか",
           "category": "テストの指標",
           "icon": "ic-scale",
           "oneline": "テスト実行によって実行されたコードの割合。行・分岐などの単位で測ることが多い。",
@@ -12230,7 +12032,6 @@ module.exports = {
               "cap": "重要な経路の穴を見つけやすくなる"
             }
           ],
-          "memo": "意味のないテストで数値だけ盛る行為は、現場の名物悪習。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -12261,7 +12062,6 @@ module.exports = {
           "id": "debug",
           "page": 509,
           "term": "デバッグ",
-          "subtitle": "バグを「見つける・理解する・潰す」作業全体",
           "category": "不具合対応",
           "icon": "ic-pen",
           "oneline": "プログラムの不具合原因を特定し、修正して確認するまでの一連の活動。",
@@ -12307,7 +12107,6 @@ module.exports = {
               "cap": "再発防止のテストやログ改善につなげられる"
             }
           ],
-          "memo": "再現できないバグは、まだバグではなく都市伝説。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -12337,7 +12136,6 @@ module.exports = {
           "id": "snapshot-test",
           "page": 510,
           "term": "スナップショットテスト",
-          "subtitle": "「前と同じ見た目／出力か」を写真で比べる",
           "category": "テストの種類",
           "icon": "ic-image",
           "oneline": "コンポーネントの出力やUIの結果を保存し、次回以降の実行結果と差分比較するテスト手法。",
@@ -12383,7 +12181,6 @@ module.exports = {
               "cap": "差分レビューで変更意図を確認できる"
             }
           ],
-          "memo": "差分を読んでからapproveする習慣が本体。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -12414,7 +12211,6 @@ module.exports = {
           "id": "regression-test",
           "page": 511,
           "term": "回帰テスト",
-          "subtitle": "直したつもりが、昔のバグを呼び戻していないか",
           "category": "テストの種類",
           "icon": "ic-clock",
           "oneline": "変更後に、以前できていたことが壊れていないかを確認するテスト（またはその活動）。",
@@ -12460,7 +12256,6 @@ module.exports = {
               "cap": "リファクタの勇気を増やせる"
             }
           ],
-          "memo": "回帰テストは特定のフレームワーク名ではない。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -12491,7 +12286,6 @@ module.exports = {
           "id": "smoke-test",
           "page": 512,
           "term": "スモークテスト",
-          "subtitle": "電源入れて、煙が出ないかだけ見る",
           "category": "テストの種類",
           "icon": "ic-rocket",
           "oneline": "ビルドやデプロイ直後に、起動・主要導線など最小限が動くかを短時間で確認するテスト。",
@@ -12537,7 +12331,6 @@ module.exports = {
               "cap": "主要導線の生存を確認できる"
             }
           ],
-          "memo": "深い保証は別テストに任せ、門番に徹するのが上品。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -12567,7 +12360,6 @@ module.exports = {
           "id": "boundary-value",
           "page": 513,
           "term": "境界値分析",
-          "subtitle": "バグは端っこに宿る、という経験則",
           "category": "テスト設計技法",
           "icon": "ic-scale",
           "oneline": "仕様の境界（0と1、最大値の前後など）を重点的に試すテスト設計の技法。",
@@ -12613,7 +12405,6 @@ module.exports = {
               "cap": "少ないケースで危険地帯をカバーできる"
             }
           ],
-          "memo": "同値分割とセットが定石。例: 0 / 1 / 100 / 101。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -12644,7 +12435,6 @@ module.exports = {
           "id": "equivalence-partitioning",
           "page": 514,
           "term": "同値分割",
-          "subtitle": "同じ扱いの値は、代表一人で十分",
           "category": "テスト設計技法",
           "icon": "ic-layers",
           "oneline": "入力を「同じ結果になるグループ」に分け、各グループから代表値だけを試すテスト設計技法。",
@@ -12690,7 +12480,6 @@ module.exports = {
               "cap": "カバレッジの議論を仕様ベースにできる"
             }
           ],
-          "memo": "「有効同値」と「無効同値」を分けるのがコツ。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -12721,7 +12510,6 @@ module.exports = {
           "id": "white-box-test",
           "page": 515,
           "term": "ホワイトボックステスト",
-          "subtitle": "中身の配線を見てから試す",
           "category": "テストの立場",
           "icon": "ic-layers",
           "oneline": "プログラムの内部構造（分岐や経路）を理解したうえで、その経路を通すように設計するテスト。",
@@ -12767,7 +12555,6 @@ module.exports = {
               "cap": "リファクタ前後の経路維持を支えられる"
             }
           ],
-          "memo": "「白箱」＝中が見える、の意味。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -12798,7 +12585,6 @@ module.exports = {
           "id": "black-box-test",
           "page": 516,
           "term": "ブラックボックステスト",
-          "subtitle": "中身は知らぬ、入出力だけ見る",
           "category": "テストの立場",
           "icon": "ic-monitor",
           "oneline": "内部実装を知らなくても（見なくても）、仕様上の入力に対する出力や振る舞いを確認するテスト。",
@@ -12844,7 +12630,6 @@ module.exports = {
               "cap": "開発以外の視点を取り込みやすい"
             }
           ],
-          "memo": "白も黒も、片方だけだと盲点ができる。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -12875,7 +12660,6 @@ module.exports = {
           "id": "test-design",
           "page": 517,
           "term": "テスト設計",
-          "subtitle": "何を試すかを、書く前に決める",
           "category": "テストの進め方",
           "icon": "ic-file",
           "oneline": "観点・条件・期待結果を整理し、どのテストケースをどの粒度で持つかを決める活動。",
@@ -12921,7 +12705,6 @@ module.exports = {
               "cap": "テスト工数を見積もりやすくなる"
             }
           ],
-          "memo": "テストコードを書くのは実装、テスト設計はその前工程。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -12952,7 +12735,6 @@ module.exports = {
           "id": "jest",
           "page": 518,
           "term": "Jest",
-          "subtitle": "JavaScriptテストの「とりあえずこれ」だった王者",
           "category": "テストツール",
           "icon": "ic-package",
           "oneline": "Meta（旧Facebook）発のJavaScriptテストフレームワーク。ランナー・アサーション・モックが一式そろっている。",
@@ -12998,7 +12780,6 @@ module.exports = {
               "cap": "モジュールモックが標準で使える"
             }
           ],
-          "memo": "「Jestの書き方」は他ランナーでも通じる共通語彙になりやすい。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -13029,7 +12810,6 @@ module.exports = {
           "id": "vitest",
           "page": 519,
           "term": "Vitest",
-          "subtitle": "Viteと同じ土俵で、テストも速く",
           "category": "テストツール",
           "icon": "ic-package",
           "oneline": "Viteと同じパイプラインを使う、Jest互換寄りの高速テストランナー。",
@@ -13075,7 +12855,6 @@ module.exports = {
               "cap": "Jest資産からの移行が比較的しやすい"
             }
           ],
-          "memo": "新規Vite案件の初期選択としては、かなり勝ちやすい。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -13106,7 +12885,6 @@ module.exports = {
           "id": "playwright",
           "page": 520,
           "term": "Playwright",
-          "subtitle": "複数ブラウザを、一つのAPIで操るE2E",
           "category": "テストツール",
           "icon": "ic-monitor",
           "oneline": "Microsoft製のブラウザ自動操作ライブラリ。Chromium / Firefox / WebKit を統一APIで扱える。",
@@ -13152,7 +12930,6 @@ module.exports = {
               "cap": "自動待機でフレークを減らせる"
             }
           ],
-          "memo": "Chromium/Firefox/WebKitを1つのAPIで扱える。Puppeteerよりマルチブラウザ向き。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -13183,7 +12960,6 @@ module.exports = {
           "id": "puppeteer",
           "page": 521,
           "term": "Puppeteer",
-          "subtitle": "Headless Chromeを、脚本で動かす",
           "category": "テストツール",
           "icon": "ic-package",
           "oneline": "Google製のライブラリで、DevToolsプロトコル経由にChrome/Chromiumを自動操作する。",
@@ -13229,7 +13005,6 @@ module.exports = {
               "cap": "クローラや煙テストの土台にできる"
             }
           ],
-          "memo": "「ブラウザをコードから触る」の入口教材としても強い。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -13265,7 +13040,6 @@ module.exports = {
           "id": "package",
           "page": 550,
           "term": "パッケージ",
-          "subtitle": "「便利な部品」を配るための梱包単位",
           "category": "パッケージ管理",
           "icon": "ic-package",
           "oneline": "ライブラリやツールを、名前・バージョン・依存関係つきで配布・インストールできる単位にまとめたもの。",
@@ -13311,7 +13085,6 @@ module.exports = {
               "cap": "依存関係を明示して管理できる"
             }
           ],
-          "memo": "会話では「どの世界のパッケージか」を先に確認すると事故が減る。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -13342,7 +13115,6 @@ module.exports = {
           "id": "dependency",
           "page": 551,
           "term": "依存関係",
-          "subtitle": "「これ動かすには、あれもいる」の一覧",
           "category": "パッケージ管理",
           "icon": "ic-network",
           "oneline": "あるパッケージやプロジェクトが動作するために必要とする、他のパッケージとの関係。",
@@ -13388,7 +13160,6 @@ module.exports = {
               "cap": "バージョン衝突に向き合える"
             }
           ],
-          "memo": "セキュリティアラートの多くは、自分が直接知らない依存から来る。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -13419,7 +13190,6 @@ module.exports = {
           "id": "semver",
           "page": 552,
           "term": "セマンティックバージョニング",
-          "subtitle": "MAJOR.MINOR.PATCH に意味を込める",
           "category": "バージョン管理",
           "icon": "ic-scale",
           "oneline": "バージョン番号を major.minor.patch の形で付け、互換性の破り方にルールを持たせる約束（SemVer）。",
@@ -13465,7 +13235,6 @@ module.exports = {
               "cap": "ライブラリ作者と利用者の契約になる"
             }
           ],
-          "memo": "逆に major を上げない破壊変更は、信頼を削るショートカット。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -13496,7 +13265,6 @@ module.exports = {
           "id": "lockfile",
           "page": 553,
           "term": "ロックファイル",
-          "subtitle": "「昨日と同じ入り方」を封印するファイル",
           "category": "パッケージ管理",
           "icon": "ic-file",
           "oneline": "依存解決の結果（実際に入ったパッケージと版）を記録し、インストールを再現可能にするファイル。",
@@ -13542,7 +13310,6 @@ module.exports = {
               "cap": "更新内容を差分としてレビューできる"
             }
           ],
-          "memo": "package-lock / yarn.lock / pnpm-lock など。消す前に差分を読む。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -13573,7 +13340,6 @@ module.exports = {
           "id": "npm",
           "page": 554,
           "term": "npm",
-          "subtitle": "Nodeの荷物を運ぶ、公式の配達便",
           "category": "言語別パッケージマネージャ",
           "icon": "ic-package",
           "oneline": "Node.js付属のパッケージマネージャ。npmレジストリからパッケージを入れ、scriptsも実行する。",
@@ -13619,7 +13385,6 @@ module.exports = {
               "cap": "自作パッケージを公開できる"
             }
           ],
-          "memo": "npmはツール名でありレジストリ名でもある。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -13644,13 +13409,20 @@ module.exports = {
                 }
               ]
             }
-          ]
+          ],
+          "command_example": {
+            "heading": "使用例",
+            "description": "依存追加と script 実行の基本例。",
+            "lines": [
+              "npm install axios",
+              "npm run dev"
+            ]
+          }
         },
         {
           "id": "yarn",
           "page": 555,
           "term": "yarn",
-          "subtitle": "npmに対抗して生まれた、もう一つのクライアント",
           "category": "言語別パッケージマネージャ",
           "icon": "ic-package",
           "oneline": "Facebook発のJavaScriptパッケージマネージャ。高速化やロックファイル体験を武器に普及した。",
@@ -13696,7 +13468,6 @@ module.exports = {
               "cap": "workspacesでモノレポ向き"
             }
           ],
-          "memo": "チームのREADMEに「どのYarnか」が書いてあると救われる。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -13721,13 +13492,20 @@ module.exports = {
                 }
               ]
             }
-          ]
+          ],
+          "command_example": {
+            "heading": "使用例",
+            "description": "依存追加と script 実行の基本例。",
+            "lines": [
+              "yarn add axios",
+              "yarn dev"
+            ]
+          }
         },
         {
           "id": "pnpm",
           "page": 556,
           "term": "pnpm",
-          "subtitle": "同じパッケージを、ディスク上で賢く共有",
           "category": "言語別パッケージマネージャ",
           "icon": "ic-package",
           "oneline": "コンテンツアドレス可能なストアとシンボリックリンクで、依存を効率的に入れるJavaScriptパッケージマネージャ。",
@@ -13773,7 +13551,6 @@ module.exports = {
               "cap": "モノレポ運用と相性が良い"
             }
           ],
-          "memo": "直すとプロジェクトは一段きちんとする。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -13798,13 +13575,20 @@ module.exports = {
                 }
               ]
             }
-          ]
+          ],
+          "command_example": {
+            "heading": "使用例",
+            "description": "依存追加と script 実行の基本例。",
+            "lines": [
+              "pnpm add axios",
+              "pnpm dev"
+            ]
+          }
         },
         {
           "id": "pip",
           "page": 557,
           "term": "pip",
-          "subtitle": "Pythonの「とりあえず入れる」定番コマンド",
           "category": "言語別パッケージマネージャ",
           "icon": "ic-package",
           "oneline": "Pythonの標準的なパッケージインストーラ。PyPIからパッケージを取得して環境に入れる。",
@@ -13850,7 +13634,6 @@ module.exports = {
               "cap": "venvと組み合わせて環境を分けられる"
             }
           ],
-          "memo": "pipだけだと「環境の分離」はしてくれない。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -13875,13 +13658,19 @@ module.exports = {
                 }
               ]
             }
-          ]
+          ],
+          "command_example": {
+            "heading": "使用例",
+            "description": "Pythonパッケージを入れる基本例。",
+            "lines": [
+              "pip install requests"
+            ]
+          }
         },
         {
           "id": "gem",
           "page": 558,
           "term": "gem",
-          "subtitle": "Rubyの宝石箱から部品を取り出す",
           "category": "言語別パッケージマネージャ",
           "icon": "ic-package",
           "oneline": "Rubyのパッケージ（gem）を管理する仕組み。RubyGemsと、Bundlerによるアプリ単位の固定がセットで語られる。",
@@ -13927,7 +13716,6 @@ module.exports = {
               "cap": "Railsなど生態系の前提になる"
             }
           ],
-          "memo": "アプリ開発では Bundler 前提で考えると現場に近い。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -13952,13 +13740,19 @@ module.exports = {
                 }
               ]
             }
-          ]
+          ],
+          "command_example": {
+            "heading": "使用例",
+            "description": "Rubyのgemを入れる基本例。",
+            "lines": [
+              "gem install bundler"
+            ]
+          }
         },
         {
           "id": "cargo",
           "page": 559,
           "term": "cargo",
-          "subtitle": "Rustの公式・ビルドもテストも届ける万能箱",
           "category": "言語別パッケージマネージャ",
           "icon": "ic-package",
           "oneline": "Rustの公式パッケージマネージャ兼ビルドツール。crates.ioからの依存取得とビルドを一体で担う。",
@@ -14004,7 +13798,6 @@ module.exports = {
               "cap": "Cargo.lockで再現ビルドしやすい"
             }
           ],
-          "memo": "Rustを入れるとだいたいcargoも一緒に来る。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -14029,17 +13822,24 @@ module.exports = {
                 }
               ]
             }
-          ]
+          ],
+          "command_example": {
+            "heading": "使用例",
+            "description": "依存追加とビルドの基本例。",
+            "lines": [
+              "cargo add serde",
+              "cargo build"
+            ]
+          }
         },
         {
           "id": "go-mod",
           "page": 560,
           "term": "go mod",
-          "subtitle": "Goモジュールで依存をプロジェクトに根付かせる",
           "category": "言語別パッケージマネージャ",
           "icon": "ic-package",
           "oneline": "Goのモジュールモードで依存を管理する仕組み。go.mod / go.sum が中心になる。",
-          "q1_text": "GOPATH時代は配置場所とバージョン管理が独特で、再現や複数版共存がつらかった。",
+          "q1_text": "GOPATH時代は配置場所とバージョン管理が独特で、再現や複数版共存が難しかった。",
           "q2_intro": "すべてのGoコードをGOPATH配下に置き、版は「今取れた最新」に近い感覚になりがちだった。",
           "q2_table": {
             "col_before": "GOPATH時代",
@@ -14081,7 +13881,6 @@ module.exports = {
               "cap": "GOPATHから解放された開発ができる"
             }
           ],
-          "memo": "「go modules」全体を指して「go mod」と言うことも多い。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -14106,13 +13905,20 @@ module.exports = {
                 }
               ]
             }
-          ]
+          ],
+          "command_example": {
+            "heading": "使用例",
+            "description": "依存追加と整理解の基本例。",
+            "lines": [
+              "go get github.com/gin-gonic/gin",
+              "go mod tidy"
+            ]
+          }
         },
         {
           "id": "homebrew",
           "page": 561,
           "term": "Homebrew",
-          "subtitle": "macOSに、足りないコマンドを淹れる",
           "category": "OSパッケージマネージャ",
           "icon": "ic-package",
           "oneline": "macOS（とLinux）で人気のパッケージマネージャ。brew install で開発ツールを入れられる。",
@@ -14158,7 +13964,6 @@ module.exports = {
               "cap": "チームのMac環境構築を揃えやすい"
             }
           ],
-          "memo": "「まずbrew入れて」はMac開発者の儀式。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -14183,13 +13988,19 @@ module.exports = {
                 }
               ]
             }
-          ]
+          ],
+          "command_example": {
+            "heading": "使用例",
+            "description": "macOSでツールを入れる基本例。",
+            "lines": [
+              "brew install git"
+            ]
+          }
         },
         {
           "id": "apt",
           "page": 562,
           "term": "apt",
-          "subtitle": "Debian系Linuxの公式なお買い物カゴ",
           "category": "OSパッケージマネージャ",
           "icon": "ic-server",
           "oneline": "Debian/Ubuntuなどで使うパッケージ管理コマンド。OSのソフトウェアを安全に入れたり更新したりする。",
@@ -14235,7 +14046,6 @@ module.exports = {
               "cap": "依存解決を自動でやってくれる"
             }
           ],
-          "memo": "apt はフロントエンド、実体には dpkg などが控える。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -14260,13 +14070,20 @@ module.exports = {
                 }
               ]
             }
-          ]
+          ],
+          "command_example": {
+            "heading": "使用例",
+            "description": "Ubuntu系でパッケージ一覧更新と導入を行う例。",
+            "lines": [
+              "sudo apt update",
+              "sudo apt install git"
+            ]
+          }
         },
         {
           "id": "mise",
           "page": 563,
           "term": "mise",
-          "subtitle": "言語の版管理を、一つの道具にまとめる",
           "category": "ランタイムバージョン管理",
           "icon": "ic-layers",
           "oneline": "asdf互換の開発環境マネージャ。NodeやPythonなど複数言語のバージョンをまとめて切り替える。",
@@ -14312,7 +14129,6 @@ module.exports = {
               "cap": "シェル起動を軽く保ちやすい"
             }
           ],
-          "memo": "「新しいnvm」ではなく「版管理の統合層」と捉えるとよい。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -14337,13 +14153,20 @@ module.exports = {
                 }
               ]
             }
-          ]
+          ],
+          "command_example": {
+            "heading": "使用例",
+            "description": "Node.jsの版を入れて固定する例。",
+            "lines": [
+              "mise use -g node@22",
+              "mise use node@22"
+            ]
+          }
         },
         {
           "id": "nvm",
           "page": 564,
           "term": "nvm",
-          "subtitle": "Nodeの版を、ディレクトリ気分で着替る",
           "category": "ランタイムバージョン管理",
           "icon": "ic-layers",
           "oneline": "Node Version Manager。シェル上で複数のNode.jsバージョンをインストールし、切り替えて使う。",
@@ -14389,7 +14212,6 @@ module.exports = {
               "cap": ".nvmrcで版を共有できる"
             }
           ],
-          "memo": "概念学習の入口としてnvmはまだ強い。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -14414,13 +14236,20 @@ module.exports = {
                 }
               ]
             }
-          ]
+          ],
+          "command_example": {
+            "heading": "使用例",
+            "description": "Node.jsの版を入れて切り替える例。",
+            "lines": [
+              "nvm install 22",
+              "nvm use 22"
+            ]
+          }
         },
         {
           "id": "rbenv",
           "page": 565,
           "term": "rbenv",
-          "subtitle": "Rubyの版を、プロジェクトの床に置く",
           "category": "ランタイムバージョン管理",
           "icon": "ic-layers",
           "oneline": "複数のRubyバージョンをユーザー環境に入れ、ディレクトリごとに切り替えるツール。",
@@ -14466,7 +14295,6 @@ module.exports = {
               "cap": "gem環境の汚染を抑えやすい"
             }
           ],
-          "memo": "ruby-build とセットで入れるのが定番。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -14491,13 +14319,20 @@ module.exports = {
                 }
               ]
             }
-          ]
+          ],
+          "command_example": {
+            "heading": "使用例",
+            "description": "Rubyの版を入れて固定する例。",
+            "lines": [
+              "rbenv install 3.3.0",
+              "rbenv local 3.3.0"
+            ]
+          }
         },
         {
           "id": "pyenv",
           "page": 566,
           "term": "pyenv",
-          "subtitle": "Pythonの版を、要求どおりに切り出す",
           "category": "ランタイムバージョン管理",
           "icon": "ic-layers",
           "oneline": "複数のPythonバージョンをインストールし、グローバルやプロジェクト単位で切り替えるツール。",
@@ -14543,7 +14378,6 @@ module.exports = {
               "cap": "版ファイルでチームの前提を共有できる"
             }
           ],
-          "memo": "miseに寄せる流れもあるが、概念は同じ。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -14568,7 +14402,15 @@ module.exports = {
                 }
               ]
             }
-          ]
+          ],
+          "command_example": {
+            "heading": "使用例",
+            "description": "Pythonの版を入れて固定する例。",
+            "lines": [
+              "pyenv install 3.12.4",
+              "pyenv local 3.12.4"
+            ]
+          }
         }
       ]
     },
@@ -14580,7 +14422,6 @@ module.exports = {
           "id": "terminal",
           "page": 600,
           "term": "Terminal",
-          "subtitle": "文字でコンピュータと話す窓口",
           "category": "ターミナル基礎",
           "icon": "ic-monitor",
           "oneline": "キーボード入力と文字出力でOSやプログラムとやり取りするための端末（エミュレータ含む）のこと。",
@@ -14626,7 +14467,6 @@ module.exports = {
               "cap": "リモートサーバー作業の入口になる"
             }
           ],
-          "memo": "黒い画面そのものが怖い対象ではない。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -14657,7 +14497,6 @@ module.exports = {
           "id": "shell",
           "page": 601,
           "term": "Shell",
-          "subtitle": "コマンドを受け取り、OSに橋渡しする殻",
           "category": "ターミナル基礎",
           "icon": "ic-file",
           "oneline": "ユーザーが打ったコマンド行を解釈し、プログラム起動やパイプなどの制御を行うインターフェースプログラム。",
@@ -14703,7 +14542,6 @@ module.exports = {
               "cap": "シェルスクリプトで手順をファイル化できる"
             }
           ],
-          "memo": "「シェルを変える」と「ターミナルを変える」は別の話。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -14734,7 +14572,6 @@ module.exports = {
           "id": "bash",
           "page": 602,
           "term": "Bash",
-          "subtitle": "Linuxサーバーでいちばん遭遇する方言",
           "category": "シェル",
           "icon": "ic-file",
           "oneline": "Bourne Again SHell。Linuxやスクリプト文化で標準に近い位置にいるシェル。",
@@ -14780,7 +14617,6 @@ module.exports = {
               "cap": "短い自動化をすぐ回せる"
             }
           ],
-          "memo": "#!/bin/sh との違いで刺さるバグは、あるあるの関門。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -14811,12 +14647,11 @@ module.exports = {
           "id": "zsh",
           "page": 603,
           "term": "Zsh",
-          "subtitle": "補完が賢く、見た目も整えやすいシェル",
           "category": "シェル",
           "icon": "ic-file",
           "oneline": "高機能なUNIXシェル。強力な補完やテーマ文化で、対話利用のデファクト寄りになった。",
           "q1_text": "毎日打つシェルなら、補完・履歴・見た目の快適さが生産性に直結する。",
-          "q2_intro": "サーバーではBash、手元もBashのまま、補完の弱さを我慢していた。",
+          "q2_intro": "対話用途でも Bash を使うことが多く、高度な補完や設定共有は弱かった。",
           "q2_table": {
             "col_before": "Bash中心の対話",
             "col_after": "Zsh",
@@ -14857,7 +14692,6 @@ module.exports = {
               "cap": "プロンプトやテーマを整えられる"
             }
           ],
-          "memo": "スクリプトの共有はBash寄りに書く、は無難な分割。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -14888,7 +14722,6 @@ module.exports = {
           "id": "path",
           "page": 604,
           "term": "PATH",
-          "subtitle": "「どの部屋からコマンドを探す？」の名簿",
           "category": "環境",
           "icon": "ic-network",
           "oneline": "シェルがコマンド名だけで実行ファイルを探すとき、順番に見て回るディレクトリのリスト（環境変数）。",
@@ -14934,7 +14767,6 @@ module.exports = {
               "cap": "ツールのバージョン切替と相性が良い"
             }
           ],
-          "memo": "PATHを通す＝名簿に部屋を追加する、イメージ。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -14965,7 +14797,6 @@ module.exports = {
           "id": "ssh",
           "page": 605,
           "term": "SSH",
-          "subtitle": "遠くのサーバーに、暗号化してログインする",
           "category": "リモートアクセス",
           "icon": "ic-network",
           "oneline": "Secure Shell。ネットワーク経由で遠隔マシンに安全にログインしたり、コマンドを実行したりするプロトコル／道具。",
@@ -15011,7 +14842,6 @@ module.exports = {
               "cap": "scp/sftpやトンネルにも使える"
             }
           ],
-          "memo": "「SSHする」は動詞化している。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -15036,13 +14866,19 @@ module.exports = {
                 }
               ]
             }
-          ]
+          ],
+          "command_example": {
+            "heading": "使用例",
+            "description": "遠隔サーバーへ接続する基本例。",
+            "lines": [
+              "ssh user@example.com"
+            ]
+          }
         },
         {
           "id": "environment-variable",
           "page": 606,
           "term": "Environment Variable",
-          "subtitle": "プロセスに渡す「設定の名札」",
           "category": "環境",
           "icon": "ic-file",
           "oneline": "OSやシェルがプロセスに渡す、名前＝値の設定情報。コードを変えずに振る舞いを切り替えるのに使う。",
@@ -15088,7 +14924,6 @@ module.exports = {
               "cap": "秘密情報の取り回し口にできる"
             }
           ],
-          "memo": "export した瞬間から子プロセスの世界が変わる。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -15119,7 +14954,6 @@ module.exports = {
           "id": "process",
           "page": 607,
           "term": "Process",
-          "subtitle": "いま動いているプログラムの「個体」",
           "category": "OSの実行単位",
           "icon": "ic-cube",
           "oneline": "実行中のプログラムのインスタンス。メモリ空間やPIDなどの資源を持ち、OSに管理される。",
@@ -15165,7 +14999,6 @@ module.exports = {
               "cap": "サーバー上の多重実行を理解できる"
             }
           ],
-          "memo": "「プロセスが死ぬ／殺す」は語彙章への伏線。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -15196,7 +15029,6 @@ module.exports = {
           "id": "thread",
           "page": 608,
           "term": "Thread",
-          "subtitle": "一つのプロセスの中の、並行する手",
           "category": "OSの実行単位",
           "icon": "ic-layers",
           "oneline": "プロセス内で並行に走れる実行の流れ。メモリ空間を共有しつつ、スタックなどを別々に持つ。",
@@ -15242,7 +15074,6 @@ module.exports = {
               "cap": "共有データの競合に向き合える"
             }
           ],
-          "memo": "言語によっては緑スレッドやasyncが別解になる。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -15273,7 +15104,6 @@ module.exports = {
           "id": "cron",
           "page": 609,
           "term": "Cron",
-          "subtitle": "「毎朝3時にやって」をOSに頼む",
           "category": "ジョブスケジューラ",
           "icon": "ic-clock",
           "oneline": "指定した時刻・周期でコマンドやスクリプトを自動実行する、UNIX系の定番ジョブスケジューラ。",
@@ -15319,7 +15149,6 @@ module.exports = {
               "cap": "サーバーメンテの定番手段になる"
             }
           ],
-          "memo": "タイムゾーンと夏時間で一度は泣く。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -15350,7 +15179,6 @@ module.exports = {
           "id": "daemon",
           "page": 610,
           "term": "Daemon",
-          "subtitle": "裏方として常駐し続けるプロセス",
           "category": "OSの実行形態",
           "icon": "ic-server",
           "oneline": "ユーザー操作に紐づかず、バックグラウンドで待ち受け・定期作業などを行う常駐プロセス。",
@@ -15396,7 +15224,6 @@ module.exports = {
               "cap": "systemdなどで起動管理できる"
             }
           ],
-          "memo": "Windowsでいうサービスに近い感覚。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -15427,7 +15254,6 @@ module.exports = {
           "id": "regex",
           "page": 611,
           "term": "正規表現",
-          "subtitle": "文字列の模様を、記号で狩る",
           "category": "テキスト処理",
           "icon": "ic-pen",
           "oneline": "文字列のパターンを簡潔に記述し、検索・置換・抽出に使う表記法（と、それを解釈するエンジン）。",
@@ -15473,7 +15299,6 @@ module.exports = {
               "cap": "入力バリデーションの道具になる"
             }
           ],
-          "memo": "「正規表現でパース」はHTML相手だと有名な罠。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -15503,7 +15328,6 @@ module.exports = {
           "id": "permission",
           "page": 612,
           "term": "パーミッション",
-          "subtitle": "誰が、読む・書く・実行できるかの鍵",
           "category": "権限",
           "icon": "ic-scale",
           "oneline": "ファイルやディレクトリに対し、ユーザ／グループ／その他が読み書き実行できるかを表す権限設定。",
@@ -15549,7 +15373,6 @@ module.exports = {
               "cap": "サーバー公開時の最小権限を設計できる"
             }
           ],
-          "memo": "ディレクトリの実行ビットは「中に入れるか」の意味になる点が初見殺し。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -15580,7 +15403,6 @@ module.exports = {
           "id": "ping",
           "page": 613,
           "term": "ping",
-          "subtitle": "向こうは生きてる？ の最小確認",
           "category": "ネットワーク診断",
           "icon": "ic-network",
           "oneline": "ICMPなどで相手ホストに応答を求め、到達性と往復時間を見る基本的なネットワーク診断コマンド。",
@@ -15626,7 +15448,6 @@ module.exports = {
               "cap": "障害切り分けの第一手にできる"
             }
           ],
-          "memo": "万能ではないが、それでも最初の一打になりやすい。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -15651,13 +15472,19 @@ module.exports = {
                 }
               ]
             }
-          ]
+          ],
+          "command_example": {
+            "heading": "使用例",
+            "description": "到達性を確認する基本例。",
+            "lines": [
+              "ping google.com"
+            ]
+          }
         },
         {
           "id": "curl",
           "page": 614,
           "term": "curl",
-          "subtitle": "URLを、コマンド一行で持ってくる",
           "category": "ネットワーク診断",
           "icon": "ic-network",
           "oneline": "HTTPなど様々なプロトコルでデータを送受信できるコマンドラインツール。API確認の定番。",
@@ -15703,7 +15530,6 @@ module.exports = {
               "cap": "スクリプトやCIに組み込める"
             }
           ],
-          "memo": "「叩く」という語彙の実演会場でもある。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -15728,13 +15554,20 @@ module.exports = {
                 }
               ]
             }
-          ]
+          ],
+          "command_example": {
+            "heading": "使用例",
+            "description": "HTTP GET と JSON POST の基本例。",
+            "lines": [
+              "curl https://example.com",
+              "curl -X POST https://example.com/api -H \"Content-Type: application/json\" -d \"{\"name\":\"mido\"}\""
+            ]
+          }
         },
         {
           "id": "vim",
           "page": 615,
           "term": "Vim",
-          "subtitle": "モードがある、指先のテキスト格闘技",
           "category": "開発ツール",
           "icon": "ic-pen",
           "oneline": "モード型の高機能テキストエディタ。サーバー上での編集や、キー操作での高速編集文化の象徴。",
@@ -15780,7 +15613,6 @@ module.exports = {
               "cap": "設定やマクロで自分用に育てられる"
             }
           ],
-          "memo": "終了方法（:q）がミームになるほど、入口の儀式が有名。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -15805,13 +15637,19 @@ module.exports = {
                 }
               ]
             }
-          ]
+          ],
+          "command_example": {
+            "heading": "使用例",
+            "description": "ファイルを開く最小例。終了は :q、保存して終了は :wq。",
+            "lines": [
+              "vim README.md"
+            ]
+          }
         },
         {
           "id": "markdown",
           "page": 616,
           "term": "Markdown",
-          "subtitle": "プレーンテキストのまま、見出しを付ける",
           "category": "開発ツール",
           "icon": "ic-file",
           "oneline": "シンプルな記号で見出しやリストを表し、HTMLなどへ変換できる軽量マークアップ。",
@@ -15857,7 +15695,6 @@ module.exports = {
               "cap": "ドキュメントサイトの入力形式になる"
             }
           ],
-          "memo": "表やタスクリストは方言側の機能。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -15882,18 +15719,22 @@ module.exports = {
                 }
               ]
             }
-          ]
+          ],
+          "who_when": {
+            "who": "John Gruber",
+            "when": "2004年",
+            "context": "HTMLより軽く書ける文書記法として公開された。"
+          }
         },
         {
           "id": "ghostty",
           "page": 617,
           "term": "Ghostty",
-          "subtitle": "速さ志向の、新しい端末エミュレータ",
           "category": "開発ツール",
           "icon": "ic-monitor",
           "oneline": "GPUなどを活用して滑らかさと速さを狙った、比較的新しいクロスプラットフォームな端末エミュレータ。",
-          "q1_text": "ターミナルは毎日開く仕事道具なのに、描画の遅れや設定の古臭さがストレスになる。",
-          "q2_intro": "OS標準端末や、長年使われてきた定番エミュレータで十分、と我慢する選択が多かった。",
+          "q1_text": "端末エミュレータにも、描画性能や設定体験の改善が求められるようになった。",
+          "q2_intro": "OS標準端末や既存エミュレータで十分とされ、刷新の優先度は高くなかった。",
           "q2_table": {
             "col_before": "標準／旧来の端末",
             "col_after": "Ghostty",
@@ -15934,7 +15775,6 @@ module.exports = {
               "cap": "既存のシェル文化のまま乗り換えられる"
             }
           ],
-          "memo": "好みの世界なので、チームの標準にする必要は薄い。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -15965,7 +15805,6 @@ module.exports = {
           "id": "dotenv",
           "page": 618,
           "term": ".env",
-          "subtitle": "秘密と設定を、ファイルに置いて読み込む慣習",
           "category": "環境",
           "icon": "ic-file",
           "oneline": "環境変数を KEY=VALUE 形式で並べた設定ファイル。アプリ起動時に読み込んで使う慣習的な仕組み。",
@@ -16011,7 +15850,6 @@ module.exports = {
               "cap": "キー一覧をexampleで共有できる"
             }
           ],
-          "memo": "「Environment Variableの隣」に置かれるのはこのため。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -16071,7 +15909,6 @@ module.exports = {
           "id": "network",
           "page": 317,
           "term": "Network",
-          "subtitle": "コンテナ同士が「同じ部屋」で話せる仕組み",
           "category": "コンテナ・ネットワーク",
           "icon": "ic-network",
           "oneline": "Docker上でコンテナ同士や外の世界をつなぐ、仮想的なネットワークの単位。",
@@ -16117,7 +15954,6 @@ module.exports = {
               "cap": "Composeの networks: で宣言できる"
             }
           ],
-          "memo": "bridge / host / none など種類がある。同じ network＝会話できる部屋、と覚える。",
           "sidebar_groups": [
             {
               "label": "関連キーワード",
@@ -16184,7 +16020,6 @@ module.exports = {
           "id": "serverless-architecture",
           "page": 445,
           "term": "サーバレスアーキテクチャ",
-          "subtitle": "サーバーを「常時起動」させない設計の考え方",
           "category": "クラウド",
           "icon": "ic-cloud",
           "oneline": "サーバーの用意や運用をクラウド側に任せ、イベントが来たときだけ処理を動かすアーキテクチャの考え方。",
@@ -16230,7 +16065,6 @@ module.exports = {
               "cap": "小さく始めて需要に合わせて広げやすい"
             }
           ],
-          "memo": "サーバーがないのではなく、運用を見えなくした設計。LambdaやCloud Functionsが代表例。",
           "sidebar_groups": [
             {
               "label": "比較する構成",

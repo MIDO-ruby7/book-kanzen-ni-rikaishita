@@ -20,7 +20,6 @@
         <h1>Revert</h1>
       </div>
     </div>
-    <p class="subtitle">過去の1コマだけを、そっと打ち消す</p>
 
     <div class="head-lower">
       <div class="oneline">
@@ -61,24 +60,17 @@
       </div>
     </section>
 
-    <!-- ③ -->
+
     <section class="qa">
       <span class="badge">3</span>
-      <h2>Revert で何ができるようになった？</h2>
+      <h2>使用例</h2>
       <div class="body">
-        <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-clock"/></svg><div class="cap">コマンド一つで間違いを打ち消せる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-file"/></svg><div class="cap">履歴を書き換えずに安全に戻せる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-scale"/></svg><div class="cap">何を取り消したかが記録に残る</div></div>
+        <p>過去コミットを打ち消す新しいコミットを作る例。</p>
+        <div class="example-block">
+<code>git revert HEAD</code>
         </div>
       </div>
     </section>
-
-    <!-- ひとことメモ -->
-    <div class="memo">
-      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>公開済み（push済み）のコミットを取り消すときは、resetではなくrevertを使うのが安全。</p>
-    </div>
 
   </div>
 

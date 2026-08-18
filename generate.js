@@ -30,6 +30,58 @@ function renderSidebar(groups) {
     </div>`).join('');
 }
 
+function renderSection3(entry) {
+  if (entry.command_example) {
+    const lines = entry.command_example.lines
+      .map(line => `<code>${esc(line)}</code>`)
+      .join('\n');
+    return `
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>${esc(entry.command_example.heading || '使用例')}</h2>
+      <div class="body">
+        ${entry.command_example.description ? `<p>${esc(entry.command_example.description)}</p>` : ''}
+        <div class="example-block">
+${lines}
+        </div>
+      </div>
+    </section>`;
+  }
+
+  if (entry.who_when) {
+    const items = [
+      ['作った人', entry.who_when.who],
+      ['時期', entry.who_when.when],
+      ['文脈', entry.who_when.context],
+    ].filter(([, value]) => value);
+    return `
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>${esc(entry.who_when.heading || '誰がいつ作った？')}</h2>
+      <div class="body">
+        <dl class="fact-list">
+          ${items.map(([label, value]) => `<div class="fact-row"><dt>${esc(label)}</dt><dd>${esc(value)}</dd></div>`).join('\n          ')}
+        </dl>
+      </div>
+    </section>`;
+  }
+
+  const trioCells = (entry.q3_cells || []).map(c =>
+    `<div class="cell"><svg><use href="icons.svg#${c.icon}"/></svg><div class="cap">${esc(c.cap)}</div></div>`
+  ).join('\n          ');
+
+  return `
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>${esc(entry.q3_heading || `${entry.term} で何ができるようになった？`)}</h2>
+      <div class="body">
+        <div class="trio">
+          ${trioCells}
+        </div>
+      </div>
+    </section>`;
+}
+
 function needsCompact(entry) {
   if (entry.compact) return true;
   return (entry.term || '').length > 12 || (entry.subtitle || '').length > 22;
@@ -40,12 +92,7 @@ function renderPage(entry, ch, parity) {
     `<tr><td class="rowhead">${esc(label)}</td><td>${esc(before)}</td><td class="h-docker">${esc(after)}</td></tr>`
   ).join('\n            ');
 
-  const trioCells = (entry.q3_cells || []).map(c =>
-    `<div class="cell"><svg><use href="icons.svg#${c.icon}"/></svg><div class="cap">${esc(c.cap)}</div></div>`
-  ).join('\n          ');
-
   const q1Lines = entry.q1_text.split('\n').map(esc).join('<br>\n             ');
-  const memoLines = entry.memo.split('\n').map(esc).join('<br>\n         ');
   const sidebarHtml = renderSidebar(entry.sidebar_groups);
   const sideMemo = entry.side_memo
     ? `\n    <div class="side-memo">\n      <div class="lbl">キーワードメモ</div>\n      <p>${esc(entry.side_memo)}</p>\n    </div>`
@@ -73,7 +120,6 @@ function renderPage(entry, ch, parity) {
         <h1>${esc(entry.term)}</h1>
       </div>
     </div>
-    <p class="subtitle">${esc(entry.subtitle)}</p>
 
     <div class="head-lower">
       <div class="oneline">
@@ -111,22 +157,7 @@ function renderPage(entry, ch, parity) {
       </div>
     </section>
 
-    <!-- ③ -->
-    <section class="qa">
-      <span class="badge">3</span>
-      <h2>${esc(entry.q3_heading || `${entry.term} で何ができるようになった？`)}</h2>
-      <div class="body">
-        <div class="trio">
-          ${trioCells}
-        </div>
-      </div>
-    </section>
-
-    <!-- ひとことメモ -->
-    <div class="memo">
-      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>${memoLines}</p>
-    </div>
+${renderSection3(entry)}
 
   </div>
 

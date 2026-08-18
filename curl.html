@@ -20,7 +20,6 @@
         <h1>curl</h1>
       </div>
     </div>
-    <p class="subtitle">URLを、コマンド一行で持ってくる</p>
 
     <div class="head-lower">
       <div class="oneline">
@@ -61,24 +60,18 @@
       </div>
     </section>
 
-    <!-- ③ -->
+
     <section class="qa">
       <span class="badge">3</span>
-      <h2>curl で何ができるようになった？</h2>
+      <h2>使用例</h2>
       <div class="body">
-        <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-network"/></svg><div class="cap">APIをターミナルから叩ける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-file"/></svg><div class="cap">ヘッダや本文を細かく制御できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">スクリプトやCIに組み込める</div></div>
+        <p>HTTP GET と JSON POST の基本例。</p>
+        <div class="example-block">
+<code>curl https://example.com</code>
+<code>curl -X POST https://example.com/api -H "Content-Type: application/json" -d "{"name":"mido"}"</code>
         </div>
       </div>
     </section>
-
-    <!-- ひとことメモ -->
-    <div class="memo">
-      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>「叩く」という語彙の実演会場でもある。</p>
-    </div>
 
   </div>
 

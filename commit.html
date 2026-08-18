@@ -20,7 +20,6 @@
         <h1>Commit</h1>
       </div>
     </div>
-    <p class="subtitle">「セーブ」に理由を添える1コマ</p>
 
     <div class="head-lower">
       <div class="oneline">
@@ -35,7 +34,7 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>どこまで手を加えたか、何のための変更だったかが後から分からなくなっていた。</p>
+          <p>変更のまとまりを、理由つきで履歴に記録する単位が必要だった。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -61,24 +60,17 @@
       </div>
     </section>
 
-    <!-- ③ -->
+
     <section class="qa">
       <span class="badge">3</span>
-      <h2>Commit で何ができるようになった？</h2>
+      <h2>使用例</h2>
       <div class="body">
-        <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-file"/></svg><div class="cap">変更履歴が全部残る</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-clock"/></svg><div class="cap">いつでもその時点に戻れる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-pen"/></svg><div class="cap">「なぜ直したか」が記録に残る</div></div>
+        <p>変更を記録する最小例。</p>
+        <div class="example-block">
+<code>git commit -m "fix: update login flow"</code>
         </div>
       </div>
     </section>
-
-    <!-- ひとことメモ -->
-    <div class="memo">
-      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>「小さく・こまめに」コミットするのが基本。1コミット1テーマが読みやすい。</p>
-    </div>
 
   </div>
 
