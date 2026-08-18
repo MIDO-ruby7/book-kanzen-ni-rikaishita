@@ -63,13 +63,15 @@ module.exports = {
                   "name": "Clone",
                   "desc": "リポジトリを丸ごと手元にコピーすること。",
                   "icon": "ic-package",
-                  "page": 2
+                  "page": 2,
+                  "ruby": "クローン"
                 },
                 {
                   "name": "Commit",
                   "desc": "変更を記録として保存する単位。",
                   "icon": "ic-file",
-                  "page": 5
+                  "page": 5,
+                  "ruby": "コミット"
                 }
               ]
             },
@@ -79,7 +81,8 @@ module.exports = {
                 {
                   "name": "GitHub",
                   "desc": "リモートリポジトリを置いておけるWebサービス。",
-                  "icon": "ic-cloud"
+                  "icon": "ic-cloud",
+                  "ruby": "ギットハブ"
                 },
                 {
                   "name": "Working Tree",
@@ -88,7 +91,8 @@ module.exports = {
                 }
               ]
             }
-          ]
+          ],
+          "term_ruby": "リポジトリ"
         },
         {
           "id": "clone",
@@ -149,13 +153,15 @@ module.exports = {
                   "name": "Repository",
                   "desc": "変更履歴をまとめて記録する保管庫。",
                   "icon": "ic-server",
-                  "page": 1
+                  "page": 1,
+                  "ruby": "リポジトリ"
                 },
                 {
                   "name": "Pull",
                   "desc": "クローン後、最新の変更を取り込む操作。",
                   "icon": "ic-cloud",
-                  "page": 7
+                  "page": 7,
+                  "ruby": "プル"
                 }
               ]
             },
@@ -170,7 +176,8 @@ module.exports = {
                 {
                   "name": "SSH",
                   "desc": "安全に通信するための鍵認証の仕組み。",
-                  "icon": "ic-scale"
+                  "icon": "ic-scale",
+                  "ruby": "エスエスエイチ"
                 }
               ]
             }
@@ -181,7 +188,8 @@ module.exports = {
             "lines": [
               "git clone https://github.com/example/repo.git"
             ]
-          }
+          },
+          "term_ruby": "クローン"
         },
         {
           "id": "fork",
@@ -267,7 +275,8 @@ module.exports = {
                 }
               ]
             }
-          ]
+          ],
+          "term_ruby": "フォーク"
         },
         {
           "id": "branch",
@@ -328,13 +337,15 @@ module.exports = {
                   "name": "Commit",
                   "desc": "ブランチ上に積み重ねる変更の記録。",
                   "icon": "ic-file",
-                  "page": 5
+                  "page": 5,
+                  "ruby": "コミット"
                 },
                 {
                   "name": "Merge",
                   "desc": "分かれたブランチをひとつに統合する操作。",
                   "icon": "ic-scale",
-                  "page": 8
+                  "page": 8,
+                  "ruby": "マージ"
                 }
               ]
             },
@@ -353,7 +364,8 @@ module.exports = {
                 }
               ]
             }
-          ]
+          ],
+          "term_ruby": "ブランチ"
         },
         {
           "id": "commit",
@@ -414,13 +426,15 @@ module.exports = {
                   "name": "Branch",
                   "desc": "コミットを積み重ねる並行世界。",
                   "icon": "ic-layers",
-                  "page": 4
+                  "page": 4,
+                  "ruby": "ブランチ"
                 },
                 {
                   "name": "Push",
                   "desc": "コミットをリモートに送る操作。",
                   "icon": "ic-rocket",
-                  "page": 6
+                  "page": 6,
+                  "ruby": "プッシュ"
                 }
               ]
             },
@@ -446,7 +460,8 @@ module.exports = {
             "lines": [
               "git commit -m \"fix: update login flow\""
             ]
-          }
+          },
+          "term_ruby": "コミット"
         },
         {
           "id": "push",
@@ -507,13 +522,15 @@ module.exports = {
                   "name": "Commit",
                   "desc": "pushする変更の記録の単位。",
                   "icon": "ic-file",
-                  "page": 5
+                  "page": 5,
+                  "ruby": "コミット"
                 },
                 {
                   "name": "Pull",
                   "desc": "逆にリモートの変更を取り込む操作。",
                   "icon": "ic-cloud",
-                  "page": 7
+                  "page": 7,
+                  "ruby": "プル"
                 }
               ]
             },
@@ -539,7 +556,8 @@ module.exports = {
             "lines": [
               "git push origin main"
             ]
-          }
+          },
+          "term_ruby": "プッシュ"
         },
         {
           "id": "pull",
@@ -600,13 +618,15 @@ module.exports = {
                   "name": "Push",
                   "desc": "自分の変更をリモートに送る操作。",
                   "icon": "ic-rocket",
-                  "page": 6
+                  "page": 6,
+                  "ruby": "プッシュ"
                 },
                 {
                   "name": "Merge",
                   "desc": "pull の中で行われている統合処理。",
                   "icon": "ic-scale",
-                  "page": 8
+                  "page": 8,
+                  "ruby": "マージ"
                 }
               ]
             },
@@ -632,7 +652,8 @@ module.exports = {
             "lines": [
               "git pull origin main"
             ]
-          }
+          },
+          "term_ruby": "プル"
         },
         {
           "id": "merge",
@@ -693,13 +714,15 @@ module.exports = {
                   "name": "Branch",
                   "desc": "mergeで統合される側の並行世界。",
                   "icon": "ic-layers",
-                  "page": 4
+                  "page": 4,
+                  "ruby": "ブランチ"
                 },
                 {
                   "name": "Rebase",
                   "desc": "mergeとは別の、もう一つの統合方法。",
                   "icon": "ic-wheel",
-                  "page": 9
+                  "page": 9,
+                  "ruby": "リベース"
                 }
               ]
             },
@@ -710,7 +733,8 @@ module.exports = {
                   "name": "Conflict",
                   "desc": "自動で統合できず人の判断が必要になる状態。",
                   "icon": "ic-monitor",
-                  "page": 11
+                  "page": 11,
+                  "ruby": "コンフリクト"
                 },
                 {
                   "name": "Fast-forward",
@@ -719,7 +743,8 @@ module.exports = {
                 }
               ]
             }
-          ]
+          ],
+          "term_ruby": "マージ"
         },
         {
           "id": "rebase",
@@ -780,13 +805,15 @@ module.exports = {
                   "name": "Merge",
                   "desc": "rebaseと並ぶ、もう一つの統合方法。",
                   "icon": "ic-scale",
-                  "page": 8
+                  "page": 8,
+                  "ruby": "マージ"
                 },
                 {
                   "name": "Branch",
                   "desc": "土台を乗せ替える対象そのもの。",
                   "icon": "ic-layers",
-                  "page": 4
+                  "page": 4,
+                  "ruby": "ブランチ"
                 }
               ]
             },
@@ -813,7 +840,8 @@ module.exports = {
               "git fetch origin",
               "git rebase origin/main"
             ]
-          }
+          },
+          "term_ruby": "リベース"
         },
         {
           "id": "cherry-pick",
@@ -874,13 +902,15 @@ module.exports = {
                   "name": "Commit",
                   "desc": "cherry-pickで摘み取る対象の単位。",
                   "icon": "ic-file",
-                  "page": 5
+                  "page": 5,
+                  "ruby": "コミット"
                 },
                 {
                   "name": "Branch",
                   "desc": "摘み取った先の並行世界。",
                   "icon": "ic-layers",
-                  "page": 4
+                  "page": 4,
+                  "ruby": "ブランチ"
                 }
               ]
             },
@@ -906,7 +936,8 @@ module.exports = {
             "lines": [
               "git cherry-pick a1b2c3d"
             ]
-          }
+          },
+          "term_ruby": "チェリーピック"
         },
         {
           "id": "conflict",
@@ -967,13 +998,15 @@ module.exports = {
                   "name": "Merge",
                   "desc": "コンフリクトが表面化しやすい統合操作。",
                   "icon": "ic-scale",
-                  "page": 8
+                  "page": 8,
+                  "ruby": "マージ"
                 },
                 {
                   "name": "Pull",
                   "desc": "コンフリクトが判明するもう一つの場面。",
                   "icon": "ic-cloud",
-                  "page": 7
+                  "page": 7,
+                  "ruby": "プル"
                 }
               ]
             },
@@ -992,7 +1025,8 @@ module.exports = {
                 }
               ]
             }
-          ]
+          ],
+          "term_ruby": "コンフリクト"
         },
         {
           "id": "revert",
@@ -1053,13 +1087,15 @@ module.exports = {
                   "name": "Reset",
                   "desc": "revertとよく比較される巻き戻し操作。",
                   "icon": "ic-wheel",
-                  "page": 13
+                  "page": 13,
+                  "ruby": "リセット"
                 },
                 {
                   "name": "Commit",
                   "desc": "revertが打ち消す対象の単位。",
                   "icon": "ic-file",
-                  "page": 5
+                  "page": 5,
+                  "ruby": "コミット"
                 }
               ]
             },
@@ -1080,7 +1116,8 @@ module.exports = {
             "lines": [
               "git revert HEAD"
             ]
-          }
+          },
+          "term_ruby": "リバート"
         },
         {
           "id": "reset",
@@ -1141,13 +1178,15 @@ module.exports = {
                   "name": "Revert",
                   "desc": "resetより安全な、共有履歴向けの巻き戻し。",
                   "icon": "ic-clock",
-                  "page": 12
+                  "page": 12,
+                  "ruby": "リバート"
                 },
                 {
                   "name": "Commit",
                   "desc": "resetで戻す先を指定する単位。",
                   "icon": "ic-file",
-                  "page": 5
+                  "page": 5,
+                  "ruby": "コミット"
                 }
               ]
             },
@@ -1178,7 +1217,8 @@ module.exports = {
             "who": "Linus Torvalds ら",
             "when": "2005年ごろ",
             "context": "Gitの初期からある履歴操作コマンド。"
-          }
+          },
+          "term_ruby": "リセット"
         },
         {
           "id": "tag",
@@ -1239,13 +1279,15 @@ module.exports = {
                   "name": "Commit",
                   "desc": "タグを貼り付ける対象そのもの。",
                   "icon": "ic-file",
-                  "page": 5
+                  "page": 5,
+                  "ruby": "コミット"
                 },
                 {
                   "name": "Repository",
                   "desc": "タグごと履歴を保管する場所。",
                   "icon": "ic-server",
-                  "page": 1
+                  "page": 1,
+                  "ruby": "リポジトリ"
                 }
               ]
             },
@@ -1272,7 +1314,8 @@ module.exports = {
               "git tag v1.0.0",
               "git push origin v1.0.0"
             ]
-          }
+          },
+          "term_ruby": "タグ"
         },
         {
           "id": "oss",
@@ -1333,7 +1376,8 @@ module.exports = {
                   "name": "Fork",
                   "desc": "OSSに手を加えるための最初の一歩。",
                   "icon": "ic-network",
-                  "page": 3
+                  "page": 3,
+                  "ruby": "フォーク"
                 },
                 {
                   "name": "コントリビュート",
@@ -1425,7 +1469,8 @@ module.exports = {
                   "name": "Fork",
                   "desc": "コントリビュートの第一歩となる複製。",
                   "icon": "ic-network",
-                  "page": 3
+                  "page": 3,
+                  "ruby": "フォーク"
                 },
                 {
                   "name": "OSS",
@@ -1447,6 +1492,247 @@ module.exports = {
                   "name": "Issue",
                   "desc": "バグ報告や要望を管理する場所。",
                   "icon": "ic-monitor"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "git",
+          "page": 17,
+          "term": "Git",
+          "term_ruby": "ギット",
+          "category": "バージョン管理",
+          "icon": "ic-file",
+          "oneline": "ソースコードの変更履歴を記録し、分岐・統合しながら管理できる分散バージョン管理システム。",
+          "q1_text": "複数人で同じコードを直す開発では、変更履歴を安全に記録し、並行作業を統合する仕組みが必要だった。",
+          "q2_intro": "ファイル名に v1 や final を付けて保存し、共有フォルダやメールで受け渡していた。",
+          "q2_table": {
+            "col_before": "手動の版管理",
+            "col_after": "Git",
+            "rows": [
+              [
+                "履歴管理",
+                "名前で区別",
+                "コミットで記録"
+              ],
+              [
+                "並行作業",
+                "衝突しやすい",
+                "ブランチで分離"
+              ],
+              [
+                "統合",
+                "手でコピペ",
+                "merge / rebase で統合"
+              ],
+              [
+                "共有",
+                "ファイル送付",
+                "リポジトリで共有"
+              ]
+            ]
+          },
+          "who_when": {
+            "who": "Linus Torvalds",
+            "when": "2005年",
+            "context": "Linuxカーネル開発のために作られ、その後広く普及した。"
+          },
+          "sidebar_groups": [
+            {
+              "label": "関連キーワード",
+              "items": [
+                {
+                  "name": "Repository",
+                  "ruby": "リポジトリ",
+                  "desc": "Gitが履歴を保存する単位。",
+                  "icon": "ic-server",
+                  "page": 1
+                },
+                {
+                  "name": "Commit",
+                  "ruby": "コミット",
+                  "desc": "変更履歴の最小単位。",
+                  "icon": "ic-file",
+                  "page": 5
+                }
+              ]
+            },
+            {
+              "label": "一緒に覚えたい言葉",
+              "items": [
+                {
+                  "name": "GitHub",
+                  "ruby": "ギットハブ",
+                  "desc": "Gitリポジトリを共有する代表的なサービス。",
+                  "icon": "ic-cloud",
+                  "page": 18
+                },
+                {
+                  "name": "Branch",
+                  "ruby": "ブランチ",
+                  "desc": "並行作業用の履歴の分岐。",
+                  "icon": "ic-cube",
+                  "page": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "github",
+          "page": 18,
+          "term": "GitHub",
+          "term_ruby": "ギットハブ",
+          "category": "Gitホスティング",
+          "icon": "ic-cloud",
+          "oneline": "GitリポジトリをWeb上で共有し、レビューやIssue管理も行える代表的なホスティングサービス。",
+          "q1_text": "Gitだけでは履歴管理はできても、チーム共有やレビューの場を別途用意する必要があった。",
+          "q2_intro": "Gitサーバーを自前で立てるか、パッチをメールで送り合う運用が多かった。",
+          "q2_table": {
+            "col_before": "自前サーバー / メール",
+            "col_after": "GitHub",
+            "rows": [
+              [
+                "共有",
+                "設定が必要",
+                "URLですぐ共有"
+              ],
+              [
+                "レビュー",
+                "口頭・メール中心",
+                "Pull Request で実施"
+              ],
+              [
+                "周辺機能",
+                "別ツールに分散",
+                "Issue などを集約"
+              ],
+              [
+                "公開",
+                "敷居が高い",
+                "OSS公開がしやすい"
+              ]
+            ]
+          },
+          "who_when": {
+            "who": "Tom Preston-Werner・Chris Wanstrath・PJ Hyett ら",
+            "when": "2008年",
+            "context": "Gitを使った共同開発をWeb上で行いやすくするために公開された。"
+          },
+          "sidebar_groups": [
+            {
+              "label": "関連キーワード",
+              "items": [
+                {
+                  "name": "Git",
+                  "ruby": "ギット",
+                  "desc": "GitHubが扱う版管理システム。",
+                  "icon": "ic-file",
+                  "page": 17
+                },
+                {
+                  "name": "Fork",
+                  "ruby": "フォーク",
+                  "desc": "他人のリポジトリを自分配下へ複製。",
+                  "icon": "ic-network",
+                  "page": 3
+                }
+              ]
+            },
+            {
+              "label": "一緒に覚えたい言葉",
+              "items": [
+                {
+                  "name": "GitLab",
+                  "ruby": "ギットラボ",
+                  "desc": "Gitホスティングの別サービス。",
+                  "icon": "ic-cloud",
+                  "page": 19
+                },
+                {
+                  "name": "Pull Request",
+                  "desc": "変更レビューを依頼する単位。",
+                  "icon": "ic-rocket"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "gitlab",
+          "page": 19,
+          "term": "GitLab",
+          "term_ruby": "ギットラボ",
+          "category": "Gitホスティング",
+          "icon": "ic-cloud",
+          "oneline": "Gitリポジトリの共有に加え、CI/CDや権限管理まで一体で扱えるGitホスティングサービス。",
+          "q1_text": "Gitリポジトリ管理だけでなく、社内向けの権限管理やCI/CDもまとめて扱いたい需要があった。",
+          "q2_intro": "Gitサーバー、CI、Issue管理を別々の製品で組み合わせていた。",
+          "q2_table": {
+            "col_before": "ツール分散",
+            "col_after": "GitLab",
+            "rows": [
+              [
+                "リポジトリ",
+                "別サーバー管理",
+                "Webで一元管理"
+              ],
+              [
+                "CI/CD",
+                "別製品を連携",
+                "標準機能で統合"
+              ],
+              [
+                "権限",
+                "個別設定",
+                "グループ単位で管理"
+              ],
+              [
+                "導入形態",
+                "SaaS中心",
+                "自前設置もしやすい"
+              ]
+            ]
+          },
+          "who_when": {
+            "who": "Dmitriy Zaporozhets・Valery Sizov",
+            "when": "2011年",
+            "context": "自己ホストしやすいGit管理サービスとして始まり、DevOps基盤へ拡張した。"
+          },
+          "sidebar_groups": [
+            {
+              "label": "関連キーワード",
+              "items": [
+                {
+                  "name": "Git",
+                  "ruby": "ギット",
+                  "desc": "GitLabが扱う版管理システム。",
+                  "icon": "ic-file",
+                  "page": 17
+                },
+                {
+                  "name": "GitHub",
+                  "ruby": "ギットハブ",
+                  "desc": "比較対象になりやすいサービス。",
+                  "icon": "ic-cloud",
+                  "page": 18
+                }
+              ]
+            },
+            {
+              "label": "一緒に覚えたい言葉",
+              "items": [
+                {
+                  "name": "CI/CD",
+                  "desc": "GitLabが強みを持つ自動化領域。",
+                  "icon": "ic-rocket",
+                  "page": 705
+                },
+                {
+                  "name": "Issue",
+                  "desc": "タスクや不具合を管理する単位。",
+                  "icon": "ic-file"
                 }
               ]
             }
@@ -1510,7 +1796,8 @@ module.exports = {
                   "name": "Server",
                   "desc": "クライアントからの要求を受け取り、処理して返す側。",
                   "icon": "ic-server",
-                  "page": 22
+                  "page": 22,
+                  "ruby": "サーバー"
                 }
               ]
             },
@@ -1521,17 +1808,20 @@ module.exports = {
                   "name": "Request",
                   "desc": "クライアントがサーバーに送る依頼のデータ。",
                   "icon": "ic-network",
-                  "page": 23
+                  "page": 23,
+                  "ruby": "リクエスト"
                 },
                 {
                   "name": "Response",
                   "desc": "サーバーがリクエストに対して返す結果。",
                   "icon": "ic-package",
-                  "page": 24
+                  "page": 24,
+                  "ruby": "レスポンス"
                 }
               ]
             }
-          ]
+          ],
+          "term_ruby": "クライアント"
         },
         {
           "id": "server",
@@ -1585,7 +1875,8 @@ module.exports = {
                   "name": "Client",
                   "desc": "サーバーに要求を送る側。ブラウザやアプリなど。",
                   "icon": "ic-laptop",
-                  "page": 21
+                  "page": 21,
+                  "ruby": "クライアント"
                 }
               ]
             },
@@ -1596,11 +1887,13 @@ module.exports = {
                   "name": "Request",
                   "desc": "クライアントがサーバーに送る依頼のデータ。",
                   "icon": "ic-network",
-                  "page": 23
+                  "page": 23,
+                  "ruby": "リクエスト"
                 }
               ]
             }
-          ]
+          ],
+          "term_ruby": "サーバー"
         },
         {
           "id": "request",
@@ -1654,7 +1947,8 @@ module.exports = {
                   "name": "Response",
                   "desc": "リクエストに対してサーバーが返す結果。",
                   "icon": "ic-package",
-                  "page": 24
+                  "page": 24,
+                  "ruby": "レスポンス"
                 }
               ]
             },
@@ -1665,11 +1959,13 @@ module.exports = {
                   "name": "Header",
                   "desc": "リクエストやレスポンスに添える付加情報。",
                   "icon": "ic-layers",
-                  "page": 34
+                  "page": 34,
+                  "ruby": "ヘッダー"
                 }
               ]
             }
-          ]
+          ],
+          "term_ruby": "リクエスト"
         },
         {
           "id": "response",
@@ -1723,7 +2019,8 @@ module.exports = {
                   "name": "Request",
                   "desc": "クライアントがサーバーに送る依頼のデータ。",
                   "icon": "ic-network",
-                  "page": 23
+                  "page": 23,
+                  "ruby": "リクエスト"
                 }
               ]
             },
@@ -1734,11 +2031,13 @@ module.exports = {
                   "name": "HTTP",
                   "desc": "リクエスト・レスポンスをやり取りする共通ルール。",
                   "icon": "ic-layers",
-                  "page": 25
+                  "page": 25,
+                  "ruby": "エイチティーティーピー"
                 }
               ]
             }
-          ]
+          ],
+          "term_ruby": "レスポンス"
         },
         {
           "id": "http",
@@ -1792,7 +2091,8 @@ module.exports = {
                   "name": "HTTPS",
                   "desc": "HTTPに暗号化（TLS）を追加した安全な通信。",
                   "icon": "ic-cube",
-                  "page": 26
+                  "page": 26,
+                  "ruby": "エイチティーティーピーエス"
                 }
               ]
             },
@@ -1803,13 +2103,15 @@ module.exports = {
                   "name": "Request",
                   "desc": "クライアントがサーバーに送る依頼のデータ。",
                   "icon": "ic-network",
-                  "page": 23
+                  "page": 23,
+                  "ruby": "リクエスト"
                 },
                 {
                   "name": "Response",
                   "desc": "サーバーがリクエストに対して返す結果。",
                   "icon": "ic-package",
-                  "page": 24
+                  "page": 24,
+                  "ruby": "レスポンス"
                 }
               ]
             }
@@ -1818,7 +2120,8 @@ module.exports = {
             "who": "Tim Berners-Lee ら",
             "when": "1990年前後",
             "context": "World Wide Web の文書転送プロトコルとして設計された。"
-          }
+          },
+          "term_ruby": "エイチティーティーピー"
         },
         {
           "id": "https",
@@ -1872,7 +2175,8 @@ module.exports = {
                   "name": "HTTP",
                   "desc": "暗号化されていない通信プロトコル。",
                   "icon": "ic-layers",
-                  "page": 25
+                  "page": 25,
+                  "ruby": "エイチティーティーピー"
                 }
               ]
             },
@@ -1883,7 +2187,8 @@ module.exports = {
                   "name": "TLS",
                   "desc": "HTTPSの暗号化・認証を担う仕組み。",
                   "icon": "ic-cube",
-                  "page": 37
+                  "page": 37,
+                  "ruby": "ティーエルエス"
                 },
                 {
                   "name": "SSL証明書",
@@ -1898,7 +2203,8 @@ module.exports = {
             "who": "Netscape ら",
             "when": "1994年ごろ",
             "context": "HTTPにTLS/SSLを組み合わせ、安全なWeb通信を行う形として普及した。"
-          }
+          },
+          "term_ruby": "エイチティーティーピーエス"
         },
         {
           "id": "dns",
@@ -1952,7 +2258,8 @@ module.exports = {
                   "name": "Domain",
                   "desc": "DNSで管理される、覚えやすい名前そのもの。",
                   "icon": "ic-monitor",
-                  "page": 28
+                  "page": 28,
+                  "ruby": "ドメイン"
                 },
                 {
                   "name": "IP Address",
@@ -1967,7 +2274,8 @@ module.exports = {
             "who": "Paul Mockapetris",
             "when": "1983年",
             "context": "IPアドレスと名前を対応づける分散的な仕組みとして設計された。"
-          }
+          },
+          "term_ruby": "ディーエヌエス"
         },
         {
           "id": "domain",
@@ -2021,7 +2329,8 @@ module.exports = {
                   "name": "DNS",
                   "desc": "ドメイン名をIPアドレスに変換する仕組み。",
                   "icon": "ic-file",
-                  "page": 27
+                  "page": 27,
+                  "ruby": "ディーエヌエス"
                 },
                 {
                   "name": "SSL証明書",
@@ -2031,7 +2340,8 @@ module.exports = {
                 }
               ]
             }
-          ]
+          ],
+          "term_ruby": "ドメイン"
         },
         {
           "id": "ip-address",
@@ -2085,7 +2395,8 @@ module.exports = {
                   "name": "DNS",
                   "desc": "ドメイン名をIPアドレスに変換する仕組み。",
                   "icon": "ic-file",
-                  "page": 27
+                  "page": 27,
+                  "ruby": "ディーエヌエス"
                 },
                 {
                   "name": "Port",
@@ -2161,7 +2472,8 @@ module.exports = {
                   "name": "TCP",
                   "desc": "ポート番号を使って通信を確立するプロトコル。",
                   "icon": "ic-scale",
-                  "page": 35
+                  "page": 35,
+                  "ruby": "ティーシーピー"
                 }
               ]
             }
@@ -2219,17 +2531,20 @@ module.exports = {
                   "name": "Session",
                   "desc": "Cookieを使って実現される、ログイン状態などの管理。",
                   "icon": "ic-clock",
-                  "page": 32
+                  "page": 32,
+                  "ruby": "セッション"
                 },
                 {
                   "name": "JWT",
                   "desc": "署名付きトークンでログイン情報を持ち運ぶ方式。",
                   "icon": "ic-scale",
-                  "page": 33
+                  "page": 33,
+                  "ruby": "ジェイダブリューティー"
                 }
               ]
             }
-          ]
+          ],
+          "term_ruby": "クッキー"
         },
         {
           "id": "session",
@@ -2283,17 +2598,20 @@ module.exports = {
                   "name": "Cookie",
                   "desc": "セッションIDなどを保存する、ブラウザ側の小さなデータ。",
                   "icon": "ic-package",
-                  "page": 31
+                  "page": 31,
+                  "ruby": "クッキー"
                 },
                 {
                   "name": "JWT",
                   "desc": "サーバー側に状態を持たない、別の認証情報の持ち方。",
                   "icon": "ic-scale",
-                  "page": 33
+                  "page": 33,
+                  "ruby": "ジェイダブリューティー"
                 }
               ]
             }
-          ]
+          ],
+          "term_ruby": "セッション"
         },
         {
           "id": "jwt",
@@ -2347,23 +2665,27 @@ module.exports = {
                   "name": "Session",
                   "desc": "サーバー側で状態を管理する、もう一つの方式。",
                   "icon": "ic-clock",
-                  "page": 32
+                  "page": 32,
+                  "ruby": "セッション"
                 },
                 {
                   "name": "Cookie",
                   "desc": "JWTをブラウザに保存する際の入れ物としても使われる。",
                   "icon": "ic-package",
-                  "page": 31
+                  "page": 31,
+                  "ruby": "クッキー"
                 },
                 {
                   "name": "Header",
                   "desc": "JWTは多くの場合Authorizationヘッダーに載せて送る。",
                   "icon": "ic-layers",
-                  "page": 34
+                  "page": 34,
+                  "ruby": "ヘッダー"
                 }
               ]
             }
-          ]
+          ],
+          "term_ruby": "ジェイダブリューティー"
         },
         {
           "id": "header",
@@ -2417,17 +2739,20 @@ module.exports = {
                   "name": "Request",
                   "desc": "ヘッダーが付加される、依頼データそのもの。",
                   "icon": "ic-network",
-                  "page": 23
+                  "page": 23,
+                  "ruby": "リクエスト"
                 },
                 {
                   "name": "JWT",
                   "desc": "Authorizationヘッダーに載せて送る認証トークン。",
                   "icon": "ic-scale",
-                  "page": 33
+                  "page": 33,
+                  "ruby": "ジェイダブリューティー"
                 }
               ]
             }
-          ]
+          ],
+          "term_ruby": "ヘッダー"
         },
         {
           "id": "tcp",
@@ -2481,7 +2806,8 @@ module.exports = {
                   "name": "UDP",
                   "desc": "確認を取らず、とにかく速さを優先するプロトコル。",
                   "icon": "ic-rocket",
-                  "page": 36
+                  "page": 36,
+                  "ruby": "ユーディーピー"
                 }
               ]
             },
@@ -2496,7 +2822,8 @@ module.exports = {
                 }
               ]
             }
-          ]
+          ],
+          "term_ruby": "ティーシーピー"
         },
         {
           "id": "udp",
@@ -2550,11 +2877,13 @@ module.exports = {
                   "name": "TCP",
                   "desc": "確認を取りながら確実に届けるプロトコル。",
                   "icon": "ic-scale",
-                  "page": 35
+                  "page": 35,
+                  "ruby": "ティーシーピー"
                 }
               ]
             }
-          ]
+          ],
+          "term_ruby": "ユーディーピー"
         },
         {
           "id": "tls",
@@ -2608,7 +2937,8 @@ module.exports = {
                   "name": "HTTPS",
                   "desc": "TLSによって暗号化されたHTTP通信。",
                   "icon": "ic-cube",
-                  "page": 26
+                  "page": 26,
+                  "ruby": "エイチティーティーピーエス"
                 },
                 {
                   "name": "SSL証明書",
@@ -2624,7 +2954,8 @@ module.exports = {
                 }
               ]
             }
-          ]
+          ],
+          "term_ruby": "ティーエルエス"
         },
         {
           "id": "ssl-certificate",
@@ -2678,7 +3009,8 @@ module.exports = {
                   "name": "TLS",
                   "desc": "この証明書を使って暗号化通信を行う仕組み。",
                   "icon": "ic-cube",
-                  "page": 37
+                  "page": 37,
+                  "ruby": "ティーエルエス"
                 },
                 {
                   "name": "Let's Encrypt",
@@ -2748,7 +3080,8 @@ module.exports = {
                   "name": "HTTPS",
                   "desc": "この証明書によって実現される暗号化通信。",
                   "icon": "ic-cube",
-                  "page": 26
+                  "page": 26,
+                  "ruby": "エイチティーティーピーエス"
                 }
               ]
             }
@@ -13105,7 +13438,8 @@ module.exports = {
                   "name": "npm",
                   "desc": "JSの代表的なパッケージマネージャ。",
                   "icon": "ic-package",
-                  "page": 554
+                  "page": 554,
+                  "ruby": "エヌピーエム"
                 }
               ]
             }
@@ -13255,7 +13589,8 @@ module.exports = {
                   "name": "npm",
                   "desc": "SemVerが日常になる世界。",
                   "icon": "ic-package",
-                  "page": 554
+                  "page": 554,
+                  "ruby": "エヌピーエム"
                 }
               ]
             }
@@ -13324,13 +13659,15 @@ module.exports = {
                   "name": "npm",
                   "desc": "package-lock.json の世界。",
                   "icon": "ic-package",
-                  "page": 554
+                  "page": 554,
+                  "ruby": "エヌピーエム"
                 },
                 {
                   "name": "pnpm",
                   "desc": "pnpm-lock.yaml の世界。",
                   "icon": "ic-package",
-                  "page": 556
+                  "page": 556,
+                  "ruby": "ピーエヌピーエム"
                 }
               ]
             }
@@ -13393,13 +13730,15 @@ module.exports = {
                   "name": "yarn",
                   "desc": "代替クライアントの代表格。",
                   "icon": "ic-package",
-                  "page": 555
+                  "page": 555,
+                  "ruby": "ヤーン"
                 },
                 {
                   "name": "pnpm",
                   "desc": "ディスク効率に振る代替。",
                   "icon": "ic-package",
-                  "page": 556
+                  "page": 556,
+                  "ruby": "ピーエヌピーエム"
                 },
                 {
                   "name": "ロックファイル",
@@ -13417,7 +13756,8 @@ module.exports = {
               "npm install axios",
               "npm run dev"
             ]
-          }
+          },
+          "term_ruby": "エヌピーエム"
         },
         {
           "id": "yarn",
@@ -13476,13 +13816,15 @@ module.exports = {
                   "name": "npm",
                   "desc": "比較対象でありエコシステムの中心。",
                   "icon": "ic-package",
-                  "page": 554
+                  "page": 554,
+                  "ruby": "エヌピーエム"
                 },
                 {
                   "name": "pnpm",
                   "desc": "もう一つの有力代替。",
                   "icon": "ic-package",
-                  "page": 556
+                  "page": 556,
+                  "ruby": "ピーエヌピーエム"
                 },
                 {
                   "name": "ロックファイル",
@@ -13500,7 +13842,8 @@ module.exports = {
               "yarn add axios",
               "yarn dev"
             ]
-          }
+          },
+          "term_ruby": "ヤーン"
         },
         {
           "id": "pnpm",
@@ -13559,7 +13902,8 @@ module.exports = {
                   "name": "npm",
                   "desc": "エコシステムの基準点。",
                   "icon": "ic-package",
-                  "page": 554
+                  "page": 554,
+                  "ruby": "エヌピーエム"
                 },
                 {
                   "name": "依存関係",
@@ -13583,7 +13927,8 @@ module.exports = {
               "pnpm add axios",
               "pnpm dev"
             ]
-          }
+          },
+          "term_ruby": "ピーエヌピーエム"
         },
         {
           "id": "pip",
@@ -13665,7 +14010,8 @@ module.exports = {
             "lines": [
               "pip install requests"
             ]
-          }
+          },
+          "term_ruby": "ピップ"
         },
         {
           "id": "gem",
@@ -13830,7 +14176,8 @@ module.exports = {
               "cargo add serde",
               "cargo build"
             ]
-          }
+          },
+          "term_ruby": "カーゴ"
         },
         {
           "id": "go-mod",
@@ -14226,7 +14573,8 @@ module.exports = {
                   "name": "npm",
                   "desc": "切り替えたNodeに付いてくるマネージャ。",
                   "icon": "ic-package",
-                  "page": 554
+                  "page": 554,
+                  "ruby": "エヌピーエム"
                 },
                 {
                   "name": "Node.js",
@@ -14386,7 +14734,8 @@ module.exports = {
                   "name": "pip",
                   "desc": "入れたPythonの上で動くインストーラ。",
                   "icon": "ic-package",
-                  "page": 557
+                  "page": 557,
+                  "ruby": "ピップ"
                 },
                 {
                   "name": "mise",
@@ -14481,13 +14830,15 @@ module.exports = {
                   "name": "Bash",
                   "desc": "定番のシェル。",
                   "icon": "ic-file",
-                  "page": 602
+                  "page": 602,
+                  "ruby": "バッシュ"
                 },
                 {
                   "name": "Ghostty",
                   "desc": "端末エミュレータの一例。",
                   "icon": "ic-monitor",
-                  "page": 617
+                  "page": 617,
+                  "ruby": "ゴースティ"
                 }
               ]
             }
@@ -14550,13 +14901,15 @@ module.exports = {
                   "name": "Bash",
                   "desc": "広く使われるシェル。",
                   "icon": "ic-file",
-                  "page": 602
+                  "page": 602,
+                  "ruby": "バッシュ"
                 },
                 {
                   "name": "Zsh",
                   "desc": "macOSデフォルトになったシェル。",
                   "icon": "ic-file",
-                  "page": 603
+                  "page": 603,
+                  "ruby": "ズィーシェル"
                 },
                 {
                   "name": "PATH",
@@ -14625,7 +14978,8 @@ module.exports = {
                   "name": "Zsh",
                   "desc": "対話体験で選ばれやすい兄弟。",
                   "icon": "ic-file",
-                  "page": 603
+                  "page": 603,
+                  "ruby": "ズィーシェル"
                 },
                 {
                   "name": "Shell",
@@ -14641,7 +14995,8 @@ module.exports = {
                 }
               ]
             }
-          ]
+          ],
+          "term_ruby": "バッシュ"
         },
         {
           "id": "zsh",
@@ -14700,7 +15055,8 @@ module.exports = {
                   "name": "Bash",
                   "desc": "スクリプト共通語。",
                   "icon": "ic-file",
-                  "page": 602
+                  "page": 602,
+                  "ruby": "バッシュ"
                 },
                 {
                   "name": "Terminal",
@@ -14716,7 +15072,8 @@ module.exports = {
                 }
               ]
             }
-          ]
+          ],
+          "term_ruby": "ズィーシェル"
         },
         {
           "id": "path",
@@ -14873,7 +15230,8 @@ module.exports = {
             "lines": [
               "ssh user@example.com"
             ]
-          }
+          },
+          "term_ruby": "エスエスエイチ"
         },
         {
           "id": "environment-variable",
@@ -15019,7 +15377,8 @@ module.exports = {
                   "name": "SSH",
                   "desc": "遠隔でプロセスを扱う入口。",
                   "icon": "ic-network",
-                  "page": 605
+                  "page": 605,
+                  "ruby": "エスエスエイチ"
                 }
               ]
             }
@@ -15163,7 +15522,8 @@ module.exports = {
                   "name": "Bash",
                   "desc": "よく実行されるスクリプトの中身。",
                   "icon": "ic-file",
-                  "page": 602
+                  "page": 602,
+                  "ruby": "バッシュ"
                 },
                 {
                   "name": "Process",
@@ -15238,7 +15598,8 @@ module.exports = {
                   "name": "SSH",
                   "desc": "sshd が代表例。",
                   "icon": "ic-network",
-                  "page": 605
+                  "page": 605,
+                  "ruby": "エスエスエイチ"
                 },
                 {
                   "name": "Cron",
@@ -15312,7 +15673,8 @@ module.exports = {
                   "name": "Vim",
                   "desc": "正規表現置換が強い編集器。",
                   "icon": "ic-pen",
-                  "page": 615
+                  "page": 615,
+                  "ruby": "ヴィム"
                 },
                 {
                   "name": "Shell",
@@ -15381,7 +15743,8 @@ module.exports = {
                   "name": "SSH",
                   "desc": "秘密鍵ファイルの権限が厳しい。",
                   "icon": "ic-network",
-                  "page": 605
+                  "page": 605,
+                  "ruby": "エスエスエイチ"
                 },
                 {
                   "name": ".env",
@@ -15468,7 +15831,8 @@ module.exports = {
                   "name": "DNS",
                   "desc": "名前解決の次に疑うポイント（Ch2）。",
                   "icon": "ic-network",
-                  "page": 27
+                  "page": 27,
+                  "ruby": "ディーエヌエス"
                 }
               ]
             }
@@ -15538,7 +15902,8 @@ module.exports = {
                   "name": "HTTP",
                   "desc": "curlが最もよく話す相手（Ch2）。",
                   "icon": "ic-network",
-                  "page": 25
+                  "page": 25,
+                  "ruby": "エイチティーティーピー"
                 },
                 {
                   "name": "ping",
@@ -15627,7 +15992,8 @@ module.exports = {
                   "name": "SSH",
                   "desc": "Vimが真価を発揮する遠隔作業。",
                   "icon": "ic-network",
-                  "page": 605
+                  "page": 605,
+                  "ruby": "エスエスエイチ"
                 },
                 {
                   "name": "正規表現",
@@ -15644,7 +16010,8 @@ module.exports = {
             "lines": [
               "vim README.md"
             ]
-          }
+          },
+          "term_ruby": "ヴィム"
         },
         {
           "id": "markdown",
@@ -15709,13 +16076,15 @@ module.exports = {
                   "name": "Vim",
                   "desc": "Markdownを編集する道具の一例。",
                   "icon": "ic-pen",
-                  "page": 615
+                  "page": 615,
+                  "ruby": "ヴィム"
                 },
                 {
                   "name": "Repository",
                   "desc": "README.mdの置き場（Ch1）。",
                   "icon": "ic-server",
-                  "page": 1
+                  "page": 1,
+                  "ruby": "リポジトリ"
                 }
               ]
             }
@@ -15724,7 +16093,8 @@ module.exports = {
             "who": "John Gruber",
             "when": "2004年",
             "context": "HTMLより軽く書ける文書記法として公開された。"
-          }
+          },
+          "term_ruby": "マークダウン"
         },
         {
           "id": "ghostty",
@@ -15795,11 +16165,13 @@ module.exports = {
                   "name": "Zsh",
                   "desc": "きれいなプロンプトと相性良し。",
                   "icon": "ic-file",
-                  "page": 603
+                  "page": 603,
+                  "ruby": "ズィーシェル"
                 }
               ]
             }
-          ]
+          ],
+          "term_ruby": "ゴースティ"
         },
         {
           "id": "dotenv",

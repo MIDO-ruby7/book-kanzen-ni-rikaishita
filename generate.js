@@ -15,14 +15,26 @@ function esc(str) {
 
 function renderSidebar(groups) {
   if (!groups || groups.length === 0) return '';
-  return groups.map(g => `
+  const normalizedGroups = groups.length === 1
+    ? (() => {
+        const items = groups[0].items || [];
+        if (items.length <= 1) return groups;
+        const splitIndex = items.length === 2 ? 1 : 2;
+        return [
+          { label: groups[0].label || '関連キーワード', items: items.slice(0, splitIndex) },
+          { label: '一緒に覚えたい言葉', items: items.slice(splitIndex) },
+        ];
+      })()
+    : groups;
+
+  return normalizedGroups.map(g => `
     <div class="side-group">
       <div class="group-label">${esc(g.label)}</div>
       ${g.items.map(item => `
       <div class="kw">
         <div class="kw-icon"><svg><use href="icons.svg#${item.icon || 'ic-file'}"/></svg></div>
         <div>
-          <div class="kw-name">${esc(item.name)}</div>
+          <div class="kw-name">${item.ruby ? `<ruby>${esc(item.name)}<rt>${esc(item.ruby)}</rt></ruby>` : esc(item.name)}</div>
           <p class="kw-desc">${esc(item.desc)}</p>
           ${item.page ? `<span class="kw-page">P.${item.page}</span>` : ''}
         </div>
@@ -117,7 +129,7 @@ function renderPage(entry, ch, parity) {
     <div class="title-row">
       <div class="num-col"><div class="number">${entry.page}</div></div>
       <div class="titles">
-        <h1>${esc(entry.term)}</h1>
+        <h1>${entry.term_ruby ? `<ruby>${esc(entry.term)}<rt>${esc(entry.term_ruby)}</rt></ruby>` : esc(entry.term)}</h1>
       </div>
     </div>
 

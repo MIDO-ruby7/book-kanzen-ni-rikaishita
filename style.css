@@ -201,6 +201,7 @@ body { margin: 0; }
 .kw .kw-icon { color: var(--ink); }
 .kw .kw-icon svg { width: 10mm; height: 10mm; }
 .kw .kw-name { font-size: 10.5pt; font-weight: 700; line-height: 1.25; }
+.kw .kw-name rt { font-size: 6.8pt; font-weight: 600; color: var(--ink-soft); }
 .kw .kw-desc { font-size: 7.8pt; line-height: 1.45; margin: 1mm 0 1.5mm; color: var(--ink-soft); }
 .kw .kw-page { display: inline-block; font-size: 7.5pt; color: var(--ink-soft); border: 1px solid var(--rule-strong); border-radius: 1mm; padding: .3mm 2mm; }
 
