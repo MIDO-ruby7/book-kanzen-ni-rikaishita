@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>エンジニア用語辞典 — Factory</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto compact">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 10</b>テスト</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">522</div></div>
+      <div class="titles">
+        <h1><ruby>Factory<rt>ファクトリ</rt></ruby></h1>
+      </div>
+    </div>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>テスト用データを、必要な形で動的に生成するための仕組み・パターン。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>Fixtureの静的データだけでは、ケースごとに少し違うデータが必要になると管理が破綻する。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>テストごとにハッシュやSQLを手で組み立てていた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>手組みデータ</th><th class="h-docker">Factory</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">バリエーション</td><td>コピペ増殖</td><td class="h-docker">引数で差分だけ指定</td></tr>
+            <tr><td class="rowhead">保守</td><td>壊れやすい</td><td class="h-docker">生成口が一箇所</td></tr>
+            <tr><td class="rowhead">可读性</td><td>ノイズが多い</td><td class="h-docker">意図が残る</td></tr>
+            <tr><td class="rowhead">速度</td><td>——</td><td class="h-docker">必要分だけ作れる</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>Factory で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">テストデータを柔軟に作れる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-file"/></svg><div class="cap">ケースごとの差分が書きやすい</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">Fixtureと使い分けできる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>FactoryBot などライブラリ名で語られることも。<br>
+         「工場で組み立てる」イメージ。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="fixture.html">Fixture</a></div>
+          <p class="kw-desc">静的寄りのテストデータ。</p>
+          <a class="kw-page" href="fixture.html">P.505</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="unit-test.html">Unit Test</a></div>
+          <p class="kw-desc">Factoryの出番が多い層。</p>
+          <a class="kw-page" href="unit-test.html">P.500</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="seeder.html">Seeder</a></div>
+          <p class="kw-desc">アプリ側の初期データ投入。</p>
+          <a class="kw-page" href="seeder.html">P.115</a>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">522</span>
+    <span>エンジニア用語辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

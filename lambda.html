@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>エンジニア用語辞典 — Lambda</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto compact">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 18</b>AWS</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">809</div></div>
+      <div class="titles">
+        <h1><ruby>Lambda<rt>ラムダ</rt></ruby></h1>
+      </div>
+    </div>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>サーバーを常時立てず、イベントに応じて関数を実行するサーバレス計算サービス。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>たまにしか動かない処理のために、常時サーバーを張りたくない。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>小さなバッチやWebhook受けも、EC2や常駐プロセスで受けていた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>常駐サーバー</th><th class="h-docker">Lambda</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">起動</td><td>常時ON</td><td class="h-docker">呼ばれたときだけ動く</td></tr>
+            <tr><td class="rowhead">スケール</td><td>台数設計</td><td class="h-docker">同時実行で伸びやすい</td></tr>
+            <tr><td class="rowhead">運用</td><td>OSまで見る</td><td class="h-docker">関数と権限が中心</td></tr>
+            <tr><td class="rowhead">向き不向き</td><td>何でも載せがち</td><td class="h-docker">短時間・イベント向き</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>Lambda で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">イベント駆動で処理を実行できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">常時サーバー代を抑えやすい</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">S3やAPI Gatewayとつなぎやすい</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>コールドスタートや実行時間制限がある。<br>
+         「全部Lambda」は設計を見誤るとつらい。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="api-gateway.html">API Gateway</a></div>
+          <p class="kw-desc">HTTPの入口としてよく組む。</p>
+          <a class="kw-page" href="api-gateway.html">P.816</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="s3.html">S3</a></div>
+          <p class="kw-desc">アップロードイベントの定番トリガー。</p>
+          <a class="kw-page" href="s3.html">P.810</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="cloudwatch.html">CloudWatch</a></div>
+          <p class="kw-desc">ログやメトリクスの受け皿。</p>
+          <a class="kw-page" href="cloudwatch.html">P.818</a>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">809</span>
+    <span>エンジニア用語辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

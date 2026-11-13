@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>エンジニア用語辞典 — grep</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto compact">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 12</b>Linux・ターミナル</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">619</div></div>
+      <div class="titles">
+        <h1><ruby>grep<rt>グレップ</rt></ruby></h1>
+      </div>
+    </div>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>テキストの中から、条件に合う行を探し出す定番コマンド（系）。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>大きなログやコードから、目的の文字列を目視で探すのは限界がある。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>エディタの検索だけに頼り、ファイルを一つずつ開いていた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>手検索</th><th class="h-docker">grep</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">範囲</td><td>開いたファイル</td><td class="h-docker">ディレクトリ横断も可</td></tr>
+            <tr><td class="rowhead">条件</td><td>固定文字</td><td class="h-docker">正規表現も使える</td></tr>
+            <tr><td class="rowhead">速度</td><td>遅い</td><td class="h-docker">大量テキスト向き</td></tr>
+            <tr><td class="rowhead">連携</td><td>弱い</td><td class="h-docker">パイプで次の処理へ</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>grep で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-file"/></svg><div class="cap">大量テキストから目的行を抜ける</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">正規表現検索の入口になる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">ログ調査やコード検索に使える</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>rg（ripgrep）や ag など高速な後継も「grep系」と呼ばれる。<br>
+         サイドバーの「grep系」はこの一族の総称。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="regex.html">正規表現</a></div>
+          <p class="kw-desc">grepの条件記述に使う。</p>
+          <a class="kw-page" href="regex.html">P.611</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="terminal.html">Terminal</a></div>
+          <p class="kw-desc">grepを打つ場所。</p>
+          <a class="kw-page" href="terminal.html">P.600</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="log.html">ログ</a></div>
+          <p class="kw-desc">grepの代表的な検索対象。</p>
+          <a class="kw-page" href="log.html">P.525</a>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">619</span>
+    <span>エンジニア用語辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

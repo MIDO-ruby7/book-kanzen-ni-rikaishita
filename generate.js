@@ -13,20 +13,104 @@ function esc(str) {
     .replace(/>/g, '&gt;');
 }
 
+// 掲載済み用語 → ファイル名・ページ番号。関連キーワードのリンク／ページ補正に使う
+function buildEntryIndex(chapters) {
+  const records = [];
+  for (const ch of chapters) {
+    for (const entry of ch.entries) {
+      if (entry.skip) continue;
+      records.push({
+        term: entry.term,
+        reading: entry.reading || '',
+        id: entry.id,
+        page: entry.existing_page || entry.page,
+        file: entry.existing_file || `${entry.id}.html`,
+      });
+    }
+  }
+
+  function resolve(name) {
+    if (!name) return null;
+    const exact = records.find(e => e.term === name);
+    if (exact) return exact;
+    const ci = records.find(e => e.term.toLowerCase() === name.toLowerCase());
+    if (ci) return ci;
+    // 「バニラ」→ reading が一致する Vanilla JS など
+    const byReading = records.find(e => e.reading === name);
+    if (byReading) return byReading;
+    // 手書きページの「VM（仮想マシン）」→「VM」
+    const stripped = name.replace(/[（(].*$/, '').trim();
+    if (stripped && stripped !== name) {
+      const byStrip = records.find(e => e.term === stripped || e.term.toLowerCase() === stripped.toLowerCase());
+      if (byStrip) return byStrip;
+    }
+    return null;
+  }
+
+  return { records, resolve };
+}
+
+const entryIndex = buildEntryIndex(content.chapters);
+
 function renderSidebar(groups) {
   if (!groups || groups.length === 0) return '';
-  return groups.map(g => `
-    <div class="side-group">
-      <div class="group-label">${esc(g.label)}</div>
-      ${g.items.map(item => `
-      <div class="kw">
+  return groups.map(g => {
+    // サイドバー見出し「関連キーワード」と重複するラベルは出さない
+    const showLabel = g.label && g.label !== '関連キーワード';
+    const labelHtml = showLabel ? `\n      <div class="group-label">${esc(g.label)}</div>` : '';
+    const itemsHtml = g.items.map(item => {
+      const hit = entryIndex.resolve(item.name);
+      const page = hit ? hit.page : item.page;
+      const href = hit ? hit.file : null;
+      const nameHtml = href
+        ? `<a class="kw-link" href="${esc(href)}">${esc(item.name)}</a>`
+        : esc(item.name);
+      const pageHtml = page
+        ? (href
+          ? `<a class="kw-page" href="${esc(href)}">P.${page}</a>`
+          : `<span class="kw-page">P.${page}</span>`)
+        : '';
+      return `
+      <div class="kw${href ? ' kw-linked' : ''}">
         <div>
-          <div class="kw-name">${esc(item.name)}</div>
+          <div class="kw-name">${nameHtml}</div>
           <p class="kw-desc">${esc(item.desc)}</p>
-          ${item.page ? `<span class="kw-page">P.${item.page}</span>` : ''}
+          ${pageHtml}
         </div>
-      </div>`).join('')}
-    </div>`).join('');
+      </div>`;
+    }).join('');
+    return `
+    <div class="side-group">${labelHtml}${itemsHtml}
+    </div>`;
+  }).join('');
+}
+
+// 手書きHTML（existing_file）の関連キーワードにも、同じ解決ルールでリンクを付与する
+function linkifyExistingSidebar(html) {
+  return html.replace(
+    /<div class="kw(?:\s+kw-linked)?">\s*<div>\s*<div class="kw-name">(?:<a class="kw-link"[^>]*>)?([^<]+)(?:<\/a>)?<\/div>\s*<p class="kw-desc">([\s\S]*?)<\/p>\s*(?:<(?:span|a) class="kw-page"[^>]*>P\.\d+<\/(?:span|a)>)?\s*<\/div>\s*<\/div>/g,
+    (_full, nameRaw, desc) => {
+      const name = nameRaw.trim();
+      const hit = entryIndex.resolve(name);
+      if (!hit) {
+        const pageMatch = _full.match(/P\.(\d+)/);
+        const pageHtml = pageMatch ? `\n          <span class="kw-page">P.${pageMatch[1]}</span>` : '';
+        return `<div class="kw">
+        <div>
+          <div class="kw-name">${esc(name)}</div>
+          <p class="kw-desc">${desc}</p>${pageHtml}
+        </div>
+      </div>`;
+      }
+      return `<div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="${esc(hit.file)}">${esc(name)}</a></div>
+          <p class="kw-desc">${desc}</p>
+          <a class="kw-page" href="${esc(hit.file)}">P.${hit.page}</a>
+        </div>
+      </div>`;
+    }
+  );
 }
 
 // 見出し（h1）の英数字の字幅（em）。Hiragino Sans W8・palt で実測した値。
@@ -81,7 +165,7 @@ function renderPage(entry, ch, parity) {
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<title>差分でわかる エンジニアのゆるい辞典 — ${esc(entry.term)}</title>
+<title>エンジニア用語辞典 — ${esc(entry.term)}</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -164,7 +248,7 @@ function renderPage(entry, ch, parity) {
   <!-- ===== フッター ===== -->
   <footer class="page-foot">
     <span class="folio">${entry.page}</span>
-    <span>差分でわかる エンジニアのゆるい辞典</span>
+    <span>エンジニア用語辞典</span>
   </footer>
 
 </article>
@@ -195,8 +279,13 @@ sortedForParity.forEach(({ entry }, idx) => {
 allEntries.forEach(({ entry, ch }) => {
     if (entry.skip) { skipped.push(entry.id); return; }
 
-    // 既存の手書きHTMLを使う場合はファイル生成をスキップ
+    // 既存の手書きHTMLを使う場合は本文を残し、関連キーワードのリンク／ページだけ補正
     if (entry.existing_file) {
+      const existingPath = path.join(OUT_DIR, entry.existing_file);
+      if (fs.existsSync(existingPath)) {
+        const patched = linkifyExistingSidebar(fs.readFileSync(existingPath, 'utf8'));
+        fs.writeFileSync(existingPath, patched, 'utf8');
+      }
       generated.push({ file: entry.existing_file, page: entry.existing_page || entry.page, term: entry.term, ch: ch.number });
       return;
     }
@@ -214,13 +303,23 @@ const entryLines = sorted.map(e => {
   return `    '${e.file}',${pad}// ${e.page} ${e.term} (Ch${e.ch})`;
 }).join('\n');
 
+// 目次を content.js から生成（1語1リンク）
+require('child_process').execFileSync(process.execPath, [path.join(__dirname, 'scripts', 'generate-toc.js')], {
+  stdio: 'inherit',
+});
+
 const config = `module.exports = {
-  title: '差分でわかる エンジニアのゆるい辞典',
+  title: 'エンジニア用語辞典',
   language: 'ja',
   size: 'JIS-B5',
   theme: './style.css',
   entry: [
+    'cover.html',                      // 表紙
+    'howto.html',                      // 使い方
+    'toc.html',                        // 目次
 ${entryLines}
+    'afterword.html',                  // あとがき
+    'colophon.html',                   // 奥付け
   ],
   output: ['book.pdf'],
 };`;
@@ -229,4 +328,4 @@ fs.writeFileSync(path.join(OUT_DIR, 'vivliostyle.config.js'), config, 'utf8');
 
 console.log(`\n生成完了: ${generated.length} ページ`);
 if (skipped.length) console.log(`スキップ: ${skipped.join(', ')}`);
-console.log('vivliostyle.config.js を更新しました');
+console.log('vivliostyle.config.js を更新しました（表紙・目次つき）');

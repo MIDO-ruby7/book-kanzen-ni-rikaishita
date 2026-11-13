@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>エンジニア用語辞典 — Cloud SQL</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto compact">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 19</b>GCP</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">853</div></div>
+      <div class="titles">
+        <h1 style="font-size:34pt"><ruby>Cloud SQL<rt>クラウドエスキューエル</rt></ruby></h1>
+      </div>
+    </div>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>MySQL / PostgreSQL などをマネージドで使える、GCPのリレーショナルDB。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>DBのバックアップやパッチを、アプリ開発の横でやり続けるのはきつい。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>Compute Engine上にDBを自前構築していた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>自前DB VM</th><th class="h-docker">Cloud SQL</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">運用</td><td>OSから自分</td><td class="h-docker">マネージドに寄せられる</td></tr>
+            <tr><td class="rowhead">バックアップ</td><td>自作</td><td class="h-docker">機能として用意される</td></tr>
+            <tr><td class="rowhead">接続</td><td>IP直</td><td class="h-docker">IAMやコネクタ等の選択肢</td></tr>
+            <tr><td class="rowhead">対比</td><td>——</td><td class="h-docker">AWS RDSに相当</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>Cloud SQL で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-database"/></svg><div class="cap">定番RDBをGCP上で借りられる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">運用雑務を減らせる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">アプリは接続先変更で移行しやすい</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>Cloud SQL。SpannerやFirestoreとは役割が違う。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="rds.html">RDS</a></div>
+          <p class="kw-desc">AWS側の対応。</p>
+          <a class="kw-page" href="rds.html">P.811</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="postgresql.html">PostgreSQL</a></div>
+          <p class="kw-desc">選べるエンジンの一例。</p>
+          <a class="kw-page" href="postgresql.html">P.128</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="cloud-run.html">Cloud Run</a></div>
+          <p class="kw-desc">アプリ側の実行環境例。</p>
+          <a class="kw-page" href="cloud-run.html">P.850</a>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">853</span>
+    <span>エンジニア用語辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

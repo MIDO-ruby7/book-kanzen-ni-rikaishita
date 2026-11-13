@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>エンジニア用語辞典 — Cloud Storage</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso compact">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 19</b>GCP</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">852</div></div>
+      <div class="titles">
+        <h1 style="font-size:24pt"><ruby>Cloud Storage<rt>クラウドストレージ</rt></ruby></h1>
+      </div>
+    </div>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>オブジェクト（ファイル）を置く、GCPのマネージドストレージ。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>画像やバックアップをインスタンスのディスクに置くと、すぐ限界が来る。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>サーバローカルや共有ディスクにファイルを置いていた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>ローカルディスク</th><th class="h-docker">Cloud Storage</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">容量</td><td>ディスク依存</td><td class="h-docker">オブジェクトとして大きく預けられる</td></tr>
+            <tr><td class="rowhead">共有</td><td>コピー</td><td class="h-docker">権限付きで共有しやすい</td></tr>
+            <tr><td class="rowhead">耐久</td><td>一台リスク</td><td class="h-docker">冗長化された置き場</td></tr>
+            <tr><td class="rowhead">対比</td><td>——</td><td class="h-docker">AWS S3に相当</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>Cloud Storage で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-package"/></svg><div class="cap">ファイルをクラウドに預けられる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-network"/></svg><div class="cap">配信やバックアップの土台になる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">他GCPサービスと連携しやすい</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>バケットにオブジェクト。S3と同系統の概念。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="s3.html">S3</a></div>
+          <p class="kw-desc">AWS側の対応サービス。</p>
+          <a class="kw-page" href="s3.html">P.810</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="cloud-cdn.html">Cloud CDN</a></div>
+          <p class="kw-desc">配信を速くする前段。</p>
+          <a class="kw-page" href="cloud-cdn.html">P.855</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="cloud-functions.html">Cloud Functions</a></div>
+          <p class="kw-desc">オブジェクトイベントで起動することも。</p>
+          <a class="kw-page" href="cloud-functions.html">P.854</a>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">852</span>
+    <span>エンジニア用語辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

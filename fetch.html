@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>エンジニア用語辞典 — Fetch</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso compact">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 1</b>Git・GitHub</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">26</div></div>
+      <div class="titles">
+        <h1><ruby>Fetch<rt>フェッチ</rt></ruby></h1>
+      </div>
+    </div>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>リモートの更新を取得だけし、自分の作業枝にはまだ取り込まない操作。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>pullするとすぐマージまで走るので、先に「何が来たか」だけ見たいときに困る。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>更新確認のつもりが、その場で作業中の枝に混ざってしまうことがあった。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>いきなりpull</th><th class="h-docker">Fetch</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">取得</td><td>取得＋統合</td><td class="h-docker">取得だけ</td></tr>
+            <tr><td class="rowhead">安全</td><td>衝突が突然</td><td class="h-docker">見てから判断できる</td></tr>
+            <tr><td class="rowhead">確認</td><td>ログが流れる</td><td class="h-docker">リモート追跡枝を見られる</td></tr>
+            <tr><td class="rowhead">次の一手</td><td>固定</td><td class="h-docker">mergeでもrebaseでも選べる</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>Fetch で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-package"/></svg><div class="cap">リモートの差分を先に取り込める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">統合前に内容を確認できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-undo"/></svg><div class="cap">取り込み方をあとから選べる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>pull ≒ fetch + merge（設定次第ではrebase）。<br>
+         「まずfetch」は慎重派の定番。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="pull.html">Pull</a></div>
+          <p class="kw-desc">取得して取り込む一連の操作。</p>
+          <a class="kw-page" href="pull.html">P.7</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="merge.html">Merge</a></div>
+          <p class="kw-desc">fetchのあとに選べる統合。</p>
+          <a class="kw-page" href="merge.html">P.8</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="origin.html">Origin</a></div>
+          <p class="kw-desc">fetchする相手の名前。</p>
+          <a class="kw-page" href="origin.html">P.19</a>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">26</span>
+    <span>エンジニア用語辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

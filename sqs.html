@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>エンジニア用語辞典 — SQS</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto compact">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 18</b>AWS</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">817</div></div>
+      <div class="titles">
+        <h1><ruby>SQS<rt>エスキューエス</rt></ruby></h1>
+      </div>
+    </div>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>メッセージをキューに溜めて、後続処理へ非同期で渡すマネージドキュー。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>重い処理をリクエストのその場でやると、タイムアウトや再実行がつらい。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>同期APIの中で全部やり切るか、自前のジョブテーブルで再実行していた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>同期で全部処理</th><th class="h-docker">SQS</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">受け渡し</td><td>その場で実行</td><td class="h-docker">キューに入れて後で処理</td></tr>
+            <tr><td class="rowhead">ピーク</td><td>サーバーが落ちる</td><td class="h-docker">溜めてならせる</td></tr>
+            <tr><td class="rowhead">再試行</td><td>自前</td><td class="h-docker">可視性タイムアウト等で再配信</td></tr>
+            <tr><td class="rowhead">結合</td><td>強い</td><td class="h-docker">生産者と消費者を分けられる</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>SQS で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-layers"/></svg><div class="cap">処理を非同期に切り離せる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">ピークを緩衝できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">失敗時の再処理設計がしやすい</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>Simple Queue Service。<br>
+         Pub/SubのSNSと組み合わせることも多い。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="lambda.html">Lambda</a></div>
+          <p class="kw-desc">キューをトリガーに実行できる。</p>
+          <a class="kw-page" href="lambda.html">P.809</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="pubsub.html">Pub/Sub</a></div>
+          <p class="kw-desc">近い非同期の考え方。</p>
+          <a class="kw-page" href="pubsub.html">P.96</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="webhook.html">Webhook</a></div>
+          <p class="kw-desc">受けた通知をキューへ逃がすこともある。</p>
+          <a class="kw-page" href="webhook.html">P.95</a>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">817</span>
+    <span>エンジニア用語辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>エンジニア用語辞典 — CloudFront</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto compact">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 18</b>AWS</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">813</div></div>
+      <div class="titles">
+        <h1 style="font-size:31pt"><ruby>CloudFront<rt>クラウドフロント</rt></ruby></h1>
+      </div>
+    </div>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>世界のエッジからコンテンツを配る、AWSのCDNサービス。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>オリジン（本丸）に毎回取りに行くと、遠いユーザーほど遅くなる。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>アプリサーバーやS3から直接配信し、遅延と負荷をそのまま受けていた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>オリジン直配信</th><th class="h-docker">CloudFront</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">距離</td><td>遠いと遅い</td><td class="h-docker">近いエッジから返す</td></tr>
+            <tr><td class="rowhead">負荷</td><td>オリジン集中</td><td class="h-docker">キャッシュで緩和</td></tr>
+            <tr><td class="rowhead">HTTPS</td><td>自分で終端</td><td class="h-docker">証明書とセットで扱いやすい</td></tr>
+            <tr><td class="rowhead">用途</td><td>静的も動的も</td><td class="h-docker">静的配信が特に定番</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>CloudFront で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-network"/></svg><div class="cap">コンテンツを高速に届けられる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">オリジンの負荷を減らせる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">S3静的配信と組み合わせやすい</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>CDNのAWS版。キャッシュ消しも運用の一部。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="s3.html">S3</a></div>
+          <p class="kw-desc">オリジンの定番。</p>
+          <a class="kw-page" href="s3.html">P.810</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="route53.html">Route 53</a></div>
+          <p class="kw-desc">ドメイン側の名前解決。</p>
+          <a class="kw-page" href="route53.html">P.814</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="alb.html">ALB</a></div>
+          <p class="kw-desc">動的オリジンになりうる。</p>
+          <a class="kw-page" href="alb.html">P.801</a>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">813</span>
+    <span>エンジニア用語辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

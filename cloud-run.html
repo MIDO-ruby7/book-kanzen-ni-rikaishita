@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>エンジニア用語辞典 — Cloud Run</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso compact">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 19</b>GCP</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">850</div></div>
+      <div class="titles">
+        <h1 style="font-size:34pt"><ruby>Cloud Run<rt>クラウドラン</rt></ruby></h1>
+      </div>
+    </div>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>コンテナを、リクエストに応じてスケールさせて動かすGCPのサービス。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>コンテナでアプリはできた。サーバー常時張りは無駄で、Kubernetesまでは重い。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>GCE（仮想マシン）に常時デプロイするか、GKEの学習コストを払っていた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>常時VM / 重いK8s</th><th class="h-docker">Cloud Run</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">単位</td><td>サーバー</td><td class="h-docker">コンテナサービス</td></tr>
+            <tr><td class="rowhead">スケール</td><td>手管理</td><td class="h-docker">リクエストに応じて伸び縮み</td></tr>
+            <tr><td class="rowhead">運用</td><td>OSまで</td><td class="h-docker">コンテナと設定が中心</td></tr>
+            <tr><td class="rowhead">ゼロスケール</td><td>しにくい</td><td class="h-docker">閑散時は縮めやすい</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>Cloud Run で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">コンテナを手軽に本番公開できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">負荷に合わせて自動で伸び縮みしやすい</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">K8sより入口が低い</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>AWSでいうとFargate＋ALB寄りの体験に近い、と言われることも。<br>
+         HTTP向き。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="gke.html">GKE</a></div>
+          <p class="kw-desc">もっと制御したいときのK8s。</p>
+          <a class="kw-page" href="gke.html">P.851</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="cloud-functions.html">Cloud Functions</a></div>
+          <p class="kw-desc">もっと小さい関数単位。</p>
+          <a class="kw-page" href="cloud-functions.html">P.854</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="artifact-registry.html">Artifact Registry</a></div>
+          <p class="kw-desc">イメージの置き場。</p>
+          <a class="kw-page" href="artifact-registry.html">P.856</a>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">850</span>
+    <span>エンジニア用語辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

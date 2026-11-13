@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>エンジニア用語辞典 — ファイアウォール</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso compact">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 23</b>セキュリティ</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">904</div></div>
+      <div class="titles">
+        <h1 style="font-size:25pt"><ruby>ファイアウォール<rt>ファイアウォール</rt></ruby></h1>
+      </div>
+    </div>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>IPやポートなどの条件で、通信を許可・遮断する防御の仕組み。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>全部の通信を通すと、不要な入口まで世界に開いてしまう。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>サーバーに直接露出させ、アプリケーション側の努力だけに頼っていた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>全部開ける</th><th class="h-docker">ファイアウォール</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">入口</td><td>無制限</td><td class="h-docker">必要な通信だけ許可</td></tr>
+            <tr><td class="rowhead">層</td><td>アプリ頼り</td><td class="h-docker">ネットワーク層でも防御</td></tr>
+            <tr><td class="rowhead">運用</td><td>場当たり</td><td class="h-docker">ルールとして管理</td></tr>
+            <tr><td class="rowhead">WAFとの差</td><td>混同</td><td class="h-docker">L7を見るのがWAF寄り</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>ファイアウォール で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-server"/></svg><div class="cap">不要な通信を遮断できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">許可リストで入口を最小化できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-network"/></svg><div class="cap">WAFなど上位防御と役割分担できる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>防火壁。古典的なネットワーク防御。<br>
+         WAFはWebアプリ向けの、より上位の防火壁イメージ。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="waf.html">WAF</a></div>
+          <p class="kw-desc">Web向けの応用防火壁。</p>
+          <a class="kw-page" href="waf.html">P.901</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="port.html">Port</a></div>
+          <p class="kw-desc">許可・遮断の単位になりやすい。</p>
+          <a class="kw-page" href="port.html">P.52</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="vpn.html">VPN</a></div>
+          <p class="kw-desc">閉じた通信路を作る別手段。</p>
+          <a class="kw-page" href="vpn.html">P.62</a>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">904</span>
+    <span>エンジニア用語辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

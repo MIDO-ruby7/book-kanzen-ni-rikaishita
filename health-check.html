@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>エンジニア用語辞典 — ヘルスチェック</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto compact">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 18</b>AWS</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">803</div></div>
+      <div class="titles">
+        <h1 style="font-size:29pt"><ruby>ヘルスチェック<rt>ヘルスチェック</rt></ruby></h1>
+      </div>
+    </div>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>サーバーやコンテナが正常に応答しているかを、定期的に確かめること。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>死んでいるサーバーにリクエストを送り続けると、エラーが増えるだけになる。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>障害はユーザ報告で知り、該当台を人手で外していた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>人手監視</th><th class="h-docker">ヘルスチェック</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">検知</td><td>遅い</td><td class="h-docker">定期的に自動確認</td></tr>
+            <tr><td class="rowhead">切り離し</td><td>手動</td><td class="h-docker">LBが自動で外せる</td></tr>
+            <tr><td class="rowhead">復帰</td><td>忘れる</td><td class="h-docker">回復したら戻せる</td></tr>
+            <tr><td class="rowhead">基準</td><td>曖昧</td><td class="h-docker">パスやステータスで定義</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>ヘルスチェック で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">異常な台を自動で検知できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-network"/></svg><div class="cap">振り分けから外せる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-undo"/></svg><div class="cap">回復後に戻せる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>「生きてる？」の定期確認。パスやステータスコードで判定することが多い。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="alb.html">ALB</a></div>
+          <p class="kw-desc">ヘルスチェック結果で振り分ける。</p>
+          <a class="kw-page" href="alb.html">P.801</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="load-balancer.html">Load Balancer</a></div>
+          <p class="kw-desc">総称側。</p>
+          <a class="kw-page" href="load-balancer.html">P.802</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="target-group.html">ターゲットグループ</a></div>
+          <p class="kw-desc">チェック対象のまとまり。</p>
+          <a class="kw-page" href="target-group.html">P.804</a>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">803</span>
+    <span>エンジニア用語辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>エンジニア用語辞典 — マージツール</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto compact">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 1</b>Git・GitHub</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">33</div></div>
+      <div class="titles">
+        <h1 style="font-size:34pt"><ruby>マージツール<rt>マージツール</rt></ruby></h1>
+      </div>
+    </div>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>コンフリクトした双方の差分を見比べながら、解決を助けるツール。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>衝突マーカーが並ぶファイルを、テキストだけで直すのは神経を消耗する。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>&lt;&lt;&lt;&lt;&lt; を目視で消して、どっちを残すか勘で選んでいた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>手編集</th><th class="h-docker">マージツール</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">見え方</td><td>マーカー文字列</td><td class="h-docker">左右（または3ペイン）で比較</td></tr>
+            <tr><td class="rowhead">判断</td><td>疲れやすい</td><td class="h-docker">差分が視覚的</td></tr>
+            <tr><td class="rowhead">ミス</td><td>消し残し</td><td class="h-docker">ツールがマーカー管理を助ける</td></tr>
+            <tr><td class="rowhead">学習</td><td>怖い</td><td class="h-docker">慣れると速い</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>マージツール で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-monitor"/></svg><div class="cap">衝突箇所を視覚的に比較できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">消し残しなどのミスを減らせる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-users"/></svg><div class="cap">チームで同じ解き方を共有しやすい</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>VS CodeのマージUIや、専用diffツールがこれにあたる。<br>
+         「ツールに任せきり」ではなく、最終判断は自分。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="conflict.html">Conflict</a></div>
+          <p class="kw-desc">マージツールの出番。</p>
+          <a class="kw-page" href="conflict.html">P.11</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="diff.html">Diff</a></div>
+          <p class="kw-desc">比較表示の基本。</p>
+          <a class="kw-page" href="diff.html">P.23</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="merge.html">Merge</a></div>
+          <p class="kw-desc">衝突が起きうる操作。</p>
+          <a class="kw-page" href="merge.html">P.8</a>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">33</span>
+    <span>エンジニア用語辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>エンジニア用語辞典 — HEAD</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto compact">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 1</b>Git・GitHub</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">29</div></div>
+      <div class="titles">
+        <h1><ruby>HEAD<rt>ヘッド</rt></ruby></h1>
+      </div>
+    </div>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>今チェックアウトしているコミット（いまいる位置）を指すポインタ。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>「今どのコミットを見ているか」が分からないと、resetやrebaseの説明が頭に入らない。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>今開いているフォルダが最新、くらいの感覚で進めていた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>今のフォルダ感覚</th><th class="h-docker">HEAD</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">現在地</td><td>曖昧</td><td class="h-docker">名前で指せる</td></tr>
+            <tr><td class="rowhead">移動</td><td>ファイルを差し替え</td><td class="h-docker">HEADが動く</td></tr>
+            <tr><td class="rowhead">detached</td><td>概念なし</td><td class="h-docker">タグやSHA直指定で起きる</td></tr>
+            <tr><td class="rowhead">説明</td><td>口伝</td><td class="h-docker">ドキュメントの共通語になる</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>HEAD で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-cube"/></svg><div class="cap">「今いる位置」を言葉にできる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-undo"/></svg><div class="cap">resetやrebaseの説明が読める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-file"/></svg><div class="cap">相対参照（HEAD~1）が使える</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>HEADは「頭」。今見ている先端。<br>
+         detached HEADは、枝名ではなくコミット直付けで見ている状態。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="checkout.html">Checkout</a></div>
+          <p class="kw-desc">HEADを動かす操作。</p>
+          <a class="kw-page" href="checkout.html">P.24</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="reset.html">Reset</a></div>
+          <p class="kw-desc">HEADの位置を付け替える。</p>
+          <a class="kw-page" href="reset.html">P.13</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="rebase.html">Rebase</a></div>
+          <p class="kw-desc">HEADの履歴を付け替える操作。</p>
+          <a class="kw-page" href="rebase.html">P.9</a>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">29</span>
+    <span>エンジニア用語辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

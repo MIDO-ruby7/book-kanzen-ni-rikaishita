@@ -1,5 +1,5 @@
 /* =========================================================
-   差分でわかる エンジニアのゆるい辞典 — 1ページ1項目テンプレート
+   エンジニア用語辞典 — 1ページ1項目テンプレート
    図・文字・表を差し替えるだけで同じレイアウトが再現できる。
    構造は index.html / template.html を参照。
    ========================================================= */
@@ -36,14 +36,23 @@ html {
 body { margin: 0; }
 
 /* size:B5 キーワードはISO B5(176x250mm)に解決され、JIS B5(182x257mm)を
-   前提にした --page-w とズレて右端が欠けるため、実寸をmm指定する */
-@page { size: 182mm 257mm; margin: 0; }
+   前提にした --page-w とズレて右端が欠けるため、実寸をmm指定する。
+   既定は目次など流し込みページ用に余白あり。表紙・用語ページは page:full で余白0。 */
+@page {
+  size: 182mm 257mm;
+  margin: 18mm 13mm 20mm 13mm;
+}
+@page full {
+  size: 182mm 257mm;
+  margin: 0;
+}
 
 /* =========================================================
    ページbox：固定サイズ。サイドバー／フッターは絶対配置で
    本文フローと切り離す（Grid のページ跨ぎ分割を回避）。
    ========================================================= */
 .entry {
+  page: full;
   position: relative;
   width: var(--page-w);
   height: 256mm;                 /* 実効ページ高(257mm)より少し小さく安全マージンを確保 */
@@ -176,8 +185,465 @@ body { margin: 0; }
 .kw:last-child { margin-bottom: 0; }
 .kw .kw-name { font-size: 10.5pt; font-weight: 700; line-height: 1.25; }
 .kw .kw-desc { font-size: 7.8pt; line-height: 1.45; margin: 1mm 0 1.5mm; color: var(--ink-soft); }
-.kw .kw-page { display: inline-block; font-size: 7.5pt; color: var(--ink-soft); border: 1px solid var(--rule-strong); border-radius: 1mm; padding: .3mm 2mm; }
+.kw .kw-page { display: inline-block; font-size: 7.5pt; color: var(--ink-soft); border: 1px solid var(--rule-strong); border-radius: 1mm; padding: .3mm 2mm; text-decoration: none; }
+.kw a.kw-link { color: inherit; text-decoration: none; }
+.kw a.kw-link:hover,
+.kw a.kw-page:hover { color: var(--teal-dark); }
 
 .side-memo { margin-top: 3.5mm; background: var(--teal-panel); border-radius: 2mm; padding: 2.8mm 3.5mm; }
 .side-memo .lbl { color: var(--teal-dark); font-weight: 700; font-size: 9.5pt; margin-bottom: 1.5mm; }
 .side-memo p { margin: 0; font-size: 7.8pt; line-height: 1.5; }
+
+/* =========================================================
+   表紙
+   ========================================================= */
+.cover-page {
+  page: full;
+  position: relative;
+  width: var(--page-w);
+  height: 257mm;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  break-after: page;
+  page-break-after: always;
+}
+.cover-page img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+/* =========================================================
+   目次（1語 = 1リンク。対比ペアを1行にまとめない）
+   ========================================================= */
+.toc-doc {
+  width: auto;
+  min-height: 0;
+  padding: 0;
+  box-sizing: border-box;
+  columns: 2;
+  column-gap: 7mm;
+  column-fill: balance;
+}
+.toc-head {
+  column-span: all;
+  margin-bottom: 4.5mm;
+  padding-bottom: 3mm;
+  border-bottom: 2pt solid var(--teal);
+}
+.toc-kicker {
+  margin: 0 0 1.5mm;
+  font-size: 9pt;
+  color: var(--ink-soft);
+  letter-spacing: .06em;
+}
+.toc-head h1 {
+  margin: 0;
+  font-size: 26pt;
+  font-weight: 800;
+  line-height: 1.1;
+  color: var(--ink);
+}
+.toc-sub {
+  margin: 2mm 0 0;
+  font-size: 9pt;
+  color: var(--ink-soft);
+}
+.toc-hint {
+  margin: 1.5mm 0 0;
+  font-size: 8.5pt;
+  color: var(--teal-dark);
+  font-weight: 600;
+}
+.toc-chapter {
+  /* 大きな章はカラムをまたいで流す（avoid だと左カラムだけ埋まって空白ページが増える） */
+  break-inside: auto;
+  margin: 0 0 3.5mm;
+}
+.toc-chapter h2 {
+  break-after: avoid;
+  margin: 0 0 1.5mm;
+  padding-bottom: 1mm;
+  font-size: 10pt;
+  font-weight: 800;
+  border-bottom: 1px solid var(--rule-strong);
+}
+.toc-ch-num {
+  display: inline-block;
+  margin-right: 1.2em;
+  color: var(--teal-dark);
+  font-weight: 700;
+  font-size: 8pt;
+  letter-spacing: .02em;
+}
+.toc-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.toc-item {
+  break-inside: avoid;
+  margin: 0;
+  padding: 0;
+}
+.toc-item a {
+  display: flex;
+  align-items: baseline;
+  gap: 1.5mm;
+  padding: 0.45mm 0;
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 8pt;
+  line-height: 1.22;
+}
+.toc-item a:hover .toc-term { color: var(--teal-dark); }
+.toc-term {
+  flex: 0 1 auto;
+  max-width: 78%;
+  font-weight: 600;
+}
+.toc-leader {
+  flex: 1 1 auto;
+  border-bottom: 1px dotted var(--rule-strong);
+  min-width: 3mm;
+  height: 0.9em;
+}
+.toc-page {
+  flex: 0 0 auto;
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+  color: var(--teal-dark);
+  font-size: 8pt;
+}
+.toc-item a:hover .toc-page { color: var(--teal); }
+
+/* =========================================================
+   使い方
+   ========================================================= */
+.howto-page {
+  width: auto;
+  min-height: 0;
+  padding: 0 2mm;
+  box-sizing: border-box;
+  break-before: page;
+  page-break-before: always;
+}
+.howto-head {
+  margin-bottom: 4.5mm;
+  padding-bottom: 2.5mm;
+  border-bottom: 2pt solid var(--teal);
+}
+.howto-kicker {
+  margin: 0 0 1.5mm;
+  font-size: 9pt;
+  color: var(--ink-soft);
+  letter-spacing: .08em;
+}
+.howto-head h1 {
+  margin: 0;
+  font-size: 26pt;
+  font-weight: 800;
+  line-height: 1.1;
+}
+.howto-lead {
+  margin: 2mm 0 0;
+  font-size: 9.5pt;
+  color: var(--ink-soft);
+  line-height: 1.45;
+}
+.howto-section {
+  margin: 0 0 4mm;
+}
+.howto-section-last { margin-bottom: 0; }
+.howto-section h2 {
+  display: flex;
+  align-items: center;
+  gap: 2.5mm;
+  margin: 0 0 1.8mm;
+  font-size: 11.5pt;
+  font-weight: 800;
+  line-height: 1.3;
+}
+.howto-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 5.5mm;
+  height: 5.5mm;
+  border-radius: 50%;
+  background: var(--teal);
+  color: #fff;
+  font-size: 8pt;
+  font-weight: 800;
+  flex: 0 0 auto;
+}
+.howto-section > p {
+  margin: 0 0 2mm;
+  font-size: 9pt;
+  line-height: 1.55;
+  color: var(--ink);
+}
+.howto-list {
+  margin: 0;
+  padding: 0 0 0 4.5mm;
+  font-size: 9pt;
+  line-height: 1.55;
+}
+.howto-list li { margin: 0 0 0.6mm; }
+.howto-list strong { font-weight: 800; }
+.howto-badge {
+  display: inline-block;
+  font-size: 8pt;
+  color: var(--ink-soft);
+  border: 1px solid var(--rule-strong);
+  border-radius: 1mm;
+  padding: .2mm 1.8mm;
+  vertical-align: middle;
+}
+
+.howto-anatomy {
+  display: grid;
+  grid-template-columns: 1fr 36mm;
+  gap: 3mm;
+  margin: 2mm 0 2.5mm;
+}
+.howto-anatomy-main {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2mm;
+}
+.howto-anatomy-side {
+  display: flex;
+}
+.howto-box {
+  position: relative;
+  border: 1px solid var(--rule-strong);
+  border-radius: 1.5mm;
+  padding: 1.6mm 2.5mm 1.6mm 7.5mm;
+  font-size: 8pt;
+  font-weight: 700;
+  color: var(--ink);
+  background: #fff;
+  line-height: 1.3;
+}
+.howto-box-chapter {
+  padding-left: 3mm;
+  font-size: 7.5pt;
+  font-weight: 600;
+  color: var(--ink-soft);
+  border-style: dashed;
+}
+.howto-box-title { border-color: var(--teal); background: #f3faf8; }
+.howto-box-oneline { background: var(--panel); }
+.howto-box-memo { background: var(--teal-panel); }
+.howto-box-side {
+  flex: 1;
+  padding-top: 4mm;
+  background: #f8fafb;
+  border-left: 2.5pt solid var(--teal);
+}
+.howto-side-hint {
+  display: inline-block;
+  margin-top: 2mm;
+  font-size: 7.5pt;
+  font-weight: 600;
+  color: var(--teal-dark);
+}
+.howto-callout {
+  position: absolute;
+  left: 1.8mm;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4.2mm;
+  height: 4.2mm;
+  border-radius: 50%;
+  background: var(--ink);
+  color: #fff;
+  font-size: 7pt;
+  font-weight: 800;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+.howto-box-side .howto-callout { top: 4.5mm; transform: none; }
+
+.howto-legend {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.8mm 4mm;
+}
+.howto-legend > div {
+  display: grid;
+  grid-template-columns: 5mm 1fr;
+  gap: 2mm;
+  align-items: start;
+}
+.howto-legend dt {
+  margin: 0;
+  width: 4.2mm;
+  height: 4.2mm;
+  border-radius: 50%;
+  background: var(--ink);
+  color: #fff;
+  font-size: 7pt;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.howto-legend dd {
+  margin: 0;
+  font-size: 8pt;
+  line-height: 1.45;
+  color: var(--ink-soft);
+}
+
+/* =========================================================
+   あとがき・奥付け
+   ========================================================= */
+.backmatter {
+  width: auto;
+  min-height: 0;
+  padding: 0 2mm;
+  box-sizing: border-box;
+  break-before: page;
+  page-break-before: always;
+}
+.backmatter-head {
+  margin-bottom: 8mm;
+  padding-bottom: 3.5mm;
+  border-bottom: 2pt solid var(--teal);
+}
+.backmatter-kicker {
+  margin: 0 0 1.5mm;
+  font-size: 9pt;
+  color: var(--ink-soft);
+  letter-spacing: .08em;
+}
+.backmatter-head h1 {
+  margin: 0;
+  font-size: 26pt;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.afterword-body {
+  max-width: 118mm;
+  font-size: 10pt;
+  line-height: 1.85;
+}
+.afterword-body p {
+  margin: 0 0 4.5mm;
+  text-indent: 1em;
+}
+.afterword-body p:first-child { text-indent: 0; }
+.afterword-sign {
+  margin: 10mm 0 0;
+  text-align: right;
+  font-size: 11pt;
+  font-weight: 700;
+  letter-spacing: .08em;
+}
+
+.colophon-meta {
+  margin: 0 0 10mm;
+  max-width: 130mm;
+}
+.colophon-row {
+  display: grid;
+  grid-template-columns: 22mm 1fr;
+  gap: 3mm 5mm;
+  padding: 3.2mm 0;
+  border-bottom: 1px solid var(--rule);
+  align-items: start;
+}
+.colophon-row dt {
+  margin: 0;
+  font-size: 9pt;
+  font-weight: 700;
+  color: var(--ink-soft);
+}
+.colophon-row dd {
+  margin: 0;
+  font-size: 10.5pt;
+  line-height: 1.55;
+  font-weight: 600;
+}
+.colophon-kana {
+  display: block;
+  margin-top: 1mm;
+  font-size: 8pt;
+  font-weight: 500;
+  color: var(--ink-soft);
+  letter-spacing: .04em;
+}
+.colophon-circle {
+  display: flex;
+  align-items: center;
+  gap: 3.5mm;
+}
+.colophon-icon {
+  display: block;
+  width: 18mm;
+  height: 18mm;
+  object-fit: cover;
+  border-radius: 2mm;
+  flex: 0 0 auto;
+}
+.colophon-circle-text {
+  min-width: 0;
+}
+
+.colophon-contact h2 {
+  margin: 0 0 3.5mm;
+  font-size: 12pt;
+  font-weight: 800;
+}
+.colophon-contact h2::after {
+  content: "";
+  display: block;
+  width: 14mm;
+  height: 1.8pt;
+  background: var(--teal);
+  margin-top: 2mm;
+}
+.colophon-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-width: 140mm;
+}
+.colophon-links li {
+  display: grid;
+  grid-template-columns: 18mm 1fr;
+  gap: 3mm 4mm;
+  align-items: baseline;
+  padding: 2.8mm 0;
+  border-bottom: 1px dashed var(--rule-strong);
+  font-size: 9.5pt;
+  line-height: 1.45;
+}
+.colophon-label {
+  font-weight: 700;
+  color: var(--ink-soft);
+  font-size: 8.5pt;
+}
+.colophon-links a {
+  color: var(--teal-dark);
+  text-decoration: underline;
+  text-underline-offset: 1.5pt;
+  word-break: break-all;
+}
+.colophon-links a:hover { color: var(--teal); }
+.colophon-note {
+  margin: 8mm 0 0;
+  max-width: 130mm;
+  font-size: 8pt;
+  line-height: 1.6;
+  color: var(--ink-soft);
+}

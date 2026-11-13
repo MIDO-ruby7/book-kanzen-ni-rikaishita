@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>エンジニア用語辞典 — GitHub</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto compact">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 1</b>Git・GitHub</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">17</div></div>
+      <div class="titles">
+        <h1><ruby>GitHub<rt>ギットハブ</rt></ruby></h1>
+      </div>
+    </div>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>Gitのリモートリポジトリを置いて、人とコードを共有・レビューできるWebサービス。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>手元のGitだけでは、チームへの共有・レビュー・Issue管理がバラバラになりやすかった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>ZIPやメールでコードを送り、変更点は口頭やチャットで伝えていた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>ファイル送付</th><th class="h-docker">GitHub</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">共有</td><td>ZIPやメール</td><td class="h-docker">リモートにpushして共有</td></tr>
+            <tr><td class="rowhead">レビュー</td><td>画面共有や口頭</td><td class="h-docker">Pull Requestで差分レビュー</td></tr>
+            <tr><td class="rowhead">議論の記録</td><td>チャットに流れる</td><td class="h-docker">IssueやPRに残る</td></tr>
+            <tr><td class="rowhead">公開</td><td>別途用意</td><td class="h-docker">OSS公開の定番の場になる</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>GitHub で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-users"/></svg><div class="cap">チームで同じ履歴を共有できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-file"/></svg><div class="cap">変更を提案・レビューできる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">CIやIssueと連携しやすい</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>Git（道具）とGitHub（置き場＋周辺機能）は別物。<br>
+         「GitHubに上がってる」はリモートの話、が多い。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="repository.html">Repository</a></div>
+          <p class="kw-desc">GitHub上に置く対象。</p>
+          <a class="kw-page" href="repository.html">P.1</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="pull-request.html">Pull Request</a></div>
+          <p class="kw-desc">変更を取り込む提案。</p>
+          <a class="kw-page" href="pull-request.html">P.20</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="issue.html">Issue</a></div>
+          <p class="kw-desc">要望やバグの受け皿。</p>
+          <a class="kw-page" href="issue.html">P.38</a>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">17</span>
+    <span>エンジニア用語辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

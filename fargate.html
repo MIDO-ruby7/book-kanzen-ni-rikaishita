@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>エンジニア用語辞典 — Fargate</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso compact">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 18</b>AWS</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">808</div></div>
+      <div class="titles">
+        <h1><ruby>Fargate<rt>ファーゲート</rt></ruby></h1>
+      </div>
+    </div>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>コンテナは動かすが、下のEC2サーバーを自分で管理しなくてよい実行方式。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>コンテナ運用したいのに、OSのパッチやキャパシティまで見ると負担が大きい。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>ECSの下にEC2クラスタを張り、空きリソースとAMI更新に追われていた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>EC2起動タイプ</th><th class="h-docker">Fargate</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">サーバー管理</td><td>自分</td><td class="h-docker">AWS側に寄せられる</td></tr>
+            <tr><td class="rowhead">キャパシティ</td><td>クラスタ設計</td><td class="h-docker">タスク単位で考えやすい</td></tr>
+            <tr><td class="rowhead">運用負荷</td><td>高い</td><td class="h-docker">アプリ寄りに集中できる</td></tr>
+            <tr><td class="rowhead">制約</td><td>自由が多い</td><td class="h-docker">細かいホスト制御は減る</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>Fargate で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">コンテナ実行のインフラ負担を減らせる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">タスク定義中心でデプロイできる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">ECSと組み合わせて使いやすい</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>「サーバーレスなコンテナ実行」と言われることが多い。<br>
+         完全無料ではなく、動かした分の課金。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="ecs.html">ECS</a></div>
+          <p class="kw-desc">Fargateを使う土台のサービス。</p>
+          <a class="kw-page" href="ecs.html">P.806</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="lambda.html">Lambda</a></div>
+          <p class="kw-desc">もっと短い処理向けのサーバレス。</p>
+          <a class="kw-page" href="lambda.html">P.809</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="ecr.html">ECR</a></div>
+          <p class="kw-desc">動かすイメージの置き場。</p>
+          <a class="kw-page" href="ecr.html">P.807</a>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">808</span>
+    <span>エンジニア用語辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

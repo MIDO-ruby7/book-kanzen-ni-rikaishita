@@ -68,19 +68,16 @@ module.exports = {
                   "name": "Commit",
                   "desc": "変更を記録として保存する単位。",
                   "page": 5
-                }
-              ]
-            },
-            {
-              "label": "一緒に覚えたい言葉",
-              "items": [
+                },
                 {
                   "name": "GitHub",
-                  "desc": "リモートリポジトリを置いておけるWebサービス。"
+                  "desc": "リモートリポジトリを置いておけるWebサービス。",
+                  "page": 17
                 },
                 {
                   "name": "Working Tree",
-                  "desc": "今実際に作業しているファイル群のこと。"
+                  "desc": "今実際に作業しているファイル群のこと。",
+                  "page": 18
                 }
               ]
             }
@@ -150,19 +147,16 @@ module.exports = {
                   "name": "Pull",
                   "desc": "クローン後、最新の変更を取り込む操作。",
                   "page": 7
-                }
-              ]
-            },
-            {
-              "label": "一緒に覚えたい言葉",
-              "items": [
+                },
                 {
                   "name": "Origin",
-                  "desc": "cloneした際に自動で付くリモートの標準名。"
+                  "desc": "cloneした際に自動で付くリモートの標準名。",
+                  "page": 19
                 },
                 {
                   "name": "SSH",
-                  "desc": "安全に通信するための鍵認証の仕組み。"
+                  "desc": "安全に通信するための鍵認証の仕組み。",
+                  "page": 605
                 }
               ]
             }
@@ -232,19 +226,16 @@ module.exports = {
                   "name": "コントリビュート",
                   "desc": "プロジェクトへ改善を還元すること。",
                   "page": 16
-                }
-              ]
-            },
-            {
-              "label": "一緒に覚えたい言葉",
-              "items": [
+                },
                 {
                   "name": "Pull Request",
-                  "desc": "変更を元のリポジトリに取り込んでもらう提案。"
+                  "desc": "変更を元のリポジトリに取り込んでもらう提案。",
+                  "page": 20
                 },
                 {
                   "name": "Upstream",
-                  "desc": "フォーク元の本家リポジトリを指す言葉。"
+                  "desc": "フォーク元の本家リポジトリを指す言葉。",
+                  "page": 21
                 }
               ]
             }
@@ -314,19 +305,16 @@ module.exports = {
                   "name": "Merge",
                   "desc": "分かれたブランチをひとつに統合する操作。",
                   "page": 8
-                }
-              ]
-            },
-            {
-              "label": "一緒に覚えたい言葉",
-              "items": [
+                },
                 {
                   "name": "main / master",
-                  "desc": "プロジェクトの本流となるブランチの名前。"
+                  "desc": "プロジェクトの本流となるブランチの名前。",
+                  "page": 25
                 },
                 {
                   "name": "Checkout",
-                  "desc": "作業対象のブランチを切り替える操作。"
+                  "desc": "作業対象のブランチを切り替える操作。",
+                  "page": 24
                 }
               ]
             }
@@ -396,19 +384,16 @@ module.exports = {
                   "name": "Push",
                   "desc": "コミットをリモートに送る操作。",
                   "page": 6
-                }
-              ]
-            },
-            {
-              "label": "一緒に覚えたい言葉",
-              "items": [
+                },
                 {
                   "name": "Staging Area",
-                  "desc": "コミットする変更を仮に置いておく場所。"
+                  "desc": "コミットする変更を仮に置いておく場所。",
+                  "page": 22
                 },
                 {
                   "name": "Diff",
-                  "desc": "変更前後の差分を表示する仕組み。"
+                  "desc": "変更前後の差分を表示する仕組み。",
+                  "page": 23
                 }
               ]
             }
@@ -478,19 +463,16 @@ module.exports = {
                   "name": "Pull",
                   "desc": "逆にリモートの変更を取り込む操作。",
                   "page": 7
-                }
-              ]
-            },
-            {
-              "label": "一緒に覚えたい言葉",
-              "items": [
+                },
                 {
                   "name": "CI/CD",
-                  "desc": "pushをきっかけに自動テスト・デプロイする仕組み。"
+                  "desc": "pushをきっかけに自動テスト・デプロイする仕組み。",
+                  "page": 705
                 },
                 {
                   "name": "Force Push",
-                  "desc": "履歴を強制的に上書きするpush。取り扱い注意。"
+                  "desc": "履歴を強制的に上書きするpush。取り扱い注意。",
+                  "page": 27
                 }
               ]
             }
@@ -560,19 +542,16 @@ module.exports = {
                   "name": "Merge",
                   "desc": "pull の中で行われている統合処理。",
                   "page": 8
-                }
-              ]
-            },
-            {
-              "label": "一緒に覚えたい言葉",
-              "items": [
+                },
                 {
                   "name": "Fetch",
-                  "desc": "リモートの変更を取得だけしてmergeしない操作。"
+                  "desc": "リモートの変更を取得だけしてmergeしない操作。",
+                  "page": 26
                 },
                 {
                   "name": "Pull Request",
-                  "desc": "コードレビューを経て取り込む提案の仕組み。"
+                  "desc": "コードレビューを経て取り込む提案の仕組み。",
+                  "page": 20
                 }
               ]
             }
@@ -642,12 +621,7 @@ module.exports = {
                   "name": "Rebase",
                   "desc": "mergeとは別の、もう一つの統合方法。",
                   "page": 9
-                }
-              ]
-            },
-            {
-              "label": "一緒に覚えたい言葉",
-              "items": [
+                },
                 {
                   "name": "Conflict",
                   "desc": "自動で統合できず人の判断が必要になる状態。",
@@ -655,7 +629,8 @@ module.exports = {
                 },
                 {
                   "name": "Fast-forward",
-                  "desc": "分岐がない場合に、そのままつなげる統合方法。"
+                  "desc": "分岐がない場合に、そのままつなげる統合方法。",
+                  "page": 28
                 }
               ]
             }
@@ -725,19 +700,16 @@ module.exports = {
                   "name": "Branch",
                   "desc": "土台を乗せ替える対象そのもの。",
                   "page": 4
-                }
-              ]
-            },
-            {
-              "label": "一緒に覚えたい言葉",
-              "items": [
+                },
                 {
                   "name": "HEAD",
-                  "desc": "今いるコミットの位置を指す目印。"
+                  "desc": "今いるコミットの位置を指す目印。",
+                  "page": 29
                 },
                 {
                   "name": "Squash",
-                  "desc": "複数のコミットを1つにまとめる操作。"
+                  "desc": "複数のコミットを1つにまとめる操作。",
+                  "page": 30
                 }
               ]
             }
@@ -807,19 +779,16 @@ module.exports = {
                   "name": "Branch",
                   "desc": "摘み取った先の並行世界。",
                   "page": 4
-                }
-              ]
-            },
-            {
-              "label": "一緒に覚えたい言葉",
-              "items": [
+                },
                 {
                   "name": "Hotfix",
-                  "desc": "本番の緊急バグを直すための修正のこと。"
+                  "desc": "本番の緊急バグを直すための修正のこと。",
+                  "page": 31
                 },
                 {
                   "name": "SHA",
-                  "desc": "コミットを一意に識別するハッシュ値。"
+                  "desc": "コミットを一意に識別するハッシュ値。",
+                  "page": 32
                 }
               ]
             }
@@ -889,19 +858,16 @@ module.exports = {
                   "name": "Pull",
                   "desc": "コンフリクトが判明するもう一つの場面。",
                   "page": 7
-                }
-              ]
-            },
-            {
-              "label": "一緒に覚えたい言葉",
-              "items": [
+                },
                 {
                   "name": "マージツール",
-                  "desc": "衝突箇所を見比べながら解決を助けるツール。"
+                  "desc": "衝突箇所を見比べながら解決を助けるツール。",
+                  "page": 33
                 },
                 {
                   "name": "Diff",
-                  "desc": "変更前後の違いを比較する表示形式。"
+                  "desc": "変更前後の違いを比較する表示形式。",
+                  "page": 23
                 }
               ]
             }
@@ -971,15 +937,11 @@ module.exports = {
                   "name": "Commit",
                   "desc": "revertが打ち消す対象の単位。",
                   "page": 5
-                }
-              ]
-            },
-            {
-              "label": "一緒に覚えたい言葉",
-              "items": [
+                },
                 {
                   "name": "ロールバック",
-                  "desc": "システムを以前の状態に戻す一般的な言葉。"
+                  "desc": "システムを以前の状態に戻す一般的な言葉。",
+                  "page": 34
                 }
               ]
             }
@@ -1049,19 +1011,16 @@ module.exports = {
                   "name": "Commit",
                   "desc": "resetで戻す先を指定する単位。",
                   "page": 5
-                }
-              ]
-            },
-            {
-              "label": "一緒に覚えたい言葉",
-              "items": [
+                },
                 {
                   "name": "HEAD",
-                  "desc": "今いるコミットの位置を指す目印。"
+                  "desc": "今いるコミットの位置を指す目印。",
+                  "page": 29
                 },
                 {
                   "name": "Working Tree",
-                  "desc": "今実際に作業しているファイル群のこと。"
+                  "desc": "今実際に作業しているファイル群のこと。",
+                  "page": 18
                 }
               ]
             }
@@ -1131,19 +1090,16 @@ module.exports = {
                   "name": "Repository",
                   "desc": "タグごと履歴を保管する場所。",
                   "page": 1
-                }
-              ]
-            },
-            {
-              "label": "一緒に覚えたい言葉",
-              "items": [
+                },
                 {
                   "name": "セマンティックバージョニング",
-                  "desc": "v1.2.3のようにバージョンを意味づけて付けるルール。"
+                  "desc": "v1.2.3のようにバージョンを意味づけて付けるルール。",
+                  "page": 552
                 },
                 {
                   "name": "リリースノート",
-                  "desc": "そのバージョンで何が変わったかをまとめた文書。"
+                  "desc": "そのバージョンで何が変わったかをまとめた文書。",
+                  "page": 35
                 }
               ]
             }
@@ -1213,19 +1169,16 @@ module.exports = {
                   "name": "コントリビュート",
                   "desc": "OSSに改善を還元する行為そのもの。",
                   "page": 16
-                }
-              ]
-            },
-            {
-              "label": "一緒に覚えたい言葉",
-              "items": [
+                },
                 {
                   "name": "ライセンス",
-                  "desc": "そのソフトウェアの利用・改変・再配布のルール。"
+                  "desc": "そのソフトウェアの利用・改変・再配布のルール。",
+                  "page": 36
                 },
                 {
                   "name": "メンテナー",
-                  "desc": "OSSプロジェクトの管理・運営を担う人。"
+                  "desc": "OSSプロジェクトの管理・運営を担う人。",
+                  "page": 37
                 }
               ]
             }
@@ -1294,19 +1247,1666 @@ module.exports = {
                   "name": "OSS",
                   "desc": "コントリビュートの対象になるプロジェクト。",
                   "page": 15
-                }
-              ]
-            },
-            {
-              "label": "一緒に覚えたい言葉",
-              "items": [
+                },
                 {
                   "name": "Pull Request",
-                  "desc": "変更を提案してレビューしてもらう仕組み。"
+                  "desc": "変更を提案してレビューしてもらう仕組み。",
+                  "page": 20
                 },
                 {
                   "name": "Issue",
-                  "desc": "バグ報告や要望を管理する場所。"
+                  "desc": "バグ報告や要望を管理する場所。",
+                  "page": 38
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "category": "バージョン管理・Git",
+          "icon": "ic-server",
+          "compact": true,
+          "id": "github",
+          "page": 17,
+          "term": "GitHub",
+          "reading": "ギットハブ",
+          "oneline": "Gitのリモートリポジトリを置いて、人とコードを共有・レビューできるWebサービス。",
+          "q1_text": "手元のGitだけでは、チームへの共有・レビュー・Issue管理がバラバラになりやすかった。",
+          "q2_intro": "ZIPやメールでコードを送り、変更点は口頭やチャットで伝えていた。",
+          "q2_table": {
+            "col_before": "ファイル送付",
+            "col_after": "GitHub",
+            "rows": [
+              [
+                "共有",
+                "ZIPやメール",
+                "リモートにpushして共有"
+              ],
+              [
+                "レビュー",
+                "画面共有や口頭",
+                "Pull Requestで差分レビュー"
+              ],
+              [
+                "議論の記録",
+                "チャットに流れる",
+                "IssueやPRに残る"
+              ],
+              [
+                "公開",
+                "別途用意",
+                "OSS公開の定番の場になる"
+              ]
+            ]
+          },
+          "q3_cells": [
+            {
+              "icon": "ic-users",
+              "cap": "チームで同じ履歴を共有できる"
+            },
+            {
+              "icon": "ic-file",
+              "cap": "変更を提案・レビューできる"
+            },
+            {
+              "icon": "ic-rocket",
+              "cap": "CIやIssueと連携しやすい"
+            }
+          ],
+          "memo": "Git（道具）とGitHub（置き場＋周辺機能）は別物。\n「GitHubに上がってる」はリモートの話、が多い。",
+          "sidebar_groups": [
+            {
+              "label": "関連キーワード",
+              "items": [
+                {
+                  "name": "Repository",
+                  "desc": "GitHub上に置く対象。",
+                  "page": 1
+                },
+                {
+                  "name": "Pull Request",
+                  "desc": "変更を取り込む提案。",
+                  "page": 20
+                },
+                {
+                  "name": "Issue",
+                  "desc": "要望やバグの受け皿。",
+                  "page": 38
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "category": "バージョン管理・Git",
+          "icon": "ic-laptop",
+          "compact": true,
+          "id": "working-tree",
+          "page": 18,
+          "term": "Working Tree",
+          "reading": "ワーキングツリー",
+          "oneline": "今エディタで触っている、実際のファイルの状態（作業ディレクトリ）のこと。",
+          "q1_text": "「コミットした内容」と「今ディスク上にあるファイル」がズレると、何を保存したのか分からなくなる。",
+          "q2_intro": "保存＝確定、の感覚だけで進めていた。",
+          "q2_table": {
+            "col_before": "ファイル＝真実",
+            "col_after": "Working Tree",
+            "rows": [
+              [
+                "今の状態",
+                "開いているファイル",
+                "作業ツリーとして区別する"
+              ],
+              [
+                "確定前",
+                "上書き保存のみ",
+                "ステージやコミットと分離"
+              ],
+              [
+                "戻す",
+                "バックアップ頼み",
+                "checkoutやrestoreで戻せる"
+              ],
+              [
+                "差分",
+                "目視",
+                "working treeとHEADのdiff"
+              ]
+            ]
+          },
+          "q3_cells": [
+            {
+              "icon": "ic-laptop",
+              "cap": "「今触っている状態」を言葉にできる"
+            },
+            {
+              "icon": "ic-file",
+              "cap": "未コミット変更の居場所が分かる"
+            },
+            {
+              "icon": "ic-undo",
+              "cap": "作業中の変更だけ戻せる"
+            }
+          ],
+          "memo": "Working Tree / Staging Area / Repository（コミット履歴）の三段が分かると、Gitが急に読みやすくなる。",
+          "sidebar_groups": [
+            {
+              "label": "関連キーワード",
+              "items": [
+                {
+                  "name": "Staging Area",
+                  "desc": "コミット直前の仮置き場。",
+                  "page": 22
+                },
+                {
+                  "name": "Commit",
+                  "desc": "確定した履歴の単位。",
+                  "page": 5
+                },
+                {
+                  "name": "Reset",
+                  "desc": "作業ツリーやHEADを動かす操作。",
+                  "page": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "category": "バージョン管理・Git",
+          "icon": "ic-network",
+          "compact": true,
+          "id": "origin",
+          "page": 19,
+          "term": "Origin",
+          "reading": "オリジン",
+          "oneline": "git cloneしたときに、自動で付くリモートリポジトリの標準的な名前。",
+          "q1_text": "リモートのURLを毎回フルで指定するのはつらい。短い名前で指したい。",
+          "q2_intro": "リモートの場所をメモや環境変数に直書きしていた。",
+          "q2_table": {
+            "col_before": "URL直書き",
+            "col_after": "Origin",
+            "rows": [
+              [
+                "指定",
+                "長いURL",
+                "origin という短い名前"
+              ],
+              [
+                "clone後",
+                "自分で登録",
+                "だいたい自動でoriginになる"
+              ],
+              [
+                "push先",
+                "都度確認",
+                "originにpushが定番"
+              ],
+              [
+                "複数リモート",
+                "混乱しやすい",
+                "origin以外も名前で増やせる"
+              ]
+            ]
+          },
+          "q3_cells": [
+            {
+              "icon": "ic-network",
+              "cap": "リモートを短い名前で扱える"
+            },
+            {
+              "icon": "ic-rocket",
+              "cap": "push/pullの定番相手になる"
+            },
+            {
+              "icon": "ic-users",
+              "cap": "upstreamなど別名と使い分けできる"
+            }
+          ],
+          "memo": "originは「特別なサーバー」ではなく、ただのデフォルト名。\nforkしたら upstream（本家）を足す、がよくある型。",
+          "sidebar_groups": [
+            {
+              "label": "関連キーワード",
+              "items": [
+                {
+                  "name": "Clone",
+                  "desc": "originが作られる入口。",
+                  "page": 2
+                },
+                {
+                  "name": "Push",
+                  "desc": "originへ送る操作。",
+                  "page": 6
+                },
+                {
+                  "name": "Upstream",
+                  "desc": "fork元など、もう一つのリモート名。",
+                  "page": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "category": "バージョン管理・Git",
+          "icon": "ic-users",
+          "compact": true,
+          "id": "pull-request",
+          "page": 20,
+          "term": "Pull Request",
+          "reading": "プルリクエスト",
+          "oneline": "自分の変更を取り込んでほしい、とレビュー付きで提案する仕組み（PR）。",
+          "q1_text": "mainに直接pushすると、レビューも議論も残らず、壊したときに取り返しがつきにくい。",
+          "q2_intro": "完成したと思った時点で本流にマージし、問題は後から気付いていた。",
+          "q2_table": {
+            "col_before": "直接マージ",
+            "col_after": "Pull Request",
+            "rows": [
+              [
+                "レビュー",
+                "口頭や事後",
+                "差分を見てから取り込める"
+              ],
+              [
+                "議論",
+                "チャットに流れる",
+                "PR上に残る"
+              ],
+              [
+                "CI",
+                "手動",
+                "PRをきっかけに自動実行しやすい"
+              ],
+              [
+                "権限",
+                "誰でも本流を触る",
+                "提案と承認を分けられる"
+              ]
+            ]
+          },
+          "q3_cells": [
+            {
+              "icon": "ic-users",
+              "cap": "変更を提案してレビューできる"
+            },
+            {
+              "icon": "ic-check",
+              "cap": "議論と履歴が一つの場所に残る"
+            },
+            {
+              "icon": "ic-gear",
+              "cap": "CIやデプロイの起点にしやすい"
+            }
+          ],
+          "memo": "GitLabではMerge Requestと呼ぶことも。中身の発想はほぼ同じ。\n「PR出す」は提案の提出、の意味で使われる。",
+          "sidebar_groups": [
+            {
+              "label": "関連キーワード",
+              "items": [
+                {
+                  "name": "Fork",
+                  "desc": "本家と別に作業するときに使う。",
+                  "page": 3
+                },
+                {
+                  "name": "Branch",
+                  "desc": "PRの土台になる作業枝。",
+                  "page": 4
+                },
+                {
+                  "name": "Merge",
+                  "desc": "PRが通ったあとの取り込み。",
+                  "page": 8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "category": "バージョン管理・Git",
+          "icon": "ic-network",
+          "compact": true,
+          "id": "upstream",
+          "page": 21,
+          "term": "Upstream",
+          "reading": "アップストリーム",
+          "oneline": "fork元の本家リポジトリなど、「大本」のリモートを指す呼び方。",
+          "q1_text": "forkして自分のoriginだけ見ていると、本家の更新を取り込めなくなる。",
+          "q2_intro": "本家のZIPを取り直したり、originを無理に書き換えたりしていた。",
+          "q2_table": {
+            "col_before": "originだけ",
+            "col_after": "Upstream",
+            "rows": [
+              [
+                "本家の追跡",
+                "しにくい",
+                "upstreamとして追加"
+              ],
+              [
+                "更新の取り込み",
+                "手作業",
+                "fetchしてmerge/rebase"
+              ],
+              [
+                "名前",
+                "URL直書き",
+                "役割が名前で分かる"
+              ],
+              [
+                "PR先",
+                "迷いやすい",
+                "本家＝upstreamと整理できる"
+              ]
+            ]
+          },
+          "q3_cells": [
+            {
+              "icon": "ic-network",
+              "cap": "本家リモートを名前で区別できる"
+            },
+            {
+              "icon": "ic-undo",
+              "cap": "本家の更新を自分のforkへ取り込める"
+            },
+            {
+              "icon": "ic-users",
+              "cap": "OSS貢献の定番フローが回る"
+            }
+          ],
+          "memo": "upstreamは「上流」。自分のforkが下流、本家が上流、という感覚。",
+          "sidebar_groups": [
+            {
+              "label": "関連キーワード",
+              "items": [
+                {
+                  "name": "Fork",
+                  "desc": "upstreamを意識する典型シーン。",
+                  "page": 3
+                },
+                {
+                  "name": "Origin",
+                  "desc": "自分のリモート側の名前。",
+                  "page": 19
+                },
+                {
+                  "name": "Pull Request",
+                  "desc": "upstreamへ返す提案。",
+                  "page": 20
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "category": "バージョン管理・Git",
+          "icon": "ic-layers",
+          "compact": true,
+          "id": "staging-area",
+          "page": 22,
+          "term": "Staging Area",
+          "reading": "ステージングエリア",
+          "oneline": "次のコミットに入れる変更を、いったん選んで置いておく場所（index）。",
+          "q1_text": "ファイルを全部まとめてコミットすると、関係ない変更まで同じ履歴に混ざる。",
+          "q2_intro": "保存したら全部コミット、か、コミット前にファイルを分けてコピーしていた。",
+          "q2_table": {
+            "col_before": "全部まとめて確定",
+            "col_after": "Staging Area",
+            "rows": [
+              [
+                "選択",
+                "ディレクトリ単位",
+                "変更の塊を選んで載せられる"
+              ],
+              [
+                "確認",
+                "コミット後に後悔",
+                "addの段階でレビューできる"
+              ],
+              [
+                "分割",
+                "難しい",
+                "論理単位のコミットに分けやすい"
+              ],
+              [
+                "戻す",
+                "コミット取り消し",
+                "unstageで載せ直しできる"
+              ]
+            ]
+          },
+          "q3_cells": [
+            {
+              "icon": "ic-layers",
+              "cap": "コミット内容を選んで組み立てられる"
+            },
+            {
+              "icon": "ic-check",
+              "cap": "入れる前に差分を確認できる"
+            },
+            {
+              "icon": "ic-file",
+              "cap": "小さなコミットが作りやすい"
+            }
+          ],
+          "memo": "git add がステージ、git commit が確定。\n「ステージする」＝次のコミット候補に載せる、の意味。",
+          "sidebar_groups": [
+            {
+              "label": "関連キーワード",
+              "items": [
+                {
+                  "name": "Commit",
+                  "desc": "ステージした内容を確定する。",
+                  "page": 5
+                },
+                {
+                  "name": "Working Tree",
+                  "desc": "まだステージしていない作業中の状態。",
+                  "page": 18
+                },
+                {
+                  "name": "Diff",
+                  "desc": "ステージ前後の差分を見る。",
+                  "page": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "category": "バージョン管理・Git",
+          "icon": "ic-file",
+          "compact": true,
+          "id": "diff",
+          "page": 23,
+          "term": "Diff",
+          "reading": "ディフ",
+          "oneline": "変更の前後で、どこがどう違うかを行単位などで示す差分表示。",
+          "q1_text": "「直した」と言われても、何が変わったか全文比較しないと分からない。",
+          "q2_intro": "二つのファイルを目視で見比べていた。",
+          "q2_table": {
+            "col_before": "目視比較",
+            "col_after": "Diff",
+            "rows": [
+              [
+                "速度",
+                "遅い",
+                "差分だけに集中できる"
+              ],
+              [
+                "レビュー",
+                "漏れやすい",
+                "+/-で変化が見える"
+              ],
+              [
+                "衝突解消",
+                "勘",
+                "両方の差分を見て判断"
+              ],
+              [
+                "記録",
+                "残らない",
+                "PRやパッチとして残せる"
+              ]
+            ]
+          },
+          "q3_cells": [
+            {
+              "icon": "ic-file",
+              "cap": "変更点だけを素早く読める"
+            },
+            {
+              "icon": "ic-users",
+              "cap": "レビューの共通言語になる"
+            },
+            {
+              "icon": "ic-check",
+              "cap": "コンフリクト解消の材料になる"
+            }
+          ],
+          "memo": "git diff は作業ツリー、git diff --staged はステージ済み、と見るところが違う。",
+          "sidebar_groups": [
+            {
+              "label": "関連キーワード",
+              "items": [
+                {
+                  "name": "Commit",
+                  "desc": "差分が固まった単位。",
+                  "page": 5
+                },
+                {
+                  "name": "Conflict",
+                  "desc": "差分がぶつかり合う状態。",
+                  "page": 11
+                },
+                {
+                  "name": "Pull Request",
+                  "desc": "diffをレビューする場。",
+                  "page": 20
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "category": "バージョン管理・Git",
+          "icon": "ic-undo",
+          "compact": true,
+          "id": "checkout",
+          "page": 24,
+          "term": "Checkout",
+          "reading": "チェックアウト",
+          "oneline": "作業対象のブランチや、特定のファイル状態へ切り替える操作。",
+          "q1_text": "複数の作業を並行すると、「今どの枝で作業しているか」がすぐ分からなくなる。",
+          "q2_intro": "フォルダを分けて別作業し、どれが正か自分で管理していた。",
+          "q2_table": {
+            "col_before": "フォルダ分け",
+            "col_after": "Checkout",
+            "rows": [
+              [
+                "切り替え",
+                "別フォルダを開く",
+                "同じ場所で枝を切り替える"
+              ],
+              [
+                "履歴",
+                "別々",
+                "同じリポジトリ内でつながる"
+              ],
+              [
+                "ファイル復元",
+                "バックアップから",
+                "過去の状態を取り出せる"
+              ],
+              [
+                "ミス",
+                "コピー漏れ",
+                "今いる枝を確認する習慣が付く"
+              ]
+            ]
+          },
+          "q3_cells": [
+            {
+              "icon": "ic-undo",
+              "cap": "作業枝を素早く切り替えられる"
+            },
+            {
+              "icon": "ic-file",
+              "cap": "特定ファイルの状態を戻せる"
+            },
+            {
+              "icon": "ic-laptop",
+              "cap": "並行作業の土台になる"
+            }
+          ],
+          "memo": "新しいGitでは branch切り替えに switch、復元に restore と役割が分かれてきている。\n現場ではまだ checkout と言うことも多い。",
+          "sidebar_groups": [
+            {
+              "label": "関連キーワード",
+              "items": [
+                {
+                  "name": "Branch",
+                  "desc": "checkoutで切り替える対象。",
+                  "page": 4
+                },
+                {
+                  "name": "Working Tree",
+                  "desc": "切り替え後に並ぶファイル群。",
+                  "page": 18
+                },
+                {
+                  "name": "HEAD",
+                  "desc": "今いる位置を示すポインタ。",
+                  "page": 29
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "category": "バージョン管理・Git",
+          "icon": "ic-server",
+          "compact": true,
+          "id": "main-master",
+          "page": 25,
+          "term": "main / master",
+          "reading": "メイン／マスター",
+          "oneline": "プロジェクトの本流として扱う、デフォルトブランチの名前。",
+          "q1_text": "「どれが本番相当の最新か」がチームで揃っていないと、古い枝にPRしてしまう。",
+          "q2_intro": "本流の名前がチームごとにバラバラで、慣習も文档も口伝だった。",
+          "q2_table": {
+            "col_before": "名前が不定",
+            "col_after": "main / master",
+            "rows": [
+              [
+                "共通認識",
+                "都度確認",
+                "デフォルト枝として共有"
+              ],
+              [
+                "保護",
+                "誰でも直push",
+                "保護ルールをかけやすい"
+              ],
+              [
+                "用語",
+                "本流・本番枝",
+                "名前で役割が伝わる"
+              ],
+              [
+                "移行",
+                "——",
+                "masterからmainへの改名も増えた"
+              ]
+            ]
+          },
+          "q3_cells": [
+            {
+              "icon": "ic-server",
+              "cap": "本流ブランチをチームで揃えられる"
+            },
+            {
+              "icon": "ic-check",
+              "cap": "保護やCIの対象にしやすい"
+            },
+            {
+              "icon": "ic-users",
+              "cap": "PRのマージ先が明確になる"
+            }
+          ],
+          "memo": "最近のGitHubは初期名がmain。古い資料や現場ではmasterのまま、もまだ多い。",
+          "sidebar_groups": [
+            {
+              "label": "関連キーワード",
+              "items": [
+                {
+                  "name": "Branch",
+                  "desc": "main/masterもブランチの一種。",
+                  "page": 4
+                },
+                {
+                  "name": "Merge",
+                  "desc": "本流へ取り込む操作。",
+                  "page": 8
+                },
+                {
+                  "name": "Pull Request",
+                  "desc": "本流へ入れる提案。",
+                  "page": 20
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "category": "バージョン管理・Git",
+          "icon": "ic-package",
+          "compact": true,
+          "id": "fetch",
+          "page": 26,
+          "term": "Fetch",
+          "reading": "フェッチ",
+          "oneline": "リモートの更新を取得だけし、自分の作業枝にはまだ取り込まない操作。",
+          "q1_text": "pullするとすぐマージまで走るので、先に「何が来たか」だけ見たいときに困る。",
+          "q2_intro": "更新確認のつもりが、その場で作業中の枝に混ざってしまうことがあった。",
+          "q2_table": {
+            "col_before": "いきなりpull",
+            "col_after": "Fetch",
+            "rows": [
+              [
+                "取得",
+                "取得＋統合",
+                "取得だけ"
+              ],
+              [
+                "安全",
+                "衝突が突然",
+                "見てから判断できる"
+              ],
+              [
+                "確認",
+                "ログが流れる",
+                "リモート追跡枝を見られる"
+              ],
+              [
+                "次の一手",
+                "固定",
+                "mergeでもrebaseでも選べる"
+              ]
+            ]
+          },
+          "q3_cells": [
+            {
+              "icon": "ic-package",
+              "cap": "リモートの差分を先に取り込める"
+            },
+            {
+              "icon": "ic-check",
+              "cap": "統合前に内容を確認できる"
+            },
+            {
+              "icon": "ic-undo",
+              "cap": "取り込み方をあとから選べる"
+            }
+          ],
+          "memo": "pull ≒ fetch + merge（設定次第ではrebase）。\n「まずfetch」は慎重派の定番。",
+          "sidebar_groups": [
+            {
+              "label": "関連キーワード",
+              "items": [
+                {
+                  "name": "Pull",
+                  "desc": "取得して取り込む一連の操作。",
+                  "page": 7
+                },
+                {
+                  "name": "Merge",
+                  "desc": "fetchのあとに選べる統合。",
+                  "page": 8
+                },
+                {
+                  "name": "Origin",
+                  "desc": "fetchする相手の名前。",
+                  "page": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "category": "バージョン管理・Git",
+          "icon": "ic-rocket",
+          "compact": true,
+          "id": "force-push",
+          "page": 27,
+          "term": "Force Push",
+          "reading": "フォースプッシュ",
+          "oneline": "リモートの履歴を、自分の履歴で強制的に上書きするpush。取り扱い注意。",
+          "q1_text": "rebaseやamendで履歴を書き換えたあと、普通のpushが拒否されることがある。",
+          "q2_intro": "新しいブランチを切り直したり、履歴を諦めて別ルートで出していた。",
+          "q2_table": {
+            "col_before": "押し負けて諦める",
+            "col_after": "Force Push",
+            "rows": [
+              [
+                "履歴書き換え後",
+                "pushできない",
+                "強制上書きできる"
+              ],
+              [
+                "共有枝",
+                "危険",
+                "他人の作業を消すリスク"
+              ],
+              [
+                "安全策",
+                "——",
+                "--force-with-lease など"
+              ],
+              [
+                "運用",
+                "自由",
+                "mainでは禁止が定番"
+              ]
+            ]
+          },
+          "q3_cells": [
+            {
+              "icon": "ic-rocket",
+              "cap": "書き換えた履歴をリモートへ反映できる"
+            },
+            {
+              "icon": "ic-check",
+              "cap": "個人枝の整理に使える"
+            },
+            {
+              "icon": "ic-users",
+              "cap": "共有枝ではルール化が必要になる"
+            }
+          ],
+          "memo": "共有ブランチへのforce pushは事故の定番。\nやるなら自分だけの枝、またはチーム合意のうえで。",
+          "sidebar_groups": [
+            {
+              "label": "関連キーワード",
+              "items": [
+                {
+                  "name": "Push",
+                  "desc": "通常の送信。",
+                  "page": 6
+                },
+                {
+                  "name": "Rebase",
+                  "desc": "force pushが必要になりやすい操作。",
+                  "page": 9
+                },
+                {
+                  "name": "main / master",
+                  "desc": "通常は保護して禁ずる対象。",
+                  "page": 25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "category": "バージョン管理・Git",
+          "icon": "ic-rocket",
+          "compact": true,
+          "id": "fast-forward",
+          "page": 28,
+          "term": "Fast-forward",
+          "reading": "ファストフォワード",
+          "oneline": "分岐がないとき、本流のポインタを前に進めるだけで済むマージ。",
+          "q1_text": "枝分かれしていないのに、毎回マージコミットが増えると履歴が読みにくい。",
+          "q2_intro": "常にマージコミットを作るか、手動でパッチを当てていた。",
+          "q2_table": {
+            "col_before": "常にマージコミット",
+            "col_after": "Fast-forward",
+            "rows": [
+              [
+                "分岐なし",
+                "余分なコミット",
+                "ポインタ移動だけ"
+              ],
+              [
+                "履歴",
+                "ギザギザ",
+                "一直線に見える"
+              ],
+              [
+                "条件",
+                "——",
+                "相手が自分の先頭の先にある"
+              ],
+              [
+                "できない時",
+                "——",
+                "普通のmergeやrebaseへ"
+              ]
+            ]
+          },
+          "q3_cells": [
+            {
+              "icon": "ic-rocket",
+              "cap": "余計なマージコミットを減らせる"
+            },
+            {
+              "icon": "ic-file",
+              "cap": "一直線の履歴を保てる"
+            },
+            {
+              "icon": "ic-check",
+              "cap": "シンプルな取り込みが速くなる"
+            }
+          ],
+          "memo": "「早送り」。動画の再生位置を進めるイメージに近い。\n--no-ff で敢えてマージコミットを残す運用もある。",
+          "sidebar_groups": [
+            {
+              "label": "関連キーワード",
+              "items": [
+                {
+                  "name": "Merge",
+                  "desc": "fast-forwardもmergeの一種。",
+                  "page": 8
+                },
+                {
+                  "name": "Branch",
+                  "desc": "分岐の有無で可否が変わる。",
+                  "page": 4
+                },
+                {
+                  "name": "Rebase",
+                  "desc": "一直線に保つ別手法。",
+                  "page": 9
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "category": "バージョン管理・Git",
+          "icon": "ic-cube",
+          "compact": true,
+          "id": "head",
+          "page": 29,
+          "term": "HEAD",
+          "reading": "ヘッド",
+          "oneline": "今チェックアウトしているコミット（いまいる位置）を指すポインタ。",
+          "q1_text": "「今どのコミットを見ているか」が分からないと、resetやrebaseの説明が頭に入らない。",
+          "q2_intro": "今開いているフォルダが最新、くらいの感覚で進めていた。",
+          "q2_table": {
+            "col_before": "今のフォルダ感覚",
+            "col_after": "HEAD",
+            "rows": [
+              [
+                "現在地",
+                "曖昧",
+                "名前で指せる"
+              ],
+              [
+                "移動",
+                "ファイルを差し替え",
+                "HEADが動く"
+              ],
+              [
+                "detached",
+                "概念なし",
+                "タグやSHA直指定で起きる"
+              ],
+              [
+                "説明",
+                "口伝",
+                "ドキュメントの共通語になる"
+              ]
+            ]
+          },
+          "q3_cells": [
+            {
+              "icon": "ic-cube",
+              "cap": "「今いる位置」を言葉にできる"
+            },
+            {
+              "icon": "ic-undo",
+              "cap": "resetやrebaseの説明が読める"
+            },
+            {
+              "icon": "ic-file",
+              "cap": "相対参照（HEAD~1）が使える"
+            }
+          ],
+          "memo": "HEADは「頭」。今見ている先端。\ndetached HEADは、枝名ではなくコミット直付けで見ている状態。",
+          "sidebar_groups": [
+            {
+              "label": "関連キーワード",
+              "items": [
+                {
+                  "name": "Checkout",
+                  "desc": "HEADを動かす操作。",
+                  "page": 24
+                },
+                {
+                  "name": "Reset",
+                  "desc": "HEADの位置を付け替える。",
+                  "page": 13
+                },
+                {
+                  "name": "Rebase",
+                  "desc": "HEADの履歴を付け替える操作。",
+                  "page": 9
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "category": "バージョン管理・Git",
+          "icon": "ic-layers",
+          "compact": true,
+          "id": "squash",
+          "page": 30,
+          "term": "Squash",
+          "reading": "スカッシュ",
+          "oneline": "複数のコミットを、一つのコミットにまとめること。",
+          "q1_text": "試行錯誤の細かいコミットが並ぶと、レビューも履歴も読みにくい。",
+          "q2_intro": "汚い履歴のまま残すか、最初からやり直ししていた。",
+          "q2_table": {
+            "col_before": "細かい履歴のまま",
+            "col_after": "Squash",
+            "rows": [
+              [
+                "見た目",
+                "WIPが並ぶ",
+                "意味のある1コミットに"
+              ],
+              [
+                "レビュー",
+                "ノイズが多い",
+                "最終差分に集中できる"
+              ],
+              [
+                "タイミング",
+                "——",
+                "rebaseやPRマージ時"
+              ],
+              [
+                "トレードオフ",
+                "過程が残る",
+                "過程は消える"
+              ]
+            ]
+          },
+          "q3_cells": [
+            {
+              "icon": "ic-layers",
+              "cap": "履歴を読みやすくまとめられる"
+            },
+            {
+              "icon": "ic-users",
+              "cap": "PRの最終形をきれいにできる"
+            },
+            {
+              "icon": "ic-check",
+              "cap": "本流を直線的に保ちやすい"
+            }
+          ],
+          "memo": "「つぶす」。過程を残したいか、結果だけ残したいかの選択。",
+          "sidebar_groups": [
+            {
+              "label": "関連キーワード",
+              "items": [
+                {
+                  "name": "Rebase",
+                  "desc": "interactive rebaseでsquashできる。",
+                  "page": 9
+                },
+                {
+                  "name": "Commit",
+                  "desc": "まとめた結果の単位。",
+                  "page": 5
+                },
+                {
+                  "name": "Pull Request",
+                  "desc": "マージ時squashする運用も多い。",
+                  "page": 20
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "category": "バージョン管理・Git",
+          "icon": "ic-gear",
+          "compact": true,
+          "id": "hotfix",
+          "page": 31,
+          "term": "Hotfix",
+          "reading": "ホットフィックス",
+          "oneline": "本番の緊急バグを、通常の開発フローより優先して直す修正のこと。",
+          "q1_text": "本番障害は待てない。進行中の大きな機能開発とは別に、最短で直す道が必要になる。",
+          "q2_intro": "本番に直接パッチを当て、あとから開発枝へ忘れずに戻す…が抜けがちだった。",
+          "q2_table": {
+            "col_before": "本番へ直接パッチ",
+            "col_after": "Hotfix",
+            "rows": [
+              [
+                "優先度",
+                "他の作業に埋もれる",
+                "緊急枠として切り出せる"
+              ],
+              [
+                "取り出し",
+                "手作業",
+                "cherry-pick等で移植"
+              ],
+              [
+                "記録",
+                "口伝",
+                "専用枝やタグで残せる"
+              ],
+              [
+                "再発防止",
+                "場当たり",
+                "本流へ戻す手順を決められる"
+              ]
+            ]
+          },
+          "q3_cells": [
+            {
+              "icon": "ic-rocket",
+              "cap": "緊急修正を本流と分けて扱える"
+            },
+            {
+              "icon": "ic-undo",
+              "cap": "必要なコミットだけ移植できる"
+            },
+            {
+              "icon": "ic-check",
+              "cap": "あとで本流へ戻す手順が明確になる"
+            }
+          ],
+          "memo": "名前は「熱い修正」。落ち着いてから通常フローへ戻すのがセット。",
+          "sidebar_groups": [
+            {
+              "label": "関連キーワード",
+              "items": [
+                {
+                  "name": "Cherry-pick",
+                  "desc": "hotfixコミットの移植によく使う。",
+                  "page": 10
+                },
+                {
+                  "name": "Branch",
+                  "desc": "hotfix専用枝を切ることが多い。",
+                  "page": 4
+                },
+                {
+                  "name": "Tag",
+                  "desc": "修正リリースの目印。",
+                  "page": 14
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "category": "バージョン管理・Git",
+          "icon": "ic-cube",
+          "compact": true,
+          "id": "sha",
+          "page": 32,
+          "term": "SHA",
+          "reading": "エスエイチエー",
+          "oneline": "コミットなどを一意に識別するためのハッシュ値（長い16進数）。",
+          "q1_text": "「さっきのやつ」では特定できない。コミットを正確に指すIDが必要になる。",
+          "q2_intro": "日付やメッセージで探して、似たコミットを取り違えることがあった。",
+          "q2_table": {
+            "col_before": "あいまいな指定",
+            "col_after": "SHA",
+            "rows": [
+              [
+                "一意性",
+                "低い",
+                "ほぼ衝突しないID"
+              ],
+              [
+                "指定",
+                "言葉で説明",
+                "ハッシュで正確に指す"
+              ],
+              [
+                "短縮",
+                "——",
+                "先頭数桁でも実用上足りる"
+              ],
+              [
+                "用途",
+                "会話",
+                "cherry-pickやrevertの指定"
+              ]
+            ]
+          },
+          "q3_cells": [
+            {
+              "icon": "ic-cube",
+              "cap": "コミットを正確に指定できる"
+            },
+            {
+              "icon": "ic-check",
+              "cap": "取り違えを減らせる"
+            },
+            {
+              "icon": "ic-gear",
+              "cap": "自動化や調査の手がかりになる"
+            }
+          ],
+          "memo": "GitのコミットIDはSHA-1ベース（移行の議論はある）。\n普段は短い先頭だけで足りることが多い。",
+          "sidebar_groups": [
+            {
+              "label": "関連キーワード",
+              "items": [
+                {
+                  "name": "Commit",
+                  "desc": "SHAが付く本体。",
+                  "page": 5
+                },
+                {
+                  "name": "Cherry-pick",
+                  "desc": "SHAを指定して取り込む。",
+                  "page": 10
+                },
+                {
+                  "name": "Revert",
+                  "desc": "打ち消す対象もSHAで指せる。",
+                  "page": 12
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "category": "バージョン管理・Git",
+          "icon": "ic-monitor",
+          "compact": true,
+          "id": "merge-tool",
+          "page": 33,
+          "term": "マージツール",
+          "reading": "マージツール",
+          "oneline": "コンフリクトした双方の差分を見比べながら、解決を助けるツール。",
+          "q1_text": "衝突マーカーが並ぶファイルを、テキストだけで直すのは神経を消耗する。",
+          "q2_intro": "<<<<< を目視で消して、どっちを残すか勘で選んでいた。",
+          "q2_table": {
+            "col_before": "手編集",
+            "col_after": "マージツール",
+            "rows": [
+              [
+                "見え方",
+                "マーカー文字列",
+                "左右（または3ペイン）で比較"
+              ],
+              [
+                "判断",
+                "疲れやすい",
+                "差分が視覚的"
+              ],
+              [
+                "ミス",
+                "消し残し",
+                "ツールがマーカー管理を助ける"
+              ],
+              [
+                "学習",
+                "怖い",
+                "慣れると速い"
+              ]
+            ]
+          },
+          "q3_cells": [
+            {
+              "icon": "ic-monitor",
+              "cap": "衝突箇所を視覚的に比較できる"
+            },
+            {
+              "icon": "ic-check",
+              "cap": "消し残しなどのミスを減らせる"
+            },
+            {
+              "icon": "ic-users",
+              "cap": "チームで同じ解き方を共有しやすい"
+            }
+          ],
+          "memo": "VS CodeのマージUIや、専用diffツールがこれにあたる。\n「ツールに任せきり」ではなく、最終判断は自分。",
+          "sidebar_groups": [
+            {
+              "label": "関連キーワード",
+              "items": [
+                {
+                  "name": "Conflict",
+                  "desc": "マージツールの出番。",
+                  "page": 11
+                },
+                {
+                  "name": "Diff",
+                  "desc": "比較表示の基本。",
+                  "page": 23
+                },
+                {
+                  "name": "Merge",
+                  "desc": "衝突が起きうる操作。",
+                  "page": 8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "category": "バージョン管理・Git",
+          "icon": "ic-undo",
+          "compact": true,
+          "id": "rollback",
+          "page": 34,
+          "term": "ロールバック",
+          "reading": "ロールバック",
+          "oneline": "システムやデータを、以前の良い状態へ戻すこと（一般用語）。",
+          "q1_text": "リリース後に致命的な不具合が出たら、前へ進むより一度戻す方が被害が小さいことがある。",
+          "q2_intro": "バックアップから丸ごと戻すか、急ぎの修正を重ねて更に状況を複雑にしていた。",
+          "q2_table": {
+            "col_before": "前進のみ",
+            "col_after": "ロールバック",
+            "rows": [
+              [
+                "方針",
+                "修正を急ぐ",
+                "まず安全な版へ戻す"
+              ],
+              [
+                "手段",
+                "場当たり",
+                "デプロイやDBの手順として用意"
+              ],
+              [
+                "Git操作",
+                "混同しやすい",
+                "revert等と使い分ける"
+              ],
+              [
+                "記録",
+                "曖昧",
+                "戻した事実を残せる"
+              ]
+            ]
+          },
+          "q3_cells": [
+            {
+              "icon": "ic-undo",
+              "cap": "被害を広げずに前の状態へ戻せる"
+            },
+            {
+              "icon": "ic-check",
+              "cap": "障害対応の選択肢が増える"
+            },
+            {
+              "icon": "ic-clock",
+              "cap": "手順化しておくと判断が速い"
+            }
+          ],
+          "memo": "Gitの revert は「打ち消しコミットを足す」ことが多く、履歴を消すresetとは別物。\n現場の「ロールバック」はデプロイ単位の話も多い。",
+          "sidebar_groups": [
+            {
+              "label": "関連キーワード",
+              "items": [
+                {
+                  "name": "Revert",
+                  "desc": "Git上で変更を打ち消す操作。",
+                  "page": 12
+                },
+                {
+                  "name": "Reset",
+                  "desc": "履歴の位置を付け替える操作。",
+                  "page": 13
+                },
+                {
+                  "name": "Tag",
+                  "desc": "戻す先の目印になる。",
+                  "page": 14
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "category": "バージョン管理・リリース",
+          "icon": "ic-list",
+          "compact": true,
+          "id": "release-notes",
+          "page": 35,
+          "term": "リリースノート",
+          "reading": "リリースノート",
+          "oneline": "そのバージョンで何が変わったかを、利用者向けにまとめた文書。",
+          "q1_text": "「何が変わったの？」にコミットログ全文で答えると、相手も自分もつらい。",
+          "q2_intro": "チャットで口頭説明するか、コミットメッセージを貼って終わらせていた。",
+          "q2_table": {
+            "col_before": "口頭・生ログ",
+            "col_after": "リリースノート",
+            "rows": [
+              [
+                "読者",
+                "開発者向け",
+                "利用者にも読める"
+              ],
+              [
+                "粒度",
+                "細かすぎる",
+                "意味のある変化に要約"
+              ],
+              [
+                "保管",
+                "流れる",
+                "バージョンごとに残る"
+              ],
+              [
+                "連携",
+                "弱い",
+                "TagやChangelogとセット"
+              ]
+            ]
+          },
+          "q3_cells": [
+            {
+              "icon": "ic-list",
+              "cap": "変更点を要約して伝えられる"
+            },
+            {
+              "icon": "ic-users",
+              "cap": "利用者・他チームと認識を揃えられる"
+            },
+            {
+              "icon": "ic-tag",
+              "cap": "バージョンの説明が残る"
+            }
+          ],
+          "memo": "完璧な文書より、「壊れる変更／新機能／修正」が分かれるだけでも価値がある。",
+          "sidebar_groups": [
+            {
+              "label": "関連キーワード",
+              "items": [
+                {
+                  "name": "Tag",
+                  "desc": "ノートが紐づくバージョン目印。",
+                  "page": 14
+                },
+                {
+                  "name": "セマンティックバージョニング",
+                  "desc": "番号の意味づけ。",
+                  "page": 552
+                },
+                {
+                  "name": "Commit",
+                  "desc": "ノートの材料になる履歴。",
+                  "page": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "category": "OSS",
+          "icon": "ic-file",
+          "compact": true,
+          "id": "license",
+          "page": 36,
+          "term": "ライセンス",
+          "reading": "ライセンス",
+          "oneline": "そのソフトウェアをどう使ってよいか（改変・再配布・商用など）を定めたルール。",
+          "q1_text": "他人のコードを使うとき、何をしてよくて何がダメかが分からないと、後で揉め事になる。",
+          "q2_intro": "「ネットにあったから使った」で済ませ、利用条件を読んでいなかった。",
+          "q2_table": {
+            "col_before": "条件を読まない",
+            "col_after": "ライセンス",
+            "rows": [
+              [
+                "利用判断",
+                "勘",
+                "条文で判断できる"
+              ],
+              [
+                "再配布",
+                "曖昧",
+                "可否が明示される"
+              ],
+              [
+                "改変",
+                "グレー",
+                "義務（表示など）が分かる"
+              ],
+              [
+                "商用",
+                "不安",
+                "許可範囲を確認できる"
+              ]
+            ]
+          },
+          "q3_cells": [
+            {
+              "icon": "ic-file",
+              "cap": "使える範囲を事前に確認できる"
+            },
+            {
+              "icon": "ic-check",
+              "cap": "OSS利用の事故を減らせる"
+            },
+            {
+              "icon": "ic-users",
+              "cap": "自分の成果物の条件も明示できる"
+            }
+          ],
+          "memo": "MIT / Apache-2.0 / GPL など種類で義務が違う。\n「なんとなくオープン」では足りない。",
+          "sidebar_groups": [
+            {
+              "label": "関連キーワード",
+              "items": [
+                {
+                  "name": "OSS",
+                  "desc": "ライセンスとセットで語られる。",
+                  "page": 15
+                },
+                {
+                  "name": "コントリビュート",
+                  "desc": "貢献時もライセンスに従う。",
+                  "page": 16
+                },
+                {
+                  "name": "メンテナー",
+                  "desc": "プロジェクト側の管理者。",
+                  "page": 37
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "category": "OSS",
+          "icon": "ic-users",
+          "compact": true,
+          "id": "maintainer",
+          "page": 37,
+          "term": "メンテナー",
+          "reading": "メンテナー",
+          "oneline": "OSSプロジェクトの方針・レビュー・リリースなどを担う運営側の人。",
+          "q1_text": "誰でもpushできる状態だと、品質も方向性も保てない。",
+          "q2_intro": "作者個人の裁量だけに依存し、レビューもリリースも属人化していた。",
+          "q2_table": {
+            "col_before": "作者ひとり任せ",
+            "col_after": "メンテナー",
+            "rows": [
+              [
+                "レビュー",
+                "不定期",
+                "役割として引き受ける"
+              ],
+              [
+                "権限",
+                "曖昧",
+                "マージ権限などが明確"
+              ],
+              [
+                "継続",
+                "作者依存",
+                "チームで引き継げる"
+              ],
+              [
+                "外部貢献",
+                "届きにくい",
+                "窓口が分かる"
+              ]
+            ]
+          },
+          "q3_cells": [
+            {
+              "icon": "ic-users",
+              "cap": "プロジェクトの意思決定が回る"
+            },
+            {
+              "icon": "ic-check",
+              "cap": "貢献の受け入れ窓口になる"
+            },
+            {
+              "icon": "ic-gear",
+              "cap": "リリースや方針を継続できる"
+            }
+          ],
+          "memo": "メンテナーは「偉い人」というより、世話を焼く人。\nIssue対応も立派なメンテ業務。",
+          "sidebar_groups": [
+            {
+              "label": "関連キーワード",
+              "items": [
+                {
+                  "name": "OSS",
+                  "desc": "メンテナーが支える対象。",
+                  "page": 15
+                },
+                {
+                  "name": "コントリビュート",
+                  "desc": "メンテナーがレビューする側。",
+                  "page": 16
+                },
+                {
+                  "name": "Issue",
+                  "desc": "メンテ業務の入口。",
+                  "page": 38
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "category": "OSS",
+          "icon": "ic-list",
+          "compact": true,
+          "id": "issue",
+          "page": 38,
+          "term": "Issue",
+          "reading": "イシュー",
+          "oneline": "バグ報告や要望、タスクをチケットとして残し、議論・追跡する仕組み。",
+          "q1_text": "不具合や要望がチャットに流れると、対応漏れと認識ズレが起きる。",
+          "q2_intro": "口頭やDMで伝えて、いつの間にか忘れていた。",
+          "q2_table": {
+            "col_before": "チャット依頼",
+            "col_after": "Issue",
+            "rows": [
+              [
+                "記録",
+                "流れる",
+                "チケットとして残る"
+              ],
+              [
+                "議論",
+                "散らばる",
+                "スレッドで追える"
+              ],
+              [
+                "優先度",
+                "声が大きい順",
+                "ラベルやマイルストーン"
+              ],
+              [
+                "再現",
+                "口頭",
+                "手順を書いて共有"
+              ]
+            ]
+          },
+          "q3_cells": [
+            {
+              "icon": "ic-list",
+              "cap": "バグや要望を漏れなく追える"
+            },
+            {
+              "icon": "ic-users",
+              "cap": "議論の場がひとつにまとまる"
+            },
+            {
+              "icon": "ic-check",
+              "cap": "完了までの状態が可視化される"
+            }
+          ],
+          "memo": "良いIssueは「期待／実際／再現手順」がある。\n短いほど、むしろ伝わりやすい。",
+          "sidebar_groups": [
+            {
+              "label": "関連キーワード",
+              "items": [
+                {
+                  "name": "Pull Request",
+                  "desc": "Issueを閉じる実装提案。",
+                  "page": 20
+                },
+                {
+                  "name": "コントリビュート",
+                  "desc": "Issue起票も貢献の入口。",
+                  "page": 16
+                },
+                {
+                  "name": "GitHub",
+                  "desc": "Issueが付いている代表サービス。",
+                  "page": 17
                 }
               ]
             }
@@ -1320,7 +2920,7 @@ module.exports = {
       "entries": [
         {
           "id": "client",
-          "page": 21,
+          "page": 43,
           "term": "Client",
           "reading": "クライアント",
           "category": "ネットワークの基本",
@@ -1371,7 +2971,7 @@ module.exports = {
                 {
                   "name": "Server",
                   "desc": "クライアントからの要求を受け取り、処理して返す側。",
-                  "page": 22
+                  "page": 44
                 }
               ]
             },
@@ -1381,12 +2981,12 @@ module.exports = {
                 {
                   "name": "Request",
                   "desc": "クライアントがサーバーに送る依頼のデータ。",
-                  "page": 23
+                  "page": 45
                 },
                 {
                   "name": "Response",
                   "desc": "サーバーがリクエストに対して返す結果。",
-                  "page": 24
+                  "page": 46
                 }
               ]
             }
@@ -1394,7 +2994,7 @@ module.exports = {
         },
         {
           "id": "server",
-          "page": 22,
+          "page": 44,
           "term": "Server",
           "reading": "サーバー",
           "category": "ネットワークの基本",
@@ -1445,7 +3045,7 @@ module.exports = {
                 {
                   "name": "Client",
                   "desc": "サーバーに要求を送る側。ブラウザやアプリなど。",
-                  "page": 21
+                  "page": 43
                 }
               ]
             },
@@ -1455,7 +3055,7 @@ module.exports = {
                 {
                   "name": "Request",
                   "desc": "クライアントがサーバーに送る依頼のデータ。",
-                  "page": 23
+                  "page": 45
                 }
               ]
             }
@@ -1463,7 +3063,7 @@ module.exports = {
         },
         {
           "id": "request",
-          "page": 23,
+          "page": 45,
           "term": "Request",
           "reading": "リクエスト",
           "category": "HTTP通信",
@@ -1514,7 +3114,7 @@ module.exports = {
                 {
                   "name": "Response",
                   "desc": "リクエストに対してサーバーが返す結果。",
-                  "page": 24
+                  "page": 46
                 }
               ]
             },
@@ -1524,7 +3124,7 @@ module.exports = {
                 {
                   "name": "Header",
                   "desc": "リクエストやレスポンスに添える付加情報。",
-                  "page": 34
+                  "page": 56
                 }
               ]
             }
@@ -1532,7 +3132,7 @@ module.exports = {
         },
         {
           "id": "response",
-          "page": 24,
+          "page": 46,
           "term": "Response",
           "reading": "レスポンス",
           "category": "HTTP通信",
@@ -1583,7 +3183,7 @@ module.exports = {
                 {
                   "name": "Request",
                   "desc": "クライアントがサーバーに送る依頼のデータ。",
-                  "page": 23
+                  "page": 45
                 }
               ]
             },
@@ -1593,7 +3193,7 @@ module.exports = {
                 {
                   "name": "HTTP",
                   "desc": "リクエスト・レスポンスをやり取りする共通ルール。",
-                  "page": 25
+                  "page": 47
                 }
               ]
             }
@@ -1601,7 +3201,7 @@ module.exports = {
         },
         {
           "id": "http",
-          "page": 25,
+          "page": 47,
           "term": "HTTP",
           "reading": "エイチティーティーピー",
           "category": "通信プロトコル",
@@ -1652,7 +3252,7 @@ module.exports = {
                 {
                   "name": "HTTPS",
                   "desc": "HTTPに暗号化（TLS）を追加した安全な通信。",
-                  "page": 26
+                  "page": 48
                 }
               ]
             },
@@ -1662,12 +3262,12 @@ module.exports = {
                 {
                   "name": "Request",
                   "desc": "クライアントがサーバーに送る依頼のデータ。",
-                  "page": 23
+                  "page": 45
                 },
                 {
                   "name": "Response",
                   "desc": "サーバーがリクエストに対して返す結果。",
-                  "page": 24
+                  "page": 46
                 }
               ]
             }
@@ -1675,7 +3275,7 @@ module.exports = {
         },
         {
           "id": "https",
-          "page": 26,
+          "page": 48,
           "term": "HTTPS",
           "reading": "エイチティーティーピーエス",
           "category": "通信プロトコル",
@@ -1726,7 +3326,7 @@ module.exports = {
                 {
                   "name": "HTTP",
                   "desc": "暗号化されていない通信プロトコル。",
-                  "page": 25
+                  "page": 47
                 }
               ]
             },
@@ -1736,12 +3336,12 @@ module.exports = {
                 {
                   "name": "TLS",
                   "desc": "HTTPSの暗号化・認証を担う仕組み。",
-                  "page": 37
+                  "page": 59
                 },
                 {
                   "name": "SSL証明書",
                   "desc": "通信相手が本物であることを証明する電子証明書。",
-                  "page": 38
+                  "page": 60
                 }
               ]
             }
@@ -1749,7 +3349,7 @@ module.exports = {
         },
         {
           "id": "dns",
-          "page": 27,
+          "page": 49,
           "term": "DNS",
           "reading": "ディーエヌエス",
           "category": "名前解決",
@@ -1800,12 +3400,12 @@ module.exports = {
                 {
                   "name": "Domain",
                   "desc": "DNSで管理される、覚えやすい名前そのもの。",
-                  "page": 28
+                  "page": 50
                 },
                 {
                   "name": "IP Address",
                   "desc": "DNSが変換した先にある、機械の住所。",
-                  "page": 29
+                  "page": 51
                 }
               ]
             }
@@ -1813,7 +3413,7 @@ module.exports = {
         },
         {
           "id": "domain",
-          "page": 28,
+          "page": 50,
           "term": "Domain",
           "reading": "ドメイン",
           "category": "名前解決",
@@ -1864,12 +3464,12 @@ module.exports = {
                 {
                   "name": "DNS",
                   "desc": "ドメイン名をIPアドレスに変換する仕組み。",
-                  "page": 27
+                  "page": 49
                 },
                 {
                   "name": "SSL証明書",
                   "desc": "ドメインが本物であることを証明する電子証明書。",
-                  "page": 38
+                  "page": 60
                 }
               ]
             }
@@ -1877,7 +3477,7 @@ module.exports = {
         },
         {
           "id": "ip-address",
-          "page": 29,
+          "page": 51,
           "term": "IP Address",
           "reading": "アイピーアドレス",
           "category": "名前解決",
@@ -1928,17 +3528,17 @@ module.exports = {
                 {
                   "name": "DNS",
                   "desc": "ドメイン名をIPアドレスに変換する仕組み。",
-                  "page": 27
+                  "page": 49
                 },
                 {
                   "name": "Port",
                   "desc": "同じIPアドレスの中で、アプリを区別する番号。",
-                  "page": 30
+                  "page": 52
                 },
                 {
                   "name": "NAT",
                   "desc": "プライベートIPとグローバルIPを変換する仕組み。",
-                  "page": 41
+                  "page": 63
                 }
               ]
             }
@@ -1946,7 +3546,7 @@ module.exports = {
         },
         {
           "id": "port",
-          "page": 30,
+          "page": 52,
           "term": "Port",
           "reading": "ポート",
           "category": "名前解決",
@@ -1997,12 +3597,12 @@ module.exports = {
                 {
                   "name": "IP Address",
                   "desc": "機器そのものの住所。ポートはその中の区分け。",
-                  "page": 29
+                  "page": 51
                 },
                 {
                   "name": "TCP",
                   "desc": "ポート番号を使って通信を確立するプロトコル。",
-                  "page": 35
+                  "page": 57
                 }
               ]
             }
@@ -2010,7 +3610,7 @@ module.exports = {
         },
         {
           "id": "cookie",
-          "page": 31,
+          "page": 53,
           "term": "Cookie",
           "reading": "クッキー",
           "category": "状態管理・認証",
@@ -2061,12 +3661,12 @@ module.exports = {
                 {
                   "name": "Session",
                   "desc": "Cookieを使って実現される、ログイン状態などの管理。",
-                  "page": 32
+                  "page": 54
                 },
                 {
                   "name": "JWT",
                   "desc": "署名付きトークンでログイン情報を持ち運ぶ方式。",
-                  "page": 33
+                  "page": 55
                 }
               ]
             }
@@ -2074,7 +3674,7 @@ module.exports = {
         },
         {
           "id": "session",
-          "page": 32,
+          "page": 54,
           "term": "Session",
           "reading": "セッション",
           "category": "状態管理・認証",
@@ -2125,12 +3725,12 @@ module.exports = {
                 {
                   "name": "Cookie",
                   "desc": "セッションIDなどを保存する、ブラウザ側の小さなデータ。",
-                  "page": 31
+                  "page": 53
                 },
                 {
                   "name": "JWT",
                   "desc": "サーバー側に状態を持たない、別の認証情報の持ち方。",
-                  "page": 33
+                  "page": 55
                 }
               ]
             }
@@ -2138,7 +3738,7 @@ module.exports = {
         },
         {
           "id": "jwt",
-          "page": 33,
+          "page": 55,
           "term": "JWT",
           "reading": "ジェイダブリューティー",
           "category": "状態管理・認証",
@@ -2189,17 +3789,17 @@ module.exports = {
                 {
                   "name": "Session",
                   "desc": "サーバー側で状態を管理する、もう一つの方式。",
-                  "page": 32
+                  "page": 54
                 },
                 {
                   "name": "Cookie",
                   "desc": "JWTをブラウザに保存する際の入れ物としても使われる。",
-                  "page": 31
+                  "page": 53
                 },
                 {
                   "name": "Header",
                   "desc": "JWTは多くの場合Authorizationヘッダーに載せて送る。",
-                  "page": 34
+                  "page": 56
                 }
               ]
             }
@@ -2207,7 +3807,7 @@ module.exports = {
         },
         {
           "id": "header",
-          "page": 34,
+          "page": 56,
           "term": "Header",
           "reading": "ヘッダー",
           "category": "HTTP通信",
@@ -2258,12 +3858,12 @@ module.exports = {
                 {
                   "name": "Request",
                   "desc": "ヘッダーが付加される、依頼データそのもの。",
-                  "page": 23
+                  "page": 45
                 },
                 {
                   "name": "JWT",
                   "desc": "Authorizationヘッダーに載せて送る認証トークン。",
-                  "page": 33
+                  "page": 55
                 }
               ]
             }
@@ -2271,7 +3871,7 @@ module.exports = {
         },
         {
           "id": "tcp",
-          "page": 35,
+          "page": 57,
           "term": "TCP",
           "reading": "ティーシーピー",
           "category": "トランスポート層",
@@ -2322,7 +3922,7 @@ module.exports = {
                 {
                   "name": "UDP",
                   "desc": "確認を取らず、とにかく速さを優先するプロトコル。",
-                  "page": 36
+                  "page": 58
                 }
               ]
             },
@@ -2332,7 +3932,7 @@ module.exports = {
                 {
                   "name": "Port",
                   "desc": "TCPが通信相手のアプリを特定するために使う番号。",
-                  "page": 30
+                  "page": 52
                 }
               ]
             }
@@ -2340,7 +3940,7 @@ module.exports = {
         },
         {
           "id": "udp",
-          "page": 36,
+          "page": 58,
           "term": "UDP",
           "reading": "ユーディーピー",
           "category": "トランスポート層",
@@ -2391,7 +3991,7 @@ module.exports = {
                 {
                   "name": "TCP",
                   "desc": "確認を取りながら確実に届けるプロトコル。",
-                  "page": 35
+                  "page": 57
                 }
               ]
             }
@@ -2399,7 +3999,7 @@ module.exports = {
         },
         {
           "id": "tls",
-          "page": 37,
+          "page": 59,
           "term": "TLS",
           "reading": "ティーエルエス",
           "category": "暗号化・証明書",
@@ -2450,17 +4050,17 @@ module.exports = {
                 {
                   "name": "HTTPS",
                   "desc": "TLSによって暗号化されたHTTP通信。",
-                  "page": 26
+                  "page": 48
                 },
                 {
                   "name": "SSL証明書",
                   "desc": "TLS通信で相手の身元を証明する電子証明書。",
-                  "page": 38
+                  "page": 60
                 },
                 {
                   "name": "Let's Encrypt",
                   "desc": "無料でSSL証明書を発行してくれる認証局。",
-                  "page": 39
+                  "page": 61
                 }
               ]
             }
@@ -2468,7 +4068,7 @@ module.exports = {
         },
         {
           "id": "ssl-certificate",
-          "page": 38,
+          "page": 60,
           "term": "SSL証明書",
           "reading": "エスエスエルしょうめいしょ",
           "category": "暗号化・証明書",
@@ -2519,12 +4119,12 @@ module.exports = {
                 {
                   "name": "TLS",
                   "desc": "この証明書を使って暗号化通信を行う仕組み。",
-                  "page": 37
+                  "page": 59
                 },
                 {
                   "name": "Let's Encrypt",
                   "desc": "この証明書を無料・自動で発行してくれるサービス。",
-                  "page": 39
+                  "page": 61
                 }
               ]
             }
@@ -2532,7 +4132,7 @@ module.exports = {
         },
         {
           "id": "lets-encrypt",
-          "page": 39,
+          "page": 61,
           "term": "Let's Encrypt",
           "reading": "レッツエンクリプト",
           "category": "暗号化・証明書",
@@ -2583,12 +4183,12 @@ module.exports = {
                 {
                   "name": "SSL証明書",
                   "desc": "Let's Encryptが発行してくれる証明書そのもの。",
-                  "page": 38
+                  "page": 60
                 },
                 {
                   "name": "HTTPS",
                   "desc": "この証明書によって実現される暗号化通信。",
-                  "page": 26
+                  "page": 48
                 }
               ]
             }
@@ -2596,7 +4196,7 @@ module.exports = {
         },
         {
           "id": "vpn",
-          "page": 40,
+          "page": 62,
           "term": "VPN",
           "reading": "ブイピーエヌ",
           "category": "ネットワーク構成",
@@ -2647,12 +4247,12 @@ module.exports = {
                 {
                   "name": "NAT",
                   "desc": "プライベートIPとグローバルIPを変換する仕組み。",
-                  "page": 41
+                  "page": 63
                 },
                 {
-                  "name": "Proxy（フォワードプロキシ）",
+                  "name": "Proxy",
                   "desc": "クライアントの代わりに通信を中継する仕組み。",
-                  "page": 43
+                  "page": 65
                 }
               ]
             }
@@ -2660,7 +4260,7 @@ module.exports = {
         },
         {
           "id": "nat",
-          "page": 41,
+          "page": 63,
           "term": "NAT",
           "reading": "ナット",
           "category": "ネットワーク構成",
@@ -2711,12 +4311,12 @@ module.exports = {
                 {
                   "name": "IP Address",
                   "desc": "NATが変換する対象、プライベート/グローバルの住所。",
-                  "page": 29
+                  "page": 51
                 },
                 {
-                  "name": "サブネット（Subnet）",
+                  "name": "Subnet",
                   "desc": "プライベートIPを整理して区切る仕組み。",
-                  "page": 42
+                  "page": 64
                 }
               ]
             }
@@ -2724,8 +4324,8 @@ module.exports = {
         },
         {
           "id": "subnet",
-          "page": 42,
-          "term": "サブネット（Subnet）",
+          "page": 64,
+          "term": "Subnet",
           "category": "ネットワーク構成",
           "icon": "ic-layers",
           "oneline": "1つのネットワークを、用途や部署などの単位で複数の小さなネットワークに分割する仕組み。",
@@ -2774,21 +4374,22 @@ module.exports = {
                 {
                   "name": "IP Address",
                   "desc": "サブネットが分割の対象とする住所そのもの。",
-                  "page": 29
+                  "page": 51
                 },
                 {
                   "name": "NAT",
                   "desc": "プライベートIPとグローバルIPを変換する仕組み。",
-                  "page": 41
+                  "page": 63
                 }
               ]
             }
-          ]
+          ],
+          "reading": "サブネット"
         },
         {
           "id": "proxy",
-          "page": 43,
-          "term": "Proxy（フォワードプロキシ）",
+          "page": 65,
+          "term": "Proxy",
           "compact": true,
           "reading": "プロキシ",
           "category": "ネットワーク構成",
@@ -2839,12 +4440,12 @@ module.exports = {
                 {
                   "name": "VPN",
                   "desc": "暗号化されたトンネルで社内ネットワークに接続する仕組み。",
-                  "page": 40
+                  "page": 62
                 },
                 {
                   "name": "NAT",
                   "desc": "プライベートIPとグローバルIPを変換する仕組み。",
-                  "page": 41
+                  "page": 63
                 }
               ]
             }
@@ -2861,7 +4462,7 @@ module.exports = {
         },
         {
           "id": "intranet",
-          "page": 44,
+          "page": 66,
           "term": "イントラネット",
           "category": "ネットワーク構成",
           "icon": "ic-network",
@@ -2916,12 +4517,12 @@ module.exports = {
                 {
                   "name": "VPN",
                   "desc": "外からイントラネットへ安全に入るトンネル。",
-                  "page": 40
+                  "page": 62
                 },
                 {
                   "name": "Proxy",
                   "desc": "社内から外へ出るときの中継役。",
-                  "page": 43
+                  "page": 65
                 }
               ]
             }
@@ -2935,7 +4536,7 @@ module.exports = {
       "entries": [
         {
           "id": "json",
-          "page": 51,
+          "page": 73,
           "term": "JSON",
           "reading": "ジェイソン",
           "category": "データフォーマット",
@@ -2986,12 +4587,12 @@ module.exports = {
                 {
                   "name": "XML",
                   "desc": "タグで構造を表現する古参フォーマット。今も設定や仕様書で現役。",
-                  "page": 54
+                  "page": 76
                 },
                 {
                   "name": "YAML",
                   "desc": "インデントで構造を表す、設定ファイル向けの書き方。",
-                  "page": 52
+                  "page": 74
                 }
               ]
             },
@@ -3001,7 +4602,7 @@ module.exports = {
                 {
                   "name": "API",
                   "desc": "JSONはAPIのレスポンス形式として最も広く使われている。",
-                  "page": 61
+                  "page": 83
                 }
               ]
             }
@@ -3009,7 +4610,7 @@ module.exports = {
         },
         {
           "id": "yaml",
-          "page": 52,
+          "page": 74,
           "term": "YAML",
           "reading": "ヤムル",
           "category": "データフォーマット",
@@ -3060,12 +4661,12 @@ module.exports = {
                 {
                   "name": "JSON",
                   "desc": "括弧で構造を表すデータ形式。APIレスポンスで定番。",
-                  "page": 51
+                  "page": 73
                 },
                 {
                   "name": "TOML",
                   "desc": "YAMLよりシンプルな階層表現を目指した設定形式。",
-                  "page": 53
+                  "page": 75
                 }
               ]
             }
@@ -3073,7 +4674,7 @@ module.exports = {
         },
         {
           "id": "toml",
-          "page": 53,
+          "page": 75,
           "term": "TOML",
           "reading": "トムル",
           "category": "データフォーマット",
@@ -3124,12 +4725,12 @@ module.exports = {
                 {
                   "name": "YAML",
                   "desc": "インデントで階層構造を表す設定ファイル形式。",
-                  "page": 52
+                  "page": 74
                 },
                 {
                   "name": "JSON",
                   "desc": "括弧で構造を表すデータ形式。プログラムからの生成向き。",
-                  "page": 51
+                  "page": 73
                 }
               ]
             }
@@ -3137,7 +4738,7 @@ module.exports = {
         },
         {
           "id": "xml",
-          "page": 54,
+          "page": 76,
           "term": "XML",
           "reading": "エックスエムエル",
           "category": "データフォーマット",
@@ -3188,12 +4789,12 @@ module.exports = {
                 {
                   "name": "JSON",
                   "desc": "括弧で構造を表す軽量なデータ形式。今のAPIの主流。",
-                  "page": 51
+                  "page": 73
                 },
                 {
-                  "name": "スキーマ（Schema）",
+                  "name": "Schema",
                   "desc": "データの形を定義し、正しいかどうかを検証する仕組み。",
-                  "page": 56
+                  "page": 78
                 }
               ]
             }
@@ -3201,7 +4802,7 @@ module.exports = {
         },
         {
           "id": "csv",
-          "page": 55,
+          "page": 77,
           "term": "CSV",
           "reading": "シーエスブイ",
           "category": "データフォーマット",
@@ -3252,7 +4853,7 @@ module.exports = {
                 {
                   "name": "JSON",
                   "desc": "括弧で構造を表す軽量なデータ形式。ネスト構造も表現できる。",
-                  "page": 51
+                  "page": 73
                 }
               ]
             }
@@ -3260,8 +4861,8 @@ module.exports = {
         },
         {
           "id": "schema",
-          "page": 56,
-          "term": "スキーマ（Schema）",
+          "page": 78,
+          "term": "Schema",
           "category": "データフォーマット",
           "icon": "ic-scale",
           "oneline": "データがどんな項目を持ち、どんな型・制約であるべきかを定義した\"データの設計図\"。",
@@ -3310,16 +4911,17 @@ module.exports = {
                 {
                   "name": "XML",
                   "desc": "タグで構造を表現するデータ形式。DTD/XSDというスキーマ機構を持つ。",
-                  "page": 54
+                  "page": 76
                 },
                 {
                   "name": "OpenAPI",
                   "desc": "APIの入出力の形をスキーマとして定義する仕様。",
-                  "page": 65
+                  "page": 87
                 }
               ]
             }
-          ]
+          ],
+          "reading": "スキーマ"
         }
       ]
     },
@@ -3329,7 +4931,7 @@ module.exports = {
       "entries": [
         {
           "id": "api",
-          "page": 61,
+          "page": 83,
           "term": "API",
           "reading": "エーピーアイ",
           "category": "API",
@@ -3380,17 +4982,17 @@ module.exports = {
                 {
                   "name": "Endpoint",
                   "desc": "APIの窓口の中の、個別の入り口となるURL。",
-                  "page": 62
+                  "page": 84
                 },
                 {
                   "name": "REST",
                   "desc": "APIの設計スタイルの1つ。URLと動詞で操作を表す。",
-                  "page": 63
+                  "page": 85
                 },
                 {
                   "name": "GraphQL",
                   "desc": "必要なデータだけを1回で取得できるAPIの仕組み。",
-                  "page": 64
+                  "page": 86
                 }
               ]
             }
@@ -3398,7 +5000,7 @@ module.exports = {
         },
         {
           "id": "endpoint",
-          "page": 62,
+          "page": 84,
           "term": "Endpoint",
           "reading": "エンドポイント",
           "category": "API",
@@ -3449,17 +5051,17 @@ module.exports = {
                 {
                   "name": "API",
                   "desc": "アプリ同士がやり取りするための窓口全体。",
-                  "page": 61
+                  "page": 83
                 },
                 {
                   "name": "slug",
                   "desc": "URLの一部に使われる、人にも読める識別子。",
-                  "page": 67
+                  "page": 89
                 },
                 {
                   "name": "REST",
                   "desc": "URLと動詞で操作を表現するAPI設計スタイル。",
-                  "page": 63
+                  "page": 85
                 }
               ]
             }
@@ -3467,7 +5069,7 @@ module.exports = {
         },
         {
           "id": "rest",
-          "page": 63,
+          "page": 85,
           "term": "REST",
           "reading": "レスト",
           "category": "API",
@@ -3518,7 +5120,7 @@ module.exports = {
                 {
                   "name": "GraphQL",
                   "desc": "必要なデータだけを1つのエンドポイントで取得できる設計。",
-                  "page": 64
+                  "page": 86
                 }
               ]
             },
@@ -3528,12 +5130,12 @@ module.exports = {
                 {
                   "name": "Endpoint",
                   "desc": "RESTのURL設計の対象になる、個々の入り口。",
-                  "page": 62
+                  "page": 84
                 },
                 {
                   "name": "Status Code",
                   "desc": "REST APIのレスポンスで結果を伝える3桁の数字。",
-                  "page": 66
+                  "page": 88
                 }
               ]
             }
@@ -3541,7 +5143,7 @@ module.exports = {
         },
         {
           "id": "graphql",
-          "page": 64,
+          "page": 86,
           "term": "GraphQL",
           "reading": "グラフキューエル",
           "category": "API",
@@ -3592,7 +5194,7 @@ module.exports = {
                 {
                   "name": "REST",
                   "desc": "URLと動詞で操作を表現するAPI設計スタイル。",
-                  "page": 63
+                  "page": 85
                 }
               ]
             },
@@ -3600,9 +5202,9 @@ module.exports = {
               "label": "関連する語",
               "items": [
                 {
-                  "name": "スキーマ（Schema）",
+                  "name": "Schema",
                   "desc": "GraphQLでもデータの形を定義するために使われる。",
-                  "page": 56
+                  "page": 78
                 }
               ]
             }
@@ -3610,7 +5212,7 @@ module.exports = {
         },
         {
           "id": "openapi",
-          "page": 65,
+          "page": 87,
           "term": "OpenAPI",
           "reading": "オープンエーピーアイ",
           "category": "API",
@@ -3661,12 +5263,12 @@ module.exports = {
                 {
                   "name": "API",
                   "desc": "OpenAPIはこのAPIの仕様を記述するためのフォーマット。",
-                  "page": 61
+                  "page": 83
                 },
                 {
-                  "name": "スキーマ（Schema）",
+                  "name": "Schema",
                   "desc": "OpenAPIの中でリクエスト・レスポンスの形を定義する仕組み。",
-                  "page": 56
+                  "page": 78
                 }
               ]
             }
@@ -3674,7 +5276,7 @@ module.exports = {
         },
         {
           "id": "status_code",
-          "page": 66,
+          "page": 88,
           "term": "Status Code",
           "reading": "ステータスコード",
           "category": "API",
@@ -3725,7 +5327,7 @@ module.exports = {
                 {
                   "name": "REST",
                   "desc": "Status CodeはREST APIのレスポンスで結果を伝える手段。",
-                  "page": 63
+                  "page": 85
                 }
               ]
             }
@@ -3733,7 +5335,7 @@ module.exports = {
         },
         {
           "id": "slug",
-          "page": 67,
+          "page": 89,
           "term": "slug",
           "reading": "スラッグ",
           "category": "API",
@@ -3784,7 +5386,7 @@ module.exports = {
                 {
                   "name": "Endpoint",
                   "desc": "slugはエンドポイントのURLの一部として使われることが多い。",
-                  "page": 62
+                  "page": 84
                 }
               ]
             }
@@ -3798,7 +5400,7 @@ module.exports = {
       "entries": [
         {
           "id": "grpc",
-          "page": 71,
+          "page": 93,
           "term": "gRPC",
           "reading": "ジーアールピーシー",
           "category": "通信プロトコル",
@@ -3849,12 +5451,12 @@ module.exports = {
                 {
                   "name": "REST",
                   "desc": "URLと動詞で操作を表現する、人にも読みやすいAPI設計。",
-                  "page": 63
+                  "page": 85
                 },
                 {
-                  "name": "スキーマ（Schema）",
+                  "name": "Schema",
                   "desc": "gRPCも通信するデータの形をスキーマとして定義する。",
-                  "page": 56
+                  "page": 78
                 }
               ]
             }
@@ -3862,7 +5464,7 @@ module.exports = {
         },
         {
           "id": "websocket",
-          "page": 72,
+          "page": 94,
           "term": "WebSocket",
           "reading": "ウェブソケット",
           "category": "通信プロトコル",
@@ -3913,12 +5515,12 @@ module.exports = {
                 {
                   "name": "Pub/Sub",
                   "desc": "変化があった相手に自動で知らせる、より広い仕組み。",
-                  "page": 74
+                  "page": 96
                 },
                 {
                   "name": "Webhook",
                   "desc": "こちらもイベント発生時に通知する仕組みだが、通信の形が異なる。",
-                  "page": 73
+                  "page": 95
                 }
               ]
             }
@@ -3926,7 +5528,7 @@ module.exports = {
         },
         {
           "id": "webhook",
-          "page": 73,
+          "page": 95,
           "term": "Webhook",
           "reading": "ウェブフック",
           "category": "通信プロトコル",
@@ -3977,12 +5579,12 @@ module.exports = {
                 {
                   "name": "Pub/Sub",
                   "desc": "Webhookと同じく通知の仕組みだが、間に仲介役を挟む点が異なる。",
-                  "page": 74
+                  "page": 96
                 },
                 {
                   "name": "Endpoint",
                   "desc": "Webhookの通知を受け取るための窓口として自分のAPIに用意する。",
-                  "page": 62
+                  "page": 84
                 }
               ]
             }
@@ -3990,7 +5592,7 @@ module.exports = {
         },
         {
           "id": "pubsub",
-          "page": 74,
+          "page": 96,
           "term": "Pub/Sub",
           "reading": "パブサブ",
           "category": "通信プロトコル",
@@ -4041,12 +5643,12 @@ module.exports = {
                 {
                   "name": "Webhook",
                   "desc": "こちらは送信元が受信先を直接知っている、1対1に近い通知方式。",
-                  "page": 73
+                  "page": 95
                 },
                 {
                   "name": "WebSocket",
                   "desc": "こちらは接続を保ったまま双方向にやり取りする通信方式。",
-                  "page": 72
+                  "page": 94
                 }
               ]
             }
@@ -4060,7 +5662,7 @@ module.exports = {
       "entries": [
         {
           "id": "database",
-          "page": 81,
+          "page": 103,
           "term": "Database",
           "reading": "データベース",
           "category": "データベース・基礎",
@@ -4111,12 +5713,12 @@ module.exports = {
                 {
                   "name": "RDB",
                   "desc": "表同士を関係で結びつけて管理する方式。",
-                  "page": 82
+                  "page": 104
                 },
                 {
                   "name": "NoSQL",
                   "desc": "表の形にこだわらない柔軟なデータベース。",
-                  "page": 84
+                  "page": 106
                 }
               ]
             },
@@ -4126,7 +5728,7 @@ module.exports = {
                 {
                   "name": "Table",
                   "desc": "データを行と列で整理する表そのもの。",
-                  "page": 85
+                  "page": 107
                 }
               ]
             }
@@ -4134,7 +5736,7 @@ module.exports = {
         },
         {
           "id": "rdb",
-          "page": 82,
+          "page": 104,
           "term": "RDB",
           "reading": "アールディービー",
           "category": "データベース・基礎",
@@ -4185,12 +5787,12 @@ module.exports = {
                 {
                   "name": "RDBMS",
                   "desc": "RDBの考え方を実装したソフトウェア。",
-                  "page": 83
+                  "page": 105
                 },
                 {
                   "name": "NoSQL",
                   "desc": "表の形にこだわらない別のアプローチ。",
-                  "page": 84
+                  "page": 106
                 }
               ]
             },
@@ -4200,12 +5802,12 @@ module.exports = {
                 {
                   "name": "Table",
                   "desc": "行と列でデータを整理する表。",
-                  "page": 85
+                  "page": 107
                 },
                 {
                   "name": "Foreign Key",
                   "desc": "表同士の関係を表すキー。",
-                  "page": 88
+                  "page": 110
                 }
               ]
             }
@@ -4213,7 +5815,7 @@ module.exports = {
         },
         {
           "id": "rdbms",
-          "page": 83,
+          "page": 105,
           "term": "RDBMS",
           "reading": "アールディービーエムエス",
           "category": "データベース・基礎",
@@ -4264,7 +5866,7 @@ module.exports = {
                 {
                   "name": "RDB",
                   "desc": "表同士を関係で結びつけるデータの考え方。",
-                  "page": 82
+                  "page": 104
                 }
               ]
             },
@@ -4274,7 +5876,7 @@ module.exports = {
                 {
                   "name": "SQL",
                   "desc": "RDBMSに指示を出すための共通言語。",
-                  "page": 90
+                  "page": 112
                 }
               ]
             },
@@ -4283,11 +5885,13 @@ module.exports = {
               "items": [
                 {
                   "name": "MySQL",
-                  "desc": "世界で広く使われるRDBMS製品。"
+                  "desc": "世界で広く使われるRDBMS製品。",
+                  "page": 127
                 },
                 {
                   "name": "PostgreSQL",
-                  "desc": "機能が豊富なRDBMS製品。"
+                  "desc": "機能が豊富なRDBMS製品。",
+                  "page": 128
                 }
               ]
             }
@@ -4295,7 +5899,7 @@ module.exports = {
         },
         {
           "id": "nosql",
-          "page": 84,
+          "page": 106,
           "term": "NoSQL",
           "reading": "ノーエスキューエル",
           "category": "データベース・基礎",
@@ -4346,12 +5950,12 @@ module.exports = {
                 {
                   "name": "RDB",
                   "desc": "表同士を関係で結びつけるデータの考え方。",
-                  "page": 82
+                  "page": 104
                 },
                 {
                   "name": "RDBMS",
                   "desc": "RDBを実装したソフトウェア。",
-                  "page": 83
+                  "page": 105
                 }
               ]
             },
@@ -4360,11 +5964,13 @@ module.exports = {
               "items": [
                 {
                   "name": "Redis",
-                  "desc": "高速なキー・バリュー型データベース。"
+                  "desc": "高速なキー・バリュー型データベース。",
+                  "page": 130
                 },
                 {
                   "name": "MongoDB",
-                  "desc": "柔軟なドキュメント型データベース。"
+                  "desc": "柔軟なドキュメント型データベース。",
+                  "page": 131
                 }
               ]
             }
@@ -4372,7 +5978,7 @@ module.exports = {
         },
         {
           "id": "table",
-          "page": 85,
+          "page": 107,
           "term": "Table",
           "reading": "テーブル",
           "category": "データベース・構造",
@@ -4423,17 +6029,17 @@ module.exports = {
                 {
                   "name": "Record",
                   "desc": "テーブルの1行分のデータ。",
-                  "page": 86
+                  "page": 108
                 },
                 {
                   "name": "Primary Key",
                   "desc": "1件を一意に特定する値。",
-                  "page": 87
+                  "page": 109
                 },
                 {
                   "name": "Foreign Key",
                   "desc": "他の表とつながりを持たせるキー。",
-                  "page": 88
+                  "page": 110
                 }
               ]
             }
@@ -4441,7 +6047,7 @@ module.exports = {
         },
         {
           "id": "record",
-          "page": 86,
+          "page": 108,
           "term": "Record",
           "reading": "レコード",
           "category": "データベース・構造",
@@ -4492,12 +6098,12 @@ module.exports = {
                 {
                   "name": "Table",
                   "desc": "レコードが積まれる表そのもの。",
-                  "page": 85
+                  "page": 107
                 },
                 {
                   "name": "Primary Key",
                   "desc": "レコードを一意に特定する値。",
-                  "page": 87
+                  "page": 109
                 }
               ]
             }
@@ -4505,7 +6111,7 @@ module.exports = {
         },
         {
           "id": "primary-key",
-          "page": 87,
+          "page": 109,
           "term": "Primary Key",
           "reading": "プライマリーキー",
           "category": "データベース・構造",
@@ -4556,12 +6162,12 @@ module.exports = {
                 {
                   "name": "Record",
                   "desc": "主キーで特定される1件分のデータ。",
-                  "page": 86
+                  "page": 108
                 },
                 {
                   "name": "Foreign Key",
                   "desc": "主キーを他の表から参照するキー。",
-                  "page": 88
+                  "page": 110
                 }
               ]
             }
@@ -4569,7 +6175,7 @@ module.exports = {
         },
         {
           "id": "foreign-key",
-          "page": 88,
+          "page": 110,
           "term": "Foreign Key",
           "reading": "フォーリンキー",
           "category": "データベース・構造",
@@ -4620,12 +6226,12 @@ module.exports = {
                 {
                   "name": "Table",
                   "desc": "キーで関係づけられる表同士。",
-                  "page": 85
+                  "page": 107
                 },
                 {
                   "name": "Primary Key",
                   "desc": "外部キーが参照する側のキー。",
-                  "page": 87
+                  "page": 109
                 }
               ]
             }
@@ -4633,7 +6239,7 @@ module.exports = {
         },
         {
           "id": "db-index",
-          "page": 89,
+          "page": 111,
           "term": "Index",
           "reading": "インデックス",
           "category": "データベース・構造",
@@ -4684,12 +6290,12 @@ module.exports = {
                 {
                   "name": "Table",
                   "desc": "インデックスが張られる表。",
-                  "page": 85
+                  "page": 107
                 },
                 {
                   "name": "Primary Key",
                   "desc": "通常は自動でインデックスが張られる。",
-                  "page": 87
+                  "page": 109
                 }
               ]
             }
@@ -4697,7 +6303,7 @@ module.exports = {
         },
         {
           "id": "sql",
-          "page": 90,
+          "page": 112,
           "term": "SQL",
           "reading": "エスキューエル",
           "category": "データベース・操作",
@@ -4748,12 +6354,12 @@ module.exports = {
                 {
                   "name": "RDBMS",
                   "desc": "SQLで操作する対象のソフトウェア。",
-                  "page": 83
+                  "page": 105
                 },
                 {
                   "name": "ORM",
                   "desc": "SQLを直接書かずに操作する仕組み。",
-                  "page": 91
+                  "page": 113
                 }
               ]
             }
@@ -4761,7 +6367,7 @@ module.exports = {
         },
         {
           "id": "orm",
-          "page": 91,
+          "page": 113,
           "term": "ORM",
           "reading": "オーアールエム",
           "category": "データベース・操作",
@@ -4812,12 +6418,12 @@ module.exports = {
                 {
                   "name": "SQL",
                   "desc": "ORMが裏側で組み立てている言語。",
-                  "page": 90
+                  "page": 112
                 },
                 {
                   "name": "RDBMS",
                   "desc": "ORMが最終的に操作するソフトウェア。",
-                  "page": 83
+                  "page": 105
                 }
               ]
             }
@@ -4825,7 +6431,7 @@ module.exports = {
         },
         {
           "id": "migration",
-          "page": 92,
+          "page": 114,
           "term": "Migration",
           "reading": "マイグレーション",
           "category": "データベース・運用",
@@ -4876,7 +6482,7 @@ module.exports = {
                 {
                   "name": "Seeder",
                   "desc": "確認用データを自動投入する仕組み。",
-                  "page": 93
+                  "page": 115
                 }
               ]
             },
@@ -4886,7 +6492,7 @@ module.exports = {
                 {
                   "name": "RDBMS",
                   "desc": "マイグレーションで変更する対象。",
-                  "page": 83
+                  "page": 105
                 }
               ]
             }
@@ -4894,7 +6500,7 @@ module.exports = {
         },
         {
           "id": "seeder",
-          "page": 93,
+          "page": 115,
           "term": "Seeder",
           "reading": "シーダー",
           "category": "データベース・運用",
@@ -4945,7 +6551,7 @@ module.exports = {
                 {
                   "name": "Migration",
                   "desc": "テーブルの構造そのものを変更する仕組み。",
-                  "page": 92
+                  "page": 114
                 }
               ]
             }
@@ -4953,7 +6559,7 @@ module.exports = {
         },
         {
           "id": "transaction",
-          "page": 94,
+          "page": 116,
           "term": "Transaction",
           "reading": "トランザクション",
           "category": "データベース・運用",
@@ -5004,7 +6610,7 @@ module.exports = {
                 {
                   "name": "Lock",
                   "desc": "同時アクセスの衝突を防ぐ仕組み。",
-                  "page": 95
+                  "page": 117
                 }
               ]
             },
@@ -5014,7 +6620,7 @@ module.exports = {
                 {
                   "name": "RDBMS",
                   "desc": "トランザクションを保証するソフトウェア。",
-                  "page": 83
+                  "page": 105
                 }
               ]
             }
@@ -5022,7 +6628,7 @@ module.exports = {
         },
         {
           "id": "lock",
-          "page": 95,
+          "page": 117,
           "term": "Lock",
           "reading": "ロック",
           "category": "データベース・排他制御",
@@ -5073,7 +6679,7 @@ module.exports = {
                 {
                   "name": "Transaction",
                   "desc": "複数の処理を1つの単位にまとめる仕組み。",
-                  "page": 94
+                  "page": 116
                 }
               ]
             },
@@ -5083,17 +6689,17 @@ module.exports = {
                 {
                   "name": "行ロック",
                   "desc": "更新中の1行だけをロックする方式。",
-                  "page": 96
+                  "page": 118
                 },
                 {
                   "name": "テーブルロック",
                   "desc": "テーブル全体をロックする方式。",
-                  "page": 97
+                  "page": 119
                 },
                 {
                   "name": "デッドロック",
                   "desc": "ロック同士が待ち合って止まる状態。",
-                  "page": 98
+                  "page": 120
                 }
               ]
             }
@@ -5101,7 +6707,7 @@ module.exports = {
         },
         {
           "id": "row-lock",
-          "page": 96,
+          "page": 118,
           "term": "行ロック",
           "reading": "ぎょうロック",
           "category": "データベース・排他制御",
@@ -5153,12 +6759,12 @@ module.exports = {
                 {
                   "name": "Lock",
                   "desc": "同時アクセスの衝突を防ぐ仕組み全般。",
-                  "page": 95
+                  "page": 117
                 },
                 {
                   "name": "テーブルロック",
                   "desc": "表全体を対象にする粗いロック。",
-                  "page": 97
+                  "page": 119
                 }
               ]
             }
@@ -5166,7 +6772,7 @@ module.exports = {
         },
         {
           "id": "table-lock",
-          "page": 97,
+          "page": 119,
           "term": "テーブルロック",
           "category": "データベース・排他制御",
           "icon": "ic-layers",
@@ -5217,12 +6823,12 @@ module.exports = {
                 {
                   "name": "行ロック",
                   "desc": "該当する行だけを対象にする細かいロック。",
-                  "page": 96
+                  "page": 118
                 },
                 {
                   "name": "Lock",
                   "desc": "同時アクセスの衝突を防ぐ仕組み全般。",
-                  "page": 95
+                  "page": 117
                 }
               ]
             }
@@ -5230,7 +6836,7 @@ module.exports = {
         },
         {
           "id": "deadlock",
-          "page": 98,
+          "page": 120,
           "term": "デッドロック",
           "category": "データベース・排他制御",
           "icon": "ic-network",
@@ -5281,17 +6887,17 @@ module.exports = {
                 {
                   "name": "Lock",
                   "desc": "同時アクセスの衝突を防ぐ仕組み全般。",
-                  "page": 95
+                  "page": 117
                 },
                 {
                   "name": "行ロック",
                   "desc": "デッドロックが起きうる細かいロック単位。",
-                  "page": 96
+                  "page": 118
                 },
                 {
                   "name": "テーブルロック",
                   "desc": "デッドロックが起きうる粗いロック単位。",
-                  "page": 97
+                  "page": 119
                 }
               ]
             }
@@ -5299,7 +6905,7 @@ module.exports = {
         },
         {
           "id": "n_plus_one",
-          "page": 99,
+          "page": 121,
           "term": "N+1",
           "reading": "エヌプラスワン",
           "category": "データベース・パフォーマンス",
@@ -5350,12 +6956,12 @@ module.exports = {
                 {
                   "name": "Cache",
                   "desc": "同じ問い合わせを何度もしないための一時保管。",
-                  "page": 100
+                  "page": 122
                 },
                 {
                   "name": "コネクションプール",
                   "desc": "クエリが増えると接続数の上限にも響いてくる。",
-                  "page": 115
+                  "page": 137
                 }
               ]
             }
@@ -5363,7 +6969,7 @@ module.exports = {
         },
         {
           "id": "cache",
-          "page": 100,
+          "page": 122,
           "term": "Cache",
           "reading": "キャッシュ",
           "category": "データベース・パフォーマンス",
@@ -5414,12 +7020,12 @@ module.exports = {
                 {
                   "name": "Redis",
                   "desc": "メモリ上で動く、キャッシュの置き場所として定番。",
-                  "page": 108
+                  "page": 130
                 },
                 {
                   "name": "N+1",
                   "desc": "ループ内クエリの多発も、キャッシュで緩和できることがある。",
-                  "page": 99
+                  "page": 121
                 }
               ]
             }
@@ -5427,7 +7033,7 @@ module.exports = {
         },
         {
           "id": "normalization",
-          "page": 101,
+          "page": 123,
           "term": "正規化",
           "reading": "せいきか",
           "category": "データベース・設計",
@@ -5478,7 +7084,7 @@ module.exports = {
                 {
                   "name": "非正規化",
                   "desc": "あえて重複を持たせて読み取りを速くする、正規化の逆張り。",
-                  "page": 102
+                  "page": 124
                 }
               ]
             },
@@ -5488,7 +7094,7 @@ module.exports = {
                 {
                   "name": "ER図",
                   "desc": "正規化した結果のテーブル関係を絵にしたもの。",
-                  "page": 103
+                  "page": 125
                 }
               ]
             }
@@ -5496,7 +7102,7 @@ module.exports = {
         },
         {
           "id": "denormalization",
-          "page": 102,
+          "page": 124,
           "term": "非正規化",
           "reading": "ひせいきか",
           "category": "データベース・設計",
@@ -5547,7 +7153,7 @@ module.exports = {
                 {
                   "name": "正規化",
                   "desc": "重複を減らし、更新漏れを防ぐための基本の設計手法。",
-                  "page": 101
+                  "page": 123
                 }
               ]
             },
@@ -5557,7 +7163,7 @@ module.exports = {
                 {
                   "name": "Cache",
                   "desc": "非正規化と同じく、読み取り速度を優先する手段のひとつ。",
-                  "page": 100
+                  "page": 122
                 }
               ]
             }
@@ -5565,7 +7171,7 @@ module.exports = {
         },
         {
           "id": "er_diagram",
-          "page": 103,
+          "page": 125,
           "term": "ER図",
           "reading": "イーアールず",
           "category": "データベース・設計",
@@ -5616,12 +7222,12 @@ module.exports = {
                 {
                   "name": "正規化",
                   "desc": "ER図に描かれるテーブル分割の考え方そのもの。",
-                  "page": 101
+                  "page": 123
                 },
                 {
                   "name": "非正規化",
                   "desc": "正規化した図をあえて崩す判断も、ER図の上で検討する。",
-                  "page": 102
+                  "page": 124
                 }
               ]
             }
@@ -5629,7 +7235,7 @@ module.exports = {
         },
         {
           "id": "uuid",
-          "page": 104,
+          "page": 126,
           "term": "UUID",
           "reading": "ユーユーアイディー",
           "category": "データベース・設計",
@@ -5680,7 +7286,7 @@ module.exports = {
                 {
                   "name": "ER図",
                   "desc": "Primary KeyをUUIDにするかは設計段階で決めておきたい。",
-                  "page": 103
+                  "page": 125
                 }
               ]
             }
@@ -5688,7 +7294,7 @@ module.exports = {
         },
         {
           "id": "mysql",
-          "page": 105,
+          "page": 127,
           "term": "MySQL",
           "reading": "マイエスキューエル",
           "category": "データベース・RDBMS",
@@ -5739,12 +7345,12 @@ module.exports = {
                 {
                   "name": "PostgreSQL",
                   "desc": "機能の豊富さで選ばれることが多いRDB。",
-                  "page": 106
+                  "page": 128
                 },
                 {
                   "name": "SQLite",
                   "desc": "サーバー不要で、小規模用途に向くRDB。",
-                  "page": 107
+                  "page": 129
                 }
               ]
             }
@@ -5752,7 +7358,7 @@ module.exports = {
         },
         {
           "id": "postgresql",
-          "page": 106,
+          "page": 128,
           "term": "PostgreSQL",
           "reading": "ポストグレスキューエル",
           "category": "データベース・RDBMS",
@@ -5803,7 +7409,7 @@ module.exports = {
                 {
                   "name": "MySQL",
                   "desc": "情報量と実績の多さで選ばれることが多いRDB。",
-                  "page": 105
+                  "page": 127
                 }
               ]
             }
@@ -5811,7 +7417,7 @@ module.exports = {
         },
         {
           "id": "sqlite",
-          "page": 107,
+          "page": 129,
           "term": "SQLite",
           "reading": "エスキューライト",
           "category": "データベース・RDBMS",
@@ -5862,12 +7468,12 @@ module.exports = {
                 {
                   "name": "MySQL",
                   "desc": "本番の複数人利用に向く定番RDB。",
-                  "page": 105
+                  "page": 127
                 },
                 {
                   "name": "PostgreSQL",
                   "desc": "機能重視ならこちらのRDB。",
-                  "page": 106
+                  "page": 128
                 }
               ]
             }
@@ -5875,7 +7481,7 @@ module.exports = {
         },
         {
           "id": "redis",
-          "page": 108,
+          "page": 130,
           "term": "Redis",
           "reading": "レディス",
           "category": "データベース・NoSQL",
@@ -5926,12 +7532,12 @@ module.exports = {
                 {
                   "name": "Cache",
                   "desc": "Redisはキャッシュの保存先として使われることが多い。",
-                  "page": 100
+                  "page": 122
                 },
                 {
                   "name": "MongoDB",
                   "desc": "同じNoSQLでも、こちらはドキュメント指向データベース。",
-                  "page": 109
+                  "page": 131
                 }
               ]
             }
@@ -5939,7 +7545,7 @@ module.exports = {
         },
         {
           "id": "mongodb",
-          "page": 109,
+          "page": 131,
           "term": "MongoDB",
           "reading": "モンゴディービー",
           "category": "データベース・NoSQL",
@@ -5990,12 +7596,12 @@ module.exports = {
                 {
                   "name": "正規化",
                   "desc": "RDBの正規化とは対照的な、構造を固定しない考え方。",
-                  "page": 101
+                  "page": 123
                 },
                 {
                   "name": "Redis",
                   "desc": "同じNoSQLでも、こちらはインメモリのキー・バリュー型。",
-                  "page": 108
+                  "page": 130
                 }
               ]
             }
@@ -6003,8 +7609,8 @@ module.exports = {
         },
         {
           "id": "view",
-          "page": 110,
-          "term": "View（ビュー）",
+          "page": 132,
+          "term": "View",
           "category": "データベース・RDBMS",
           "icon": "ic-image",
           "oneline": "複雑なSELECT文をあらかじめ定義しておき、あたかも1つのテーブルであるかのように参照できるようにする仕組み。",
@@ -6053,20 +7659,21 @@ module.exports = {
                 {
                   "name": "Stored Procedure",
                   "desc": "SELECT文だけでなく、処理そのものをDB側に置く仕組み。",
-                  "page": 111
+                  "page": 133
                 },
                 {
                   "name": "Cache",
                   "desc": "重い集計を都度計算させたくない点はビューと共通。",
-                  "page": 100
+                  "page": 122
                 }
               ]
             }
-          ]
+          ],
+          "reading": "ビュー"
         },
         {
           "id": "stored_procedure",
-          "page": 111,
+          "page": 133,
           "term": "Stored Procedure",
           "reading": "ストアドプロシージャ",
           "category": "データベース・RDBMS",
@@ -6115,9 +7722,9 @@ module.exports = {
               "label": "関連するキーワード",
               "items": [
                 {
-                  "name": "View（ビュー）",
+                  "name": "View",
                   "desc": "処理ではなく、SELECT文をまとめて名前をつける仕組み。",
-                  "page": 110
+                  "page": 132
                 }
               ]
             }
@@ -6125,7 +7732,7 @@ module.exports = {
         },
         {
           "id": "acid",
-          "page": 112,
+          "page": 134,
           "term": "ACID",
           "reading": "アシッド",
           "category": "データベース・トランザクション",
@@ -6176,12 +7783,12 @@ module.exports = {
                 {
                   "name": "MongoDB",
                   "desc": "ACIDの厳格さより、柔軟さ・速度を優先することが多い。",
-                  "page": 109
+                  "page": 131
                 },
                 {
                   "name": "Sharding",
                   "desc": "DBを分割すると、ACIDを保つ難易度も上がる。",
-                  "page": 113
+                  "page": 135
                 }
               ]
             }
@@ -6189,7 +7796,7 @@ module.exports = {
         },
         {
           "id": "sharding",
-          "page": 113,
+          "page": 135,
           "term": "Sharding",
           "reading": "シャーディング",
           "category": "データベース・スケーリング",
@@ -6240,12 +7847,12 @@ module.exports = {
                 {
                   "name": "レプリケーション",
                   "desc": "分割ではなく複製で負荷を分散する、もう1つの手段。",
-                  "page": 114
+                  "page": 136
                 },
                 {
                   "name": "ACID",
                   "desc": "DBを分割するほど、この4性質を保つのが難しくなる。",
-                  "page": 112
+                  "page": 134
                 }
               ]
             }
@@ -6253,7 +7860,7 @@ module.exports = {
         },
         {
           "id": "replication",
-          "page": 114,
+          "page": 136,
           "term": "レプリケーション",
           "category": "データベース・スケーリング",
           "icon": "ic-network",
@@ -6303,7 +7910,7 @@ module.exports = {
                 {
                   "name": "Sharding",
                   "desc": "複製ではなく分割で負荷を分散する、もう1つの手段。",
-                  "page": 113
+                  "page": 135
                 }
               ]
             }
@@ -6311,7 +7918,7 @@ module.exports = {
         },
         {
           "id": "connection_pool",
-          "page": 115,
+          "page": 137,
           "term": "コネクションプール",
           "category": "データベース・パフォーマンス",
           "icon": "ic-package",
@@ -6361,12 +7968,12 @@ module.exports = {
                 {
                   "name": "N+1",
                   "desc": "クエリ数が増えるほど、接続の使い回し方も重要になる。",
-                  "page": 99
+                  "page": 121
                 },
                 {
                   "name": "Cache",
                   "desc": "接続や問い合わせそのものを減らす、もう1つの手段。",
-                  "page": 100
+                  "page": 122
                 }
               ]
             }
@@ -6374,8 +7981,8 @@ module.exports = {
         },
         {
           "id": "dump",
-          "page": 116,
-          "term": "ダンプ（Dump）",
+          "page": 138,
+          "term": "Dump",
           "category": "データベース・運用",
           "icon": "ic-file",
           "oneline": "テーブルの定義やデータの中身を、ファイルとして丸ごと書き出すこと（またはそのファイル）。",
@@ -6429,16 +8036,17 @@ module.exports = {
                 {
                   "name": "Migration",
                   "desc": "スキーマ変更をコードとして管理する仕組み。",
-                  "page": 92
+                  "page": 114
                 },
                 {
                   "name": "Seeder",
                   "desc": "初期データやテスト用データを流し込む仕組み。",
-                  "page": 93
+                  "page": 115
                 }
               ]
             }
-          ]
+          ],
+          "reading": "ダンプ"
         }
       ]
     },
@@ -6448,7 +8056,7 @@ module.exports = {
       "entries": [
         {
           "id": "html",
-          "page": 121,
+          "page": 143,
           "term": "HTML",
           "reading": "エイチティーエムエル",
           "category": "フロントエンド・基礎技術",
@@ -6499,17 +8107,17 @@ module.exports = {
                 {
                   "name": "CSS",
                   "desc": "HTMLの見た目を整える言語。",
-                  "page": 122
+                  "page": 144
                 },
                 {
                   "name": "JavaScript",
                   "desc": "HTMLに動きを与える言語。",
-                  "page": 123
+                  "page": 145
                 },
                 {
                   "name": "DOM",
                   "desc": "HTMLをJSから操作できる形にしたもの。",
-                  "page": 127
+                  "page": 149
                 }
               ]
             }
@@ -6517,7 +8125,7 @@ module.exports = {
         },
         {
           "id": "css",
-          "page": 122,
+          "page": 144,
           "term": "CSS",
           "reading": "シーエスエス",
           "category": "フロントエンド・基礎技術",
@@ -6568,12 +8176,12 @@ module.exports = {
                 {
                   "name": "HTML",
                   "desc": "CSSが見た目を整える対象の文書構造。",
-                  "page": 121
+                  "page": 143
                 },
                 {
                   "name": "CSSフレームワーク",
                   "desc": "よく使うCSSをあらかじめ用意した道具箱。",
-                  "page": 141
+                  "page": 163
                 }
               ]
             }
@@ -6581,7 +8189,7 @@ module.exports = {
         },
         {
           "id": "javascript",
-          "page": 123,
+          "page": 145,
           "term": "JavaScript",
           "reading": "ジャバスクリプト",
           "category": "フロントエンド・基礎技術",
@@ -6632,22 +8240,22 @@ module.exports = {
                 {
                   "name": "HTML",
                   "desc": "JavaScriptが操作する対象の構造。",
-                  "page": 121
+                  "page": 143
                 },
                 {
                   "name": "CSS",
                   "desc": "JavaScriptが書き換える対象の見た目。",
-                  "page": 122
+                  "page": 144
                 },
                 {
                   "name": "TypeScript",
                   "desc": "JavaScriptに型を追加した言語。",
-                  "page": 124
+                  "page": 146
                 },
                 {
                   "name": "DOM",
                   "desc": "JavaScriptから操作するHTMLの木構造。",
-                  "page": 127
+                  "page": 149
                 }
               ]
             }
@@ -6655,7 +8263,7 @@ module.exports = {
         },
         {
           "id": "typescript",
-          "page": 124,
+          "page": 146,
           "term": "TypeScript",
           "reading": "タイプスクリプト",
           "category": "フロントエンド・基礎技術",
@@ -6706,12 +8314,12 @@ module.exports = {
                 {
                   "name": "JavaScript",
                   "desc": "TypeScriptのベースになった言語。",
-                  "page": 123
+                  "page": 145
                 },
                 {
-                  "name": "バニラ",
+                  "name": "Vanilla JS",
                   "desc": "型を付けない素のJavaScriptで書くこと。",
-                  "page": 125
+                  "page": 147
                 }
               ]
             }
@@ -6719,8 +8327,8 @@ module.exports = {
         },
         {
           "id": "vanilla-js",
-          "page": 125,
-          "term": "バニラ（Vanilla JS）",
+          "page": 147,
+          "term": "Vanilla JS",
           "category": "フロントエンド・基礎技術",
           "icon": "ic-package",
           "oneline": "ReactやVueなどのライブラリを使わず、標準機能だけで書くJavaScriptのこと。",
@@ -6769,20 +8377,21 @@ module.exports = {
                 {
                   "name": "JavaScript",
                   "desc": "バニラJSの元になる標準言語。",
-                  "page": 123
+                  "page": 145
                 },
                 {
                   "name": "DOM",
                   "desc": "バニラJSが標準APIで直接操作する対象。",
-                  "page": 127
+                  "page": 149
                 }
               ]
             }
-          ]
+          ],
+          "reading": "バニラ"
         },
         {
           "id": "es-modules",
-          "page": 126,
+          "page": 148,
           "term": "ES Modules",
           "reading": "イーエスモジュール",
           "category": "フロントエンド・基礎技術",
@@ -6833,7 +8442,7 @@ module.exports = {
                 {
                   "name": "JavaScript",
                   "desc": "ES Modulesが分割対象とする言語。",
-                  "page": 123
+                  "page": 145
                 }
               ]
             }
@@ -6841,7 +8450,7 @@ module.exports = {
         },
         {
           "id": "dom",
-          "page": 127,
+          "page": 149,
           "term": "DOM",
           "reading": "ドム",
           "category": "フロントエンド・基礎技術",
@@ -6892,17 +8501,17 @@ module.exports = {
                 {
                   "name": "HTML",
                   "desc": "DOMのもとになる文書構造。",
-                  "page": 121
+                  "page": 143
                 },
                 {
                   "name": "Event",
                   "desc": "DOMの要素に取り付ける反応の仕組み。",
-                  "page": 128
+                  "page": 150
                 },
                 {
                   "name": "Virtual DOM",
                   "desc": "本物のDOMの代わりに使う仮想の木。",
-                  "page": 137
+                  "page": 159
                 }
               ]
             }
@@ -6910,7 +8519,7 @@ module.exports = {
         },
         {
           "id": "event",
-          "page": 128,
+          "page": 150,
           "term": "Event",
           "reading": "イベント",
           "category": "フロントエンド・基礎技術",
@@ -6961,17 +8570,17 @@ module.exports = {
                 {
                   "name": "DOM",
                   "desc": "Eventを取り付ける対象の要素。",
-                  "page": 127
+                  "page": 149
                 },
                 {
-                  "name": "非同期（Asynchronous）",
+                  "name": "非同期",
                   "desc": "Eventの発生を待つ考え方の土台。",
-                  "page": 138
+                  "page": 160
                 },
                 {
                   "name": "Component",
                   "desc": "Eventへの反応をまとめて持つ部品。",
-                  "page": 129
+                  "page": 151
                 }
               ]
             }
@@ -6979,7 +8588,7 @@ module.exports = {
         },
         {
           "id": "component",
-          "page": 129,
+          "page": 151,
           "term": "Component",
           "reading": "コンポーネント",
           "category": "フロントエンド・UI設計",
@@ -7030,17 +8639,17 @@ module.exports = {
                 {
                   "name": "State",
                   "desc": "Componentが内部に持つ今の状態。",
-                  "page": 130
+                  "page": 152
                 },
                 {
                   "name": "Props",
                   "desc": "親から子のComponentへ渡す値。",
-                  "page": 131
+                  "page": 153
                 },
                 {
                   "name": "Virtual DOM",
                   "desc": "Componentの変化を効率よく反映する仕組み。",
-                  "page": 137
+                  "page": 159
                 }
               ]
             }
@@ -7048,7 +8657,7 @@ module.exports = {
         },
         {
           "id": "state",
-          "page": 130,
+          "page": 152,
           "term": "State",
           "reading": "ステート",
           "category": "フロントエンド・UI設計",
@@ -7099,17 +8708,17 @@ module.exports = {
                 {
                   "name": "Component",
                   "desc": "Stateを内部に持つ部品。",
-                  "page": 129
+                  "page": 151
                 },
                 {
                   "name": "Props",
                   "desc": "Stateを子に渡すときの形。",
-                  "page": 131
+                  "page": 153
                 },
                 {
                   "name": "Virtual DOM",
                   "desc": "Stateの変化を効率よく反映する仕組み。",
-                  "page": 137
+                  "page": 159
                 }
               ]
             }
@@ -7117,7 +8726,7 @@ module.exports = {
         },
         {
           "id": "props",
-          "page": 131,
+          "page": 153,
           "term": "Props",
           "reading": "プロップス",
           "category": "フロントエンド・UI設計",
@@ -7168,12 +8777,12 @@ module.exports = {
                 {
                   "name": "Component",
                   "desc": "Propsを受け取る部品。",
-                  "page": 129
+                  "page": 151
                 },
                 {
                   "name": "State",
                   "desc": "Propsのもとになることが多いデータ。",
-                  "page": 130
+                  "page": 152
                 }
               ]
             }
@@ -7181,7 +8790,7 @@ module.exports = {
         },
         {
           "id": "csr",
-          "page": 132,
+          "page": 154,
           "term": "CSR",
           "reading": "シーエスアール",
           "category": "フロントエンド・レンダリング",
@@ -7232,17 +8841,17 @@ module.exports = {
                 {
                   "name": "Component",
                   "desc": "CSRで画面を組み立てる部品の単位。",
-                  "page": 129
+                  "page": 151
                 },
                 {
                   "name": "SSR",
                   "desc": "サーバー側で先にHTMLを完成させる方式。",
-                  "page": 133
+                  "page": 155
                 },
                 {
                   "name": "Hydration",
                   "desc": "届いたHTMLにあとから動きを与える処理。",
-                  "page": 136
+                  "page": 158
                 }
               ]
             }
@@ -7250,7 +8859,7 @@ module.exports = {
         },
         {
           "id": "ssr",
-          "page": 133,
+          "page": 155,
           "term": "SSR",
           "reading": "エスエスアール",
           "category": "フロントエンド・レンダリング",
@@ -7301,17 +8910,17 @@ module.exports = {
                 {
                   "name": "CSR",
                   "desc": "ブラウザ側でHTMLを組み立てる方式。",
-                  "page": 132
+                  "page": 154
                 },
                 {
                   "name": "SSG",
                   "desc": "ビルド時にあらかじめHTMLを作る方式。",
-                  "page": 134
+                  "page": 156
                 },
                 {
                   "name": "Hydration",
                   "desc": "SSRで届いたHTMLにあとから動きを与える処理。",
-                  "page": 136
+                  "page": 158
                 }
               ]
             }
@@ -7319,7 +8928,7 @@ module.exports = {
         },
         {
           "id": "ssg",
-          "page": 134,
+          "page": 156,
           "term": "SSG",
           "reading": "エスエスジー",
           "category": "フロントエンド・レンダリング",
@@ -7370,12 +8979,12 @@ module.exports = {
                 {
                   "name": "SSR",
                   "desc": "アクセスのたびにHTMLを生成する方式。",
-                  "page": 133
+                  "page": 155
                 },
                 {
                   "name": "ISR",
                   "desc": "SSGを裏側で少しずつ更新する方式。",
-                  "page": 135
+                  "page": 157
                 }
               ]
             }
@@ -7383,7 +8992,7 @@ module.exports = {
         },
         {
           "id": "isr",
-          "page": 135,
+          "page": 157,
           "term": "ISR",
           "reading": "アイエスアール",
           "category": "フロントエンド・レンダリング",
@@ -7434,12 +9043,12 @@ module.exports = {
                 {
                   "name": "SSG",
                   "desc": "ビルド時にHTMLを事前生成する方式。",
-                  "page": 134
+                  "page": 156
                 },
                 {
                   "name": "SSR",
                   "desc": "アクセスのたびにHTMLを生成する方式。",
-                  "page": 133
+                  "page": 155
                 }
               ]
             }
@@ -7447,7 +9056,7 @@ module.exports = {
         },
         {
           "id": "hydration",
-          "page": 136,
+          "page": 158,
           "term": "Hydration",
           "reading": "ハイドレーション",
           "category": "フロントエンド・レンダリング",
@@ -7498,17 +9107,17 @@ module.exports = {
                 {
                   "name": "SSR",
                   "desc": "Hydrationが必要になる方式のひとつ。",
-                  "page": 133
+                  "page": 155
                 },
                 {
                   "name": "SSG",
                   "desc": "Hydrationが必要になる方式のひとつ。",
-                  "page": 134
+                  "page": 156
                 },
                 {
                   "name": "CSR",
                   "desc": "HydrationではなくJSが最初から画面を組み立てる方式。",
-                  "page": 132
+                  "page": 154
                 }
               ]
             }
@@ -7516,7 +9125,7 @@ module.exports = {
         },
         {
           "id": "virtual-dom",
-          "page": 137,
+          "page": 159,
           "term": "Virtual DOM",
           "reading": "バーチャルドム",
           "category": "フロントエンド・レンダリング",
@@ -7567,17 +9176,17 @@ module.exports = {
                 {
                   "name": "DOM",
                   "desc": "Virtual DOMが最終的に反映する本物の木構造。",
-                  "page": 127
+                  "page": 149
                 },
                 {
                   "name": "State",
                   "desc": "Virtual DOMが差分を計算するきっかけになるデータ。",
-                  "page": 130
+                  "page": 152
                 },
                 {
                   "name": "Component",
                   "desc": "Virtual DOMを使って更新される部品の単位。",
-                  "page": 129
+                  "page": 151
                 }
               ]
             }
@@ -7585,8 +9194,8 @@ module.exports = {
         },
         {
           "id": "async",
-          "page": 138,
-          "term": "非同期（Asynchronous）",
+          "page": 160,
+          "term": "非同期",
           "reading": "ひどうき",
           "category": "JavaScript・非同期処理",
           "icon": "ic-clock",
@@ -7636,17 +9245,17 @@ module.exports = {
                 {
                   "name": "Promise",
                   "desc": "非同期処理の結果をまとめて扱うオブジェクト。",
-                  "page": 139
+                  "page": 161
                 },
                 {
                   "name": "async・await",
                   "desc": "Promiseを同期処理のように書ける構文。",
-                  "page": 140
+                  "page": 162
                 },
                 {
                   "name": "Event",
                   "desc": "非同期の発生をきっかけにする仕組み。",
-                  "page": 128
+                  "page": 150
                 }
               ]
             }
@@ -7657,13 +9266,13 @@ module.exports = {
               "reading": "ひどうき"
             },
             {
-              "text": "（Asynchronous）"
+              "text": "Asynchronous"
             }
           ]
         },
         {
           "id": "promise",
-          "page": 139,
+          "page": 161,
           "term": "Promise",
           "reading": "プロミス",
           "category": "JavaScript・非同期処理",
@@ -7712,14 +9321,14 @@ module.exports = {
               "label": "関連する技術",
               "items": [
                 {
-                  "name": "非同期（Asynchronous）",
+                  "name": "非同期",
                   "desc": "Promiseが扱う処理そのものの考え方。",
-                  "page": 138
+                  "page": 160
                 },
                 {
                   "name": "async・await",
                   "desc": "Promiseを読みやすく書くための構文。",
-                  "page": 140
+                  "page": 162
                 }
               ]
             }
@@ -7727,7 +9336,7 @@ module.exports = {
         },
         {
           "id": "async-await",
-          "page": 140,
+          "page": 162,
           "term": "async・await",
           "reading": "エイシンクアウェイト",
           "category": "JavaScript・非同期処理",
@@ -7778,12 +9387,12 @@ module.exports = {
                 {
                   "name": "Promise",
                   "desc": "async・awaitの土台になっているオブジェクト。",
-                  "page": 139
+                  "page": 161
                 },
                 {
-                  "name": "非同期（Asynchronous）",
+                  "name": "非同期",
                   "desc": "async・awaitが扱う処理の考え方。",
-                  "page": 138
+                  "page": 160
                 }
               ]
             }
@@ -7791,7 +9400,7 @@ module.exports = {
         },
         {
           "id": "css-framework",
-          "page": 141,
+          "page": 163,
           "term": "CSSフレームワーク",
           "reading": "シーエスエスフレームワーク",
           "category": "フロントエンド・スタイリング",
@@ -7842,12 +9451,12 @@ module.exports = {
                 {
                   "name": "CSS",
                   "desc": "CSSフレームワークの土台になる言語。",
-                  "page": 122
+                  "page": 144
                 },
                 {
                   "name": "UIコンポーネントライブラリ",
                   "desc": "見た目に加えて動きまで含む部品を提供するもの。",
-                  "page": 142
+                  "page": 164
                 }
               ]
             }
@@ -7855,7 +9464,7 @@ module.exports = {
         },
         {
           "id": "ui-component-library",
-          "page": 142,
+          "page": 164,
           "term": "UIコンポーネントライブラリ",
           "compact": true,
           "reading": "ユーアイコンポーネントライブラリ",
@@ -7907,17 +9516,17 @@ module.exports = {
                 {
                   "name": "CSSフレームワーク",
                   "desc": "見た目の材料を提供するもの。",
-                  "page": 141
+                  "page": 163
                 },
                 {
                   "name": "Component",
                   "desc": "UIコンポーネントライブラリが提供する部品の単位。",
-                  "page": 129
+                  "page": 151
                 },
                 {
                   "name": "Props",
                   "desc": "UIコンポーネントライブラリの部品を調整する手段。",
-                  "page": 131
+                  "page": 153
                 }
               ]
             }
@@ -7934,7 +9543,7 @@ module.exports = {
         },
         {
           "id": "nodejs",
-          "page": 143,
+          "page": 165,
           "term": "Node.js",
           "reading": "ノードジェイエス",
           "category": "ランタイム",
@@ -7985,12 +9594,12 @@ module.exports = {
                 {
                   "name": "Bun",
                   "desc": "Node.js互換で起動・実行をまるごと高速化。",
-                  "page": 144
+                  "page": 166
                 },
                 {
                   "name": "Deno",
                   "desc": "Node.js作者が作り直した安全志向のランタイム。",
-                  "page": 145
+                  "page": 167
                 }
               ]
             }
@@ -7998,7 +9607,7 @@ module.exports = {
         },
         {
           "id": "bun",
-          "page": 144,
+          "page": 166,
           "term": "Bun",
           "reading": "バン",
           "category": "ランタイム",
@@ -8049,12 +9658,12 @@ module.exports = {
                 {
                   "name": "Node.js",
                   "desc": "JSをブラウザの外で動かす元祖ランタイム。",
-                  "page": 143
+                  "page": 165
                 },
                 {
                   "name": "Deno",
                   "desc": "安全性を重視したもう1つの後継ランタイム。",
-                  "page": 145
+                  "page": 167
                 }
               ]
             }
@@ -8062,7 +9671,7 @@ module.exports = {
         },
         {
           "id": "deno",
-          "page": 145,
+          "page": 167,
           "term": "Deno",
           "reading": "ディーノ",
           "category": "ランタイム",
@@ -8113,12 +9722,12 @@ module.exports = {
                 {
                   "name": "Node.js",
                   "desc": "JSをブラウザの外で動かす元祖ランタイム。",
-                  "page": 143
+                  "page": 165
                 },
                 {
                   "name": "Bun",
                   "desc": "Node.js互換で速さに振り切ったランタイム。",
-                  "page": 144
+                  "page": 166
                 }
               ]
             }
@@ -8126,7 +9735,7 @@ module.exports = {
         },
         {
           "id": "react",
-          "page": 146,
+          "page": 168,
           "term": "React",
           "reading": "リアクト",
           "category": "フレームワーク",
@@ -8177,7 +9786,7 @@ module.exports = {
                 {
                   "name": "Vue",
                   "desc": "HTMLに近い書き味で始められるフレームワーク。",
-                  "page": 147
+                  "page": 169
                 }
               ]
             },
@@ -8187,12 +9796,12 @@ module.exports = {
                 {
                   "name": "Next.js",
                   "desc": "Reactにルーティングなどを標準搭載したフレームワーク。",
-                  "page": 148
+                  "page": 170
                 },
                 {
                   "name": "Redux",
                   "desc": "アプリ全体の状態を1箇所にまとめる状態管理。",
-                  "page": 163
+                  "page": 185
                 }
               ]
             }
@@ -8200,7 +9809,7 @@ module.exports = {
         },
         {
           "id": "vue",
-          "page": 147,
+          "page": 169,
           "term": "Vue",
           "reading": "ビュー",
           "category": "フレームワーク",
@@ -8251,7 +9860,7 @@ module.exports = {
                 {
                   "name": "React",
                   "desc": "状態からUIを再計算するコンポーネント指向ライブラリ。",
-                  "page": 146
+                  "page": 168
                 }
               ]
             },
@@ -8261,12 +9870,12 @@ module.exports = {
                 {
                   "name": "Nuxt.js",
                   "desc": "Vueにルーティングなどを標準搭載したフレームワーク。",
-                  "page": 149
+                  "page": 171
                 },
                 {
                   "name": "Pinia",
                   "desc": "Vue公式が推奨する状態管理ライブラリ。",
-                  "page": 165
+                  "page": 187
                 }
               ]
             }
@@ -8274,7 +9883,7 @@ module.exports = {
         },
         {
           "id": "nextjs",
-          "page": 148,
+          "page": 170,
           "term": "Next.js",
           "reading": "ネクストジェイエス",
           "category": "フレームワーク",
@@ -8325,7 +9934,7 @@ module.exports = {
                 {
                   "name": "React",
                   "desc": "コンポーネント単位でUIを組み立てるライブラリ。",
-                  "page": 146
+                  "page": 168
                 }
               ]
             },
@@ -8335,7 +9944,7 @@ module.exports = {
                 {
                   "name": "Nuxt.js",
                   "desc": "VueにとってのNext.js的な存在。",
-                  "page": 149
+                  "page": 171
                 }
               ]
             }
@@ -8343,7 +9952,7 @@ module.exports = {
         },
         {
           "id": "nuxtjs",
-          "page": 149,
+          "page": 171,
           "term": "Nuxt.js",
           "reading": "ナクストジェイエス",
           "category": "フレームワーク",
@@ -8394,7 +10003,7 @@ module.exports = {
                 {
                   "name": "Vue",
                   "desc": "HTMLに近い書き味のコンポーネント指向フレームワーク。",
-                  "page": 147
+                  "page": 169
                 }
               ]
             },
@@ -8404,7 +10013,7 @@ module.exports = {
                 {
                   "name": "Next.js",
                   "desc": "ReactにとってのNuxt.js的な存在。",
-                  "page": 148
+                  "page": 170
                 }
               ]
             }
@@ -8412,7 +10021,7 @@ module.exports = {
         },
         {
           "id": "vite",
-          "page": 150,
+          "page": 172,
           "term": "Vite",
           "reading": "ヴィート",
           "category": "ツール",
@@ -8463,12 +10072,12 @@ module.exports = {
                 {
                   "name": "React",
                   "desc": "Viteの定番テンプレートの1つ。",
-                  "page": 146
+                  "page": 168
                 },
                 {
                   "name": "ESLint",
                   "desc": "開発時のコードチェックを担うLinter。",
-                  "page": 151
+                  "page": 173
                 }
               ]
             }
@@ -8476,7 +10085,7 @@ module.exports = {
         },
         {
           "id": "eslint",
-          "page": 151,
+          "page": 173,
           "term": "ESLint",
           "reading": "イーエスリント",
           "category": "ツール",
@@ -8527,12 +10136,12 @@ module.exports = {
                 {
                   "name": "Biome",
                   "desc": "Lintと整形をRustで1本にまとめたツール。",
-                  "page": 152
+                  "page": 174
                 },
                 {
                   "name": "OXC",
                   "desc": "パーサーからRustで作り直すプロジェクト。",
-                  "page": 153
+                  "page": 175
                 }
               ]
             }
@@ -8540,7 +10149,7 @@ module.exports = {
         },
         {
           "id": "biome",
-          "page": 152,
+          "page": 174,
           "term": "Biome",
           "reading": "バイオーム",
           "category": "ツール",
@@ -8591,12 +10200,12 @@ module.exports = {
                 {
                   "name": "ESLint",
                   "desc": "JS実装の老舗Linter。",
-                  "page": 151
+                  "page": 173
                 },
                 {
                   "name": "OXC",
                   "desc": "パース処理からRustで高速化する次の一手。",
-                  "page": 153
+                  "page": 175
                 }
               ]
             }
@@ -8604,7 +10213,7 @@ module.exports = {
         },
         {
           "id": "oxc",
-          "page": 153,
+          "page": 175,
           "term": "OXC",
           "reading": "オーエックスシー",
           "category": "ツール",
@@ -8655,12 +10264,12 @@ module.exports = {
                 {
                   "name": "ESLint",
                   "desc": "JS実装の老舗Linter。",
-                  "page": 151
+                  "page": 173
                 },
                 {
                   "name": "Biome",
                   "desc": "Rustで1本化した中継地点。",
-                  "page": 152
+                  "page": 174
                 }
               ]
             }
@@ -8668,7 +10277,7 @@ module.exports = {
         },
         {
           "id": "tailwindcss",
-          "page": 154,
+          "page": 176,
           "term": "Tailwind CSS",
           "reading": "テイルウィンドシーエスエス",
           "category": "ツール",
@@ -8719,12 +10328,12 @@ module.exports = {
                 {
                   "name": "MUI",
                   "desc": "既製のUI部品ごと使えるコンポーネント集。",
-                  "page": 155
+                  "page": 177
                 },
                 {
                   "name": "shadcn/ui",
                   "desc": "コードをコピーして使うUI集。",
-                  "page": 156
+                  "page": 178
                 }
               ]
             }
@@ -8732,7 +10341,7 @@ module.exports = {
         },
         {
           "id": "mui",
-          "page": 155,
+          "page": 177,
           "term": "MUI",
           "reading": "エムユーアイ",
           "category": "ツール",
@@ -8783,12 +10392,12 @@ module.exports = {
                 {
                   "name": "Tailwind CSS",
                   "desc": "ユーティリティクラスでスタイルを組み立てる。",
-                  "page": 154
+                  "page": 176
                 },
                 {
                   "name": "shadcn/ui",
                   "desc": "コードをコピーして使う別解のUI集。",
-                  "page": 156
+                  "page": 178
                 }
               ]
             }
@@ -8796,7 +10405,7 @@ module.exports = {
         },
         {
           "id": "shadcn-ui",
-          "page": 156,
+          "page": 178,
           "term": "shadcn/ui",
           "reading": "シャドシーエヌユーアイ",
           "category": "ツール",
@@ -8847,12 +10456,12 @@ module.exports = {
                 {
                   "name": "MUI",
                   "desc": "既製部品をライブラリとして利用する方式。",
-                  "page": 155
+                  "page": 177
                 },
                 {
                   "name": "Tailwind CSS",
                   "desc": "見た目を組み立てるユーティリティCSS。",
-                  "page": 154
+                  "page": 176
                 }
               ]
             }
@@ -8860,7 +10469,7 @@ module.exports = {
         },
         {
           "id": "electron",
-          "page": 157,
+          "page": 179,
           "term": "Electron",
           "reading": "エレクトロン",
           "category": "ツール",
@@ -8911,7 +10520,7 @@ module.exports = {
                 {
                   "name": "PWA",
                   "desc": "ストア審査なしでアプリっぽさを出す別解。",
-                  "page": 158
+                  "page": 180
                 }
               ]
             }
@@ -8919,7 +10528,7 @@ module.exports = {
         },
         {
           "id": "pwa",
-          "page": 158,
+          "page": 180,
           "term": "PWA",
           "reading": "ピーダブリューエー",
           "category": "Web技術",
@@ -8970,7 +10579,7 @@ module.exports = {
                 {
                   "name": "Electron",
                   "desc": "Web技術でデスクトップアプリを作る仕組み。",
-                  "page": 157
+                  "page": 179
                 }
               ]
             },
@@ -8980,7 +10589,7 @@ module.exports = {
                 {
                   "name": "Core Web Vitals",
                   "desc": "ページの体感品質を数値化する指標。",
-                  "page": 162
+                  "page": 184
                 }
               ]
             }
@@ -8988,7 +10597,7 @@ module.exports = {
         },
         {
           "id": "webassembly",
-          "page": 159,
+          "page": 181,
           "term": "WebAssembly",
           "reading": "ウェブアセンブリ",
           "category": "Web技術",
@@ -9039,7 +10648,7 @@ module.exports = {
                 {
                   "name": "Core Web Vitals",
                   "desc": "速度も含めたページ品質を測る指標。",
-                  "page": 162
+                  "page": 184
                 }
               ]
             }
@@ -9047,8 +10656,8 @@ module.exports = {
         },
         {
           "id": "a11y",
-          "page": 160,
-          "term": "a11y（アクセシビリティ）",
+          "page": 182,
+          "term": "a11y",
           "reading": "エーイレブンワイ",
           "category": "Web品質",
           "icon": "ic-scale",
@@ -9096,14 +10705,14 @@ module.exports = {
               "label": "関連する語",
               "items": [
                 {
-                  "name": "i18n（国際化）",
+                  "name": "i18n",
                   "desc": "言語や地域による差分を吸収する対応。",
-                  "page": 161
+                  "page": 183
                 },
                 {
                   "name": "Core Web Vitals",
                   "desc": "速度など体感品質を測る指標。",
-                  "page": 162
+                  "page": 184
                 }
               ]
             }
@@ -9120,8 +10729,8 @@ module.exports = {
         },
         {
           "id": "i18n",
-          "page": 161,
-          "term": "i18n（国際化）",
+          "page": 183,
+          "term": "i18n",
           "reading": "アイエイティーンエヌ",
           "category": "Web品質",
           "icon": "ic-network",
@@ -9169,17 +10778,26 @@ module.exports = {
               "label": "関連する語",
               "items": [
                 {
-                  "name": "a11y（アクセシビリティ）",
+                  "name": "a11y",
                   "desc": "誰もが使える設計にするための視点。",
-                  "page": 160
+                  "page": 182
                 }
               ]
+            }
+          ],
+          "title_lines": [
+            {
+              "text": "i18n",
+              "reading": "アイエイティーンエヌ"
+            },
+            {
+              "text": "（国際化）"
             }
           ]
         },
         {
           "id": "core-web-vitals",
-          "page": 162,
+          "page": 184,
           "term": "Core Web Vitals",
           "reading": "コアウェブバイタルズ",
           "category": "Web品質",
@@ -9230,12 +10848,12 @@ module.exports = {
                 {
                   "name": "PWA",
                   "desc": "アプリっぽい体験を実現する技術。",
-                  "page": 158
+                  "page": 180
                 },
                 {
-                  "name": "a11y（アクセシビリティ）",
+                  "name": "a11y",
                   "desc": "誰もが使える設計にするための視点。",
-                  "page": 160
+                  "page": 182
                 }
               ]
             }
@@ -9243,7 +10861,7 @@ module.exports = {
         },
         {
           "id": "redux",
-          "page": 163,
+          "page": 185,
           "term": "Redux",
           "reading": "リダックス",
           "category": "状態管理",
@@ -9294,7 +10912,7 @@ module.exports = {
                 {
                   "name": "React",
                   "desc": "コンポーネント単位でUIを組み立てるライブラリ。",
-                  "page": 146
+                  "page": 168
                 }
               ]
             },
@@ -9304,7 +10922,7 @@ module.exports = {
                 {
                   "name": "Zustand",
                   "desc": "手順の少ない軽量な状態管理。",
-                  "page": 164
+                  "page": 186
                 }
               ]
             }
@@ -9312,7 +10930,7 @@ module.exports = {
         },
         {
           "id": "zustand",
-          "page": 164,
+          "page": 186,
           "term": "Zustand",
           "reading": "ツースタンド",
           "category": "状態管理",
@@ -9363,12 +10981,12 @@ module.exports = {
                 {
                   "name": "Redux",
                   "desc": "手順は多いが予測可能性の高い状態管理。",
-                  "page": 163
+                  "page": 185
                 },
                 {
                   "name": "Pinia",
                   "desc": "Vue版の似た立ち位置の状態管理。",
-                  "page": 165
+                  "page": 187
                 }
               ]
             }
@@ -9376,7 +10994,7 @@ module.exports = {
         },
         {
           "id": "pinia",
-          "page": 165,
+          "page": 187,
           "term": "Pinia",
           "reading": "ピーニャ",
           "category": "状態管理",
@@ -9427,7 +11045,7 @@ module.exports = {
                 {
                   "name": "Vue",
                   "desc": "HTMLに近い書き味のコンポーネント指向フレームワーク。",
-                  "page": 147
+                  "page": 169
                 }
               ]
             },
@@ -9437,7 +11055,7 @@ module.exports = {
                 {
                   "name": "Zustand",
                   "desc": "React版の似た立ち位置の状態管理。",
-                  "page": 164
+                  "page": 186
                 }
               ]
             }
@@ -9451,7 +11069,7 @@ module.exports = {
       "entries": [
         {
           "id": "ruby",
-          "page": 171,
+          "page": 193,
           "term": "Ruby",
           "reading": "ルビー",
           "category": "プログラミング言語",
@@ -9507,7 +11125,7 @@ module.exports = {
                 {
                   "name": "Rails",
                   "desc": "RubyのWebフレームワーク。設定より規約の思想で作られている。",
-                  "page": 177
+                  "page": 199
                 }
               ]
             },
@@ -9517,7 +11135,7 @@ module.exports = {
                 {
                   "name": "Python",
                   "desc": "同じく書きやすさを重視するスクリプト言語。",
-                  "page": 172
+                  "page": 194
                 }
               ]
             }
@@ -9525,7 +11143,7 @@ module.exports = {
         },
         {
           "id": "python",
-          "page": 172,
+          "page": 194,
           "term": "Python",
           "reading": "パイソン",
           "category": "プログラミング言語",
@@ -9581,17 +11199,17 @@ module.exports = {
                 {
                   "name": "Django",
                   "desc": "電池付属の思想を持つフルスタックフレームワーク。",
-                  "page": 180
+                  "page": 202
                 },
                 {
                   "name": "FastAPI",
                   "desc": "型ヒントを活かした高速なAPIフレームワーク。",
-                  "page": 181
+                  "page": 203
                 },
                 {
                   "name": "Flask",
                   "desc": "必要な機能だけを足していく軽量フレームワーク。",
-                  "page": 182
+                  "page": 204
                 }
               ]
             },
@@ -9601,7 +11219,7 @@ module.exports = {
                 {
                   "name": "Ruby",
                   "desc": "同じく書きやすさを重視するスクリプト言語。",
-                  "page": 171
+                  "page": 193
                 }
               ]
             }
@@ -9609,7 +11227,7 @@ module.exports = {
         },
         {
           "id": "go",
-          "page": 173,
+          "page": 195,
           "term": "Go",
           "reading": "ゴー",
           "category": "プログラミング言語",
@@ -9665,7 +11283,7 @@ module.exports = {
                 {
                   "name": "Gin",
                   "desc": "Goの速さを活かしたシンプルなWebフレームワーク。",
-                  "page": 183
+                  "page": 205
                 }
               ]
             },
@@ -9675,7 +11293,7 @@ module.exports = {
                 {
                   "name": "Rust",
                   "desc": "速度に加えてメモリ安全性をコンパイル時に保証する言語。",
-                  "page": 176
+                  "page": 198
                 }
               ]
             }
@@ -9683,7 +11301,7 @@ module.exports = {
         },
         {
           "id": "php",
-          "page": 174,
+          "page": 196,
           "term": "PHP",
           "reading": "ピーエイチピー",
           "category": "プログラミング言語",
@@ -9739,7 +11357,7 @@ module.exports = {
                 {
                   "name": "Laravel",
                   "desc": "PHPをモダンにしたフルスタックフレームワーク。",
-                  "page": 184
+                  "page": 206
                 }
               ]
             },
@@ -9749,7 +11367,7 @@ module.exports = {
                 {
                   "name": "Ruby",
                   "desc": "同じく書きやすさを軸にしたスクリプト言語。",
-                  "page": 171
+                  "page": 193
                 }
               ]
             }
@@ -9757,7 +11375,7 @@ module.exports = {
         },
         {
           "id": "java",
-          "page": 175,
+          "page": 197,
           "term": "Java",
           "reading": "ジャバ",
           "category": "プログラミング言語",
@@ -9813,7 +11431,7 @@ module.exports = {
                 {
                   "name": "Spring Boot",
                   "desc": "Javaの設定を自動化し、すぐに動くアプリを作れるフレームワーク。",
-                  "page": 185
+                  "page": 207
                 }
               ]
             },
@@ -9823,7 +11441,7 @@ module.exports = {
                 {
                   "name": "Go",
                   "desc": "シンプルさと並行処理のしやすさを重視した言語。",
-                  "page": 173
+                  "page": 195
                 }
               ]
             }
@@ -9831,7 +11449,7 @@ module.exports = {
         },
         {
           "id": "rust",
-          "page": 176,
+          "page": 198,
           "term": "Rust",
           "reading": "ラスト",
           "category": "プログラミング言語",
@@ -9887,7 +11505,7 @@ module.exports = {
                 {
                   "name": "Go",
                   "desc": "シンプルさと開発速度を重視した言語。",
-                  "page": 173
+                  "page": 195
                 }
               ]
             }
@@ -9895,7 +11513,7 @@ module.exports = {
         },
         {
           "id": "rails",
-          "page": 177,
+          "page": 199,
           "term": "Rails",
           "reading": "レイルズ",
           "category": "Webフレームワーク",
@@ -9951,7 +11569,7 @@ module.exports = {
                 {
                   "name": "Ruby",
                   "desc": "書きやすさ・読みやすさを重視するプログラミング言語。",
-                  "page": 171
+                  "page": 193
                 }
               ]
             },
@@ -9961,12 +11579,12 @@ module.exports = {
                 {
                   "name": "Laravel",
                   "desc": "PHP版のフルスタックフレームワーク。",
-                  "page": 184
+                  "page": 206
                 },
                 {
                   "name": "Django",
                   "desc": "Python版のフルスタックフレームワーク。",
-                  "page": 180
+                  "page": 202
                 }
               ]
             }
@@ -9974,7 +11592,7 @@ module.exports = {
         },
         {
           "id": "express",
-          "page": 178,
+          "page": 200,
           "term": "Express",
           "reading": "エクスプレス",
           "category": "Webフレームワーク",
@@ -10030,7 +11648,7 @@ module.exports = {
                 {
                   "name": "Hono",
                   "desc": "Edge環境向けに生まれた、より軽量なフレームワーク。",
-                  "page": 179
+                  "page": 201
                 }
               ]
             }
@@ -10038,7 +11656,7 @@ module.exports = {
         },
         {
           "id": "hono",
-          "page": 179,
+          "page": 201,
           "term": "Hono",
           "reading": "ホノ",
           "category": "Webフレームワーク",
@@ -10094,7 +11712,7 @@ module.exports = {
                 {
                   "name": "Express",
                   "desc": "Node.js向けの定番の軽量フレームワーク。",
-                  "page": 178
+                  "page": 200
                 }
               ]
             }
@@ -10102,7 +11720,7 @@ module.exports = {
         },
         {
           "id": "django",
-          "page": 180,
+          "page": 202,
           "term": "Django",
           "reading": "ジャンゴ",
           "category": "Webフレームワーク",
@@ -10158,7 +11776,7 @@ module.exports = {
                 {
                   "name": "Python",
                   "desc": "シンプルな文法を持つプログラミング言語。",
-                  "page": 172
+                  "page": 194
                 }
               ]
             },
@@ -10168,17 +11786,17 @@ module.exports = {
                 {
                   "name": "FastAPI",
                   "desc": "型ヒントを活かした高速なAPIフレームワーク。",
-                  "page": 181
+                  "page": 203
                 },
                 {
                   "name": "Flask",
                   "desc": "必要な機能だけを足していく軽量フレームワーク。",
-                  "page": 182
+                  "page": 204
                 },
                 {
                   "name": "Rails",
                   "desc": "Ruby版のフルスタックフレームワーク。",
-                  "page": 177
+                  "page": 199
                 }
               ]
             }
@@ -10186,7 +11804,7 @@ module.exports = {
         },
         {
           "id": "fastapi",
-          "page": 181,
+          "page": 203,
           "term": "FastAPI",
           "reading": "ファストエーピーアイ",
           "category": "Webフレームワーク",
@@ -10242,7 +11860,7 @@ module.exports = {
                 {
                   "name": "Python",
                   "desc": "シンプルな文法を持つプログラミング言語。",
-                  "page": 172
+                  "page": 194
                 }
               ]
             },
@@ -10252,12 +11870,12 @@ module.exports = {
                 {
                   "name": "Django",
                   "desc": "電池付属の思想を持つフルスタックフレームワーク。",
-                  "page": 180
+                  "page": 202
                 },
                 {
                   "name": "Flask",
                   "desc": "必要な機能だけを足していく軽量フレームワーク。",
-                  "page": 182
+                  "page": 204
                 }
               ]
             }
@@ -10265,7 +11883,7 @@ module.exports = {
         },
         {
           "id": "flask",
-          "page": 182,
+          "page": 204,
           "term": "Flask",
           "reading": "フラスク",
           "category": "Webフレームワーク",
@@ -10321,7 +11939,7 @@ module.exports = {
                 {
                   "name": "Python",
                   "desc": "シンプルな文法を持つプログラミング言語。",
-                  "page": 172
+                  "page": 194
                 }
               ]
             },
@@ -10331,12 +11949,12 @@ module.exports = {
                 {
                   "name": "Django",
                   "desc": "電池付属の思想を持つフルスタックフレームワーク。",
-                  "page": 180
+                  "page": 202
                 },
                 {
                   "name": "FastAPI",
                   "desc": "型ヒントを活かした高速なAPIフレームワーク。",
-                  "page": 181
+                  "page": 203
                 }
               ]
             }
@@ -10344,7 +11962,7 @@ module.exports = {
         },
         {
           "id": "gin",
-          "page": 183,
+          "page": 205,
           "term": "Gin",
           "reading": "ジン",
           "category": "Webフレームワーク",
@@ -10400,7 +12018,7 @@ module.exports = {
                 {
                   "name": "Go",
                   "desc": "並行処理を得意とするシンプルな言語。",
-                  "page": 173
+                  "page": 195
                 }
               ]
             }
@@ -10408,7 +12026,7 @@ module.exports = {
         },
         {
           "id": "laravel",
-          "page": 184,
+          "page": 206,
           "term": "Laravel",
           "reading": "ララベル",
           "category": "Webフレームワーク",
@@ -10464,7 +12082,7 @@ module.exports = {
                 {
                   "name": "PHP",
                   "desc": "HTMLに埋め込んで使えるサーバーサイド言語。",
-                  "page": 174
+                  "page": 196
                 }
               ]
             },
@@ -10474,7 +12092,7 @@ module.exports = {
                 {
                   "name": "Rails",
                   "desc": "Ruby版のフルスタックフレームワーク。",
-                  "page": 177
+                  "page": 199
                 }
               ]
             }
@@ -10482,7 +12100,7 @@ module.exports = {
         },
         {
           "id": "spring-boot",
-          "page": 185,
+          "page": 207,
           "term": "Spring Boot",
           "compact": true,
           "reading": "スプリングブート",
@@ -10539,7 +12157,7 @@ module.exports = {
                 {
                   "name": "Java",
                   "desc": "JVM上で動作し、OSを問わず動かせる言語。",
-                  "page": 175
+                  "page": 197
                 }
               ]
             }
@@ -10839,7 +12457,7 @@ module.exports = {
                 {
                   "name": "PWA",
                   "desc": "インストール感をWebのまま近づける別路線。",
-                  "page": 158
+                  "page": 180
                 }
               ]
             }
@@ -10908,7 +12526,7 @@ module.exports = {
                 {
                   "name": "React",
                   "desc": "発想の原点であるWebのUIライブラリ。",
-                  "page": 146
+                  "page": 168
                 },
                 {
                   "name": "ネイティブアプリ",
@@ -11209,7 +12827,7 @@ module.exports = {
                 {
                   "name": "Java",
                   "desc": "互換と歴史のパートナー。",
-                  "page": 175
+                  "page": 197
                 }
               ]
             }
@@ -11649,7 +13267,7 @@ module.exports = {
                 {
                   "name": "Seeder",
                   "desc": "アプリ側の初期データ投入に近い概念。",
-                  "page": 93
+                  "page": 115
                 },
                 {
                   "name": "Integration Test",
@@ -11658,7 +13276,8 @@ module.exports = {
                 },
                 {
                   "name": "Factory",
-                  "desc": "動的にテストデータを作る派（一緒に覚えたい）。"
+                  "desc": "動的にテストデータを作る派（一緒に覚えたい）。",
+                  "page": 522
                 }
               ]
             }
@@ -11731,7 +13350,8 @@ module.exports = {
                 },
                 {
                   "name": "リファクタリング",
-                  "desc": "緑のあとに必ず来る工程（設計章）。"
+                  "desc": "緑のあとに必ず来る工程（設計章）。",
+                  "page": 524
                 }
               ]
             }
@@ -11940,7 +13560,8 @@ module.exports = {
               "items": [
                 {
                   "name": "ログ",
-                  "desc": "本番でデバッグするときの手がかり（観測章へ）。"
+                  "desc": "本番でデバッグするときの手がかり（観測章へ）。",
+                  "page": 525
                 },
                 {
                   "name": "回帰テスト",
@@ -12168,8 +13789,9 @@ module.exports = {
                   "page": 511
                 },
                 {
-                  "name": "CI",
-                  "desc": "スモークを自動で回す場所（Ch14）。"
+                  "name": "CI/CD",
+                  "desc": "スモークを自動で回す場所（Ch14）。",
+                  "page": 705
                 }
               ]
             }
@@ -12680,7 +14302,7 @@ module.exports = {
                 {
                   "name": "Vite",
                   "desc": "同じ思想圏のバンドラ／devサーバ。",
-                  "page": 150
+                  "page": 172
                 },
                 {
                   "name": "Unit Test",
@@ -12832,7 +14454,308 @@ module.exports = {
                 },
                 {
                   "name": "ヘッドレス",
-                  "desc": "画面なしでブラウザを走らせるモード。"
+                  "desc": "画面なしでブラウザを走らせるモード。",
+                  "page": 523
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "category": "テスト",
+          "icon": "ic-gear",
+          "compact": true,
+          "id": "factory",
+          "page": 522,
+          "term": "Factory",
+          "reading": "ファクトリ",
+          "oneline": "テスト用データを、必要な形で動的に生成するための仕組み・パターン。",
+          "q1_text": "Fixtureの静的データだけでは、ケースごとに少し違うデータが必要になると管理が破綻する。",
+          "q2_intro": "テストごとにハッシュやSQLを手で組み立てていた。",
+          "q2_table": {
+            "col_before": "手組みデータ",
+            "col_after": "Factory",
+            "rows": [
+              [
+                "バリエーション",
+                "コピペ増殖",
+                "引数で差分だけ指定"
+              ],
+              [
+                "保守",
+                "壊れやすい",
+                "生成口が一箇所"
+              ],
+              [
+                "可读性",
+                "ノイズが多い",
+                "意図が残る"
+              ],
+              [
+                "速度",
+                "——",
+                "必要分だけ作れる"
+              ]
+            ]
+          },
+          "q3_cells": [
+            {
+              "icon": "ic-gear",
+              "cap": "テストデータを柔軟に作れる"
+            },
+            {
+              "icon": "ic-file",
+              "cap": "ケースごとの差分が書きやすい"
+            },
+            {
+              "icon": "ic-check",
+              "cap": "Fixtureと使い分けできる"
+            }
+          ],
+          "memo": "FactoryBot などライブラリ名で語られることも。\n「工場で組み立てる」イメージ。",
+          "sidebar_groups": [
+            {
+              "label": "関連キーワード",
+              "items": [
+                {
+                  "name": "Fixture",
+                  "desc": "静的寄りのテストデータ。",
+                  "page": 505
+                },
+                {
+                  "name": "Unit Test",
+                  "desc": "Factoryの出番が多い層。",
+                  "page": 500
+                },
+                {
+                  "name": "Seeder",
+                  "desc": "アプリ側の初期データ投入。",
+                  "page": 115
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "category": "テスト",
+          "icon": "ic-monitor",
+          "compact": true,
+          "id": "headless",
+          "page": 523,
+          "term": "ヘッドレス",
+          "reading": "ヘッドレス",
+          "oneline": "画面（GUI）を出さずに、ブラウザやアプリを裏側で動かすモード。",
+          "q1_text": "CIのサーバーにディスプレイがない。なのにブラウザ自動操作が必要になる。",
+          "q2_intro": "手元の画面付きPCでだけE2Eを回し、CIでは諦めていた。",
+          "q2_table": {
+            "col_before": "画面あり必須",
+            "col_after": "ヘッドレス",
+            "rows": [
+              [
+                "CI",
+                "難しい",
+                "画面なしで実行できる"
+              ],
+              [
+                "リソース",
+                "重い",
+                "比較的軽く回しやすい"
+              ],
+              [
+                "デバッグ",
+                "目で見える",
+                "スクショやトレースで補う"
+              ],
+              [
+                "用途",
+                "手元確認",
+                "自動テストの主力"
+              ]
+            ]
+          },
+          "q3_cells": [
+            {
+              "icon": "ic-monitor",
+              "cap": "GUIなしでブラウザ操作を自動化できる"
+            },
+            {
+              "icon": "ic-rocket",
+              "cap": "CIに載せやすい"
+            },
+            {
+              "icon": "ic-gear",
+              "cap": "E2Eの本番運用に近づける"
+            }
+          ],
+          "memo": "headless Chrome などが代表例。\n落ちたときは headed（画面あり）で再現すると早い。",
+          "sidebar_groups": [
+            {
+              "label": "関連キーワード",
+              "items": [
+                {
+                  "name": "Puppeteer",
+                  "desc": "ヘッドレスChrome操作の代表。",
+                  "page": 521
+                },
+                {
+                  "name": "Playwright",
+                  "desc": "同様にヘッドレスで回せる。",
+                  "page": 520
+                },
+                {
+                  "name": "E2E Test",
+                  "desc": "ヘッドレスと相性が良い層。",
+                  "page": 502
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "category": "テスト・設計",
+          "icon": "ic-gear",
+          "compact": true,
+          "id": "refactoring",
+          "page": 524,
+          "term": "リファクタリング",
+          "reading": "リファクタリング",
+          "oneline": "外部から見た振る舞いを変えずに、内部の構造を読みやすく・変えやすく整えること。",
+          "q1_text": "動いているコードでも、読みにくいままだと次の変更コストが跳ね上がる。",
+          "q2_intro": "動くなら触らない、か、機能追加のついでに大きく壊していた。",
+          "q2_table": {
+            "col_before": "放置 or 大胆改修",
+            "col_after": "リファクタリング",
+            "rows": [
+              [
+                "振る舞い",
+                "変えがち",
+                "変えずに形だけ直す"
+              ],
+              [
+                "安全網",
+                "薄い",
+                "テストがあるほどやりやすい"
+              ],
+              [
+                "目的",
+                "新機能",
+                "変更容易性"
+              ],
+              [
+                "粒度",
+                "一気",
+                "小さく繰り返せる"
+              ]
+            ]
+          },
+          "q3_cells": [
+            {
+              "icon": "ic-gear",
+              "cap": "コードを壊さず読みやすくできる"
+            },
+            {
+              "icon": "ic-check",
+              "cap": "次の機能追加が楽になる"
+            },
+            {
+              "icon": "ic-undo",
+              "cap": "小さな手順でリスクを抑えられる"
+            }
+          ],
+          "memo": "TDDの「赤→緑→リファクタ」の最後の段。\nテストがないリファクタは、ただの書き換えになりやすい。",
+          "sidebar_groups": [
+            {
+              "label": "関連キーワード",
+              "items": [
+                {
+                  "name": "TDD",
+                  "desc": "リファクタを前提にした開発サイクル。",
+                  "page": 506
+                },
+                {
+                  "name": "Unit Test",
+                  "desc": "安全に直すための網。",
+                  "page": 500
+                },
+                {
+                  "name": "デバッグ",
+                  "desc": "直す前に原因を掴む工程。",
+                  "page": 509
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "category": "テスト・運用",
+          "icon": "ic-list",
+          "compact": true,
+          "id": "log",
+          "page": 525,
+          "term": "ログ",
+          "reading": "ログ",
+          "oneline": "プログラムが残す動作の記録。障害調査やデバッグの手がかりになる。",
+          "q1_text": "本番ではデバッガを付けられない。再現しない不具合の足跡が必要になる。",
+          "q2_intro": "画面の見た目とユーザ報告だけを頼りに、勘で直していた。",
+          "q2_table": {
+            "col_before": "手がかりなし",
+            "col_after": "ログ",
+            "rows": [
+              [
+                "調査",
+                "推測",
+                "時系列の記録を追える"
+              ],
+              [
+                "本番",
+                "再現待ち",
+                "残った痕跡から探れる"
+              ],
+              [
+                "レベル",
+                "全部print",
+                "info/warn/errorで分けられる"
+              ],
+              [
+                "過多",
+                "——",
+                "出しすぎると逆に読めない"
+              ]
+            ]
+          },
+          "q3_cells": [
+            {
+              "icon": "ic-list",
+              "cap": "障害の手がかりを残せる"
+            },
+            {
+              "icon": "ic-clock",
+              "cap": "いつ何が起きたかを追える"
+            },
+            {
+              "icon": "ic-check",
+              "cap": "デバッグと運用の共通言語になる"
+            }
+          ],
+          "memo": "「ログを吐く」は現場語。出しすぎ・秘匿情報の混入には注意。",
+          "sidebar_groups": [
+            {
+              "label": "関連キーワード",
+              "items": [
+                {
+                  "name": "デバッグ",
+                  "desc": "ログを読んで原因に近づく。",
+                  "page": 509
+                },
+                {
+                  "name": "E2E Test",
+                  "desc": "失敗時のログが頼りになる。",
+                  "page": 502
+                },
+                {
+                  "name": "CI/CD",
+                  "desc": "パイプラインのログも調査対象。",
+                  "page": 705
                 }
               ]
             }
@@ -13509,7 +15432,7 @@ module.exports = {
                 {
                   "name": "Rails",
                   "desc": "gem生態系の巨大ユーザー。",
-                  "page": 177
+                  "page": 199
                 }
               ]
             }
@@ -13583,7 +15506,7 @@ module.exports = {
                 {
                   "name": "Rust",
                   "desc": "cargoの宿主言語。",
-                  "page": 176
+                  "page": 198
                 }
               ]
             }
@@ -13657,7 +15580,7 @@ module.exports = {
                 {
                   "name": "Go",
                   "desc": "宿主言語。",
-                  "page": 173
+                  "page": 195
                 }
               ]
             }
@@ -13953,7 +15876,7 @@ module.exports = {
                 {
                   "name": "Node.js",
                   "desc": "対象ランタイム。",
-                  "page": 143
+                  "page": 165
                 }
               ]
             }
@@ -14027,7 +15950,7 @@ module.exports = {
                 {
                   "name": "Rails",
                   "desc": "版固定が重要な代表アプリ。",
-                  "page": 177
+                  "page": 199
                 }
               ]
             }
@@ -14101,7 +16024,7 @@ module.exports = {
                 {
                   "name": "Python",
                   "desc": "対象言語。",
-                  "page": 172
+                  "page": 194
                 }
               ]
             }
@@ -14546,7 +16469,7 @@ module.exports = {
                 {
                   "name": "VPN",
                   "desc": "網全体をトンネルする別手段（Ch2）。",
-                  "page": 40
+                  "page": 62
                 },
                 {
                   "name": "Daemon",
@@ -14778,12 +16701,12 @@ module.exports = {
                 {
                   "name": "Lock",
                   "desc": "共有資源の交通整理（Ch6）。",
-                  "page": 95
+                  "page": 117
                 },
                 {
                   "name": "非同期",
                   "desc": "並行の別モデル（Ch7）。",
-                  "page": 138
+                  "page": 160
                 }
               ]
             }
@@ -14993,8 +16916,9 @@ module.exports = {
               "label": "関連キーワード",
               "items": [
                 {
-                  "name": "grep系",
-                  "desc": "正規表現検索の代表コマンド（近い言葉）。"
+                  "name": "grep",
+                  "desc": "正規表現検索の代表コマンド（近い言葉）。",
+                  "page": 619
                 },
                 {
                   "name": "Vim",
@@ -15146,12 +17070,12 @@ module.exports = {
                 {
                   "name": "IP Address",
                   "desc": "pingの宛先（Ch2）。",
-                  "page": 29
+                  "page": 51
                 },
                 {
                   "name": "DNS",
                   "desc": "名前解決の次に疑うポイント（Ch2）。",
-                  "page": 27
+                  "page": 49
                 }
               ]
             }
@@ -15215,7 +17139,7 @@ module.exports = {
                 {
                   "name": "HTTP",
                   "desc": "curlが最もよく話す相手（Ch2）。",
-                  "page": 25
+                  "page": 47
                 },
                 {
                   "name": "ping",
@@ -15225,7 +17149,7 @@ module.exports = {
                 {
                   "name": "API",
                   "desc": "curlで試す対象（Ch4）。",
-                  "page": 61
+                  "page": 83
                 }
               ]
             }
@@ -15363,7 +17287,7 @@ module.exports = {
                 {
                   "name": "HTML",
                   "desc": "よく変換される先（Ch7）。",
-                  "page": 121
+                  "page": 143
                 },
                 {
                   "name": "Vim",
@@ -15520,7 +17444,158 @@ module.exports = {
                 },
                 {
                   "name": "Secret",
-                  "desc": "本番での本式管理（セキュリティ章）。"
+                  "desc": "本番での本式管理（セキュリティ章）。",
+                  "page": 620
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "category": "Linux・ターミナル",
+          "icon": "ic-file",
+          "compact": true,
+          "id": "grep",
+          "page": 619,
+          "term": "grep",
+          "reading": "グレップ",
+          "oneline": "テキストの中から、条件に合う行を探し出す定番コマンド（系）。",
+          "q1_text": "大きなログやコードから、目的の文字列を目視で探すのは限界がある。",
+          "q2_intro": "エディタの検索だけに頼り、ファイルを一つずつ開いていた。",
+          "q2_table": {
+            "col_before": "手検索",
+            "col_after": "grep",
+            "rows": [
+              [
+                "範囲",
+                "開いたファイル",
+                "ディレクトリ横断も可"
+              ],
+              [
+                "条件",
+                "固定文字",
+                "正規表現も使える"
+              ],
+              [
+                "速度",
+                "遅い",
+                "大量テキスト向き"
+              ],
+              [
+                "連携",
+                "弱い",
+                "パイプで次の処理へ"
+              ]
+            ]
+          },
+          "q3_cells": [
+            {
+              "icon": "ic-file",
+              "cap": "大量テキストから目的行を抜ける"
+            },
+            {
+              "icon": "ic-rocket",
+              "cap": "正規表現検索の入口になる"
+            },
+            {
+              "icon": "ic-gear",
+              "cap": "ログ調査やコード検索に使える"
+            }
+          ],
+          "memo": "rg（ripgrep）や ag など高速な後継も「grep系」と呼ばれる。\nサイドバーの「grep系」はこの一族の総称。",
+          "sidebar_groups": [
+            {
+              "label": "関連キーワード",
+              "items": [
+                {
+                  "name": "正規表現",
+                  "desc": "grepの条件記述に使う。",
+                  "page": 611
+                },
+                {
+                  "name": "Terminal",
+                  "desc": "grepを打つ場所。",
+                  "page": 600
+                },
+                {
+                  "name": "ログ",
+                  "desc": "grepの代表的な検索対象。",
+                  "page": 525
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "category": "Linux・ターミナル",
+          "icon": "ic-cube",
+          "compact": true,
+          "id": "secret",
+          "page": 620,
+          "term": "Secret",
+          "reading": "シークレット",
+          "oneline": "APIキーやパスワードなど、外に出してはいけない機密情報の扱い・置き場。",
+          "q1_text": ".envに書いた鍵が、リポジトリやログに混ざると事故になる。",
+          "q2_intro": "設定ファイルに直書きし、共有もコピーで済ませていた。",
+          "q2_table": {
+            "col_before": "直書き・コピペ共有",
+            "col_after": "Secret",
+            "rows": [
+              [
+                "保管",
+                "コードに混ざる",
+                "秘密管理の仕組みへ分離"
+              ],
+              [
+                "共有",
+                "チャット",
+                "権限付きで渡す"
+              ],
+              [
+                "ローテ",
+                "忘れがち",
+                "手順化しやすい"
+              ],
+              [
+                "漏洩時",
+                "発覚が遅い",
+                "監査や無効化がしやすい"
+              ]
+            ]
+          },
+          "q3_cells": [
+            {
+              "icon": "ic-cube",
+              "cap": "機密をコードから分離できる"
+            },
+            {
+              "icon": "ic-check",
+              "cap": "共有と権限を分けられる"
+            },
+            {
+              "icon": "ic-gear",
+              "cap": "CIや本番の注入口に使える"
+            }
+          ],
+          "memo": ".envは便利だが「秘密そのものの保管庫」ではない、と覚えると安全。\n本番はSecret Manager等へ、が定石。",
+          "sidebar_groups": [
+            {
+              "label": "関連キーワード",
+              "items": [
+                {
+                  "name": ".env",
+                  "desc": "ローカルでの変数読み込み。",
+                  "page": 618
+                },
+                {
+                  "name": "Environment Variable",
+                  "desc": "Secretの注入先になりやすい。",
+                  "page": 606
+                },
+                {
+                  "name": "CI/CD",
+                  "desc": "パイプライン変数としても扱う。",
+                  "page": 705
                 }
               ]
             }
@@ -15640,13 +17715,88 @@ module.exports = {
     },
     {
       "number": 14,
-      "title": "DevOps",
+      "title": "デプロイ・CI/CD",
       "entries": [
         {
           "id": "devops-existing",
           "existing_file": "014-devops.html",
           "page": 701,
           "term": "DevOps"
+        },
+        {
+          "category": "デプロイ・CI/CD",
+          "icon": "ic-rocket",
+          "compact": true,
+          "id": "ci-cd",
+          "page": 705,
+          "term": "CI/CD",
+          "reading": "シーアイ／シーディー",
+          "oneline": "変更のたびに自動で検証し（CI）、続けて自動で届ける（CD）仕組み。",
+          "q1_text": "手動テストと手動デプロイだと、統合の不具合発見が遅れ、リリースが怖い行事になる。",
+          "q2_intro": "マージ前に手元で確認し、本番反映も手順書どおりに手で行っていた。",
+          "q2_table": {
+            "col_before": "手動検証・手動リリース",
+            "col_after": "CI/CD",
+            "rows": [
+              [
+                "検証",
+                "人の記憶頼み",
+                "pushやPRで自動実行"
+              ],
+              [
+                "フィードバック",
+                "遅い",
+                "早く落ちて早く直せる"
+              ],
+              [
+                "デプロイ",
+                "本番作業が行事",
+                "パイプライン化できる"
+              ],
+              [
+                "品質",
+                "ばらつく",
+                "同じ手順を繰り返せる"
+              ]
+            ]
+          },
+          "q3_cells": [
+            {
+              "icon": "ic-rocket",
+              "cap": "変更の検証を自動化できる"
+            },
+            {
+              "icon": "ic-check",
+              "cap": "壊れたことに早く気付ける"
+            },
+            {
+              "icon": "ic-gear",
+              "cap": "リリース手順を再現できる"
+            }
+          ],
+          "memo": "CIはContinuous Integration、CDはDeliveryまたはDeployment。\n現場ではまとめて「シーアイシーディー」と呼ぶことが多い。",
+          "sidebar_groups": [
+            {
+              "label": "関連キーワード",
+              "items": [
+                {
+                  "name": "DevOps",
+                  "desc": "CI/CDを支える文化・実践。",
+                  "page": 701
+                },
+                {
+                  "name": "Push",
+                  "desc": "CIを起動する典型トリガー。",
+                  "page": 6
+                },
+                {
+                  "name": "スモークテスト",
+                  "desc": "パイプラインに載せやすい薄いテスト。",
+                  "page": 512
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -15730,34 +17880,2063 @@ module.exports = {
                 {
                   "name": "Server",
                   "desc": "リクエストを受け取って処理を返すコンピュータ。",
-                  "page": 22
+                  "page": 44
                 },
                 {
                   "name": "HTTPS",
                   "desc": "HTTPをTLSで暗号化した通信。",
-                  "page": 26
+                  "page": 48
                 },
                 {
                   "name": "WAF",
                   "desc": "Webアプリへの攻撃を手前で止める防御壁。",
                   "page": 901
-                }
-              ]
-            },
-            {
-              "label": "一緒に覚えたい言葉",
-              "items": [
+                },
                 {
                   "name": "Load Balancer",
-                  "desc": "アクセスを複数のサーバーに振り分ける仕組みの総称。"
+                  "desc": "アクセスを複数のサーバーに振り分ける仕組みの総称。",
+                  "page": 802
                 },
                 {
                   "name": "ヘルスチェック",
-                  "desc": "サーバーが正常に応答するかを定期的に確かめること。"
+                  "desc": "サーバーが正常に応答するかを定期的に確かめること。",
+                  "page": 803
                 },
                 {
                   "name": "ターゲットグループ",
-                  "desc": "ALBの振り分け先になるサーバーのまとまり。"
+                  "desc": "ALBの振り分け先になるサーバーのまとまり。",
+                  "page": 804
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "category": "AWS・インフラ",
+          "icon": "ic-network",
+          "compact": true,
+          "id": "load-balancer",
+          "page": 802,
+          "term": "Load Balancer",
+          "reading": "ロードバランサー",
+          "oneline": "来るアクセスを、複数のサーバーへ振り分けて負荷を分散する仕組みの総称。",
+          "q1_text": "サーバー一台だと、負荷にも障害にも弱い。複数台に振りたい。",
+          "q2_intro": "DNSを手で切り替えたり、特定サーバーに人が集中したりしていた。",
+          "q2_table": {
+            "col_before": "単一サーバー",
+            "col_after": "Load Balancer",
+            "rows": [
+              [
+                "負荷",
+                "一点集中",
+                "複数台へ分散"
+              ],
+              [
+                "障害",
+                "全体停止",
+                "生きている台へ寄せられる"
+              ],
+              [
+                "スケール",
+                "縦に増強",
+                "横に増やしやすい"
+              ],
+              [
+                "運用",
+                "手作り",
+                "ヘルスチェックとセット"
+              ]
+            ]
+          },
+          "q3_cells": [
+            {
+              "icon": "ic-network",
+              "cap": "アクセスを複数台へ振り分けられる"
+            },
+            {
+              "icon": "ic-check",
+              "cap": "一部障害でもサービスを続けやすい"
+            },
+            {
+              "icon": "ic-rocket",
+              "cap": "台数追加で耐えやすくなる"
+            }
+          ],
+          "memo": "ALB/NLB/CLBなど種類がある。\n「LB」と略される。",
+          "sidebar_groups": [
+            {
+              "label": "関連キーワード",
+              "items": [
+                {
+                  "name": "ALB",
+                  "desc": "AWSの代表的なLB。",
+                  "page": 801
+                },
+                {
+                  "name": "ヘルスチェック",
+                  "desc": "振り分け先の生死確認。",
+                  "page": 803
+                },
+                {
+                  "name": "ターゲットグループ",
+                  "desc": "振り分け先のまとまり。",
+                  "page": 804
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "category": "AWS・インフラ",
+          "icon": "ic-check",
+          "compact": true,
+          "id": "health-check",
+          "page": 803,
+          "term": "ヘルスチェック",
+          "reading": "ヘルスチェック",
+          "oneline": "サーバーやコンテナが正常に応答しているかを、定期的に確かめること。",
+          "q1_text": "死んでいるサーバーにリクエストを送り続けると、エラーが増えるだけになる。",
+          "q2_intro": "障害はユーザ報告で知り、該当台を人手で外していた。",
+          "q2_table": {
+            "col_before": "人手監視",
+            "col_after": "ヘルスチェック",
+            "rows": [
+              [
+                "検知",
+                "遅い",
+                "定期的に自動確認"
+              ],
+              [
+                "切り離し",
+                "手動",
+                "LBが自動で外せる"
+              ],
+              [
+                "復帰",
+                "忘れる",
+                "回復したら戻せる"
+              ],
+              [
+                "基準",
+                "曖昧",
+                "パスやステータスで定義"
+              ]
+            ]
+          },
+          "q3_cells": [
+            {
+              "icon": "ic-check",
+              "cap": "異常な台を自動で検知できる"
+            },
+            {
+              "icon": "ic-network",
+              "cap": "振り分けから外せる"
+            },
+            {
+              "icon": "ic-undo",
+              "cap": "回復後に戻せる"
+            }
+          ],
+          "memo": "「生きてる？」の定期確認。パスやステータスコードで判定することが多い。",
+          "sidebar_groups": [
+            {
+              "label": "関連キーワード",
+              "items": [
+                {
+                  "name": "ALB",
+                  "desc": "ヘルスチェック結果で振り分ける。",
+                  "page": 801
+                },
+                {
+                  "name": "Load Balancer",
+                  "desc": "総称側。",
+                  "page": 802
+                },
+                {
+                  "name": "ターゲットグループ",
+                  "desc": "チェック対象のまとまり。",
+                  "page": 804
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "category": "AWS・インフラ",
+          "icon": "ic-server",
+          "compact": true,
+          "id": "target-group",
+          "page": 804,
+          "term": "ターゲットグループ",
+          "reading": "ターゲットグループ",
+          "oneline": "ロードバランサーが振り分け先として扱う、サーバーやコンテナのまとまり。",
+          "q1_text": "振り分けルールと実体の一覧が混ざると、どの台に飛んでいるか追いにくい。",
+          "q2_intro": "LBの設定にIPを直書きし、増減のたびに設定を触っていた。",
+          "q2_table": {
+            "col_before": "直書きの振り分け先",
+            "col_after": "ターゲットグループ",
+            "rows": [
+              [
+                "管理",
+                "個別",
+                "グループとして扱う"
+              ],
+              [
+                "増減",
+                "設定を直接変更",
+                "グループのメンバーを増減"
+              ],
+              [
+                "ヘルス",
+                "バラバラ",
+                "グループ単位で監視"
+              ],
+              [
+                "再利用",
+                "しにくい",
+                "ルールから参照できる"
+              ]
+            ]
+          },
+          "q3_cells": [
+            {
+              "icon": "ic-server",
+              "cap": "振り分け先をひとまとまりで管理できる"
+            },
+            {
+              "icon": "ic-check",
+              "cap": "ヘルスチェックとセットで運用できる"
+            },
+            {
+              "icon": "ic-gear",
+              "cap": "LBのルールから参照しやすい"
+            }
+          ],
+          "memo": "AWS ALB用語としてよく出てくる。\n「どこに飛ばすか」の集合。",
+          "sidebar_groups": [
+            {
+              "label": "関連キーワード",
+              "items": [
+                {
+                  "name": "ALB",
+                  "desc": "ターゲットグループを使うLB。",
+                  "page": 801
+                },
+                {
+                  "name": "ヘルスチェック",
+                  "desc": "グループ内の生死確認。",
+                  "page": 803
+                },
+                {
+                  "name": "Load Balancer",
+                  "desc": "上位の総称。",
+                  "page": 802
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "icon": "ic-server",
+          "compact": true,
+          "id": "ec2",
+          "page": 805,
+          "term": "EC2",
+          "reading": "イーシーツー",
+          "category": "AWS",
+          "oneline": "AWS上で仮想サーバー（インスタンス）を借りて動かすサービス。",
+          "q1_text": "自分で物理サーバーを買うと、調達も故障対応も重い。必要なときだけサーバーが欲しい。",
+          "q2_intro": "オンプレのラックやレンタルサーバーを、何ヶ月も前から確保していた。",
+          "q2_table": {
+            "col_before": "自前サーバー",
+            "col_after": "EC2",
+            "rows": [
+              [
+                "調達",
+                "購入・設置に時間がかかる",
+                "分単位で起動できる"
+              ],
+              [
+                "増減",
+                "硬件の限界",
+                "インスタンスを増やす"
+              ],
+              [
+                "故障",
+                "自分で交換",
+                "別インスタンスへ移しやすい"
+              ],
+              [
+                "支払い",
+                "固定費寄り",
+                "使った分に近づけられる"
+              ]
+            ]
+          },
+          "q3_cells": [
+            {
+              "icon": "ic-server",
+              "cap": "クラウド上に仮想サーバーを立てられる"
+            },
+            {
+              "icon": "ic-rocket",
+              "cap": "スペックや台数を後から変えやすい"
+            },
+            {
+              "icon": "ic-gear",
+              "cap": "他のAWSサービスとつなぎやすい"
+            }
+          ],
+          "memo": "Elastic Compute Cloud の略。\n「サーバー＝EC2」と覚えがちだが、今はコンテナやサーバレスも選択肢。",
+          "sidebar_groups": [
+            {
+              "label": "関連キーワード",
+              "items": [
+                {
+                  "name": "IAM",
+                  "desc": "誰がEC2を操作できるかの権限。",
+                  "page": 815
+                },
+                {
+                  "name": "ALB",
+                  "desc": "複数EC2への振り分け。",
+                  "page": 801
+                },
+                {
+                  "name": "CloudWatch",
+                  "desc": "CPUなどメトリクスの監視。",
+                  "page": 818
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "icon": "ic-package",
+          "compact": true,
+          "id": "ecs",
+          "page": 806,
+          "term": "ECS",
+          "reading": "イーシーエス",
+          "category": "AWS",
+          "oneline": "Dockerコンテナを、AWS上で動かし続けるためのオーケストレーションサービス。",
+          "q1_text": "コンテナは作れた。でも本番で何台も張り、落ちたら立て直す運用がつらい。",
+          "q2_intro": "EC2にSSHして docker run し、プロセス監視も自前でやっていた。",
+          "q2_table": {
+            "col_before": "EC2上の手運用",
+            "col_after": "ECS",
+            "rows": [
+              [
+                "配置",
+                "手動",
+                "タスク定義で宣言"
+              ],
+              [
+                "再起動",
+                "自分で対応",
+                "サービスが立て直しを助ける"
+              ],
+              [
+                "スケール",
+                "台数を手で増減",
+                "サービス単位で増やしやすい"
+              ],
+              [
+                "連携",
+                "自作",
+                "ALBやIAMとつなぎやすい"
+              ]
+            ]
+          },
+          "q3_cells": [
+            {
+              "icon": "ic-package",
+              "cap": "コンテナを本番運用の単位にできる"
+            },
+            {
+              "icon": "ic-rocket",
+              "cap": "定義どおりに起動・更新しやすい"
+            },
+            {
+              "icon": "ic-network",
+              "cap": "ロードバランサーと組み合わせやすい"
+            }
+          ],
+          "memo": "Elastic Container Service。\nFargateと組むと「サーバーレス寄りコンテナ」、EC2起動タイプだと下地の管理が残る。",
+          "sidebar_groups": [
+            {
+              "label": "関連キーワード",
+              "items": [
+                {
+                  "name": "ECR",
+                  "desc": "コンテナイメージの置き場。",
+                  "page": 807
+                },
+                {
+                  "name": "Fargate",
+                  "desc": "サーバー管理を薄くする実行形態。",
+                  "page": 808
+                },
+                {
+                  "name": "Kubernetes",
+                  "desc": "別系統のコンテナ運用。",
+                  "page": 441
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "icon": "ic-package",
+          "compact": true,
+          "id": "ecr",
+          "page": 807,
+          "term": "ECR",
+          "reading": "イーシーアール",
+          "category": "AWS",
+          "oneline": "Dockerイメージを置いておく、AWSのコンテナレジストリ。",
+          "q1_text": "ビルドしたイメージを、デプロイ先から安全に取り出せる置き場が必要になる。",
+          "q2_intro": "Docker Hubや自前レジストリに上げ、認証や権限を場当たりで管理していた。",
+          "q2_table": {
+            "col_before": "外部／自前レジストリ",
+            "col_after": "ECR",
+            "rows": [
+              [
+                "置き場",
+                "バラバラ",
+                "AWS内にまとめられる"
+              ],
+              [
+                "権限",
+                "別管理",
+                "IAMで揃えやすい"
+              ],
+              [
+                "連携",
+                "手作業",
+                "ECS等から引きやすい"
+              ],
+              [
+                "スキャン",
+                "別途",
+                "脆弱性スキャン機能もある"
+              ]
+            ]
+          },
+          "q3_cells": [
+            {
+              "icon": "ic-package",
+              "cap": "イメージをAWS上に保管できる"
+            },
+            {
+              "icon": "ic-check",
+              "cap": "デプロイの取得元を固定できる"
+            },
+            {
+              "icon": "ic-gear",
+              "cap": "IAMで誰がpush/pullできるか決められる"
+            }
+          ],
+          "memo": "Elastic Container Registry。\n「イメージのGitHub Packages的な置き場」と捉えると近い。",
+          "sidebar_groups": [
+            {
+              "label": "関連キーワード",
+              "items": [
+                {
+                  "name": "ECS",
+                  "desc": "ECRのイメージを動かする先。",
+                  "page": 806
+                },
+                {
+                  "name": "Docker",
+                  "desc": "イメージを作る側の道具。",
+                  "page": 301
+                },
+                {
+                  "name": "IAM",
+                  "desc": "レジストリ操作の権限。",
+                  "page": 815
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "icon": "ic-rocket",
+          "compact": true,
+          "id": "fargate",
+          "page": 808,
+          "term": "Fargate",
+          "reading": "ファーゲート",
+          "category": "AWS",
+          "oneline": "コンテナは動かすが、下のEC2サーバーを自分で管理しなくてよい実行方式。",
+          "q1_text": "コンテナ運用したいのに、OSのパッチやキャパシティまで見ると負担が大きい。",
+          "q2_intro": "ECSの下にEC2クラスタを張り、空きリソースとAMI更新に追われていた。",
+          "q2_table": {
+            "col_before": "EC2起動タイプ",
+            "col_after": "Fargate",
+            "rows": [
+              [
+                "サーバー管理",
+                "自分",
+                "AWS側に寄せられる"
+              ],
+              [
+                "キャパシティ",
+                "クラスタ設計",
+                "タスク単位で考えやすい"
+              ],
+              [
+                "運用負荷",
+                "高い",
+                "アプリ寄りに集中できる"
+              ],
+              [
+                "制約",
+                "自由が多い",
+                "細かいホスト制御は減る"
+              ]
+            ]
+          },
+          "q3_cells": [
+            {
+              "icon": "ic-rocket",
+              "cap": "コンテナ実行のインフラ負担を減らせる"
+            },
+            {
+              "icon": "ic-check",
+              "cap": "タスク定義中心でデプロイできる"
+            },
+            {
+              "icon": "ic-gear",
+              "cap": "ECSと組み合わせて使いやすい"
+            }
+          ],
+          "memo": "「サーバーレスなコンテナ実行」と言われることが多い。\n完全無料ではなく、動かした分の課金。",
+          "sidebar_groups": [
+            {
+              "label": "関連キーワード",
+              "items": [
+                {
+                  "name": "ECS",
+                  "desc": "Fargateを使う土台のサービス。",
+                  "page": 806
+                },
+                {
+                  "name": "Lambda",
+                  "desc": "もっと短い処理向けのサーバレス。",
+                  "page": 809
+                },
+                {
+                  "name": "ECR",
+                  "desc": "動かすイメージの置き場。",
+                  "page": 807
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "icon": "ic-bolt",
+          "compact": true,
+          "id": "lambda",
+          "page": 809,
+          "term": "Lambda",
+          "reading": "ラムダ",
+          "category": "AWS",
+          "oneline": "サーバーを常時立てず、イベントに応じて関数を実行するサーバレス計算サービス。",
+          "q1_text": "たまにしか動かない処理のために、常時サーバーを張りたくない。",
+          "q2_intro": "小さなバッチやWebhook受けも、EC2や常駐プロセスで受けていた。",
+          "q2_table": {
+            "col_before": "常駐サーバー",
+            "col_after": "Lambda",
+            "rows": [
+              [
+                "起動",
+                "常時ON",
+                "呼ばれたときだけ動く"
+              ],
+              [
+                "スケール",
+                "台数設計",
+                "同時実行で伸びやすい"
+              ],
+              [
+                "運用",
+                "OSまで見る",
+                "関数と権限が中心"
+              ],
+              [
+                "向き不向き",
+                "何でも載せがち",
+                "短時間・イベント向き"
+              ]
+            ]
+          },
+          "q3_cells": [
+            {
+              "icon": "ic-rocket",
+              "cap": "イベント駆動で処理を実行できる"
+            },
+            {
+              "icon": "ic-check",
+              "cap": "常時サーバー代を抑えやすい"
+            },
+            {
+              "icon": "ic-gear",
+              "cap": "S3やAPI Gatewayとつなぎやすい"
+            }
+          ],
+          "memo": "コールドスタートや実行時間制限がある。\n「全部Lambda」は設計を見誤るとつらい。",
+          "sidebar_groups": [
+            {
+              "label": "関連キーワード",
+              "items": [
+                {
+                  "name": "API Gateway",
+                  "desc": "HTTPの入口としてよく組む。",
+                  "page": 816
+                },
+                {
+                  "name": "S3",
+                  "desc": "アップロードイベントの定番トリガー。",
+                  "page": 810
+                },
+                {
+                  "name": "CloudWatch",
+                  "desc": "ログやメトリクスの受け皿。",
+                  "page": 818
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "icon": "ic-package",
+          "compact": true,
+          "id": "s3",
+          "page": 810,
+          "term": "S3",
+          "reading": "エススリー",
+          "category": "AWS",
+          "oneline": "ファイルやオブジェクトを、ほぼ無限に置けるAWSのオブジェクトストレージ。",
+          "q1_text": "画像やバックアップをサーバーのディスクに置くと、容量も冗長化もすぐ詰まる。",
+          "q2_intro": "アプリサーバーのローカルディスクや、NASにファイルを置いていた。",
+          "q2_table": {
+            "col_before": "サーバー内ディスク",
+            "col_after": "S3",
+            "rows": [
+              [
+                "容量",
+                "ディスク上限",
+                "実質かなり大きく伸ばせる"
+              ],
+              [
+                "配信",
+                "アプリ経由",
+                "直接配信やCloudFrontと組める"
+              ],
+              [
+                "耐久性",
+                "一台依存",
+                "複数拠点に分散される設計"
+              ],
+              [
+                "用途",
+                "ログ・画像・バックアップ",
+                "静的サイト置き場にも"
+              ]
+            ]
+          },
+          "q3_cells": [
+            {
+              "icon": "ic-package",
+              "cap": "大容量ファイルを預けられる"
+            },
+            {
+              "icon": "ic-network",
+              "cap": "URL経由で取得・配信しやすい"
+            },
+            {
+              "icon": "ic-gear",
+              "cap": "他サービスへのイベント元になる"
+            }
+          ],
+          "memo": "Simple Storage Service。バケットにオブジェクトを入れる。\n「フォルダ」に見えても、本質はキーとオブジェクト。",
+          "sidebar_groups": [
+            {
+              "label": "関連キーワード",
+              "items": [
+                {
+                  "name": "CloudFront",
+                  "desc": "S3の前段CDN。",
+                  "page": 813
+                },
+                {
+                  "name": "IAM",
+                  "desc": "バケット操作の権限。",
+                  "page": 815
+                },
+                {
+                  "name": "Lambda",
+                  "desc": "オブジェクト作成をトリガーにできる。",
+                  "page": 809
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "icon": "ic-database",
+          "compact": true,
+          "id": "rds",
+          "page": 811,
+          "term": "RDS",
+          "reading": "アールディーエス",
+          "category": "AWS",
+          "oneline": "MySQLやPostgreSQLなどを、マネージドで借りられるリレーショナルDBサービス。",
+          "q1_text": "DBサーバーのOS更新、バックアップ、フェイルオーバーまで自前だと重い。",
+          "q2_intro": "EC2にDBを自分で入れ、バックアップもcronで取っていた。",
+          "q2_table": {
+            "col_before": "自前DBサーバー",
+            "col_after": "RDS",
+            "rows": [
+              [
+                "運用",
+                "OSから自分",
+                "バックアップ等がマネージド"
+              ],
+              [
+                "可用性",
+                "自作構成",
+                "Multi-AZなど選択肢がある"
+              ],
+              [
+                "スケール",
+                "手作業",
+                "インスタンス変更がしやすい"
+              ],
+              [
+                "自由度",
+                "高い",
+                "ホストOSには入れない"
+              ]
+            ]
+          },
+          "q3_cells": [
+            {
+              "icon": "ic-database",
+              "cap": "定番RDBをマネージドで使える"
+            },
+            {
+              "icon": "ic-check",
+              "cap": "バックアップやパッチの負担を減らせる"
+            },
+            {
+              "icon": "ic-gear",
+              "cap": "アプリは接続先を変える感覚で使える"
+            }
+          ],
+          "memo": "Relational Database Service。\n「RDBをAWSに預ける」入口。Auroraは系統の上位オプション。",
+          "sidebar_groups": [
+            {
+              "label": "関連キーワード",
+              "items": [
+                {
+                  "name": "PostgreSQL",
+                  "desc": "RDSで選べるエンジンの一例。",
+                  "page": 128
+                },
+                {
+                  "name": "MySQL",
+                  "desc": "同様に選べるエンジン。",
+                  "page": 127
+                },
+                {
+                  "name": "DynamoDB",
+                  "desc": "マネージドNoSQL側の代表。",
+                  "page": 812
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "icon": "ic-database",
+          "compact": true,
+          "id": "dynamodb",
+          "page": 812,
+          "term": "DynamoDB",
+          "reading": "ダイナモディービー",
+          "category": "AWS",
+          "oneline": "キーバリュー／ドキュメント寄りで、スケールしやすいAWSのマネージドNoSQL。",
+          "q1_text": "アクセスが急増するデータに、RDBのスケール設計が追いつかないことがある。",
+          "q2_intro": "全部RDBに載せ、キャッシュや分割でしのいでいた。",
+          "q2_table": {
+            "col_before": "RDB一本",
+            "col_after": "DynamoDB",
+            "rows": [
+              [
+                "スケール",
+                "縦・手分割",
+                "高いスループット向けに伸びやすい"
+              ],
+              [
+                "スキーマ",
+                "固定寄り",
+                "柔軟な項目"
+              ],
+              [
+                "運用",
+                "サーバー管理",
+                "フルマネージド"
+              ],
+              [
+                "クエリ",
+                "SQLが強い",
+                "アクセスパターン設計が重要"
+              ]
+            ]
+          },
+          "q3_cells": [
+            {
+              "icon": "ic-database",
+              "cap": "高負荷向けのNoSQLを使える"
+            },
+            {
+              "icon": "ic-rocket",
+              "cap": "キャパシティを伸ばしやすい"
+            },
+            {
+              "icon": "ic-gear",
+              "cap": "サーバレスアプリと相性が良い"
+            }
+          ],
+          "memo": "「なんでもDynamo」は危険。結合や複雑検索はRDBの方が楽なことが多い。",
+          "sidebar_groups": [
+            {
+              "label": "関連キーワード",
+              "items": [
+                {
+                  "name": "RDS",
+                  "desc": "マネージドRDBとの対比。",
+                  "page": 811
+                },
+                {
+                  "name": "NoSQL",
+                  "desc": "上位の考え方。",
+                  "page": 106
+                },
+                {
+                  "name": "Lambda",
+                  "desc": "よく一緒に組む計算側。",
+                  "page": 809
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "icon": "ic-network",
+          "compact": true,
+          "id": "cloudfront",
+          "page": 813,
+          "term": "CloudFront",
+          "reading": "クラウドフロント",
+          "category": "AWS",
+          "oneline": "世界のエッジからコンテンツを配る、AWSのCDNサービス。",
+          "q1_text": "オリジン（本丸）に毎回取りに行くと、遠いユーザーほど遅くなる。",
+          "q2_intro": "アプリサーバーやS3から直接配信し、遅延と負荷をそのまま受けていた。",
+          "q2_table": {
+            "col_before": "オリジン直配信",
+            "col_after": "CloudFront",
+            "rows": [
+              [
+                "距離",
+                "遠いと遅い",
+                "近いエッジから返す"
+              ],
+              [
+                "負荷",
+                "オリジン集中",
+                "キャッシュで緩和"
+              ],
+              [
+                "HTTPS",
+                "自分で終端",
+                "証明書とセットで扱いやすい"
+              ],
+              [
+                "用途",
+                "静的も動的も",
+                "静的配信が特に定番"
+              ]
+            ]
+          },
+          "q3_cells": [
+            {
+              "icon": "ic-network",
+              "cap": "コンテンツを高速に届けられる"
+            },
+            {
+              "icon": "ic-rocket",
+              "cap": "オリジンの負荷を減らせる"
+            },
+            {
+              "icon": "ic-check",
+              "cap": "S3静的配信と組み合わせやすい"
+            }
+          ],
+          "memo": "CDNのAWS版。キャッシュ消しも運用の一部。",
+          "sidebar_groups": [
+            {
+              "label": "関連キーワード",
+              "items": [
+                {
+                  "name": "S3",
+                  "desc": "オリジンの定番。",
+                  "page": 810
+                },
+                {
+                  "name": "Route 53",
+                  "desc": "ドメイン側の名前解決。",
+                  "page": 814
+                },
+                {
+                  "name": "ALB",
+                  "desc": "動的オリジンになりうる。",
+                  "page": 801
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "icon": "ic-network",
+          "compact": true,
+          "id": "route53",
+          "page": 814,
+          "term": "Route 53",
+          "reading": "ルートフィフティスリー",
+          "category": "AWS",
+          "oneline": "ドメイン名をIPやAWSリソースへつなぐ、AWSのDNSサービス。",
+          "q1_text": "サービスが増えると、「どの名前がどこを向いているか」の管理が必要になる。",
+          "q2_intro": "ドメイン業者のDNS画面や、サーバのhosts感覚でレコードを管理していた。",
+          "q2_table": {
+            "col_before": "外部DNS手管理",
+            "col_after": "Route 53",
+            "rows": [
+              [
+                "連携",
+                "手動更新",
+                "ALBやCloudFrontとつなぎやすい"
+              ],
+              [
+                "ヘルス",
+                "別監視",
+                "フェイルオーバー設定も可能"
+              ],
+              [
+                "権限",
+                "業者画面",
+                "IAMで管理できる"
+              ],
+              [
+                "自動化",
+                "しにくい",
+                "IaCしやすい"
+              ]
+            ]
+          },
+          "q3_cells": [
+            {
+              "icon": "ic-network",
+              "cap": "名前解決をAWS内で管理できる"
+            },
+            {
+              "icon": "ic-check",
+              "cap": "障害時の向き先切り替えに使える"
+            },
+            {
+              "icon": "ic-gear",
+              "cap": "他リソースとDNSを一体運用できる"
+            }
+          ],
+          "memo": "名前はDNSのUDP 53番ポート由来。\n「ドメイン＝Route 53」ではない（登録とDNSは別も可）。",
+          "sidebar_groups": [
+            {
+              "label": "関連キーワード",
+              "items": [
+                {
+                  "name": "DNS",
+                  "desc": "上位のしくみ。",
+                  "page": 49
+                },
+                {
+                  "name": "CloudFront",
+                  "desc": "よく向ける先。",
+                  "page": 813
+                },
+                {
+                  "name": "ALB",
+                  "desc": "アプリ入口の向き先。",
+                  "page": 801
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "icon": "ic-users",
+          "compact": true,
+          "id": "iam",
+          "page": 815,
+          "term": "IAM",
+          "reading": "アイエーエム",
+          "category": "AWS",
+          "oneline": "誰が・何を・どこまでやってよいかを決める、AWSの権限管理の仕組み。",
+          "q1_text": "ルートアカウントや共有鍵だと、事故ったときに止められない。",
+          "q2_intro": "共用ユーザーや、アプリに強い権限キーを直書きしていた。",
+          "q2_table": {
+            "col_before": "共有アカウント",
+            "col_after": "IAM",
+            "rows": [
+              [
+                "権限",
+                "全部できる",
+                "最小権限に分けられる"
+              ],
+              [
+                "人",
+                "区別しにくい",
+                "ユーザー／ロールで分ける"
+              ],
+              [
+                "アプリ",
+                "鍵の使い回し",
+                "ロールで一時権限"
+              ],
+              [
+                "監査",
+                "弱い",
+                "誰が何をしたか追いやすい"
+              ]
+            ]
+          },
+          "q3_cells": [
+            {
+              "icon": "ic-users",
+              "cap": "人やサービスごとに権限を分けられる"
+            },
+            {
+              "icon": "ic-check",
+              "cap": "やりすぎ権限を減らせる"
+            },
+            {
+              "icon": "ic-gear",
+              "cap": "他サービスの操作入口になる"
+            }
+          ],
+          "memo": "Identity and Access Management。\n「IAMを通す」はAWSの基本動作。",
+          "sidebar_groups": [
+            {
+              "label": "関連キーワード",
+              "items": [
+                {
+                  "name": "EC2",
+                  "desc": "インスタンスにロールを付ける。",
+                  "page": 805
+                },
+                {
+                  "name": "S3",
+                  "desc": "バケットポリシーと合わせて使う。",
+                  "page": 810
+                },
+                {
+                  "name": "Lambda",
+                  "desc": "実行ロールが必須級。",
+                  "page": 809
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "icon": "ic-network",
+          "compact": true,
+          "id": "api-gateway",
+          "page": 816,
+          "term": "API Gateway",
+          "reading": "エーピーアイゲートウェイ",
+          "category": "AWS",
+          "oneline": "HTTP APIの入口を作り、認証やルーティングを前段で引き受けるサービス。",
+          "q1_text": "Lambdaや微服务に、そのままインターネットを晒すのは怖いし面倒。",
+          "q2_intro": "アプリサーバーに直接APIを生やし、認証もCORSも全部アプリでやっていた。",
+          "q2_table": {
+            "col_before": "アプリ直公開",
+            "col_after": "API Gateway",
+            "rows": [
+              [
+                "入口",
+                "各サービスごと",
+                "ゲートウェイに集約"
+              ],
+              [
+                "認証",
+                "自前実装",
+                "仕組みを載せやすい"
+              ],
+              [
+                "スロットル",
+                "アプリ任せ",
+                "前段で制限できる"
+              ],
+              [
+                "接続先",
+                "固定サーバー",
+                "Lambda等へつなげる"
+              ]
+            ]
+          },
+          "q3_cells": [
+            {
+              "icon": "ic-network",
+              "cap": "APIの正面玄関を作れる"
+            },
+            {
+              "icon": "ic-check",
+              "cap": "認証や制限を前段に寄せられる"
+            },
+            {
+              "icon": "ic-rocket",
+              "cap": "サーバレス構成の入口になる"
+            }
+          ],
+          "memo": "REST API / HTTP API など種類がある。\n「API」そのものではなく、入口の装置。",
+          "sidebar_groups": [
+            {
+              "label": "関連キーワード",
+              "items": [
+                {
+                  "name": "Lambda",
+                  "desc": "裏側の処理の定番。",
+                  "page": 809
+                },
+                {
+                  "name": "API",
+                  "desc": "届ける対象の概念。",
+                  "page": 83
+                },
+                {
+                  "name": "IAM",
+                  "desc": "呼び出し権限の管理。",
+                  "page": 815
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "icon": "ic-layers",
+          "compact": true,
+          "id": "sqs",
+          "page": 817,
+          "term": "SQS",
+          "reading": "エスキューエス",
+          "category": "AWS",
+          "oneline": "メッセージをキューに溜めて、後続処理へ非同期で渡すマネージドキュー。",
+          "q1_text": "重い処理をリクエストのその場でやると、タイムアウトや再実行がつらい。",
+          "q2_intro": "同期APIの中で全部やり切るか、自前のジョブテーブルで再実行していた。",
+          "q2_table": {
+            "col_before": "同期で全部処理",
+            "col_after": "SQS",
+            "rows": [
+              [
+                "受け渡し",
+                "その場で実行",
+                "キューに入れて後で処理"
+              ],
+              [
+                "ピーク",
+                "サーバーが落ちる",
+                "溜めてならせる"
+              ],
+              [
+                "再試行",
+                "自前",
+                "可視性タイムアウト等で再配信"
+              ],
+              [
+                "結合",
+                "強い",
+                "生産者と消費者を分けられる"
+              ]
+            ]
+          },
+          "q3_cells": [
+            {
+              "icon": "ic-layers",
+              "cap": "処理を非同期に切り離せる"
+            },
+            {
+              "icon": "ic-rocket",
+              "cap": "ピークを緩衝できる"
+            },
+            {
+              "icon": "ic-check",
+              "cap": "失敗時の再処理設計がしやすい"
+            }
+          ],
+          "memo": "Simple Queue Service。\nPub/SubのSNSと組み合わせることも多い。",
+          "sidebar_groups": [
+            {
+              "label": "関連キーワード",
+              "items": [
+                {
+                  "name": "Lambda",
+                  "desc": "キューをトリガーに実行できる。",
+                  "page": 809
+                },
+                {
+                  "name": "Pub/Sub",
+                  "desc": "近い非同期の考え方。",
+                  "page": 96
+                },
+                {
+                  "name": "Webhook",
+                  "desc": "受けた通知をキューへ逃がすこともある。",
+                  "page": 95
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "icon": "ic-monitor",
+          "compact": true,
+          "id": "cloudwatch",
+          "page": 818,
+          "term": "CloudWatch",
+          "reading": "クラウドウォッチ",
+          "category": "AWS",
+          "oneline": "ログ・メトリクス・アラームなど、AWSリソースの様子を見守る監視サービス。",
+          "q1_text": "動いているかはユーザー報告待ち、では障害対応が後手になる。",
+          "q2_intro": "サーバーにSSHしてログを眺め、CPUもtopでその場確認していた。",
+          "q2_table": {
+            "col_before": "手探り監視",
+            "col_after": "CloudWatch",
+            "rows": [
+              [
+                "ログ",
+                "ファイル散在",
+                "集約して検索・保管"
+              ],
+              [
+                "数値",
+                "その場確認",
+                "メトリクスとして連続記録"
+              ],
+              [
+                "通知",
+                "人の気づき",
+                "アラームで飛ばせる"
+              ],
+              [
+                "対象",
+                "自前装置",
+                "AWSサービスと最初からつながる"
+              ]
+            ]
+          },
+          "q3_cells": [
+            {
+              "icon": "ic-monitor",
+              "cap": "ログと数値をまとめて見られる"
+            },
+            {
+              "icon": "ic-clock",
+              "cap": "しきい値超えをアラームにできる"
+            },
+            {
+              "icon": "ic-check",
+              "cap": "障害の初動が早くなる"
+            }
+          ],
+          "memo": "「見てるよ」のCloud Watch。\nログ（Logs）とメトリクス／アラームはセットで覚えると迷子になりにくい。",
+          "sidebar_groups": [
+            {
+              "label": "関連キーワード",
+              "items": [
+                {
+                  "name": "X-Ray",
+                  "desc": "リクエストの追跡（トレーシング）。",
+                  "page": 819
+                },
+                {
+                  "name": "ログ",
+                  "desc": "一般概念としての記録。",
+                  "page": 525
+                },
+                {
+                  "name": "Lambda",
+                  "desc": "ログがCloudWatchに流れやすい。",
+                  "page": 809
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "icon": "ic-network",
+          "compact": true,
+          "id": "x-ray",
+          "page": 819,
+          "term": "X-Ray",
+          "reading": "エックスレイ",
+          "category": "AWS",
+          "oneline": "リクエストがどのサービスをどう通ったかを追跡し、遅延や失敗箇所を可視化する仕組み。",
+          "q1_text": "マイクロサービスやLambda連携だと、「どこで遅いか」がログだけでは追いにくい。",
+          "q2_intro": "各サービスのログ時刻を目視で突き合わせ、勘でボトルネックを当てていた。",
+          "q2_table": {
+            "col_before": "ログ突合",
+            "col_after": "X-Ray",
+            "rows": [
+              [
+                "経路",
+                "想像",
+                "トレースで見える"
+              ],
+              [
+                "遅延",
+                "感覚",
+                "セグメントごとに測れる"
+              ],
+              [
+                "障害箇所",
+                "探し回る",
+                "エラー箇所が浮かびやすい"
+              ],
+              [
+                "対象",
+                "自前計装",
+                "AWSサービスと連携しやすい"
+              ]
+            ]
+          },
+          "q3_cells": [
+            {
+              "icon": "ic-network",
+              "cap": "分散した処理の経路を追える"
+            },
+            {
+              "icon": "ic-clock",
+              "cap": "どこが遅いかを切り分けやすい"
+            },
+            {
+              "icon": "ic-check",
+              "cap": "CloudWatchと併用しやすい"
+            }
+          ],
+          "memo": "分散トレーシングのAWSサービス。\nOpenTelemetryなど汎用の話ともつながる。",
+          "sidebar_groups": [
+            {
+              "label": "関連キーワード",
+              "items": [
+                {
+                  "name": "CloudWatch",
+                  "desc": "監視の兄弟分。",
+                  "page": 818
+                },
+                {
+                  "name": "API Gateway",
+                  "desc": "トレースの入口になりやすい。",
+                  "page": 816
+                },
+                {
+                  "name": "Lambda",
+                  "desc": "計装対象の定番。",
+                  "page": 809
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "icon": "ic-network",
+          "compact": true,
+          "id": "direct-connect",
+          "page": 820,
+          "term": "ダイレクトコネクト",
+          "reading": "ダイレクトコネクト",
+          "category": "AWS",
+          "oneline": "インターネットを経由せず、専用線でオンプレとAWSをつなぐ接続サービス。",
+          "q1_text": "インターネットVPNだと、帯域や安定性が業務要件に足りないことがある。",
+          "q2_intro": "拠点とクラウドをVPNでつなぎ、混雑や揺らぎを飲み込んでいた。",
+          "q2_table": {
+            "col_before": "インターネットVPN",
+            "col_after": "ダイレクトコネクト",
+            "rows": [
+              [
+                "経路",
+                "公衆網経由",
+                "専用寄りの接続"
+              ],
+              [
+                "安定性",
+                "揺れやすい",
+                "要件に合わせやすい"
+              ],
+              [
+                "帯域",
+                "上限が見えにくい",
+                "契約で設計しやすい"
+              ],
+              [
+                "導入",
+                "速い",
+                "回線手配など時間がかかる"
+              ]
+            ]
+          },
+          "q3_cells": [
+            {
+              "icon": "ic-network",
+              "cap": "拠点とAWSを安定してつなげる"
+            },
+            {
+              "icon": "ic-check",
+              "cap": "大容量通信の土台になる"
+            },
+            {
+              "icon": "ic-server",
+              "cap": "ハイブリッド構成の定番手段になる"
+            }
+          ],
+          "memo": "AWS Direct Connect。\n「直結」。個人開発より、企業ネットワーク案件でよく出る。",
+          "sidebar_groups": [
+            {
+              "label": "関連キーワード",
+              "items": [
+                {
+                  "name": "VPN",
+                  "desc": "もっと手軽な接続手段。",
+                  "page": 62
+                },
+                {
+                  "name": "トランジットゲートウェイ",
+                  "desc": "多数VPC接続のハブ。",
+                  "page": 821
+                },
+                {
+                  "name": "VM",
+                  "desc": "つなぐ先の計算資源の一例。",
+                  "page": 401
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "icon": "ic-network",
+          "compact": true,
+          "id": "transit-gateway",
+          "page": 821,
+          "term": "トランジットゲートウェイ",
+          "reading": "トランジットゲートウェイ",
+          "category": "AWS",
+          "oneline": "複数のVPCやオンプレ接続を、ハブ経由でまとめてつなぐネットワークの中継点。",
+          "q1_text": "VPC同士をフルメッシュでつなぐと、接続数が爆発して管理不能になる。",
+          "q2_intro": "VPCピアリングを組み合わせ、図が蜘蛛の巣になっていた。",
+          "q2_table": {
+            "col_before": "ピアリング乱立",
+            "col_after": "トランジットゲートウェイ",
+            "rows": [
+              [
+                "接続数",
+                "組み合わせ爆発",
+                "ハブに集約"
+              ],
+              [
+                "変更",
+                "影響が大きい",
+                "アタッチの増減で済む"
+              ],
+              [
+                "オンプレ",
+                "個別設計",
+                "同じハブに寄せやすい"
+              ],
+              [
+                "見通し",
+                "悪い",
+                "中心が見える"
+              ]
+            ]
+          },
+          "q3_cells": [
+            {
+              "icon": "ic-network",
+              "cap": "多数ネットワークをハブで結べる"
+            },
+            {
+              "icon": "ic-check",
+              "cap": "接続管理を単純化できる"
+            },
+            {
+              "icon": "ic-gear",
+              "cap": "大規模AWS構成の骨格になる"
+            }
+          ],
+          "memo": "Transit Gateway。\n「乗り継ぎ空港」イメージで、各VPCがスポーク。",
+          "sidebar_groups": [
+            {
+              "label": "関連キーワード",
+              "items": [
+                {
+                  "name": "ダイレクトコネクト",
+                  "desc": "オンプレ側からハブへ入る道。",
+                  "page": 820
+                },
+                {
+                  "name": "VPN",
+                  "desc": "もう一つの入り口。",
+                  "page": 62
+                },
+                {
+                  "name": "ALB",
+                  "desc": "アプリ入口とは別レイヤの話。",
+                  "page": 801
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 19,
+      "title": "GCP",
+      "entries": [
+        {
+          "icon": "ic-rocket",
+          "compact": true,
+          "id": "cloud-run",
+          "page": 850,
+          "term": "Cloud Run",
+          "reading": "クラウドラン",
+          "category": "GCP",
+          "oneline": "コンテナを、リクエストに応じてスケールさせて動かすGCPのサービス。",
+          "q1_text": "コンテナでアプリはできた。サーバー常時張りは無駄で、Kubernetesまでは重い。",
+          "q2_intro": "GCE（仮想マシン）に常時デプロイするか、GKEの学習コストを払っていた。",
+          "q2_table": {
+            "col_before": "常時VM / 重いK8s",
+            "col_after": "Cloud Run",
+            "rows": [
+              [
+                "単位",
+                "サーバー",
+                "コンテナサービス"
+              ],
+              [
+                "スケール",
+                "手管理",
+                "リクエストに応じて伸び縮み"
+              ],
+              [
+                "運用",
+                "OSまで",
+                "コンテナと設定が中心"
+              ],
+              [
+                "ゼロスケール",
+                "しにくい",
+                "閑散時は縮めやすい"
+              ]
+            ]
+          },
+          "q3_cells": [
+            {
+              "icon": "ic-rocket",
+              "cap": "コンテナを手軽に本番公開できる"
+            },
+            {
+              "icon": "ic-check",
+              "cap": "負荷に合わせて自動で伸び縮みしやすい"
+            },
+            {
+              "icon": "ic-gear",
+              "cap": "K8sより入口が低い"
+            }
+          ],
+          "memo": "AWSでいうとFargate＋ALB寄りの体験に近い、と言われることも。\nHTTP向き。",
+          "sidebar_groups": [
+            {
+              "label": "関連キーワード",
+              "items": [
+                {
+                  "name": "GKE",
+                  "desc": "もっと制御したいときのK8s。",
+                  "page": 851
+                },
+                {
+                  "name": "Cloud Functions",
+                  "desc": "もっと小さい関数単位。",
+                  "page": 854
+                },
+                {
+                  "name": "Artifact Registry",
+                  "desc": "イメージの置き場。",
+                  "page": 856
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "icon": "ic-package",
+          "compact": true,
+          "id": "gke",
+          "page": 851,
+          "term": "GKE",
+          "reading": "ジーケーイー",
+          "category": "GCP",
+          "oneline": "Googleが運用を助ける、Kubernetesのマネージドサービス。",
+          "q1_text": "Kubernetesは強力だが、コントロールプレーン運用がつらい。",
+          "q2_intro": "自前でk8sクラスタを組み、アップグレードと障害対応に追われていた。",
+          "q2_table": {
+            "col_before": "自前Kubernetes",
+            "col_after": "GKE",
+            "rows": [
+              [
+                "制御面",
+                "自分で守る",
+                "マネージドに寄せられる"
+              ],
+              [
+                "アップグレード",
+                "怖い行事",
+                "支援機能がある"
+              ],
+              [
+                "統合",
+                "自作",
+                "GCPの権限・監視とつなぎやすい"
+              ],
+              [
+                "学習",
+                "全部自分",
+                "アプリ寄りのK8sに集中しやすい"
+              ]
+            ]
+          },
+          "q3_cells": [
+            {
+              "icon": "ic-package",
+              "cap": "K8sをマネージドで使える"
+            },
+            {
+              "icon": "ic-rocket",
+              "cap": "大規模コンテナ運用の土台になる"
+            },
+            {
+              "icon": "ic-check",
+              "cap": "Cloud Runより細かく制御できる"
+            }
+          ],
+          "memo": "Google Kubernetes Engine。\n「まずCloud Run、足りなければGKE」もよくある進め方。",
+          "sidebar_groups": [
+            {
+              "label": "関連キーワード",
+              "items": [
+                {
+                  "name": "Kubernetes",
+                  "desc": "GKEが預かる仕組み本体。",
+                  "page": 441
+                },
+                {
+                  "name": "Cloud Run",
+                  "desc": "より簡易なコンテナ実行。",
+                  "page": 850
+                },
+                {
+                  "name": "Artifact Registry",
+                  "desc": "イメージ供給元。",
+                  "page": 856
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "icon": "ic-package",
+          "compact": true,
+          "id": "cloud-storage",
+          "page": 852,
+          "term": "Cloud Storage",
+          "reading": "クラウドストレージ",
+          "category": "GCP",
+          "oneline": "オブジェクト（ファイル）を置く、GCPのマネージドストレージ。",
+          "q1_text": "画像やバックアップをインスタンスのディスクに置くと、すぐ限界が来る。",
+          "q2_intro": "サーバローカルや共有ディスクにファイルを置いていた。",
+          "q2_table": {
+            "col_before": "ローカルディスク",
+            "col_after": "Cloud Storage",
+            "rows": [
+              [
+                "容量",
+                "ディスク依存",
+                "オブジェクトとして大きく預けられる"
+              ],
+              [
+                "共有",
+                "コピー",
+                "権限付きで共有しやすい"
+              ],
+              [
+                "耐久",
+                "一台リスク",
+                "冗長化された置き場"
+              ],
+              [
+                "対比",
+                "——",
+                "AWS S3に相当"
+              ]
+            ]
+          },
+          "q3_cells": [
+            {
+              "icon": "ic-package",
+              "cap": "ファイルをクラウドに預けられる"
+            },
+            {
+              "icon": "ic-network",
+              "cap": "配信やバックアップの土台になる"
+            },
+            {
+              "icon": "ic-check",
+              "cap": "他GCPサービスと連携しやすい"
+            }
+          ],
+          "memo": "バケットにオブジェクト。S3と同系統の概念。",
+          "sidebar_groups": [
+            {
+              "label": "関連キーワード",
+              "items": [
+                {
+                  "name": "S3",
+                  "desc": "AWS側の対応サービス。",
+                  "page": 810
+                },
+                {
+                  "name": "Cloud CDN",
+                  "desc": "配信を速くする前段。",
+                  "page": 855
+                },
+                {
+                  "name": "Cloud Functions",
+                  "desc": "オブジェクトイベントで起動することも。",
+                  "page": 854
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "icon": "ic-database",
+          "compact": true,
+          "id": "cloud-sql",
+          "page": 853,
+          "term": "Cloud SQL",
+          "reading": "クラウドエスキューエル",
+          "category": "GCP",
+          "oneline": "MySQL / PostgreSQL などをマネージドで使える、GCPのリレーショナルDB。",
+          "q1_text": "DBのバックアップやパッチを、アプリ開発の横でやり続けるのはきつい。",
+          "q2_intro": "Compute Engine上にDBを自前構築していた。",
+          "q2_table": {
+            "col_before": "自前DB VM",
+            "col_after": "Cloud SQL",
+            "rows": [
+              [
+                "運用",
+                "OSから自分",
+                "マネージドに寄せられる"
+              ],
+              [
+                "バックアップ",
+                "自作",
+                "機能として用意される"
+              ],
+              [
+                "接続",
+                "IP直",
+                "IAMやコネクタ等の選択肢"
+              ],
+              [
+                "対比",
+                "——",
+                "AWS RDSに相当"
+              ]
+            ]
+          },
+          "q3_cells": [
+            {
+              "icon": "ic-database",
+              "cap": "定番RDBをGCP上で借りられる"
+            },
+            {
+              "icon": "ic-check",
+              "cap": "運用雑務を減らせる"
+            },
+            {
+              "icon": "ic-gear",
+              "cap": "アプリは接続先変更で移行しやすい"
+            }
+          ],
+          "memo": "Cloud SQL。SpannerやFirestoreとは役割が違う。",
+          "sidebar_groups": [
+            {
+              "label": "関連キーワード",
+              "items": [
+                {
+                  "name": "RDS",
+                  "desc": "AWS側の対応。",
+                  "page": 811
+                },
+                {
+                  "name": "PostgreSQL",
+                  "desc": "選べるエンジンの一例。",
+                  "page": 128
+                },
+                {
+                  "name": "Cloud Run",
+                  "desc": "アプリ側の実行環境例。",
+                  "page": 850
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "icon": "ic-rocket",
+          "compact": true,
+          "id": "cloud-functions",
+          "page": 854,
+          "term": "Cloud Functions",
+          "reading": "クラウドファンクションズ",
+          "category": "GCP",
+          "oneline": "イベントやHTTPに応じて、関数単位で動かすGCPのサーバレス実行環境。",
+          "q1_text": "小さな処理のために、常時インスタンスを張りたくない。",
+          "q2_intro": "小さなWebhookもVMや常駐プロセスで受けていた。",
+          "q2_table": {
+            "col_before": "常駐プロセス",
+            "col_after": "Cloud Functions",
+            "rows": [
+              [
+                "単位",
+                "サーバー／コンテナ",
+                "関数"
+              ],
+              [
+                "起動",
+                "常時",
+                "イベントで起動"
+              ],
+              [
+                "運用",
+                "広い",
+                "コードとトリガーが中心"
+              ],
+              [
+                "対比",
+                "——",
+                "AWS Lambdaに相当"
+              ]
+            ]
+          },
+          "q3_cells": [
+            {
+              "icon": "ic-rocket",
+              "cap": "小さい処理をサーバレスで置ける"
+            },
+            {
+              "icon": "ic-check",
+              "cap": "ストレージやPub/Subとつなぎやすい"
+            },
+            {
+              "icon": "ic-gear",
+              "cap": "試しの自動化に向く"
+            }
+          ],
+          "memo": "第1世代／第2世代で体験が違う。長い処理はCloud Run側、もあり。",
+          "sidebar_groups": [
+            {
+              "label": "関連キーワード",
+              "items": [
+                {
+                  "name": "Lambda",
+                  "desc": "AWS側の対応。",
+                  "page": 809
+                },
+                {
+                  "name": "Cloud Run",
+                  "desc": "コンテナ単位の近い選択肢。",
+                  "page": 850
+                },
+                {
+                  "name": "Cloud Storage",
+                  "desc": "トリガー元の一例。",
+                  "page": 852
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "icon": "ic-network",
+          "compact": true,
+          "id": "cloud-cdn",
+          "page": 855,
+          "term": "Cloud CDN",
+          "reading": "クラウドシーディーエヌ",
+          "category": "GCP",
+          "oneline": "コンテンツをエッジから配り、オリジンの負荷と遅延を減らすGCPのCDN。",
+          "q1_text": "遠いユーザーへの配信や、オリジンへの集中アクセスがボトルネックになる。",
+          "q2_intro": "オリジンから直接配り、遅延と負荷をそのまま受けていた。",
+          "q2_table": {
+            "col_before": "オリジン直",
+            "col_after": "Cloud CDN",
+            "rows": [
+              [
+                "遅延",
+                "距離依存",
+                "近いキャッシュから"
+              ],
+              [
+                "負荷",
+                "オリジン集中",
+                "キャッシュで緩和"
+              ],
+              [
+                "設定",
+                "自前CDN",
+                "GCPのLB等と統合"
+              ],
+              [
+                "対比",
+                "——",
+                "CloudFrontに相当"
+              ]
+            ]
+          },
+          "q3_cells": [
+            {
+              "icon": "ic-network",
+              "cap": "配信を速くできる"
+            },
+            {
+              "icon": "ic-rocket",
+              "cap": "オリジン負荷を減らせる"
+            },
+            {
+              "icon": "ic-check",
+              "cap": "静的・動的の前段に置ける"
+            }
+          ],
+          "memo": "Google Cloud CDN。負荷分散とセットで語られることが多い。",
+          "sidebar_groups": [
+            {
+              "label": "関連キーワード",
+              "items": [
+                {
+                  "name": "CloudFront",
+                  "desc": "AWS側の対応。",
+                  "page": 813
+                },
+                {
+                  "name": "Cloud Storage",
+                  "desc": "静的オリジンの一例。",
+                  "page": 852
+                },
+                {
+                  "name": "Cloud Run",
+                  "desc": "動的オリジンの一例。",
+                  "page": 850
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "icon": "ic-package",
+          "compact": true,
+          "id": "artifact-registry",
+          "page": 856,
+          "term": "Artifact Registry",
+          "reading": "アーティファクトレジストリ",
+          "category": "GCP",
+          "oneline": "コンテナ画像や言語パッケージなどを置く、GCPの成果物レジストリ。",
+          "q1_text": "ビルド成果物の置き場がサービスごとに散らかると、権限も経路も増える。",
+          "q2_intro": "Container Registryや、言語ごとの別リポジトリを併用していた。",
+          "q2_table": {
+            "col_before": "置き場が分散",
+            "col_after": "Artifact Registry",
+            "rows": [
+              [
+                "種類",
+                "別サービス",
+                "まとめて管理しやすい"
+              ],
+              [
+                "権限",
+                "バラバラ",
+                "IAMで揃えやすい"
+              ],
+              [
+                "CI",
+                "個別設定",
+                "デプロイ経路を一本化しやすい"
+              ],
+              [
+                "対比",
+                "——",
+                "ECR＋αに相当するイメージ"
+              ]
+            ]
+          },
+          "q3_cells": [
+            {
+              "icon": "ic-package",
+              "cap": "ビルド成果物をGCP上に保管できる"
+            },
+            {
+              "icon": "ic-check",
+              "cap": "Cloud RunやGKEへの供給元になる"
+            },
+            {
+              "icon": "ic-gear",
+              "cap": "権限管理をまとめやすい"
+            }
+          ],
+          "memo": "旧Container Registryからの移行先、という文脈でもよく出る。",
+          "sidebar_groups": [
+            {
+              "label": "関連キーワード",
+              "items": [
+                {
+                  "name": "ECR",
+                  "desc": "AWS側のコンテナレジストリ。",
+                  "page": 807
+                },
+                {
+                  "name": "Cloud Run",
+                  "desc": "イメージの実行先。",
+                  "page": 850
+                },
+                {
+                  "name": "GKE",
+                  "desc": "イメージの実行先。",
+                  "page": 851
                 }
               ]
             }
@@ -15827,34 +20006,257 @@ module.exports = {
                 {
                   "name": "HTTP",
                   "desc": "Webブラウザとサーバーがやりとりするためのルール。",
-                  "page": 25
+                  "page": 47
                 },
                 {
                   "name": "Proxy",
                   "desc": "通信の間に入って中継するサーバー。",
-                  "page": 43
+                  "page": 65
                 },
                 {
                   "name": "ALB",
                   "desc": "WAFを付けて使うことが多いAWSのロードバランサー。",
                   "page": 801
-                }
-              ]
-            },
-            {
-              "label": "一緒に覚えたい言葉",
-              "items": [
+                },
                 {
                   "name": "SQL Injection",
-                  "desc": "入力欄にSQLを紛れ込ませてDBを不正に操作する攻撃。"
+                  "desc": "入力欄にSQLを紛れ込ませてDBを不正に操作する攻撃。",
+                  "page": 902
                 },
                 {
                   "name": "XSS",
-                  "desc": "ページに悪意のあるスクリプトを埋め込む攻撃。"
+                  "desc": "ページに悪意のあるスクリプトを埋め込む攻撃。",
+                  "page": 903
                 },
                 {
                   "name": "ファイアウォール",
-                  "desc": "IPやポート単位で通信を許可・遮断する仕組み。"
+                  "desc": "IPやポート単位で通信を許可・遮断する仕組み。",
+                  "page": 904
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "category": "セキュリティ",
+          "icon": "ic-database",
+          "compact": true,
+          "id": "sql-injection",
+          "page": 902,
+          "term": "SQL Injection",
+          "reading": "エスキューエルインジェクション",
+          "oneline": "入力欄にSQL文を紛れ込ませ、データベースを不正に操作する攻撃。",
+          "q1_text": "ユーザ入力を文字列連結でSQLにすると、入力が「データ」ではなく「命令」になる。",
+          "q2_intro": "入力チェックを目視や部分的なエスケープに頼り、抜け道が残っていた。",
+          "q2_table": {
+            "col_before": "文字列連結SQL",
+            "col_after": "対策後",
+            "rows": [
+              [
+                "入力の扱い",
+                "命令になりうる",
+                "パラメータとして分離"
+              ],
+              [
+                "防御",
+                "場当たり",
+                "プレースホルダが基本"
+              ],
+              [
+                "被害",
+                "データ漏洩・破壊",
+                "実行を防げる"
+              ],
+              [
+                "検知",
+                "遅い",
+                "WAF等が補助になる"
+              ]
+            ]
+          },
+          "q3_cells": [
+            {
+              "icon": "ic-database",
+              "cap": "攻撃手法として名前を知れる"
+            },
+            {
+              "icon": "ic-check",
+              "cap": "プレースホルダ等の防御が分かる"
+            },
+            {
+              "icon": "ic-gear",
+              "cap": "WAFなど多層防御の対象になる"
+            }
+          ],
+          "memo": "略してSQLi。ORMを使っていても、生SQLを書く場所は要注意。",
+          "sidebar_groups": [
+            {
+              "label": "関連キーワード",
+              "items": [
+                {
+                  "name": "WAF",
+                  "desc": "攻撃通信を検知・遮断する層。",
+                  "page": 901
+                },
+                {
+                  "name": "SQL",
+                  "desc": "注入の対象になる言語。",
+                  "page": 112
+                },
+                {
+                  "name": "XSS",
+                  "desc": "別系統の代表的なWeb攻撃。",
+                  "page": 903
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "category": "セキュリティ",
+          "icon": "ic-code",
+          "compact": true,
+          "id": "xss",
+          "page": 903,
+          "term": "XSS",
+          "reading": "クロスサイトスクリプティング",
+          "oneline": "サイトに悪意のあるスクリプトを埋め込み、他人のブラウザ上で実行させる攻撃。",
+          "q1_text": "ユーザが投稿した内容を、そのままHTMLとして出すと、脚本まで実行されうる。",
+          "q2_intro": "表示時のエスケープを忘れ、入力チェックだけで安心していた。",
+          "q2_table": {
+            "col_before": "生HTML出力",
+            "col_after": "XSS対策",
+            "rows": [
+              [
+                "出力",
+                "そのまま",
+                "エスケープ／サニタイズ"
+              ],
+              [
+                "被害",
+                "セッション奪取など",
+                "実行を防げる"
+              ],
+              [
+                "種類",
+                "——",
+                "格納型・反射型など"
+              ],
+              [
+                "補助",
+                "——",
+                "CSPやWAF"
+              ]
+            ]
+          },
+          "q3_cells": [
+            {
+              "icon": "ic-code",
+              "cap": "代表的なWeb攻撃として把握できる"
+            },
+            {
+              "icon": "ic-check",
+              "cap": "出力エスケープの重要性が分かる"
+            },
+            {
+              "icon": "ic-gear",
+              "cap": "CSPやWAFの話につながる"
+            }
+          ],
+          "memo": "Cross-Site Scripting。CSSと略すと別物なのでXSS。",
+          "sidebar_groups": [
+            {
+              "label": "関連キーワード",
+              "items": [
+                {
+                  "name": "WAF",
+                  "desc": "XSS攻撃の検知・遮断を助ける。",
+                  "page": 901
+                },
+                {
+                  "name": "SQL Injection",
+                  "desc": "並んで語られる代表攻撃。",
+                  "page": 902
+                },
+                {
+                  "name": "Cookie",
+                  "desc": "XSSの被害対象になりやすい。",
+                  "page": 53
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "category": "セキュリティ",
+          "icon": "ic-server",
+          "compact": true,
+          "id": "firewall",
+          "page": 904,
+          "term": "ファイアウォール",
+          "reading": "ファイアウォール",
+          "oneline": "IPやポートなどの条件で、通信を許可・遮断する防御の仕組み。",
+          "q1_text": "全部の通信を通すと、不要な入口まで世界に開いてしまう。",
+          "q2_intro": "サーバーに直接露出させ、アプリケーション側の努力だけに頼っていた。",
+          "q2_table": {
+            "col_before": "全部開ける",
+            "col_after": "ファイアウォール",
+            "rows": [
+              [
+                "入口",
+                "無制限",
+                "必要な通信だけ許可"
+              ],
+              [
+                "層",
+                "アプリ頼り",
+                "ネットワーク層でも防御"
+              ],
+              [
+                "運用",
+                "場当たり",
+                "ルールとして管理"
+              ],
+              [
+                "WAFとの差",
+                "混同",
+                "L7を見るのがWAF寄り"
+              ]
+            ]
+          },
+          "q3_cells": [
+            {
+              "icon": "ic-server",
+              "cap": "不要な通信を遮断できる"
+            },
+            {
+              "icon": "ic-check",
+              "cap": "許可リストで入口を最小化できる"
+            },
+            {
+              "icon": "ic-network",
+              "cap": "WAFなど上位防御と役割分担できる"
+            }
+          ],
+          "memo": "防火壁。古典的なネットワーク防御。\nWAFはWebアプリ向けの、より上位の防火壁イメージ。",
+          "sidebar_groups": [
+            {
+              "label": "関連キーワード",
+              "items": [
+                {
+                  "name": "WAF",
+                  "desc": "Web向けの応用防火壁。",
+                  "page": 901
+                },
+                {
+                  "name": "Port",
+                  "desc": "許可・遮断の単位になりやすい。",
+                  "page": 52
+                },
+                {
+                  "name": "VPN",
+                  "desc": "閉じた通信路を作る別手段。",
+                  "page": 62
                 }
               ]
             }

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>エンジニア用語辞典 — Origin</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto compact">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 1</b>Git・GitHub</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">19</div></div>
+      <div class="titles">
+        <h1><ruby>Origin<rt>オリジン</rt></ruby></h1>
+      </div>
+    </div>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>git cloneしたときに、自動で付くリモートリポジトリの標準的な名前。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>リモートのURLを毎回フルで指定するのはつらい。短い名前で指したい。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>リモートの場所をメモや環境変数に直書きしていた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>URL直書き</th><th class="h-docker">Origin</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">指定</td><td>長いURL</td><td class="h-docker">origin という短い名前</td></tr>
+            <tr><td class="rowhead">clone後</td><td>自分で登録</td><td class="h-docker">だいたい自動でoriginになる</td></tr>
+            <tr><td class="rowhead">push先</td><td>都度確認</td><td class="h-docker">originにpushが定番</td></tr>
+            <tr><td class="rowhead">複数リモート</td><td>混乱しやすい</td><td class="h-docker">origin以外も名前で増やせる</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>Origin で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-network"/></svg><div class="cap">リモートを短い名前で扱える</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">push/pullの定番相手になる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-users"/></svg><div class="cap">upstreamなど別名と使い分けできる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>originは「特別なサーバー」ではなく、ただのデフォルト名。<br>
+         forkしたら upstream（本家）を足す、がよくある型。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="clone.html">Clone</a></div>
+          <p class="kw-desc">originが作られる入口。</p>
+          <a class="kw-page" href="clone.html">P.2</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="push.html">Push</a></div>
+          <p class="kw-desc">originへ送る操作。</p>
+          <a class="kw-page" href="push.html">P.6</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="upstream.html">Upstream</a></div>
+          <p class="kw-desc">fork元など、もう一つのリモート名。</p>
+          <a class="kw-page" href="upstream.html">P.21</a>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">19</span>
+    <span>エンジニア用語辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

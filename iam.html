@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>エンジニア用語辞典 — IAM</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto compact">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 18</b>AWS</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">815</div></div>
+      <div class="titles">
+        <h1><ruby>IAM<rt>アイエーエム</rt></ruby></h1>
+      </div>
+    </div>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>誰が・何を・どこまでやってよいかを決める、AWSの権限管理の仕組み。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>ルートアカウントや共有鍵だと、事故ったときに止められない。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>共用ユーザーや、アプリに強い権限キーを直書きしていた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>共有アカウント</th><th class="h-docker">IAM</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">権限</td><td>全部できる</td><td class="h-docker">最小権限に分けられる</td></tr>
+            <tr><td class="rowhead">人</td><td>区別しにくい</td><td class="h-docker">ユーザー／ロールで分ける</td></tr>
+            <tr><td class="rowhead">アプリ</td><td>鍵の使い回し</td><td class="h-docker">ロールで一時権限</td></tr>
+            <tr><td class="rowhead">監査</td><td>弱い</td><td class="h-docker">誰が何をしたか追いやすい</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>IAM で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-users"/></svg><div class="cap">人やサービスごとに権限を分けられる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">やりすぎ権限を減らせる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">他サービスの操作入口になる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>Identity and Access Management。<br>
+         「IAMを通す」はAWSの基本動作。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="ec2.html">EC2</a></div>
+          <p class="kw-desc">インスタンスにロールを付ける。</p>
+          <a class="kw-page" href="ec2.html">P.805</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="s3.html">S3</a></div>
+          <p class="kw-desc">バケットポリシーと合わせて使う。</p>
+          <a class="kw-page" href="s3.html">P.810</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="lambda.html">Lambda</a></div>
+          <p class="kw-desc">実行ロールが必須級。</p>
+          <a class="kw-page" href="lambda.html">P.809</a>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">815</span>
+    <span>エンジニア用語辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

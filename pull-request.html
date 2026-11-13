@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>エンジニア用語辞典 — Pull Request</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso compact">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 1</b>Git・GitHub</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">20</div></div>
+      <div class="titles">
+        <h1 style="font-size:28pt"><ruby>Pull Request<rt>プルリクエスト</rt></ruby></h1>
+      </div>
+    </div>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>自分の変更を取り込んでほしい、とレビュー付きで提案する仕組み（PR）。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>mainに直接pushすると、レビューも議論も残らず、壊したときに取り返しがつきにくい。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>完成したと思った時点で本流にマージし、問題は後から気付いていた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>直接マージ</th><th class="h-docker">Pull Request</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">レビュー</td><td>口頭や事後</td><td class="h-docker">差分を見てから取り込める</td></tr>
+            <tr><td class="rowhead">議論</td><td>チャットに流れる</td><td class="h-docker">PR上に残る</td></tr>
+            <tr><td class="rowhead">CI</td><td>手動</td><td class="h-docker">PRをきっかけに自動実行しやすい</td></tr>
+            <tr><td class="rowhead">権限</td><td>誰でも本流を触る</td><td class="h-docker">提案と承認を分けられる</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>Pull Request で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-users"/></svg><div class="cap">変更を提案してレビューできる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">議論と履歴が一つの場所に残る</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">CIやデプロイの起点にしやすい</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>GitLabではMerge Requestと呼ぶことも。中身の発想はほぼ同じ。<br>
+         「PR出す」は提案の提出、の意味で使われる。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="fork.html">Fork</a></div>
+          <p class="kw-desc">本家と別に作業するときに使う。</p>
+          <a class="kw-page" href="fork.html">P.3</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="branch.html">Branch</a></div>
+          <p class="kw-desc">PRの土台になる作業枝。</p>
+          <a class="kw-page" href="branch.html">P.4</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="merge.html">Merge</a></div>
+          <p class="kw-desc">PRが通ったあとの取り込み。</p>
+          <a class="kw-page" href="merge.html">P.8</a>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">20</span>
+    <span>エンジニア用語辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

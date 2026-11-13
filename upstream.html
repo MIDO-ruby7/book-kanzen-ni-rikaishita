@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>エンジニア用語辞典 — Upstream</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto compact">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 1</b>Git・GitHub</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">21</div></div>
+      <div class="titles">
+        <h1 style="font-size:35pt"><ruby>Upstream<rt>アップストリーム</rt></ruby></h1>
+      </div>
+    </div>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>fork元の本家リポジトリなど、「大本」のリモートを指す呼び方。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>forkして自分のoriginだけ見ていると、本家の更新を取り込めなくなる。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>本家のZIPを取り直したり、originを無理に書き換えたりしていた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>originだけ</th><th class="h-docker">Upstream</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">本家の追跡</td><td>しにくい</td><td class="h-docker">upstreamとして追加</td></tr>
+            <tr><td class="rowhead">更新の取り込み</td><td>手作業</td><td class="h-docker">fetchしてmerge/rebase</td></tr>
+            <tr><td class="rowhead">名前</td><td>URL直書き</td><td class="h-docker">役割が名前で分かる</td></tr>
+            <tr><td class="rowhead">PR先</td><td>迷いやすい</td><td class="h-docker">本家＝upstreamと整理できる</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>Upstream で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-network"/></svg><div class="cap">本家リモートを名前で区別できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-undo"/></svg><div class="cap">本家の更新を自分のforkへ取り込める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-users"/></svg><div class="cap">OSS貢献の定番フローが回る</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>upstreamは「上流」。自分のforkが下流、本家が上流、という感覚。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="fork.html">Fork</a></div>
+          <p class="kw-desc">upstreamを意識する典型シーン。</p>
+          <a class="kw-page" href="fork.html">P.3</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="origin.html">Origin</a></div>
+          <p class="kw-desc">自分のリモート側の名前。</p>
+          <a class="kw-page" href="origin.html">P.19</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="pull-request.html">Pull Request</a></div>
+          <p class="kw-desc">upstreamへ返す提案。</p>
+          <a class="kw-page" href="pull-request.html">P.20</a>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">21</span>
+    <span>エンジニア用語辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

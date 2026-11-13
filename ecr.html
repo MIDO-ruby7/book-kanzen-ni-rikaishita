@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>エンジニア用語辞典 — ECR</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto compact">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 18</b>AWS</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">807</div></div>
+      <div class="titles">
+        <h1><ruby>ECR<rt>イーシーアール</rt></ruby></h1>
+      </div>
+    </div>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>Dockerイメージを置いておく、AWSのコンテナレジストリ。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>ビルドしたイメージを、デプロイ先から安全に取り出せる置き場が必要になる。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>Docker Hubや自前レジストリに上げ、認証や権限を場当たりで管理していた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>外部／自前レジストリ</th><th class="h-docker">ECR</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">置き場</td><td>バラバラ</td><td class="h-docker">AWS内にまとめられる</td></tr>
+            <tr><td class="rowhead">権限</td><td>別管理</td><td class="h-docker">IAMで揃えやすい</td></tr>
+            <tr><td class="rowhead">連携</td><td>手作業</td><td class="h-docker">ECS等から引きやすい</td></tr>
+            <tr><td class="rowhead">スキャン</td><td>別途</td><td class="h-docker">脆弱性スキャン機能もある</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>ECR で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-package"/></svg><div class="cap">イメージをAWS上に保管できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">デプロイの取得元を固定できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">IAMで誰がpush/pullできるか決められる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>Elastic Container Registry。<br>
+         「イメージのGitHub Packages的な置き場」と捉えると近い。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="ecs.html">ECS</a></div>
+          <p class="kw-desc">ECRのイメージを動かする先。</p>
+          <a class="kw-page" href="ecs.html">P.806</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="index.html">Docker</a></div>
+          <p class="kw-desc">イメージを作る側の道具。</p>
+          <a class="kw-page" href="index.html">P.301</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="iam.html">IAM</a></div>
+          <p class="kw-desc">レジストリ操作の権限。</p>
+          <a class="kw-page" href="iam.html">P.815</a>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">807</span>
+    <span>エンジニア用語辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

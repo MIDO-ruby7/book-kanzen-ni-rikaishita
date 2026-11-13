@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>エンジニア用語辞典 — DynamoDB</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso compact">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 18</b>AWS</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">812</div></div>
+      <div class="titles">
+        <h1 style="font-size:31pt"><ruby>DynamoDB<rt>ダイナモディービー</rt></ruby></h1>
+      </div>
+    </div>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>キーバリュー／ドキュメント寄りで、スケールしやすいAWSのマネージドNoSQL。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>アクセスが急増するデータに、RDBのスケール設計が追いつかないことがある。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>全部RDBに載せ、キャッシュや分割でしのいでいた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>RDB一本</th><th class="h-docker">DynamoDB</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">スケール</td><td>縦・手分割</td><td class="h-docker">高いスループット向けに伸びやすい</td></tr>
+            <tr><td class="rowhead">スキーマ</td><td>固定寄り</td><td class="h-docker">柔軟な項目</td></tr>
+            <tr><td class="rowhead">運用</td><td>サーバー管理</td><td class="h-docker">フルマネージド</td></tr>
+            <tr><td class="rowhead">クエリ</td><td>SQLが強い</td><td class="h-docker">アクセスパターン設計が重要</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>DynamoDB で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-database"/></svg><div class="cap">高負荷向けのNoSQLを使える</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">キャパシティを伸ばしやすい</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">サーバレスアプリと相性が良い</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>「なんでもDynamo」は危険。結合や複雑検索はRDBの方が楽なことが多い。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="rds.html">RDS</a></div>
+          <p class="kw-desc">マネージドRDBとの対比。</p>
+          <a class="kw-page" href="rds.html">P.811</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="nosql.html">NoSQL</a></div>
+          <p class="kw-desc">上位の考え方。</p>
+          <a class="kw-page" href="nosql.html">P.106</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="lambda.html">Lambda</a></div>
+          <p class="kw-desc">よく一緒に組む計算側。</p>
+          <a class="kw-page" href="lambda.html">P.809</a>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">812</span>
+    <span>エンジニア用語辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>エンジニア用語辞典 — リファクタリング</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto compact">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 10</b>テスト</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">524</div></div>
+      <div class="titles">
+        <h1 style="font-size:25pt"><ruby>リファクタリング<rt>リファクタリング</rt></ruby></h1>
+      </div>
+    </div>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>外部から見た振る舞いを変えずに、内部の構造を読みやすく・変えやすく整えること。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>動いているコードでも、読みにくいままだと次の変更コストが跳ね上がる。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>動くなら触らない、か、機能追加のついでに大きく壊していた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>放置 or 大胆改修</th><th class="h-docker">リファクタリング</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">振る舞い</td><td>変えがち</td><td class="h-docker">変えずに形だけ直す</td></tr>
+            <tr><td class="rowhead">安全網</td><td>薄い</td><td class="h-docker">テストがあるほどやりやすい</td></tr>
+            <tr><td class="rowhead">目的</td><td>新機能</td><td class="h-docker">変更容易性</td></tr>
+            <tr><td class="rowhead">粒度</td><td>一気</td><td class="h-docker">小さく繰り返せる</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>リファクタリング で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">コードを壊さず読みやすくできる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">次の機能追加が楽になる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-undo"/></svg><div class="cap">小さな手順でリスクを抑えられる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>TDDの「赤→緑→リファクタ」の最後の段。<br>
+         テストがないリファクタは、ただの書き換えになりやすい。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="tdd.html">TDD</a></div>
+          <p class="kw-desc">リファクタを前提にした開発サイクル。</p>
+          <a class="kw-page" href="tdd.html">P.506</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="unit-test.html">Unit Test</a></div>
+          <p class="kw-desc">安全に直すための網。</p>
+          <a class="kw-page" href="unit-test.html">P.500</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="debug.html">デバッグ</a></div>
+          <p class="kw-desc">直す前に原因を掴む工程。</p>
+          <a class="kw-page" href="debug.html">P.509</a>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">524</span>
+    <span>エンジニア用語辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

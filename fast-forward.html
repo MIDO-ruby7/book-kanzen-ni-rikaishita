@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>エンジニア用語辞典 — Fast-forward</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso compact">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 1</b>Git・GitHub</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">28</div></div>
+      <div class="titles">
+        <h1 style="font-size:26pt"><ruby>Fast-forward<rt>ファストフォワード</rt></ruby></h1>
+      </div>
+    </div>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>分岐がないとき、本流のポインタを前に進めるだけで済むマージ。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>枝分かれしていないのに、毎回マージコミットが増えると履歴が読みにくい。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>常にマージコミットを作るか、手動でパッチを当てていた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>常にマージコミット</th><th class="h-docker">Fast-forward</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">分岐なし</td><td>余分なコミット</td><td class="h-docker">ポインタ移動だけ</td></tr>
+            <tr><td class="rowhead">履歴</td><td>ギザギザ</td><td class="h-docker">一直線に見える</td></tr>
+            <tr><td class="rowhead">条件</td><td>——</td><td class="h-docker">相手が自分の先頭の先にある</td></tr>
+            <tr><td class="rowhead">できない時</td><td>——</td><td class="h-docker">普通のmergeやrebaseへ</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>Fast-forward で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">余計なマージコミットを減らせる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-file"/></svg><div class="cap">一直線の履歴を保てる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">シンプルな取り込みが速くなる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>「早送り」。動画の再生位置を進めるイメージに近い。<br>
+         --no-ff で敢えてマージコミットを残す運用もある。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="merge.html">Merge</a></div>
+          <p class="kw-desc">fast-forwardもmergeの一種。</p>
+          <a class="kw-page" href="merge.html">P.8</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="branch.html">Branch</a></div>
+          <p class="kw-desc">分岐の有無で可否が変わる。</p>
+          <a class="kw-page" href="branch.html">P.4</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="rebase.html">Rebase</a></div>
+          <p class="kw-desc">一直線に保つ別手法。</p>
+          <a class="kw-page" href="rebase.html">P.9</a>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">28</span>
+    <span>エンジニア用語辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

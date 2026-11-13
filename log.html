@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>エンジニア用語辞典 — ログ</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso compact">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 10</b>テスト</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">525</div></div>
+      <div class="titles">
+        <h1><ruby>ログ<rt>ログ</rt></ruby></h1>
+      </div>
+    </div>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>プログラムが残す動作の記録。障害調査やデバッグの手がかりになる。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>本番ではデバッガを付けられない。再現しない不具合の足跡が必要になる。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>画面の見た目とユーザ報告だけを頼りに、勘で直していた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>手がかりなし</th><th class="h-docker">ログ</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">調査</td><td>推測</td><td class="h-docker">時系列の記録を追える</td></tr>
+            <tr><td class="rowhead">本番</td><td>再現待ち</td><td class="h-docker">残った痕跡から探れる</td></tr>
+            <tr><td class="rowhead">レベル</td><td>全部print</td><td class="h-docker">info/warn/errorで分けられる</td></tr>
+            <tr><td class="rowhead">過多</td><td>——</td><td class="h-docker">出しすぎると逆に読めない</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>ログ で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-list"/></svg><div class="cap">障害の手がかりを残せる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-clock"/></svg><div class="cap">いつ何が起きたかを追える</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">デバッグと運用の共通言語になる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>「ログを吐く」は現場語。出しすぎ・秘匿情報の混入には注意。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="debug.html">デバッグ</a></div>
+          <p class="kw-desc">ログを読んで原因に近づく。</p>
+          <a class="kw-page" href="debug.html">P.509</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="e2e-test.html">E2E Test</a></div>
+          <p class="kw-desc">失敗時のログが頼りになる。</p>
+          <a class="kw-page" href="e2e-test.html">P.502</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="ci-cd.html">CI/CD</a></div>
+          <p class="kw-desc">パイプラインのログも調査対象。</p>
+          <a class="kw-page" href="ci-cd.html">P.705</a>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">525</span>
+    <span>エンジニア用語辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>エンジニア用語辞典 — Checkout</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso compact">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 1</b>Git・GitHub</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">24</div></div>
+      <div class="titles">
+        <h1 style="font-size:36pt"><ruby>Checkout<rt>チェックアウト</rt></ruby></h1>
+      </div>
+    </div>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>作業対象のブランチや、特定のファイル状態へ切り替える操作。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>複数の作業を並行すると、「今どの枝で作業しているか」がすぐ分からなくなる。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>フォルダを分けて別作業し、どれが正か自分で管理していた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>フォルダ分け</th><th class="h-docker">Checkout</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">切り替え</td><td>別フォルダを開く</td><td class="h-docker">同じ場所で枝を切り替える</td></tr>
+            <tr><td class="rowhead">履歴</td><td>別々</td><td class="h-docker">同じリポジトリ内でつながる</td></tr>
+            <tr><td class="rowhead">ファイル復元</td><td>バックアップから</td><td class="h-docker">過去の状態を取り出せる</td></tr>
+            <tr><td class="rowhead">ミス</td><td>コピー漏れ</td><td class="h-docker">今いる枝を確認する習慣が付く</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>Checkout で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-undo"/></svg><div class="cap">作業枝を素早く切り替えられる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-file"/></svg><div class="cap">特定ファイルの状態を戻せる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-laptop"/></svg><div class="cap">並行作業の土台になる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>新しいGitでは branch切り替えに switch、復元に restore と役割が分かれてきている。<br>
+         現場ではまだ checkout と言うことも多い。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="branch.html">Branch</a></div>
+          <p class="kw-desc">checkoutで切り替える対象。</p>
+          <a class="kw-page" href="branch.html">P.4</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="working-tree.html">Working Tree</a></div>
+          <p class="kw-desc">切り替え後に並ぶファイル群。</p>
+          <a class="kw-page" href="working-tree.html">P.18</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="head.html">HEAD</a></div>
+          <p class="kw-desc">今いる位置を示すポインタ。</p>
+          <a class="kw-page" href="head.html">P.29</a>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">24</span>
+    <span>エンジニア用語辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

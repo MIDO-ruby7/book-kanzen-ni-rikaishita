@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>エンジニア用語辞典 — Artifact Registry</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso compact">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 19</b>GCP</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">856</div></div>
+      <div class="titles">
+        <h1 style="font-size:20pt"><ruby>Artifact Registry<rt>アーティファクトレジストリ</rt></ruby></h1>
+      </div>
+    </div>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>コンテナ画像や言語パッケージなどを置く、GCPの成果物レジストリ。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>ビルド成果物の置き場がサービスごとに散らかると、権限も経路も増える。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>Container Registryや、言語ごとの別リポジトリを併用していた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>置き場が分散</th><th class="h-docker">Artifact Registry</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">種類</td><td>別サービス</td><td class="h-docker">まとめて管理しやすい</td></tr>
+            <tr><td class="rowhead">権限</td><td>バラバラ</td><td class="h-docker">IAMで揃えやすい</td></tr>
+            <tr><td class="rowhead">CI</td><td>個別設定</td><td class="h-docker">デプロイ経路を一本化しやすい</td></tr>
+            <tr><td class="rowhead">対比</td><td>——</td><td class="h-docker">ECR＋αに相当するイメージ</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>Artifact Registry で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-package"/></svg><div class="cap">ビルド成果物をGCP上に保管できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">Cloud RunやGKEへの供給元になる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">権限管理をまとめやすい</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>旧Container Registryからの移行先、という文脈でもよく出る。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="ecr.html">ECR</a></div>
+          <p class="kw-desc">AWS側のコンテナレジストリ。</p>
+          <a class="kw-page" href="ecr.html">P.807</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="cloud-run.html">Cloud Run</a></div>
+          <p class="kw-desc">イメージの実行先。</p>
+          <a class="kw-page" href="cloud-run.html">P.850</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="gke.html">GKE</a></div>
+          <p class="kw-desc">イメージの実行先。</p>
+          <a class="kw-page" href="gke.html">P.851</a>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">856</span>
+    <span>エンジニア用語辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

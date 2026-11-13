@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>エンジニア用語辞典 — Cloud CDN</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto compact">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 19</b>GCP</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">855</div></div>
+      <div class="titles">
+        <h1 style="font-size:32pt"><ruby>Cloud CDN<rt>クラウドシーディーエヌ</rt></ruby></h1>
+      </div>
+    </div>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>コンテンツをエッジから配り、オリジンの負荷と遅延を減らすGCPのCDN。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>遠いユーザーへの配信や、オリジンへの集中アクセスがボトルネックになる。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>オリジンから直接配り、遅延と負荷をそのまま受けていた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>オリジン直</th><th class="h-docker">Cloud CDN</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">遅延</td><td>距離依存</td><td class="h-docker">近いキャッシュから</td></tr>
+            <tr><td class="rowhead">負荷</td><td>オリジン集中</td><td class="h-docker">キャッシュで緩和</td></tr>
+            <tr><td class="rowhead">設定</td><td>自前CDN</td><td class="h-docker">GCPのLB等と統合</td></tr>
+            <tr><td class="rowhead">対比</td><td>——</td><td class="h-docker">CloudFrontに相当</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>Cloud CDN で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-network"/></svg><div class="cap">配信を速くできる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">オリジン負荷を減らせる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">静的・動的の前段に置ける</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>Google Cloud CDN。負荷分散とセットで語られることが多い。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="cloudfront.html">CloudFront</a></div>
+          <p class="kw-desc">AWS側の対応。</p>
+          <a class="kw-page" href="cloudfront.html">P.813</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="cloud-storage.html">Cloud Storage</a></div>
+          <p class="kw-desc">静的オリジンの一例。</p>
+          <a class="kw-page" href="cloud-storage.html">P.852</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="cloud-run.html">Cloud Run</a></div>
+          <p class="kw-desc">動的オリジンの一例。</p>
+          <a class="kw-page" href="cloud-run.html">P.850</a>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">855</span>
+    <span>エンジニア用語辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

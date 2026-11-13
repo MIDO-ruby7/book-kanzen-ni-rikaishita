@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>エンジニア用語辞典 — Working Tree</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso compact">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 1</b>Git・GitHub</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">18</div></div>
+      <div class="titles">
+        <h1 style="font-size:25pt"><ruby>Working Tree<rt>ワーキングツリー</rt></ruby></h1>
+      </div>
+    </div>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>今エディタで触っている、実際のファイルの状態（作業ディレクトリ）のこと。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>「コミットした内容」と「今ディスク上にあるファイル」がズレると、何を保存したのか分からなくなる。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>保存＝確定、の感覚だけで進めていた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>ファイル＝真実</th><th class="h-docker">Working Tree</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">今の状態</td><td>開いているファイル</td><td class="h-docker">作業ツリーとして区別する</td></tr>
+            <tr><td class="rowhead">確定前</td><td>上書き保存のみ</td><td class="h-docker">ステージやコミットと分離</td></tr>
+            <tr><td class="rowhead">戻す</td><td>バックアップ頼み</td><td class="h-docker">checkoutやrestoreで戻せる</td></tr>
+            <tr><td class="rowhead">差分</td><td>目視</td><td class="h-docker">working treeとHEADのdiff</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>Working Tree で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-laptop"/></svg><div class="cap">「今触っている状態」を言葉にできる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-file"/></svg><div class="cap">未コミット変更の居場所が分かる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-undo"/></svg><div class="cap">作業中の変更だけ戻せる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>Working Tree / Staging Area / Repository（コミット履歴）の三段が分かると、Gitが急に読みやすくなる。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="staging-area.html">Staging Area</a></div>
+          <p class="kw-desc">コミット直前の仮置き場。</p>
+          <a class="kw-page" href="staging-area.html">P.22</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="commit.html">Commit</a></div>
+          <p class="kw-desc">確定した履歴の単位。</p>
+          <a class="kw-page" href="commit.html">P.5</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="reset.html">Reset</a></div>
+          <p class="kw-desc">作業ツリーやHEADを動かす操作。</p>
+          <a class="kw-page" href="reset.html">P.13</a>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">18</span>
+    <span>エンジニア用語辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

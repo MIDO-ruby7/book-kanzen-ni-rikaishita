@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>エンジニア用語辞典 — ヘッドレス</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso compact">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 10</b>テスト</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">523</div></div>
+      <div class="titles">
+        <h1><ruby>ヘッドレス<rt>ヘッドレス</rt></ruby></h1>
+      </div>
+    </div>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>画面（GUI）を出さずに、ブラウザやアプリを裏側で動かすモード。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>CIのサーバーにディスプレイがない。なのにブラウザ自動操作が必要になる。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>手元の画面付きPCでだけE2Eを回し、CIでは諦めていた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>画面あり必須</th><th class="h-docker">ヘッドレス</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">CI</td><td>難しい</td><td class="h-docker">画面なしで実行できる</td></tr>
+            <tr><td class="rowhead">リソース</td><td>重い</td><td class="h-docker">比較的軽く回しやすい</td></tr>
+            <tr><td class="rowhead">デバッグ</td><td>目で見える</td><td class="h-docker">スクショやトレースで補う</td></tr>
+            <tr><td class="rowhead">用途</td><td>手元確認</td><td class="h-docker">自動テストの主力</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>ヘッドレス で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-monitor"/></svg><div class="cap">GUIなしでブラウザ操作を自動化できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">CIに載せやすい</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">E2Eの本番運用に近づける</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>headless Chrome などが代表例。<br>
+         落ちたときは headed（画面あり）で再現すると早い。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="puppeteer.html">Puppeteer</a></div>
+          <p class="kw-desc">ヘッドレスChrome操作の代表。</p>
+          <a class="kw-page" href="puppeteer.html">P.521</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="playwright.html">Playwright</a></div>
+          <p class="kw-desc">同様にヘッドレスで回せる。</p>
+          <a class="kw-page" href="playwright.html">P.520</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="e2e-test.html">E2E Test</a></div>
+          <p class="kw-desc">ヘッドレスと相性が良い層。</p>
+          <a class="kw-page" href="e2e-test.html">P.502</a>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">523</span>
+    <span>エンジニア用語辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

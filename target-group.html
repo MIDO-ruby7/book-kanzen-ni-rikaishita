@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>エンジニア用語辞典 — ターゲットグループ</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso compact">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 18</b>AWS</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">804</div></div>
+      <div class="titles">
+        <h1 style="font-size:22pt"><ruby>ターゲットグループ<rt>ターゲットグループ</rt></ruby></h1>
+      </div>
+    </div>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>ロードバランサーが振り分け先として扱う、サーバーやコンテナのまとまり。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>振り分けルールと実体の一覧が混ざると、どの台に飛んでいるか追いにくい。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>LBの設定にIPを直書きし、増減のたびに設定を触っていた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>直書きの振り分け先</th><th class="h-docker">ターゲットグループ</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">管理</td><td>個別</td><td class="h-docker">グループとして扱う</td></tr>
+            <tr><td class="rowhead">増減</td><td>設定を直接変更</td><td class="h-docker">グループのメンバーを増減</td></tr>
+            <tr><td class="rowhead">ヘルス</td><td>バラバラ</td><td class="h-docker">グループ単位で監視</td></tr>
+            <tr><td class="rowhead">再利用</td><td>しにくい</td><td class="h-docker">ルールから参照できる</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>ターゲットグループ で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-server"/></svg><div class="cap">振り分け先をひとまとまりで管理できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">ヘルスチェックとセットで運用できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">LBのルールから参照しやすい</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>AWS ALB用語としてよく出てくる。<br>
+         「どこに飛ばすか」の集合。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="alb.html">ALB</a></div>
+          <p class="kw-desc">ターゲットグループを使うLB。</p>
+          <a class="kw-page" href="alb.html">P.801</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="health-check.html">ヘルスチェック</a></div>
+          <p class="kw-desc">グループ内の生死確認。</p>
+          <a class="kw-page" href="health-check.html">P.803</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="load-balancer.html">Load Balancer</a></div>
+          <p class="kw-desc">上位の総称。</p>
+          <a class="kw-page" href="load-balancer.html">P.802</a>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">804</span>
+    <span>エンジニア用語辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>エンジニア用語辞典 — S3</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso compact">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 18</b>AWS</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">810</div></div>
+      <div class="titles">
+        <h1><ruby>S3<rt>エススリー</rt></ruby></h1>
+      </div>
+    </div>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>ファイルやオブジェクトを、ほぼ無限に置けるAWSのオブジェクトストレージ。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>画像やバックアップをサーバーのディスクに置くと、容量も冗長化もすぐ詰まる。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>アプリサーバーのローカルディスクや、NASにファイルを置いていた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>サーバー内ディスク</th><th class="h-docker">S3</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">容量</td><td>ディスク上限</td><td class="h-docker">実質かなり大きく伸ばせる</td></tr>
+            <tr><td class="rowhead">配信</td><td>アプリ経由</td><td class="h-docker">直接配信やCloudFrontと組める</td></tr>
+            <tr><td class="rowhead">耐久性</td><td>一台依存</td><td class="h-docker">複数拠点に分散される設計</td></tr>
+            <tr><td class="rowhead">用途</td><td>ログ・画像・バックアップ</td><td class="h-docker">静的サイト置き場にも</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>S3 で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-package"/></svg><div class="cap">大容量ファイルを預けられる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-network"/></svg><div class="cap">URL経由で取得・配信しやすい</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">他サービスへのイベント元になる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>Simple Storage Service。バケットにオブジェクトを入れる。<br>
+         「フォルダ」に見えても、本質はキーとオブジェクト。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="cloudfront.html">CloudFront</a></div>
+          <p class="kw-desc">S3の前段CDN。</p>
+          <a class="kw-page" href="cloudfront.html">P.813</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="iam.html">IAM</a></div>
+          <p class="kw-desc">バケット操作の権限。</p>
+          <a class="kw-page" href="iam.html">P.815</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="lambda.html">Lambda</a></div>
+          <p class="kw-desc">オブジェクト作成をトリガーにできる。</p>
+          <a class="kw-page" href="lambda.html">P.809</a>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">810</span>
+    <span>エンジニア用語辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

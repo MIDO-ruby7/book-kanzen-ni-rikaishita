@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>エンジニア用語辞典 — SHA</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso compact">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 1</b>Git・GitHub</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">32</div></div>
+      <div class="titles">
+        <h1><ruby>SHA<rt>エスエイチエー</rt></ruby></h1>
+      </div>
+    </div>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>コミットなどを一意に識別するためのハッシュ値（長い16進数）。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>「さっきのやつ」では特定できない。コミットを正確に指すIDが必要になる。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>日付やメッセージで探して、似たコミットを取り違えることがあった。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>あいまいな指定</th><th class="h-docker">SHA</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">一意性</td><td>低い</td><td class="h-docker">ほぼ衝突しないID</td></tr>
+            <tr><td class="rowhead">指定</td><td>言葉で説明</td><td class="h-docker">ハッシュで正確に指す</td></tr>
+            <tr><td class="rowhead">短縮</td><td>——</td><td class="h-docker">先頭数桁でも実用上足りる</td></tr>
+            <tr><td class="rowhead">用途</td><td>会話</td><td class="h-docker">cherry-pickやrevertの指定</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>SHA で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-cube"/></svg><div class="cap">コミットを正確に指定できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">取り違えを減らせる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">自動化や調査の手がかりになる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>GitのコミットIDはSHA-1ベース（移行の議論はある）。<br>
+         普段は短い先頭だけで足りることが多い。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="commit.html">Commit</a></div>
+          <p class="kw-desc">SHAが付く本体。</p>
+          <a class="kw-page" href="commit.html">P.5</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="cherry-pick.html">Cherry-pick</a></div>
+          <p class="kw-desc">SHAを指定して取り込む。</p>
+          <a class="kw-page" href="cherry-pick.html">P.10</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="revert.html">Revert</a></div>
+          <p class="kw-desc">打ち消す対象もSHAで指せる。</p>
+          <a class="kw-page" href="revert.html">P.12</a>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">32</span>
+    <span>エンジニア用語辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

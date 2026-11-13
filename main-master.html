@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>エンジニア用語辞典 — main / master</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto compact">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 1</b>Git・GitHub</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">25</div></div>
+      <div class="titles">
+        <h1 style="font-size:24pt"><ruby>main / master<rt>メイン／マスター</rt></ruby></h1>
+      </div>
+    </div>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>プロジェクトの本流として扱う、デフォルトブランチの名前。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>「どれが本番相当の最新か」がチームで揃っていないと、古い枝にPRしてしまう。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>本流の名前がチームごとにバラバラで、慣習も文档も口伝だった。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>名前が不定</th><th class="h-docker">main / master</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">共通認識</td><td>都度確認</td><td class="h-docker">デフォルト枝として共有</td></tr>
+            <tr><td class="rowhead">保護</td><td>誰でも直push</td><td class="h-docker">保護ルールをかけやすい</td></tr>
+            <tr><td class="rowhead">用語</td><td>本流・本番枝</td><td class="h-docker">名前で役割が伝わる</td></tr>
+            <tr><td class="rowhead">移行</td><td>——</td><td class="h-docker">masterからmainへの改名も増えた</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>main / master で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-server"/></svg><div class="cap">本流ブランチをチームで揃えられる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">保護やCIの対象にしやすい</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-users"/></svg><div class="cap">PRのマージ先が明確になる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>最近のGitHubは初期名がmain。古い資料や現場ではmasterのまま、もまだ多い。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="branch.html">Branch</a></div>
+          <p class="kw-desc">main/masterもブランチの一種。</p>
+          <a class="kw-page" href="branch.html">P.4</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="merge.html">Merge</a></div>
+          <p class="kw-desc">本流へ取り込む操作。</p>
+          <a class="kw-page" href="merge.html">P.8</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="pull-request.html">Pull Request</a></div>
+          <p class="kw-desc">本流へ入れる提案。</p>
+          <a class="kw-page" href="pull-request.html">P.20</a>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">25</span>
+    <span>エンジニア用語辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

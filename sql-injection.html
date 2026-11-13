@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>エンジニア用語辞典 — SQL Injection</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso compact">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 23</b>セキュリティ</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">902</div></div>
+      <div class="titles">
+        <h1 style="font-size:26pt"><ruby>SQL Injection<rt>エスキューエルインジェクション</rt></ruby></h1>
+      </div>
+    </div>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>入力欄にSQL文を紛れ込ませ、データベースを不正に操作する攻撃。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>ユーザ入力を文字列連結でSQLにすると、入力が「データ」ではなく「命令」になる。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>入力チェックを目視や部分的なエスケープに頼り、抜け道が残っていた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>文字列連結SQL</th><th class="h-docker">対策後</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">入力の扱い</td><td>命令になりうる</td><td class="h-docker">パラメータとして分離</td></tr>
+            <tr><td class="rowhead">防御</td><td>場当たり</td><td class="h-docker">プレースホルダが基本</td></tr>
+            <tr><td class="rowhead">被害</td><td>データ漏洩・破壊</td><td class="h-docker">実行を防げる</td></tr>
+            <tr><td class="rowhead">検知</td><td>遅い</td><td class="h-docker">WAF等が補助になる</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>SQL Injection で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-database"/></svg><div class="cap">攻撃手法として名前を知れる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">プレースホルダ等の防御が分かる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">WAFなど多層防御の対象になる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>略してSQLi。ORMを使っていても、生SQLを書く場所は要注意。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="waf.html">WAF</a></div>
+          <p class="kw-desc">攻撃通信を検知・遮断する層。</p>
+          <a class="kw-page" href="waf.html">P.901</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="sql.html">SQL</a></div>
+          <p class="kw-desc">注入の対象になる言語。</p>
+          <a class="kw-page" href="sql.html">P.112</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="xss.html">XSS</a></div>
+          <p class="kw-desc">別系統の代表的なWeb攻撃。</p>
+          <a class="kw-page" href="xss.html">P.903</a>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">902</span>
+    <span>エンジニア用語辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

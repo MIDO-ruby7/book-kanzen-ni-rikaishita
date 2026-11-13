@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>エンジニア用語辞典 — API Gateway</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso compact">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 18</b>AWS</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">816</div></div>
+      <div class="titles">
+        <h1 style="font-size:28pt"><ruby>API Gateway<rt>エーピーアイゲートウェイ</rt></ruby></h1>
+      </div>
+    </div>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>HTTP APIの入口を作り、認証やルーティングを前段で引き受けるサービス。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>Lambdaや微服务に、そのままインターネットを晒すのは怖いし面倒。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>アプリサーバーに直接APIを生やし、認証もCORSも全部アプリでやっていた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>アプリ直公開</th><th class="h-docker">API Gateway</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">入口</td><td>各サービスごと</td><td class="h-docker">ゲートウェイに集約</td></tr>
+            <tr><td class="rowhead">認証</td><td>自前実装</td><td class="h-docker">仕組みを載せやすい</td></tr>
+            <tr><td class="rowhead">スロットル</td><td>アプリ任せ</td><td class="h-docker">前段で制限できる</td></tr>
+            <tr><td class="rowhead">接続先</td><td>固定サーバー</td><td class="h-docker">Lambda等へつなげる</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>API Gateway で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-network"/></svg><div class="cap">APIの正面玄関を作れる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">認証や制限を前段に寄せられる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">サーバレス構成の入口になる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>REST API / HTTP API など種類がある。<br>
+         「API」そのものではなく、入口の装置。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="lambda.html">Lambda</a></div>
+          <p class="kw-desc">裏側の処理の定番。</p>
+          <a class="kw-page" href="lambda.html">P.809</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="api.html">API</a></div>
+          <p class="kw-desc">届ける対象の概念。</p>
+          <a class="kw-page" href="api.html">P.83</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="iam.html">IAM</a></div>
+          <p class="kw-desc">呼び出し権限の管理。</p>
+          <a class="kw-page" href="iam.html">P.815</a>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">816</span>
+    <span>エンジニア用語辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>エンジニア用語辞典 — X-Ray</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto compact">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 18</b>AWS</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">819</div></div>
+      <div class="titles">
+        <h1><ruby>X-Ray<rt>エックスレイ</rt></ruby></h1>
+      </div>
+    </div>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>リクエストがどのサービスをどう通ったかを追跡し、遅延や失敗箇所を可視化する仕組み。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>マイクロサービスやLambda連携だと、「どこで遅いか」がログだけでは追いにくい。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>各サービスのログ時刻を目視で突き合わせ、勘でボトルネックを当てていた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>ログ突合</th><th class="h-docker">X-Ray</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">経路</td><td>想像</td><td class="h-docker">トレースで見える</td></tr>
+            <tr><td class="rowhead">遅延</td><td>感覚</td><td class="h-docker">セグメントごとに測れる</td></tr>
+            <tr><td class="rowhead">障害箇所</td><td>探し回る</td><td class="h-docker">エラー箇所が浮かびやすい</td></tr>
+            <tr><td class="rowhead">対象</td><td>自前計装</td><td class="h-docker">AWSサービスと連携しやすい</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>X-Ray で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-network"/></svg><div class="cap">分散した処理の経路を追える</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-clock"/></svg><div class="cap">どこが遅いかを切り分けやすい</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">CloudWatchと併用しやすい</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>分散トレーシングのAWSサービス。<br>
+         OpenTelemetryなど汎用の話ともつながる。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="cloudwatch.html">CloudWatch</a></div>
+          <p class="kw-desc">監視の兄弟分。</p>
+          <a class="kw-page" href="cloudwatch.html">P.818</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="api-gateway.html">API Gateway</a></div>
+          <p class="kw-desc">トレースの入口になりやすい。</p>
+          <a class="kw-page" href="api-gateway.html">P.816</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="lambda.html">Lambda</a></div>
+          <p class="kw-desc">計装対象の定番。</p>
+          <a class="kw-page" href="lambda.html">P.809</a>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">819</span>
+    <span>エンジニア用語辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>エンジニア用語辞典 — ECS</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso compact">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 18</b>AWS</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">806</div></div>
+      <div class="titles">
+        <h1><ruby>ECS<rt>イーシーエス</rt></ruby></h1>
+      </div>
+    </div>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>Dockerコンテナを、AWS上で動かし続けるためのオーケストレーションサービス。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>コンテナは作れた。でも本番で何台も張り、落ちたら立て直す運用がつらい。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>EC2にSSHして docker run し、プロセス監視も自前でやっていた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>EC2上の手運用</th><th class="h-docker">ECS</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">配置</td><td>手動</td><td class="h-docker">タスク定義で宣言</td></tr>
+            <tr><td class="rowhead">再起動</td><td>自分で対応</td><td class="h-docker">サービスが立て直しを助ける</td></tr>
+            <tr><td class="rowhead">スケール</td><td>台数を手で増減</td><td class="h-docker">サービス単位で増やしやすい</td></tr>
+            <tr><td class="rowhead">連携</td><td>自作</td><td class="h-docker">ALBやIAMとつなぎやすい</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>ECS で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-package"/></svg><div class="cap">コンテナを本番運用の単位にできる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">定義どおりに起動・更新しやすい</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-network"/></svg><div class="cap">ロードバランサーと組み合わせやすい</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>Elastic Container Service。<br>
+         Fargateと組むと「サーバーレス寄りコンテナ」、EC2起動タイプだと下地の管理が残る。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="ecr.html">ECR</a></div>
+          <p class="kw-desc">コンテナイメージの置き場。</p>
+          <a class="kw-page" href="ecr.html">P.807</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="fargate.html">Fargate</a></div>
+          <p class="kw-desc">サーバー管理を薄くする実行形態。</p>
+          <a class="kw-page" href="fargate.html">P.808</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="089-kubernetes.html">Kubernetes</a></div>
+          <p class="kw-desc">別系統のコンテナ運用。</p>
+          <a class="kw-page" href="089-kubernetes.html">P.441</a>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">806</span>
+    <span>エンジニア用語辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

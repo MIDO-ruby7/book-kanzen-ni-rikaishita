@@ -24,8 +24,8 @@
 | Ch15 開発プロセス | 15 | PMBOK / ウォーターフォール / WBS / ガントチャート / マイルストーン / ステークホルダー / スコープ / アジャイル / スクラム / スプリント / レトロスペクティブ / ベロシティ / コードレビュー / ペアプロ / イシュー |
 | Ch16 クラウド・インフラ | 19 | Cloud / オンプレミス / IaaS / PaaS / SaaS / VPC / Load Balancer / CDN / Object Storage / Serverless / Reverse Proxy / Nginx / トポロジー / リージョン / AZ / 可用性 / SLA / SLO / SLI（VM/K8sのみ実装済） |
 | Ch17 IaC | 7 | IaC / 宣言的構成 / 冪等性 / Terraform / Ansible / Helm / Pulumi |
-| Ch18 AWS | 18 | EC2 / ECS / ECR / Fargate / Lambda / S3 / RDS / DynamoDB / CloudFront / Route 53 / IAM / ALB / API Gateway / SQS / CloudWatch / X-Ray / ダイレクトコネクト / トランジットゲートウェイ |
-| Ch19 GCP | 7 | Cloud Run / GKE / Cloud Storage / Cloud SQL / Cloud Functions / Cloud CDN / Artifact Registry |
+| Ch18 AWS | 0（実装済） | EC2 / ECS / ECR / Fargate / Lambda / S3 / RDS / DynamoDB / CloudFront / Route 53 / IAM / ALB / API Gateway / SQS / CloudWatch / X-Ray / ダイレクトコネクト / トランジットゲートウェイ ＋ Load Balancer / ヘルスチェック / ターゲットグループ |
+| Ch19 GCP | 0（実装済） | Cloud Run / GKE / Cloud Storage / Cloud SQL / Cloud Functions / Cloud CDN / Artifact Registry |
 | Ch20 Azure | 8 | VM / Container Apps / Functions / Blob Storage / SQL Database / AKS / Front Door / Entra ID |
 | Ch21 Firebase・Supabase | 10 | Firestore / Auth / Storage / Hosting / Functions（Firebase） / Database / Auth / Storage / Edge Functions / Realtime（Supabase） |
 | Ch22 Cloudflare | 8 | CDN / Workers / Pages / R2 / D1 / KV / Zero Trust / Hono |

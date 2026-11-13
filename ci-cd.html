@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>エンジニア用語辞典 — CI/CD</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso compact">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 14</b>デプロイ・CI/CD</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">705</div></div>
+      <div class="titles">
+        <h1><ruby>CI/CD<rt>シーアイ／シーディー</rt></ruby></h1>
+      </div>
+    </div>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>変更のたびに自動で検証し（CI）、続けて自動で届ける（CD）仕組み。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>手動テストと手動デプロイだと、統合の不具合発見が遅れ、リリースが怖い行事になる。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>マージ前に手元で確認し、本番反映も手順書どおりに手で行っていた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>手動検証・手動リリース</th><th class="h-docker">CI/CD</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">検証</td><td>人の記憶頼み</td><td class="h-docker">pushやPRで自動実行</td></tr>
+            <tr><td class="rowhead">フィードバック</td><td>遅い</td><td class="h-docker">早く落ちて早く直せる</td></tr>
+            <tr><td class="rowhead">デプロイ</td><td>本番作業が行事</td><td class="h-docker">パイプライン化できる</td></tr>
+            <tr><td class="rowhead">品質</td><td>ばらつく</td><td class="h-docker">同じ手順を繰り返せる</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>CI/CD で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">変更の検証を自動化できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">壊れたことに早く気付ける</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">リリース手順を再現できる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>CIはContinuous Integration、CDはDeliveryまたはDeployment。<br>
+         現場ではまとめて「シーアイシーディー」と呼ぶことが多い。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="014-devops.html">DevOps</a></div>
+          <p class="kw-desc">CI/CDを支える文化・実践。</p>
+          <a class="kw-page" href="014-devops.html">P.701</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="push.html">Push</a></div>
+          <p class="kw-desc">CIを起動する典型トリガー。</p>
+          <a class="kw-page" href="push.html">P.6</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="smoke-test.html">スモークテスト</a></div>
+          <p class="kw-desc">パイプラインに載せやすい薄いテスト。</p>
+          <a class="kw-page" href="smoke-test.html">P.512</a>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">705</span>
+    <span>エンジニア用語辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

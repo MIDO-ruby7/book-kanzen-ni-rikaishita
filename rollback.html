@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>エンジニア用語辞典 — ロールバック</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso compact">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 1</b>Git・GitHub</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">34</div></div>
+      <div class="titles">
+        <h1 style="font-size:34pt"><ruby>ロールバック<rt>ロールバック</rt></ruby></h1>
+      </div>
+    </div>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>システムやデータを、以前の良い状態へ戻すこと（一般用語）。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>リリース後に致命的な不具合が出たら、前へ進むより一度戻す方が被害が小さいことがある。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>バックアップから丸ごと戻すか、急ぎの修正を重ねて更に状況を複雑にしていた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>前進のみ</th><th class="h-docker">ロールバック</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">方針</td><td>修正を急ぐ</td><td class="h-docker">まず安全な版へ戻す</td></tr>
+            <tr><td class="rowhead">手段</td><td>場当たり</td><td class="h-docker">デプロイやDBの手順として用意</td></tr>
+            <tr><td class="rowhead">Git操作</td><td>混同しやすい</td><td class="h-docker">revert等と使い分ける</td></tr>
+            <tr><td class="rowhead">記録</td><td>曖昧</td><td class="h-docker">戻した事実を残せる</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>ロールバック で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-undo"/></svg><div class="cap">被害を広げずに前の状態へ戻せる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">障害対応の選択肢が増える</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-clock"/></svg><div class="cap">手順化しておくと判断が速い</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>Gitの revert は「打ち消しコミットを足す」ことが多く、履歴を消すresetとは別物。<br>
+         現場の「ロールバック」はデプロイ単位の話も多い。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="revert.html">Revert</a></div>
+          <p class="kw-desc">Git上で変更を打ち消す操作。</p>
+          <a class="kw-page" href="revert.html">P.12</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="reset.html">Reset</a></div>
+          <p class="kw-desc">履歴の位置を付け替える操作。</p>
+          <a class="kw-page" href="reset.html">P.13</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="tag.html">Tag</a></div>
+          <p class="kw-desc">戻す先の目印になる。</p>
+          <a class="kw-page" href="tag.html">P.14</a>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">34</span>
+    <span>エンジニア用語辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

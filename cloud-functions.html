@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>エンジニア用語辞典 — Cloud Functions</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso compact">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 19</b>GCP</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">854</div></div>
+      <div class="titles">
+        <h1 style="font-size:21pt"><ruby>Cloud Functions<rt>クラウドファンクションズ</rt></ruby></h1>
+      </div>
+    </div>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>イベントやHTTPに応じて、関数単位で動かすGCPのサーバレス実行環境。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>小さな処理のために、常時インスタンスを張りたくない。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>小さなWebhookもVMや常駐プロセスで受けていた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>常駐プロセス</th><th class="h-docker">Cloud Functions</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">単位</td><td>サーバー／コンテナ</td><td class="h-docker">関数</td></tr>
+            <tr><td class="rowhead">起動</td><td>常時</td><td class="h-docker">イベントで起動</td></tr>
+            <tr><td class="rowhead">運用</td><td>広い</td><td class="h-docker">コードとトリガーが中心</td></tr>
+            <tr><td class="rowhead">対比</td><td>——</td><td class="h-docker">AWS Lambdaに相当</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>Cloud Functions で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">小さい処理をサーバレスで置ける</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">ストレージやPub/Subとつなぎやすい</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">試しの自動化に向く</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>第1世代／第2世代で体験が違う。長い処理はCloud Run側、もあり。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="lambda.html">Lambda</a></div>
+          <p class="kw-desc">AWS側の対応。</p>
+          <a class="kw-page" href="lambda.html">P.809</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="cloud-run.html">Cloud Run</a></div>
+          <p class="kw-desc">コンテナ単位の近い選択肢。</p>
+          <a class="kw-page" href="cloud-run.html">P.850</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="cloud-storage.html">Cloud Storage</a></div>
+          <p class="kw-desc">トリガー元の一例。</p>
+          <a class="kw-page" href="cloud-storage.html">P.852</a>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">854</span>
+    <span>エンジニア用語辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>エンジニア用語辞典 — リリースノート</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto compact">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 1</b>Git・GitHub</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">35</div></div>
+      <div class="titles">
+        <h1 style="font-size:29pt"><ruby>リリースノート<rt>リリースノート</rt></ruby></h1>
+      </div>
+    </div>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>そのバージョンで何が変わったかを、利用者向けにまとめた文書。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>「何が変わったの？」にコミットログ全文で答えると、相手も自分もつらい。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>チャットで口頭説明するか、コミットメッセージを貼って終わらせていた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>口頭・生ログ</th><th class="h-docker">リリースノート</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">読者</td><td>開発者向け</td><td class="h-docker">利用者にも読める</td></tr>
+            <tr><td class="rowhead">粒度</td><td>細かすぎる</td><td class="h-docker">意味のある変化に要約</td></tr>
+            <tr><td class="rowhead">保管</td><td>流れる</td><td class="h-docker">バージョンごとに残る</td></tr>
+            <tr><td class="rowhead">連携</td><td>弱い</td><td class="h-docker">TagやChangelogとセット</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>リリースノート で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-list"/></svg><div class="cap">変更点を要約して伝えられる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-users"/></svg><div class="cap">利用者・他チームと認識を揃えられる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-tag"/></svg><div class="cap">バージョンの説明が残る</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>完璧な文書より、「壊れる変更／新機能／修正」が分かれるだけでも価値がある。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="tag.html">Tag</a></div>
+          <p class="kw-desc">ノートが紐づくバージョン目印。</p>
+          <a class="kw-page" href="tag.html">P.14</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="semver.html">セマンティックバージョニング</a></div>
+          <p class="kw-desc">番号の意味づけ。</p>
+          <a class="kw-page" href="semver.html">P.552</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="commit.html">Commit</a></div>
+          <p class="kw-desc">ノートの材料になる履歴。</p>
+          <a class="kw-page" href="commit.html">P.5</a>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">35</span>
+    <span>エンジニア用語辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

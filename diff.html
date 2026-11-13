@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>エンジニア用語辞典 — Diff</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto compact">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 1</b>Git・GitHub</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">23</div></div>
+      <div class="titles">
+        <h1><ruby>Diff<rt>ディフ</rt></ruby></h1>
+      </div>
+    </div>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>変更の前後で、どこがどう違うかを行単位などで示す差分表示。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>「直した」と言われても、何が変わったか全文比較しないと分からない。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>二つのファイルを目視で見比べていた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>目視比較</th><th class="h-docker">Diff</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">速度</td><td>遅い</td><td class="h-docker">差分だけに集中できる</td></tr>
+            <tr><td class="rowhead">レビュー</td><td>漏れやすい</td><td class="h-docker">+/-で変化が見える</td></tr>
+            <tr><td class="rowhead">衝突解消</td><td>勘</td><td class="h-docker">両方の差分を見て判断</td></tr>
+            <tr><td class="rowhead">記録</td><td>残らない</td><td class="h-docker">PRやパッチとして残せる</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>Diff で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-file"/></svg><div class="cap">変更点だけを素早く読める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-users"/></svg><div class="cap">レビューの共通言語になる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">コンフリクト解消の材料になる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>git diff は作業ツリー、git diff --staged はステージ済み、と見るところが違う。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="commit.html">Commit</a></div>
+          <p class="kw-desc">差分が固まった単位。</p>
+          <a class="kw-page" href="commit.html">P.5</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="conflict.html">Conflict</a></div>
+          <p class="kw-desc">差分がぶつかり合う状態。</p>
+          <a class="kw-page" href="conflict.html">P.11</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="pull-request.html">Pull Request</a></div>
+          <p class="kw-desc">diffをレビューする場。</p>
+          <a class="kw-page" href="pull-request.html">P.20</a>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">23</span>
+    <span>エンジニア用語辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>
