@@ -8,7 +8,7 @@ module.exports = {
           "id": "repository",
           "page": 1,
           "term": "Repository",
-          "subtitle": "「final_v2」からの卒業を告げた保管庫",
+          "reading": "リポジトリ",
           "category": "バージョン管理・Git",
           "icon": "ic-server",
           "oneline": "プロジェクトの全ての変更履歴をまとめて記録・管理する「保管庫」。",
@@ -46,11 +46,11 @@ module.exports = {
               "cap": "変更履歴を丸ごと記録"
             },
             {
-              "icon": "ic-clock",
+              "icon": "ic-undo",
               "cap": "いつでも過去の状態に戻せる"
             },
             {
-              "icon": "ic-cloud",
+              "icon": "ic-users",
               "cap": "チームで一元管理・共有"
             }
           ],
@@ -62,13 +62,11 @@ module.exports = {
                 {
                   "name": "Clone",
                   "desc": "リポジトリを丸ごと手元にコピーすること。",
-                  "icon": "ic-package",
                   "page": 2
                 },
                 {
                   "name": "Commit",
                   "desc": "変更を記録として保存する単位。",
-                  "icon": "ic-file",
                   "page": 5
                 }
               ]
@@ -78,13 +76,11 @@ module.exports = {
               "items": [
                 {
                   "name": "GitHub",
-                  "desc": "リモートリポジトリを置いておけるWebサービス。",
-                  "icon": "ic-cloud"
+                  "desc": "リモートリポジトリを置いておけるWebサービス。"
                 },
                 {
                   "name": "Working Tree",
-                  "desc": "今実際に作業しているファイル群のこと。",
-                  "icon": "ic-monitor"
+                  "desc": "今実際に作業しているファイル群のこと。"
                 }
               ]
             }
@@ -94,7 +90,7 @@ module.exports = {
           "id": "clone",
           "page": 2,
           "term": "Clone",
-          "subtitle": "まるごと持ち帰れる、プロジェクトのコピー機",
+          "reading": "クローン",
           "category": "バージョン管理・Git",
           "icon": "ic-package",
           "oneline": "リモートリポジトリの中身を、変更履歴つきで手元にまるごとコピーしてくること。",
@@ -128,7 +124,7 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-package",
+              "icon": "ic-file",
               "cap": "履歴ごと丸ごと持ってこれる"
             },
             {
@@ -136,7 +132,7 @@ module.exports = {
               "cap": "どのPCでも同じ環境を再現"
             },
             {
-              "icon": "ic-clock",
+              "icon": "ic-rocket",
               "cap": "続きの作業をすぐ始められる"
             }
           ],
@@ -148,13 +144,11 @@ module.exports = {
                 {
                   "name": "Repository",
                   "desc": "変更履歴をまとめて記録する保管庫。",
-                  "icon": "ic-server",
                   "page": 1
                 },
                 {
                   "name": "Pull",
                   "desc": "クローン後、最新の変更を取り込む操作。",
-                  "icon": "ic-cloud",
                   "page": 7
                 }
               ]
@@ -164,13 +158,11 @@ module.exports = {
               "items": [
                 {
                   "name": "Origin",
-                  "desc": "cloneした際に自動で付くリモートの標準名。",
-                  "icon": "ic-network"
+                  "desc": "cloneした際に自動で付くリモートの標準名。"
                 },
                 {
                   "name": "SSH",
-                  "desc": "安全に通信するための鍵認証の仕組み。",
-                  "icon": "ic-scale"
+                  "desc": "安全に通信するための鍵認証の仕組み。"
                 }
               ]
             }
@@ -180,7 +172,7 @@ module.exports = {
           "id": "fork",
           "page": 3,
           "term": "Fork",
-          "subtitle": "許可なしで、自分だけの改造版を作る技",
+          "reading": "フォーク",
           "category": "GitHub・OSS開発",
           "icon": "ic-network",
           "oneline": "他人のリポジトリを、自分のGitHubアカウント配下に複製して自由に改造できるようにする機能。",
@@ -214,15 +206,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-network",
+              "icon": "ic-users",
               "cap": "OSSへの貢献ができる"
             },
             {
-              "icon": "ic-cube",
+              "icon": "ic-puzzle",
               "cap": "自分の実験場として自由に改造"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-shield",
               "cap": "元に迷惑をかけずに試せる"
             }
           ],
@@ -234,13 +226,11 @@ module.exports = {
                 {
                   "name": "OSS",
                   "desc": "ソースコードが公開されたソフトウェア。",
-                  "icon": "ic-network",
                   "page": 15
                 },
                 {
                   "name": "コントリビュート",
                   "desc": "プロジェクトへ改善を還元すること。",
-                  "icon": "ic-laptop",
                   "page": 16
                 }
               ]
@@ -250,13 +240,11 @@ module.exports = {
               "items": [
                 {
                   "name": "Pull Request",
-                  "desc": "変更を元のリポジトリに取り込んでもらう提案。",
-                  "icon": "ic-rocket"
+                  "desc": "変更を元のリポジトリに取り込んでもらう提案。"
                 },
                 {
                   "name": "Upstream",
-                  "desc": "フォーク元の本家リポジトリを指す言葉。",
-                  "icon": "ic-server"
+                  "desc": "フォーク元の本家リポジトリを指す言葉。"
                 }
               ]
             }
@@ -266,7 +254,7 @@ module.exports = {
           "id": "branch",
           "page": 4,
           "term": "Branch",
-          "subtitle": "本流を汚さずに未来を試す並行世界",
+          "reading": "ブランチ",
           "category": "バージョン管理・Git",
           "icon": "ic-layers",
           "oneline": "本流（main）から分かれて、他に影響を与えずに作業できる「並行世界」を作る仕組み。",
@@ -300,15 +288,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-layers",
+              "icon": "ic-branch",
               "cap": "複数人が同時並行で開発できる"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-shield",
               "cap": "実験して失敗してもmainは無傷"
             },
             {
-              "icon": "ic-network",
+              "icon": "ic-layers",
               "cap": "完成したらmergeで合流できる"
             }
           ],
@@ -320,13 +308,11 @@ module.exports = {
                 {
                   "name": "Commit",
                   "desc": "ブランチ上に積み重ねる変更の記録。",
-                  "icon": "ic-file",
                   "page": 5
                 },
                 {
                   "name": "Merge",
                   "desc": "分かれたブランチをひとつに統合する操作。",
-                  "icon": "ic-scale",
                   "page": 8
                 }
               ]
@@ -336,13 +322,11 @@ module.exports = {
               "items": [
                 {
                   "name": "main / master",
-                  "desc": "プロジェクトの本流となるブランチの名前。",
-                  "icon": "ic-network"
+                  "desc": "プロジェクトの本流となるブランチの名前。"
                 },
                 {
                   "name": "Checkout",
-                  "desc": "作業対象のブランチを切り替える操作。",
-                  "icon": "ic-monitor"
+                  "desc": "作業対象のブランチを切り替える操作。"
                 }
               ]
             }
@@ -352,7 +336,7 @@ module.exports = {
           "id": "commit",
           "page": 5,
           "term": "Commit",
-          "subtitle": "「セーブ」に理由を添える1コマ",
+          "reading": "コミット",
           "category": "バージョン管理・Git",
           "icon": "ic-file",
           "oneline": "変更内容を、メッセージ付きで記録の1コマとして保存すること。",
@@ -390,11 +374,11 @@ module.exports = {
               "cap": "変更履歴が全部残る"
             },
             {
-              "icon": "ic-clock",
+              "icon": "ic-undo",
               "cap": "いつでもその時点に戻れる"
             },
             {
-              "icon": "ic-pen",
+              "icon": "ic-book",
               "cap": "「なぜ直したか」が記録に残る"
             }
           ],
@@ -406,13 +390,11 @@ module.exports = {
                 {
                   "name": "Branch",
                   "desc": "コミットを積み重ねる並行世界。",
-                  "icon": "ic-layers",
                   "page": 4
                 },
                 {
                   "name": "Push",
                   "desc": "コミットをリモートに送る操作。",
-                  "icon": "ic-rocket",
                   "page": 6
                 }
               ]
@@ -422,13 +404,11 @@ module.exports = {
               "items": [
                 {
                   "name": "Staging Area",
-                  "desc": "コミットする変更を仮に置いておく場所。",
-                  "icon": "ic-layers"
+                  "desc": "コミットする変更を仮に置いておく場所。"
                 },
                 {
                   "name": "Diff",
-                  "desc": "変更前後の差分を表示する仕組み。",
-                  "icon": "ic-monitor"
+                  "desc": "変更前後の差分を表示する仕組み。"
                 }
               ]
             }
@@ -438,7 +418,7 @@ module.exports = {
           "id": "push",
           "page": 6,
           "term": "Push",
-          "subtitle": "手元の作業をチームに届けるひと押し",
+          "reading": "プッシュ",
           "category": "バージョン管理・チーム開発",
           "icon": "ic-rocket",
           "oneline": "ローカルで積み上げたコミットを、リモートリポジトリに送って反映させること。",
@@ -472,7 +452,7 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-rocket",
+              "icon": "ic-send",
               "cap": "コマンド一つでチームに共有"
             },
             {
@@ -480,7 +460,7 @@ module.exports = {
               "cap": "変更履歴ごとサーバーに反映"
             },
             {
-              "icon": "ic-wheel",
+              "icon": "ic-rocket",
               "cap": "デプロイの起点にもなる"
             }
           ],
@@ -492,13 +472,11 @@ module.exports = {
                 {
                   "name": "Commit",
                   "desc": "pushする変更の記録の単位。",
-                  "icon": "ic-file",
                   "page": 5
                 },
                 {
                   "name": "Pull",
                   "desc": "逆にリモートの変更を取り込む操作。",
-                  "icon": "ic-cloud",
                   "page": 7
                 }
               ]
@@ -508,13 +486,11 @@ module.exports = {
               "items": [
                 {
                   "name": "CI/CD",
-                  "desc": "pushをきっかけに自動テスト・デプロイする仕組み。",
-                  "icon": "ic-rocket"
+                  "desc": "pushをきっかけに自動テスト・デプロイする仕組み。"
                 },
                 {
                   "name": "Force Push",
-                  "desc": "履歴を強制的に上書きするpush。取り扱い注意。",
-                  "icon": "ic-scale"
+                  "desc": "履歴を強制的に上書きするpush。取り扱い注意。"
                 }
               ]
             }
@@ -524,7 +500,7 @@ module.exports = {
           "id": "pull",
           "page": 7,
           "term": "Pull",
-          "subtitle": "みんなの最新を、自分の手元に引き寄せる",
+          "reading": "プル",
           "category": "バージョン管理・チーム開発",
           "icon": "ic-cloud",
           "oneline": "リモートリポジトリの最新の変更を、自分の手元に取り込むこと。",
@@ -558,7 +534,7 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-cloud",
+              "icon": "ic-sync",
               "cap": "常にチームの最新に追いつける"
             },
             {
@@ -566,7 +542,7 @@ module.exports = {
               "cap": "自分の変更と自動で統合される"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-alert",
               "cap": "衝突があればその場で気づける"
             }
           ],
@@ -578,13 +554,11 @@ module.exports = {
                 {
                   "name": "Push",
                   "desc": "自分の変更をリモートに送る操作。",
-                  "icon": "ic-rocket",
                   "page": 6
                 },
                 {
                   "name": "Merge",
                   "desc": "pull の中で行われている統合処理。",
-                  "icon": "ic-scale",
                   "page": 8
                 }
               ]
@@ -594,13 +568,11 @@ module.exports = {
               "items": [
                 {
                   "name": "Fetch",
-                  "desc": "リモートの変更を取得だけしてmergeしない操作。",
-                  "icon": "ic-cloud"
+                  "desc": "リモートの変更を取得だけしてmergeしない操作。"
                 },
                 {
                   "name": "Pull Request",
-                  "desc": "コードレビューを経て取り込む提案の仕組み。",
-                  "icon": "ic-rocket"
+                  "desc": "コードレビューを経て取り込む提案の仕組み。"
                 }
               ]
             }
@@ -610,7 +582,7 @@ module.exports = {
           "id": "merge",
           "page": 8,
           "term": "Merge",
-          "subtitle": "分かれた道を、また1本につなぐ",
+          "reading": "マージ",
           "category": "バージョン管理・チーム開発",
           "icon": "ic-scale",
           "oneline": "分かれていたブランチの変更を、ひとつに統合すること。",
@@ -644,15 +616,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-layers",
+              "icon": "ic-shield",
               "cap": "ブランチの変更を安全に統合"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-search",
               "cap": "衝突箇所だけ集中して確認できる"
             },
             {
-              "icon": "ic-clock",
+              "icon": "ic-file",
               "cap": "統合の記録が履歴に残る"
             }
           ],
@@ -664,13 +636,11 @@ module.exports = {
                 {
                   "name": "Branch",
                   "desc": "mergeで統合される側の並行世界。",
-                  "icon": "ic-layers",
                   "page": 4
                 },
                 {
                   "name": "Rebase",
                   "desc": "mergeとは別の、もう一つの統合方法。",
-                  "icon": "ic-wheel",
                   "page": 9
                 }
               ]
@@ -681,13 +651,11 @@ module.exports = {
                 {
                   "name": "Conflict",
                   "desc": "自動で統合できず人の判断が必要になる状態。",
-                  "icon": "ic-monitor",
                   "page": 11
                 },
                 {
                   "name": "Fast-forward",
-                  "desc": "分岐がない場合に、そのままつなげる統合方法。",
-                  "icon": "ic-network"
+                  "desc": "分岐がない場合に、そのままつなげる統合方法。"
                 }
               ]
             }
@@ -697,7 +665,7 @@ module.exports = {
           "id": "rebase",
           "page": 9,
           "term": "Rebase",
-          "subtitle": "枝分かれの歴史を、まっすぐに描き直す",
+          "reading": "リベース",
           "category": "バージョン管理・履歴整理",
           "icon": "ic-wheel",
           "oneline": "ブランチの土台を最新のmainに乗せ替えて、履歴を一直線に整えること。",
@@ -731,15 +699,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-wheel",
+              "icon": "ic-eye",
               "cap": "履歴が一直線で見やすくなる"
             },
             {
-              "icon": "ic-file",
+              "icon": "ic-list",
               "cap": "レビューしやすいコミットに整理"
             },
             {
-              "icon": "ic-cloud",
+              "icon": "ic-sync",
               "cap": "最新のmainを取り込んで作業できる"
             }
           ],
@@ -751,13 +719,11 @@ module.exports = {
                 {
                   "name": "Merge",
                   "desc": "rebaseと並ぶ、もう一つの統合方法。",
-                  "icon": "ic-scale",
                   "page": 8
                 },
                 {
                   "name": "Branch",
                   "desc": "土台を乗せ替える対象そのもの。",
-                  "icon": "ic-layers",
                   "page": 4
                 }
               ]
@@ -767,13 +733,11 @@ module.exports = {
               "items": [
                 {
                   "name": "HEAD",
-                  "desc": "今いるコミットの位置を指す目印。",
-                  "icon": "ic-monitor"
+                  "desc": "今いるコミットの位置を指す目印。"
                 },
                 {
                   "name": "Squash",
-                  "desc": "複数のコミットを1つにまとめる操作。",
-                  "icon": "ic-layers"
+                  "desc": "複数のコミットを1つにまとめる操作。"
                 }
               ]
             }
@@ -783,7 +747,7 @@ module.exports = {
           "id": "cherry-pick",
           "page": 10,
           "term": "Cherry-pick",
-          "subtitle": "欲しい1つだけを、狙って摘み取る",
+          "reading": "チェリーピック",
           "category": "バージョン管理・履歴操作",
           "icon": "ic-image",
           "oneline": "他のブランチにある特定の1コミットだけを、狙って自分のブランチに取り込むこと。",
@@ -817,15 +781,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-image",
+              "icon": "ic-target",
               "cap": "必要な修正だけピンポイントで反映"
             },
             {
-              "icon": "ic-rocket",
+              "icon": "ic-bug",
               "cap": "緊急のバグ修正をすぐ展開"
             },
             {
-              "icon": "ic-layers",
+              "icon": "ic-filter",
               "cap": "ブランチ全体を統合せずに済む"
             }
           ],
@@ -837,13 +801,11 @@ module.exports = {
                 {
                   "name": "Commit",
                   "desc": "cherry-pickで摘み取る対象の単位。",
-                  "icon": "ic-file",
                   "page": 5
                 },
                 {
                   "name": "Branch",
                   "desc": "摘み取った先の並行世界。",
-                  "icon": "ic-layers",
                   "page": 4
                 }
               ]
@@ -853,13 +815,11 @@ module.exports = {
               "items": [
                 {
                   "name": "Hotfix",
-                  "desc": "本番の緊急バグを直すための修正のこと。",
-                  "icon": "ic-rocket"
+                  "desc": "本番の緊急バグを直すための修正のこと。"
                 },
                 {
                   "name": "SHA",
-                  "desc": "コミットを一意に識別するハッシュ値。",
-                  "icon": "ic-cube"
+                  "desc": "コミットを一意に識別するハッシュ値。"
                 }
               ]
             }
@@ -869,7 +829,7 @@ module.exports = {
           "id": "conflict",
           "page": 11,
           "term": "Conflict",
-          "subtitle": "同時に手を加えた瞬間に鳴る警報",
+          "reading": "コンフリクト",
           "category": "バージョン管理・チーム開発",
           "icon": "ic-scale",
           "oneline": "同じ箇所を複数人が別々に変更していて、Gitが自動で統合できなくなった状態。",
@@ -903,15 +863,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-scale",
+              "icon": "ic-shield",
               "cap": "変更が知らずに消えなくなる"
             },
             {
-              "icon": "ic-monitor",
+              "icon": "ic-target",
               "cap": "衝突箇所だけピンポイントで確認"
             },
             {
-              "icon": "ic-pen",
+              "icon": "ic-key",
               "cap": "どちらを残すか自分で選べる"
             }
           ],
@@ -923,13 +883,11 @@ module.exports = {
                 {
                   "name": "Merge",
                   "desc": "コンフリクトが表面化しやすい統合操作。",
-                  "icon": "ic-scale",
                   "page": 8
                 },
                 {
                   "name": "Pull",
                   "desc": "コンフリクトが判明するもう一つの場面。",
-                  "icon": "ic-cloud",
                   "page": 7
                 }
               ]
@@ -939,13 +897,11 @@ module.exports = {
               "items": [
                 {
                   "name": "マージツール",
-                  "desc": "衝突箇所を見比べながら解決を助けるツール。",
-                  "icon": "ic-monitor"
+                  "desc": "衝突箇所を見比べながら解決を助けるツール。"
                 },
                 {
                   "name": "Diff",
-                  "desc": "変更前後の違いを比較する表示形式。",
-                  "icon": "ic-file"
+                  "desc": "変更前後の違いを比較する表示形式。"
                 }
               ]
             }
@@ -955,7 +911,7 @@ module.exports = {
           "id": "revert",
           "page": 12,
           "term": "Revert",
-          "subtitle": "過去の1コマだけを、そっと打ち消す",
+          "reading": "リバート",
           "category": "バージョン管理・履歴操作",
           "icon": "ic-clock",
           "oneline": "過去のコミットの変更を打ち消す、新しいコミットを作って元に戻すこと。",
@@ -989,15 +945,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-clock",
+              "icon": "ic-undo",
               "cap": "コマンド一つで間違いを打ち消せる"
             },
             {
-              "icon": "ic-file",
+              "icon": "ic-shield",
               "cap": "履歴を書き換えずに安全に戻せる"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-file",
               "cap": "何を取り消したかが記録に残る"
             }
           ],
@@ -1009,13 +965,11 @@ module.exports = {
                 {
                   "name": "Reset",
                   "desc": "revertとよく比較される巻き戻し操作。",
-                  "icon": "ic-wheel",
                   "page": 13
                 },
                 {
                   "name": "Commit",
                   "desc": "revertが打ち消す対象の単位。",
-                  "icon": "ic-file",
                   "page": 5
                 }
               ]
@@ -1025,8 +979,7 @@ module.exports = {
               "items": [
                 {
                   "name": "ロールバック",
-                  "desc": "システムを以前の状態に戻す一般的な言葉。",
-                  "icon": "ic-clock"
+                  "desc": "システムを以前の状態に戻す一般的な言葉。"
                 }
               ]
             }
@@ -1036,7 +989,7 @@ module.exports = {
           "id": "reset",
           "page": 13,
           "term": "Reset",
-          "subtitle": "今いる場所を、指定の地点まで巻き戻す",
+          "reading": "リセット",
           "category": "バージョン管理・履歴操作",
           "icon": "ic-wheel",
           "oneline": "コミットの位置を過去に戻し、それ以降の変更をなかったことにする（または手元に戻す）こと。",
@@ -1070,15 +1023,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-wheel",
+              "icon": "ic-undo",
               "cap": "直前のコミットをやり直せる"
             },
             {
-              "icon": "ic-layers",
+              "icon": "ic-list",
               "cap": "手元の変更を段階的に戻せる"
             },
             {
-              "icon": "ic-clock",
+              "icon": "ic-search",
               "cap": "昔のファイルを探し回らずに済む"
             }
           ],
@@ -1090,13 +1043,11 @@ module.exports = {
                 {
                   "name": "Revert",
                   "desc": "resetより安全な、共有履歴向けの巻き戻し。",
-                  "icon": "ic-clock",
                   "page": 12
                 },
                 {
                   "name": "Commit",
                   "desc": "resetで戻す先を指定する単位。",
-                  "icon": "ic-file",
                   "page": 5
                 }
               ]
@@ -1106,13 +1057,11 @@ module.exports = {
               "items": [
                 {
                   "name": "HEAD",
-                  "desc": "今いるコミットの位置を指す目印。",
-                  "icon": "ic-monitor"
+                  "desc": "今いるコミットの位置を指す目印。"
                 },
                 {
                   "name": "Working Tree",
-                  "desc": "今実際に作業しているファイル群のこと。",
-                  "icon": "ic-file"
+                  "desc": "今実際に作業しているファイル群のこと。"
                 }
               ]
             }
@@ -1122,7 +1071,7 @@ module.exports = {
           "id": "tag",
           "page": 14,
           "term": "Tag",
-          "subtitle": "この瞬間に、名前という付箋を貼る",
+          "reading": "タグ",
           "category": "バージョン管理・リリース",
           "icon": "ic-cube",
           "oneline": "特定のコミットに「v1.0.0」のような名前を付けて、目印として残すこと。",
@@ -1156,15 +1105,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-cube",
+              "icon": "ic-tag",
               "cap": "リリースしたバージョンが一目瞭然"
             },
             {
-              "icon": "ic-monitor",
+              "icon": "ic-clock",
               "cap": "タグを指定してその時点を取得"
             },
             {
-              "icon": "ic-wheel",
+              "icon": "ic-gear",
               "cap": "リリース作業を自動化する起点に"
             }
           ],
@@ -1176,13 +1125,11 @@ module.exports = {
                 {
                   "name": "Commit",
                   "desc": "タグを貼り付ける対象そのもの。",
-                  "icon": "ic-file",
                   "page": 5
                 },
                 {
                   "name": "Repository",
                   "desc": "タグごと履歴を保管する場所。",
-                  "icon": "ic-server",
                   "page": 1
                 }
               ]
@@ -1192,13 +1139,11 @@ module.exports = {
               "items": [
                 {
                   "name": "セマンティックバージョニング",
-                  "desc": "v1.2.3のようにバージョンを意味づけて付けるルール。",
-                  "icon": "ic-scale"
+                  "desc": "v1.2.3のようにバージョンを意味づけて付けるルール。"
                 },
                 {
                   "name": "リリースノート",
-                  "desc": "そのバージョンで何が変わったかをまとめた文書。",
-                  "icon": "ic-file"
+                  "desc": "そのバージョンで何が変わったかをまとめた文書。"
                 }
               ]
             }
@@ -1208,7 +1153,7 @@ module.exports = {
           "id": "oss",
           "page": 15,
           "term": "OSS",
-          "subtitle": "世界中の手で育てる、公開されたコード",
+          "reading": "オーエスエス",
           "category": "OSS・オープンソース",
           "icon": "ic-network",
           "oneline": "ソースコードを公開し、誰でも自由に閲覧・改造・再配布してよいソフトウェアのこと。",
@@ -1242,15 +1187,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-network",
+              "icon": "ic-globe",
               "cap": "世界中の開発者の知見を活用できる"
             },
             {
-              "icon": "ic-file",
+              "icon": "ic-book",
               "cap": "中身を読んで学習・改造できる"
             },
             {
-              "icon": "ic-rocket",
+              "icon": "ic-users",
               "cap": "コントリビュートで恩返しできる"
             }
           ],
@@ -1262,13 +1207,11 @@ module.exports = {
                 {
                   "name": "Fork",
                   "desc": "OSSに手を加えるための最初の一歩。",
-                  "icon": "ic-network",
                   "page": 3
                 },
                 {
                   "name": "コントリビュート",
                   "desc": "OSSに改善を還元する行為そのもの。",
-                  "icon": "ic-laptop",
                   "page": 16
                 }
               ]
@@ -1278,13 +1221,11 @@ module.exports = {
               "items": [
                 {
                   "name": "ライセンス",
-                  "desc": "そのソフトウェアの利用・改変・再配布のルール。",
-                  "icon": "ic-file"
+                  "desc": "そのソフトウェアの利用・改変・再配布のルール。"
                 },
                 {
                   "name": "メンテナー",
-                  "desc": "OSSプロジェクトの管理・運営を担う人。",
-                  "icon": "ic-laptop"
+                  "desc": "OSSプロジェクトの管理・運営を担う人。"
                 }
               ]
             }
@@ -1294,7 +1235,6 @@ module.exports = {
           "id": "contribute",
           "page": 16,
           "term": "コントリビュート",
-          "subtitle": "使うだけじゃなく、育てる側にまわる一歩",
           "category": "OSS・オープンソース",
           "icon": "ic-laptop",
           "oneline": "OSSなどのプロジェクトに対して、コードやドキュメントの改善を提案・還元すること。",
@@ -1328,15 +1268,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-laptop",
+              "icon": "ic-users",
               "cap": "世界中のユーザーと一緒に育てられる"
             },
             {
-              "icon": "ic-cube",
+              "icon": "ic-file",
               "cap": "実務経験として実績が形に残る"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-chart",
               "cap": "レビューを通じて技術力が伸びる"
             }
           ],
@@ -1348,13 +1288,11 @@ module.exports = {
                 {
                   "name": "Fork",
                   "desc": "コントリビュートの第一歩となる複製。",
-                  "icon": "ic-network",
                   "page": 3
                 },
                 {
                   "name": "OSS",
                   "desc": "コントリビュートの対象になるプロジェクト。",
-                  "icon": "ic-network",
                   "page": 15
                 }
               ]
@@ -1364,13 +1302,11 @@ module.exports = {
               "items": [
                 {
                   "name": "Pull Request",
-                  "desc": "変更を提案してレビューしてもらう仕組み。",
-                  "icon": "ic-rocket"
+                  "desc": "変更を提案してレビューしてもらう仕組み。"
                 },
                 {
                   "name": "Issue",
-                  "desc": "バグ報告や要望を管理する場所。",
-                  "icon": "ic-monitor"
+                  "desc": "バグ報告や要望を管理する場所。"
                 }
               ]
             }
@@ -1386,7 +1322,7 @@ module.exports = {
           "id": "client",
           "page": 21,
           "term": "Client",
-          "subtitle": "「お客さん」だと思っていたら、ブラウザのことだった",
+          "reading": "クライアント",
           "category": "ネットワークの基本",
           "icon": "ic-laptop",
           "oneline": "サーバーに要求（リクエスト）を送る側。ブラウザやスマホアプリなど、自分が直接触っている画面のこと。",
@@ -1415,15 +1351,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-laptop",
+              "icon": "ic-monitor",
               "cap": "画面の表示や入力を担当できる"
             },
             {
-              "icon": "ic-network",
+              "icon": "ic-send",
               "cap": "サーバーに要求を送れる"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-split",
               "cap": "サーバーとの役割分担を説明できる"
             }
           ],
@@ -1435,7 +1371,6 @@ module.exports = {
                 {
                   "name": "Server",
                   "desc": "クライアントからの要求を受け取り、処理して返す側。",
-                  "icon": "ic-server",
                   "page": 22
                 }
               ]
@@ -1446,13 +1381,11 @@ module.exports = {
                 {
                   "name": "Request",
                   "desc": "クライアントがサーバーに送る依頼のデータ。",
-                  "icon": "ic-network",
                   "page": 23
                 },
                 {
                   "name": "Response",
                   "desc": "サーバーがリクエストに対して返す結果。",
-                  "icon": "ic-package",
                   "page": 24
                 }
               ]
@@ -1463,7 +1396,7 @@ module.exports = {
           "id": "server",
           "page": 22,
           "term": "Server",
-          "subtitle": "「なんかサーバー落ちてるらしい」の\"サーバー\"の正体",
+          "reading": "サーバー",
           "category": "ネットワークの基本",
           "icon": "ic-server",
           "oneline": "クライアントからの要求（リクエスト）を受け取り、処理して結果を返す側のプログラムや機械。",
@@ -1496,7 +1429,7 @@ module.exports = {
               "cap": "リクエストを受け取って処理できる"
             },
             {
-              "icon": "ic-network",
+              "icon": "ic-users",
               "cap": "複数のクライアントに同時対応できる"
             },
             {
@@ -1512,7 +1445,6 @@ module.exports = {
                 {
                   "name": "Client",
                   "desc": "サーバーに要求を送る側。ブラウザやアプリなど。",
-                  "icon": "ic-laptop",
                   "page": 21
                 }
               ]
@@ -1523,7 +1455,6 @@ module.exports = {
                 {
                   "name": "Request",
                   "desc": "クライアントがサーバーに送る依頼のデータ。",
-                  "icon": "ic-network",
                   "page": 23
                 }
               ]
@@ -1534,7 +1465,7 @@ module.exports = {
           "id": "request",
           "page": 23,
           "term": "Request",
-          "subtitle": "「APIを叩く」の\"叩く\"の中身、それがリクエスト",
+          "reading": "リクエスト",
           "category": "HTTP通信",
           "icon": "ic-network",
           "oneline": "クライアントがサーバーに送る「これをやってほしい」という依頼のデータ。",
@@ -1563,15 +1494,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-network",
+              "icon": "ic-search",
               "cap": "通信の中身を確認できる"
             },
             {
-              "icon": "ic-scribble",
+              "icon": "ic-bug",
               "cap": "デバッグの手がかりにできる"
             },
             {
-              "icon": "ic-file",
+              "icon": "ic-book",
               "cap": "API仕様書を読めるようになる"
             }
           ],
@@ -1583,7 +1514,6 @@ module.exports = {
                 {
                   "name": "Response",
                   "desc": "リクエストに対してサーバーが返す結果。",
-                  "icon": "ic-package",
                   "page": 24
                 }
               ]
@@ -1594,7 +1524,6 @@ module.exports = {
                 {
                   "name": "Header",
                   "desc": "リクエストやレスポンスに添える付加情報。",
-                  "icon": "ic-layers",
                   "page": 34
                 }
               ]
@@ -1605,7 +1534,7 @@ module.exports = {
           "id": "response",
           "page": 24,
           "term": "Response",
-          "subtitle": "エラー画面の裏側で返ってきていた「返事」",
+          "reading": "レスポンス",
           "category": "HTTP通信",
           "icon": "ic-package",
           "oneline": "サーバーがリクエストに対して返す結果。ステータスコードと中身（ボディ）がセットになっている。",
@@ -1634,15 +1563,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-package",
+              "icon": "ic-check",
               "cap": "結果を正確に受け取れる"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-filter",
               "cap": "ステータスコードで切り分けられる"
             },
             {
-              "icon": "ic-scribble",
+              "icon": "ic-target",
               "cap": "エラーの原因を特定しやすくなる"
             }
           ],
@@ -1654,7 +1583,6 @@ module.exports = {
                 {
                   "name": "Request",
                   "desc": "クライアントがサーバーに送る依頼のデータ。",
-                  "icon": "ic-network",
                   "page": 23
                 }
               ]
@@ -1665,7 +1593,6 @@ module.exports = {
                 {
                   "name": "HTTP",
                   "desc": "リクエスト・レスポンスをやり取りする共通ルール。",
-                  "icon": "ic-layers",
                   "page": 25
                 }
               ]
@@ -1676,7 +1603,7 @@ module.exports = {
           "id": "http",
           "page": 25,
           "term": "HTTP",
-          "subtitle": "URLの前についてる謎の文字、の正体",
+          "reading": "エイチティーティーピー",
           "category": "通信プロトコル",
           "icon": "ic-layers",
           "oneline": "クライアントとサーバーがリクエスト・レスポンスをやり取りするための共通ルール（プロトコル）。",
@@ -1705,15 +1632,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-network",
+              "icon": "ic-swap",
               "cap": "異なる機器同士でも通信できる"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-list",
               "cap": "構造化されたやり取りができる"
             },
             {
-              "icon": "ic-file",
+              "icon": "ic-book",
               "cap": "仕様書を読んで理解を深められる"
             }
           ],
@@ -1725,7 +1652,6 @@ module.exports = {
                 {
                   "name": "HTTPS",
                   "desc": "HTTPに暗号化（TLS）を追加した安全な通信。",
-                  "icon": "ic-cube",
                   "page": 26
                 }
               ]
@@ -1736,13 +1662,11 @@ module.exports = {
                 {
                   "name": "Request",
                   "desc": "クライアントがサーバーに送る依頼のデータ。",
-                  "icon": "ic-network",
                   "page": 23
                 },
                 {
                   "name": "Response",
                   "desc": "サーバーがリクエストに対して返す結果。",
-                  "icon": "ic-package",
                   "page": 24
                 }
               ]
@@ -1753,7 +1677,7 @@ module.exports = {
           "id": "https",
           "page": 26,
           "term": "HTTPS",
-          "subtitle": "「Sがついてるだけ」じゃなかった、鍵マークの意味",
+          "reading": "エイチティーティーピーエス",
           "category": "通信プロトコル",
           "icon": "ic-cube",
           "oneline": "HTTPの通信をTLSで暗号化したもの。途中で盗み見・改ざんされにくくする仕組み。",
@@ -1782,15 +1706,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-cube",
+              "icon": "ic-lock",
               "cap": "通信内容を暗号化できる"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-key",
               "cap": "相手が本物か証明書で確認できる"
             },
             {
-              "icon": "ic-network",
+              "icon": "ic-shield",
               "cap": "改ざんを検知できる"
             }
           ],
@@ -1802,7 +1726,6 @@ module.exports = {
                 {
                   "name": "HTTP",
                   "desc": "暗号化されていない通信プロトコル。",
-                  "icon": "ic-layers",
                   "page": 25
                 }
               ]
@@ -1813,13 +1736,11 @@ module.exports = {
                 {
                   "name": "TLS",
                   "desc": "HTTPSの暗号化・認証を担う仕組み。",
-                  "icon": "ic-cube",
                   "page": 37
                 },
                 {
                   "name": "SSL証明書",
                   "desc": "通信相手が本物であることを証明する電子証明書。",
-                  "icon": "ic-file",
                   "page": 38
                 }
               ]
@@ -1830,7 +1751,7 @@ module.exports = {
           "id": "dns",
           "page": 27,
           "term": "DNS",
-          "subtitle": "覚えられない数字を、覚えられる名前に変える仕組み",
+          "reading": "ディーエヌエス",
           "category": "名前解決",
           "icon": "ic-file",
           "oneline": "ドメイン名（www.example.comなど）をIPアドレスに変換する「インターネットの電話帳」。",
@@ -1859,15 +1780,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-file",
+              "icon": "ic-search",
               "cap": "名前からIPアドレスを引ける"
             },
             {
-              "icon": "ic-network",
+              "icon": "ic-eye",
               "cap": "覚えやすい名前でアクセスできる"
             },
             {
-              "icon": "ic-scribble",
+              "icon": "ic-filter",
               "cap": "繋がらない原因を切り分けられる"
             }
           ],
@@ -1879,13 +1800,11 @@ module.exports = {
                 {
                   "name": "Domain",
                   "desc": "DNSで管理される、覚えやすい名前そのもの。",
-                  "icon": "ic-monitor",
                   "page": 28
                 },
                 {
                   "name": "IP Address",
                   "desc": "DNSが変換した先にある、機械の住所。",
-                  "icon": "ic-network",
                   "page": 29
                 }
               ]
@@ -1896,7 +1815,7 @@ module.exports = {
           "id": "domain",
           "page": 28,
           "term": "Domain",
-          "subtitle": "「ドメイン取った？」の\"ドメイン\"は住所の名前だった",
+          "reading": "ドメイン",
           "category": "名前解決",
           "icon": "ic-monitor",
           "oneline": "インターネット上の住所（IPアドレス）に付けられた、人間が読める名前。",
@@ -1925,15 +1844,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-monitor",
+              "icon": "ic-globe",
               "cap": "覚えやすい名前で発信できる"
             },
             {
-              "icon": "ic-file",
+              "icon": "ic-link",
               "cap": "DNSに登録してIPアドレスと紐付けられる"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-gear",
               "cap": "自分の名前として管理・更新できる"
             }
           ],
@@ -1945,13 +1864,11 @@ module.exports = {
                 {
                   "name": "DNS",
                   "desc": "ドメイン名をIPアドレスに変換する仕組み。",
-                  "icon": "ic-file",
                   "page": 27
                 },
                 {
                   "name": "SSL証明書",
                   "desc": "ドメインが本物であることを証明する電子証明書。",
-                  "icon": "ic-file",
                   "page": 38
                 }
               ]
@@ -1962,7 +1879,7 @@ module.exports = {
           "id": "ip-address",
           "page": 29,
           "term": "IP Address",
-          "subtitle": "ドメインの奥にある、本当の\"住所\"",
+          "reading": "アイピーアドレス",
           "category": "名前解決",
           "icon": "ic-network",
           "oneline": "インターネットに繋がる機器1台1台に割り振られる、数字だけの住所。",
@@ -1991,15 +1908,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-network",
+              "icon": "ic-target",
               "cap": "機器を一意に特定できる"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-split",
               "cap": "グローバル/プライベートを区別できる"
             },
             {
-              "icon": "ic-scribble",
+              "icon": "ic-check",
               "cap": "pingなどで疎通確認ができる"
             }
           ],
@@ -2011,19 +1928,16 @@ module.exports = {
                 {
                   "name": "DNS",
                   "desc": "ドメイン名をIPアドレスに変換する仕組み。",
-                  "icon": "ic-file",
                   "page": 27
                 },
                 {
                   "name": "Port",
                   "desc": "同じIPアドレスの中で、アプリを区別する番号。",
-                  "icon": "ic-cube",
                   "page": 30
                 },
                 {
                   "name": "NAT",
                   "desc": "プライベートIPとグローバルIPを変換する仕組み。",
-                  "icon": "ic-scale",
                   "page": 41
                 }
               ]
@@ -2034,7 +1948,7 @@ module.exports = {
           "id": "port",
           "page": 30,
           "term": "Port",
-          "subtitle": "`:3000`って何？の答え",
+          "reading": "ポート",
           "category": "名前解決",
           "icon": "ic-cube",
           "oneline": "同じIPアドレス（住所）の中で、どのアプリ・サービス宛かを区別する番号。",
@@ -2063,15 +1977,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-cube",
+              "icon": "ic-split",
               "cap": "同じ機械で複数サービスを区別できる"
             },
             {
-              "icon": "ic-network",
+              "icon": "ic-target",
               "cap": "アプリ宛にピンポイントで届けられる"
             },
             {
-              "icon": "ic-scribble",
+              "icon": "ic-alert",
               "cap": "衝突や未開放のトラブルに気づける"
             }
           ],
@@ -2083,13 +1997,11 @@ module.exports = {
                 {
                   "name": "IP Address",
                   "desc": "機器そのものの住所。ポートはその中の区分け。",
-                  "icon": "ic-network",
                   "page": 29
                 },
                 {
                   "name": "TCP",
                   "desc": "ポート番号を使って通信を確立するプロトコル。",
-                  "icon": "ic-scale",
                   "page": 35
                 }
               ]
@@ -2100,7 +2012,7 @@ module.exports = {
           "id": "cookie",
           "page": 31,
           "term": "Cookie",
-          "subtitle": "ログインしっぱなしにできる、あの仕組み",
+          "reading": "クッキー",
           "category": "状態管理・認証",
           "icon": "ic-package",
           "oneline": "ブラウザに保存される小さなデータ。サーバーがユーザーを識別するために使う。",
@@ -2129,7 +2041,7 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-package",
+              "icon": "ic-key",
               "cap": "ログイン状態を維持できる"
             },
             {
@@ -2137,7 +2049,7 @@ module.exports = {
               "cap": "一定期間データを保持できる"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-users",
               "cap": "サーバーがユーザーを識別できる"
             }
           ],
@@ -2149,13 +2061,11 @@ module.exports = {
                 {
                   "name": "Session",
                   "desc": "Cookieを使って実現される、ログイン状態などの管理。",
-                  "icon": "ic-clock",
                   "page": 32
                 },
                 {
                   "name": "JWT",
                   "desc": "署名付きトークンでログイン情報を持ち運ぶ方式。",
-                  "icon": "ic-scale",
                   "page": 33
                 }
               ]
@@ -2166,7 +2076,7 @@ module.exports = {
           "id": "session",
           "page": 32,
           "term": "Session",
-          "subtitle": "「セッション切れました」のセッションとは何か",
+          "reading": "セッション",
           "category": "状態管理・認証",
           "icon": "ic-clock",
           "oneline": "ログインから終了までの、ユーザーとサーバーの一連のやり取りをひとまとまりとして管理する仕組み。",
@@ -2199,11 +2109,11 @@ module.exports = {
               "cap": "ログインから終了までを管理できる"
             },
             {
-              "icon": "ic-server",
+              "icon": "ic-lock",
               "cap": "サーバー側で状態を安全に保持できる"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-alert",
               "cap": "期限切れの挙動を理解できる"
             }
           ],
@@ -2215,13 +2125,11 @@ module.exports = {
                 {
                   "name": "Cookie",
                   "desc": "セッションIDなどを保存する、ブラウザ側の小さなデータ。",
-                  "icon": "ic-package",
                   "page": 31
                 },
                 {
                   "name": "JWT",
                   "desc": "サーバー側に状態を持たない、別の認証情報の持ち方。",
-                  "icon": "ic-scale",
                   "page": 33
                 }
               ]
@@ -2232,7 +2140,7 @@ module.exports = {
           "id": "jwt",
           "page": 33,
           "term": "JWT",
-          "subtitle": "セッションを使わないログイン、の裏側",
+          "reading": "ジェイダブリューティー",
           "category": "状態管理・認証",
           "icon": "ic-scale",
           "oneline": "ユーザー情報を署名付きのトークンに詰め込んで持ち運ぶ、サーバー側に状態を持たない認証方式。",
@@ -2261,7 +2169,7 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-scale",
+              "icon": "ic-server",
               "cap": "サーバー側に状態を持たず認証できる"
             },
             {
@@ -2269,7 +2177,7 @@ module.exports = {
               "cap": "複数サーバー間で認証を共有しやすい"
             },
             {
-              "icon": "ic-scribble",
+              "icon": "ic-shield",
               "cap": "署名で改ざんを検知できる"
             }
           ],
@@ -2281,19 +2189,16 @@ module.exports = {
                 {
                   "name": "Session",
                   "desc": "サーバー側で状態を管理する、もう一つの方式。",
-                  "icon": "ic-clock",
                   "page": 32
                 },
                 {
                   "name": "Cookie",
                   "desc": "JWTをブラウザに保存する際の入れ物としても使われる。",
-                  "icon": "ic-package",
                   "page": 31
                 },
                 {
                   "name": "Header",
                   "desc": "JWTは多くの場合Authorizationヘッダーに載せて送る。",
-                  "icon": "ic-layers",
                   "page": 34
                 }
               ]
@@ -2304,7 +2209,7 @@ module.exports = {
           "id": "header",
           "page": 34,
           "term": "Header",
-          "subtitle": "本文じゃない、荷物の\"送り状\"の部分",
+          "reading": "ヘッダー",
           "category": "HTTP通信",
           "icon": "ic-layers",
           "oneline": "リクエストやレスポンスの本体（ボディ）とは別に付け加える、付加情報の集まり。",
@@ -2333,15 +2238,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-layers",
+              "icon": "ic-tag",
               "cap": "本文とは別に情報を付け加えられる"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-key",
               "cap": "認証トークンなどを安全に運べる"
             },
             {
-              "icon": "ic-scribble",
+              "icon": "ic-search",
               "cap": "通信のトラブルを切り分けやすくなる"
             }
           ],
@@ -2353,13 +2258,11 @@ module.exports = {
                 {
                   "name": "Request",
                   "desc": "ヘッダーが付加される、依頼データそのもの。",
-                  "icon": "ic-network",
                   "page": 23
                 },
                 {
                   "name": "JWT",
                   "desc": "Authorizationヘッダーに載せて送る認証トークン。",
-                  "icon": "ic-scale",
                   "page": 33
                 }
               ]
@@ -2370,7 +2273,7 @@ module.exports = {
           "id": "tcp",
           "page": 35,
           "term": "TCP",
-          "subtitle": "「届いたか確認する」通信、その名前",
+          "reading": "ティーシーピー",
           "category": "トランスポート層",
           "icon": "ic-scale",
           "oneline": "データが確実に届いたかを確認しながら通信するプロトコル。信頼性を重視する。",
@@ -2399,15 +2302,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-scale",
+              "icon": "ic-check",
               "cap": "データの到達を確認しながら送れる"
             },
             {
-              "icon": "ic-network",
+              "icon": "ic-list",
               "cap": "順序を保証して届けられる"
             },
             {
-              "icon": "ic-clock",
+              "icon": "ic-shield",
               "cap": "信頼性が必要な通信に向いている"
             }
           ],
@@ -2419,7 +2322,6 @@ module.exports = {
                 {
                   "name": "UDP",
                   "desc": "確認を取らず、とにかく速さを優先するプロトコル。",
-                  "icon": "ic-rocket",
                   "page": 36
                 }
               ]
@@ -2430,7 +2332,6 @@ module.exports = {
                 {
                   "name": "Port",
                   "desc": "TCPが通信相手のアプリを特定するために使う番号。",
-                  "icon": "ic-cube",
                   "page": 30
                 }
               ]
@@ -2441,7 +2342,7 @@ module.exports = {
           "id": "udp",
           "page": 36,
           "term": "UDP",
-          "subtitle": "「確認より速さ」を選んだ通信",
+          "reading": "ユーディーピー",
           "category": "トランスポート層",
           "icon": "ic-rocket",
           "oneline": "データが届いたかの確認をせず、とにかく速く送ることを優先するプロトコル。",
@@ -2470,15 +2371,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-rocket",
+              "icon": "ic-bolt",
               "cap": "確認を省いて高速に送れる"
             },
             {
-              "icon": "ic-network",
+              "icon": "ic-clock",
               "cap": "リアルタイム性が求められる通信に向く"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-alert",
               "cap": "多少のデータ欠落を許容できる"
             }
           ],
@@ -2490,7 +2391,6 @@ module.exports = {
                 {
                   "name": "TCP",
                   "desc": "確認を取りながら確実に届けるプロトコル。",
-                  "icon": "ic-scale",
                   "page": 35
                 }
               ]
@@ -2501,7 +2401,7 @@ module.exports = {
           "id": "tls",
           "page": 37,
           "term": "TLS",
-          "subtitle": "HTTPSの\"S\"の中身を作っている技術",
+          "reading": "ティーエルエス",
           "category": "暗号化・証明書",
           "icon": "ic-cube",
           "oneline": "通信を暗号化し、相手が本物であることも確認する仕組み。HTTPSの安全性を支えている。",
@@ -2530,15 +2430,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-cube",
+              "icon": "ic-lock",
               "cap": "通信内容を暗号化できる"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-check",
               "cap": "通信相手が本物か確認できる"
             },
             {
-              "icon": "ic-network",
+              "icon": "ic-shield",
               "cap": "古いバージョンを無効化して安全性を保てる"
             }
           ],
@@ -2550,19 +2450,16 @@ module.exports = {
                 {
                   "name": "HTTPS",
                   "desc": "TLSによって暗号化されたHTTP通信。",
-                  "icon": "ic-cube",
                   "page": 26
                 },
                 {
                   "name": "SSL証明書",
                   "desc": "TLS通信で相手の身元を証明する電子証明書。",
-                  "icon": "ic-file",
                   "page": 38
                 },
                 {
                   "name": "Let's Encrypt",
                   "desc": "無料でSSL証明書を発行してくれる認証局。",
-                  "icon": "ic-cloud",
                   "page": 39
                 }
               ]
@@ -2573,7 +2470,7 @@ module.exports = {
           "id": "ssl-certificate",
           "page": 38,
           "term": "SSL証明書",
-          "subtitle": "「証明書の期限切れ」で赤くなる画面の正体",
+          "reading": "エスエスエルしょうめいしょ",
           "category": "暗号化・証明書",
           "icon": "ic-file",
           "oneline": "サイトの運営者が本物であることを証明する電子証明書。TLS通信で使われる。",
@@ -2602,15 +2499,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-file",
+              "icon": "ic-key",
               "cap": "サイト運営者の身元を証明できる"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-shield",
               "cap": "なりすましサイトと区別できる"
             },
             {
-              "icon": "ic-cube",
+              "icon": "ic-lock",
               "cap": "TLSによる暗号化通信の土台になる"
             }
           ],
@@ -2622,13 +2519,11 @@ module.exports = {
                 {
                   "name": "TLS",
                   "desc": "この証明書を使って暗号化通信を行う仕組み。",
-                  "icon": "ic-cube",
                   "page": 37
                 },
                 {
                   "name": "Let's Encrypt",
                   "desc": "この証明書を無料・自動で発行してくれるサービス。",
-                  "icon": "ic-cloud",
                   "page": 39
                 }
               ]
@@ -2639,7 +2534,7 @@ module.exports = {
           "id": "lets-encrypt",
           "page": 39,
           "term": "Let's Encrypt",
-          "subtitle": "「証明書、無料でいいの？」と最初は疑った",
+          "reading": "レッツエンクリプト",
           "category": "暗号化・証明書",
           "icon": "ic-cloud",
           "oneline": "SSL証明書を無料・自動で発行してくれる認証局。個人開発のサイトも簡単にHTTPS化できる。",
@@ -2668,15 +2563,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-cloud",
+              "icon": "ic-tag",
               "cap": "無料でSSL証明書を発行できる"
             },
             {
-              "icon": "ic-rocket",
+              "icon": "ic-gear",
               "cap": "発行から設定まで自動化できる"
             },
             {
-              "icon": "ic-clock",
+              "icon": "ic-globe",
               "cap": "個人サイトでも気軽にHTTPS化できる"
             }
           ],
@@ -2688,13 +2583,11 @@ module.exports = {
                 {
                   "name": "SSL証明書",
                   "desc": "Let's Encryptが発行してくれる証明書そのもの。",
-                  "icon": "ic-file",
                   "page": 38
                 },
                 {
                   "name": "HTTPS",
                   "desc": "この証明書によって実現される暗号化通信。",
-                  "icon": "ic-cube",
                   "page": 26
                 }
               ]
@@ -2705,7 +2598,7 @@ module.exports = {
           "id": "vpn",
           "page": 40,
           "term": "VPN",
-          "subtitle": "「社内ネットワークに繋いで」と言われて焦った日",
+          "reading": "ブイピーエヌ",
           "category": "ネットワーク構成",
           "icon": "ic-network",
           "oneline": "インターネット上に暗号化された専用の通信路（トンネル）を作り、離れた場所からでも安全に社内ネットワークなどに接続する仕組み。",
@@ -2738,7 +2631,7 @@ module.exports = {
               "cap": "外部から社内ネットワークに安全に接続できる"
             },
             {
-              "icon": "ic-cube",
+              "icon": "ic-lock",
               "cap": "通信を暗号化してトンネルを作れる"
             },
             {
@@ -2754,13 +2647,11 @@ module.exports = {
                 {
                   "name": "NAT",
                   "desc": "プライベートIPとグローバルIPを変換する仕組み。",
-                  "icon": "ic-scale",
                   "page": 41
                 },
                 {
                   "name": "Proxy（フォワードプロキシ）",
                   "desc": "クライアントの代わりに通信を中継する仕組み。",
-                  "icon": "ic-monitor",
                   "page": 43
                 }
               ]
@@ -2771,7 +2662,7 @@ module.exports = {
           "id": "nat",
           "page": 41,
           "term": "NAT",
-          "subtitle": "自宅のPCが全部同じ\"グローバルIP\"に見える理由",
+          "reading": "ナット",
           "category": "ネットワーク構成",
           "icon": "ic-scale",
           "oneline": "家庭や社内など、限られた場所だけで使うプライベートIPと、インターネット上のグローバルIPを変換する仕組み。",
@@ -2800,15 +2691,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-scale",
+              "icon": "ic-swap",
               "cap": "プライベートIPとグローバルIPを変換できる"
             },
             {
-              "icon": "ic-network",
+              "icon": "ic-chart",
               "cap": "限られたグローバルIPを節約できる"
             },
             {
-              "icon": "ic-cube",
+              "icon": "ic-lock",
               "cap": "内部のネットワーク構成を外部から隠せる"
             }
           ],
@@ -2820,13 +2711,11 @@ module.exports = {
                 {
                   "name": "IP Address",
                   "desc": "NATが変換する対象、プライベート/グローバルの住所。",
-                  "icon": "ic-network",
                   "page": 29
                 },
                 {
                   "name": "サブネット（Subnet）",
                   "desc": "プライベートIPを整理して区切る仕組み。",
-                  "icon": "ic-layers",
                   "page": 42
                 }
               ]
@@ -2837,7 +2726,6 @@ module.exports = {
           "id": "subnet",
           "page": 42,
           "term": "サブネット（Subnet）",
-          "subtitle": "IPアドレスを\"部署ごと\"に区切る発想",
           "category": "ネットワーク構成",
           "icon": "ic-layers",
           "oneline": "1つのネットワークを、用途や部署などの単位で複数の小さなネットワークに分割する仕組み。",
@@ -2866,15 +2754,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-layers",
+              "icon": "ic-split",
               "cap": "ネットワークを用途ごとに分割できる"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-lock",
               "cap": "区画ごとにアクセス制御できる"
             },
             {
-              "icon": "ic-network",
+              "icon": "ic-filter",
               "cap": "障害やトラブルの影響範囲を限定できる"
             }
           ],
@@ -2886,13 +2774,11 @@ module.exports = {
                 {
                   "name": "IP Address",
                   "desc": "サブネットが分割の対象とする住所そのもの。",
-                  "icon": "ic-network",
                   "page": 29
                 },
                 {
                   "name": "NAT",
                   "desc": "プライベートIPとグローバルIPを変換する仕組み。",
-                  "icon": "ic-scale",
                   "page": 41
                 }
               ]
@@ -2904,7 +2790,7 @@ module.exports = {
           "page": 43,
           "term": "Proxy（フォワードプロキシ）",
           "compact": true,
-          "subtitle": "「社内からは直接アクセスできません」の理由",
+          "reading": "プロキシ",
           "category": "ネットワーク構成",
           "icon": "ic-monitor",
           "oneline": "クライアントの代わりにインターネットへアクセスし、結果を取り次いでくれる中継役のサーバー。",
@@ -2933,15 +2819,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-monitor",
+              "icon": "ic-swap",
               "cap": "クライアントの代わりに通信を中継できる"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-file",
               "cap": "アクセス制限やログ管理をまとめて行える"
             },
             {
-              "icon": "ic-cube",
+              "icon": "ic-lock",
               "cap": "内部のクライアント構成を外部から隠せる"
             }
           ],
@@ -2953,16 +2839,23 @@ module.exports = {
                 {
                   "name": "VPN",
                   "desc": "暗号化されたトンネルで社内ネットワークに接続する仕組み。",
-                  "icon": "ic-network",
                   "page": 40
                 },
                 {
                   "name": "NAT",
                   "desc": "プライベートIPとグローバルIPを変換する仕組み。",
-                  "icon": "ic-scale",
                   "page": 41
                 }
               ]
+            }
+          ],
+          "title_lines": [
+            {
+              "text": "Proxy",
+              "reading": "プロキシ"
+            },
+            {
+              "text": "（フォワードプロキシ）"
             }
           ]
         },
@@ -2970,7 +2863,6 @@ module.exports = {
           "id": "intranet",
           "page": 44,
           "term": "イントラネット",
-          "subtitle": "インターネットの「社内版」閉じた世界",
           "category": "ネットワーク構成",
           "icon": "ic-network",
           "oneline": "インターネットと同じ技術を使いながら、社内など限られた範囲だけで閉じたネットワークのこと。",
@@ -3004,15 +2896,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-monitor",
+              "icon": "ic-server",
               "cap": "社内向けのWebサービスを置ける"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-lock",
               "cap": "部外者に見せずに情報共有できる"
             },
             {
-              "icon": "ic-network",
+              "icon": "ic-book",
               "cap": "インターネットと同じ技術で学べる"
             }
           ],
@@ -3024,13 +2916,11 @@ module.exports = {
                 {
                   "name": "VPN",
                   "desc": "外からイントラネットへ安全に入るトンネル。",
-                  "icon": "ic-network",
                   "page": 40
                 },
                 {
                   "name": "Proxy",
                   "desc": "社内から外へ出るときの中継役。",
-                  "icon": "ic-monitor",
                   "page": 43
                 }
               ]
@@ -3047,7 +2937,7 @@ module.exports = {
           "id": "json",
           "page": 51,
           "term": "JSON",
-          "subtitle": "「閉じタグの海」から抜け出したデータの書き方",
+          "reading": "ジェイソン",
           "category": "データフォーマット",
           "icon": "ic-file",
           "oneline": "{ }と[ ]だけで表現する、JavaScriptのオブジェクトそのままの見た目のデータ形式。",
@@ -3076,15 +2966,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-file",
+              "icon": "ic-code",
               "cap": "設定やAPIレスポンスを簡潔に表現"
             },
             {
-              "icon": "ic-network",
+              "icon": "ic-swap",
               "cap": "言語をまたいでそのままやりとり"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-list",
               "cap": "配列とオブジェクトだけで大抵表現できる"
             }
           ],
@@ -3096,13 +2986,11 @@ module.exports = {
                 {
                   "name": "XML",
                   "desc": "タグで構造を表現する古参フォーマット。今も設定や仕様書で現役。",
-                  "icon": "ic-layers",
                   "page": 54
                 },
                 {
                   "name": "YAML",
                   "desc": "インデントで構造を表す、設定ファイル向けの書き方。",
-                  "icon": "ic-scribble",
                   "page": 52
                 }
               ]
@@ -3113,7 +3001,6 @@ module.exports = {
                 {
                   "name": "API",
                   "desc": "JSONはAPIのレスポンス形式として最も広く使われている。",
-                  "icon": "ic-network",
                   "page": 61
                 }
               ]
@@ -3124,7 +3011,7 @@ module.exports = {
           "id": "yaml",
           "page": 52,
           "term": "YAML",
-          "subtitle": "インデントだけで構造を語る、設定ファイルの定番",
+          "reading": "ヤムル",
           "category": "データフォーマット",
           "icon": "ic-scribble",
           "oneline": "波括弧を使わず、インデント（字下げ）だけで階層構造を表現するデータ形式。",
@@ -3153,15 +3040,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-scribble",
+              "icon": "ic-code",
               "cap": "手書きしやすい設定ファイルが書ける"
             },
             {
-              "icon": "ic-pen",
+              "icon": "ic-file",
               "cap": "コメントを残しながら設定できる"
             },
             {
-              "icon": "ic-layers",
+              "icon": "ic-gear",
               "cap": "GitHub ActionsやCIの定義に使われる"
             }
           ],
@@ -3173,13 +3060,11 @@ module.exports = {
                 {
                   "name": "JSON",
                   "desc": "括弧で構造を表すデータ形式。APIレスポンスで定番。",
-                  "icon": "ic-file",
                   "page": 51
                 },
                 {
                   "name": "TOML",
                   "desc": "YAMLよりシンプルな階層表現を目指した設定形式。",
-                  "icon": "ic-pen",
                   "page": 53
                 }
               ]
@@ -3190,7 +3075,7 @@ module.exports = {
           "id": "toml",
           "page": 53,
           "term": "TOML",
-          "subtitle": "「インデントミスに悩みたくない」から生まれた設定形式",
+          "reading": "トムル",
           "category": "データフォーマット",
           "icon": "ic-pen",
           "oneline": "key = value の並びで設定を書く、あいまいさの少ないシンプルな設定ファイル形式。",
@@ -3219,7 +3104,7 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-pen",
+              "icon": "ic-code",
               "cap": "key = value で直感的に書ける"
             },
             {
@@ -3227,7 +3112,7 @@ module.exports = {
               "cap": "Cargo.tomlなどパッケージ設定の定番"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-eye",
               "cap": "書き方のブレが少なく読み間違えにくい"
             }
           ],
@@ -3239,13 +3124,11 @@ module.exports = {
                 {
                   "name": "YAML",
                   "desc": "インデントで階層構造を表す設定ファイル形式。",
-                  "icon": "ic-scribble",
                   "page": 52
                 },
                 {
                   "name": "JSON",
                   "desc": "括弧で構造を表すデータ形式。プログラムからの生成向き。",
-                  "icon": "ic-file",
                   "page": 51
                 }
               ]
@@ -3256,7 +3139,7 @@ module.exports = {
           "id": "xml",
           "page": 54,
           "term": "XML",
-          "subtitle": "今も現役の「タグで語る」データ形式",
+          "reading": "エックスエムエル",
           "category": "データフォーマット",
           "icon": "ic-layers",
           "oneline": "<tag>で囲んでデータの意味を表現する、開始・終了タグが特徴のマークアップ形式。",
@@ -3285,11 +3168,11 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-layers",
+              "icon": "ic-eye",
               "cap": "タグ名だけで意味が伝わる可読性"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-check",
               "cap": "スキーマで構造を厳密に検証できる"
             },
             {
@@ -3305,13 +3188,11 @@ module.exports = {
                 {
                   "name": "JSON",
                   "desc": "括弧で構造を表す軽量なデータ形式。今のAPIの主流。",
-                  "icon": "ic-file",
                   "page": 51
                 },
                 {
                   "name": "スキーマ（Schema）",
                   "desc": "データの形を定義し、正しいかどうかを検証する仕組み。",
-                  "icon": "ic-scale",
                   "page": 56
                 }
               ]
@@ -3322,7 +3203,7 @@ module.exports = {
           "id": "csv",
           "page": 55,
           "term": "CSV",
-          "subtitle": "Excelとの橋渡し役、カンマ区切りの素朴な形式",
+          "reading": "シーエスブイ",
           "category": "データフォーマット",
           "icon": "ic-file",
           "oneline": "値をカンマ（,）で区切って1行1レコードを表す、最もシンプルな表形式のデータ形式。",
@@ -3351,15 +3232,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-file",
+              "icon": "ic-laptop",
               "cap": "Excelやスプレッドシートでそのまま開ける"
             },
             {
-              "icon": "ic-package",
+              "icon": "ic-database",
               "cap": "大量データの入出力・ダウンロードに使う"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-link",
               "cap": "仕組みが単純で他システムとも連携しやすい"
             }
           ],
@@ -3371,7 +3252,6 @@ module.exports = {
                 {
                   "name": "JSON",
                   "desc": "括弧で構造を表す軽量なデータ形式。ネスト構造も表現できる。",
-                  "icon": "ic-file",
                   "page": 51
                 }
               ]
@@ -3382,7 +3262,6 @@ module.exports = {
           "id": "schema",
           "page": 56,
           "term": "スキーマ（Schema）",
-          "subtitle": "「このデータ、形は合ってる？」に答える設計図",
           "category": "データフォーマット",
           "icon": "ic-scale",
           "oneline": "データがどんな項目を持ち、どんな型・制約であるべきかを定義した\"データの設計図\"。",
@@ -3411,15 +3290,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-scale",
+              "icon": "ic-check",
               "cap": "データの形を自動で検証できる"
             },
             {
-              "icon": "ic-file",
+              "icon": "ic-list",
               "cap": "必須項目・型・制約を明文化できる"
             },
             {
-              "icon": "ic-network",
+              "icon": "ic-database",
               "cap": "DBやAPI、設定ファイルなど幅広く使う"
             }
           ],
@@ -3431,13 +3310,11 @@ module.exports = {
                 {
                   "name": "XML",
                   "desc": "タグで構造を表現するデータ形式。DTD/XSDというスキーマ機構を持つ。",
-                  "icon": "ic-layers",
                   "page": 54
                 },
                 {
                   "name": "OpenAPI",
                   "desc": "APIの入出力の形をスキーマとして定義する仕様。",
-                  "icon": "ic-file",
                   "page": 65
                 }
               ]
@@ -3454,7 +3331,7 @@ module.exports = {
           "id": "api",
           "page": 61,
           "term": "API",
-          "subtitle": "「画面を見せずに機能だけ貸す」ための窓口",
+          "reading": "エーピーアイ",
           "category": "API",
           "icon": "ic-network",
           "oneline": "アプリやサービス同士が、決められたルールに沿ってやり取りするための\"窓口\"。",
@@ -3483,15 +3360,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-network",
+              "icon": "ic-puzzle",
               "cap": "他社のサービスの機能をそのまま使える"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-swap",
               "cap": "決まったルールでデータだけをやり取り"
             },
             {
-              "icon": "ic-cloud",
+              "icon": "ic-link",
               "cap": "フロントとサーバーの間の窓口にもなる"
             }
           ],
@@ -3503,19 +3380,16 @@ module.exports = {
                 {
                   "name": "Endpoint",
                   "desc": "APIの窓口の中の、個別の入り口となるURL。",
-                  "icon": "ic-network",
                   "page": 62
                 },
                 {
                   "name": "REST",
                   "desc": "APIの設計スタイルの1つ。URLと動詞で操作を表す。",
-                  "icon": "ic-server",
                   "page": 63
                 },
                 {
                   "name": "GraphQL",
                   "desc": "必要なデータだけを1回で取得できるAPIの仕組み。",
-                  "icon": "ic-cube",
                   "page": 64
                 }
               ]
@@ -3526,7 +3400,7 @@ module.exports = {
           "id": "endpoint",
           "page": 62,
           "term": "Endpoint",
-          "subtitle": "APIという建物の、それぞれの「入り口」",
+          "reading": "エンドポイント",
           "category": "API",
           "icon": "ic-network",
           "oneline": "APIの中で、特定の機能やデータにアクセスするための個別のURL。",
@@ -3555,15 +3429,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-network",
+              "icon": "ic-split",
               "cap": "機能ごとにURLを分けて設計できる"
             },
             {
-              "icon": "ic-file",
+              "icon": "ic-list",
               "cap": "/users や /posts のような単位で管理"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-book",
               "cap": "ドキュメントやログでも扱いやすい単位"
             }
           ],
@@ -3575,19 +3449,16 @@ module.exports = {
                 {
                   "name": "API",
                   "desc": "アプリ同士がやり取りするための窓口全体。",
-                  "icon": "ic-network",
                   "page": 61
                 },
                 {
                   "name": "slug",
                   "desc": "URLの一部に使われる、人にも読める識別子。",
-                  "icon": "ic-pen",
                   "page": 67
                 },
                 {
                   "name": "REST",
                   "desc": "URLと動詞で操作を表現するAPI設計スタイル。",
-                  "icon": "ic-server",
                   "page": 63
                 }
               ]
@@ -3598,7 +3469,7 @@ module.exports = {
           "id": "rest",
           "page": 63,
           "term": "REST",
-          "subtitle": "URLと動詞だけで意味を伝えるAPI設計の作法",
+          "reading": "レスト",
           "category": "API",
           "icon": "ic-server",
           "oneline": "URL（名詞）とHTTPメソッド（動詞）の組み合わせで、操作の意味を表現するAPI設計のスタイル。",
@@ -3627,15 +3498,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-server",
+              "icon": "ic-list",
               "cap": "URLをリソース（名詞）だけで設計できる"
             },
             {
-              "icon": "ic-network",
+              "icon": "ic-swap",
               "cap": "HTTPメソッドで操作の意味を表現"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-check",
               "cap": "設計者が変わってもルールがブレにくい"
             }
           ],
@@ -3647,7 +3518,6 @@ module.exports = {
                 {
                   "name": "GraphQL",
                   "desc": "必要なデータだけを1つのエンドポイントで取得できる設計。",
-                  "icon": "ic-cube",
                   "page": 64
                 }
               ]
@@ -3658,13 +3528,11 @@ module.exports = {
                 {
                   "name": "Endpoint",
                   "desc": "RESTのURL設計の対象になる、個々の入り口。",
-                  "icon": "ic-network",
                   "page": 62
                 },
                 {
                   "name": "Status Code",
                   "desc": "REST APIのレスポンスで結果を伝える3桁の数字。",
-                  "icon": "ic-monitor",
                   "page": 66
                 }
               ]
@@ -3675,7 +3543,7 @@ module.exports = {
           "id": "graphql",
           "page": 64,
           "term": "GraphQL",
-          "subtitle": "「欲しいデータだけちょうだい」を叶えるAPIの仕組み",
+          "reading": "グラフキューエル",
           "category": "API",
           "icon": "ic-cube",
           "oneline": "欲しい項目だけを指定して、1回のリクエストでまとめて取得できるAPIの問い合わせ言語。",
@@ -3704,15 +3572,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-cube",
+              "icon": "ic-filter",
               "cap": "必要な項目だけを指定して取得できる"
             },
             {
-              "icon": "ic-network",
+              "icon": "ic-layers",
               "cap": "複数のリソースを1回のリクエストで取得"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-check",
               "cap": "型（スキーマ）でデータの形が保証される"
             }
           ],
@@ -3724,7 +3592,6 @@ module.exports = {
                 {
                   "name": "REST",
                   "desc": "URLと動詞で操作を表現するAPI設計スタイル。",
-                  "icon": "ic-server",
                   "page": 63
                 }
               ]
@@ -3735,7 +3602,6 @@ module.exports = {
                 {
                   "name": "スキーマ（Schema）",
                   "desc": "GraphQLでもデータの形を定義するために使われる。",
-                  "icon": "ic-scale",
                   "page": 56
                 }
               ]
@@ -3746,7 +3612,7 @@ module.exports = {
           "id": "openapi",
           "page": 65,
           "term": "OpenAPI",
-          "subtitle": "「口頭で伝えていたAPI仕様」をファイルにした約束事",
+          "reading": "オープンエーピーアイ",
           "category": "API",
           "icon": "ic-file",
           "oneline": "APIのエンドポイントや入出力の形を、YAMLやJSONで記述する仕様のフォーマット。",
@@ -3783,7 +3649,7 @@ module.exports = {
               "cap": "Swagger UIなどでブラウザから確認できる"
             },
             {
-              "icon": "ic-package",
+              "icon": "ic-gear",
               "cap": "モックサーバーやクライアントコードを自動生成"
             }
           ],
@@ -3795,13 +3661,11 @@ module.exports = {
                 {
                   "name": "API",
                   "desc": "OpenAPIはこのAPIの仕様を記述するためのフォーマット。",
-                  "icon": "ic-network",
                   "page": 61
                 },
                 {
                   "name": "スキーマ（Schema）",
                   "desc": "OpenAPIの中でリクエスト・レスポンスの形を定義する仕組み。",
-                  "icon": "ic-scale",
                   "page": 56
                 }
               ]
@@ -3812,7 +3676,7 @@ module.exports = {
           "id": "status_code",
           "page": 66,
           "term": "Status Code",
-          "subtitle": "サーバーが返す「結果の一言」を数字にしたもの",
+          "reading": "ステータスコード",
           "category": "API",
           "icon": "ic-monitor",
           "oneline": "リクエストの結果が成功か失敗か、失敗ならどんな理由かを伝える3桁の数字。",
@@ -3841,15 +3705,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-monitor",
+              "icon": "ic-check",
               "cap": "成功／失敗を数字だけで機械的に判定"
             },
             {
-              "icon": "ic-network",
+              "icon": "ic-search",
               "cap": "404や500など原因の見当がつく"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-split",
               "cap": "フロント側で分岐処理を書きやすい"
             }
           ],
@@ -3861,7 +3725,6 @@ module.exports = {
                 {
                   "name": "REST",
                   "desc": "Status CodeはREST APIのレスポンスで結果を伝える手段。",
-                  "icon": "ic-server",
                   "page": 63
                 }
               ]
@@ -3872,7 +3735,7 @@ module.exports = {
           "id": "slug",
           "page": 67,
           "term": "slug",
-          "subtitle": "URLの中に生きる、人が読める識別子",
+          "reading": "スラッグ",
           "category": "API",
           "icon": "ic-pen",
           "oneline": "記事やページを識別するために使う、URLに埋め込める短い文字列（例: /posts/how-to-use-docker）。",
@@ -3901,15 +3764,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-pen",
+              "icon": "ic-eye",
               "cap": "URLに人が読める文字列を埋め込める"
             },
             {
-              "icon": "ic-network",
+              "icon": "ic-tag",
               "cap": "Endpointの一部として識別子に使える"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-chart",
               "cap": "SEOやシェア時の見た目が改善する"
             }
           ],
@@ -3921,7 +3784,6 @@ module.exports = {
                 {
                   "name": "Endpoint",
                   "desc": "slugはエンドポイントのURLの一部として使われることが多い。",
-                  "icon": "ic-network",
                   "page": 62
                 }
               ]
@@ -3938,7 +3800,7 @@ module.exports = {
           "id": "grpc",
           "page": 71,
           "term": "gRPC",
-          "subtitle": "サーバー同士の会話をHTTPより速く・厳密にする通信方式",
+          "reading": "ジーアールピーシー",
           "category": "通信プロトコル",
           "icon": "ic-rocket",
           "oneline": "Googleが開発した、サーバー同士の内部通信を高速かつ型安全に行うための通信の仕組み。",
@@ -3967,15 +3829,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-rocket",
+              "icon": "ic-bolt",
               "cap": "バイナリ形式で高速に通信できる"
             },
             {
-              "icon": "ic-server",
+              "icon": "ic-network",
               "cap": "マイクロサービス間の通信に向いている"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-code",
               "cap": "スキーマ（型定義）から複数言語のコードを生成"
             }
           ],
@@ -3987,13 +3849,11 @@ module.exports = {
                 {
                   "name": "REST",
                   "desc": "URLと動詞で操作を表現する、人にも読みやすいAPI設計。",
-                  "icon": "ic-server",
                   "page": 63
                 },
                 {
                   "name": "スキーマ（Schema）",
                   "desc": "gRPCも通信するデータの形をスキーマとして定義する。",
-                  "icon": "ic-scale",
                   "page": 56
                 }
               ]
@@ -4004,7 +3864,7 @@ module.exports = {
           "id": "websocket",
           "page": 72,
           "term": "WebSocket",
-          "subtitle": "「聞かれるまで話せない」HTTPの壁を壊した通信方式",
+          "reading": "ウェブソケット",
           "category": "通信プロトコル",
           "icon": "ic-network",
           "oneline": "一度接続を確立したら、サーバーとクライアントが双方向にいつでもデータを送り合える通信の仕組み。",
@@ -4033,15 +3893,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-network",
+              "icon": "ic-swap",
               "cap": "接続したまま双方向にやり取りできる"
             },
             {
-              "icon": "ic-clock",
+              "icon": "ic-sync",
               "cap": "リアルタイムに近い速さで更新が届く"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-bolt",
               "cap": "ポーリングに比べてサーバー負荷を抑えられる"
             }
           ],
@@ -4053,13 +3913,11 @@ module.exports = {
                 {
                   "name": "Pub/Sub",
                   "desc": "変化があった相手に自動で知らせる、より広い仕組み。",
-                  "icon": "ic-layers",
                   "page": 74
                 },
                 {
                   "name": "Webhook",
                   "desc": "こちらもイベント発生時に通知する仕組みだが、通信の形が異なる。",
-                  "icon": "ic-cloud",
                   "page": 73
                 }
               ]
@@ -4070,7 +3928,7 @@ module.exports = {
           "id": "webhook",
           "page": 73,
           "term": "Webhook",
-          "subtitle": "「向こうから電話がかかってくる」通知の仕組み",
+          "reading": "ウェブフック",
           "category": "通信プロトコル",
           "icon": "ic-cloud",
           "oneline": "サービス側で何かが起きたときに、登録しておいたURLへ自動でリクエストを送ってくれる仕組み。",
@@ -4099,15 +3957,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-cloud",
+              "icon": "ic-send",
               "cap": "外部サービスからの通知を受け取れる"
             },
             {
-              "icon": "ic-clock",
+              "icon": "ic-bolt",
               "cap": "ポーリングよりリアルタイムに近い"
             },
             {
-              "icon": "ic-network",
+              "icon": "ic-gear",
               "cap": "決済・デプロイ通知など幅広く使われる"
             }
           ],
@@ -4119,13 +3977,11 @@ module.exports = {
                 {
                   "name": "Pub/Sub",
                   "desc": "Webhookと同じく通知の仕組みだが、間に仲介役を挟む点が異なる。",
-                  "icon": "ic-layers",
                   "page": 74
                 },
                 {
                   "name": "Endpoint",
                   "desc": "Webhookの通知を受け取るための窓口として自分のAPIに用意する。",
-                  "icon": "ic-network",
                   "page": 62
                 }
               ]
@@ -4136,7 +3992,7 @@ module.exports = {
           "id": "pubsub",
           "page": 74,
           "term": "Pub/Sub",
-          "subtitle": "送り手と受け手を「知り合わせない」通知の仕組み",
+          "reading": "パブサブ",
           "category": "通信プロトコル",
           "icon": "ic-layers",
           "oneline": "発行者（Publisher）がメッセージを送り、購読者（Subscriber）が仲介役を通じて受け取る非同期の通信モデル。",
@@ -4165,15 +4021,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-layers",
+              "icon": "ic-split",
               "cap": "送信元と受信先を直接つながずに済む"
             },
             {
-              "icon": "ic-network",
+              "icon": "ic-puzzle",
               "cap": "受信先を後から自由に追加できる"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-send",
               "cap": "複数のサービスへの同時通知に向いている"
             }
           ],
@@ -4185,13 +4041,11 @@ module.exports = {
                 {
                   "name": "Webhook",
                   "desc": "こちらは送信元が受信先を直接知っている、1対1に近い通知方式。",
-                  "icon": "ic-cloud",
                   "page": 73
                 },
                 {
                   "name": "WebSocket",
                   "desc": "こちらは接続を保ったまま双方向にやり取りする通信方式。",
-                  "icon": "ic-network",
                   "page": 72
                 }
               ]
@@ -4208,7 +4062,7 @@ module.exports = {
           "id": "database",
           "page": 81,
           "term": "Database",
-          "subtitle": "データを「ファイルの海」から救い出した仕組み",
+          "reading": "データベース",
           "category": "データベース・基礎",
           "icon": "ic-server",
           "oneline": "データを一箇所にまとめて、複数人で安全に読み書きでき、検索しやすく保存する仕組み。",
@@ -4237,15 +4091,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-clock",
+              "icon": "ic-bolt",
               "cap": "大量データも高速に検索できる"
             },
             {
-              "icon": "ic-laptop",
+              "icon": "ic-users",
               "cap": "複数人で同時に読み書きできる"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-check",
               "cap": "ルールでデータの整合性を守れる"
             }
           ],
@@ -4257,13 +4111,11 @@ module.exports = {
                 {
                   "name": "RDB",
                   "desc": "表同士を関係で結びつけて管理する方式。",
-                  "icon": "ic-layers",
                   "page": 82
                 },
                 {
                   "name": "NoSQL",
                   "desc": "表の形にこだわらない柔軟なデータベース。",
-                  "icon": "ic-network",
                   "page": 84
                 }
               ]
@@ -4274,7 +4126,6 @@ module.exports = {
                 {
                   "name": "Table",
                   "desc": "データを行と列で整理する表そのもの。",
-                  "icon": "ic-file",
                   "page": 85
                 }
               ]
@@ -4285,7 +4136,7 @@ module.exports = {
           "id": "rdb",
           "page": 82,
           "term": "RDB",
-          "subtitle": "表と表の「関係」でデータを整理する考え方",
+          "reading": "アールディービー",
           "category": "データベース・基礎",
           "icon": "ic-layers",
           "oneline": "行と列を持つ「表（テーブル）」同士を関連付けてデータを管理する方式。",
@@ -4314,15 +4165,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-layers",
+              "icon": "ic-split",
               "cap": "表を分けて重複を減らせる"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-shield",
               "cap": "関係のルールでデータを守れる"
             },
             {
-              "icon": "ic-server",
+              "icon": "ic-list",
               "cap": "複雑な業務データも整理できる"
             }
           ],
@@ -4334,13 +4185,11 @@ module.exports = {
                 {
                   "name": "RDBMS",
                   "desc": "RDBの考え方を実装したソフトウェア。",
-                  "icon": "ic-cube",
                   "page": 83
                 },
                 {
                   "name": "NoSQL",
                   "desc": "表の形にこだわらない別のアプローチ。",
-                  "icon": "ic-network",
                   "page": 84
                 }
               ]
@@ -4351,13 +4200,11 @@ module.exports = {
                 {
                   "name": "Table",
                   "desc": "行と列でデータを整理する表。",
-                  "icon": "ic-file",
                   "page": 85
                 },
                 {
                   "name": "Foreign Key",
                   "desc": "表同士の関係を表すキー。",
-                  "icon": "ic-scale",
                   "page": 88
                 }
               ]
@@ -4368,7 +4215,7 @@ module.exports = {
           "id": "rdbms",
           "page": 83,
           "term": "RDBMS",
-          "subtitle": "RDBの考え方を実際に動かすソフトウェア",
+          "reading": "アールディービーエムエス",
           "category": "データベース・基礎",
           "icon": "ic-cube",
           "oneline": "RDB（関係データベース）の考え方を実装し、実際にデータを保存・操作できるようにするソフトウェア。",
@@ -4397,11 +4244,11 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-server",
+              "icon": "ic-bolt",
               "cap": "RDBの仕組みをすぐ使い始められる"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-gear",
               "cap": "トランザクションや制約を任せられる"
             },
             {
@@ -4417,7 +4264,6 @@ module.exports = {
                 {
                   "name": "RDB",
                   "desc": "表同士を関係で結びつけるデータの考え方。",
-                  "icon": "ic-layers",
                   "page": 82
                 }
               ]
@@ -4428,7 +4274,6 @@ module.exports = {
                 {
                   "name": "SQL",
                   "desc": "RDBMSに指示を出すための共通言語。",
-                  "icon": "ic-pen",
                   "page": 90
                 }
               ]
@@ -4438,13 +4283,11 @@ module.exports = {
               "items": [
                 {
                   "name": "MySQL",
-                  "desc": "世界で広く使われるRDBMS製品。",
-                  "icon": "ic-server"
+                  "desc": "世界で広く使われるRDBMS製品。"
                 },
                 {
                   "name": "PostgreSQL",
-                  "desc": "機能が豊富なRDBMS製品。",
-                  "icon": "ic-server"
+                  "desc": "機能が豊富なRDBMS製品。"
                 }
               ]
             }
@@ -4454,7 +4297,7 @@ module.exports = {
           "id": "nosql",
           "page": 84,
           "term": "NoSQL",
-          "subtitle": "「表」の形にこだわらないデータベースの総称",
+          "reading": "ノーエスキューエル",
           "category": "データベース・基礎",
           "icon": "ic-network",
           "oneline": "テーブルの形に縛られず、柔軟な形でデータを保存できるデータベースの総称。",
@@ -4483,15 +4326,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-layers",
+              "icon": "ic-database",
               "cap": "形の違うデータも柔軟に保存できる"
             },
             {
-              "icon": "ic-cloud",
+              "icon": "ic-network",
               "cap": "大量データを分散して扱える"
             },
             {
-              "icon": "ic-rocket",
+              "icon": "ic-bolt",
               "cap": "読み書きを高速化しやすい"
             }
           ],
@@ -4503,13 +4346,11 @@ module.exports = {
                 {
                   "name": "RDB",
                   "desc": "表同士を関係で結びつけるデータの考え方。",
-                  "icon": "ic-layers",
                   "page": 82
                 },
                 {
                   "name": "RDBMS",
                   "desc": "RDBを実装したソフトウェア。",
-                  "icon": "ic-cube",
                   "page": 83
                 }
               ]
@@ -4519,13 +4360,11 @@ module.exports = {
               "items": [
                 {
                   "name": "Redis",
-                  "desc": "高速なキー・バリュー型データベース。",
-                  "icon": "ic-cloud"
+                  "desc": "高速なキー・バリュー型データベース。"
                 },
                 {
                   "name": "MongoDB",
-                  "desc": "柔軟なドキュメント型データベース。",
-                  "icon": "ic-cloud"
+                  "desc": "柔軟なドキュメント型データベース。"
                 }
               ]
             }
@@ -4535,7 +4374,7 @@ module.exports = {
           "id": "table",
           "page": 85,
           "term": "Table",
-          "subtitle": "データを行と列で整理する「表」そのもの",
+          "reading": "テーブル",
           "category": "データベース・構造",
           "icon": "ic-file",
           "oneline": "データを行（レコード）と列（カラム）に整理して格納する、データベースの基本単位。",
@@ -4564,15 +4403,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-layers",
+              "icon": "ic-list",
               "cap": "同じ形式でデータを並べられる"
             },
             {
-              "icon": "ic-rocket",
+              "icon": "ic-search",
               "cap": "列名で欲しいデータをすぐ取り出せる"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-check",
               "cap": "型やルールでデータの形を保てる"
             }
           ],
@@ -4584,19 +4423,16 @@ module.exports = {
                 {
                   "name": "Record",
                   "desc": "テーブルの1行分のデータ。",
-                  "icon": "ic-package",
                   "page": 86
                 },
                 {
                   "name": "Primary Key",
                   "desc": "1件を一意に特定する値。",
-                  "icon": "ic-wheel",
                   "page": 87
                 },
                 {
                   "name": "Foreign Key",
                   "desc": "他の表とつながりを持たせるキー。",
-                  "icon": "ic-scale",
                   "page": 88
                 }
               ]
@@ -4607,7 +4443,7 @@ module.exports = {
           "id": "record",
           "page": 86,
           "term": "Record",
-          "subtitle": "テーブルに積まれる「1件分」のデータ",
+          "reading": "レコード",
           "category": "データベース・構造",
           "icon": "ic-package",
           "oneline": "テーブルの中の1行分、つまり「1件分」としてまとまったデータ。",
@@ -4640,11 +4476,11 @@ module.exports = {
               "cap": "1件分のデータをまとめて扱える"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-gear",
               "cap": "行単位で追加・更新・削除できる"
             },
             {
-              "icon": "ic-wheel",
+              "icon": "ic-target",
               "cap": "主キーで1件を確実に特定できる"
             }
           ],
@@ -4656,13 +4492,11 @@ module.exports = {
                 {
                   "name": "Table",
                   "desc": "レコードが積まれる表そのもの。",
-                  "icon": "ic-file",
                   "page": 85
                 },
                 {
                   "name": "Primary Key",
                   "desc": "レコードを一意に特定する値。",
-                  "icon": "ic-wheel",
                   "page": 87
                 }
               ]
@@ -4673,7 +4507,7 @@ module.exports = {
           "id": "primary-key",
           "page": 87,
           "term": "Primary Key",
-          "subtitle": "「この行は絶対にこれ」と言い切るための印",
+          "reading": "プライマリーキー",
           "category": "データベース・構造",
           "icon": "ic-wheel",
           "oneline": "テーブルの中で1件のレコードを一意に特定するための、重複しない値。",
@@ -4702,15 +4536,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-wheel",
+              "icon": "ic-target",
               "cap": "常に1件だけを正確に特定できる"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-shield",
               "cap": "重複や誤更新を防げる"
             },
             {
-              "icon": "ic-network",
+              "icon": "ic-link",
               "cap": "他の表からも安全に参照できる"
             }
           ],
@@ -4722,13 +4556,11 @@ module.exports = {
                 {
                   "name": "Record",
                   "desc": "主キーで特定される1件分のデータ。",
-                  "icon": "ic-package",
                   "page": 86
                 },
                 {
                   "name": "Foreign Key",
                   "desc": "主キーを他の表から参照するキー。",
-                  "icon": "ic-scale",
                   "page": 88
                 }
               ]
@@ -4739,7 +4571,7 @@ module.exports = {
           "id": "foreign-key",
           "page": 88,
           "term": "Foreign Key",
-          "subtitle": "親を消したら子供が迷子になる、を防ぐ仕組み",
+          "reading": "フォーリンキー",
           "category": "データベース・構造",
           "icon": "ic-scale",
           "oneline": "別のテーブルの主キーを参照して、テーブル同士の関係を表す値。",
@@ -4768,15 +4600,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-network",
+              "icon": "ic-link",
               "cap": "表同士のつながりをDBが保証する"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-gear",
               "cap": "親を消すときの挙動を制御できる"
             },
             {
-              "icon": "ic-server",
+              "icon": "ic-shield",
               "cap": "存在しないデータへの参照を防げる"
             }
           ],
@@ -4788,13 +4620,11 @@ module.exports = {
                 {
                   "name": "Table",
                   "desc": "キーで関係づけられる表同士。",
-                  "icon": "ic-file",
                   "page": 85
                 },
                 {
                   "name": "Primary Key",
                   "desc": "外部キーが参照する側のキー。",
-                  "icon": "ic-wheel",
                   "page": 87
                 }
               ]
@@ -4805,7 +4635,7 @@ module.exports = {
           "id": "db-index",
           "page": 89,
           "term": "Index",
-          "subtitle": "本の「索引」と同じ、検索を速くする仕組み",
+          "reading": "インデックス",
           "category": "データベース・構造",
           "icon": "ic-rocket",
           "oneline": "特定の列の検索を高速化するために作る、データの「索引」。",
@@ -4834,7 +4664,7 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-rocket",
+              "icon": "ic-bolt",
               "cap": "大量データでも検索が高速なまま"
             },
             {
@@ -4854,13 +4684,11 @@ module.exports = {
                 {
                   "name": "Table",
                   "desc": "インデックスが張られる表。",
-                  "icon": "ic-file",
                   "page": 85
                 },
                 {
                   "name": "Primary Key",
                   "desc": "通常は自動でインデックスが張られる。",
-                  "icon": "ic-wheel",
                   "page": 87
                 }
               ]
@@ -4871,7 +4699,7 @@ module.exports = {
           "id": "sql",
           "page": 90,
           "term": "SQL",
-          "subtitle": "データベースに話しかけるための共通言語",
+          "reading": "エスキューエル",
           "category": "データベース・操作",
           "icon": "ic-pen",
           "oneline": "データベースに対して、検索・追加・更新・削除を指示するための言語。",
@@ -4900,15 +4728,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-pen",
+              "icon": "ic-code",
               "cap": "共通の書き方でデータを操作できる"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-filter",
               "cap": "条件を指定して正確に絞り込める"
             },
             {
-              "icon": "ic-network",
+              "icon": "ic-book",
               "cap": "多くのDB製品で同じ知識が使える"
             }
           ],
@@ -4920,13 +4748,11 @@ module.exports = {
                 {
                   "name": "RDBMS",
                   "desc": "SQLで操作する対象のソフトウェア。",
-                  "icon": "ic-cube",
                   "page": 83
                 },
                 {
                   "name": "ORM",
                   "desc": "SQLを直接書かずに操作する仕組み。",
-                  "icon": "ic-layers",
                   "page": 91
                 }
               ]
@@ -4937,7 +4763,7 @@ module.exports = {
           "id": "orm",
           "page": 91,
           "term": "ORM",
-          "subtitle": "SQLを書かずにデータベースを操作する翻訳者",
+          "reading": "オーアールエム",
           "category": "データベース・操作",
           "icon": "ic-layers",
           "oneline": "プログラムのオブジェクトとテーブルを対応させ、SQLを直接書かずに操作できるようにする仕組み。",
@@ -4966,15 +4792,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-layers",
+              "icon": "ic-swap",
               "cap": "SQLを意識せずデータ操作できる"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-shield",
               "cap": "安全な形にSQLを組み立ててくれる"
             },
             {
-              "icon": "ic-rocket",
+              "icon": "ic-code",
               "cap": "コードの記述量を減らせる"
             }
           ],
@@ -4986,13 +4812,11 @@ module.exports = {
                 {
                   "name": "SQL",
                   "desc": "ORMが裏側で組み立てている言語。",
-                  "icon": "ic-pen",
                   "page": 90
                 },
                 {
                   "name": "RDBMS",
                   "desc": "ORMが最終的に操作するソフトウェア。",
-                  "icon": "ic-cube",
                   "page": 83
                 }
               ]
@@ -5003,7 +4827,7 @@ module.exports = {
           "id": "migration",
           "page": 92,
           "term": "Migration",
-          "subtitle": "DBの設計変更を「手作業SQL」から解放した仕組み",
+          "reading": "マイグレーション",
           "category": "データベース・運用",
           "icon": "ic-clock",
           "oneline": "テーブルの追加・変更などのDB設計変更を、コードの形で記録・管理する仕組み。",
@@ -5032,15 +4856,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-clock",
+              "icon": "ic-file",
               "cap": "変更履歴を時系列で管理できる"
             },
             {
-              "icon": "ic-laptop",
+              "icon": "ic-sync",
               "cap": "全環境に同じ変更を確実に反映できる"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-code",
               "cap": "変更をコードとしてレビューできる"
             }
           ],
@@ -5052,7 +4876,6 @@ module.exports = {
                 {
                   "name": "Seeder",
                   "desc": "確認用データを自動投入する仕組み。",
-                  "icon": "ic-package",
                   "page": 93
                 }
               ]
@@ -5063,7 +4886,6 @@ module.exports = {
                 {
                   "name": "RDBMS",
                   "desc": "マイグレーションで変更する対象。",
-                  "icon": "ic-cube",
                   "page": 83
                 }
               ]
@@ -5074,7 +4896,7 @@ module.exports = {
           "id": "seeder",
           "page": 93,
           "term": "Seeder",
-          "subtitle": "「動作確認用のデータ」を毎回手打ちしなくていい仕組み",
+          "reading": "シーダー",
           "category": "データベース・運用",
           "icon": "ic-package",
           "oneline": "開発・テスト用のダミーデータを、コードで自動的に投入する仕組み。",
@@ -5103,7 +4925,7 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-package",
+              "icon": "ic-database",
               "cap": "確認用データを一括で投入できる"
             },
             {
@@ -5111,7 +4933,7 @@ module.exports = {
               "cap": "環境構築の時間を短縮できる"
             },
             {
-              "icon": "ic-laptop",
+              "icon": "ic-users",
               "cap": "チームで同じデータを共有できる"
             }
           ],
@@ -5123,7 +4945,6 @@ module.exports = {
                 {
                   "name": "Migration",
                   "desc": "テーブルの構造そのものを変更する仕組み。",
-                  "icon": "ic-clock",
                   "page": 92
                 }
               ]
@@ -5134,7 +4955,7 @@ module.exports = {
           "id": "transaction",
           "page": 94,
           "term": "Transaction",
-          "subtitle": "「途中でやめる」ができない一連の処理をまとめる仕組み",
+          "reading": "トランザクション",
           "category": "データベース・運用",
           "icon": "ic-scale",
           "oneline": "複数の処理を「全部成功」か「全部やり直し」のどちらかにまとめる仕組み。",
@@ -5163,15 +4984,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-scale",
+              "icon": "ic-check",
               "cap": "全部成功か全部失敗かにできる"
             },
             {
-              "icon": "ic-server",
+              "icon": "ic-shield",
               "cap": "処理の途中で落ちても安全"
             },
             {
-              "icon": "ic-rocket",
+              "icon": "ic-package",
               "cap": "複数処理を1つの単位で扱える"
             }
           ],
@@ -5183,7 +5004,6 @@ module.exports = {
                 {
                   "name": "Lock",
                   "desc": "同時アクセスの衝突を防ぐ仕組み。",
-                  "icon": "ic-cube",
                   "page": 95
                 }
               ]
@@ -5194,7 +5014,6 @@ module.exports = {
                 {
                   "name": "RDBMS",
                   "desc": "トランザクションを保証するソフトウェア。",
-                  "icon": "ic-cube",
                   "page": 83
                 }
               ]
@@ -5205,7 +5024,7 @@ module.exports = {
           "id": "lock",
           "page": 95,
           "term": "Lock",
-          "subtitle": "「同時に触ると壊れる」を防ぐ、データの鍵",
+          "reading": "ロック",
           "category": "データベース・排他制御",
           "icon": "ic-cube",
           "oneline": "複数の処理が同じデータに同時にアクセスしたときの衝突を防ぐ仕組み。",
@@ -5234,15 +5053,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-cube",
+              "icon": "ic-lock",
               "cap": "同時に書き換えられるのを防げる"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-check",
               "cap": "在庫や残高の整合性を守れる"
             },
             {
-              "icon": "ic-clock",
+              "icon": "ic-list",
               "cap": "処理の順番を保証できる"
             }
           ],
@@ -5254,7 +5073,6 @@ module.exports = {
                 {
                   "name": "Transaction",
                   "desc": "複数の処理を1つの単位にまとめる仕組み。",
-                  "icon": "ic-scale",
                   "page": 94
                 }
               ]
@@ -5265,19 +5083,16 @@ module.exports = {
                 {
                   "name": "行ロック",
                   "desc": "更新中の1行だけをロックする方式。",
-                  "icon": "ic-file",
                   "page": 96
                 },
                 {
                   "name": "テーブルロック",
                   "desc": "テーブル全体をロックする方式。",
-                  "icon": "ic-layers",
                   "page": 97
                 },
                 {
                   "name": "デッドロック",
                   "desc": "ロック同士が待ち合って止まる状態。",
-                  "icon": "ic-network",
                   "page": 98
                 }
               ]
@@ -5288,7 +5103,7 @@ module.exports = {
           "id": "row-lock",
           "page": 96,
           "term": "行ロック",
-          "subtitle": "「その1行だけ」を貸し切るロック",
+          "reading": "ぎょうロック",
           "category": "データベース・排他制御",
           "icon": "ic-file",
           "oneline": "更新中の1行（レコード）だけをロックし、他の行はそのまま操作できるようにする仕組み。",
@@ -5317,15 +5132,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-file",
+              "icon": "ic-target",
               "cap": "該当の1行だけを貸し切れる"
             },
             {
-              "icon": "ic-rocket",
+              "icon": "ic-bolt",
               "cap": "他の行の処理は止めずに進められる"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-filter",
               "cap": "必要最小限の範囲だけ制御できる"
             }
           ],
@@ -5338,13 +5153,11 @@ module.exports = {
                 {
                   "name": "Lock",
                   "desc": "同時アクセスの衝突を防ぐ仕組み全般。",
-                  "icon": "ic-cube",
                   "page": 95
                 },
                 {
                   "name": "テーブルロック",
                   "desc": "表全体を対象にする粗いロック。",
-                  "icon": "ic-layers",
                   "page": 97
                 }
               ]
@@ -5355,7 +5168,6 @@ module.exports = {
           "id": "table-lock",
           "page": 97,
           "term": "テーブルロック",
-          "subtitle": "表まるごとを貸し切る、強力だが荒っぽいロック",
           "category": "データベース・排他制御",
           "icon": "ic-layers",
           "oneline": "テーブル全体をロックし、他の処理からの読み書きを丸ごと止める仕組み。",
@@ -5384,15 +5196,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-layers",
+              "icon": "ic-lock",
               "cap": "テーブル全体をまとめて制御できる"
             },
             {
-              "icon": "ic-server",
+              "icon": "ic-bolt",
               "cap": "大量データの一括更新に強い"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-gear",
               "cap": "用途に応じてロックの粒度を選べる"
             }
           ],
@@ -5405,13 +5217,11 @@ module.exports = {
                 {
                   "name": "行ロック",
                   "desc": "該当する行だけを対象にする細かいロック。",
-                  "icon": "ic-file",
                   "page": 96
                 },
                 {
                   "name": "Lock",
                   "desc": "同時アクセスの衝突を防ぐ仕組み全般。",
-                  "icon": "ic-cube",
                   "page": 95
                 }
               ]
@@ -5422,7 +5232,6 @@ module.exports = {
           "id": "deadlock",
           "page": 98,
           "term": "デッドロック",
-          "subtitle": "お互いが相手の鍵を待ち続けて、永遠に進めなくなる状態",
           "category": "データベース・排他制御",
           "icon": "ic-network",
           "oneline": "複数の処理が互いに相手のロック解放を待ち合って、どちらも先に進めなくなる状態。",
@@ -5451,7 +5260,7 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-network",
+              "icon": "ic-sync",
               "cap": "循環待ちの状態だと理解できる"
             },
             {
@@ -5459,7 +5268,7 @@ module.exports = {
               "cap": "タイムアウトで強制的に解消できる"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-list",
               "cap": "ロック順序を揃えて予防できる"
             }
           ],
@@ -5472,19 +5281,16 @@ module.exports = {
                 {
                   "name": "Lock",
                   "desc": "同時アクセスの衝突を防ぐ仕組み全般。",
-                  "icon": "ic-cube",
                   "page": 95
                 },
                 {
                   "name": "行ロック",
                   "desc": "デッドロックが起きうる細かいロック単位。",
-                  "icon": "ic-file",
                   "page": 96
                 },
                 {
                   "name": "テーブルロック",
                   "desc": "デッドロックが起きうる粗いロック単位。",
-                  "icon": "ic-layers",
                   "page": 97
                 }
               ]
@@ -5495,7 +5301,7 @@ module.exports = {
           "id": "n_plus_one",
           "page": 99,
           "term": "N+1",
-          "subtitle": "ループの中でクエリを撃ちまくってしまう大罪",
+          "reading": "エヌプラスワン",
           "category": "データベース・パフォーマンス",
           "icon": "ic-network",
           "oneline": "一覧表示のループの中で関連データを都度取得してしまい、件数分だけSQLが増えてしまう問題。",
@@ -5524,15 +5330,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-clock",
+              "icon": "ic-bolt",
               "cap": "一覧の表示が速くなる"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-chart",
               "cap": "件数が増えても劣化しにくい"
             },
             {
-              "icon": "ic-network",
+              "icon": "ic-search",
               "cap": "クエリ数を意識する癖がつく"
             }
           ],
@@ -5544,13 +5350,11 @@ module.exports = {
                 {
                   "name": "Cache",
                   "desc": "同じ問い合わせを何度もしないための一時保管。",
-                  "icon": "ic-clock",
                   "page": 100
                 },
                 {
                   "name": "コネクションプール",
                   "desc": "クエリが増えると接続数の上限にも響いてくる。",
-                  "icon": "ic-package",
                   "page": 115
                 }
               ]
@@ -5561,7 +5365,7 @@ module.exports = {
           "id": "cache",
           "page": 100,
           "term": "Cache",
-          "subtitle": "同じ答えを何度も計算しないための一時保管",
+          "reading": "キャッシュ",
           "category": "データベース・パフォーマンス",
           "icon": "ic-clock",
           "oneline": "一度取得・計算した結果を保存しておき、次回以降はそれを使い回して高速化する仕組み。",
@@ -5590,7 +5394,7 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-clock",
+              "icon": "ic-bolt",
               "cap": "応答が速くなる"
             },
             {
@@ -5610,13 +5414,11 @@ module.exports = {
                 {
                   "name": "Redis",
                   "desc": "メモリ上で動く、キャッシュの置き場所として定番。",
-                  "icon": "ic-cloud",
                   "page": 108
                 },
                 {
                   "name": "N+1",
                   "desc": "ループ内クエリの多発も、キャッシュで緩和できることがある。",
-                  "icon": "ic-network",
                   "page": 99
                 }
               ]
@@ -5627,7 +5429,7 @@ module.exports = {
           "id": "normalization",
           "page": 101,
           "term": "正規化",
-          "subtitle": "同じデータをあちこちに置かないための設計ルール",
+          "reading": "せいきか",
           "category": "データベース・設計",
           "icon": "ic-layers",
           "oneline": "データの重複を減らすために、テーブルを目的ごとに分割して整理する設計手法。",
@@ -5656,15 +5458,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-scale",
+              "icon": "ic-shield",
               "cap": "更新漏れを防げる"
             },
             {
-              "icon": "ic-layers",
+              "icon": "ic-check",
               "cap": "データの整合性を保ちやすい"
             },
             {
-              "icon": "ic-package",
+              "icon": "ic-database",
               "cap": "無駄な容量を減らせる"
             }
           ],
@@ -5676,7 +5478,6 @@ module.exports = {
                 {
                   "name": "非正規化",
                   "desc": "あえて重複を持たせて読み取りを速くする、正規化の逆張り。",
-                  "icon": "ic-rocket",
                   "page": 102
                 }
               ]
@@ -5687,7 +5488,6 @@ module.exports = {
                 {
                   "name": "ER図",
                   "desc": "正規化した結果のテーブル関係を絵にしたもの。",
-                  "icon": "ic-file",
                   "page": 103
                 }
               ]
@@ -5698,7 +5498,7 @@ module.exports = {
           "id": "denormalization",
           "page": 102,
           "term": "非正規化",
-          "subtitle": "「正しさ」より「速さ」を選ぶ設計判断",
+          "reading": "ひせいきか",
           "category": "データベース・設計",
           "icon": "ic-rocket",
           "oneline": "正規化で分けたデータをあえて重複させて持たせ、JOINを減らして読み取りを速くする設計。",
@@ -5727,15 +5527,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-clock",
+              "icon": "ic-bolt",
               "cap": "読み取りが速くなる"
             },
             {
-              "icon": "ic-layers",
+              "icon": "ic-gear",
               "cap": "JOINを減らせる"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-database",
               "cap": "集計値をキャッシュ的に持てる"
             }
           ],
@@ -5747,7 +5547,6 @@ module.exports = {
                 {
                   "name": "正規化",
                   "desc": "重複を減らし、更新漏れを防ぐための基本の設計手法。",
-                  "icon": "ic-layers",
                   "page": 101
                 }
               ]
@@ -5758,7 +5557,6 @@ module.exports = {
                 {
                   "name": "Cache",
                   "desc": "非正規化と同じく、読み取り速度を優先する手段のひとつ。",
-                  "icon": "ic-clock",
                   "page": 100
                 }
               ]
@@ -5769,7 +5567,7 @@ module.exports = {
           "id": "er_diagram",
           "page": 103,
           "term": "ER図",
-          "subtitle": "テーブル同士の関係を絵にした設計図",
+          "reading": "イーアールず",
           "category": "データベース・設計",
           "icon": "ic-file",
           "oneline": "テーブルの構造と、テーブル同士のつながり（1対多など）を図で表したもの。",
@@ -5798,15 +5596,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-file",
+              "icon": "ic-eye",
               "cap": "全体構造が一目でわかる"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-users",
               "cap": "設計レビューがしやすい"
             },
             {
-              "icon": "ic-layers",
+              "icon": "ic-search",
               "cap": "変更の影響範囲を追いやすい"
             }
           ],
@@ -5818,13 +5616,11 @@ module.exports = {
                 {
                   "name": "正規化",
                   "desc": "ER図に描かれるテーブル分割の考え方そのもの。",
-                  "icon": "ic-layers",
                   "page": 101
                 },
                 {
                   "name": "非正規化",
                   "desc": "正規化した図をあえて崩す判断も、ER図の上で検討する。",
-                  "icon": "ic-rocket",
                   "page": 102
                 }
               ]
@@ -5835,7 +5631,7 @@ module.exports = {
           "id": "uuid",
           "page": 104,
           "term": "UUID",
-          "subtitle": "連番じゃない「ぶつからないID」",
+          "reading": "ユーユーアイディー",
           "category": "データベース・設計",
           "icon": "ic-cube",
           "oneline": "ランダム性の高い長い文字列でIDを作り、複数の場所で同時に発行してもぶつからないようにする仕組み。",
@@ -5868,11 +5664,11 @@ module.exports = {
               "cap": "分散環境でも安全に採番できる"
             },
             {
-              "icon": "ic-cube",
+              "icon": "ic-lock",
               "cap": "連番から件数を推測されにくい"
             },
             {
-              "icon": "ic-clock",
+              "icon": "ic-tag",
               "cap": "登録前にIDを決めておける"
             }
           ],
@@ -5884,7 +5680,6 @@ module.exports = {
                 {
                   "name": "ER図",
                   "desc": "Primary KeyをUUIDにするかは設計段階で決めておきたい。",
-                  "icon": "ic-file",
                   "page": 103
                 }
               ]
@@ -5895,7 +5690,7 @@ module.exports = {
           "id": "mysql",
           "page": 105,
           "term": "MySQL",
-          "subtitle": "「とりあえずこれ」で選ばれ続ける定番RDB",
+          "reading": "マイエスキューエル",
           "category": "データベース・RDBMS",
           "icon": "ic-server",
           "oneline": "世界中の現場で長く使われてきた、実績重視のオープンソースリレーショナルデータベース。",
@@ -5924,15 +5719,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-server",
+              "icon": "ic-search",
               "cap": "困ったときの情報が見つかりやすい"
             },
             {
-              "icon": "ic-cloud",
+              "icon": "ic-globe",
               "cap": "幅広い環境でサポートされている"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-shield",
               "cap": "中〜大規模まで実績で安心できる"
             }
           ],
@@ -5944,13 +5739,11 @@ module.exports = {
                 {
                   "name": "PostgreSQL",
                   "desc": "機能の豊富さで選ばれることが多いRDB。",
-                  "icon": "ic-server",
                   "page": 106
                 },
                 {
                   "name": "SQLite",
                   "desc": "サーバー不要で、小規模用途に向くRDB。",
-                  "icon": "ic-laptop",
                   "page": 107
                 }
               ]
@@ -5961,7 +5754,7 @@ module.exports = {
           "id": "postgresql",
           "page": 106,
           "term": "PostgreSQL",
-          "subtitle": "「機能で選ぶ」ならこっち、なRDB",
+          "reading": "ポストグレスキューエル",
           "category": "データベース・RDBMS",
           "icon": "ic-server",
           "oneline": "JSON型や高度な検索機能など、機能の豊富さに定評があるオープンソースリレーショナルデータベース。",
@@ -5990,15 +5783,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-layers",
+              "icon": "ic-database",
               "cap": "複雑なデータ構造も保存できる"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-puzzle",
               "cap": "拡張機能で高度な検索ができる"
             },
             {
-              "icon": "ic-file",
+              "icon": "ic-book",
               "cap": "SQL標準準拠で挙動を追いやすい"
             }
           ],
@@ -6010,7 +5803,6 @@ module.exports = {
                 {
                   "name": "MySQL",
                   "desc": "情報量と実績の多さで選ばれることが多いRDB。",
-                  "icon": "ic-server",
                   "page": 105
                 }
               ]
@@ -6021,7 +5813,7 @@ module.exports = {
           "id": "sqlite",
           "page": 107,
           "term": "SQLite",
-          "subtitle": "サーバーいらずの「ファイル1つで完結するDB」",
+          "reading": "エスキューライト",
           "category": "データベース・RDBMS",
           "icon": "ic-laptop",
           "oneline": "サーバープロセスを立てず、1つのファイルとしてデータベースを扱える軽量なリレーショナルデータベース。",
@@ -6050,11 +5842,11 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-laptop",
+              "icon": "ic-rocket",
               "cap": "インストール不要ですぐ試せる"
             },
             {
-              "icon": "ic-clock",
+              "icon": "ic-laptop",
               "cap": "テスト・開発環境で高速に動く"
             },
             {
@@ -6070,13 +5862,11 @@ module.exports = {
                 {
                   "name": "MySQL",
                   "desc": "本番の複数人利用に向く定番RDB。",
-                  "icon": "ic-server",
                   "page": 105
                 },
                 {
                   "name": "PostgreSQL",
                   "desc": "機能重視ならこちらのRDB。",
-                  "icon": "ic-server",
                   "page": 106
                 }
               ]
@@ -6087,7 +5877,7 @@ module.exports = {
           "id": "redis",
           "page": 108,
           "term": "Redis",
-          "subtitle": "メモリ上で爆速に動く「その場しのぎ」の頼れる相棒",
+          "reading": "レディス",
           "category": "データベース・NoSQL",
           "icon": "ic-cloud",
           "oneline": "データをメモリ上に持つことで、キャッシュやセッション管理などを高速に処理できるインメモリ型データストア。",
@@ -6116,15 +5906,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-clock",
+              "icon": "ic-bolt",
               "cap": "読み書きが非常に速い"
             },
             {
-              "icon": "ic-server",
+              "icon": "ic-key",
               "cap": "キャッシュ・セッション管理に最適"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-chart",
               "cap": "ランキングなど独自の使い方ができる"
             }
           ],
@@ -6136,13 +5926,11 @@ module.exports = {
                 {
                   "name": "Cache",
                   "desc": "Redisはキャッシュの保存先として使われることが多い。",
-                  "icon": "ic-clock",
                   "page": 100
                 },
                 {
                   "name": "MongoDB",
                   "desc": "同じNoSQLでも、こちらはドキュメント指向データベース。",
-                  "icon": "ic-cloud",
                   "page": 109
                 }
               ]
@@ -6153,7 +5941,7 @@ module.exports = {
           "id": "mongodb",
           "page": 109,
           "term": "MongoDB",
-          "subtitle": "テーブルの形を決めずに突っ走れるNoSQL",
+          "reading": "モンゴディービー",
           "category": "データベース・NoSQL",
           "icon": "ic-cloud",
           "oneline": "スキーマ（テーブル構造）を事前に固定せず、JSONに近い形式でデータを柔軟に保存できるNoSQLデータベース。",
@@ -6182,15 +5970,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-layers",
+              "icon": "ic-puzzle",
               "cap": "構造が変わりやすいデータを扱いやすい"
             },
             {
-              "icon": "ic-file",
+              "icon": "ic-code",
               "cap": "JSON形式のデータをそのまま保存できる"
             },
             {
-              "icon": "ic-network",
+              "icon": "ic-chart",
               "cap": "水平方向にスケールさせやすい"
             }
           ],
@@ -6202,13 +5990,11 @@ module.exports = {
                 {
                   "name": "正規化",
                   "desc": "RDBの正規化とは対照的な、構造を固定しない考え方。",
-                  "icon": "ic-layers",
                   "page": 101
                 },
                 {
                   "name": "Redis",
                   "desc": "同じNoSQLでも、こちらはインメモリのキー・バリュー型。",
-                  "icon": "ic-clock",
                   "page": 108
                 }
               ]
@@ -6219,7 +6005,6 @@ module.exports = {
           "id": "view",
           "page": 110,
           "term": "View（ビュー）",
-          "subtitle": "よく使うSQLに名前をつけて「見た目だけのテーブル」にする",
           "category": "データベース・RDBMS",
           "icon": "ic-image",
           "oneline": "複雑なSELECT文をあらかじめ定義しておき、あたかも1つのテーブルであるかのように参照できるようにする仕組み。",
@@ -6248,15 +6033,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-file",
+              "icon": "ic-puzzle",
               "cap": "複雑なSQLを使い回せる"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-layers",
               "cap": "ロジックを1箇所にまとめられる"
             },
             {
-              "icon": "ic-image",
+              "icon": "ic-eye",
               "cap": "テーブルのように扱える"
             }
           ],
@@ -6268,13 +6053,11 @@ module.exports = {
                 {
                   "name": "Stored Procedure",
                   "desc": "SELECT文だけでなく、処理そのものをDB側に置く仕組み。",
-                  "icon": "ic-wheel",
                   "page": 111
                 },
                 {
                   "name": "Cache",
                   "desc": "重い集計を都度計算させたくない点はビューと共通。",
-                  "icon": "ic-clock",
                   "page": 100
                 }
               ]
@@ -6285,7 +6068,7 @@ module.exports = {
           "id": "stored_procedure",
           "page": 111,
           "term": "Stored Procedure",
-          "subtitle": "DBの中に処理そのものを住まわせる",
+          "reading": "ストアドプロシージャ",
           "category": "データベース・RDBMS",
           "icon": "ic-wheel",
           "oneline": "一連のSQL処理をDBサーバー側に手続きとして保存しておき、呼び出すだけで実行できるようにする仕組み。",
@@ -6314,15 +6097,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-network",
+              "icon": "ic-swap",
               "cap": "DBとアプリ間の通信を減らせる"
             },
             {
-              "icon": "ic-wheel",
+              "icon": "ic-server",
               "cap": "複雑な処理をDB内で完結できる"
             },
             {
-              "icon": "ic-layers",
+              "icon": "ic-users",
               "cap": "複数アプリから同じ処理を呼び出せる"
             }
           ],
@@ -6334,7 +6117,6 @@ module.exports = {
                 {
                   "name": "View（ビュー）",
                   "desc": "処理ではなく、SELECT文をまとめて名前をつける仕組み。",
-                  "icon": "ic-image",
                   "page": 110
                 }
               ]
@@ -6345,7 +6127,7 @@ module.exports = {
           "id": "acid",
           "page": 112,
           "term": "ACID",
-          "subtitle": "「データが壊れない」ことを約束する4つの性質",
+          "reading": "アシッド",
           "category": "データベース・トランザクション",
           "icon": "ic-scale",
           "oneline": "原子性・一貫性・独立性・永続性という、トランザクションが満たすべき4つの性質の頭文字。",
@@ -6374,15 +6156,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-scale",
+              "icon": "ic-check",
               "cap": "途中失敗しても中途半端にならない"
             },
             {
-              "icon": "ic-server",
+              "icon": "ic-shield",
               "cap": "同時アクセスでもデータが壊れない"
             },
             {
-              "icon": "ic-clock",
+              "icon": "ic-database",
               "cap": "障害後もデータが消えない"
             }
           ],
@@ -6394,13 +6176,11 @@ module.exports = {
                 {
                   "name": "MongoDB",
                   "desc": "ACIDの厳格さより、柔軟さ・速度を優先することが多い。",
-                  "icon": "ic-cloud",
                   "page": 109
                 },
                 {
                   "name": "Sharding",
                   "desc": "DBを分割すると、ACIDを保つ難易度も上がる。",
-                  "icon": "ic-layers",
                   "page": 113
                 }
               ]
@@ -6411,7 +6191,7 @@ module.exports = {
           "id": "sharding",
           "page": 113,
           "term": "Sharding",
-          "subtitle": "1つのDBじゃ抱えきれなくなったデータを「横に分ける」",
+          "reading": "シャーディング",
           "category": "データベース・スケーリング",
           "icon": "ic-layers",
           "oneline": "1つの大きなテーブル・DBを複数のサーバーに分割して、それぞれに一部のデータだけを持たせる仕組み。",
@@ -6440,15 +6220,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-layers",
+              "icon": "ic-server",
               "cap": "1台の限界を超えて扱える"
             },
             {
-              "icon": "ic-network",
+              "icon": "ic-split",
               "cap": "台数を増やして負荷分散できる"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-chart",
               "cap": "成長に合わせて拡張できる"
             }
           ],
@@ -6460,13 +6240,11 @@ module.exports = {
                 {
                   "name": "レプリケーション",
                   "desc": "分割ではなく複製で負荷を分散する、もう1つの手段。",
-                  "icon": "ic-network",
                   "page": 114
                 },
                 {
                   "name": "ACID",
                   "desc": "DBを分割するほど、この4性質を保つのが難しくなる。",
-                  "icon": "ic-scale",
                   "page": 112
                 }
               ]
@@ -6477,7 +6255,6 @@ module.exports = {
           "id": "replication",
           "page": 114,
           "term": "レプリケーション",
-          "subtitle": "同じデータを複数のDBにコピーして「読み取りを分散」",
           "category": "データベース・スケーリング",
           "icon": "ic-network",
           "oneline": "1つのDBのデータを別のDBサーバーに複製し続け、読み取りアクセスなどを分散させる仕組み。",
@@ -6506,15 +6283,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-network",
+              "icon": "ic-split",
               "cap": "読み取りアクセスを分散できる"
             },
             {
-              "icon": "ic-server",
+              "icon": "ic-shield",
               "cap": "1台が落ちても他で継続できる"
             },
             {
-              "icon": "ic-clock",
+              "icon": "ic-undo",
               "cap": "バックアップとしても使える"
             }
           ],
@@ -6526,7 +6303,6 @@ module.exports = {
                 {
                   "name": "Sharding",
                   "desc": "複製ではなく分割で負荷を分散する、もう1つの手段。",
-                  "icon": "ic-layers",
                   "page": 113
                 }
               ]
@@ -6537,7 +6313,6 @@ module.exports = {
           "id": "connection_pool",
           "page": 115,
           "term": "コネクションプール",
-          "subtitle": "DBとの「つなぎっぱなし」の回線をみんなで使い回す",
           "category": "データベース・パフォーマンス",
           "icon": "ic-package",
           "oneline": "DBへの接続をあらかじめ複数用意してプールしておき、リクエストごとに使い回すことで接続のオーバーヘッドを減らす仕組み。",
@@ -6570,11 +6345,11 @@ module.exports = {
               "cap": "接続確立の時間を節約できる"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-gear",
               "cap": "同時接続数を制御しやすい"
             },
             {
-              "icon": "ic-server",
+              "icon": "ic-shield",
               "cap": "高負荷時も安定して捌ける"
             }
           ],
@@ -6586,13 +6361,11 @@ module.exports = {
                 {
                   "name": "N+1",
                   "desc": "クエリ数が増えるほど、接続の使い回し方も重要になる。",
-                  "icon": "ic-network",
                   "page": 99
                 },
                 {
                   "name": "Cache",
                   "desc": "接続や問い合わせそのものを減らす、もう1つの手段。",
-                  "icon": "ic-clock",
                   "page": 100
                 }
               ]
@@ -6603,7 +6376,6 @@ module.exports = {
           "id": "dump",
           "page": 116,
           "term": "ダンプ（Dump）",
-          "subtitle": "データベースの「中身ごと書き出し」",
           "category": "データベース・運用",
           "icon": "ic-file",
           "oneline": "テーブルの定義やデータの中身を、ファイルとして丸ごと書き出すこと（またはそのファイル）。",
@@ -6637,11 +6409,11 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-package",
+              "icon": "ic-file",
               "cap": "DBのスナップショットをファイルにできる"
             },
             {
-              "icon": "ic-clock",
+              "icon": "ic-undo",
               "cap": "障害時にバックアップから戻せる"
             },
             {
@@ -6657,13 +6429,11 @@ module.exports = {
                 {
                   "name": "Migration",
                   "desc": "スキーマ変更をコードとして管理する仕組み。",
-                  "icon": "ic-file",
                   "page": 92
                 },
                 {
                   "name": "Seeder",
                   "desc": "初期データやテスト用データを流し込む仕組み。",
-                  "icon": "ic-package",
                   "page": 93
                 }
               ]
@@ -6680,7 +6450,7 @@ module.exports = {
           "id": "html",
           "page": 121,
           "term": "HTML",
-          "subtitle": "Webページの骨組みを作るマークアップ言語",
+          "reading": "エイチティーエムエル",
           "category": "フロントエンド・基礎技術",
           "icon": "ic-file",
           "oneline": "見出しや段落、画像などの「要素」を並べて、Webページの構造を作るための言語。",
@@ -6709,15 +6479,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-layers",
+              "icon": "ic-list",
               "cap": "見出しや段落を意味づけできる"
             },
             {
-              "icon": "ic-network",
+              "icon": "ic-link",
               "cap": "リンクで文書同士をつなげる"
             },
             {
-              "icon": "ic-monitor",
+              "icon": "ic-globe",
               "cap": "ブラウザさえあれば誰でも見られる"
             }
           ],
@@ -6729,20 +6499,17 @@ module.exports = {
                 {
                   "name": "CSS",
                   "desc": "HTMLの見た目を整える言語。",
-                  "page": 122,
-                  "icon": "ic-image"
+                  "page": 122
                 },
                 {
                   "name": "JavaScript",
                   "desc": "HTMLに動きを与える言語。",
-                  "page": 123,
-                  "icon": "ic-wheel"
+                  "page": 123
                 },
                 {
                   "name": "DOM",
                   "desc": "HTMLをJSから操作できる形にしたもの。",
-                  "page": 127,
-                  "icon": "ic-network"
+                  "page": 127
                 }
               ]
             }
@@ -6752,7 +6519,7 @@ module.exports = {
           "id": "css",
           "page": 122,
           "term": "CSS",
-          "subtitle": "見た目を文章の中身から切り離した言語",
+          "reading": "シーエスエス",
           "category": "フロントエンド・基礎技術",
           "icon": "ic-image",
           "oneline": "色・余白・レイアウトなど「見た目」だけをHTMLから分離して指定する言語。",
@@ -6781,15 +6548,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-image",
+              "icon": "ic-gear",
               "cap": "色・余白・フォントを一括管理できる"
             },
             {
-              "icon": "ic-monitor",
+              "icon": "ic-mobile",
               "cap": "画面サイズに応じて見た目を変えられる"
             },
             {
-              "icon": "ic-wheel",
+              "icon": "ic-monitor",
               "cap": "アニメーションも表現できる"
             }
           ],
@@ -6801,14 +6568,12 @@ module.exports = {
                 {
                   "name": "HTML",
                   "desc": "CSSが見た目を整える対象の文書構造。",
-                  "page": 121,
-                  "icon": "ic-file"
+                  "page": 121
                 },
                 {
                   "name": "CSSフレームワーク",
                   "desc": "よく使うCSSをあらかじめ用意した道具箱。",
-                  "page": 141,
-                  "icon": "ic-package"
+                  "page": 141
                 }
               ]
             }
@@ -6818,7 +6583,7 @@ module.exports = {
           "id": "javascript",
           "page": 123,
           "term": "JavaScript",
-          "subtitle": "ブラウザに「動き」を与えたプログラミング言語",
+          "reading": "ジャバスクリプト",
           "category": "フロントエンド・基礎技術",
           "icon": "ic-wheel",
           "oneline": "Webページ内で計算や画面操作を行い、ユーザー操作に応じて動的に変化させる言語。",
@@ -6847,15 +6612,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-wheel",
+              "icon": "ic-bolt",
               "cap": "クリックや入力に反応できる"
             },
             {
-              "icon": "ic-layers",
+              "icon": "ic-sync",
               "cap": "ページの一部だけ書き換えられる"
             },
             {
-              "icon": "ic-network",
+              "icon": "ic-swap",
               "cap": "サーバーと通信もできる"
             }
           ],
@@ -6867,26 +6632,22 @@ module.exports = {
                 {
                   "name": "HTML",
                   "desc": "JavaScriptが操作する対象の構造。",
-                  "page": 121,
-                  "icon": "ic-file"
+                  "page": 121
                 },
                 {
                   "name": "CSS",
                   "desc": "JavaScriptが書き換える対象の見た目。",
-                  "page": 122,
-                  "icon": "ic-image"
+                  "page": 122
                 },
                 {
                   "name": "TypeScript",
                   "desc": "JavaScriptに型を追加した言語。",
-                  "page": 124,
-                  "icon": "ic-scale"
+                  "page": 124
                 },
                 {
                   "name": "DOM",
                   "desc": "JavaScriptから操作するHTMLの木構造。",
-                  "page": 127,
-                  "icon": "ic-network"
+                  "page": 127
                 }
               ]
             }
@@ -6896,7 +6657,7 @@ module.exports = {
           "id": "typescript",
           "page": 124,
           "term": "TypeScript",
-          "subtitle": "JavaScriptに「型」の安全ベルトをつけた言語",
+          "reading": "タイプスクリプト",
           "category": "フロントエンド・基礎技術",
           "icon": "ic-scale",
           "oneline": "JavaScriptに型情報を追加し、実行前にバグの芽をエディタ上で検出できるようにした言語。",
@@ -6925,15 +6686,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-layers",
+              "icon": "ic-tag",
               "cap": "変数の型を事前に定義できる"
             },
             {
-              "icon": "ic-wheel",
+              "icon": "ic-code",
               "cap": "エディタの補完が効きやすくなる"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-alert",
               "cap": "コンパイル時にミスに気づける"
             }
           ],
@@ -6945,14 +6706,12 @@ module.exports = {
                 {
                   "name": "JavaScript",
                   "desc": "TypeScriptのベースになった言語。",
-                  "page": 123,
-                  "icon": "ic-wheel"
+                  "page": 123
                 },
                 {
                   "name": "バニラ",
                   "desc": "型を付けない素のJavaScriptで書くこと。",
-                  "page": 125,
-                  "icon": "ic-package"
+                  "page": 125
                 }
               ]
             }
@@ -6962,7 +6721,6 @@ module.exports = {
           "id": "vanilla-js",
           "page": 125,
           "term": "バニラ（Vanilla JS）",
-          "subtitle": "フレームワークなしの「素のJavaScript」",
           "category": "フロントエンド・基礎技術",
           "icon": "ic-package",
           "oneline": "ReactやVueなどのライブラリを使わず、標準機能だけで書くJavaScriptのこと。",
@@ -6991,15 +6749,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-package",
+              "icon": "ic-bolt",
               "cap": "追加のライブラリなしで動く"
             },
             {
-              "icon": "ic-file",
+              "icon": "ic-book",
               "cap": "標準APIだけで完結する"
             },
             {
-              "icon": "ic-wheel",
+              "icon": "ic-code",
               "cap": "書き方の自由度は自分次第"
             }
           ],
@@ -7011,14 +6769,12 @@ module.exports = {
                 {
                   "name": "JavaScript",
                   "desc": "バニラJSの元になる標準言語。",
-                  "page": 123,
-                  "icon": "ic-wheel"
+                  "page": 123
                 },
                 {
                   "name": "DOM",
                   "desc": "バニラJSが標準APIで直接操作する対象。",
-                  "page": 127,
-                  "icon": "ic-network"
+                  "page": 127
                 }
               ]
             }
@@ -7028,7 +6784,7 @@ module.exports = {
           "id": "es-modules",
           "page": 126,
           "term": "ES Modules",
-          "subtitle": "JavaScriptファイルを「部品」として輸出入する仕組み",
+          "reading": "イーエスモジュール",
           "category": "フロントエンド・基礎技術",
           "icon": "ic-layers",
           "oneline": "import/exportを使って、JavaScriptのコードをファイル単位で分割・再利用できるようにする標準の仕組み。",
@@ -7057,15 +6813,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-package",
+              "icon": "ic-filter",
               "cap": "必要な部分だけimportできる"
             },
             {
-              "icon": "ic-network",
+              "icon": "ic-link",
               "cap": "依存関係がコードから追える"
             },
             {
-              "icon": "ic-layers",
+              "icon": "ic-package",
               "cap": "ビルドツールとも相性がよい"
             }
           ],
@@ -7077,8 +6833,7 @@ module.exports = {
                 {
                   "name": "JavaScript",
                   "desc": "ES Modulesが分割対象とする言語。",
-                  "page": 123,
-                  "icon": "ic-wheel"
+                  "page": 123
                 }
               ]
             }
@@ -7088,7 +6843,7 @@ module.exports = {
           "id": "dom",
           "page": 127,
           "term": "DOM",
-          "subtitle": "ブラウザがHTMLを「木構造」として持ったメモリ上の姿",
+          "reading": "ドム",
           "category": "フロントエンド・基礎技術",
           "icon": "ic-network",
           "oneline": "ブラウザが読み込んだHTMLを、JavaScriptから操作できるようツリー状のオブジェクトとして表現したもの。",
@@ -7117,15 +6872,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-file",
+              "icon": "ic-target",
               "cap": "要素を取得・変更できる"
             },
             {
-              "icon": "ic-wheel",
+              "icon": "ic-link",
               "cap": "イベントを取り付けられる"
             },
             {
-              "icon": "ic-layers",
+              "icon": "ic-sync",
               "cap": "一部のノードだけ書き換えられる"
             }
           ],
@@ -7137,20 +6892,17 @@ module.exports = {
                 {
                   "name": "HTML",
                   "desc": "DOMのもとになる文書構造。",
-                  "page": 121,
-                  "icon": "ic-file"
+                  "page": 121
                 },
                 {
                   "name": "Event",
                   "desc": "DOMの要素に取り付ける反応の仕組み。",
-                  "page": 128,
-                  "icon": "ic-clock"
+                  "page": 128
                 },
                 {
                   "name": "Virtual DOM",
                   "desc": "本物のDOMの代わりに使う仮想の木。",
-                  "page": 137,
-                  "icon": "ic-layers"
+                  "page": 137
                 }
               ]
             }
@@ -7160,7 +6912,7 @@ module.exports = {
           "id": "event",
           "page": 128,
           "term": "Event",
-          "subtitle": "「クリックされた」を合図にコードを動かす仕組み",
+          "reading": "イベント",
           "category": "フロントエンド・基礎技術",
           "icon": "ic-clock",
           "oneline": "クリックやキー入力など、ユーザーやブラウザの動作をきっかけにJavaScriptの処理を実行させる仕組み。",
@@ -7189,15 +6941,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-wheel",
+              "icon": "ic-bolt",
               "cap": "クリックや入力に反応できる"
             },
             {
-              "icon": "ic-network",
+              "icon": "ic-layers",
               "cap": "複数の処理を同時に待ち受けられる"
             },
             {
-              "icon": "ic-clock",
+              "icon": "ic-sync",
               "cap": "非同期処理ともよく組み合わせる"
             }
           ],
@@ -7209,20 +6961,17 @@ module.exports = {
                 {
                   "name": "DOM",
                   "desc": "Eventを取り付ける対象の要素。",
-                  "page": 127,
-                  "icon": "ic-network"
+                  "page": 127
                 },
                 {
                   "name": "非同期（Asynchronous）",
                   "desc": "Eventの発生を待つ考え方の土台。",
-                  "page": 138,
-                  "icon": "ic-clock"
+                  "page": 138
                 },
                 {
                   "name": "Component",
                   "desc": "Eventへの反応をまとめて持つ部品。",
-                  "page": 129,
-                  "icon": "ic-cube"
+                  "page": 129
                 }
               ]
             }
@@ -7232,7 +6981,7 @@ module.exports = {
           "id": "component",
           "page": 129,
           "term": "Component",
-          "subtitle": "画面を「部品」として組み立てる考え方",
+          "reading": "コンポーネント",
           "category": "フロントエンド・UI設計",
           "icon": "ic-cube",
           "oneline": "ボタンやカードなど、画面の一部をひとまとまりの部品として切り出し、組み合わせて画面を作る考え方。",
@@ -7261,15 +7010,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-cube",
+              "icon": "ic-package",
               "cap": "見た目と振る舞いをひとまとめにできる"
             },
             {
-              "icon": "ic-package",
+              "icon": "ic-sync",
               "cap": "何度でも使い回せる"
             },
             {
-              "icon": "ic-layers",
+              "icon": "ic-puzzle",
               "cap": "組み合わせて画面を作れる"
             }
           ],
@@ -7281,20 +7030,17 @@ module.exports = {
                 {
                   "name": "State",
                   "desc": "Componentが内部に持つ今の状態。",
-                  "page": 130,
-                  "icon": "ic-file"
+                  "page": 130
                 },
                 {
                   "name": "Props",
                   "desc": "親から子のComponentへ渡す値。",
-                  "page": 131,
-                  "icon": "ic-network"
+                  "page": 131
                 },
                 {
                   "name": "Virtual DOM",
                   "desc": "Componentの変化を効率よく反映する仕組み。",
-                  "page": 137,
-                  "icon": "ic-layers"
+                  "page": 137
                 }
               ]
             }
@@ -7304,7 +7050,7 @@ module.exports = {
           "id": "state",
           "page": 130,
           "term": "State",
-          "subtitle": "Componentが内部に持つ「今の状態」",
+          "reading": "ステート",
           "category": "フロントエンド・UI設計",
           "icon": "ic-file",
           "oneline": "開閉中かどうか、入力中の文字など、Componentが内部で持ち続ける「今の状態」のデータ。",
@@ -7333,15 +7079,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-file",
+              "icon": "ic-database",
               "cap": "「今の値」を保持できる"
             },
             {
-              "icon": "ic-wheel",
+              "icon": "ic-sync",
               "cap": "更新すると画面に反映される"
             },
             {
-              "icon": "ic-network",
+              "icon": "ic-send",
               "cap": "Propsとして子に渡すこともできる"
             }
           ],
@@ -7353,20 +7099,17 @@ module.exports = {
                 {
                   "name": "Component",
                   "desc": "Stateを内部に持つ部品。",
-                  "page": 129,
-                  "icon": "ic-cube"
+                  "page": 129
                 },
                 {
                   "name": "Props",
                   "desc": "Stateを子に渡すときの形。",
-                  "page": 131,
-                  "icon": "ic-network"
+                  "page": 131
                 },
                 {
                   "name": "Virtual DOM",
                   "desc": "Stateの変化を効率よく反映する仕組み。",
-                  "page": 137,
-                  "icon": "ic-layers"
+                  "page": 137
                 }
               ]
             }
@@ -7376,7 +7119,7 @@ module.exports = {
           "id": "props",
           "page": 131,
           "term": "Props",
-          "subtitle": "親から子のComponentへ渡す「荷物」",
+          "reading": "プロップス",
           "category": "フロントエンド・UI設計",
           "icon": "ic-network",
           "oneline": "親のComponentから子のComponentへ、表示内容や設定値を渡すためのデータ。",
@@ -7405,15 +7148,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-network",
+              "icon": "ic-send",
               "cap": "呼び出し側から表示内容を指定できる"
             },
             {
-              "icon": "ic-package",
+              "icon": "ic-puzzle",
               "cap": "Componentを使い回しやすくなる"
             },
             {
-              "icon": "ic-layers",
+              "icon": "ic-link",
               "cap": "Stateと組み合わせて使う"
             }
           ],
@@ -7425,14 +7168,12 @@ module.exports = {
                 {
                   "name": "Component",
                   "desc": "Propsを受け取る部品。",
-                  "page": 129,
-                  "icon": "ic-cube"
+                  "page": 129
                 },
                 {
                   "name": "State",
                   "desc": "Propsのもとになることが多いデータ。",
-                  "page": 130,
-                  "icon": "ic-file"
+                  "page": 130
                 }
               ]
             }
@@ -7442,7 +7183,7 @@ module.exports = {
           "id": "csr",
           "page": 132,
           "term": "CSR",
-          "subtitle": "ブラウザ側でHTMLを組み立てる方式",
+          "reading": "シーエスアール",
           "category": "フロントエンド・レンダリング",
           "icon": "ic-laptop",
           "oneline": "サーバーからは最小限のHTMLとJavaScriptだけを送り、実際の画面はブラウザ側のJavaScriptが組み立てる方式。",
@@ -7471,11 +7212,11 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-wheel",
+              "icon": "ic-bolt",
               "cap": "ページ遷移がヌルサクになる"
             },
             {
-              "icon": "ic-cube",
+              "icon": "ic-puzzle",
               "cap": "Component中心に作りやすい"
             },
             {
@@ -7491,20 +7232,17 @@ module.exports = {
                 {
                   "name": "Component",
                   "desc": "CSRで画面を組み立てる部品の単位。",
-                  "page": 129,
-                  "icon": "ic-cube"
+                  "page": 129
                 },
                 {
                   "name": "SSR",
                   "desc": "サーバー側で先にHTMLを完成させる方式。",
-                  "page": 133,
-                  "icon": "ic-server"
+                  "page": 133
                 },
                 {
                   "name": "Hydration",
                   "desc": "届いたHTMLにあとから動きを与える処理。",
-                  "page": 136,
-                  "icon": "ic-wheel"
+                  "page": 136
                 }
               ]
             }
@@ -7514,7 +7252,7 @@ module.exports = {
           "id": "ssr",
           "page": 133,
           "term": "SSR",
-          "subtitle": "サーバー側でHTMLを完成させてから届ける方式",
+          "reading": "エスエスアール",
           "category": "フロントエンド・レンダリング",
           "icon": "ic-server",
           "oneline": "ブラウザで組み立てる前に、サーバー側で完成したHTMLを生成してから返す方式。",
@@ -7543,15 +7281,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-clock",
+              "icon": "ic-rocket",
               "cap": "初回表示が速い"
             },
             {
-              "icon": "ic-network",
+              "icon": "ic-search",
               "cap": "検索エンジンに強い"
             },
             {
-              "icon": "ic-wheel",
+              "icon": "ic-gear",
               "cap": "表示後にHydrationでJSを有効化する必要がある"
             }
           ],
@@ -7563,20 +7301,17 @@ module.exports = {
                 {
                   "name": "CSR",
                   "desc": "ブラウザ側でHTMLを組み立てる方式。",
-                  "page": 132,
-                  "icon": "ic-laptop"
+                  "page": 132
                 },
                 {
                   "name": "SSG",
                   "desc": "ビルド時にあらかじめHTMLを作る方式。",
-                  "page": 134,
-                  "icon": "ic-server"
+                  "page": 134
                 },
                 {
                   "name": "Hydration",
                   "desc": "SSRで届いたHTMLにあとから動きを与える処理。",
-                  "page": 136,
-                  "icon": "ic-wheel"
+                  "page": 136
                 }
               ]
             }
@@ -7586,7 +7321,7 @@ module.exports = {
           "id": "ssg",
           "page": 134,
           "term": "SSG",
-          "subtitle": "ビルド時にあらかじめHTMLを作っておく方式",
+          "reading": "エスエスジー",
           "category": "フロントエンド・レンダリング",
           "icon": "ic-server",
           "oneline": "アクセスのたびに生成するSSRとは違い、ビルドの時点で全ページのHTMLを事前に作っておく方式。",
@@ -7615,7 +7350,7 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-clock",
+              "icon": "ic-bolt",
               "cap": "配信がとにかく速い"
             },
             {
@@ -7623,7 +7358,7 @@ module.exports = {
               "cap": "サーバー負荷がほぼゼロ"
             },
             {
-              "icon": "ic-wheel",
+              "icon": "ic-sync",
               "cap": "更新のたびに再ビルドが必要"
             }
           ],
@@ -7635,14 +7370,12 @@ module.exports = {
                 {
                   "name": "SSR",
                   "desc": "アクセスのたびにHTMLを生成する方式。",
-                  "page": 133,
-                  "icon": "ic-server"
+                  "page": 133
                 },
                 {
                   "name": "ISR",
                   "desc": "SSGを裏側で少しずつ更新する方式。",
-                  "page": 135,
-                  "icon": "ic-rocket"
+                  "page": 135
                 }
               ]
             }
@@ -7652,7 +7385,7 @@ module.exports = {
           "id": "isr",
           "page": 135,
           "term": "ISR",
-          "subtitle": "静的なのに「裏側でこっそり」更新される方式",
+          "reading": "アイエスアール",
           "category": "フロントエンド・レンダリング",
           "icon": "ic-rocket",
           "oneline": "SSGの速さを保ちながら、一定時間ごとや条件に応じて裏側でページを再生成し、内容の鮮度も両立させる方式。",
@@ -7681,15 +7414,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-clock",
+              "icon": "ic-bolt",
               "cap": "SSG並みの表示速度を維持"
             },
             {
-              "icon": "ic-wheel",
+              "icon": "ic-package",
               "cap": "全体の再ビルドが不要"
             },
             {
-              "icon": "ic-server",
+              "icon": "ic-target",
               "cap": "裏側で必要なページだけ更新"
             }
           ],
@@ -7701,14 +7434,12 @@ module.exports = {
                 {
                   "name": "SSG",
                   "desc": "ビルド時にHTMLを事前生成する方式。",
-                  "page": 134,
-                  "icon": "ic-server"
+                  "page": 134
                 },
                 {
                   "name": "SSR",
                   "desc": "アクセスのたびにHTMLを生成する方式。",
-                  "page": 133,
-                  "icon": "ic-server"
+                  "page": 133
                 }
               ]
             }
@@ -7718,7 +7449,7 @@ module.exports = {
           "id": "hydration",
           "page": 136,
           "term": "Hydration",
-          "subtitle": "届いたHTMLに「あとから」命を吹き込む処理",
+          "reading": "ハイドレーション",
           "category": "フロントエンド・レンダリング",
           "icon": "ic-wheel",
           "oneline": "SSR/SSGで先に届いたHTMLに対して、ブラウザ側でJavaScriptを結びつけ、クリックなどに反応できる状態にする処理。",
@@ -7747,15 +7478,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-clock",
+              "icon": "ic-eye",
               "cap": "見た目は先に、反応はあとから"
             },
             {
-              "icon": "ic-server",
+              "icon": "ic-link",
               "cap": "SSRやSSGとセットで使われる"
             },
             {
-              "icon": "ic-wheel",
+              "icon": "ic-alert",
               "cap": "完了までクリックしても反応しないことがある"
             }
           ],
@@ -7767,20 +7498,17 @@ module.exports = {
                 {
                   "name": "SSR",
                   "desc": "Hydrationが必要になる方式のひとつ。",
-                  "page": 133,
-                  "icon": "ic-server"
+                  "page": 133
                 },
                 {
                   "name": "SSG",
                   "desc": "Hydrationが必要になる方式のひとつ。",
-                  "page": 134,
-                  "icon": "ic-server"
+                  "page": 134
                 },
                 {
                   "name": "CSR",
                   "desc": "HydrationではなくJSが最初から画面を組み立てる方式。",
-                  "page": 132,
-                  "icon": "ic-laptop"
+                  "page": 132
                 }
               ]
             }
@@ -7790,7 +7518,7 @@ module.exports = {
           "id": "virtual-dom",
           "page": 137,
           "term": "Virtual DOM",
-          "subtitle": "本物のDOMを直接触らないための「下書き」",
+          "reading": "バーチャルドム",
           "category": "フロントエンド・レンダリング",
           "icon": "ic-layers",
           "oneline": "実際のDOMを直接操作する代わりに、メモリ上に仮のツリーを作り、変化した部分だけを計算してから本物のDOMに反映する仕組み。",
@@ -7819,15 +7547,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-layers",
+              "icon": "ic-target",
               "cap": "差分だけを計算して反映"
             },
             {
-              "icon": "ic-cube",
+              "icon": "ic-bolt",
               "cap": "本物のDOM操作を減らせる"
             },
             {
-              "icon": "ic-wheel",
+              "icon": "ic-sync",
               "cap": "Stateの変化に強い"
             }
           ],
@@ -7839,20 +7567,17 @@ module.exports = {
                 {
                   "name": "DOM",
                   "desc": "Virtual DOMが最終的に反映する本物の木構造。",
-                  "page": 127,
-                  "icon": "ic-network"
+                  "page": 127
                 },
                 {
                   "name": "State",
                   "desc": "Virtual DOMが差分を計算するきっかけになるデータ。",
-                  "page": 130,
-                  "icon": "ic-file"
+                  "page": 130
                 },
                 {
                   "name": "Component",
                   "desc": "Virtual DOMを使って更新される部品の単位。",
-                  "page": 129,
-                  "icon": "ic-cube"
+                  "page": 129
                 }
               ]
             }
@@ -7862,7 +7587,7 @@ module.exports = {
           "id": "async",
           "page": 138,
           "term": "非同期（Asynchronous）",
-          "subtitle": "「待ち時間」のあいだ他の処理を進める考え方",
+          "reading": "ひどうき",
           "category": "JavaScript・非同期処理",
           "icon": "ic-clock",
           "oneline": "通信やファイル読み込みなど、時間のかかる処理の完了を待たずに、他の処理を並行して進められるようにする考え方。",
@@ -7891,15 +7616,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-clock",
+              "icon": "ic-bolt",
               "cap": "通信中も画面が固まらない"
             },
             {
-              "icon": "ic-network",
+              "icon": "ic-split",
               "cap": "複数の処理を並行して進められる"
             },
             {
-              "icon": "ic-wheel",
+              "icon": "ic-code",
               "cap": "書き方はPromiseなどで進化してきた"
             }
           ],
@@ -7911,22 +7636,28 @@ module.exports = {
                 {
                   "name": "Promise",
                   "desc": "非同期処理の結果をまとめて扱うオブジェクト。",
-                  "page": 139,
-                  "icon": "ic-scale"
+                  "page": 139
                 },
                 {
                   "name": "async・await",
                   "desc": "Promiseを同期処理のように書ける構文。",
-                  "page": 140,
-                  "icon": "ic-wheel"
+                  "page": 140
                 },
                 {
                   "name": "Event",
                   "desc": "非同期の発生をきっかけにする仕組み。",
-                  "page": 128,
-                  "icon": "ic-clock"
+                  "page": 128
                 }
               ]
+            }
+          ],
+          "title_lines": [
+            {
+              "text": "非同期",
+              "reading": "ひどうき"
+            },
+            {
+              "text": "（Asynchronous）"
             }
           ]
         },
@@ -7934,7 +7665,7 @@ module.exports = {
           "id": "promise",
           "page": 139,
           "term": "Promise",
-          "subtitle": "「いつか終わる処理」の結果を表す約束手形",
+          "reading": "プロミス",
           "category": "JavaScript・非同期処理",
           "icon": "ic-scale",
           "oneline": "非同期処理の結果（成功か失敗か）を、あとから受け取れる形でまとめて扱えるようにするオブジェクト。",
@@ -7963,15 +7694,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-scale",
+              "icon": "ic-check",
               "cap": "成功・失敗をまとめて扱える"
             },
             {
-              "icon": "ic-network",
+              "icon": "ic-link",
               "cap": ".then()で処理をつなげられる"
             },
             {
-              "icon": "ic-wheel",
+              "icon": "ic-eye",
               "cap": "async・awaitでさらに読みやすく書ける"
             }
           ],
@@ -7983,14 +7714,12 @@ module.exports = {
                 {
                   "name": "非同期（Asynchronous）",
                   "desc": "Promiseが扱う処理そのものの考え方。",
-                  "page": 138,
-                  "icon": "ic-clock"
+                  "page": 138
                 },
                 {
                   "name": "async・await",
                   "desc": "Promiseを読みやすく書くための構文。",
-                  "page": 140,
-                  "icon": "ic-wheel"
+                  "page": 140
                 }
               ]
             }
@@ -8000,7 +7729,7 @@ module.exports = {
           "id": "async-await",
           "page": 140,
           "term": "async・await",
-          "subtitle": "非同期処理を「同期っぽく」読める書き方",
+          "reading": "エイシンクアウェイト",
           "category": "JavaScript・非同期処理",
           "icon": "ic-wheel",
           "oneline": "Promiseを使った非同期処理を、あたかも上から順番に処理しているかのように書けるようにする構文。",
@@ -8029,15 +7758,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-file",
+              "icon": "ic-eye",
               "cap": "同期処理のような自然な見た目"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-alert",
               "cap": "try/catchでエラー処理できる"
             },
             {
-              "icon": "ic-wheel",
+              "icon": "ic-gear",
               "cap": "中身の仕組みはPromiseのまま"
             }
           ],
@@ -8049,14 +7778,12 @@ module.exports = {
                 {
                   "name": "Promise",
                   "desc": "async・awaitの土台になっているオブジェクト。",
-                  "page": 139,
-                  "icon": "ic-scale"
+                  "page": 139
                 },
                 {
                   "name": "非同期（Asynchronous）",
                   "desc": "async・awaitが扱う処理の考え方。",
-                  "page": 138,
-                  "icon": "ic-clock"
+                  "page": 138
                 }
               ]
             }
@@ -8066,7 +7793,7 @@ module.exports = {
           "id": "css-framework",
           "page": 141,
           "term": "CSSフレームワーク",
-          "subtitle": "よく使うデザインをあらかじめ用意しておく道具箱",
+          "reading": "シーエスエスフレームワーク",
           "category": "フロントエンド・スタイリング",
           "icon": "ic-package",
           "oneline": "ボタンやレイアウトなど、よく使うデザインパーツのCSSをあらかじめ用意しておき、クラス名を付けるだけで使えるようにしたもの。",
@@ -8095,15 +7822,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-package",
+              "icon": "ic-tag",
               "cap": "クラス名を付けるだけで見た目が整う"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-users",
               "cap": "チーム内でデザインが揃いやすい"
             },
             {
-              "icon": "ic-wheel",
+              "icon": "ic-gear",
               "cap": "独自色を出すにはカスタマイズが必要"
             }
           ],
@@ -8115,14 +7842,12 @@ module.exports = {
                 {
                   "name": "CSS",
                   "desc": "CSSフレームワークの土台になる言語。",
-                  "page": 122,
-                  "icon": "ic-image"
+                  "page": 122
                 },
                 {
                   "name": "UIコンポーネントライブラリ",
                   "desc": "見た目に加えて動きまで含む部品を提供するもの。",
-                  "page": 142,
-                  "icon": "ic-cube"
+                  "page": 142
                 }
               ]
             }
@@ -8133,7 +7858,7 @@ module.exports = {
           "page": 142,
           "term": "UIコンポーネントライブラリ",
           "compact": true,
-          "subtitle": "動くパーツごと完成させて配ってくれる道具箱",
+          "reading": "ユーアイコンポーネントライブラリ",
           "category": "フロントエンド・スタイリング",
           "icon": "ic-cube",
           "oneline": "ボタンやモーダルなど、見た目だけでなく開閉などの動作（振る舞い）まで含んだComponentを、そのまま使える形で提供するライブラリ。",
@@ -8162,15 +7887,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-cube",
+              "icon": "ic-package",
               "cap": "ボタンやモーダルがそのまま使える"
             },
             {
-              "icon": "ic-package",
+              "icon": "ic-layers",
               "cap": "見た目と動きがセットで届く"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-gear",
               "cap": "Props経由で細かく調整できる"
             }
           ],
@@ -8182,22 +7907,28 @@ module.exports = {
                 {
                   "name": "CSSフレームワーク",
                   "desc": "見た目の材料を提供するもの。",
-                  "page": 141,
-                  "icon": "ic-package"
+                  "page": 141
                 },
                 {
                   "name": "Component",
                   "desc": "UIコンポーネントライブラリが提供する部品の単位。",
-                  "page": 129,
-                  "icon": "ic-cube"
+                  "page": 129
                 },
                 {
                   "name": "Props",
                   "desc": "UIコンポーネントライブラリの部品を調整する手段。",
-                  "page": 131,
-                  "icon": "ic-network"
+                  "page": 131
                 }
               ]
+            }
+          ],
+          "title_lines": [
+            {
+              "text": "UIコンポーネント",
+              "reading": "ユーアイコンポーネント"
+            },
+            {
+              "text": "ライブラリ"
             }
           ]
         },
@@ -8205,7 +7936,7 @@ module.exports = {
           "id": "nodejs",
           "page": 143,
           "term": "Node.js",
-          "subtitle": "JavaScript を「ブラウザの外」で動かした技術",
+          "reading": "ノードジェイエス",
           "category": "ランタイム",
           "icon": "ic-server",
           "oneline": "ブラウザの中でしか実行できなかった JavaScript を、サーバーやPC上で動かせるようにするランタイム。",
@@ -8238,7 +7969,7 @@ module.exports = {
               "cap": "サーバーサイドをJSで書ける"
             },
             {
-              "icon": "ic-network",
+              "icon": "ic-swap",
               "cap": "フロントとバックの言語を統一"
             },
             {
@@ -8254,13 +7985,11 @@ module.exports = {
                 {
                   "name": "Bun",
                   "desc": "Node.js互換で起動・実行をまるごと高速化。",
-                  "icon": "ic-rocket",
                   "page": 144
                 },
                 {
                   "name": "Deno",
                   "desc": "Node.js作者が作り直した安全志向のランタイム。",
-                  "icon": "ic-scale",
                   "page": 145
                 }
               ]
@@ -8271,7 +8000,7 @@ module.exports = {
           "id": "bun",
           "page": 144,
           "term": "Bun",
-          "subtitle": "Node.js の「遅さ」をまとめて解決しようとしたランタイム",
+          "reading": "バン",
           "category": "ランタイム",
           "icon": "ic-rocket",
           "oneline": "Node.js互換を保ちながら、実行・パッケージ管理・テストまで1つのバイナリで高速化したランタイム。",
@@ -8300,7 +8029,7 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-clock",
+              "icon": "ic-bolt",
               "cap": "起動・実行がとにかく速い"
             },
             {
@@ -8308,7 +8037,7 @@ module.exports = {
               "cap": "パッケージ管理も内蔵"
             },
             {
-              "icon": "ic-cube",
+              "icon": "ic-check",
               "cap": "テストランナーも標準装備"
             }
           ],
@@ -8320,13 +8049,11 @@ module.exports = {
                 {
                   "name": "Node.js",
                   "desc": "JSをブラウザの外で動かす元祖ランタイム。",
-                  "icon": "ic-server",
                   "page": 143
                 },
                 {
                   "name": "Deno",
                   "desc": "安全性を重視したもう1つの後継ランタイム。",
-                  "icon": "ic-scale",
                   "page": 145
                 }
               ]
@@ -8337,7 +8064,7 @@ module.exports = {
           "id": "deno",
           "page": 145,
           "term": "Deno",
-          "subtitle": "Node.js を作った人が「作り直した」ランタイム",
+          "reading": "ディーノ",
           "category": "ランタイム",
           "icon": "ic-scale",
           "oneline": "デフォルトでは何もアクセスできず、TypeScriptをそのまま実行できる安全志向のJSランタイム。",
@@ -8366,15 +8093,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-scale",
+              "icon": "ic-lock",
               "cap": "ファイル/ネット権限を明示指定"
             },
             {
-              "icon": "ic-file",
+              "icon": "ic-code",
               "cap": "TypeScriptをそのまま実行"
             },
             {
-              "icon": "ic-cloud",
+              "icon": "ic-rocket",
               "cap": "Deno Deployで手軽にデプロイ"
             }
           ],
@@ -8386,13 +8113,11 @@ module.exports = {
                 {
                   "name": "Node.js",
                   "desc": "JSをブラウザの外で動かす元祖ランタイム。",
-                  "icon": "ic-server",
                   "page": 143
                 },
                 {
                   "name": "Bun",
                   "desc": "Node.js互換で速さに振り切ったランタイム。",
-                  "icon": "ic-rocket",
                   "page": 144
                 }
               ]
@@ -8403,7 +8128,7 @@ module.exports = {
           "id": "react",
           "page": 146,
           "term": "React",
-          "subtitle": "画面を「部品」の組み合わせで作る発想を広めたライブラリ",
+          "reading": "リアクト",
           "category": "フレームワーク",
           "icon": "ic-layers",
           "oneline": "UIを再利用可能なコンポーネント単位で組み立てるためのJavaScriptライブラリ。",
@@ -8432,11 +8157,11 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-layers",
+              "icon": "ic-puzzle",
               "cap": "画面をコンポーネント単位で管理"
             },
             {
-              "icon": "ic-wheel",
+              "icon": "ic-sync",
               "cap": "状態が変わると自動で再描画"
             },
             {
@@ -8452,7 +8177,6 @@ module.exports = {
                 {
                   "name": "Vue",
                   "desc": "HTMLに近い書き味で始められるフレームワーク。",
-                  "icon": "ic-layers",
                   "page": 147
                 }
               ]
@@ -8463,13 +8187,11 @@ module.exports = {
                 {
                   "name": "Next.js",
                   "desc": "Reactにルーティングなどを標準搭載したフレームワーク。",
-                  "icon": "ic-network",
                   "page": 148
                 },
                 {
                   "name": "Redux",
                   "desc": "アプリ全体の状態を1箇所にまとめる状態管理。",
-                  "icon": "ic-layers",
                   "page": 163
                 }
               ]
@@ -8480,7 +8202,7 @@ module.exports = {
           "id": "vue",
           "page": 147,
           "term": "Vue",
-          "subtitle": "HTMLに近い書き味で始められる、もう1つの人気フレームワーク",
+          "reading": "ビュー",
           "category": "フレームワーク",
           "icon": "ic-layers",
           "oneline": "テンプレート構文でHTMLに近い書き方をしながら、コンポーネント単位で画面を作れるフレームワーク。",
@@ -8509,15 +8231,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-file",
+              "icon": "ic-split",
               "cap": "HTML/CSS/JSを分けて書ける"
             },
             {
-              "icon": "ic-wheel",
+              "icon": "ic-swap",
               "cap": "双方向バインディングが手軽"
             },
             {
-              "icon": "ic-scribble",
+              "icon": "ic-book",
               "cap": "公式ドキュメントが読みやすい"
             }
           ],
@@ -8529,7 +8251,6 @@ module.exports = {
                 {
                   "name": "React",
                   "desc": "状態からUIを再計算するコンポーネント指向ライブラリ。",
-                  "icon": "ic-layers",
                   "page": 146
                 }
               ]
@@ -8540,13 +8261,11 @@ module.exports = {
                 {
                   "name": "Nuxt.js",
                   "desc": "Vueにルーティングなどを標準搭載したフレームワーク。",
-                  "icon": "ic-network",
                   "page": 149
                 },
                 {
                   "name": "Pinia",
                   "desc": "Vue公式が推奨する状態管理ライブラリ。",
-                  "icon": "ic-layers",
                   "page": 165
                 }
               ]
@@ -8557,7 +8276,7 @@ module.exports = {
           "id": "nextjs",
           "page": 148,
           "term": "Next.js",
-          "subtitle": "Reactだけでは決めきれない「ルーティングどうする問題」を解決したフレームワーク",
+          "reading": "ネクストジェイエス",
           "category": "フレームワーク",
           "icon": "ic-network",
           "oneline": "Reactにルーティングやサーバーサイドレンダリングなどを標準搭載した、本番運用向けフレームワーク。",
@@ -8586,7 +8305,7 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-network",
+              "icon": "ic-list",
               "cap": "ファイルベースでルーティング自動化"
             },
             {
@@ -8606,7 +8325,6 @@ module.exports = {
                 {
                   "name": "React",
                   "desc": "コンポーネント単位でUIを組み立てるライブラリ。",
-                  "icon": "ic-layers",
                   "page": 146
                 }
               ]
@@ -8617,7 +8335,6 @@ module.exports = {
                 {
                   "name": "Nuxt.js",
                   "desc": "VueにとってのNext.js的な存在。",
-                  "icon": "ic-network",
                   "page": 149
                 }
               ]
@@ -8628,7 +8345,7 @@ module.exports = {
           "id": "nuxtjs",
           "page": 149,
           "term": "Nuxt.js",
-          "subtitle": "Vueにとっての Next.js 的存在",
+          "reading": "ナクストジェイエス",
           "category": "フレームワーク",
           "icon": "ic-network",
           "oneline": "Vueにルーティングやサーバーサイドレンダリングなどを標準搭載した、本番運用向けフレームワーク。",
@@ -8657,7 +8374,7 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-network",
+              "icon": "ic-list",
               "cap": "ファイルベースでルーティング自動化"
             },
             {
@@ -8665,7 +8382,7 @@ module.exports = {
               "cap": "SSR/SSGを標準サポート"
             },
             {
-              "icon": "ic-layers",
+              "icon": "ic-puzzle",
               "cap": "Vueのモジュールを組み込みやすい"
             }
           ],
@@ -8677,7 +8394,6 @@ module.exports = {
                 {
                   "name": "Vue",
                   "desc": "HTMLに近い書き味のコンポーネント指向フレームワーク。",
-                  "icon": "ic-layers",
                   "page": 147
                 }
               ]
@@ -8688,7 +8404,6 @@ module.exports = {
                 {
                   "name": "Next.js",
                   "desc": "ReactにとってのNuxt.js的な存在。",
-                  "icon": "ic-network",
                   "page": 148
                 }
               ]
@@ -8699,7 +8414,7 @@ module.exports = {
           "id": "vite",
           "page": 150,
           "term": "Vite",
-          "subtitle": "ビルドを「待つ」時代を終わらせた開発サーバー",
+          "reading": "ヴィート",
           "category": "ツール",
           "icon": "ic-rocket",
           "oneline": "ブラウザのESモジュール機能を使って、開発中の画面表示をほぼ一瞬で反映するビルドツール。",
@@ -8728,15 +8443,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-clock",
+              "icon": "ic-bolt",
               "cap": "開発サーバーの起動が高速"
             },
             {
-              "icon": "ic-wheel",
+              "icon": "ic-sync",
               "cap": "保存した瞬間に画面へ反映"
             },
             {
-              "icon": "ic-package",
+              "icon": "ic-gear",
               "cap": "本番用ビルドは別途最適化"
             }
           ],
@@ -8748,13 +8463,11 @@ module.exports = {
                 {
                   "name": "React",
                   "desc": "Viteの定番テンプレートの1つ。",
-                  "icon": "ic-layers",
                   "page": 146
                 },
                 {
                   "name": "ESLint",
                   "desc": "開発時のコードチェックを担うLinter。",
-                  "icon": "ic-scale",
                   "page": 151
                 }
               ]
@@ -8765,7 +8478,7 @@ module.exports = {
           "id": "eslint",
           "page": 151,
           "term": "ESLint",
-          "subtitle": "「動くけど危ないコード」を書いた瞬間に教えてくれる仕組み",
+          "reading": "イーエスリント",
           "category": "ツール",
           "icon": "ic-scale",
           "oneline": "コードのルール違反やバグの芽を、実行する前に静的解析で指摘してくれるLinter。",
@@ -8794,15 +8507,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-scale",
+              "icon": "ic-search",
               "cap": "ルール違反を自動検出"
             },
             {
-              "icon": "ic-wheel",
+              "icon": "ic-gear",
               "cap": "保存時に自動修正も可能"
             },
             {
-              "icon": "ic-network",
+              "icon": "ic-users",
               "cap": "チーム全体でルールを統一"
             }
           ],
@@ -8814,13 +8527,11 @@ module.exports = {
                 {
                   "name": "Biome",
                   "desc": "Lintと整形をRustで1本にまとめたツール。",
-                  "icon": "ic-rocket",
                   "page": 152
                 },
                 {
                   "name": "OXC",
                   "desc": "パーサーからRustで作り直すプロジェクト。",
-                  "icon": "ic-rocket",
                   "page": 153
                 }
               ]
@@ -8831,7 +8542,7 @@ module.exports = {
           "id": "biome",
           "page": 152,
           "term": "Biome",
-          "subtitle": "ESLintより速く、Prettierの仕事も1本でこなすツール",
+          "reading": "バイオーム",
           "category": "ツール",
           "icon": "ic-rocket",
           "oneline": "Lint（コードチェック）とFormat（整形）をRust製の1つのツールでまとめて高速に行うツール。",
@@ -8860,15 +8571,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-clock",
+              "icon": "ic-bolt",
               "cap": "Lint・整形が高速"
             },
             {
-              "icon": "ic-package",
+              "icon": "ic-gear",
               "cap": "1ツールで設定が完結"
             },
             {
-              "icon": "ic-file",
+              "icon": "ic-swap",
               "cap": "ESLint設定からの移行支援あり"
             }
           ],
@@ -8880,13 +8591,11 @@ module.exports = {
                 {
                   "name": "ESLint",
                   "desc": "JS実装の老舗Linter。",
-                  "icon": "ic-scale",
                   "page": 151
                 },
                 {
                   "name": "OXC",
                   "desc": "パース処理からRustで高速化する次の一手。",
-                  "icon": "ic-rocket",
                   "page": 153
                 }
               ]
@@ -8897,7 +8606,7 @@ module.exports = {
           "id": "oxc",
           "page": 153,
           "term": "OXC",
-          "subtitle": "JSツールチェイン全部をRustで書き直す、という荒業",
+          "reading": "オーエックスシー",
           "category": "ツール",
           "icon": "ic-rocket",
           "oneline": "パーサー・Linter・整形・ビルドまで、JS周辺ツールをまとめてRustで高速に作り直すプロジェクト。",
@@ -8926,15 +8635,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-rocket",
+              "icon": "ic-bolt",
               "cap": "パース処理からネイティブ高速化"
             },
             {
-              "icon": "ic-network",
+              "icon": "ic-puzzle",
               "cap": "他ツールへの組み込みが進行中"
             },
             {
-              "icon": "ic-wheel",
+              "icon": "ic-layers",
               "cap": "JSツールチェイン全体を刷新"
             }
           ],
@@ -8946,13 +8655,11 @@ module.exports = {
                 {
                   "name": "ESLint",
                   "desc": "JS実装の老舗Linter。",
-                  "icon": "ic-scale",
                   "page": 151
                 },
                 {
                   "name": "Biome",
                   "desc": "Rustで1本化した中継地点。",
-                  "icon": "ic-rocket",
                   "page": 152
                 }
               ]
@@ -8963,7 +8670,7 @@ module.exports = {
           "id": "tailwindcss",
           "page": 154,
           "term": "Tailwind CSS",
-          "subtitle": "「クラス名を考える時間」を無くしたCSSの書き方",
+          "reading": "テイルウィンドシーエスエス",
           "category": "ツール",
           "icon": "ic-scribble",
           "oneline": "あらかじめ用意された小さなユーティリティクラスをHTMLに直接並べてスタイルを作るCSSフレームワーク。",
@@ -8992,15 +8699,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-scribble",
+              "icon": "ic-code",
               "cap": "クラス名を考えなくてよい"
             },
             {
-              "icon": "ic-wheel",
+              "icon": "ic-eye",
               "cap": "HTML上で見た目が完結"
             },
             {
-              "icon": "ic-package",
+              "icon": "ic-filter",
               "cap": "未使用クラスはビルド時に自動除去"
             }
           ],
@@ -9012,13 +8719,11 @@ module.exports = {
                 {
                   "name": "MUI",
                   "desc": "既製のUI部品ごと使えるコンポーネント集。",
-                  "icon": "ic-layers",
                   "page": 155
                 },
                 {
                   "name": "shadcn/ui",
                   "desc": "コードをコピーして使うUI集。",
-                  "icon": "ic-scribble",
                   "page": 156
                 }
               ]
@@ -9029,7 +8734,7 @@ module.exports = {
           "id": "mui",
           "page": 155,
           "term": "MUI",
-          "subtitle": "ボタンやフォームを1から作らなくていい、部品まるごとの詰め合わせ",
+          "reading": "エムユーアイ",
           "category": "ツール",
           "icon": "ic-layers",
           "oneline": "Googleのマテリアルデザインに沿ったボタン・フォームなどのReact用UIコンポーネント集。",
@@ -9058,15 +8763,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-layers",
+              "icon": "ic-puzzle",
               "cap": "既製のUI部品を組み込むだけ"
             },
             {
-              "icon": "ic-image",
+              "icon": "ic-eye",
               "cap": "マテリアルデザインで統一感"
             },
             {
-              "icon": "ic-wheel",
+              "icon": "ic-gear",
               "cap": "テーマ設定で配色を一括変更"
             }
           ],
@@ -9078,13 +8783,11 @@ module.exports = {
                 {
                   "name": "Tailwind CSS",
                   "desc": "ユーティリティクラスでスタイルを組み立てる。",
-                  "icon": "ic-scribble",
                   "page": 154
                 },
                 {
                   "name": "shadcn/ui",
                   "desc": "コードをコピーして使う別解のUI集。",
-                  "icon": "ic-scribble",
                   "page": 156
                 }
               ]
@@ -9095,7 +8798,7 @@ module.exports = {
           "id": "shadcn-ui",
           "page": 156,
           "term": "shadcn/ui",
-          "subtitle": "「ライブラリ」ではなく「コピペするコード」という新発想のUI集",
+          "reading": "シャドシーエヌユーアイ",
           "category": "ツール",
           "icon": "ic-scribble",
           "oneline": "MUIのような既製部品ライブラリではなく、必要な分だけコードをプロジェクトにコピーして使うUIコンポーネント集。",
@@ -9128,11 +8831,11 @@ module.exports = {
               "cap": "コードを直接プロジェクトへコピー"
             },
             {
-              "icon": "ic-scribble",
+              "icon": "ic-code",
               "cap": "見た目を細部まで自由に編集"
             },
             {
-              "icon": "ic-package",
+              "icon": "ic-link",
               "cap": "Tailwind CSSと組み合わせて使う"
             }
           ],
@@ -9144,13 +8847,11 @@ module.exports = {
                 {
                   "name": "MUI",
                   "desc": "既製部品をライブラリとして利用する方式。",
-                  "icon": "ic-layers",
                   "page": 155
                 },
                 {
                   "name": "Tailwind CSS",
                   "desc": "見た目を組み立てるユーティリティCSS。",
-                  "icon": "ic-scribble",
                   "page": 154
                 }
               ]
@@ -9161,7 +8862,7 @@ module.exports = {
           "id": "electron",
           "page": 157,
           "term": "Electron",
-          "subtitle": "Webの技術だけでデスクトップアプリを作る発想",
+          "reading": "エレクトロン",
           "category": "ツール",
           "icon": "ic-monitor",
           "oneline": "HTML・CSS・JavaScriptで書いた画面を、そのままWindows/Mac用のデスクトップアプリとして動かす仕組み。",
@@ -9190,11 +8891,11 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-monitor",
+              "icon": "ic-laptop",
               "cap": "1つのコードで複数OSに対応"
             },
             {
-              "icon": "ic-laptop",
+              "icon": "ic-globe",
               "cap": "Web技術の知識をそのまま流用"
             },
             {
@@ -9210,7 +8911,6 @@ module.exports = {
                 {
                   "name": "PWA",
                   "desc": "ストア審査なしでアプリっぽさを出す別解。",
-                  "icon": "ic-laptop",
                   "page": 158
                 }
               ]
@@ -9221,7 +8921,7 @@ module.exports = {
           "id": "pwa",
           "page": 158,
           "term": "PWA",
-          "subtitle": "アプリストアを経由せず、Webサイトを「アプリっぽく」使わせる仕組み",
+          "reading": "ピーダブリューエー",
           "category": "Web技術",
           "icon": "ic-laptop",
           "oneline": "ホーム画面への追加やオフライン動作など、通常のWebサイトにネイティブアプリに近い体験を持たせる技術。",
@@ -9250,11 +8950,11 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-laptop",
+              "icon": "ic-mobile",
               "cap": "ホーム画面に追加できる"
             },
             {
-              "icon": "ic-cloud",
+              "icon": "ic-gear",
               "cap": "オフラインでも一部動作"
             },
             {
@@ -9270,7 +8970,6 @@ module.exports = {
                 {
                   "name": "Electron",
                   "desc": "Web技術でデスクトップアプリを作る仕組み。",
-                  "icon": "ic-monitor",
                   "page": 157
                 }
               ]
@@ -9281,7 +8980,6 @@ module.exports = {
                 {
                   "name": "Core Web Vitals",
                   "desc": "ページの体感品質を数値化する指標。",
-                  "icon": "ic-clock",
                   "page": 162
                 }
               ]
@@ -9292,7 +8990,7 @@ module.exports = {
           "id": "webassembly",
           "page": 159,
           "term": "WebAssembly",
-          "subtitle": "ブラウザでJavaScript以外の言語を高速に動かす仕組み",
+          "reading": "ウェブアセンブリ",
           "category": "Web技術",
           "icon": "ic-cube",
           "oneline": "C/C++/Rustなどで書いたコードをブラウザ上でネイティブに近い速度で実行できるバイナリ形式。",
@@ -9321,15 +9019,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-cube",
+              "icon": "ic-bolt",
               "cap": "重い処理をブラウザ内で高速実行"
             },
             {
-              "icon": "ic-network",
+              "icon": "ic-link",
               "cap": "JSと連携して部分的に利用可能"
             },
             {
-              "icon": "ic-layers",
+              "icon": "ic-package",
               "cap": "C/Rust資産をWebに持ち込める"
             }
           ],
@@ -9341,7 +9039,6 @@ module.exports = {
                 {
                   "name": "Core Web Vitals",
                   "desc": "速度も含めたページ品質を測る指標。",
-                  "icon": "ic-clock",
                   "page": 162
                 }
               ]
@@ -9352,7 +9049,7 @@ module.exports = {
           "id": "a11y",
           "page": 160,
           "term": "a11y（アクセシビリティ）",
-          "subtitle": "「使える人」を無意識に絞り込んでいないか、を問い直す視点",
+          "reading": "エーイレブンワイ",
           "category": "Web品質",
           "icon": "ic-scale",
           "oneline": "視覚・聴覚・身体的な違いなどに関わらず、誰もがWebサイトを使えるようにする設計・実装の総称。",
@@ -9381,15 +9078,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-scale",
+              "icon": "ic-chart",
               "cap": "誰でも使える設計を評価軸に追加"
             },
             {
-              "icon": "ic-file",
+              "icon": "ic-tag",
               "cap": "altテキストやラベルを適切に付与"
             },
             {
-              "icon": "ic-network",
+              "icon": "ic-terminal",
               "cap": "キーボードのみでも操作可能に"
             }
           ],
@@ -9401,16 +9098,23 @@ module.exports = {
                 {
                   "name": "i18n（国際化）",
                   "desc": "言語や地域による差分を吸収する対応。",
-                  "icon": "ic-network",
                   "page": 161
                 },
                 {
                   "name": "Core Web Vitals",
                   "desc": "速度など体感品質を測る指標。",
-                  "icon": "ic-clock",
                   "page": 162
                 }
               ]
+            }
+          ],
+          "title_lines": [
+            {
+              "text": "a11y",
+              "reading": "エーイレブンワイ"
+            },
+            {
+              "text": "（アクセシビリティ）"
             }
           ]
         },
@@ -9418,7 +9122,7 @@ module.exports = {
           "id": "i18n",
           "page": 161,
           "term": "i18n（国際化）",
-          "subtitle": "「日本語しか出ない」から卒業するための下ごしらえ",
+          "reading": "アイエイティーンエヌ",
           "category": "Web品質",
           "icon": "ic-network",
           "oneline": "アプリの文言や日付・通貨の表記を、言語や地域ごとに切り替えられるようにする仕組み・対応のこと。",
@@ -9447,15 +9151,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-network",
+              "icon": "ic-translate",
               "cap": "言語ごとに辞書ファイルを切り替え"
             },
             {
-              "icon": "ic-file",
+              "icon": "ic-globe",
               "cap": "日付・通貨をロケール対応で表示"
             },
             {
-              "icon": "ic-wheel",
+              "icon": "ic-puzzle",
               "cap": "後から言語追加がしやすい"
             }
           ],
@@ -9467,7 +9171,6 @@ module.exports = {
                 {
                   "name": "a11y（アクセシビリティ）",
                   "desc": "誰もが使える設計にするための視点。",
-                  "icon": "ic-scale",
                   "page": 160
                 }
               ]
@@ -9478,7 +9181,7 @@ module.exports = {
           "id": "core-web-vitals",
           "page": 162,
           "term": "Core Web Vitals",
-          "subtitle": "「なんとなく重い」を数値で説明できるようにした指標",
+          "reading": "コアウェブバイタルズ",
           "category": "Web品質",
           "icon": "ic-clock",
           "oneline": "表示速度・操作反応・レイアウトのガタつきなど、Webページの体感品質を3つの指標で数値化したもの。",
@@ -9511,11 +9214,11 @@ module.exports = {
               "cap": "表示速度をLCPで数値化"
             },
             {
-              "icon": "ic-wheel",
+              "icon": "ic-bolt",
               "cap": "操作の反応速度をINPで測定"
             },
             {
-              "icon": "ic-image",
+              "icon": "ic-monitor",
               "cap": "レイアウトのガタつきをCLSで測定"
             }
           ],
@@ -9527,13 +9230,11 @@ module.exports = {
                 {
                   "name": "PWA",
                   "desc": "アプリっぽい体験を実現する技術。",
-                  "icon": "ic-laptop",
                   "page": 158
                 },
                 {
                   "name": "a11y（アクセシビリティ）",
                   "desc": "誰もが使える設計にするための視点。",
-                  "icon": "ic-scale",
                   "page": 160
                 }
               ]
@@ -9544,7 +9245,7 @@ module.exports = {
           "id": "redux",
           "page": 163,
           "term": "Redux",
-          "subtitle": "「どのコンポーネントの状態が正しいんだっけ」を終わらせた仕組み",
+          "reading": "リダックス",
           "category": "状態管理",
           "icon": "ic-layers",
           "oneline": "アプリ全体の状態（State）を1箇所にまとめて管理する、React向けの状態管理ライブラリ。",
@@ -9573,15 +9274,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-layers",
+              "icon": "ic-database",
               "cap": "状態を1箇所のストアに集約"
             },
             {
-              "icon": "ic-network",
+              "icon": "ic-link",
               "cap": "離れたコンポーネント間でも状態共有"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-list",
               "cap": "決まった手順でしか状態を変更できない"
             }
           ],
@@ -9593,7 +9294,6 @@ module.exports = {
                 {
                   "name": "React",
                   "desc": "コンポーネント単位でUIを組み立てるライブラリ。",
-                  "icon": "ic-layers",
                   "page": 146
                 }
               ]
@@ -9604,7 +9304,6 @@ module.exports = {
                 {
                   "name": "Zustand",
                   "desc": "手順の少ない軽量な状態管理。",
-                  "icon": "ic-layers",
                   "page": 164
                 }
               ]
@@ -9615,7 +9314,7 @@ module.exports = {
           "id": "zustand",
           "page": 164,
           "term": "Zustand",
-          "subtitle": "Reduxの「お作法の多さ」に疲れた人たちが選んだ軽量な状態管理",
+          "reading": "ツースタンド",
           "category": "状態管理",
           "icon": "ic-layers",
           "oneline": "Action/Reducerのような決まった手順を省き、少ないコードでReactの状態を共有できる軽量な状態管理ライブラリ。",
@@ -9644,15 +9343,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-wheel",
+              "icon": "ic-code",
               "cap": "少ないコードで状態を共有"
             },
             {
-              "icon": "ic-scribble",
+              "icon": "ic-book",
               "cap": "覚えることが少ない"
             },
             {
-              "icon": "ic-package",
+              "icon": "ic-puzzle",
               "cap": "必要な機能だけ後から追加可能"
             }
           ],
@@ -9664,13 +9363,11 @@ module.exports = {
                 {
                   "name": "Redux",
                   "desc": "手順は多いが予測可能性の高い状態管理。",
-                  "icon": "ic-layers",
                   "page": 163
                 },
                 {
                   "name": "Pinia",
                   "desc": "Vue版の似た立ち位置の状態管理。",
-                  "icon": "ic-layers",
                   "page": 165
                 }
               ]
@@ -9681,7 +9378,7 @@ module.exports = {
           "id": "pinia",
           "page": 165,
           "term": "Pinia",
-          "subtitle": "Vue公式が選んだ、Vuexに代わる状態管理",
+          "reading": "ピーニャ",
           "category": "状態管理",
           "icon": "ic-layers",
           "oneline": "Vue公式が推奨する、TypeScriptとの相性やシンプルさを重視した状態管理ライブラリ。",
@@ -9710,15 +9407,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-layers",
+              "icon": "ic-code",
               "cap": "ストアをシンプルな構文で定義"
             },
             {
-              "icon": "ic-wheel",
+              "icon": "ic-check",
               "cap": "型推論が効いて書きやすい"
             },
             {
-              "icon": "ic-network",
+              "icon": "ic-split",
               "cap": "複数ストアに分割して管理しやすい"
             }
           ],
@@ -9730,7 +9427,6 @@ module.exports = {
                 {
                   "name": "Vue",
                   "desc": "HTMLに近い書き味のコンポーネント指向フレームワーク。",
-                  "icon": "ic-layers",
                   "page": 147
                 }
               ]
@@ -9741,7 +9437,6 @@ module.exports = {
                 {
                   "name": "Zustand",
                   "desc": "React版の似た立ち位置の状態管理。",
-                  "icon": "ic-layers",
                   "page": 164
                 }
               ]
@@ -9758,7 +9453,7 @@ module.exports = {
           "id": "ruby",
           "page": 171,
           "term": "Ruby",
-          "subtitle": "「人間が読みやすい」を設計思想の中心に置いた言語",
+          "reading": "ルビー",
           "category": "プログラミング言語",
           "icon": "ic-scribble",
           "oneline": "書きやすさ・読みやすさを最優先に設計された、Ruby on Railsの生みの親でもあるプログラミング言語。",
@@ -9792,7 +9487,7 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-scribble",
+              "icon": "ic-code",
               "cap": "書きやすいコードが書ける"
             },
             {
@@ -9800,7 +9495,7 @@ module.exports = {
               "cap": "Webアプリを素早く開発できる"
             },
             {
-              "icon": "ic-package",
+              "icon": "ic-puzzle",
               "cap": "豊富なgemで機能を拡張できる"
             }
           ],
@@ -9812,7 +9507,6 @@ module.exports = {
                 {
                   "name": "Rails",
                   "desc": "RubyのWebフレームワーク。設定より規約の思想で作られている。",
-                  "icon": "ic-server",
                   "page": 177
                 }
               ]
@@ -9823,7 +9517,6 @@ module.exports = {
                 {
                   "name": "Python",
                   "desc": "同じく書きやすさを重視するスクリプト言語。",
-                  "icon": "ic-file",
                   "page": 172
                 }
               ]
@@ -9834,7 +9527,7 @@ module.exports = {
           "id": "python",
           "page": 172,
           "term": "Python",
-          "subtitle": "シンプルな文法で、Web開発からAI・データ分析まで橋渡しする言語",
+          "reading": "パイソン",
           "category": "プログラミング言語",
           "icon": "ic-file",
           "oneline": "インデントで構造を表す簡潔な文法を持ち、Web開発・データ分析・機械学習まで幅広く使われる言語。",
@@ -9868,15 +9561,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-file",
+              "icon": "ic-code",
               "cap": "シンプルな文法で書ける"
             },
             {
-              "icon": "ic-network",
+              "icon": "ic-chart",
               "cap": "AI・データ分析にも使える"
             },
             {
-              "icon": "ic-package",
+              "icon": "ic-puzzle",
               "cap": "ライブラリが豊富"
             }
           ],
@@ -9888,19 +9581,16 @@ module.exports = {
                 {
                   "name": "Django",
                   "desc": "電池付属の思想を持つフルスタックフレームワーク。",
-                  "icon": "ic-layers",
                   "page": 180
                 },
                 {
                   "name": "FastAPI",
                   "desc": "型ヒントを活かした高速なAPIフレームワーク。",
-                  "icon": "ic-rocket",
                   "page": 181
                 },
                 {
                   "name": "Flask",
                   "desc": "必要な機能だけを足していく軽量フレームワーク。",
-                  "icon": "ic-file",
                   "page": 182
                 }
               ]
@@ -9911,7 +9601,6 @@ module.exports = {
                 {
                   "name": "Ruby",
                   "desc": "同じく書きやすさを重視するスクリプト言語。",
-                  "icon": "ic-scribble",
                   "page": 171
                 }
               ]
@@ -9922,7 +9611,7 @@ module.exports = {
           "id": "go",
           "page": 173,
           "term": "Go",
-          "subtitle": "Googleが「大規模開発のシンプルさ」のために作った言語",
+          "reading": "ゴー",
           "category": "プログラミング言語",
           "icon": "ic-wheel",
           "oneline": "並行処理を言語レベルでサポートし、シンプルな文法と高速な実行を両立するGoogle製の言語。",
@@ -9956,15 +9645,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-rocket",
+              "icon": "ic-bolt",
               "cap": "高速に動作する"
             },
             {
-              "icon": "ic-network",
+              "icon": "ic-split",
               "cap": "並行処理を手軽に書ける"
             },
             {
-              "icon": "ic-cube",
+              "icon": "ic-package",
               "cap": "単一バイナリで配布できる"
             }
           ],
@@ -9976,7 +9665,6 @@ module.exports = {
                 {
                   "name": "Gin",
                   "desc": "Goの速さを活かしたシンプルなWebフレームワーク。",
-                  "icon": "ic-rocket",
                   "page": 183
                 }
               ]
@@ -9987,7 +9675,6 @@ module.exports = {
                 {
                   "name": "Rust",
                   "desc": "速度に加えてメモリ安全性をコンパイル時に保証する言語。",
-                  "icon": "ic-wheel",
                   "page": 176
                 }
               ]
@@ -9998,7 +9685,7 @@ module.exports = {
           "id": "php",
           "page": 174,
           "term": "PHP",
-          "subtitle": "「Webページに動きをつける」ために生まれ、今もWebを支える言語",
+          "reading": "ピーエイチピー",
           "category": "プログラミング言語",
           "icon": "ic-file",
           "oneline": "HTMLに埋め込んで使える手軽さから広まり、大規模なWebサービスの基盤にもなっているサーバーサイド言語。",
@@ -10032,7 +9719,7 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-file",
+              "icon": "ic-code",
               "cap": "HTMLに処理を埋め込める"
             },
             {
@@ -10040,7 +9727,7 @@ module.exports = {
               "cap": "手軽にWebサーバーを動かせる"
             },
             {
-              "icon": "ic-package",
+              "icon": "ic-globe",
               "cap": "CMS・ECの基盤として定番"
             }
           ],
@@ -10052,7 +9739,6 @@ module.exports = {
                 {
                   "name": "Laravel",
                   "desc": "PHPをモダンにしたフルスタックフレームワーク。",
-                  "icon": "ic-server",
                   "page": 184
                 }
               ]
@@ -10063,7 +9749,6 @@ module.exports = {
                 {
                   "name": "Ruby",
                   "desc": "同じく書きやすさを軸にしたスクリプト言語。",
-                  "icon": "ic-scribble",
                   "page": 171
                 }
               ]
@@ -10074,7 +9759,7 @@ module.exports = {
           "id": "java",
           "page": 175,
           "term": "Java",
-          "subtitle": "「どこでも同じように動く」を掲げ、大規模開発の標準になった言語",
+          "reading": "ジャバ",
           "category": "プログラミング言語",
           "icon": "ic-cube",
           "oneline": "JVM上で動作し、書いたコードをOSを問わず動かせることを武器に、企業システムの定番であり続ける言語。",
@@ -10108,15 +9793,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-layers",
+              "icon": "ic-laptop",
               "cap": "OSを問わず動かせる"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-chart",
               "cap": "大規模開発でも破綻しにくい"
             },
             {
-              "icon": "ic-server",
+              "icon": "ic-check",
               "cap": "企業システムの定番として実績豊富"
             }
           ],
@@ -10128,7 +9813,6 @@ module.exports = {
                 {
                   "name": "Spring Boot",
                   "desc": "Javaの設定を自動化し、すぐに動くアプリを作れるフレームワーク。",
-                  "icon": "ic-layers",
                   "page": 185
                 }
               ]
@@ -10139,7 +9823,6 @@ module.exports = {
                 {
                   "name": "Go",
                   "desc": "シンプルさと並行処理のしやすさを重視した言語。",
-                  "icon": "ic-wheel",
                   "page": 173
                 }
               ]
@@ -10150,7 +9833,7 @@ module.exports = {
           "id": "rust",
           "page": 176,
           "term": "Rust",
-          "subtitle": "「速さ」と「安全」を、実行時ではなくコンパイル時に両立させる言語",
+          "reading": "ラスト",
           "category": "プログラミング言語",
           "icon": "ic-wheel",
           "oneline": "メモリ管理の安全性をコンパイラがチェックすることで、C/C++並みの速度と高い安全性を両立する言語。",
@@ -10188,11 +9871,11 @@ module.exports = {
               "cap": "安全性と速度を両立できる"
             },
             {
-              "icon": "ic-cube",
+              "icon": "ic-shield",
               "cap": "メモリ安全性をコンパイル時に保証"
             },
             {
-              "icon": "ic-rocket",
+              "icon": "ic-bolt",
               "cap": "C/C++並みの実行速度"
             }
           ],
@@ -10204,7 +9887,6 @@ module.exports = {
                 {
                   "name": "Go",
                   "desc": "シンプルさと開発速度を重視した言語。",
-                  "icon": "ic-wheel",
                   "page": 173
                 }
               ]
@@ -10215,7 +9897,7 @@ module.exports = {
           "id": "rails",
           "page": 177,
           "term": "Rails",
-          "subtitle": "「設定より規約」で、Webアプリ開発の定番の型を作ったフレームワーク",
+          "reading": "レイルズ",
           "category": "Webフレームワーク",
           "icon": "ic-server",
           "oneline": "Ruby製のWebフレームワーク。「設定より規約（CoC）」の思想で、少ないコードでWebアプリを組み立てられる。",
@@ -10253,11 +9935,11 @@ module.exports = {
               "cap": "短期間でWebアプリを構築できる"
             },
             {
-              "icon": "ic-server",
+              "icon": "ic-split",
               "cap": "MVCで役割を整理できる"
             },
             {
-              "icon": "ic-package",
+              "icon": "ic-puzzle",
               "cap": "gemで機能を簡単に追加できる"
             }
           ],
@@ -10269,7 +9951,6 @@ module.exports = {
                 {
                   "name": "Ruby",
                   "desc": "書きやすさ・読みやすさを重視するプログラミング言語。",
-                  "icon": "ic-scribble",
                   "page": 171
                 }
               ]
@@ -10280,13 +9961,11 @@ module.exports = {
                 {
                   "name": "Laravel",
                   "desc": "PHP版のフルスタックフレームワーク。",
-                  "icon": "ic-server",
                   "page": 184
                 },
                 {
                   "name": "Django",
                   "desc": "Python版のフルスタックフレームワーク。",
-                  "icon": "ic-layers",
                   "page": 180
                 }
               ]
@@ -10297,7 +9976,7 @@ module.exports = {
           "id": "express",
           "page": 178,
           "term": "Express",
-          "subtitle": "Node.jsに最小限の骨組みだけを足した、軽量Webフレームワーク",
+          "reading": "エクスプレス",
           "category": "Webフレームワーク",
           "icon": "ic-server",
           "oneline": "Node.js上で動く、必要なものだけを自分で組み合わせるミニマルなWebフレームワーク。",
@@ -10331,15 +10010,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-server",
+              "icon": "ic-code",
               "cap": "最小限の記述でAPIを作れる"
             },
             {
-              "icon": "ic-layers",
+              "icon": "ic-puzzle",
               "cap": "ミドルウェアで機能を拡張できる"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-gear",
               "cap": "構成を自由に設計できる"
             }
           ],
@@ -10351,7 +10030,6 @@ module.exports = {
                 {
                   "name": "Hono",
                   "desc": "Edge環境向けに生まれた、より軽量なフレームワーク。",
-                  "icon": "ic-cloud",
                   "page": 179
                 }
               ]
@@ -10362,7 +10040,7 @@ module.exports = {
           "id": "hono",
           "page": 179,
           "term": "Hono",
-          "subtitle": "Cloudflare WorkersなどのEdge環境向けに生まれた、超軽量フレームワーク",
+          "reading": "ホノ",
           "category": "Webフレームワーク",
           "icon": "ic-cloud",
           "oneline": "TypeScriptで書かれ、Node.js以外のEdgeランタイムでも高速に動く軽量Webフレームワーク。",
@@ -10400,11 +10078,11 @@ module.exports = {
               "cap": "Edge環境でも高速に動く"
             },
             {
-              "icon": "ic-rocket",
+              "icon": "ic-bolt",
               "cap": "起動が軽くレスポンスが速い"
             },
             {
-              "icon": "ic-layers",
+              "icon": "ic-swap",
               "cap": "複数のランタイムで動かせる"
             }
           ],
@@ -10416,7 +10094,6 @@ module.exports = {
                 {
                   "name": "Express",
                   "desc": "Node.js向けの定番の軽量フレームワーク。",
-                  "icon": "ic-server",
                   "page": 178
                 }
               ]
@@ -10427,7 +10104,7 @@ module.exports = {
           "id": "django",
           "page": 180,
           "term": "Django",
-          "subtitle": "「電池付属」でWebアプリに必要な機能をひとまとめにしたフレームワーク",
+          "reading": "ジャンゴ",
           "category": "Webフレームワーク",
           "icon": "ic-layers",
           "oneline": "認証・管理画面・ORMなど、Webアプリに必要な機能を標準で備えたPython製のフルスタックフレームワーク。",
@@ -10461,15 +10138,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-layers",
+              "icon": "ic-package",
               "cap": "必要な機能が最初から揃っている"
             },
             {
-              "icon": "ic-server",
+              "icon": "ic-monitor",
               "cap": "管理画面が自動で手に入る"
             },
             {
-              "icon": "ic-rocket",
+              "icon": "ic-chart",
               "cap": "大規模なWebアプリを素早く構築できる"
             }
           ],
@@ -10481,7 +10158,6 @@ module.exports = {
                 {
                   "name": "Python",
                   "desc": "シンプルな文法を持つプログラミング言語。",
-                  "icon": "ic-file",
                   "page": 172
                 }
               ]
@@ -10492,19 +10168,16 @@ module.exports = {
                 {
                   "name": "FastAPI",
                   "desc": "型ヒントを活かした高速なAPIフレームワーク。",
-                  "icon": "ic-rocket",
                   "page": 181
                 },
                 {
                   "name": "Flask",
                   "desc": "必要な機能だけを足していく軽量フレームワーク。",
-                  "icon": "ic-file",
                   "page": 182
                 },
                 {
                   "name": "Rails",
                   "desc": "Ruby版のフルスタックフレームワーク。",
-                  "icon": "ic-server",
                   "page": 177
                 }
               ]
@@ -10515,7 +10188,7 @@ module.exports = {
           "id": "fastapi",
           "page": 181,
           "term": "FastAPI",
-          "subtitle": "型ヒントを書くだけでAPI仕様書まで自動生成される、モダンなAPIフレームワーク",
+          "reading": "ファストエーピーアイ",
           "category": "Webフレームワーク",
           "icon": "ic-rocket",
           "oneline": "Pythonの型ヒントを使って、高速なAPIサーバーとドキュメントを同時に生成できるフレームワーク。",
@@ -10549,15 +10222,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-rocket",
+              "icon": "ic-bolt",
               "cap": "非同期処理で高速に動く"
             },
             {
-              "icon": "ic-file",
+              "icon": "ic-book",
               "cap": "API仕様書が自動で手に入る"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-bug",
               "cap": "型ヒントでバグを早期発見できる"
             }
           ],
@@ -10569,7 +10242,6 @@ module.exports = {
                 {
                   "name": "Python",
                   "desc": "シンプルな文法を持つプログラミング言語。",
-                  "icon": "ic-file",
                   "page": 172
                 }
               ]
@@ -10580,13 +10252,11 @@ module.exports = {
                 {
                   "name": "Django",
                   "desc": "電池付属の思想を持つフルスタックフレームワーク。",
-                  "icon": "ic-layers",
                   "page": 180
                 },
                 {
                   "name": "Flask",
                   "desc": "必要な機能だけを足していく軽量フレームワーク。",
-                  "icon": "ic-file",
                   "page": 182
                 }
               ]
@@ -10597,7 +10267,7 @@ module.exports = {
           "id": "flask",
           "page": 182,
           "term": "Flask",
-          "subtitle": "必要な部品だけを自分で足していく、Python製の軽量フレームワーク",
+          "reading": "フラスク",
           "category": "Webフレームワーク",
           "icon": "ic-file",
           "oneline": "最小限の機能だけを持ち、必要なライブラリを自分で組み合わせて育てていくPython製の軽量フレームワーク。",
@@ -10631,15 +10301,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-file",
+              "icon": "ic-rocket",
               "cap": "最小構成からすぐに書き始められる"
             },
             {
-              "icon": "ic-package",
+              "icon": "ic-puzzle",
               "cap": "必要な機能だけ拡張できる"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-target",
               "cap": "小規模〜中規模に向いている"
             }
           ],
@@ -10651,7 +10321,6 @@ module.exports = {
                 {
                   "name": "Python",
                   "desc": "シンプルな文法を持つプログラミング言語。",
-                  "icon": "ic-file",
                   "page": 172
                 }
               ]
@@ -10662,13 +10331,11 @@ module.exports = {
                 {
                   "name": "Django",
                   "desc": "電池付属の思想を持つフルスタックフレームワーク。",
-                  "icon": "ic-layers",
                   "page": 180
                 },
                 {
                   "name": "FastAPI",
                   "desc": "型ヒントを活かした高速なAPIフレームワーク。",
-                  "icon": "ic-rocket",
                   "page": 181
                 }
               ]
@@ -10679,7 +10346,7 @@ module.exports = {
           "id": "gin",
           "page": 183,
           "term": "Gin",
-          "subtitle": "Goの速さを活かしきる、シンプルなWebフレームワーク",
+          "reading": "ジン",
           "category": "Webフレームワーク",
           "icon": "ic-rocket",
           "oneline": "Go言語の標準ライブラリだけでは冗長になりがちなルーティング処理を、シンプルな記法で扱えるようにしたWebフレームワーク。",
@@ -10713,15 +10380,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-rocket",
+              "icon": "ic-bolt",
               "cap": "Go標準に迫る速度を維持できる"
             },
             {
-              "icon": "ic-server",
+              "icon": "ic-code",
               "cap": "シンプルな記法でAPIを作れる"
             },
             {
-              "icon": "ic-layers",
+              "icon": "ic-puzzle",
               "cap": "ミドルウェアを手軽に追加できる"
             }
           ],
@@ -10733,7 +10400,6 @@ module.exports = {
                 {
                   "name": "Go",
                   "desc": "並行処理を得意とするシンプルな言語。",
-                  "icon": "ic-wheel",
                   "page": 173
                 }
               ]
@@ -10744,7 +10410,7 @@ module.exports = {
           "id": "laravel",
           "page": 184,
           "term": "Laravel",
-          "subtitle": "「PHPは冗長」という評判を覆した、モダンなフルスタックフレームワーク",
+          "reading": "ララベル",
           "category": "Webフレームワーク",
           "icon": "ic-server",
           "oneline": "認証・ルーティング・ORMなどを整った形で備え、PHPでのWebアプリ開発を一気にモダンにしたフレームワーク。",
@@ -10778,15 +10444,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-server",
+              "icon": "ic-code",
               "cap": "モダンな作法でWebアプリを構築できる"
             },
             {
-              "icon": "ic-layers",
+              "icon": "ic-key",
               "cap": "認証・ORMなどが標準で揃っている"
             },
             {
-              "icon": "ic-package",
+              "icon": "ic-puzzle",
               "cap": "豊富なパッケージで拡張できる"
             }
           ],
@@ -10798,7 +10464,6 @@ module.exports = {
                 {
                   "name": "PHP",
                   "desc": "HTMLに埋め込んで使えるサーバーサイド言語。",
-                  "icon": "ic-file",
                   "page": 174
                 }
               ]
@@ -10809,7 +10474,6 @@ module.exports = {
                 {
                   "name": "Rails",
                   "desc": "Ruby版のフルスタックフレームワーク。",
-                  "icon": "ic-server",
                   "page": 177
                 }
               ]
@@ -10821,7 +10485,7 @@ module.exports = {
           "page": 185,
           "term": "Spring Boot",
           "compact": true,
-          "subtitle": "Javaの「設定地獄」を解消し、すぐに動くアプリを作れるようにしたフレームワーク",
+          "reading": "スプリングブート",
           "category": "Webフレームワーク",
           "icon": "ic-layers",
           "oneline": "煩雑だったSpringフレームワークの設定を自動化し、Javaで素早くアプリケーションを起動できるようにしたフレームワーク。",
@@ -10859,11 +10523,11 @@ module.exports = {
               "cap": "すぐに動くアプリを構築できる"
             },
             {
-              "icon": "ic-layers",
+              "icon": "ic-gear",
               "cap": "設定の大部分を自動化できる"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-shield",
               "cap": "エンタープライズ規模でも安定動作"
             }
           ],
@@ -10875,7 +10539,6 @@ module.exports = {
                 {
                   "name": "Java",
                   "desc": "JVM上で動作し、OSを問わず動かせる言語。",
-                  "icon": "ic-cube",
                   "page": 175
                 }
               ]
@@ -10892,7 +10555,7 @@ module.exports = {
           "id": "ios",
           "page": 450,
           "term": "iOS",
-          "subtitle": "Appleのスマホ・タブレット専用OS",
+          "reading": "アイオーエス",
           "category": "モバイル・プラットフォーム",
           "icon": "ic-laptop",
           "oneline": "iPhoneやiPad向けのオペレーティングシステム。App Store経由での配布が基本。",
@@ -10926,15 +10589,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-laptop",
+              "icon": "ic-mobile",
               "cap": "iPhone向けアプリを配布できる"
             },
             {
-              "icon": "ic-package",
+              "icon": "ic-check",
               "cap": "審査付きストアで品質の下限を揃えやすい"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-search",
               "cap": "OSバージョンと端末の組み合わせが比較的把握しやすい"
             }
           ],
@@ -10946,19 +10609,16 @@ module.exports = {
                 {
                   "name": "Swift",
                   "desc": "iOSアプリ開発の第一言語。",
-                  "icon": "ic-file",
                   "page": 457
                 },
                 {
                   "name": "ネイティブアプリ",
                   "desc": "OSの正式APIで作るアプリ。",
-                  "icon": "ic-cube",
                   "page": 452
                 },
                 {
                   "name": "Android",
                   "desc": "対になるもう一方の巨大プラットフォーム。",
-                  "icon": "ic-monitor",
                   "page": 451
                 }
               ]
@@ -10969,7 +10629,7 @@ module.exports = {
           "id": "android",
           "page": 451,
           "term": "Android",
-          "subtitle": "世界シェア最大のスマホOS",
+          "reading": "アンドロイド",
           "category": "モバイル・プラットフォーム",
           "icon": "ic-monitor",
           "oneline": "Googleが中心となって育てる、オープン寄りのスマートフォン向けOS。多様なメーカーの端末で動く。",
@@ -11003,15 +10663,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-monitor",
+              "icon": "ic-mobile",
               "cap": "幅広い端末向けにアプリを届けられる"
             },
             {
-              "icon": "ic-layers",
+              "icon": "ic-split",
               "cap": "端末・OSバージョンの差を意識した設計ができる"
             },
             {
-              "icon": "ic-package",
+              "icon": "ic-send",
               "cap": "Playストア経由で配布・更新できる"
             }
           ],
@@ -11023,19 +10683,16 @@ module.exports = {
                 {
                   "name": "Kotlin",
                   "desc": "Android公式が推す第一言語。",
-                  "icon": "ic-file",
                   "page": 458
                 },
                 {
                   "name": "iOS",
                   "desc": "もう一方の巨大プラットフォーム。",
-                  "icon": "ic-laptop",
                   "page": 450
                 },
                 {
                   "name": "Flutter",
                   "desc": "Android/iOSをまとめて書く選択肢。",
-                  "icon": "ic-layers",
                   "page": 455
                 }
               ]
@@ -11046,7 +10703,6 @@ module.exports = {
           "id": "native-app",
           "page": 452,
           "term": "ネイティブアプリ",
-          "subtitle": "そのOS専用の「本番装備」で作るアプリ",
           "category": "モバイル・アプリ形態",
           "icon": "ic-cube",
           "oneline": "iOSやAndroidが用意した公式の言語・API・UI部品で作る、プラットフォーム直結のアプリ。",
@@ -11080,7 +10736,7 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-rocket",
+              "icon": "ic-bolt",
               "cap": "端末の性能を引き出しやすい"
             },
             {
@@ -11088,7 +10744,7 @@ module.exports = {
               "cap": "OS標準のUI/UXに寄せられる"
             },
             {
-              "icon": "ic-package",
+              "icon": "ic-send",
               "cap": "ストア配布・更新の流れに乗る"
             }
           ],
@@ -11100,19 +10756,16 @@ module.exports = {
                 {
                   "name": "ハイブリッドアプリ",
                   "desc": "Web技術を包んでアプリにする方式。",
-                  "icon": "ic-layers",
                   "page": 453
                 },
                 {
                   "name": "React Native",
                   "desc": "JSでネイティブUIを描く枠組み。",
-                  "icon": "ic-cube",
                   "page": 454
                 },
                 {
                   "name": "Swift",
                   "desc": "iOSネイティブの主力言語。",
-                  "icon": "ic-file",
                   "page": 457
                 }
               ]
@@ -11123,7 +10776,6 @@ module.exports = {
           "id": "hybrid-app",
           "page": 453,
           "term": "ハイブリッドアプリ",
-          "subtitle": "Webの中身を、アプリの皮で包む",
           "category": "モバイル・アプリ形態",
           "icon": "ic-layers",
           "oneline": "HTML/CSS/JSなどのWeb技術で画面を作り、ネイティブの殻（WebViewなど）で包んでストア配布するアプリ。",
@@ -11157,11 +10809,11 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-layers",
+              "icon": "ic-code",
               "cap": "Webスキルでアプリの体裁を取れる"
             },
             {
-              "icon": "ic-package",
+              "icon": "ic-link",
               "cap": "一つのコードベースで両OSに寄せやすい"
             },
             {
@@ -11177,19 +10829,16 @@ module.exports = {
                 {
                   "name": "ネイティブアプリ",
                   "desc": "OS公式APIで作る本流。",
-                  "icon": "ic-cube",
                   "page": 452
                 },
                 {
                   "name": "React Native",
                   "desc": "WebViewではなくネイティブ部品を使う道。",
-                  "icon": "ic-cube",
                   "page": 454
                 },
                 {
                   "name": "PWA",
                   "desc": "インストール感をWebのまま近づける別路線。",
-                  "icon": "ic-monitor",
                   "page": 158
                 }
               ]
@@ -11200,7 +10849,7 @@ module.exports = {
           "id": "react-native",
           "page": 454,
           "term": "React Native",
-          "subtitle": "Reactの書き方で、ネイティブUIを駆動する",
+          "reading": "リアクトネイティブ",
           "category": "クロスプラットフォーム",
           "icon": "ic-cube",
           "oneline": "Reactのコンポーネント発想で画面を書き、実際の描画はiOS/Androidのネイティブ部品に任せるフレームワーク。",
@@ -11234,15 +10883,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-cube",
+              "icon": "ic-swap",
               "cap": "React経験をモバイルに横展開できる"
             },
             {
-              "icon": "ic-layers",
+              "icon": "ic-code",
               "cap": "一本のJS/TSから両OS向けに寄せられる"
             },
             {
-              "icon": "ic-rocket",
+              "icon": "ic-puzzle",
               "cap": "ネイティブモジュールで足りない部分を足せる"
             }
           ],
@@ -11254,19 +10903,16 @@ module.exports = {
                 {
                   "name": "Flutter",
                   "desc": "Dartで自前描画するライバル枠。",
-                  "icon": "ic-layers",
                   "page": 455
                 },
                 {
                   "name": "React",
                   "desc": "発想の原点であるWebのUIライブラリ。",
-                  "icon": "ic-cube",
                   "page": 146
                 },
                 {
                   "name": "ネイティブアプリ",
                   "desc": "最終的に触っている先の世界。",
-                  "icon": "ic-cube",
                   "page": 452
                 }
               ]
@@ -11277,7 +10923,7 @@ module.exports = {
           "id": "flutter",
           "page": 455,
           "term": "Flutter",
-          "subtitle": "UIも描画も、自分たちのエンジンで描く",
+          "reading": "フラッター",
           "category": "クロスプラットフォーム",
           "icon": "ic-layers",
           "oneline": "Dart言語と独自の描画エンジンで、iOS/Android（ほか）に同じ見た目のUIを描くUIキット。",
@@ -11311,15 +10957,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-layers",
+              "icon": "ic-eye",
               "cap": "デザインの再現性を両OSで高められる"
             },
             {
-              "icon": "ic-rocket",
+              "icon": "ic-bolt",
               "cap": "滑らかなアニメーションを出しやすい"
             },
             {
-              "icon": "ic-package",
+              "icon": "ic-layers",
               "cap": "一つのコードベースでマルチ向けに展開しやすい"
             }
           ],
@@ -11331,19 +10977,16 @@ module.exports = {
                 {
                   "name": "Dart",
                   "desc": "Flutter公式の言語。",
-                  "icon": "ic-file",
                   "page": 456
                 },
                 {
                   "name": "React Native",
                   "desc": "JSでネイティブUIを駆動する別路線。",
-                  "icon": "ic-cube",
                   "page": 454
                 },
                 {
                   "name": "Android",
                   "desc": "配布先の一大プラットフォーム。",
-                  "icon": "ic-monitor",
                   "page": 451
                 }
               ]
@@ -11354,7 +10997,7 @@ module.exports = {
           "id": "dart",
           "page": 456,
           "term": "Dart",
-          "subtitle": "Flutterと一緒に覚える言語",
+          "reading": "ダート",
           "category": "モバイル・言語",
           "icon": "ic-file",
           "oneline": "Googleが開発したプログラミング言語。いまはFlutterアプリを書くための主役として知られる。",
@@ -11388,11 +11031,11 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-file",
+              "icon": "ic-code",
               "cap": "FlutterのUIを型付きで書ける"
             },
             {
-              "icon": "ic-rocket",
+              "icon": "ic-gear",
               "cap": "AOT/JITを使い分けて開発と本番を両立"
             },
             {
@@ -11408,19 +11051,16 @@ module.exports = {
                 {
                   "name": "Flutter",
                   "desc": "Dartの最大の活躍の場。",
-                  "icon": "ic-layers",
                   "page": 455
                 },
                 {
                   "name": "Swift",
                   "desc": "iOSネイティブ側の言語。",
-                  "icon": "ic-file",
                   "page": 457
                 },
                 {
                   "name": "Kotlin",
                   "desc": "Androidネイティブ側の言語。",
-                  "icon": "ic-file",
                   "page": 458
                 }
               ]
@@ -11431,7 +11071,7 @@ module.exports = {
           "id": "swift",
           "page": 457,
           "term": "Swift",
-          "subtitle": "Apple純正、モダン寄りの主力言語",
+          "reading": "スウィフト",
           "category": "モバイル・言語",
           "icon": "ic-file",
           "oneline": "Appleが開発したプログラミング言語。iOS/macOSなどのアプリ開発でObjective-Cに代わって第一言語になった。",
@@ -11465,15 +11105,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-laptop",
+              "icon": "ic-mobile",
               "cap": "iOSネイティブアプリを現代的に書ける"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-shield",
               "cap": "型とオプショナルで実行時事故を減らせる"
             },
             {
-              "icon": "ic-package",
+              "icon": "ic-rocket",
               "cap": "SwiftUIなど新しいUI枠組みに乗れる"
             }
           ],
@@ -11485,19 +11125,16 @@ module.exports = {
                 {
                   "name": "iOS",
                   "desc": "Swiftが最も活躍するOS。",
-                  "icon": "ic-laptop",
                   "page": 450
                 },
                 {
                   "name": "Kotlin",
                   "desc": "Android側の対になる言語。",
-                  "icon": "ic-file",
                   "page": 458
                 },
                 {
                   "name": "ネイティブアプリ",
                   "desc": "Swiftで作る典型的な成果物。",
-                  "icon": "ic-cube",
                   "page": 452
                 }
               ]
@@ -11508,7 +11145,7 @@ module.exports = {
           "id": "kotlin",
           "page": 458,
           "term": "Kotlin",
-          "subtitle": "Android公式が「こっち推すね」と言った言語",
+          "reading": "コトリン",
           "category": "モバイル・言語",
           "icon": "ic-file",
           "oneline": "JetBrainsが作った言語で、Androidアプリ開発の第一言語としてGoogleも推奨。Javaと仲が良い。",
@@ -11542,15 +11179,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-monitor",
+              "icon": "ic-shield",
               "cap": "Androidアプリを短く安全に書ける"
             },
             {
-              "icon": "ic-layers",
+              "icon": "ic-link",
               "cap": "既存Javaコードと混在できる"
             },
             {
-              "icon": "ic-rocket",
+              "icon": "ic-sync",
               "cap": "コルーチンで非同期を扱いやすい"
             }
           ],
@@ -11562,19 +11199,16 @@ module.exports = {
                 {
                   "name": "Android",
                   "desc": "Kotlinが本領を発揮するOS。",
-                  "icon": "ic-monitor",
                   "page": 451
                 },
                 {
                   "name": "Swift",
                   "desc": "iOS側の対になる言語。",
-                  "icon": "ic-file",
                   "page": 457
                 },
                 {
                   "name": "Java",
                   "desc": "互換と歴史のパートナー。",
-                  "icon": "ic-file",
                   "page": 175
                 }
               ]
@@ -11591,7 +11225,7 @@ module.exports = {
           "id": "unit-test",
           "page": 500,
           "term": "Unit Test",
-          "subtitle": "いちばん小さい単位を、単体で殴る",
+          "reading": "ユニットテスト",
           "category": "テストの種類",
           "icon": "ic-cube",
           "oneline": "関数やクラスなど、プログラムの最小単位が期待どおり動くかを検証するテスト。",
@@ -11625,15 +11259,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-rocket",
+              "icon": "ic-bolt",
               "cap": "小さな変更をすぐ検証できる"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-target",
               "cap": "壊れた場所をピンポイントで見つけられる"
             },
             {
-              "icon": "ic-clock",
+              "icon": "ic-shield",
               "cap": "リグレッションを自動で防ぎやすくなる"
             }
           ],
@@ -11645,19 +11279,16 @@ module.exports = {
                 {
                   "name": "Integration Test",
                   "desc": "部品をつないだ状態で確かめる。",
-                  "icon": "ic-layers",
                   "page": 501
                 },
                 {
                   "name": "Mock",
                   "desc": "依存を偽物に差し替える道具。",
-                  "icon": "ic-cube",
                   "page": 503
                 },
                 {
                   "name": "Jest",
                   "desc": "JS界隈でよく使うテストランナー。",
-                  "icon": "ic-package",
                   "page": 518
                 }
               ]
@@ -11668,7 +11299,7 @@ module.exports = {
           "id": "integration-test",
           "page": 501,
           "term": "Integration Test",
-          "subtitle": "つなぎ目で、初めて起きる事故を拾う",
+          "reading": "インテグレーションテスト",
           "category": "テストの種類",
           "icon": "ic-layers",
           "oneline": "複数のモジュールや、DB・APIなどの外部をつないだ状態で、連携が正しいかを確かめるテスト。",
@@ -11702,15 +11333,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-layers",
+              "icon": "ic-alert",
               "cap": "モジュール間の契約ずれを早期に見つけられる"
             },
             {
-              "icon": "ic-server",
+              "icon": "ic-link",
               "cap": "DBやAPIとの実連携を検証できる"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-search",
               "cap": "E2Eより狭く、原因を追いやすい"
             }
           ],
@@ -11722,19 +11353,16 @@ module.exports = {
                 {
                   "name": "Unit Test",
                   "desc": "もっと小さい単位のテスト。",
-                  "icon": "ic-cube",
                   "page": 500
                 },
                 {
                   "name": "E2E Test",
                   "desc": "ユーザー操作に近い端到端のテスト。",
-                  "icon": "ic-monitor",
                   "page": 502
                 },
                 {
                   "name": "Fixture",
                   "desc": "結合時に使う固定の試験データ。",
-                  "icon": "ic-file",
                   "page": 505
                 }
               ]
@@ -11745,7 +11373,7 @@ module.exports = {
           "id": "e2e-test",
           "page": 502,
           "term": "E2E Test",
-          "subtitle": "ユーザーの操作を、ロボットが最後までやる",
+          "reading": "イーツーイーテスト",
           "category": "テストの種類",
           "icon": "ic-monitor",
           "oneline": "画面操作やAPI呼び出しなど、システムを端から端まで通して、利用シナリオが成立するかを確かめるテスト。",
@@ -11779,7 +11407,7 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-monitor",
+              "icon": "ic-alert",
               "cap": "重要シナリオの退行を自動検知できる"
             },
             {
@@ -11787,7 +11415,7 @@ module.exports = {
               "cap": "夜中のCIでも同じ確認を回せる"
             },
             {
-              "icon": "ic-rocket",
+              "icon": "ic-check",
               "cap": "リリース判断の材料を機械的に増やせる"
             }
           ],
@@ -11799,19 +11427,16 @@ module.exports = {
                 {
                   "name": "Playwright",
                   "desc": "モダンなE2E自動化ツール。",
-                  "icon": "ic-package",
                   "page": 520
                 },
                 {
                   "name": "Puppeteer",
                   "desc": "Chromeを操作する自動化ライブラリ。",
-                  "icon": "ic-package",
                   "page": 521
                 },
                 {
                   "name": "スモークテスト",
                   "desc": "「とりあえず起動するか」の薄い確認。",
-                  "icon": "ic-rocket",
                   "page": 512
                 }
               ]
@@ -11822,7 +11447,7 @@ module.exports = {
           "id": "mock",
           "page": 503,
           "term": "Mock",
-          "subtitle": "本物のふりをして、呼び出しを監視する代役",
+          "reading": "モック",
           "category": "テストダブル",
           "icon": "ic-cube",
           "oneline": "テスト中に本物の依存（APIやDBなど）の代わりに置き、戻り値や「呼ばれたか」を制御・検証する偽物。",
@@ -11860,11 +11485,11 @@ module.exports = {
               "cap": "外部依存を止めて単体テストできる"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-search",
               "cap": "呼び出し回数や引数を検証できる"
             },
             {
-              "icon": "ic-clock",
+              "icon": "ic-bolt",
               "cap": "テストを速く安定させられる"
             }
           ],
@@ -11876,19 +11501,16 @@ module.exports = {
                 {
                   "name": "Stub",
                   "desc": "決まった値を返すことに寄せた代役。",
-                  "icon": "ic-file",
                   "page": 504
                 },
                 {
                   "name": "Unit Test",
                   "desc": "Mockの出番が多い土俵。",
-                  "icon": "ic-cube",
                   "page": 500
                 },
                 {
                   "name": "Fixture",
                   "desc": "入力データ側の固定化。",
-                  "icon": "ic-file",
                   "page": 505
                 }
               ]
@@ -11899,7 +11521,7 @@ module.exports = {
           "id": "stub",
           "page": 504,
           "term": "Stub",
-          "subtitle": "「この値を返すよ」だけ用意した薄い代役",
+          "reading": "スタブ",
           "category": "テストダブル",
           "icon": "ic-file",
           "oneline": "テストのために、依存先の代わりとして決め打ちの戻り値や状態だけを返す簡易実装。",
@@ -11933,15 +11555,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-file",
+              "icon": "ic-target",
               "cap": "テストに必要な応答だけを用意できる"
             },
             {
-              "icon": "ic-cube",
+              "icon": "ic-filter",
               "cap": "本番実装の重さをテストから外せる"
             },
             {
-              "icon": "ic-clock",
+              "icon": "ic-bolt",
               "cap": "セットアップを短くできる"
             }
           ],
@@ -11953,19 +11575,16 @@ module.exports = {
                 {
                   "name": "Mock",
                   "desc": "呼び出しまで検証する寄り。",
-                  "icon": "ic-cube",
                   "page": 503
                 },
                 {
                   "name": "Fixture",
                   "desc": "データ側の固定セット。",
-                  "icon": "ic-file",
                   "page": 505
                 },
                 {
                   "name": "Unit Test",
                   "desc": "Stubがよく出る場所。",
-                  "icon": "ic-cube",
                   "page": 500
                 }
               ]
@@ -11976,7 +11595,7 @@ module.exports = {
           "id": "fixture",
           "page": 505,
           "term": "Fixture",
-          "subtitle": "テストの舞台装置と小道具一式",
+          "reading": "フィクスチャ",
           "category": "テストの基盤",
           "icon": "ic-package",
           "oneline": "テストを走らせるためにあらかじめ用意する、固定のデータや状態・環境のこと。",
@@ -12010,15 +11629,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-package",
+              "icon": "ic-database",
               "cap": "試験データをまとめて管理できる"
             },
             {
-              "icon": "ic-clock",
+              "icon": "ic-code",
               "cap": "テストの準備コードを短くできる"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-check",
               "cap": "前提条件のばらつきを減らせる"
             }
           ],
@@ -12030,19 +11649,16 @@ module.exports = {
                 {
                   "name": "Seeder",
                   "desc": "アプリ側の初期データ投入に近い概念。",
-                  "icon": "ic-package",
                   "page": 93
                 },
                 {
                   "name": "Integration Test",
                   "desc": "Fixtureの出番が多い層。",
-                  "icon": "ic-layers",
                   "page": 501
                 },
                 {
                   "name": "Factory",
-                  "desc": "動的にテストデータを作る派（一緒に覚えたい）。",
-                  "icon": "ic-wheel"
+                  "desc": "動的にテストデータを作る派（一緒に覚えたい）。"
                 }
               ]
             }
@@ -12052,7 +11668,7 @@ module.exports = {
           "id": "tdd",
           "page": 506,
           "term": "TDD",
-          "subtitle": "テストを先に書いて、実装を後から引っ張る",
+          "reading": "ティーディーディー",
           "category": "テストの進め方",
           "icon": "ic-rocket",
           "oneline": "Test-Driven Development。失敗するテストを先に書き、通る最小実装→リファクタ、を回す開発手法。",
@@ -12086,11 +11702,11 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-rocket",
+              "icon": "ic-sync",
               "cap": "小さなフィードバックループで進める"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-filter",
               "cap": "過剰な設計を抑えやすい"
             },
             {
@@ -12106,19 +11722,16 @@ module.exports = {
                 {
                   "name": "BDD",
                   "desc": "振る舞い・事例の言葉で仕様を書く寄り。",
-                  "icon": "ic-file",
                   "page": 507
                 },
                 {
                   "name": "Unit Test",
                   "desc": "TDDで最もよく回す粒度。",
-                  "icon": "ic-cube",
                   "page": 500
                 },
                 {
                   "name": "リファクタリング",
-                  "desc": "緑のあとに必ず来る工程（設計章）。",
-                  "icon": "ic-wheel"
+                  "desc": "緑のあとに必ず来る工程（設計章）。"
                 }
               ]
             }
@@ -12128,7 +11741,7 @@ module.exports = {
           "id": "bdd",
           "page": 507,
           "term": "BDD",
-          "subtitle": "「Given / When / Then」で仕様を会話する",
+          "reading": "ビーディーディー",
           "category": "テストの進め方",
           "icon": "ic-file",
           "oneline": "Behavior-Driven Development。振る舞いを自然言語に近い形で書き、開発・QA・企画の認識を揃えるアプローチ。",
@@ -12162,15 +11775,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-file",
+              "icon": "ic-code",
               "cap": "仕様をテスト可能な文章に落とせる"
             },
             {
-              "icon": "ic-network",
+              "icon": "ic-users",
               "cap": "職種をまたいで認識を揃えやすい"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-check",
               "cap": "受け入れ条件を自動化しやすくなる"
             }
           ],
@@ -12182,19 +11795,16 @@ module.exports = {
                 {
                   "name": "TDD",
                   "desc": "テスト先行のサイクル。BDDと併記されやすい。",
-                  "icon": "ic-rocket",
                   "page": 506
                 },
                 {
                   "name": "E2E Test",
                   "desc": "振る舞いシナリオの実行場所になりやすい。",
-                  "icon": "ic-monitor",
                   "page": 502
                 },
                 {
                   "name": "テスト設計",
                   "desc": "何を書くかを決める上流。",
-                  "icon": "ic-file",
                   "page": 517
                 }
               ]
@@ -12205,7 +11815,6 @@ module.exports = {
           "id": "coverage",
           "page": 508,
           "term": "カバレッジ",
-          "subtitle": "テストがコードの何割を撫でたか",
           "category": "テストの指標",
           "icon": "ic-scale",
           "oneline": "テスト実行によって実行されたコードの割合。行・分岐などの単位で測ることが多い。",
@@ -12239,15 +11848,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-scale",
+              "icon": "ic-eye",
               "cap": "未テスト箇所を可視化できる"
             },
             {
-              "icon": "ic-monitor",
+              "icon": "ic-chart",
               "cap": "PRでカバー率の変化を追える"
             },
             {
-              "icon": "ic-file",
+              "icon": "ic-search",
               "cap": "重要な経路の穴を見つけやすくなる"
             }
           ],
@@ -12259,19 +11868,16 @@ module.exports = {
                 {
                   "name": "Unit Test",
                   "desc": "カバレッジ計測の主戦場。",
-                  "icon": "ic-cube",
                   "page": 500
                 },
                 {
                   "name": "ホワイトボックステスト",
                   "desc": "内部構造を見て網羅を考える。",
-                  "icon": "ic-layers",
                   "page": 515
                 },
                 {
                   "name": "Jest",
                   "desc": "カバレッジ計測がしやすいランナー例。",
-                  "icon": "ic-package",
                   "page": 518
                 }
               ]
@@ -12282,7 +11888,6 @@ module.exports = {
           "id": "debug",
           "page": 509,
           "term": "デバッグ",
-          "subtitle": "バグを「見つける・理解する・潰す」作業全体",
           "category": "不具合対応",
           "icon": "ic-pen",
           "oneline": "プログラムの不具合原因を特定し、修正して確認するまでの一連の活動。",
@@ -12316,11 +11921,11 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-pen",
+              "icon": "ic-search",
               "cap": "原因を切り分けて確実に潰せる"
             },
             {
-              "icon": "ic-monitor",
+              "icon": "ic-bug",
               "cap": "デバッガで実行時の状態を覗ける"
             },
             {
@@ -12335,19 +11940,16 @@ module.exports = {
               "items": [
                 {
                   "name": "ログ",
-                  "desc": "本番でデバッグするときの手がかり（観測章へ）。",
-                  "icon": "ic-file"
+                  "desc": "本番でデバッグするときの手がかり（観測章へ）。"
                 },
                 {
                   "name": "回帰テスト",
                   "desc": "直した穴が再び開かないか確認。",
-                  "icon": "ic-clock",
                   "page": 511
                 },
                 {
                   "name": "Unit Test",
                   "desc": "仮説検証を高速にする道具。",
-                  "icon": "ic-cube",
                   "page": 500
                 }
               ]
@@ -12358,7 +11960,6 @@ module.exports = {
           "id": "snapshot-test",
           "page": 510,
           "term": "スナップショットテスト",
-          "subtitle": "「前と同じ見た目／出力か」を写真で比べる",
           "category": "テストの種類",
           "icon": "ic-image",
           "oneline": "コンポーネントの出力やUIの結果を保存し、次回以降の実行結果と差分比較するテスト手法。",
@@ -12392,7 +11993,7 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-image",
+              "icon": "ic-alert",
               "cap": "UIの意図しない変化を検知できる"
             },
             {
@@ -12400,7 +12001,7 @@ module.exports = {
               "cap": "細かいassertを書く時間を節約できる"
             },
             {
-              "icon": "ic-file",
+              "icon": "ic-eye",
               "cap": "差分レビューで変更意図を確認できる"
             }
           ],
@@ -12412,19 +12013,16 @@ module.exports = {
                 {
                   "name": "Jest",
                   "desc": "toMatchSnapshot が有名。",
-                  "icon": "ic-package",
                   "page": 518
                 },
                 {
                   "name": "Vitest",
                   "desc": "同様の機能を持つ高速ランナー。",
-                  "icon": "ic-package",
                   "page": 519
                 },
                 {
                   "name": "回帰テスト",
                   "desc": "変化検知という目的が近い。",
-                  "icon": "ic-clock",
                   "page": 511
                 }
               ]
@@ -12435,7 +12033,7 @@ module.exports = {
           "id": "regression-test",
           "page": 511,
           "term": "回帰テスト",
-          "subtitle": "直したつもりが、昔のバグを呼び戻していないか",
+          "reading": "かいきテスト",
           "category": "テストの種類",
           "icon": "ic-clock",
           "oneline": "変更後に、以前できていたことが壊れていないかを確認するテスト（またはその活動）。",
@@ -12469,15 +12067,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-clock",
+              "icon": "ic-undo",
               "cap": "過去の不具合の再発を防ぎやすい"
             },
             {
-              "icon": "ic-rocket",
+              "icon": "ic-shield",
               "cap": "変更のたびに安全網をかけられる"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-rocket",
               "cap": "リファクタの勇気を増やせる"
             }
           ],
@@ -12489,19 +12087,16 @@ module.exports = {
                 {
                   "name": "スモークテスト",
                   "desc": "もっと薄い「死んでないか」確認。",
-                  "icon": "ic-rocket",
                   "page": 512
                 },
                 {
                   "name": "E2E Test",
                   "desc": "回帰の実行形態のひとつ。",
-                  "icon": "ic-monitor",
                   "page": 502
                 },
                 {
                   "name": "デバッグ",
                   "desc": "回帰で落ちたあと必ず来る工程。",
-                  "icon": "ic-pen",
                   "page": 509
                 }
               ]
@@ -12512,7 +12107,6 @@ module.exports = {
           "id": "smoke-test",
           "page": 512,
           "term": "スモークテスト",
-          "subtitle": "電源入れて、煙が出ないかだけ見る",
           "category": "テストの種類",
           "icon": "ic-rocket",
           "oneline": "ビルドやデプロイ直後に、起動・主要導線など最小限が動くかを短時間で確認するテスト。",
@@ -12546,15 +12140,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-rocket",
+              "icon": "ic-alert",
               "cap": "壊れたデプロイをすぐ止められる"
             },
             {
-              "icon": "ic-clock",
+              "icon": "ic-filter",
               "cap": "重いテストの前に足切りできる"
             },
             {
-              "icon": "ic-monitor",
+              "icon": "ic-check",
               "cap": "主要導線の生存を確認できる"
             }
           ],
@@ -12566,19 +12160,16 @@ module.exports = {
                 {
                   "name": "E2E Test",
                   "desc": "もっと厚いシナリオ確認。",
-                  "icon": "ic-monitor",
                   "page": 502
                 },
                 {
                   "name": "回帰テスト",
                   "desc": "広さ・深さのある再確認。",
-                  "icon": "ic-clock",
                   "page": 511
                 },
                 {
                   "name": "CI",
-                  "desc": "スモークを自動で回す場所（Ch14）。",
-                  "icon": "ic-wheel"
+                  "desc": "スモークを自動で回す場所（Ch14）。"
                 }
               ]
             }
@@ -12588,7 +12179,7 @@ module.exports = {
           "id": "boundary-value",
           "page": 513,
           "term": "境界値分析",
-          "subtitle": "バグは端っこに宿る、という経験則",
+          "reading": "きょうかいちぶんせき",
           "category": "テスト設計技法",
           "icon": "ic-scale",
           "oneline": "仕様の境界（0と1、最大値の前後など）を重点的に試すテスト設計の技法。",
@@ -12622,15 +12213,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-scale",
+              "icon": "ic-target",
               "cap": "オフバイワン系の欠陥を狙いやすい"
             },
             {
-              "icon": "ic-file",
+              "icon": "ic-book",
               "cap": "テストケースに設計根拠を持たせられる"
             },
             {
-              "icon": "ic-cube",
+              "icon": "ic-bolt",
               "cap": "少ないケースで危険地帯をカバーできる"
             }
           ],
@@ -12642,19 +12233,16 @@ module.exports = {
                 {
                   "name": "同値分割",
                   "desc": "同じ扱いのグループから代表を取る技法。",
-                  "icon": "ic-layers",
                   "page": 514
                 },
                 {
                   "name": "ブラックボックステスト",
                   "desc": "仕様ベースで境界を見る立場。",
-                  "icon": "ic-monitor",
                   "page": 516
                 },
                 {
                   "name": "テスト設計",
                   "desc": "技法を組み合わせる上流工程。",
-                  "icon": "ic-file",
                   "page": 517
                 }
               ]
@@ -12665,7 +12253,7 @@ module.exports = {
           "id": "equivalence-partitioning",
           "page": 514,
           "term": "同値分割",
-          "subtitle": "同じ扱いの値は、代表一人で十分",
+          "reading": "どうちぶんかつ",
           "category": "テスト設計技法",
           "icon": "ic-layers",
           "oneline": "入力を「同じ結果になるグループ」に分け、各グループから代表値だけを試すテスト設計技法。",
@@ -12699,15 +12287,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-layers",
+              "icon": "ic-list",
               "cap": "入力空間を整理してテストできる"
             },
             {
-              "icon": "ic-clock",
+              "icon": "ic-filter",
               "cap": "無駄な重複ケースを減らせる"
             },
             {
-              "icon": "ic-file",
+              "icon": "ic-book",
               "cap": "カバレッジの議論を仕様ベースにできる"
             }
           ],
@@ -12719,19 +12307,16 @@ module.exports = {
                 {
                   "name": "境界値分析",
                   "desc": "区画の端を突く姉妹技法。",
-                  "icon": "ic-scale",
                   "page": 513
                 },
                 {
                   "name": "テスト設計",
                   "desc": "これらの技法を使う工程。",
-                  "icon": "ic-file",
                   "page": 517
                 },
                 {
                   "name": "ブラックボックステスト",
                   "desc": "内部を見ずに仕様から区画する。",
-                  "icon": "ic-monitor",
                   "page": 516
                 }
               ]
@@ -12742,7 +12327,6 @@ module.exports = {
           "id": "white-box-test",
           "page": 515,
           "term": "ホワイトボックステスト",
-          "subtitle": "中身の配線を見てから試す",
           "category": "テストの立場",
           "icon": "ic-layers",
           "oneline": "プログラムの内部構造（分岐や経路）を理解したうえで、その経路を通すように設計するテスト。",
@@ -12776,15 +12360,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-layers",
+              "icon": "ic-branch",
               "cap": "分岐網羅など構造ベースの確認ができる"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-chart",
               "cap": "カバレッジと相性が良い"
             },
             {
-              "icon": "ic-file",
+              "icon": "ic-undo",
               "cap": "リファクタ前後の経路維持を支えられる"
             }
           ],
@@ -12796,19 +12380,16 @@ module.exports = {
                 {
                   "name": "ブラックボックステスト",
                   "desc": "中を見ない対の立場。",
-                  "icon": "ic-monitor",
                   "page": 516
                 },
                 {
                   "name": "カバレッジ",
                   "desc": "構造網羅の指標。",
-                  "icon": "ic-scale",
                   "page": 508
                 },
                 {
                   "name": "Unit Test",
                   "desc": "白箱になりやすい粒度。",
-                  "icon": "ic-cube",
                   "page": 500
                 }
               ]
@@ -12819,7 +12400,6 @@ module.exports = {
           "id": "black-box-test",
           "page": 516,
           "term": "ブラックボックステスト",
-          "subtitle": "中身は知らぬ、入出力だけ見る",
           "category": "テストの立場",
           "icon": "ic-monitor",
           "oneline": "内部実装を知らなくても（見なくても）、仕様上の入力に対する出力や振る舞いを確認するテスト。",
@@ -12853,15 +12433,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-monitor",
+              "icon": "ic-check",
               "cap": "仕様どおりかを外側から検証できる"
             },
             {
-              "icon": "ic-file",
+              "icon": "ic-shield",
               "cap": "実装変更に強いテストにしやすい"
             },
             {
-              "icon": "ic-network",
+              "icon": "ic-users",
               "cap": "開発以外の視点を取り込みやすい"
             }
           ],
@@ -12873,19 +12453,16 @@ module.exports = {
                 {
                   "name": "ホワイトボックステスト",
                   "desc": "中身を見る対の立場。",
-                  "icon": "ic-layers",
                   "page": 515
                 },
                 {
                   "name": "同値分割",
                   "desc": "黒箱で使う代表技法。",
-                  "icon": "ic-layers",
                   "page": 514
                 },
                 {
                   "name": "E2E Test",
                   "desc": "黒箱で回すことが多い層。",
-                  "icon": "ic-monitor",
                   "page": 502
                 }
               ]
@@ -12896,7 +12473,7 @@ module.exports = {
           "id": "test-design",
           "page": 517,
           "term": "テスト設計",
-          "subtitle": "何を試すかを、書く前に決める",
+          "reading": "テストせっけい",
           "category": "テストの進め方",
           "icon": "ic-file",
           "oneline": "観点・条件・期待結果を整理し、どのテストケースをどの粒度で持つかを決める活動。",
@@ -12930,15 +12507,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-file",
+              "icon": "ic-users",
               "cap": "テスト観点をチームで共有できる"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-target",
               "cap": "限られた手数でリスクの高い所を狙える"
             },
             {
-              "icon": "ic-layers",
+              "icon": "ic-puzzle",
               "cap": "技法（境界・同値など）を意図的に使える"
             }
           ],
@@ -12950,19 +12527,16 @@ module.exports = {
                 {
                   "name": "境界値分析",
                   "desc": "設計で使う代表技法。",
-                  "icon": "ic-scale",
                   "page": 513
                 },
                 {
                   "name": "同値分割",
                   "desc": "同じく代表技法。",
-                  "icon": "ic-layers",
                   "page": 514
                 },
                 {
                   "name": "BDD",
                   "desc": "振る舞いの言葉で設計する流派。",
-                  "icon": "ic-file",
                   "page": 507
                 }
               ]
@@ -12973,7 +12547,7 @@ module.exports = {
           "id": "jest",
           "page": 518,
           "term": "Jest",
-          "subtitle": "JavaScriptテストの「とりあえずこれ」だった王者",
+          "reading": "ジェスト",
           "category": "テストツール",
           "icon": "ic-package",
           "oneline": "Meta（旧Facebook）発のJavaScriptテストフレームワーク。ランナー・アサーション・モックが一式そろっている。",
@@ -13007,15 +12581,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-package",
+              "icon": "ic-rocket",
               "cap": "JS/TSのユニットテストをすぐ始められる"
             },
             {
-              "icon": "ic-image",
+              "icon": "ic-eye",
               "cap": "スナップショットテストがしやすい"
             },
             {
-              "icon": "ic-cube",
+              "icon": "ic-puzzle",
               "cap": "モジュールモックが標準で使える"
             }
           ],
@@ -13027,19 +12601,16 @@ module.exports = {
                 {
                   "name": "Vitest",
                   "desc": "Vite親和の高速オルタナティブ。",
-                  "icon": "ic-package",
                   "page": 519
                 },
                 {
                   "name": "Unit Test",
                   "desc": "Jestの主戦場。",
-                  "icon": "ic-cube",
                   "page": 500
                 },
                 {
                   "name": "スナップショットテスト",
                   "desc": "Jestが広めた手法の一つ。",
-                  "icon": "ic-image",
                   "page": 510
                 }
               ]
@@ -13050,7 +12621,7 @@ module.exports = {
           "id": "vitest",
           "page": 519,
           "term": "Vitest",
-          "subtitle": "Viteと同じ土俵で、テストも速く",
+          "reading": "ヴィーテスト",
           "category": "テストツール",
           "icon": "ic-package",
           "oneline": "Viteと同じパイプラインを使う、Jest互換寄りの高速テストランナー。",
@@ -13084,15 +12655,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-rocket",
+              "icon": "ic-bolt",
               "cap": "Viteプロジェクトでテストを速く回せる"
             },
             {
-              "icon": "ic-layers",
+              "icon": "ic-gear",
               "cap": "開発とテストの設定を寄せられる"
             },
             {
-              "icon": "ic-package",
+              "icon": "ic-swap",
               "cap": "Jest資産からの移行が比較的しやすい"
             }
           ],
@@ -13104,19 +12675,16 @@ module.exports = {
                 {
                   "name": "Jest",
                   "desc": "比較対象であり互換の参照点。",
-                  "icon": "ic-package",
                   "page": 518
                 },
                 {
                   "name": "Vite",
                   "desc": "同じ思想圏のバンドラ／devサーバ。",
-                  "icon": "ic-rocket",
                   "page": 150
                 },
                 {
                   "name": "Unit Test",
                   "desc": "主に回すテストの種類。",
-                  "icon": "ic-cube",
                   "page": 500
                 }
               ]
@@ -13127,7 +12695,7 @@ module.exports = {
           "id": "playwright",
           "page": 520,
           "term": "Playwright",
-          "subtitle": "複数ブラウザを、一つのAPIで操るE2E",
+          "reading": "プレイライト",
           "category": "テストツール",
           "icon": "ic-monitor",
           "oneline": "Microsoft製のブラウザ自動操作ライブラリ。Chromium / Firefox / WebKit を統一APIで扱える。",
@@ -13161,15 +12729,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-monitor",
+              "icon": "ic-users",
               "cap": "実ユーザーに近いE2Eを安定して書ける"
             },
             {
-              "icon": "ic-layers",
+              "icon": "ic-globe",
               "cap": "複数ブラウザでの差分を拾える"
             },
             {
-              "icon": "ic-file",
+              "icon": "ic-bug",
               "cap": "失敗時のトレースでデバッグしやすい"
             }
           ],
@@ -13181,19 +12749,16 @@ module.exports = {
                 {
                   "name": "E2E Test",
                   "desc": "Playwrightの主用途。",
-                  "icon": "ic-monitor",
                   "page": 502
                 },
                 {
                   "name": "Puppeteer",
                   "desc": "Chrome操作の先輩格。",
-                  "icon": "ic-package",
                   "page": 521
                 },
                 {
                   "name": "スモークテスト",
                   "desc": "薄いE2Eとして回すことも。",
-                  "icon": "ic-rocket",
                   "page": 512
                 }
               ]
@@ -13204,7 +12769,7 @@ module.exports = {
           "id": "puppeteer",
           "page": 521,
           "term": "Puppeteer",
-          "subtitle": "Headless Chromeを、脚本で動かす",
+          "reading": "パペティア",
           "category": "テストツール",
           "icon": "ic-package",
           "oneline": "Google製のライブラリで、DevToolsプロトコル経由にChrome/Chromiumを自動操作する。",
@@ -13238,15 +12803,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-monitor",
+              "icon": "ic-terminal",
               "cap": "Chromeをスクリプトで操作できる"
             },
             {
-              "icon": "ic-image",
+              "icon": "ic-file",
               "cap": "スクリーンショットやPDF生成がしやすい"
             },
             {
-              "icon": "ic-rocket",
+              "icon": "ic-search",
               "cap": "クローラや煙テストの土台にできる"
             }
           ],
@@ -13258,19 +12823,16 @@ module.exports = {
                 {
                   "name": "Playwright",
                   "desc": "多ブラウザE2Eの有力株。",
-                  "icon": "ic-monitor",
                   "page": 520
                 },
                 {
                   "name": "E2E Test",
                   "desc": "用途のひとつ。",
-                  "icon": "ic-monitor",
                   "page": 502
                 },
                 {
                   "name": "ヘッドレス",
-                  "desc": "画面なしでブラウザを走らせるモード。",
-                  "icon": "ic-monitor"
+                  "desc": "画面なしでブラウザを走らせるモード。"
                 }
               ]
             }
@@ -13286,7 +12848,6 @@ module.exports = {
           "id": "package",
           "page": 550,
           "term": "パッケージ",
-          "subtitle": "「便利な部品」を配るための梱包単位",
           "category": "パッケージ管理",
           "icon": "ic-package",
           "oneline": "ライブラリやツールを、名前・バージョン・依存関係つきで配布・インストールできる単位にまとめたもの。",
@@ -13320,15 +12881,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-package",
+              "icon": "ic-puzzle",
               "cap": "再利用可能な部品を名前で扱える"
             },
             {
-              "icon": "ic-cloud",
+              "icon": "ic-globe",
               "cap": "公開レジストリ経由で配布できる"
             },
             {
-              "icon": "ic-layers",
+              "icon": "ic-link",
               "cap": "依存関係を明示して管理できる"
             }
           ],
@@ -13340,19 +12901,16 @@ module.exports = {
                 {
                   "name": "依存関係",
                   "desc": "パッケージが必要とする他パッケージ。",
-                  "icon": "ic-network",
                   "page": 551
                 },
                 {
                   "name": "セマンティックバージョニング",
                   "desc": "バージョン番号の約束事。",
-                  "icon": "ic-scale",
                   "page": 552
                 },
                 {
                   "name": "npm",
                   "desc": "JSの代表的なパッケージマネージャ。",
-                  "icon": "ic-package",
                   "page": 554
                 }
               ]
@@ -13363,7 +12921,7 @@ module.exports = {
           "id": "dependency",
           "page": 551,
           "term": "依存関係",
-          "subtitle": "「これ動かすには、あれもいる」の一覧",
+          "reading": "いぞんかんけい",
           "category": "パッケージ管理",
           "icon": "ic-network",
           "oneline": "あるパッケージやプロジェクトが動作するために必要とする、他のパッケージとの関係。",
@@ -13397,15 +12955,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-network",
+              "icon": "ic-list",
               "cap": "必要な部品を明示できる"
             },
             {
-              "icon": "ic-layers",
+              "icon": "ic-search",
               "cap": "間接依存まで追跡できる"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-alert",
               "cap": "バージョン衝突に向き合える"
             }
           ],
@@ -13417,19 +12975,16 @@ module.exports = {
                 {
                   "name": "パッケージ",
                   "desc": "依存の単位。",
-                  "icon": "ic-package",
                   "page": 550
                 },
                 {
                   "name": "ロックファイル",
                   "desc": "解決結果を固定するファイル。",
-                  "icon": "ic-file",
                   "page": 553
                 },
                 {
                   "name": "セマンティックバージョニング",
                   "desc": "互換の期待値を番号で表す。",
-                  "icon": "ic-scale",
                   "page": 552
                 }
               ]
@@ -13440,7 +12995,6 @@ module.exports = {
           "id": "semver",
           "page": 552,
           "term": "セマンティックバージョニング",
-          "subtitle": "MAJOR.MINOR.PATCH に意味を込める",
           "category": "バージョン管理",
           "icon": "ic-scale",
           "oneline": "バージョン番号を major.minor.patch の形で付け、互換性の破り方にルールを持たせる約束（SemVer）。",
@@ -13474,15 +13028,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-scale",
+              "icon": "ic-alert",
               "cap": "更新の危険度を番号から推測できる"
             },
             {
-              "icon": "ic-file",
+              "icon": "ic-tag",
               "cap": "依存指定にルールを持たせられる"
             },
             {
-              "icon": "ic-network",
+              "icon": "ic-users",
               "cap": "ライブラリ作者と利用者の契約になる"
             }
           ],
@@ -13494,22 +13048,27 @@ module.exports = {
                 {
                   "name": "ロックファイル",
                   "desc": "SemVer範囲の解決結果を固定。",
-                  "icon": "ic-file",
                   "page": 553
                 },
                 {
                   "name": "依存関係",
                   "desc": "バージョン範囲が効く場所。",
-                  "icon": "ic-network",
                   "page": 551
                 },
                 {
                   "name": "npm",
                   "desc": "SemVerが日常になる世界。",
-                  "icon": "ic-package",
                   "page": 554
                 }
               ]
+            }
+          ],
+          "title_lines": [
+            {
+              "text": "セマンティック"
+            },
+            {
+              "text": "バージョニング"
             }
           ]
         },
@@ -13517,7 +13076,6 @@ module.exports = {
           "id": "lockfile",
           "page": 553,
           "term": "ロックファイル",
-          "subtitle": "「昨日と同じ入り方」を封印するファイル",
           "category": "パッケージ管理",
           "icon": "ic-file",
           "oneline": "依存解決の結果（実際に入ったパッケージと版）を記録し、インストールを再現可能にするファイル。",
@@ -13551,15 +13109,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-file",
+              "icon": "ic-lock",
               "cap": "依存ツリーを固定できる"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-laptop",
               "cap": "環境差による「自分だけ動く」を減らせる"
             },
             {
-              "icon": "ic-clock",
+              "icon": "ic-eye",
               "cap": "更新内容を差分としてレビューできる"
             }
           ],
@@ -13571,19 +13129,16 @@ module.exports = {
                 {
                   "name": "依存関係",
                   "desc": "ロックされる対象。",
-                  "icon": "ic-network",
                   "page": 551
                 },
                 {
                   "name": "npm",
                   "desc": "package-lock.json の世界。",
-                  "icon": "ic-package",
                   "page": 554
                 },
                 {
                   "name": "pnpm",
                   "desc": "pnpm-lock.yaml の世界。",
-                  "icon": "ic-package",
                   "page": 556
                 }
               ]
@@ -13594,7 +13149,7 @@ module.exports = {
           "id": "npm",
           "page": 554,
           "term": "npm",
-          "subtitle": "Nodeの荷物を運ぶ、公式の配達便",
+          "reading": "エヌピーエム",
           "category": "言語別パッケージマネージャ",
           "icon": "ic-package",
           "oneline": "Node.js付属のパッケージマネージャ。npmレジストリからパッケージを入れ、scriptsも実行する。",
@@ -13632,11 +13187,11 @@ module.exports = {
               "cap": "JSパッケージを標準手順で入れられる"
             },
             {
-              "icon": "ic-file",
+              "icon": "ic-terminal",
               "cap": "scriptsで開発コマンドを共有できる"
             },
             {
-              "icon": "ic-cloud",
+              "icon": "ic-send",
               "cap": "自作パッケージを公開できる"
             }
           ],
@@ -13648,19 +13203,16 @@ module.exports = {
                 {
                   "name": "yarn",
                   "desc": "代替クライアントの代表格。",
-                  "icon": "ic-package",
                   "page": 555
                 },
                 {
                   "name": "pnpm",
                   "desc": "ディスク効率に振る代替。",
-                  "icon": "ic-package",
                   "page": 556
                 },
                 {
                   "name": "ロックファイル",
                   "desc": "package-lock.json。",
-                  "icon": "ic-file",
                   "page": 553
                 }
               ]
@@ -13671,7 +13223,7 @@ module.exports = {
           "id": "yarn",
           "page": 555,
           "term": "yarn",
-          "subtitle": "npmに対抗して生まれた、もう一つのクライアント",
+          "reading": "ヤーン",
           "category": "言語別パッケージマネージャ",
           "icon": "ic-package",
           "oneline": "Facebook発のJavaScriptパッケージマネージャ。高速化やロックファイル体験を武器に普及した。",
@@ -13705,15 +13257,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-package",
+              "icon": "ic-swap",
               "cap": "JS依存を代替クライアントで管理できる"
             },
             {
-              "icon": "ic-layers",
+              "icon": "ic-users",
               "cap": "モノレポ（workspaces）運用に乗りやすい"
             },
             {
-              "icon": "ic-file",
+              "icon": "ic-check",
               "cap": "ロックファイルで再現性を担保できる"
             }
           ],
@@ -13725,19 +13277,16 @@ module.exports = {
                 {
                   "name": "npm",
                   "desc": "比較対象でありエコシステムの中心。",
-                  "icon": "ic-package",
                   "page": 554
                 },
                 {
                   "name": "pnpm",
                   "desc": "もう一つの有力代替。",
-                  "icon": "ic-package",
                   "page": 556
                 },
                 {
                   "name": "ロックファイル",
                   "desc": "yarn.lock。",
-                  "icon": "ic-file",
                   "page": 553
                 }
               ]
@@ -13748,7 +13297,7 @@ module.exports = {
           "id": "pnpm",
           "page": 556,
           "term": "pnpm",
-          "subtitle": "同じパッケージを、ディスク上で賢く共有",
+          "reading": "ピーエヌピーエム",
           "category": "言語別パッケージマネージャ",
           "icon": "ic-package",
           "oneline": "コンテンツアドレス可能なストアとシンボリックリンクで、依存を効率的に入れるJavaScriptパッケージマネージャ。",
@@ -13782,11 +13331,11 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-package",
+              "icon": "ic-bolt",
               "cap": "依存インストールのディスク消費を抑えられる"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-alert",
               "cap": "宣言していない依存に気づきやすい"
             },
             {
@@ -13802,19 +13351,16 @@ module.exports = {
                 {
                   "name": "npm",
                   "desc": "エコシステムの基準点。",
-                  "icon": "ic-package",
                   "page": 554
                 },
                 {
                   "name": "依存関係",
                   "desc": "厳格さの対象。",
-                  "icon": "ic-network",
                   "page": 551
                 },
                 {
                   "name": "ロックファイル",
                   "desc": "pnpm-lock.yaml。",
-                  "icon": "ic-file",
                   "page": 553
                 }
               ]
@@ -13825,7 +13371,7 @@ module.exports = {
           "id": "pip",
           "page": 557,
           "term": "pip",
-          "subtitle": "Pythonの「とりあえず入れる」定番コマンド",
+          "reading": "ピップ",
           "category": "言語別パッケージマネージャ",
           "icon": "ic-package",
           "oneline": "Pythonの標準的なパッケージインストーラ。PyPIからパッケージを取得して環境に入れる。",
@@ -13863,11 +13409,11 @@ module.exports = {
               "cap": "PyPIのパッケージを簡単に入れられる"
             },
             {
-              "icon": "ic-file",
+              "icon": "ic-list",
               "cap": "requirements.txt で一覧共有できる"
             },
             {
-              "icon": "ic-layers",
+              "icon": "ic-cube",
               "cap": "仮想環境と組み合わせて隔離できる"
             }
           ],
@@ -13879,19 +13425,16 @@ module.exports = {
                 {
                   "name": "pyenv",
                   "desc": "Python本体のバージョン管理。",
-                  "icon": "ic-layers",
                   "page": 566
                 },
                 {
                   "name": "パッケージ",
                   "desc": "pipが扱う単位。",
-                  "icon": "ic-package",
                   "page": 550
                 },
                 {
                   "name": "ロックファイル",
                   "desc": "詩やuvなど上位ツール側で強化されがち。",
-                  "icon": "ic-file",
                   "page": 553
                 }
               ]
@@ -13902,7 +13445,7 @@ module.exports = {
           "id": "gem",
           "page": 558,
           "term": "gem",
-          "subtitle": "Rubyの宝石箱から部品を取り出す",
+          "reading": "ジェム",
           "category": "言語別パッケージマネージャ",
           "icon": "ic-package",
           "oneline": "Rubyのパッケージ（gem）を管理する仕組み。RubyGemsと、Bundlerによるアプリ単位の固定がセットで語られる。",
@@ -13956,19 +13499,16 @@ module.exports = {
                 {
                   "name": "rbenv",
                   "desc": "Ruby本体のバージョン管理。",
-                  "icon": "ic-layers",
                   "page": 565
                 },
                 {
                   "name": "ロックファイル",
                   "desc": "Gemfile.lock。",
-                  "icon": "ic-file",
                   "page": 553
                 },
                 {
                   "name": "Rails",
                   "desc": "gem生態系の巨大ユーザー。",
-                  "icon": "ic-cube",
                   "page": 177
                 }
               ]
@@ -13979,7 +13519,7 @@ module.exports = {
           "id": "cargo",
           "page": 559,
           "term": "cargo",
-          "subtitle": "Rustの公式・ビルドもテストも届ける万能箱",
+          "reading": "カーゴ",
           "category": "言語別パッケージマネージャ",
           "icon": "ic-package",
           "oneline": "Rustの公式パッケージマネージャ兼ビルドツール。crates.ioからの依存取得とビルドを一体で担う。",
@@ -14017,11 +13557,11 @@ module.exports = {
               "cap": "crate依存を公式手順で管理できる"
             },
             {
-              "icon": "ic-rocket",
+              "icon": "ic-terminal",
               "cap": "ビルドとテストを同じCLIで回せる"
             },
             {
-              "icon": "ic-file",
+              "icon": "ic-lock",
               "cap": "Cargo.lockで再現ビルドしやすい"
             }
           ],
@@ -14033,19 +13573,16 @@ module.exports = {
                 {
                   "name": "パッケージ",
                   "desc": "crateと呼ばれる単位。",
-                  "icon": "ic-package",
                   "page": 550
                 },
                 {
                   "name": "ロックファイル",
                   "desc": "Cargo.lock。",
-                  "icon": "ic-file",
                   "page": 553
                 },
                 {
                   "name": "Rust",
                   "desc": "cargoの宿主言語。",
-                  "icon": "ic-file",
                   "page": 176
                 }
               ]
@@ -14056,7 +13593,7 @@ module.exports = {
           "id": "go-mod",
           "page": 560,
           "term": "go mod",
-          "subtitle": "Goモジュールで依存をプロジェクトに根付かせる",
+          "reading": "ゴーモッド",
           "category": "言語別パッケージマネージャ",
           "icon": "ic-package",
           "oneline": "Goのモジュールモードで依存を管理する仕組み。go.mod / go.sum が中心になる。",
@@ -14094,11 +13631,11 @@ module.exports = {
               "cap": "モジュールとして依存を宣言できる"
             },
             {
-              "icon": "ic-file",
+              "icon": "ic-check",
               "cap": "go.sumで取得内容を検証できる"
             },
             {
-              "icon": "ic-layers",
+              "icon": "ic-rocket",
               "cap": "GOPATHから解放された開発ができる"
             }
           ],
@@ -14110,19 +13647,16 @@ module.exports = {
                 {
                   "name": "依存関係",
                   "desc": "go.modに書く対象。",
-                  "icon": "ic-network",
                   "page": 551
                 },
                 {
                   "name": "セマンティックバージョニング",
                   "desc": "モジュール版の基本感覚。",
-                  "icon": "ic-scale",
                   "page": 552
                 },
                 {
                   "name": "Go",
                   "desc": "宿主言語。",
-                  "icon": "ic-file",
                   "page": 173
                 }
               ]
@@ -14133,7 +13667,7 @@ module.exports = {
           "id": "homebrew",
           "page": 561,
           "term": "Homebrew",
-          "subtitle": "macOSに、足りないコマンドを淹れる",
+          "reading": "ホームブリュー",
           "category": "OSパッケージマネージャ",
           "icon": "ic-package",
           "oneline": "macOS（とLinux）で人気のパッケージマネージャ。brew install で開発ツールを入れられる。",
@@ -14167,15 +13701,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-laptop",
+              "icon": "ic-terminal",
               "cap": "開発ツールをコマンド一発で入れられる"
             },
             {
-              "icon": "ic-package",
+              "icon": "ic-monitor",
               "cap": "GUIアプリ（Cask）も扱える"
             },
             {
-              "icon": "ic-clock",
+              "icon": "ic-users",
               "cap": "チームのMac環境構築を揃えやすい"
             }
           ],
@@ -14187,19 +13721,16 @@ module.exports = {
                 {
                   "name": "apt",
                   "desc": "Debian/Ubuntu側の定番。",
-                  "icon": "ic-package",
                   "page": 562
                 },
                 {
                   "name": "mise",
                   "desc": "言語ランタイム版管理の上位互換寄り。",
-                  "icon": "ic-layers",
                   "page": 563
                 },
                 {
                   "name": "パッケージ",
                   "desc": "brewが配る単位。",
-                  "icon": "ic-package",
                   "page": 550
                 }
               ]
@@ -14210,7 +13741,7 @@ module.exports = {
           "id": "apt",
           "page": 562,
           "term": "apt",
-          "subtitle": "Debian系Linuxの公式なお買い物カゴ",
+          "reading": "アプト",
           "category": "OSパッケージマネージャ",
           "icon": "ic-server",
           "oneline": "Debian/Ubuntuなどで使うパッケージ管理コマンド。OSのソフトウェアを安全に入れたり更新したりする。",
@@ -14248,11 +13779,11 @@ module.exports = {
               "cap": "OSのソフトウェアを標準手順で管理できる"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-shield",
               "cap": "セキュリティ更新を追従しやすい"
             },
             {
-              "icon": "ic-package",
+              "icon": "ic-gear",
               "cap": "サーバー構築を自動化しやすい"
             }
           ],
@@ -14264,19 +13795,16 @@ module.exports = {
                 {
                   "name": "Homebrew",
                   "desc": "Mac側の類似体験。",
-                  "icon": "ic-package",
                   "page": 561
                 },
                 {
                   "name": "パッケージ",
                   "desc": "debなどの単位。",
-                  "icon": "ic-package",
                   "page": 550
                 },
                 {
                   "name": "Shell",
                   "desc": "aptを叩く場所（Ch12）。",
-                  "icon": "ic-monitor",
                   "page": 601
                 }
               ]
@@ -14287,7 +13815,7 @@ module.exports = {
           "id": "mise",
           "page": 563,
           "term": "mise",
-          "subtitle": "言語の版管理を、一つの道具にまとめる",
+          "reading": "ミーズ",
           "category": "ランタイムバージョン管理",
           "icon": "ic-layers",
           "oneline": "asdf互換の開発環境マネージャ。NodeやPythonなど複数言語のバージョンをまとめて切り替える。",
@@ -14321,7 +13849,7 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-layers",
+              "icon": "ic-swap",
               "cap": "複数言語の版を一箇所で切り替えられる"
             },
             {
@@ -14329,7 +13857,7 @@ module.exports = {
               "cap": "プロジェクトの必要版をファイルで共有できる"
             },
             {
-              "icon": "ic-rocket",
+              "icon": "ic-bolt",
               "cap": "シェル起動を軽く保ちやすい"
             }
           ],
@@ -14341,19 +13869,16 @@ module.exports = {
                 {
                   "name": "nvm",
                   "desc": "Node特化の先輩。",
-                  "icon": "ic-layers",
                   "page": 564
                 },
                 {
                   "name": "rbenv",
                   "desc": "Ruby特化。",
-                  "icon": "ic-layers",
                   "page": 565
                 },
                 {
                   "name": "pyenv",
                   "desc": "Python特化。",
-                  "icon": "ic-layers",
                   "page": 566
                 }
               ]
@@ -14364,7 +13889,7 @@ module.exports = {
           "id": "nvm",
           "page": 564,
           "term": "nvm",
-          "subtitle": "Nodeの版を、ディレクトリ気分で着替る",
+          "reading": "エヌブイエム",
           "category": "ランタイムバージョン管理",
           "icon": "ic-layers",
           "oneline": "Node Version Manager。シェル上で複数のNode.jsバージョンをインストールし、切り替えて使う。",
@@ -14398,15 +13923,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-layers",
+              "icon": "ic-laptop",
               "cap": "プロジェクトごとにNode版を合わせられる"
             },
             {
-              "icon": "ic-package",
+              "icon": "ic-rocket",
               "cap": "新しいLTSを試しやすい"
             },
             {
-              "icon": "ic-file",
+              "icon": "ic-tag",
               "cap": ".nvmrcで版を共有できる"
             }
           ],
@@ -14418,19 +13943,16 @@ module.exports = {
                 {
                   "name": "mise",
                   "desc": "多言語をまとめる上位互換寄り。",
-                  "icon": "ic-layers",
                   "page": 563
                 },
                 {
                   "name": "npm",
                   "desc": "切り替えたNodeに付いてくるマネージャ。",
-                  "icon": "ic-package",
                   "page": 554
                 },
                 {
                   "name": "Node.js",
                   "desc": "対象ランタイム。",
-                  "icon": "ic-server",
                   "page": 143
                 }
               ]
@@ -14441,7 +13963,7 @@ module.exports = {
           "id": "rbenv",
           "page": 565,
           "term": "rbenv",
-          "subtitle": "Rubyの版を、プロジェクトの床に置く",
+          "reading": "アールビーエンブ",
           "category": "ランタイムバージョン管理",
           "icon": "ic-layers",
           "oneline": "複数のRubyバージョンをユーザー環境に入れ、ディレクトリごとに切り替えるツール。",
@@ -14475,15 +13997,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-layers",
+              "icon": "ic-lock",
               "cap": "アプリごとにRuby版を固定できる"
             },
             {
-              "icon": "ic-file",
+              "icon": "ic-users",
               "cap": ".ruby-versionでチーム共有できる"
             },
             {
-              "icon": "ic-package",
+              "icon": "ic-shield",
               "cap": "gem環境の汚染を抑えやすい"
             }
           ],
@@ -14495,19 +14017,16 @@ module.exports = {
                 {
                   "name": "gem",
                   "desc": "Rubyパッケージ側。",
-                  "icon": "ic-package",
                   "page": 558
                 },
                 {
                   "name": "mise",
                   "desc": "rbenv代替になりうる統合ツール。",
-                  "icon": "ic-layers",
                   "page": 563
                 },
                 {
                   "name": "Rails",
                   "desc": "版固定が重要な代表アプリ。",
-                  "icon": "ic-cube",
                   "page": 177
                 }
               ]
@@ -14518,7 +14037,7 @@ module.exports = {
           "id": "pyenv",
           "page": 566,
           "term": "pyenv",
-          "subtitle": "Pythonの版を、要求どおりに切り出す",
+          "reading": "パイエンブ",
           "category": "ランタイムバージョン管理",
           "icon": "ic-layers",
           "oneline": "複数のPythonバージョンをインストールし、グローバルやプロジェクト単位で切り替えるツール。",
@@ -14552,15 +14071,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-layers",
+              "icon": "ic-package",
               "cap": "プロジェクト要求のPython版を入れられる"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-shield",
               "cap": "OSのPythonを汚さずに済む"
             },
             {
-              "icon": "ic-file",
+              "icon": "ic-users",
               "cap": "版ファイルでチームの前提を共有できる"
             }
           ],
@@ -14572,19 +14091,16 @@ module.exports = {
                 {
                   "name": "pip",
                   "desc": "入れたPythonの上で動くインストーラ。",
-                  "icon": "ic-package",
                   "page": 557
                 },
                 {
                   "name": "mise",
                   "desc": "統合版管理。",
-                  "icon": "ic-layers",
                   "page": 563
                 },
                 {
                   "name": "Python",
                   "desc": "対象言語。",
-                  "icon": "ic-file",
                   "page": 172
                 }
               ]
@@ -14601,7 +14117,7 @@ module.exports = {
           "id": "terminal",
           "page": 600,
           "term": "Terminal",
-          "subtitle": "文字でコンピュータと話す窓口",
+          "reading": "ターミナル",
           "category": "ターミナル基礎",
           "icon": "ic-monitor",
           "oneline": "キーボード入力と文字出力でOSやプログラムとやり取りするための端末（エミュレータ含む）のこと。",
@@ -14635,15 +14151,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-monitor",
+              "icon": "ic-terminal",
               "cap": "文字コマンドでOSを操作できる"
             },
             {
-              "icon": "ic-rocket",
+              "icon": "ic-gear",
               "cap": "同じ操作をスクリプトにできる"
             },
             {
-              "icon": "ic-network",
+              "icon": "ic-cloud",
               "cap": "リモートサーバー作業の入口になる"
             }
           ],
@@ -14655,19 +14171,16 @@ module.exports = {
                 {
                   "name": "Shell",
                   "desc": "コマンドを解釈して実行するプログラム。",
-                  "icon": "ic-file",
                   "page": 601
                 },
                 {
                   "name": "Bash",
                   "desc": "定番のシェル。",
-                  "icon": "ic-file",
                   "page": 602
                 },
                 {
                   "name": "Ghostty",
                   "desc": "端末エミュレータの一例。",
-                  "icon": "ic-monitor",
                   "page": 617
                 }
               ]
@@ -14678,7 +14191,7 @@ module.exports = {
           "id": "shell",
           "page": 601,
           "term": "Shell",
-          "subtitle": "コマンドを受け取り、OSに橋渡しする殻",
+          "reading": "シェル",
           "category": "ターミナル基礎",
           "icon": "ic-file",
           "oneline": "ユーザーが打ったコマンド行を解釈し、プログラム起動やパイプなどの制御を行うインターフェースプログラム。",
@@ -14712,15 +14225,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-file",
+              "icon": "ic-terminal",
               "cap": "コマンド行を解釈して実行できる"
             },
             {
-              "icon": "ic-layers",
+              "icon": "ic-link",
               "cap": "パイプやリダイレクトで処理を組める"
             },
             {
-              "icon": "ic-package",
+              "icon": "ic-file",
               "cap": "シェルスクリプトで手順をファイル化できる"
             }
           ],
@@ -14732,19 +14245,16 @@ module.exports = {
                 {
                   "name": "Bash",
                   "desc": "広く使われるシェル。",
-                  "icon": "ic-file",
                   "page": 602
                 },
                 {
                   "name": "Zsh",
                   "desc": "macOSデフォルトになったシェル。",
-                  "icon": "ic-file",
                   "page": 603
                 },
                 {
                   "name": "PATH",
                   "desc": "コマンド検索パス。",
-                  "icon": "ic-network",
                   "page": 604
                 }
               ]
@@ -14755,7 +14265,7 @@ module.exports = {
           "id": "bash",
           "page": 602,
           "term": "Bash",
-          "subtitle": "Linuxサーバーでいちばん遭遇する方言",
+          "reading": "バッシュ",
           "category": "シェル",
           "icon": "ic-file",
           "oneline": "Bourne Again SHell。Linuxやスクリプト文化で標準に近い位置にいるシェル。",
@@ -14793,11 +14303,11 @@ module.exports = {
               "cap": "サーバー上の作業・スクリプトの共通土台になる"
             },
             {
-              "icon": "ic-file",
+              "icon": "ic-code",
               "cap": "シェルスクリプトを書きやすい"
             },
             {
-              "icon": "ic-package",
+              "icon": "ic-cube",
               "cap": "CIやコンテナの入口コマンドになりやすい"
             }
           ],
@@ -14809,19 +14319,16 @@ module.exports = {
                 {
                   "name": "Zsh",
                   "desc": "対話体験で選ばれやすい兄弟。",
-                  "icon": "ic-file",
                   "page": 603
                 },
                 {
                   "name": "Shell",
                   "desc": "上位概念。",
-                  "icon": "ic-file",
                   "page": 601
                 },
                 {
                   "name": "Cron",
                   "desc": "Bashスクリプトの実行タイミング役。",
-                  "icon": "ic-clock",
                   "page": 609
                 }
               ]
@@ -14832,7 +14339,7 @@ module.exports = {
           "id": "zsh",
           "page": 603,
           "term": "Zsh",
-          "subtitle": "補完が賢く、見た目も整えやすいシェル",
+          "reading": "ゼットシェル",
           "category": "シェル",
           "icon": "ic-file",
           "oneline": "高機能なUNIXシェル。強力な補完やテーマ文化で、対話利用のデファクト寄りになった。",
@@ -14866,15 +14373,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-monitor",
+              "icon": "ic-bolt",
               "cap": "日々のコマンド入力を快適にできる"
             },
             {
-              "icon": "ic-layers",
+              "icon": "ic-puzzle",
               "cap": "プラグインで体験を拡張できる"
             },
             {
-              "icon": "ic-file",
+              "icon": "ic-eye",
               "cap": "プロンプトやテーマを整えられる"
             }
           ],
@@ -14886,19 +14393,16 @@ module.exports = {
                 {
                   "name": "Bash",
                   "desc": "スクリプト共通語。",
-                  "icon": "ic-file",
                   "page": 602
                 },
                 {
                   "name": "Terminal",
                   "desc": "Zshを表示する窓。",
-                  "icon": "ic-monitor",
                   "page": 600
                 },
                 {
                   "name": "PATH",
                   "desc": "設定をいじりがちな場所。",
-                  "icon": "ic-network",
                   "page": 604
                 }
               ]
@@ -14909,7 +14413,7 @@ module.exports = {
           "id": "path",
           "page": 604,
           "term": "PATH",
-          "subtitle": "「どの部屋からコマンドを探す？」の名簿",
+          "reading": "パス",
           "category": "環境",
           "icon": "ic-network",
           "oneline": "シェルがコマンド名だけで実行ファイルを探すとき、順番に見て回るディレクトリのリスト（環境変数）。",
@@ -14943,15 +14447,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-network",
+              "icon": "ic-terminal",
               "cap": "コマンド名だけで起動できる"
             },
             {
-              "icon": "ic-layers",
+              "icon": "ic-target",
               "cap": "どの実行ファイルが選ばれるかを制御できる"
             },
             {
-              "icon": "ic-pen",
+              "icon": "ic-search",
               "cap": "「command not found」を診断できる"
             }
           ],
@@ -14963,19 +14467,16 @@ module.exports = {
                 {
                   "name": "Environment Variable",
                   "desc": "PATHもその一種。",
-                  "icon": "ic-file",
                   "page": 606
                 },
                 {
                   "name": "Shell",
                   "desc": "PATHを見てコマンドを探す主体。",
-                  "icon": "ic-file",
                   "page": 601
                 },
                 {
                   "name": "mise",
                   "desc": "shim経由でPATH体験に介入（Ch11）。",
-                  "icon": "ic-layers",
                   "page": 563
                 }
               ]
@@ -14986,7 +14487,7 @@ module.exports = {
           "id": "ssh",
           "page": 605,
           "term": "SSH",
-          "subtitle": "遠くのサーバーに、暗号化してログインする",
+          "reading": "エスエスエイチ",
           "category": "リモートアクセス",
           "icon": "ic-network",
           "oneline": "Secure Shell。ネットワーク経由で遠隔マシンに安全にログインしたり、コマンドを実行したりするプロトコル／道具。",
@@ -15020,15 +14521,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-network",
+              "icon": "ic-server",
               "cap": "遠隔サーバーに安全に入れる"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-key",
               "cap": "鍵認証でパスワード配布を減らせる"
             },
             {
-              "icon": "ic-package",
+              "icon": "ic-swap",
               "cap": "scp/sftpやトンネルにも使える"
             }
           ],
@@ -15040,19 +14541,16 @@ module.exports = {
                 {
                   "name": "Terminal",
                   "desc": "SSHセッションを映す窓。",
-                  "icon": "ic-monitor",
                   "page": 600
                 },
                 {
                   "name": "VPN",
                   "desc": "網全体をトンネルする別手段（Ch2）。",
-                  "icon": "ic-network",
                   "page": 40
                 },
                 {
                   "name": "Daemon",
                   "desc": "sshd として常駐する側。",
-                  "icon": "ic-server",
                   "page": 610
                 }
               ]
@@ -15063,7 +14561,7 @@ module.exports = {
           "id": "environment-variable",
           "page": 606,
           "term": "Environment Variable",
-          "subtitle": "プロセスに渡す「設定の名札」",
+          "reading": "エンバイロメントバリアブル",
           "category": "環境",
           "icon": "ic-file",
           "oneline": "OSやシェルがプロセスに渡す、名前＝値の設定情報。コードを変えずに振る舞いを切り替えるのに使う。",
@@ -15097,15 +14595,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-file",
+              "icon": "ic-gear",
               "cap": "設定をコードから外に出せる"
             },
             {
-              "icon": "ic-layers",
+              "icon": "ic-swap",
               "cap": "開発／本番で値を切り替えられる"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-lock",
               "cap": "秘密情報の取り回し口にできる"
             }
           ],
@@ -15117,22 +14615,29 @@ module.exports = {
                 {
                   "name": ".env",
                   "desc": "環境変数をファイルで扱う慣習。",
-                  "icon": "ic-file",
                   "page": 618
                 },
                 {
                   "name": "PATH",
                   "desc": "代表的な環境変数。",
-                  "icon": "ic-network",
                   "page": 604
                 },
                 {
                   "name": "Process",
                   "desc": "変数を受け取る実行主体。",
-                  "icon": "ic-cube",
                   "page": 607
                 }
               ]
+            }
+          ],
+          "title_lines": [
+            {
+              "text": "Environment",
+              "reading": "エンバイロメント"
+            },
+            {
+              "text": "Variable",
+              "reading": "バリアブル"
             }
           ]
         },
@@ -15140,7 +14645,7 @@ module.exports = {
           "id": "process",
           "page": 607,
           "term": "Process",
-          "subtitle": "いま動いているプログラムの「個体」",
+          "reading": "プロセス",
           "category": "OSの実行単位",
           "icon": "ic-cube",
           "oneline": "実行中のプログラムのインスタンス。メモリ空間やPIDなどの資源を持ち、OSに管理される。",
@@ -15174,11 +14679,11 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-cube",
+              "icon": "ic-gear",
               "cap": "動いているプログラムを個体として扱える"
             },
             {
-              "icon": "ic-pen",
+              "icon": "ic-target",
               "cap": "問題のプロセスだけを調査・終了できる"
             },
             {
@@ -15194,19 +14699,16 @@ module.exports = {
                 {
                   "name": "Thread",
                   "desc": "プロセスの中の実行の流れ。",
-                  "icon": "ic-layers",
                   "page": 608
                 },
                 {
                   "name": "Daemon",
                   "desc": "常駐するプロセスの形態。",
-                  "icon": "ic-server",
                   "page": 610
                 },
                 {
                   "name": "SSH",
                   "desc": "遠隔でプロセスを扱う入口。",
-                  "icon": "ic-network",
                   "page": 605
                 }
               ]
@@ -15217,7 +14719,7 @@ module.exports = {
           "id": "thread",
           "page": 608,
           "term": "Thread",
-          "subtitle": "一つのプロセスの中の、並行する手",
+          "reading": "スレッド",
           "category": "OSの実行単位",
           "icon": "ic-layers",
           "oneline": "プロセス内で並行に走れる実行の流れ。メモリ空間を共有しつつ、スタックなどを別々に持つ。",
@@ -15251,15 +14753,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-layers",
+              "icon": "ic-clock",
               "cap": "待ちを隠して並行処理できる"
             },
             {
-              "icon": "ic-rocket",
+              "icon": "ic-bolt",
               "cap": "マルチコアを活かしやすい"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-alert",
               "cap": "共有データの競合に向き合える"
             }
           ],
@@ -15271,19 +14773,16 @@ module.exports = {
                 {
                   "name": "Process",
                   "desc": "スレッドの入れ物。",
-                  "icon": "ic-cube",
                   "page": 607
                 },
                 {
                   "name": "Lock",
                   "desc": "共有資源の交通整理（Ch6）。",
-                  "icon": "ic-scale",
                   "page": 95
                 },
                 {
                   "name": "非同期",
                   "desc": "並行の別モデル（Ch7）。",
-                  "icon": "ic-clock",
                   "page": 138
                 }
               ]
@@ -15294,7 +14793,7 @@ module.exports = {
           "id": "cron",
           "page": 609,
           "term": "Cron",
-          "subtitle": "「毎朝3時にやって」をOSに頼む",
+          "reading": "クーロン",
           "category": "ジョブスケジューラ",
           "icon": "ic-clock",
           "oneline": "指定した時刻・周期でコマンドやスクリプトを自動実行する、UNIX系の定番ジョブスケジューラ。",
@@ -15348,19 +14847,16 @@ module.exports = {
                 {
                   "name": "Daemon",
                   "desc": "cron自体も常駐サービス。",
-                  "icon": "ic-server",
                   "page": 610
                 },
                 {
                   "name": "Bash",
                   "desc": "よく実行されるスクリプトの中身。",
-                  "icon": "ic-file",
                   "page": 602
                 },
                 {
                   "name": "Process",
                   "desc": "起動される実行主体。",
-                  "icon": "ic-cube",
                   "page": 607
                 }
               ]
@@ -15371,7 +14867,7 @@ module.exports = {
           "id": "daemon",
           "page": 610,
           "term": "Daemon",
-          "subtitle": "裏方として常駐し続けるプロセス",
+          "reading": "デーモン",
           "category": "OSの実行形態",
           "icon": "ic-server",
           "oneline": "ユーザー操作に紐づかず、バックグラウンドで待ち受け・定期作業などを行う常駐プロセス。",
@@ -15409,11 +14905,11 @@ module.exports = {
               "cap": "サービスを常時待ち受けさせられる"
             },
             {
-              "icon": "ic-clock",
+              "icon": "ic-sync",
               "cap": "定期・イベント駆動の裏方を置ける"
             },
             {
-              "icon": "ic-layers",
+              "icon": "ic-gear",
               "cap": "systemdなどで起動管理できる"
             }
           ],
@@ -15425,19 +14921,16 @@ module.exports = {
                 {
                   "name": "Process",
                   "desc": "デーモンもプロセスの一種。",
-                  "icon": "ic-cube",
                   "page": 607
                 },
                 {
                   "name": "SSH",
                   "desc": "sshd が代表例。",
-                  "icon": "ic-network",
                   "page": 605
                 },
                 {
                   "name": "Cron",
                   "desc": "定期実行のデーモン利用。",
-                  "icon": "ic-clock",
                   "page": 609
                 }
               ]
@@ -15448,7 +14941,7 @@ module.exports = {
           "id": "regex",
           "page": 611,
           "term": "正規表現",
-          "subtitle": "文字列の模様を、記号で狩る",
+          "reading": "せいきひょうげん",
           "category": "テキスト処理",
           "icon": "ic-pen",
           "oneline": "文字列のパターンを簡潔に記述し、検索・置換・抽出に使う表記法（と、それを解釈するエンジン）。",
@@ -15482,15 +14975,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-pen",
+              "icon": "ic-code",
               "cap": "複雑な文字列条件を短く書ける"
             },
             {
-              "icon": "ic-file",
+              "icon": "ic-search",
               "cap": "ログ抽出や一括置換ができる"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-check",
               "cap": "入力バリデーションの道具になる"
             }
           ],
@@ -15501,19 +14994,16 @@ module.exports = {
               "items": [
                 {
                   "name": "grep系",
-                  "desc": "正規表現検索の代表コマンド（近い言葉）。",
-                  "icon": "ic-file"
+                  "desc": "正規表現検索の代表コマンド（近い言葉）。"
                 },
                 {
                   "name": "Vim",
                   "desc": "正規表現置換が強い編集器。",
-                  "icon": "ic-pen",
                   "page": 615
                 },
                 {
                   "name": "Shell",
                   "desc": "パイプと組み合わせて使う舞台。",
-                  "icon": "ic-file",
                   "page": 601
                 }
               ]
@@ -15524,7 +15014,6 @@ module.exports = {
           "id": "permission",
           "page": 612,
           "term": "パーミッション",
-          "subtitle": "誰が、読む・書く・実行できるかの鍵",
           "category": "権限",
           "icon": "ic-scale",
           "oneline": "ファイルやディレクトリに対し、ユーザ／グループ／その他が読み書き実行できるかを表す権限設定。",
@@ -15558,15 +15047,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-scale",
+              "icon": "ic-lock",
               "cap": "ファイルアクセスを主体ごとに制限できる"
             },
             {
-              "icon": "ic-file",
+              "icon": "ic-terminal",
               "cap": "chmod/chownで制御できる"
             },
             {
-              "icon": "ic-server",
+              "icon": "ic-shield",
               "cap": "サーバー公開時の最小権限を設計できる"
             }
           ],
@@ -15578,19 +15067,16 @@ module.exports = {
                 {
                   "name": "SSH",
                   "desc": "秘密鍵ファイルの権限が厳しい。",
-                  "icon": "ic-network",
                   "page": 605
                 },
                 {
                   "name": ".env",
                   "desc": "中身を守る権限設計が重要。",
-                  "icon": "ic-file",
                   "page": 618
                 },
                 {
                   "name": "Process",
                   "desc": "どのユーザー権限で走るかが効く。",
-                  "icon": "ic-cube",
                   "page": 607
                 }
               ]
@@ -15601,7 +15087,7 @@ module.exports = {
           "id": "ping",
           "page": 613,
           "term": "ping",
-          "subtitle": "向こうは生きてる？ の最小確認",
+          "reading": "ピング",
           "category": "ネットワーク診断",
           "icon": "ic-network",
           "oneline": "ICMPなどで相手ホストに応答を求め、到達性と往復時間を見る基本的なネットワーク診断コマンド。",
@@ -15635,7 +15121,7 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-network",
+              "icon": "ic-check",
               "cap": "相手ホストの生存を素早く確認できる"
             },
             {
@@ -15643,7 +15129,7 @@ module.exports = {
               "cap": "遅延の目安を測れる"
             },
             {
-              "icon": "ic-pen",
+              "icon": "ic-search",
               "cap": "障害切り分けの第一手にできる"
             }
           ],
@@ -15655,19 +15141,16 @@ module.exports = {
                 {
                   "name": "curl",
                   "desc": "アプリ層の到達確認。",
-                  "icon": "ic-network",
                   "page": 614
                 },
                 {
                   "name": "IP Address",
                   "desc": "pingの宛先（Ch2）。",
-                  "icon": "ic-network",
                   "page": 29
                 },
                 {
                   "name": "DNS",
                   "desc": "名前解決の次に疑うポイント（Ch2）。",
-                  "icon": "ic-network",
                   "page": 27
                 }
               ]
@@ -15678,7 +15161,7 @@ module.exports = {
           "id": "curl",
           "page": 614,
           "term": "curl",
-          "subtitle": "URLを、コマンド一行で持ってくる",
+          "reading": "カール",
           "category": "ネットワーク診断",
           "icon": "ic-network",
           "oneline": "HTTPなど様々なプロトコルでデータを送受信できるコマンドラインツール。API確認の定番。",
@@ -15712,15 +15195,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-network",
+              "icon": "ic-terminal",
               "cap": "APIをターミナルから叩ける"
             },
             {
-              "icon": "ic-file",
+              "icon": "ic-gear",
               "cap": "ヘッダや本文を細かく制御できる"
             },
             {
-              "icon": "ic-rocket",
+              "icon": "ic-sync",
               "cap": "スクリプトやCIに組み込める"
             }
           ],
@@ -15732,19 +15215,16 @@ module.exports = {
                 {
                   "name": "HTTP",
                   "desc": "curlが最もよく話す相手（Ch2）。",
-                  "icon": "ic-network",
                   "page": 25
                 },
                 {
                   "name": "ping",
                   "desc": "もっと下の層の生存確認。",
-                  "icon": "ic-network",
                   "page": 613
                 },
                 {
                   "name": "API",
                   "desc": "curlで試す対象（Ch4）。",
-                  "icon": "ic-cloud",
                   "page": 61
                 }
               ]
@@ -15755,7 +15235,7 @@ module.exports = {
           "id": "vim",
           "page": 615,
           "term": "Vim",
-          "subtitle": "モードがある、指先のテキスト格闘技",
+          "reading": "ビム",
           "category": "開発ツール",
           "icon": "ic-pen",
           "oneline": "モード型の高機能テキストエディタ。サーバー上での編集や、キー操作での高速編集文化の象徴。",
@@ -15789,15 +15269,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-pen",
+              "icon": "ic-server",
               "cap": "SSH先でも本格的にファイルを編集できる"
             },
             {
-              "icon": "ic-rocket",
+              "icon": "ic-bolt",
               "cap": "キー操作で編集を高速化できる"
             },
             {
-              "icon": "ic-file",
+              "icon": "ic-gear",
               "cap": "設定やマクロで自分用に育てられる"
             }
           ],
@@ -15809,19 +15289,16 @@ module.exports = {
                 {
                   "name": "Terminal",
                   "desc": "Vimが動く場所。",
-                  "icon": "ic-monitor",
                   "page": 600
                 },
                 {
                   "name": "SSH",
                   "desc": "Vimが真価を発揮する遠隔作業。",
-                  "icon": "ic-network",
                   "page": 605
                 },
                 {
                   "name": "正規表現",
                   "desc": "置換でよく使う道具。",
-                  "icon": "ic-pen",
                   "page": 611
                 }
               ]
@@ -15832,7 +15309,7 @@ module.exports = {
           "id": "markdown",
           "page": 616,
           "term": "Markdown",
-          "subtitle": "プレーンテキストのまま、見出しを付ける",
+          "reading": "マークダウン",
           "category": "開発ツール",
           "icon": "ic-file",
           "oneline": "シンプルな記号で見出しやリストを表し、HTMLなどへ変換できる軽量マークアップ。",
@@ -15866,15 +15343,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-file",
+              "icon": "ic-list",
               "cap": "READMEや仕様を軽く構造化できる"
             },
             {
-              "icon": "ic-layers",
+              "icon": "ic-users",
               "cap": "Git上でレビューしやすい文書にできる"
             },
             {
-              "icon": "ic-cloud",
+              "icon": "ic-book",
               "cap": "ドキュメントサイトの入力形式になる"
             }
           ],
@@ -15886,19 +15363,16 @@ module.exports = {
                 {
                   "name": "HTML",
                   "desc": "よく変換される先（Ch7）。",
-                  "icon": "ic-file",
                   "page": 121
                 },
                 {
                   "name": "Vim",
                   "desc": "Markdownを編集する道具の一例。",
-                  "icon": "ic-pen",
                   "page": 615
                 },
                 {
                   "name": "Repository",
                   "desc": "README.mdの置き場（Ch1）。",
-                  "icon": "ic-server",
                   "page": 1
                 }
               ]
@@ -15909,7 +15383,7 @@ module.exports = {
           "id": "ghostty",
           "page": 617,
           "term": "Ghostty",
-          "subtitle": "速さ志向の、新しい端末エミュレータ",
+          "reading": "ゴースティ",
           "category": "開発ツール",
           "icon": "ic-monitor",
           "oneline": "GPUなどを活用して滑らかさと速さを狙った、比較的新しいクロスプラットフォームな端末エミュレータ。",
@@ -15947,11 +15421,11 @@ module.exports = {
               "cap": "日常のターミナル体験を快適にできる"
             },
             {
-              "icon": "ic-rocket",
+              "icon": "ic-bolt",
               "cap": "描画や応答の体感を改善できる"
             },
             {
-              "icon": "ic-layers",
+              "icon": "ic-swap",
               "cap": "既存のシェル文化のまま乗り換えられる"
             }
           ],
@@ -15963,19 +15437,16 @@ module.exports = {
                 {
                   "name": "Terminal",
                   "desc": "Ghosttyが実装する役割。",
-                  "icon": "ic-monitor",
                   "page": 600
                 },
                 {
                   "name": "Shell",
                   "desc": "中で動く通訳。",
-                  "icon": "ic-file",
                   "page": 601
                 },
                 {
                   "name": "Zsh",
                   "desc": "きれいなプロンプトと相性良し。",
-                  "icon": "ic-file",
                   "page": 603
                 }
               ]
@@ -15986,7 +15457,7 @@ module.exports = {
           "id": "dotenv",
           "page": 618,
           "term": ".env",
-          "subtitle": "秘密と設定を、ファイルに置いて読み込む慣習",
+          "reading": "ドットエンブ",
           "category": "環境",
           "icon": "ic-file",
           "oneline": "環境変数を KEY=VALUE 形式で並べた設定ファイル。アプリ起動時に読み込んで使う慣習的な仕組み。",
@@ -16024,11 +15495,11 @@ module.exports = {
               "cap": "環境変数をファイルで扱える"
             },
             {
-              "icon": "ic-layers",
+              "icon": "ic-laptop",
               "cap": "開発環境の立ち上げを揃えやすい"
             },
             {
-              "icon": "ic-scale",
+              "icon": "ic-users",
               "cap": "キー一覧をexampleで共有できる"
             }
           ],
@@ -16040,19 +15511,16 @@ module.exports = {
                 {
                   "name": "Environment Variable",
                   "desc": ".envが注入する先。",
-                  "icon": "ic-file",
                   "page": 606
                 },
                 {
                   "name": "パーミッション",
                   "desc": "ファイルを守る権限。",
-                  "icon": "ic-scale",
                   "page": 612
                 },
                 {
                   "name": "Secret",
-                  "desc": "本番での本式管理（セキュリティ章）。",
-                  "icon": "ic-scale"
+                  "desc": "本番での本式管理（セキュリティ章）。"
                 }
               ]
             }
@@ -16092,7 +15560,7 @@ module.exports = {
           "id": "network",
           "page": 317,
           "term": "Network",
-          "subtitle": "コンテナ同士が「同じ部屋」で話せる仕組み",
+          "reading": "ネットワーク",
           "category": "コンテナ・ネットワーク",
           "icon": "ic-network",
           "oneline": "Docker上でコンテナ同士や外の世界をつなぐ、仮想的なネットワークの単位。",
@@ -16126,15 +15594,15 @@ module.exports = {
           },
           "q3_cells": [
             {
-              "icon": "ic-network",
+              "icon": "ic-link",
               "cap": "コンテナ同士を名前でつなげる"
             },
             {
-              "icon": "ic-layers",
+              "icon": "ic-split",
               "cap": "環境ごとに通信範囲を分離できる"
             },
             {
-              "icon": "ic-cube",
+              "icon": "ic-list",
               "cap": "Composeと組み合わせて構成を宣言できる"
             }
           ],
@@ -16146,19 +15614,16 @@ module.exports = {
                 {
                   "name": "Container",
                   "desc": "実際に動いているプロセスの箱。",
-                  "icon": "ic-cube",
                   "page": 309
                 },
                 {
                   "name": "Docker Compose",
                   "desc": "複数コンテナとネットワークをまとめて定義。",
-                  "icon": "ic-layers",
                   "page": 321
                 },
                 {
                   "name": "Volume",
                   "desc": "データをコンテナの外に残す仕組み。",
-                  "icon": "ic-package",
                   "page": 313
                 }
               ]
@@ -16200,6 +15665,200 @@ module.exports = {
           "existing_file": "089-kubernetes.html",
           "page": 441,
           "term": "Kubernetes"
+        }
+      ]
+    },
+    {
+      "number": 18,
+      "title": "AWS",
+      "entries": [
+        {
+          "id": "alb",
+          "page": 801,
+          "term": "ALB",
+          "reading": "エーエルビー",
+          "category": "AWS",
+          "icon": "ic-split",
+          "oneline": "届いたHTTPリクエストを、URLやホスト名を見て後ろの複数サーバーに振り分けるAWSのロードバランサー。",
+          "q1_text": "サーバー1台ではアクセスをさばききれず、\n落ちたら全部止まる。台数を増やしても、どこにリクエストを送るか決める役が必要だった。",
+          "q2_intro": "DNSで複数のIPを返したり、自前でNginxなどを立てて振り分けたりしていた。",
+          "q2_table": {
+            "col_before": "自前の振り分けサーバー",
+            "col_after": "ALB",
+            "rows": [
+              [
+                "構築・運用",
+                "サーバーを立てて設定・パッチ当て",
+                "AWSが管理。設定するだけ"
+              ],
+              [
+                "故障したサーバー",
+                "自分で検知して外す",
+                "ヘルスチェックで自動で外す"
+              ],
+              [
+                "振り分けのルール",
+                "設定ファイルを手で書く",
+                "パスやホスト名で画面から設定"
+              ],
+              [
+                "HTTPS化",
+                "証明書を各サーバーに配置",
+                "ALBに証明書を置けば完結"
+              ]
+            ]
+          },
+          "q3_cells": [
+            {
+              "icon": "ic-split",
+              "cap": "アクセスを複数台に分散できる"
+            },
+            {
+              "icon": "ic-check",
+              "cap": "壊れたサーバーを自動で外せる"
+            },
+            {
+              "icon": "ic-filter",
+              "cap": "URLのパスごとに行き先を変えられる"
+            }
+          ],
+          "memo": "ALBはApplication Load Balancerの略で、HTTPの中身（パスやヘッダー）まで見て振り分ける。中身を見ずにTCPのまま速く流すのはNLB。",
+          "sidebar_groups": [
+            {
+              "label": "関連キーワード",
+              "items": [
+                {
+                  "name": "Server",
+                  "desc": "リクエストを受け取って処理を返すコンピュータ。",
+                  "page": 22
+                },
+                {
+                  "name": "HTTPS",
+                  "desc": "HTTPをTLSで暗号化した通信。",
+                  "page": 26
+                },
+                {
+                  "name": "WAF",
+                  "desc": "Webアプリへの攻撃を手前で止める防御壁。",
+                  "page": 901
+                }
+              ]
+            },
+            {
+              "label": "一緒に覚えたい言葉",
+              "items": [
+                {
+                  "name": "Load Balancer",
+                  "desc": "アクセスを複数のサーバーに振り分ける仕組みの総称。"
+                },
+                {
+                  "name": "ヘルスチェック",
+                  "desc": "サーバーが正常に応答するかを定期的に確かめること。"
+                },
+                {
+                  "name": "ターゲットグループ",
+                  "desc": "ALBの振り分け先になるサーバーのまとまり。"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 23,
+      "title": "セキュリティ",
+      "entries": [
+        {
+          "id": "waf",
+          "page": 901,
+          "term": "WAF",
+          "reading": "ワフ",
+          "category": "セキュリティ",
+          "icon": "ic-shield",
+          "oneline": "Webアプリに届くリクエストを手前で検査し、攻撃っぽいものを止める防御壁。",
+          "q1_text": "ファイアウォールはポートやIPでしか通信を止められず、\n正規のHTTPに紛れたSQLインジェクションやXSSは素通りしていた。",
+          "q2_intro": "アプリのコードで入力チェックを徹底し、攻撃に気づいたら手作業でIPを遮断していた。",
+          "q2_table": {
+            "col_before": "アプリ側だけで防御",
+            "col_after": "WAF",
+            "rows": [
+              [
+                "防げる範囲",
+                "書いたチェック処理の分だけ",
+                "既知の攻撃パターンをまとめて防御"
+              ],
+              [
+                "チェック漏れ",
+                "1か所でも漏れると突破される",
+                "アプリの手前でもう一段止める"
+              ],
+              [
+                "新しい攻撃への対応",
+                "コードを直してデプロイ",
+                "ルールを更新するだけ"
+              ],
+              [
+                "大量アクセス",
+                "アプリまで届いて重くなる",
+                "回数制限で手前で弾ける"
+              ]
+            ]
+          },
+          "q3_cells": [
+            {
+              "icon": "ic-shield",
+              "cap": "SQLインジェクションやXSSを止められる"
+            },
+            {
+              "icon": "ic-filter",
+              "cap": "怪しいIPや大量アクセスを弾ける"
+            },
+            {
+              "icon": "ic-file",
+              "cap": "ブロックした記録が残る"
+            }
+          ],
+          "memo": "WAFはWeb Application Firewallの略。あくまで手前の防御の一枚なので、アプリ側の入力チェックやエスケープを省いていい理由にはならない。",
+          "sidebar_groups": [
+            {
+              "label": "関連キーワード",
+              "items": [
+                {
+                  "name": "HTTP",
+                  "desc": "Webブラウザとサーバーがやりとりするためのルール。",
+                  "page": 25
+                },
+                {
+                  "name": "Proxy",
+                  "desc": "通信の間に入って中継するサーバー。",
+                  "page": 43
+                },
+                {
+                  "name": "ALB",
+                  "desc": "WAFを付けて使うことが多いAWSのロードバランサー。",
+                  "page": 801
+                }
+              ]
+            },
+            {
+              "label": "一緒に覚えたい言葉",
+              "items": [
+                {
+                  "name": "SQL Injection",
+                  "desc": "入力欄にSQLを紛れ込ませてDBを不正に操作する攻撃。"
+                },
+                {
+                  "name": "XSS",
+                  "desc": "ページに悪意のあるスクリプトを埋め込む攻撃。"
+                },
+                {
+                  "name": "ファイアウォール",
+                  "desc": "IPやポート単位で通信を許可・遮断する仕組み。"
+                }
+              ]
+            }
+          ]
         }
       ]
     }

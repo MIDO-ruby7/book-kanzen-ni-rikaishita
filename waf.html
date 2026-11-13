@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — WAF</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry recto">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 23</b>セキュリティ</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">901</div></div>
+      <div class="titles">
+        <h1><ruby>WAF<rt>ワフ</rt></ruby></h1>
+      </div>
+    </div>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>Webアプリに届くリクエストを手前で検査し、攻撃っぽいものを止める防御壁。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>ファイアウォールはポートやIPでしか通信を止められず、<br>
+             正規のHTTPに紛れたSQLインジェクションやXSSは素通りしていた。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>アプリのコードで入力チェックを徹底し、攻撃に気づいたら手作業でIPを遮断していた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>アプリ側だけで防御</th><th class="h-docker">WAF</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">防げる範囲</td><td>書いたチェック処理の分だけ</td><td class="h-docker">既知の攻撃パターンをまとめて防御</td></tr>
+            <tr><td class="rowhead">チェック漏れ</td><td>1か所でも漏れると突破される</td><td class="h-docker">アプリの手前でもう一段止める</td></tr>
+            <tr><td class="rowhead">新しい攻撃への対応</td><td>コードを直してデプロイ</td><td class="h-docker">ルールを更新するだけ</td></tr>
+            <tr><td class="rowhead">大量アクセス</td><td>アプリまで届いて重くなる</td><td class="h-docker">回数制限で手前で弾ける</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>WAF で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-shield"/></svg><div class="cap">SQLインジェクションやXSSを止められる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-filter"/></svg><div class="cap">怪しいIPや大量アクセスを弾ける</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-file"/></svg><div class="cap">ブロックした記録が残る</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>WAFはWeb Application Firewallの略。あくまで手前の防御の一枚なので、アプリ側の入力チェックやエスケープを省いていい理由にはならない。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連キーワード</div>
+      
+      <div class="kw">
+        <div>
+          <div class="kw-name">HTTP</div>
+          <p class="kw-desc">Webブラウザとサーバーがやりとりするためのルール。</p>
+          <span class="kw-page">P.25</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div>
+          <div class="kw-name">Proxy</div>
+          <p class="kw-desc">通信の間に入って中継するサーバー。</p>
+          <span class="kw-page">P.43</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div>
+          <div class="kw-name">ALB</div>
+          <p class="kw-desc">WAFを付けて使うことが多いAWSのロードバランサー。</p>
+          <span class="kw-page">P.801</span>
+        </div>
+      </div>
+    </div>
+    <div class="side-group">
+      <div class="group-label">一緒に覚えたい言葉</div>
+      
+      <div class="kw">
+        <div>
+          <div class="kw-name">SQL Injection</div>
+          <p class="kw-desc">入力欄にSQLを紛れ込ませてDBを不正に操作する攻撃。</p>
+          
+        </div>
+      </div>
+      <div class="kw">
+        <div>
+          <div class="kw-name">XSS</div>
+          <p class="kw-desc">ページに悪意のあるスクリプトを埋め込む攻撃。</p>
+          
+        </div>
+      </div>
+      <div class="kw">
+        <div>
+          <div class="kw-name">ファイアウォール</div>
+          <p class="kw-desc">IPやポート単位で通信を許可・遮断する仕組み。</p>
+          
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">901</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

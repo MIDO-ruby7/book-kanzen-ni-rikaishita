@@ -100,14 +100,13 @@ body { margin: 0; }
   background: var(--teal); margin-top: 2mm;
 }
 .titles { padding-left: 7mm; }
-.titles h1 { margin: 0; font-size: 37pt; font-weight: 800; line-height: 1; }
+.titles h1 { margin: 0; font-size: 37pt; font-weight: 800; line-height: 1; white-space: nowrap; }
 .titles h1 rt { font-size: 7.5pt; font-weight: 600; color: var(--ink-soft); }
-.subtitle { margin: 3mm 0 0 32mm; font-size: 11pt; font-weight: 700; }
+.titles h1.two-line { line-height: 1.3; }   /* 2行目の読み仮名が1行目に重ならないよう行間を空ける */
 
-/* 用語名・サブタイトルが長く複数行に折り返す項目だけ、見出し周りを詰める
-   （本文テキストは変更せず、該当ページのみ generate.js が compact クラスを付与） */
-.entry.compact .titles h1 { font-size: 25pt; line-height: 1.05; }
-.entry.compact .subtitle { font-size: 9.5pt; margin-top: 2mm; }
+/* 本文が長くページに収まりにくい項目だけ、見出し周りを詰める
+   （本文テキストは変更せず、該当ページのみ generate.js が compact クラスを付与）。
+   用語名の文字サイズは generate.js がタイトル欄の幅に収まるよう個別に指定する */
 .entry.compact .head-lower { margin-top: 2.5mm; }
 .entry.compact .qa { margin-top: 1.5mm; padding-top: 1.5mm; }
 
@@ -173,10 +172,8 @@ body { margin: 0; }
 .side-group { margin-top: 3.5mm; }
 .side-group + .side-group { border-top: 1px dashed var(--rule-strong); padding-top: 4mm; }
 .group-label { font-size: 8.5pt; color: var(--ink-soft); margin-bottom: 3mm; }
-.kw { display: grid; grid-template-columns: 11mm 1fr; column-gap: 3mm; margin-bottom: 3mm; }
+.kw { margin-bottom: 3mm; }
 .kw:last-child { margin-bottom: 0; }
-.kw .kw-icon { color: var(--ink); }
-.kw .kw-icon svg { width: 10mm; height: 10mm; }
 .kw .kw-name { font-size: 10.5pt; font-weight: 700; line-height: 1.25; }
 .kw .kw-desc { font-size: 7.8pt; line-height: 1.45; margin: 1mm 0 1.5mm; color: var(--ink-soft); }
 .kw .kw-page { display: inline-block; font-size: 7.5pt; color: var(--ink-soft); border: 1px solid var(--rule-strong); border-radius: 1mm; padding: .3mm 2mm; }

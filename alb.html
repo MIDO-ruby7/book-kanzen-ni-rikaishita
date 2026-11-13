@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>差分でわかる エンジニアのゆるい辞典 — ALB</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="entry verso">
+
+  <!-- ===== 本文 ===== -->
+  <div class="main">
+
+    <div class="chapter"><b>Chapter 18</b>AWS</div>
+
+    <div class="title-row">
+      <div class="num-col"><div class="number">801</div></div>
+      <div class="titles">
+        <h1><ruby>ALB<rt>エーエルビー</rt></ruby></h1>
+      </div>
+    </div>
+
+    <div class="head-lower">
+      <div class="oneline">
+        <div class="lbl">ひとことでいうと</div>
+        <p>届いたHTTPリクエストを、URLやホスト名を見て後ろの複数サーバーに振り分けるAWSのロードバランサー。</p>
+      </div>
+    </div>
+
+    <!-- ① -->
+    <section class="qa">
+      <span class="badge">1</span>
+      <h2>なぜ生まれた？</h2>
+      <div class="body">
+        <div class="with-fig">
+          <p>サーバー1台ではアクセスをさばききれず、<br>
+             落ちたら全部止まる。台数を増やしても、どこにリクエストを送るか決める役が必要だった。</p>
+          <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② -->
+    <section class="qa">
+      <span class="badge">2</span>
+      <h2>それまでどうしていた？</h2>
+      <div class="body">
+        <p>DNSで複数のIPを返したり、自前でNginxなどを立てて振り分けたりしていた。</p>
+        <table class="cmp">
+          <thead>
+            <tr><th></th><th>自前の振り分けサーバー</th><th class="h-docker">ALB</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="rowhead">構築・運用</td><td>サーバーを立てて設定・パッチ当て</td><td class="h-docker">AWSが管理。設定するだけ</td></tr>
+            <tr><td class="rowhead">故障したサーバー</td><td>自分で検知して外す</td><td class="h-docker">ヘルスチェックで自動で外す</td></tr>
+            <tr><td class="rowhead">振り分けのルール</td><td>設定ファイルを手で書く</td><td class="h-docker">パスやホスト名で画面から設定</td></tr>
+            <tr><td class="rowhead">HTTPS化</td><td>証明書を各サーバーに配置</td><td class="h-docker">ALBに証明書を置けば完結</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ③ -->
+    <section class="qa">
+      <span class="badge">3</span>
+      <h2>ALB で何ができるようになった？</h2>
+      <div class="body">
+        <div class="trio">
+          <div class="cell"><svg><use href="icons.svg#ic-split"/></svg><div class="cap">アクセスを複数台に分散できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">壊れたサーバーを自動で外せる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-filter"/></svg><div class="cap">URLのパスごとに行き先を変えられる</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ひとことメモ -->
+    <div class="memo">
+      <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
+      <p>ALBはApplication Load Balancerの略で、HTTPの中身（パスやヘッダー）まで見て振り分ける。中身を見ずにTCPのまま速く流すのはNLB。</p>
+    </div>
+
+  </div>
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar">
+    <h2 class="side-title">関連キーワード</h2>
+    
+    <div class="side-group">
+      <div class="group-label">関連キーワード</div>
+      
+      <div class="kw">
+        <div>
+          <div class="kw-name">Server</div>
+          <p class="kw-desc">リクエストを受け取って処理を返すコンピュータ。</p>
+          <span class="kw-page">P.22</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div>
+          <div class="kw-name">HTTPS</div>
+          <p class="kw-desc">HTTPをTLSで暗号化した通信。</p>
+          <span class="kw-page">P.26</span>
+        </div>
+      </div>
+      <div class="kw">
+        <div>
+          <div class="kw-name">WAF</div>
+          <p class="kw-desc">Webアプリへの攻撃を手前で止める防御壁。</p>
+          <span class="kw-page">P.901</span>
+        </div>
+      </div>
+    </div>
+    <div class="side-group">
+      <div class="group-label">一緒に覚えたい言葉</div>
+      
+      <div class="kw">
+        <div>
+          <div class="kw-name">Load Balancer</div>
+          <p class="kw-desc">アクセスを複数のサーバーに振り分ける仕組みの総称。</p>
+          
+        </div>
+      </div>
+      <div class="kw">
+        <div>
+          <div class="kw-name">ヘルスチェック</div>
+          <p class="kw-desc">サーバーが正常に応答するかを定期的に確かめること。</p>
+          
+        </div>
+      </div>
+      <div class="kw">
+        <div>
+          <div class="kw-name">ターゲットグループ</div>
+          <p class="kw-desc">ALBの振り分け先になるサーバーのまとまり。</p>
+          
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== フッター ===== -->
+  <footer class="page-foot">
+    <span class="folio">801</span>
+    <span>差分でわかる エンジニアのゆるい辞典</span>
+  </footer>
+
+</article>
+
+</body>
+</html>

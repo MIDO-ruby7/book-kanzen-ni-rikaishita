@@ -233,6 +233,8 @@ module.exports = {
     'ghostty.html',                    // 617 Ghostty (Ch12)
     'dotenv.html',                     // 618 .env (Ch12)
     '014-devops.html',                 // 701 DevOps (Ch14)
+    'alb.html',                        // 801 ALB (Ch18)
+    'waf.html',                        // 901 WAF (Ch23)
   ],
   output: ['book.pdf'],
 };

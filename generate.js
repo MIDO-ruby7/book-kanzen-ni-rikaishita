@@ -20,7 +20,6 @@ function renderSidebar(groups) {
       <div class="group-label">${esc(g.label)}</div>
       ${g.items.map(item => `
       <div class="kw">
-        <div class="kw-icon"><svg><use href="icons.svg#${item.icon || 'ic-file'}"/></svg></div>
         <div>
           <div class="kw-name">${esc(item.name)}</div>
           <p class="kw-desc">${esc(item.desc)}</p>
@@ -28,6 +27,38 @@ function renderSidebar(groups) {
         </div>
       </div>`).join('')}
     </div>`).join('');
+}
+
+// 見出し（h1）の英数字の字幅（em）。Hiragino Sans W8・palt で実測した値。
+// 和文・全角は palt で詰まっても 1em を超えないので 1em として扱う（安全側）。
+const TITLE_CHAR_EM = {" ":0.333,"!":0.363,"#":0.786,"&":0.928,"'":0.303,"(":0.446,")":0.446,"+":0.714,",":0.303,"-":0.474,".":0.303,"/":0.571,":":0.303,"_":0.501,
+  "0":0.773,"1":0.773,"2":0.773,"3":0.773,"4":0.773,"5":0.773,"6":0.773,"7":0.773,"8":0.773,"9":0.773,
+  A:0.87,B:0.797,C:0.845,D:0.856,E:0.729,F:0.688,G:0.841,H:0.876,I:0.344,J:0.687,K:0.86,L:0.686,M:1.028,N:0.874,O:0.882,P:0.763,Q:0.886,R:0.822,S:0.764,T:0.773,U:0.887,V:0.858,W:1.11,X:0.91,Y:0.835,Z:0.747,
+  a:0.701,b:0.769,c:0.674,d:0.769,e:0.688,f:0.544,g:0.742,h:0.734,i:0.315,j:0.369,k:0.732,l:0.314,m:1.095,n:0.734,o:0.715,p:0.773,q:0.773,r:0.558,s:0.654,t:0.479,u:0.734,v:0.705,w:0.934,x:0.707,y:0.71,z:0.585};
+function titleEm(text) {
+  let em = 0;
+  for (const c of text) em += TITLE_CHAR_EM[c] ?? (c.charCodeAt(0) < 0x80 ? 0.8 : 1);
+  return em;
+}
+
+// タイトル欄の幅に収まる最大の文字サイズ(pt)。既定は 37pt（style.css の .titles h1）
+const TITLE_MAX_PT = 37;
+const TITLE_BOX_MM = 75 * 0.97; // 本文幅107mm − 番号列25mm − 左余白7mm。カーニング等の誤差ぶん少し控えめに
+function titleSizePt(lines) {
+  const em = Math.max(...lines.map(l => titleEm(l.text)));
+  return Math.min(TITLE_MAX_PT, Math.floor(TITLE_BOX_MM / (em * 25.4 / 72)));
+}
+
+// 1行に収めると小さくなりすぎる用語は content.js の title_lines で改行位置と行ごとの読みを指定する
+function renderTitle(entry) {
+  const lines = entry.title_lines || [{ text: entry.term, reading: entry.reading }];
+  const pt = titleSizePt(lines);
+  const style = pt < TITLE_MAX_PT ? ` style="font-size:${pt}pt"` : '';
+  const cls = lines.length > 1 ? ' class="two-line"' : '';
+  const html = lines.map(l => l.reading
+    ? `<ruby>${esc(l.text)}<rt>${esc(l.reading)}</rt></ruby>`
+    : esc(l.text)).join('<br>');
+  return `<h1${cls}${style}>${html}</h1>`;
 }
 
 function renderPage(entry, ch, parity) {
@@ -65,10 +96,9 @@ function renderPage(entry, ch, parity) {
     <div class="title-row">
       <div class="num-col"><div class="number">${entry.page}</div></div>
       <div class="titles">
-        <h1>${esc(entry.term)}</h1>
+        ${renderTitle(entry)}
       </div>
     </div>
-    <p class="subtitle">${esc(entry.subtitle)}</p>
 
     <div class="head-lower">
       <div class="oneline">
