@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>何を最初に見るかの共通語が欲しい。</p>
+          <p>指標は無数にあり、何から見るか迷って対応が遅れがちだった。<br>
+             GoogleのSRE本が、まず見るべき4つにまとめた。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>チームごとに思いついた指標を、好きに監視していた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">4 Golden Signals</th></tr>
+            <tr><th></th><th>指標まちまち</th><th class="h-docker">4 Golden Signals</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">見る指標</td><td>チームごとにバラバラ</td><td class="h-docker">遅延・流量・エラー・飽和</td></tr>
+            <tr><td class="rowhead">共通語</td><td>なし</td><td class="h-docker">4つで状況を説明できる</td></tr>
+            <tr><td class="rowhead">抜け漏れ</td><td>見落としが出やすい</td><td class="h-docker">最低限の観点を網羅</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>4 Golden Signals で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">4 Golden Signals を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-list"/></svg><div class="cap">最初に見る4つの指標</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-clock"/></svg><div class="cap">遅延と流量を測る</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-alert"/></svg><div class="cap">エラーと飽和を測る</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>SRE本で有名。</p>
+      <p>健康診断の基本項目のようなもの。<br>
+         遅延(Latency)、流量(Traffic)、エラー(Errors)、飽和(Saturation)。迷ったらまずこの4つ。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="sli.html">SLI</a></div>
-          <p class="kw-desc">4 Golden Signals と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">4指標はSLIの代表的な候補。</p>
           <a class="kw-page" href="sli.html">P.304</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="monitoring.html">Monitoring</a></div>
-          <p class="kw-desc">4 Golden Signals と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">4指標を監視の出発点にする。</p>
           <a class="kw-page" href="monitoring.html">P.443</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="metrics.html">Metrics</a></div>
-          <p class="kw-desc">4 Golden Signals と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">4指標はメトリクスで測る。</p>
           <a class="kw-page" href="metrics.html">P.441</a>
         </div>
       </div>

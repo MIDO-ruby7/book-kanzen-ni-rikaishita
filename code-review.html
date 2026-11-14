@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>他者の変更を読み品質を確認すること。</p>
+        <p>他の人が書いた変更を読み、問題がないか確認してから取り込む作業。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>一人マージは盲点が直通する。</p>
+          <p>一人でコードを書いて取り込むと、書いた本人には見えない誤りが残る。<br>
+             第三者の目を通す工程として、チーム開発に定着した。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>本人が書いて本人の判断でマージし、不具合は本番で見つかっていた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">コードレビュー</th></tr>
+            <tr><th></th><th>一人でマージ</th><th class="h-docker">コードレビュー</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">確認する人</td><td>書いた本人のみ</td><td class="h-docker">別の人が差分を確認</td></tr>
+            <tr><td class="rowhead">進め方</td><td>口頭やメール</td><td class="h-docker">PR上で行ごとにコメント</td></tr>
+            <tr><td class="rowhead">得られるもの</td><td>バグ検出だけ</td><td class="h-docker">知識共有・書き方統一</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>コードレビュー で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">コードレビュー を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-eye"/></svg><div class="cap">他の人が差分を読む</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-bug"/></svg><div class="cap">バグや設計の穴を拾う</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-users"/></svg><div class="cap">知識をチームに広げる</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>PRが実務の中心。</p>
+      <p>レビューは書き手を責める場ではなく、一緒に品質を上げる場。<br>
+         指摘は人ではなくコードに向け、直し方の案も添えると伝わりやすい。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="pull-request.html">Pull Request</a></div>
-          <p class="kw-desc">コードレビュー と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">変更を提出してレビューを依頼する仕組み。</p>
           <a class="kw-page" href="pull-request.html">P.20</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="pair-pro.html">ペアプロ</a></div>
-          <p class="kw-desc">コードレビュー と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">書きながらその場でレビューし合う手法。</p>
           <a class="kw-page" href="pair-pro.html">P.284</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="ci-cd.html">CI/CD</a></div>
-          <p class="kw-desc">コードレビュー と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">機械的な確認を自動化し、レビューを人の判断に集中させる。</p>
           <a class="kw-page" href="ci-cd.html">P.256</a>
         </div>
       </div>

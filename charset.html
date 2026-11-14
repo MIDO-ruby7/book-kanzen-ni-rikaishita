@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>文字を数値で表す約束。</p>
+        <p>文字と数値の対応を決めた約束事。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>崩れると文字化けする。</p>
+          <p>コンピュータは数値しか扱えず、文字を数値に割り当てる取り決めが必要だった。<br>
+             環境ごとに別の規格ができ、文字化けが生じた。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>日本語は、環境ごとに別々の規格で扱われていた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">文字コード</th></tr>
+            <tr><th></th><th>各国の規格</th><th class="h-docker">文字コード</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">対応言語</td><td>規格ごとに限られる</td><td class="h-docker">世界中の文字を統一</td></tr>
+            <tr><td class="rowhead">文字化け</td><td>環境が違うと発生</td><td class="h-docker">UTF-8なら起きにくい</td></tr>
+            <tr><td class="rowhead">代表例</td><td>Shift_JIS、EUC-JP</td><td class="h-docker">UTF-8(Unicode)</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>文字コード で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">文字コード を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-translate"/></svg><div class="cap">文字を数値に対応づけ</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-alert"/></svg><div class="cap">不一致で文字化け</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">UTF-8に統一が基本</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>UTF-8が実務の中心。</p>
+      <p>文字と番号を対応づけた暗号表のようなもの。<br>
+         書く側と読む側で表が違うと、意味不明な文字が並ぶ。迷ったらUTF-8にする。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="http.html">HTTP</a></div>
-          <p class="kw-desc">文字コード と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">Content-Typeで文字コードを伝える。</p>
           <a class="kw-page" href="http.html">P.43</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="json.html">JSON</a></div>
-          <p class="kw-desc">文字コード と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">UTF-8が標準とされるデータ形式。</p>
           <a class="kw-page" href="json.html">P.63</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="binary-data.html">バイナリ</a></div>
-          <p class="kw-desc">文字コード と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">文字コードで文字に直す前の生データ。</p>
           <a class="kw-page" href="binary-data.html">P.459</a>
         </div>
       </div>

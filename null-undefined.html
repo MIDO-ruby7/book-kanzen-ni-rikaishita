@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>値がない／未定義を表す概念（言語で差がある）。</p>
+        <p>「値がない」を表す2つの特別な値。JavaScriptでは両方ある。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>空の扱いを誤ると例外が飛ぶ。</p>
+          <p>変数に「まだ値がない」状態を表す方法が必要になった。<br>
+             JavaScriptでは「意図した空」と「未設定」を別の値で表す。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>値がないことを、0や-1などの目印の値で代用していた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">nullとundefined</th></tr>
+            <tr><th></th><th>目印の値</th><th class="h-docker">nullとundefined</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">表現</td><td>0や-1などの目印</td><td class="h-docker">nullで空を明示</td></tr>
+            <tr><td class="rowhead">意味の区別</td><td>本物の値と混同</td><td class="h-docker">2つの値で区別</td></tr>
+            <tr><td class="rowhead">未代入の変数</td><td>言語により不定</td><td class="h-docker">undefinedになる</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>nullとundefined で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">nullとundefined を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">値がないことを明示</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-search"/></svg><div class="cap">未設定かを判定できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-bug"/></svg><div class="cap">空参照の原因を絞れる</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>JSでは差が重要。</p>
+      <p>nullは「空だと自分で書いた」、undefinedは「まだ何も入れていない」というイメージ。<br>
+         どちらの値にもプロパティを読むとTypeErrorになる。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="typing.html">型</a></div>
-          <p class="kw-desc">nullとundefined と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">値の種類の分類。両方とも特別な値を指す。</p>
           <a class="kw-page" href="typing.html">P.492</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="exception-handling.html">例外処理</a></div>
-          <p class="kw-desc">nullとundefined と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">エラーを捕まえる仕組み。空参照が原因になる。</p>
           <a class="kw-page" href="exception-handling.html">P.493</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="javascript.html">JavaScript</a></div>
-          <p class="kw-desc">nullとundefined と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">nullとundefinedを両方持つ言語。</p>
           <a class="kw-page" href="javascript.html">P.118</a>
         </div>
       </div>

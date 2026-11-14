@@ -52,8 +52,8 @@
           </thead>
           <tbody>
             <tr><td class="rowhead">採番のタイミング</td><td>DBへの登録時に決まる</td><td class="h-docker">アプリ側で事前に決められる</td></tr>
-            <tr><td class="rowhead">複数サーバーでの衝突</td><td>採番がぶつかる可能性がある</td><td class="h-docker">ほぼ衝突しない</td></tr>
-            <tr><td class="rowhead">外部公開時の推測しやすさ</td><td>連番から件数が推測できる</td><td class="h-docker">推測されにくい</td></tr>
+            <tr><td class="rowhead">サーバー間の衝突</td><td>採番がぶつかる可能性がある</td><td class="h-docker">ほぼ衝突しない</td></tr>
+            <tr><td class="rowhead">推測されやすさ</td><td>連番から件数が推測できる</td><td class="h-docker">推測されにくい</td></tr>
           </tbody>
         </table>
       </div>
@@ -90,7 +90,7 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="er_diagram.html">ER図</a></div>
-          <p class="kw-desc">Primary KeyをUUIDにするかは設計段階で決めておきたい。</p>
+          <p class="kw-desc">テーブル設計の図。主キーを連番かUUIDにするかもここで決める。</p>
           <a class="kw-page" href="er_diagram.html">P.102</a>
         </div>
       </div>

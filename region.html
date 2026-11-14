@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>クラウドの地理的拠点のまとまり。</p>
+        <p>クラウドが世界各地に持つ、データセンター群の地理的なまとまり。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>一箇所集中は災害に弱い。</p>
+          <p>一つの場所に全てを置くと、災害や大規模な障害で全部止まってしまう。<br>
+             また、利用者から遠いと通信が遅くなる。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>自社のデータセンター一か所にまとめて置き、離れた拠点は用意しにくかった。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">リージョン</th></tr>
+            <tr><th></th><th>一か所に集中</th><th class="h-docker">リージョン</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">場所</td><td>自社の一拠点</td><td class="h-docker">地域ごとに選択</td></tr>
+            <tr><td class="rowhead">遅延</td><td>遠い利用者は遅い</td><td class="h-docker">近い地域で速い</td></tr>
+            <tr><td class="rowhead">資源</td><td>拠点に集中</td><td class="h-docker">地域ごとに分離</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>リージョン で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">リージョン を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-globe"/></svg><div class="cap">地理的な拠点を選ぶ</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-shield"/></svg><div class="cap">災害の影響を分ける</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-bolt"/></svg><div class="cap">近いほど通信が速い</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>東京リージョン等。</p>
+      <p>日本なら東京リージョン（ap-northeast-1）がよく使われる。<br>
+         画面右上の地域設定を間違えると、作った資源が見えなくなる。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="az.html">AZ</a></div>
-          <p class="kw-desc">リージョン と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">リージョンの中をさらに分けた単位。</p>
           <a class="kw-page" href="az.html">P.300</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="availability.html">可用性</a></div>
-          <p class="kw-desc">リージョン と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">リージョンを分けることで高められる性質。</p>
           <a class="kw-page" href="availability.html">P.301</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="cloud.html">Cloud</a></div>
-          <p class="kw-desc">リージョン と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">リージョンを選んで資源を作るサービス形態。</p>
           <a class="kw-page" href="cloud.html">P.287</a>
         </div>
       </div>

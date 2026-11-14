@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>Cloudflareのエッジで動くサーバレス実行。</p>
+        <p>Cloudflareのエッジ拠点で動くサーバーレス実行環境。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>世界の近くでコードを走らせたい。</p>
+          <p>世界の利用者に対して、遠い拠点のサーバーだけで応答すると遅くなる。<br>
+             世界中のCloudflare拠点でコードを動かす仕組みが生まれた。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>特定のリージョンにサーバーを置き、すべてのリクエストを処理していた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">Workers</th></tr>
+            <tr><th></th><th>単一拠点</th><th class="h-docker">Workers</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">動く場所</td><td>特定のリージョン</td><td class="h-docker">世界各地の拠点</td></tr>
+            <tr><td class="rowhead">実行環境</td><td>VMやコンテナ</td><td class="h-docker">V8アイソレート</td></tr>
+            <tr><td class="rowhead">データ連携</td><td>別途DBを接続</td><td class="h-docker">バインディングで直結</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>Workers で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">Workers を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-globe"/></svg><div class="cap">世界各地の拠点で実行</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-bolt"/></svg><div class="cap">起動が速い軽量実行</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-link"/></svg><div class="cap">KVやR2と直接つながる</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>JS等が動く。</p>
+      <p>Workersは、世界中の街角に置かれた小さな窓口。<br>
+         注文は最寄りの窓口で受けて、その場で返す。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="cf-pages.html">Pages</a></div>
-          <p class="kw-desc">Workers と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">フロントの公開が得意。Workersと組み合わせて使う。</p>
           <a class="kw-page" href="cf-pages.html">P.358</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="kv.html">KV</a></div>
-          <p class="kw-desc">Workers と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">Workersから使う、キーと値のデータ保存。</p>
           <a class="kw-page" href="kv.html">P.361</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="r2.html">R2</a></div>
-          <p class="kw-desc">Workers と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">Workersから扱えるファイル置き場。</p>
           <a class="kw-page" href="r2.html">P.359</a>
         </div>
       </div>

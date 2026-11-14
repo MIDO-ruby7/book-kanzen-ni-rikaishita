@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>Webサーバ／逆プロキシの定番ソフト。</p>
+        <p>静的ファイルの配信や、リバースプロキシとして広く使われるソフト。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>静的配信やTLS終端の置き場が欲しい。</p>
+          <p>アクセスが増えると、従来のWebサーバーは同時接続に弱い面があった。<br>
+             そこで軽く多数の接続をさばけるNginxが作られ、定番になった。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>Apacheなどのサーバーで、静的ファイルもアプリへの接続もまとめて処理していた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">Nginx</th></tr>
+            <tr><th></th><th>Apache中心</th><th class="h-docker">Nginx</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">得意なこと</td><td>接続ごとに処理</td><td class="h-docker">多数の接続を少メモリで</td></tr>
+            <tr><td class="rowhead">役割</td><td>Webサーバー中心</td><td class="h-docker">静的配信・リバースプロキシ</td></tr>
+            <tr><td class="rowhead">配置</td><td>単体で公開</td><td class="h-docker">アプリの前段</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>Nginx で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">Nginx を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-bolt"/></svg><div class="cap">軽く多数の接続をさばく</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-swap"/></svg><div class="cap">リバースプロキシになる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-lock"/></svg><div class="cap">HTTPSを終端する</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>設定が関門。</p>
+      <p>設定ファイルの構文が独特で、1文字の誤りで起動しないことがある。<br>
+         変更後は設定の検査コマンドで確認してから反映する。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="reverse-proxy.html">Reverse Proxy</a></div>
-          <p class="kw-desc">Nginx と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">Nginxの主な使い道の一つ。</p>
           <a class="kw-page" href="reverse-proxy.html">P.296</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="https.html">HTTPS</a></div>
-          <p class="kw-desc">Nginx と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">通信の暗号化をNginxで受けることが多い。</p>
           <a class="kw-page" href="https.html">P.44</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="load-balancer.html">Load Balancer</a></div>
-          <p class="kw-desc">Nginx と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">Nginxで振り分けを担う構成もある。</p>
           <a class="kw-page" href="load-balancer.html">P.313</a>
         </div>
       </div>

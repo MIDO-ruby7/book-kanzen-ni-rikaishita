@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>監視や画面に付きっきりになること。</p>
+        <p>監視画面やシステムに、付きっきりで見守ること。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>リリース直後など。</p>
+          <p>リリース直後は、想定外の不具合が出やすい。<br>
+             異常にすぐ対応できるよう、人が付いて見守る。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>異常の連絡を待ち、問題が起きてから動いていた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">張り付く</th></tr>
+            <tr><th></th><th>通知待ち</th><th class="h-docker">張り付く</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">見る対象</td><td>アラート通知のみ</td><td class="h-docker">ダッシュボード・ログ</td></tr>
+            <tr><td class="rowhead">時期</td><td>常に待機</td><td class="h-docker">リスクの高い時間帯</td></tr>
+            <tr><td class="rowhead">負担</td><td>通知後に対応</td><td class="h-docker">人手と集中力を消費</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>張り付く で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">張り付く を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-eye"/></svg><div class="cap">指標を自分で見続ける</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-clock"/></svg><div class="cap">リスクが高い時期に行う</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-users"/></svg><div class="cap">人の負担が大きい</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>オンコール前後。</p>
+      <p>「リリース後は張り付きね」のように、時間を決めて行うのが基本。<br>
+         張り付きが多いのは、自動検知が足りないサインでもある。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="monitoring.html">Monitoring</a></div>
-          <p class="kw-desc">張り付く と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">張り付いて見る対象の指標。</p>
           <a class="kw-page" href="monitoring.html">P.443</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="oncall.html">オンコール</a></div>
-          <p class="kw-desc">張り付く と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">異常時に呼ばれる待機当番。張り付きとは別。</p>
           <a class="kw-page" href="oncall.html">P.502</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="alerting.html">Alerting</a></div>
-          <p class="kw-desc">張り付く と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">通知で気づければ、張り付きは減らせる。</p>
           <a class="kw-page" href="alerting.html">P.444</a>
         </div>
       </div>

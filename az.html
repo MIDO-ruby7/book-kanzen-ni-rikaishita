@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>リージョン内の独立したゾーン。</p>
+        <p>同じリージョン内にある、電源や設備が独立したデータセンター単位。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>単一障害点を減らす。</p>
+          <p>データセンター一棟だけに置くと、停電や故障で全て止まる。<br>
+             独立した複数の棟に分けて置けるようにした。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>サーバー群を一つの施設に置き、予備は同じ建物内にあった。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">AZ</th></tr>
+            <tr><th></th><th>単一施設</th><th class="h-docker">AZ</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">障害の単位</td><td>施設ごと止まる</td><td class="h-docker">AZごとに分離</td></tr>
+            <tr><td class="rowhead">配置</td><td>一か所</td><td class="h-docker">複数AZに分散</td></tr>
+            <tr><td class="rowhead">電源・空調</td><td>同じ施設で共有</td><td class="h-docker">AZごとに別</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>AZ で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">AZ を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-split"/></svg><div class="cap">独立した棟に分ける</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-shield"/></svg><div class="cap">一か所の障害を避ける</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-network"/></svg><div class="cap">高速な回線で結ぶ</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>Multi-AZ。</p>
+      <p>AZを一つしか使わない構成は、そのAZの障害で全て止まる。<br>
+         重要なサービスは、2つ以上のAZに分けて置くのが基本。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="region.html">リージョン</a></div>
-          <p class="kw-desc">AZ と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">AZを複数まとめた上位の単位。</p>
           <a class="kw-page" href="region.html">P.299</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="availability.html">可用性</a></div>
-          <p class="kw-desc">AZ と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">AZを分散させて高める性質。</p>
           <a class="kw-page" href="availability.html">P.301</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="rds.html">RDS</a></div>
-          <p class="kw-desc">AZ と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">Multi-AZで複数のAZに冗長化できるAWSのDB。</p>
           <a class="kw-page" href="rds.html">P.322</a>
         </div>
       </div>

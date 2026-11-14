@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>何度実行しても結果が同じ性質。</p>
+        <p>同じ操作を何度繰り返しても、結果が同じになる性質。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>自動化の再実行を安全にする。</p>
+          <p>ネットワーク障害などで、操作を再実行する場面は避けられない。<br>
+             再実行しても二重に作られない仕組みが、安全な自動化に必要になった。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>スクリプトを再実行すると、二重に作成されたり、エラーで止まったりしていた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">冪等性</th></tr>
+            <tr><th></th><th>再実行で二重化</th><th class="h-docker">冪等性</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">再実行</td><td>重複や失敗が起きる</td><td class="h-docker">結果が同じ状態に</td></tr>
+            <tr><td class="rowhead">自動化</td><td>手動で確認が必要</td><td class="h-docker">安全に再実行できる</td></tr>
+            <tr><td class="rowhead">二重処理</td><td>二重作成が起きる</td><td class="h-docker">二重処理を防げる</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>冪等性 で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">冪等性 を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-sync"/></svg><div class="cap">何度やっても同じ結果</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-undo"/></svg><div class="cap">安心して再実行できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">二重作成を防ぐ</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>何回やっても壊れない方向へ。</p>
+      <p>数学の用語で、読みは「べきとうせい」。<br>
+         APIの設計や決済では、二重処理を防ぐために必ず意識する。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="iac.html">IaC</a></div>
-          <p class="kw-desc">冪等性 と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">冪等であることが、再適用の安全性の前提。</p>
           <a class="kw-page" href="iac.html">P.305</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="ansible.html">Ansible</a></div>
-          <p class="kw-desc">冪等性 と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">冪等な作業を前提に作られた構成管理ツール。</p>
           <a class="kw-page" href="ansible.html">P.309</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="declarative-config.html">宣言的構成</a></div>
-          <p class="kw-desc">冪等性 と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">冪等性を自然に満たす書き方。</p>
           <a class="kw-page" href="declarative-config.html">P.306</a>
         </div>
       </div>

@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>データを暗号にして、読めなくすること。</p>
+        <p>データを鍵がないと読めない形に変えること（暗号化）。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>盗まれても中身を守したい。</p>
+          <p>通信や保存したデータは、途中や盗難で他人に見られるおそれがある。<br>
+             見られても中身が分からないように、変換して守る必要が生まれた。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>データをそのままの形で送ったり、保存したりしていた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">Encryption</th></tr>
+            <tr><th></th><th>平文</th><th class="h-docker">暗号化</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">見え方</td><td>誰でも読める</td><td class="h-docker">鍵なしでは読めない</td></tr>
+            <tr><td class="rowhead">戻し方</td><td>変換なし</td><td class="h-docker">鍵で元に戻す</td></tr>
+            <tr><td class="rowhead">保護の場面</td><td>保護なし</td><td class="h-docker">通信中・保存時</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>Encryption で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">Encryption を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-lock"/></svg><div class="cap">第三者に読めなくする</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-key"/></svg><div class="cap">鍵で元に戻せる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-shield"/></svg><div class="cap">盗まれても中身を守る</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>暗号化。保存時/通信時。</p>
+      <p>暗号化は元に戻せる変換で、パスワード保存に使うのは基本的に誤り（ハッシュを使う）。<br>
+         鍵の管理が甘いと意味がなくなるため、鍵は別の場所で守る。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="hash.html">Hash</a></div>
-          <p class="kw-desc">Encryption と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">元に戻せない変換。暗号化とは目的が違う。</p>
           <a class="kw-page" href="hash.html">P.373</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="tls.html">TLS</a></div>
-          <p class="kw-desc">Encryption と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">通信を暗号化するプロトコル。</p>
           <a class="kw-page" href="tls.html">P.55</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="https.html">HTTPS</a></div>
-          <p class="kw-desc">Encryption と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">HTTPにTLSを組み合わせた、暗号化されたWeb通信。</p>
           <a class="kw-page" href="https.html">P.44</a>
         </div>
       </div>

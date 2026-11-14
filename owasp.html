@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>Webセキュリティの知見をまとめるコミュニティ／ガイド。</p>
+        <p>Webセキュリティの知見を公開している非営利のコミュニティ。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>守る観点の共通言語が欲しい。</p>
+          <p>Webの脆弱性は種類が多く、企業ごとに対策がばらばらだった。<br>
+             そこで、共通の指針や資料を公開する非営利の団体が作られた。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>対策の基準が各社でバラバラで、優先順位も不明だった。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">OWASP</th></tr>
+            <tr><th></th><th>各社独自</th><th class="h-docker">OWASP</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">基準</td><td>会社ごとに自己流</td><td class="h-docker">公開の共通基準</td></tr>
+            <tr><td class="rowhead">代表資料</td><td>なし</td><td class="h-docker">OWASP Top 10</td></tr>
+            <tr><td class="rowhead">ツール</td><td>個別に用意</td><td class="h-docker">ZAPなど無料公開</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>OWASP で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">OWASP を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-book"/></svg><div class="cap">共通の指針を公開</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-list"/></svg><div class="cap">主要リスクをTop 10に整理</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-users"/></svg><div class="cap">コミュニティが運営</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>Top 10が有名。</p>
+      <p>「オワスプ」と読む。セキュリティ診断の報告書や要件で「OWASP Top 10に準拠」と書かれる。<br>
+         Top 10は、攻撃手法の名前の一覧ではなくリスクの分類である。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="zap.html">ZAP</a></div>
-          <p class="kw-desc">OWASP と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">OWASPが公開している脆弱性診断ツール。</p>
           <a class="kw-page" href="zap.html">P.378</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="xss.html">XSS</a></div>
-          <p class="kw-desc">OWASP と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">Top 10にも含まれる代表的な脆弱性。</p>
           <a class="kw-page" href="xss.html">P.366</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="sql-injection.html">SQL Injection</a></div>
-          <p class="kw-desc">OWASP と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">Top 10の「インジェクション」に含まれる攻撃。</p>
           <a class="kw-page" href="sql-injection.html">P.365</a>
         </div>
       </div>

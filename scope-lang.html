@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>名前（変数など）が有効な範囲。</p>
+        <p>変数や関数の名前が参照できる範囲。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>変数がどこで見えるかの混乱を減らすため。</p>
+          <p>プログラムが大きくなると、同じ名前の変数がぶつかる。<br>
+             名前が有効な範囲を区切って、衝突を防ぐ必要が出た。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>すべての変数がプログラム全体から見える、グローバルだけの形だった。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">スコープ（言語）</th></tr>
+            <tr><th></th><th>全部グローバル</th><th class="h-docker">スコープ</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">見える範囲</td><td>プログラム全体</td><td class="h-docker">関数やブロックの中</td></tr>
+            <tr><td class="rowhead">名前の衝突</td><td>起きやすい</td><td class="h-docker">起きにくい</td></tr>
+            <tr><td class="rowhead">影響範囲</td><td>変更が全体に及ぶ</td><td class="h-docker">変更が内側で収まる</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>スコープ（言語） で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">スコープ（言語）を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-lock"/></svg><div class="cap">変数の影響範囲を限定</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-puzzle"/></svg><div class="cap">同じ名前を別々に使える</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-search"/></svg><div class="cap">変数の見える場所を判断</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>プロジェクトのスコープ（やる範囲）とは別物。会話ではどちらを指すか先に揃える。</p>
+      <p>部屋の中の持ち物は、その部屋の中でだけ使えるイメージ。<br>
+         プロジェクトのスコープ（やる範囲）とは別物なので、会話では先に揃える。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="closure.html">クロージャ</a></div>
-          <p class="kw-desc">スコープと一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">外側のスコープの変数を保持する関数。</p>
           <a class="kw-page" href="closure.html">P.494</a>
         </div>
       </div>
-      <div class="kw kw-linked">
+      <div class="kw">
         <div>
-          <div class="kw-name"><a class="kw-link" href="project-scope.html">スコープ</a></div>
-          <p class="kw-desc">プロジェクト管理側の同音異義語。</p>
-          <a class="kw-page" href="project-scope.html">P.277</a>
+          <div class="kw-name">関数</div>
+          <p class="kw-desc">処理をまとめた単位。内側に独自の範囲を持つ。</p>
+          
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="recursion.html">再帰</a></div>
-          <p class="kw-desc">スコープと一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">呼び出しごとに別のスコープが作られる。</p>
           <a class="kw-page" href="recursion.html">P.495</a>
         </div>
       </div>

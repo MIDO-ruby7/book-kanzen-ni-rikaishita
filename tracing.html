@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>リクエストの経路を追跡すること。</p>
+        <p>1つのリクエストが通った経路と時間を追う手法。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>分散するとログだけでは追えない。</p>
+          <p>マイクロサービスでは、1リクエストが多くのサービスをまたいで処理される。<br>
+             ログだけでは、どこで遅れたのかをつなげて追えなくなった。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>各サービスのログを時刻で突き合わせて追っていた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">Tracing</th></tr>
+            <tr><th></th><th>ログ突合</th><th class="h-docker">Tracing</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">追い方</td><td>ログを時刻で手作業突合</td><td class="h-docker">トレースIDで自動的につなぐ</td></tr>
+            <tr><td class="rowhead">遅い箇所</td><td>推測に頼る</td><td class="h-docker">スパンごとの所要時間で特定</td></tr>
+            <tr><td class="rowhead">全体像</td><td>サービス単位でバラバラ</td><td class="h-docker">経路全体を1枚の図で確認</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>Tracing で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">Tracing を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-branch"/></svg><div class="cap">リクエストの経路を追跡</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-clock"/></svg><div class="cap">区間ごとの所要時間を計測</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-search"/></svg><div class="cap">遅延やエラーの箇所を特定</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>スパンの連鎖。</p>
+      <p>Tracingは宅配便の追跡番号のようなもの。<br>
+         1回の処理をトレース、その中の各区間をスパンと呼ぶ。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="x-ray.html">X-Ray</a></div>
-          <p class="kw-desc">Tracing と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">AWSが提供するトレーシングのサービス。</p>
           <a class="kw-page" href="x-ray.html">P.330</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="opentelemetry.html">OpenTelemetry</a></div>
-          <p class="kw-desc">Tracing と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">トレースを出力する標準的な枠組み。</p>
           <a class="kw-page" href="opentelemetry.html">P.445</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="logging.html">Logging</a></div>
-          <p class="kw-desc">Tracing と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">トレースと組み合わせて原因を調べる記録。</p>
           <a class="kw-page" href="logging.html">P.440</a>
         </div>
       </div>

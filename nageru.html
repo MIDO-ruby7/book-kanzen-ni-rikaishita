@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>例外やリクエストを送出すること。</p>
+        <p>例外を発生させたり、リクエストを送り出したりすること。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>「例外投げる」が頻出。</p>
+          <p>エラーが起きた場所でその場しのぎに対処すると、コードが複雑になる。<br>
+             例外を「投げ」て、対処できる呼び出し元に任せる言い方が定着した。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>エラーを、戻り値のエラーコードで知らせていた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">投げる</th></tr>
+            <tr><th></th><th>戻り値で通知</th><th class="h-docker">投げる</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">知らせ方</td><td>戻り値のエラーコード</td><td class="h-docker">例外を投げる(throw)</td></tr>
+            <tr><td class="rowhead">確認</td><td>毎回の確認が必要</td><td class="h-docker">投げられると自動で伝わる</td></tr>
+            <tr><td class="rowhead">見落とし</td><td>確認漏れで進んでしまう</td><td class="h-docker">無視すると処理が止まる</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>投げる で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">投げる を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-alert"/></svg><div class="cap">異常を例外として送出</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-split"/></svg><div class="cap">流れを呼び出し元へ移す</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-undo"/></svg><div class="cap">catchで受け止めて対処</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>throw。</p>
+      <p>野球でボールを投げるように、問題を相手へ渡すイメージ。<br>
+         例外を投げるはthrow、受ける側はcatch。リクエストを渡す意味でも使う。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="tataku.html">叩く</a></div>
-          <p class="kw-desc">投げる と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">リクエストを送る言い方。</p>
           <a class="kw-page" href="tataku.html">P.464</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="exception-handling.html">例外処理</a></div>
-          <p class="kw-desc">投げる と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">投げられた例外を受け止める処理。</p>
           <a class="kw-page" href="exception-handling.html">P.493</a>
         </div>
       </div>
       <div class="kw">
         <div>
           <div class="kw-name">Error</div>
-          <p class="kw-desc">投げる と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">投げられる例外・エラーの種類。</p>
           
         </div>
       </div>

@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>ハッシュの前に足すランダム値。</p>
+        <p>ハッシュの前に足す、ユーザーごとのランダムな値。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>同じパスワードが同じハッシュになると危険。</p>
+          <p>同じパスワードは同じハッシュ値になり、一覧表で逆引きされてしまう。<br>
+             そこで、ハッシュ前にランダムな値を足して結果を変える手法が生まれた。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>パスワードだけをハッシュにして保存していた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">Salt</th></tr>
+            <tr><th></th><th>ソルト無し</th><th class="h-docker">Salt</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">同じパスワード</td><td>同じ値になる</td><td class="h-docker">別の値になる</td></tr>
+            <tr><td class="rowhead">事前計算表</td><td>逆引きされる</td><td class="h-docker">使えなくなる</td></tr>
+            <tr><td class="rowhead">保存</td><td>ハッシュのみ</td><td class="h-docker">ハッシュとソルト</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>Salt で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">Salt を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-swap"/></svg><div class="cap">同じ入力でも結果が変わる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-search"/></svg><div class="cap">逆引き表を無効化</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-shield"/></svg><div class="cap">まとめての解読を防ぐ</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>レインボーテーブル対策。</p>
+      <p>ソルトは「秘密の値」ではなく、ユーザーごとに違えることが肝。<br>
+         似た名前の「ペッパー」は、DBとは別の場所で秘密に持つ値である。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="hash.html">Hash</a></div>
-          <p class="kw-desc">Salt と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">ソルトを足してから計算する、元に戻せない変換。</p>
           <a class="kw-page" href="hash.html">P.373</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="secret.html">Secret</a></div>
-          <p class="kw-desc">Salt と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">ソルトと違い、漏らしてはいけない情報。</p>
           <a class="kw-page" href="secret.html">P.248</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="authentication.html">Authentication</a></div>
-          <p class="kw-desc">Salt と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">パスワード照合を安全にするための対策の一つ。</p>
           <a class="kw-page" href="authentication.html">P.368</a>
         </div>
       </div>

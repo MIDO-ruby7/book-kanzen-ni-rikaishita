@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>「内部なら安全」を前提にしないセキュリティの考え方／製品群。</p>
+        <p>「社内だから安全」とみなさず、常に確認する考え方。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>境界防御だけでは足りない。</p>
+          <p>クラウドとリモートワークで、社内と社外の境目があいまいになった。<br>
+             一度入れば何でも触れる守り方では、侵入後の被害が広がりやすい。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>社内ネットワークの出入口だけを守り、中は信頼していた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">Zero Trust</th></tr>
+            <tr><th></th><th>境界防御</th><th class="h-docker">Zero Trust</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">信頼の置き方</td><td>社内なら信頼</td><td class="h-docker">社内でも都度確認</td></tr>
+            <tr><td class="rowhead">確認の回数</td><td>入口で1回</td><td class="h-docker">部屋ごとに毎回</td></tr>
+            <tr><td class="rowhead">接続方法</td><td>VPNで社内へ</td><td class="h-docker">アプリ単位で許可</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>Zero Trust で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">Zero Trust を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-lock"/></svg><div class="cap">常に本人と端末を確認</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-split"/></svg><div class="cap">アプリ単位で許可を出す</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-shield"/></svg><div class="cap">侵入後の被害を限定</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>Cloudflare One等。</p>
+      <p>社員証を持っていても、部屋ごとに毎回ゲートで確認されるビルのイメージ。<br>
+         製品名ではなく考え方で、実現にはID管理や端末管理を組み合わせる。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="vpn.html">VPN</a></div>
-          <p class="kw-desc">Zero Trust と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">社内網へ入る従来の手段。Zero Trustで置き換えが進む。</p>
           <a class="kw-page" href="vpn.html">P.58</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="authentication.html">Authentication</a></div>
-          <p class="kw-desc">Zero Trust と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">毎回の確認の土台になる、本人確認の仕組み。</p>
           <a class="kw-page" href="authentication.html">P.368</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="firewall.html">ファイアウォール</a></div>
-          <p class="kw-desc">Zero Trust と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">通信を通すか決める境界の守り。Zero Trustはその先も見る。</p>
           <a class="kw-page" href="firewall.html">P.367</a>
         </div>
       </div>

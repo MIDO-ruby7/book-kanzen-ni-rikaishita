@@ -158,6 +158,11 @@ body { margin: 0; }
 .cmp td.h-docker { background: var(--teal-panel); }
 .cmp .rowhead { background: var(--panel); font-weight: 700; width: 24mm; font-size: 8pt; }
 
+/* 和文の改行位置：文節の切れ目で折り返し、最終行に1〜2文字だけ残るのを防ぐ。
+   短い要素（表・キャプション・関連キーワード）は行の長さをそろえ、段落は最終行だけ整える */
+.cmp th, .cmp td, .trio .cap, .kw-desc { word-break: auto-phrase; text-wrap: balance; }
+.oneline p, .qa .body p, .memo p, .side-memo p { word-break: auto-phrase; text-wrap: pretty; }
+
 /* ③：アイコン3連 */
 .trio { display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 2.5mm; }
 .trio .cell { text-align: center; padding: 0 3mm; border-right: 1px solid var(--rule); }

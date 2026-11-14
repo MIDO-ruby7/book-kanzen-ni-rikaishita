@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>エッジからコンテンツを届ける仕組み。</p>
+        <p>世界中の拠点にコンテンツの写しを置き、近くから届ける仕組み。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>オリジン一箇所は遠いユーザーに不利。</p>
+          <p>配信元が一か所だと、遠いユーザーほど表示が遅くなる。<br>
+             またアクセスが集中すると、配信元が耐えられなくなった。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>全ユーザーが一か所のサーバー（オリジン）から直接コンテンツを取得していた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">CDN</th></tr>
+            <tr><th></th><th>オリジン直配信</th><th class="h-docker">CDN</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">配信元</td><td>オリジン一か所</td><td class="h-docker">世界各地のエッジ</td></tr>
+            <tr><td class="rowhead">速度</td><td>遠いほど遅い</td><td class="h-docker">近い拠点から返す</td></tr>
+            <tr><td class="rowhead">負荷</td><td>全部オリジンに</td><td class="h-docker">オリジンへの問い合わせ減</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>CDN で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">CDN を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-globe"/></svg><div class="cap">世界の拠点に写しを置く</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-bolt"/></svg><div class="cap">近くから素早く届ける</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-shield"/></svg><div class="cap">元のサーバーの負荷を減らす</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>CloudFront等。</p>
+      <p>CDNはContent Delivery Networkの略で、AWSではCloudFrontが代表。<br>
+         更新したのに古いまま表示されるときは、キャッシュを疑う。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="cloudfront.html">CloudFront</a></div>
-          <p class="kw-desc">CDN と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">AWSが提供するCDNのサービス名。</p>
           <a class="kw-page" href="cloudfront.html">P.324</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="object-storage.html">Object Storage</a></div>
-          <p class="kw-desc">CDN と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">CDNの配信元としてよく使われる保存先。</p>
           <a class="kw-page" href="object-storage.html">P.294</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="cloud-cdn.html">Cloud CDN</a></div>
-          <p class="kw-desc">CDN と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">Google Cloudが提供するCDNのサービス名。</p>
           <a class="kw-page" href="cloud-cdn.html">P.338</a>
         </div>
       </div>

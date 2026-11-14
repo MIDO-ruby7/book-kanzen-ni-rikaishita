@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>同じ知識を重複して書かない原則。</p>
+        <p>同じ知識を複数の場所に書かない原則。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>コピペが増えると修正漏れが起きる。</p>
+          <p>同じ処理や決まりごとをコピペすると、修正時に直し漏れが起きる。<br>
+             そこで、1つの知識は1か所だけに書くことが提唱された。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,16 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>似た処理を、必要な場所へコピーして使い回していた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">DRY</th></tr>
+            <tr><th></th><th>コピペ</th><th class="h-docker">DRY</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">修正</td><td>全箇所を探す</td><td class="h-docker">1か所だけ</td></tr>
+            <tr><td class="rowhead">直し漏れ</td><td>起きやすい</td><td class="h-docker">起きにくい</td></tr>
+            <tr><td class="rowhead">重複の対象</td><td>見た目</td><td class="h-docker">同じ知識</td></tr>
+            <tr><td class="rowhead">目安</td><td>随時コピー</td><td class="h-docker">3回目で共通化</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +67,9 @@
       <h2>DRY で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">DRY を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-search"/></svg><div class="cap">直す場所を1か所に</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">修正漏れを防ぐ</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-alert"/></svg><div class="cap">まとめすぎに注意</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +77,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>Don't Repeat Yourself。</p>
+      <p>DRYは「連絡先を1冊の名簿にまとめる」ようなもの。<br>
+         住所が変わっても、直すのは名簿の1行だけで済む。</p>
     </div>
 
   </div>
@@ -89,21 +91,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="kiss.html">KISS</a></div>
-          <p class="kw-desc">DRY と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">単純さを重んじる別の原則。</p>
           <a class="kw-page" href="kiss.html">P.422</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="yagni.html">YAGNI</a></div>
-          <p class="kw-desc">DRY と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">必要になるまで作らない原則。</p>
           <a class="kw-page" href="yagni.html">P.421</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="refactoring.html">リファクタリング</a></div>
-          <p class="kw-desc">DRY と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">重複を共通化する整理作業。</p>
           <a class="kw-page" href="refactoring.html">P.209</a>
         </div>
       </div>

@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>CloudflareのサーバレスSQL DB。</p>
+        <p>SQLiteをもとにしたCloudflareのサーバーレスSQL DB。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>エッジ近くに薄い関係データを置きたい。</p>
+          <p>エッジのWorkersから遠くのDBへ毎回問い合わせると遅くなる。<br>
+             Cloudflare内で完結する、管理不要のSQL DBが求められた。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>別のクラウド上にRDBを用意し、Workersから接続していた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">D1</th></tr>
+            <tr><th></th><th>外部RDB</th><th class="h-docker">D1</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">DB管理</td><td>サーバーを自分で用意</td><td class="h-docker">管理不要</td></tr>
+            <tr><td class="rowhead">中身</td><td>MySQLなどを別途用意</td><td class="h-docker">SQLiteベース</td></tr>
+            <tr><td class="rowhead">接続</td><td>ネットワーク経由</td><td class="h-docker">バインディングで直結</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>D1 で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">D1 を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-database"/></svg><div class="cap">SQLiteベースのDB</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-link"/></svg><div class="cap">Workersから直接呼べる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-cloud"/></svg><div class="cap">サーバー管理が不要</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>SQLite系。</p>
+      <p>D1は、Workersの隣に置かれた小さなノート。<br>
+         ちょっとした表データを、すぐ手元で書き込んで引ける。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="cf-workers.html">Workers</a></div>
-          <p class="kw-desc">D1 と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">D1を呼び出して処理を行う実行環境。</p>
           <a class="kw-page" href="cf-workers.html">P.357</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="kv.html">KV</a></div>
-          <p class="kw-desc">D1 と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">もう一つの保存先。表ではなく、値を素早く引く用途。</p>
           <a class="kw-page" href="kv.html">P.361</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="sqlite.html">SQLite</a></div>
-          <p class="kw-desc">D1 と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">D1の土台となる、軽量な組み込みDB。</p>
           <a class="kw-page" href="sqlite.html">P.106</a>
         </div>
       </div>

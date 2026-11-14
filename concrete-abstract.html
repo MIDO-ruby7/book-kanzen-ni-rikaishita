@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>詳細（具体）と本質（抽象）を行き来する考え方。</p>
+        <p>細部（具体）と本質（抽象）を行き来する考え方。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>どちらかに偏ると設計も会話も詰まる。</p>
+          <p>細部だけ追うと全体が見えず、抽象論だけでは実装に落とせない。<br>
+             そこで、両方の見方を切り替える力が設計に必要になった。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>目の前のコードだけを見て、対処していた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">具体と抽象</th></tr>
+            <tr><th></th><th>具体のみ</th><th class="h-docker">具体と抽象</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">視点</td><td>目の前の細部</td><td class="h-docker">本質へ引いて見る</td></tr>
+            <tr><td class="rowhead">再利用</td><td>似た処理が増える</td><td class="h-docker">型や関数にまとめる</td></tr>
+            <tr><td class="rowhead">落とし穴</td><td>視野が狭い</td><td class="h-docker">抽象化しすぎ</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>具体と抽象 で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">具体と抽象 を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-eye"/></svg><div class="cap">視点を上げ下げする</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-puzzle"/></svg><div class="cap">共通の本質を見つける</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-alert"/></svg><div class="cap">抽象化しすぎない</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>エンジニアリングの基本動作。</p>
+      <p>具体と抽象は「地図の縮尺」のようなもの。<br>
+         拡大すると道が、縮小すると街全体が見える。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="refactoring.html">リファクタリング</a></div>
-          <p class="kw-desc">具体と抽象 と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">具体を抽象へ整える作業。</p>
           <a class="kw-page" href="refactoring.html">P.209</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="separation-of-concerns.html">関心の分離</a></div>
-          <p class="kw-desc">具体と抽象 と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">抽象化のよい練習になる考え方。</p>
           <a class="kw-page" href="separation-of-concerns.html">P.423</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="typing.html">型</a></div>
-          <p class="kw-desc">具体と抽象 と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">抽象を表す手段の1つ。</p>
           <a class="kw-page" href="typing.html">P.492</a>
         </div>
       </div>

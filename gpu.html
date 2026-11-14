@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>並列計算が得意な処理装置。</p>
+        <p>多数の単純な計算を並列でこなすのが得意な処理装置。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>学習や画像で名前が出る。</p>
+          <p>3D描画は同じ計算を大量の画素に行う処理で、CPUでは遅かった。<br>
+             この並列性が機械学習にも合い、用途が広がった。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>画像の計算も、CPUがすべて担当していた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">GPU</th></tr>
+            <tr><th></th><th>CPUのみ</th><th class="h-docker">GPU</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">得意な処理</td><td>複雑な処理を順番に</td><td class="h-docker">単純な計算を一斉に</td></tr>
+            <tr><td class="rowhead">コア数</td><td>数個から数十個</td><td class="h-docker">数千個規模</td></tr>
+            <tr><td class="rowhead">主な用途</td><td>一般的な処理全般</td><td class="h-docker">描画・機械学習・LLM推論</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>GPU で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">GPU を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-split"/></svg><div class="cap">大量の計算を並列実行</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-image"/></svg><div class="cap">画像や3Dの描画</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">機械学習・LLMを高速化</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>LLM推論でも重要。</p>
+      <p>CPUが少人数の職人なら、GPUは大勢の作業員。<br>
+         LLMでは「GPUメモリ(VRAM)が足りない」がよく問題になる。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="cpu.html">CPU</a></div>
-          <p class="kw-desc">GPU と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">GPUへ仕事を指示する側。</p>
           <a class="kw-page" href="cpu.html">P.452</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="vllm.html">vLLM</a></div>
-          <p class="kw-desc">GPU と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">GPUでLLMを高速に動かす推論エンジン。</p>
           <a class="kw-page" href="vllm.html">P.406</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="memory-ram.html">メモリ</a></div>
-          <p class="kw-desc">GPU と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">GPUにも専用のメモリ(VRAM)がある。</p>
           <a class="kw-page" href="memory-ram.html">P.454</a>
         </div>
       </div>

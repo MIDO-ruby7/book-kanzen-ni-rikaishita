@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>大規模なテキスト学習で動く言語モデル。</p>
+        <p>大量の文章で学習し、文章を生成できるAIモデル。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>文章の生成や要約を自動化したい。</p>
+          <p>従来のAIは、翻訳や分類など用途ごとに別々に作る必要があった。<br>
+             大規模な文章で学習したモデルが、1つで多くの文章作業をこなせるようになった。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>用途ごとに専用のルールやモデルを作っていた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">LLM</th></tr>
+            <tr><th></th><th>専用プログラム</th><th class="h-docker">LLM</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">作り方</td><td>用途ごとに開発</td><td class="h-docker">指示で何でも対応</td></tr>
+            <tr><td class="rowhead">入力</td><td>決まった形式のみ</td><td class="h-docker">普通の文章</td></tr>
+            <tr><td class="rowhead">注意点</td><td>結果が決まっている</td><td class="h-docker">誤答に要確認</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>LLM で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">LLM を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-book"/></svg><div class="cap">大量の文章で学習</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-translate"/></svg><div class="cap">文章の生成と要約をこなす</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-alert"/></svg><div class="cap">誤りもあるので確認が必要</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>Large Language Model。</p>
+      <p>Large Language Model。ChatGPTやClaudeの中身にあたる。<br>
+         仕組みは、次に来る語を予測して文章をつなぐもの。「理解している」わけではない。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="prompt.html">Prompt</a></div>
-          <p class="kw-desc">LLM と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">LLMに与える指示文。</p>
           <a class="kw-page" href="prompt.html">P.386</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="token.html">Token</a></div>
-          <p class="kw-desc">LLM と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">LLMが文章を扱う単位。料金や上限の基準になる。</p>
           <a class="kw-page" href="token.html">P.384</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="gpt.html">GPT</a></div>
-          <p class="kw-desc">LLM と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">OpenAIが作ったLLMのシリーズ名。</p>
           <a class="kw-page" href="gpt.html">P.401</a>
         </div>
       </div>

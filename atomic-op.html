@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>途中で割れない一体の操作・性質。</p>
+        <p>途中で割り込まれず、全部成功か全部失敗になる操作。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>並行処理で中途半端が怖い。</p>
+          <p>複数の処理が同時に動くと、途中の中途半端な状態を見られたり壊されたりする。<br>
+             分割できない操作にすれば、その不整合を防げる。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>読み取り・計算・書き込みを、別々の手順で行っていた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">アトミック</th></tr>
+            <tr><th></th><th>分割した処理</th><th class="h-docker">アトミック</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">途中の状態</td><td>他の処理から見える</td><td class="h-docker">外からは見えない</td></tr>
+            <tr><td class="rowhead">同時更新</td><td>上書きで値が失われる</td><td class="h-docker">順番に確実に反映</td></tr>
+            <tr><td class="rowhead">失敗時</td><td>中途半端に残る</td><td class="h-docker">元の状態に戻る</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>アトミック で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">アトミック を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-lock"/></svg><div class="cap">割り込めない一体の操作</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">全部成功か全部失敗</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-shield"/></svg><div class="cap">競合による不整合を防ぐ</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>原子性。</p>
+      <p>ATMで、残高の減少と現金の排出が片方だけ起きないようなもの。<br>
+         カウンタの加算がアトミックでないと、同時アクセスで数が合わなくなる。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="transaction.html">トランザクション</a></div>
-          <p class="kw-desc">アトミック と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">DBで原子性を保証する仕組み。</p>
           <a class="kw-page" href="transaction.html">P.93</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="lock.html">ロック</a></div>
-          <p class="kw-desc">アトミック と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">排他制御で原子性を実現する手段。</p>
           <a class="kw-page" href="lock.html">P.94</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="process.html">プロセス</a></div>
-          <p class="kw-desc">アトミック と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">並行して動くもの同士の競合が問題になる。</p>
           <a class="kw-page" href="process.html">P.235</a>
         </div>
       </div>

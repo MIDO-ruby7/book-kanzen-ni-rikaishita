@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>例外や問題を握って握ってなかったことにすること。</p>
+        <p>例外やエラーを記録も対応もせず、なかったことにすること。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>握りつぶすと後で爆発する。</p>
+          <p>例外を捕まえて何もしないと、エラーは目に見えなくなる。<br>
+             だが不具合は消えず、後で原因不明の障害になる。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>例外は捕捉して、記録や通知などで対応していた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">握りつぶす</th></tr>
+            <tr><th></th><th>適切な処理</th><th class="h-docker">握りつぶす</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">書き方</td><td>記録して対処</td><td class="h-docker">rescueの中身が空</td></tr>
+            <tr><td class="rowhead">発覚</td><td>早期に気づく</td><td class="h-docker">不整合になってから発覚</td></tr>
+            <tr><td class="rowhead">対策</td><td>例外を伝える</td><td class="h-docker">ログ出力か再raise</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>握りつぶす で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">握りつぶす を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-code"/></svg><div class="cap">空のrescueが典型</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-bug"/></svg><div class="cap">隠れて後で爆発する</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">最低でもログに残す</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>anti-pattern。</p>
+      <p>「とりあえずrescueしておく」は、アンチパターンの代表格。<br>
+         誰もエラーに気づけなくなるので、握りつぶさず最低でもログに残す。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="exception-handling.html">例外処理</a></div>
-          <p class="kw-desc">握りつぶす と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">握りつぶさず、正しく扱うための仕組み。</p>
           <a class="kw-page" href="exception-handling.html">P.493</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="log.html">ログ</a></div>
-          <p class="kw-desc">握りつぶす と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">握りつぶしても、残しておけば手掛かりになる。</p>
           <a class="kw-page" href="log.html">P.210</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="debug.html">デバッグ</a></div>
-          <p class="kw-desc">握りつぶす と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">握りつぶされると、原因の調査が難航する。</p>
           <a class="kw-page" href="debug.html">P.194</a>
         </div>
       </div>

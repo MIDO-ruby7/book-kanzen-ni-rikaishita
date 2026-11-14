@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>一部にだけ新版を出し様子を見る手法。</p>
+        <p>一部の利用者にだけ新版を出し、問題がないか見ながら広げる手法。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>全台一斉は失敗時の被害が大きい。</p>
+          <p>全利用者へ一斉に新版を出すと、不具合があった時の被害が大きくなる。<br>
+             そこで少数から試し、安全を確認してから広げる方法が使われる。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>新版を、全サーバー・全利用者へ一斉に切り替えていた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">Canary Release</th></tr>
+            <tr><th></th><th>一斉切り替え</th><th class="h-docker">Canary</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">公開の範囲</td><td>全員同時</td><td class="h-docker">少数から段階的</td></tr>
+            <tr><td class="rowhead">不具合の被害</td><td>全員に及ぶ</td><td class="h-docker">一部で食い止める</td></tr>
+            <tr><td class="rowhead">判断の材料</td><td>公開後の反応のみ</td><td class="h-docker">実際の利用で確認</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>Canary Release で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">Canary Release を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-split"/></svg><div class="cap">一部の利用者だけに公開</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-alert"/></svg><div class="cap">不具合の被害を限定</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-chart"/></svg><div class="cap">指標を見て段階的に拡大</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>カナリアが由来。</p>
+      <p>炭鉱でガスの検知にカナリアを先に使った話が由来。<br>
+         「カナリア」は、新版を最初に受ける少数の利用者やサーバーのこと。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="blue-green.html">Blue/Green Deployment</a></div>
-          <p class="kw-desc">Canary Release と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">新旧環境を丸ごと切り替える別の手法。</p>
           <a class="kw-page" href="blue-green.html">P.266</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="rollback.html">ロールバック</a></div>
-          <p class="kw-desc">Canary Release と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">問題発生時に旧版へ戻す操作。</p>
           <a class="kw-page" href="rollback.html">P.34</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="monitoring.html">Monitoring</a></div>
-          <p class="kw-desc">Canary Release と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">エラー率などを見て拡大の可否を判断する。</p>
           <a class="kw-page" href="monitoring.html">P.443</a>
         </div>
       </div>

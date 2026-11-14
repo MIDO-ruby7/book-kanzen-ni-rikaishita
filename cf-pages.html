@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>Cloudflareのフロント公開プラットフォーム。</p>
+        <p>Cloudflareの静的サイトやフロントエンドの公開サービス。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>静的/JAMstackを楽に出したい。</p>
+          <p>静的サイトの公開のために、サーバーを立てて運用するのは負担が大きい。<br>
+             Gitにpushすれば自動で公開される仕組みが求められた。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>サーバーを借りて、手元でビルドしたファイルを手でアップロードしていた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">Pages</th></tr>
+            <tr><th></th><th>手動配置</th><th class="h-docker">Pages</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">公開方法</td><td>ファイルを手で配置</td><td class="h-docker">pushで自動公開</td></tr>
+            <tr><td class="rowhead">確認</td><td>本番でそのまま確認</td><td class="h-docker">PRごとにプレビューURL</td></tr>
+            <tr><td class="rowhead">動的処理</td><td>別にサーバーが必要</td><td class="h-docker">Functionsで対応</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>Pages で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">Pages を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-branch"/></svg><div class="cap">Git連携で自動公開</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-eye"/></svg><div class="cap">PRごとにプレビュー</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-globe"/></svg><div class="cap">CDNで世界へ配信</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>Git連携。</p>
+      <p>Pagesは、原稿を送れば自動で印刷・配布までしてくれる出版社。<br>
+         手元の変更が、そのまま世界に公開される。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="cf-workers.html">Workers</a></div>
-          <p class="kw-desc">Pages と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">動的な処理を担当する。Pagesと統合が進んでいる。</p>
           <a class="kw-page" href="cf-workers.html">P.357</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="cdn.html">CDN</a></div>
-          <p class="kw-desc">Pages と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">世界各地の拠点から速く配る仕組み。</p>
           <a class="kw-page" href="cdn.html">P.293</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="ci-cd.html">CI/CD</a></div>
-          <p class="kw-desc">Pages と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">変更を自動でビルド・公開する流れ。</p>
           <a class="kw-page" href="ci-cd.html">P.256</a>
         </div>
       </div>

@@ -52,7 +52,7 @@
             <tr><th></th><th>CSR</th><th class="h-docker">SSR</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">初回表示までの流れ</td><td>空のHTML+JSを送りブラウザが組み立てる</td><td class="h-docker">サーバーが完成したHTMLを生成して送る</td></tr>
+            <tr><td class="rowhead">初回表示の流れ</td><td>空のHTML+JSを送りブラウザが組み立てる</td><td class="h-docker">サーバーが完成したHTMLを生成して送る</td></tr>
             <tr><td class="rowhead">表示速度（初回）</td><td>JSの読み込み・実行を待つ</td><td class="h-docker">HTMLが届いた時点で見た目は表示される</td></tr>
             <tr><td class="rowhead">SEO</td><td>検索エンジンが内容を認識しづらい場合がある</td><td class="h-docker">最初から完成したHTMLなので認識されやすい</td></tr>
           </tbody>
@@ -67,8 +67,8 @@
       <div class="body">
         <div class="trio">
           <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">初回表示が速い</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-search"/></svg><div class="cap">検索エンジンに強い</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">表示後にHydrationでJSを有効化する必要がある</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-search"/></svg><div class="cap">SEOに強い</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">表示後にHydrationが必要</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,7 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>SSRは「初回だけサーバーで完成品を作る」方式。<br>
+      <p>SSRは「表示前にサーバーで完成品を作る」方式。<br>
          ただしアクセスのたびに生成し直すので負荷は上がる。変化が少ないページはSSGの方が効率的。</p>
     </div>
 

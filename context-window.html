@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>一度に渡せる文脈の上限。</p>
+        <p>LLMが一度に扱える、入力と出力の合計量の上限。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>長文を全部載せると溢れる。</p>
+          <p>LLMは一度に読める量に限りがあり、超えた分は参照できない。<br>
+             その上限を示す言葉として、この名前が使われるようになった。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>長い資料は、人が分割して少しずつ渡していた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">Context Window</th></tr>
+            <tr><th></th><th>短い文脈</th><th class="h-docker">Context Window</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">扱える量</td><td>数ページ程度</td><td class="h-docker">数十万トークン超</td></tr>
+            <tr><td class="rowhead">資料の渡し方</td><td>人が分割</td><td class="h-docker">まとめて渡せる</td></tr>
+            <tr><td class="rowhead">溢れたとき</td><td>古い部分が抜ける</td><td class="h-docker">エラーか忘却</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>Context Window で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">Context Window を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-scale"/></svg><div class="cap">一度に渡せる量の上限</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-file"/></svg><div class="cap">入力と出力の合計で決まる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-alert"/></svg><div class="cap">超えると切れる</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>窓のサイズ。</p>
+      <p>「コンテキスト長」とも呼ぶ。会話履歴も毎回この枠に入るので、長い会話ほど圧迫される。<br>
+         窓が大きいことと、全部を正しく使えることは別の話である。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="token.html">Token</a></div>
-          <p class="kw-desc">Context Window と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">上限を測る単位。</p>
           <a class="kw-page" href="token.html">P.384</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="rag.html">RAG</a></div>
-          <p class="kw-desc">Context Window と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">必要な情報だけを窓に入れる、よく使われる手法。</p>
           <a class="kw-page" href="rag.html">P.388</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="ai-memory.html">Memory</a></div>
-          <p class="kw-desc">Context Window と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">窓に入りきらない情報を、会話をまたいで覚える仕組み。</p>
           <a class="kw-page" href="ai-memory.html">P.394</a>
         </div>
       </div>

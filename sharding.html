@@ -51,8 +51,8 @@
             <tr><th></th><th>スケールアップ（1台を強化）</th><th class="h-docker">シャーディング（複数台に分割）</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">対応できるデータ量</td><td>1台のスペックが上限になる</td><td class="h-docker">台数を増やして拡張できる</td></tr>
-            <tr><td class="rowhead">JOIN・トランザクション</td><td>同じDB内なら容易</td><td class="h-docker">シャードをまたぐと難しくなる</td></tr>
+            <tr><td class="rowhead">データ量の上限</td><td>1台のスペックが上限になる</td><td class="h-docker">台数を増やして拡張できる</td></tr>
+            <tr><td class="rowhead">JOINと更新</td><td>同じDB内なら容易</td><td class="h-docker">分割先をまたぐと難しくなる</td></tr>
             <tr><td class="rowhead">構成の複雑さ</td><td>シンプル</td><td class="h-docker">分割ルールの設計・運用が複雑になる</td></tr>
           </tbody>
         </table>

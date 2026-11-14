@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>AIや処理の手順を流れとして組むこと。</p>
+        <p>AIや処理の手順を、あらかじめ流れとして組むこと。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>場当たりプロンプトだと再現できない。</p>
+          <p>思いつきのプロンプトでは、人が変わると結果も変わり再現できない。<br>
+             手順を固定して誰が動かしても同じ流れにしたかった。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>毎回その場でプロンプトを書き、手作業でつないでいた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">Workflow</th></tr>
+            <tr><th></th><th>場当たり対応</th><th class="h-docker">Workflow</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">手順</td><td>担当者の頭の中</td><td class="h-docker">流れとして定義</td></tr>
+            <tr><td class="rowhead">再現性</td><td>人や日で結果が揺れる</td><td class="h-docker">同じ流れで再実行できる</td></tr>
+            <tr><td class="rowhead">改善</td><td>属人的に直す</td><td class="h-docker">どの段を直すか特定しやすい</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>Workflow で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">Workflow を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-list"/></svg><div class="cap">手順を順番に並べる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-split"/></svg><div class="cap">条件で分岐させる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-sync"/></svg><div class="cap">同じ流れを再実行</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>Difyやn8n等。</p>
+      <p>料理のレシピのようなもの。<br>
+         Agentが自分で手順を決めるのに対し、Workflowは人が決めた道筋を進む。Difyやn8nで作れる。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="agent.html">Agent</a></div>
-          <p class="kw-desc">Workflow と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">手順をAI自身が決める対照的な方式。</p>
           <a class="kw-page" href="agent.html">P.392</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="pipeline.html">Pipeline</a></div>
-          <p class="kw-desc">Workflow と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">処理を段階的につなぐ考え方。</p>
           <a class="kw-page" href="pipeline.html">P.264</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="prompt.html">Prompt</a></div>
-          <p class="kw-desc">Workflow と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">各ステップへの指示文。</p>
           <a class="kw-page" href="prompt.html">P.386</a>
         </div>
       </div>

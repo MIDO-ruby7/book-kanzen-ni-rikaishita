@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>テキストから図を生成する記法。</p>
+        <p>テキストを書くだけで、図が描ける記法。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>図のメンテをコードに寄せたい。</p>
+          <p>図をマウスで描くと、修正のたびに手間がかかり、版管理もしにくい。<br>
+             そこで、テキストを書けば図になる方式が生まれた。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>作図ツールで描いた画像を、資料に貼り付けていた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">Mermaid</th></tr>
+            <tr><th></th><th>画像の図</th><th class="h-docker">Mermaid</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">修正</td><td>描き直して再出力</td><td class="h-docker">文字を直すだけ</td></tr>
+            <tr><td class="rowhead">版管理</td><td>差分が見えない</td><td class="h-docker">Gitで差分確認</td></tr>
+            <tr><td class="rowhead">表示</td><td>画像を貼る</td><td class="h-docker">GitHubが標準描画</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>Mermaid で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">Mermaid を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-code"/></svg><div class="cap">テキストで図を書く</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-branch"/></svg><div class="cap">Gitで差分を管理</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-globe"/></svg><div class="cap">Markdownに埋め込める</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>Markdownと相性良い。</p>
+      <p>Mermaidは「図の描き方を口頭で伝える」ようなもの。<br>
+         「AからBへ矢印」と書けば、絵は自動で出てくる。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="plantuml.html">PlantUML</a></div>
-          <p class="kw-desc">Mermaid と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">同じ発想の、先輩格のツール。</p>
           <a class="kw-page" href="plantuml.html">P.438</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="uml.html">UML</a></div>
-          <p class="kw-desc">Mermaid と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">Mermaidでも描ける標準の記法。</p>
           <a class="kw-page" href="uml.html">P.436</a>
         </div>
       </div>
       <div class="kw">
         <div>
           <div class="kw-name">ドキュメント</div>
-          <p class="kw-desc">Mermaid と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">図を埋め込む先。</p>
           
         </div>
       </div>

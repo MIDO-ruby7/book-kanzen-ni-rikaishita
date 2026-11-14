@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>モデルが扱うテキストの分割単位。</p>
+        <p>LLMが文章を処理するときの、分割した単位。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>料金や上限が文字数ではなくこれで決まる。</p>
+          <p>LLMは文字ではなく、単語の断片のような単位に分けて文章を処理する。<br>
+             入力量や料金の計算も、この単位が基準になった。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>文章の量は、文字数や単語数で数えるのが普通だった。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">Token</th></tr>
+            <tr><th></th><th>文字数</th><th class="h-docker">Token</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">数え方</td><td>1文字ずつ</td><td class="h-docker">トークン単位</td></tr>
+            <tr><td class="rowhead">日本語</td><td>文字数で見積もる</td><td class="h-docker">1文字1トークン以上</td></tr>
+            <tr><td class="rowhead">料金の基準</td><td>文字数・単語数</td><td class="h-docker">入出力トークン数</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>Token で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">Token を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-split"/></svg><div class="cap">文章を細かく分割</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-chart"/></svg><div class="cap">料金の計算基準になる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-scale"/></svg><div class="cap">入出力の上限を決める</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>日本語はトークンを食いにくいことも。</p>
+      <p>「トークン数が多い＝高い」と覚えておく。モデルごとに分割のしかたが違い、同じ文でも数は変わる。<br>
+         正確な数は、各社が出しているトークナイザーで数える。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="context-window.html">Context Window</a></div>
-          <p class="kw-desc">Token と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">一度に扱えるトークン数の上限。</p>
           <a class="kw-page" href="context-window.html">P.385</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="llm.html">LLM</a></div>
-          <p class="kw-desc">Token と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">トークン単位で文章を処理するモデル。</p>
           <a class="kw-page" href="llm.html">P.383</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="prompt.html">Prompt</a></div>
-          <p class="kw-desc">Token と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">トークンを消費する、モデルへの指示文。</p>
           <a class="kw-page" href="prompt.html">P.386</a>
         </div>
       </div>

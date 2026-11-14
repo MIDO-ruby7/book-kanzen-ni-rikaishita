@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>利用者へ版を届け公開すること。</p>
+        <p>ソフトウェアの特定の版を、利用者が使える状態で公開すること。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>成果物を届ける手続きが必要。</p>
+          <p>機能の追加や修正を、どの版でいつ利用者に届けるか明確にする必要があった。<br>
+             そのため版を区切って公開する手続きが整えられた。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>更新ができるたびに、ファイルを置き換えて公開していた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">Release</th></tr>
+            <tr><th></th><th>随時の置き換え</th><th class="h-docker">Release</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">版の区別</td><td>いつの状態か不明</td><td class="h-docker">版番号で区別</td></tr>
+            <tr><td class="rowhead">変更内容</td><td>口頭や記憶頼み</td><td class="h-docker">リリースノートに記載</td></tr>
+            <tr><td class="rowhead">戻し方</td><td>元の状態が不明</td><td class="h-docker">前の版を再公開</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>Release で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">Release を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-tag"/></svg><div class="cap">版番号で公開物を特定</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-list"/></svg><div class="cap">変更内容を利用者へ周知</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-undo"/></svg><div class="cap">前の版へ戻しやすい</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>タグやノートとセット。</p>
+      <p>原稿を書いても出版しなければ読者に届かないのと同じ。<br>
+         GitHubではタグとリリースノートを添えて公開できる。デプロイ（環境へ配置）とは別の言葉。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="artifact.html">Artifact</a></div>
-          <p class="kw-desc">Release と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">リリースする配布物の実体。</p>
           <a class="kw-page" href="artifact.html">P.262</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="tag.html">Tag</a></div>
-          <p class="kw-desc">Release と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">Gitで特定の時点に付ける目印。版を示す。</p>
           <a class="kw-page" href="tag.html">P.14</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="rollback.html">ロールバック</a></div>
-          <p class="kw-desc">Release と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">問題のあった版から前の版へ戻す操作。</p>
           <a class="kw-page" href="rollback.html">P.34</a>
         </div>
       </div>

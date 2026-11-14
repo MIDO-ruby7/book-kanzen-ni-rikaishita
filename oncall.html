@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>当番でアラート対応すること。</p>
+        <p>障害に備え、交代制で連絡を受けて対応する当番。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>夜間も含め誰かが見る必要がある。</p>
+          <p>サービスは夜間や休日も止められず、誰かが異常に気づく必要がある。<br>
+             全員が常に待機するのは無理なので、当番制で分担する。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>障害の連絡は詳しい人に集中し、いつも同じ人が対応していた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">オンコール</th></tr>
+            <tr><th></th><th>属人的な対応</th><th class="h-docker">オンコール</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">担当</td><td>詳しい人に集中</td><td class="h-docker">交代制の当番</td></tr>
+            <tr><td class="rowhead">負担</td><td>特定の人に偏る</td><td class="h-docker">全員で分散</td></tr>
+            <tr><td class="rowhead">連絡</td><td>個人への電話</td><td class="h-docker">アラートの自動通知</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>オンコール で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">オンコール を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-clock"/></svg><div class="cap">夜間も異常に気づける</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-users"/></svg><div class="cap">負担を交代で分散</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-send"/></svg><div class="cap">アラートで即時に連絡</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>ローテーション。</p>
+      <p>消防の当直のように、時間帯ごとに待機する人を決めるイメージ。<br>
+         手当や翌日の休みなど、負担を減らす運用もあわせて決める会社が多い。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="alerting.html">Alerting</a></div>
-          <p class="kw-desc">オンコール と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">異常を検知して通知する仕組み。当番に届く。</p>
           <a class="kw-page" href="alerting.html">P.444</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="runbook.html">ランブック</a></div>
-          <p class="kw-desc">オンコール と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">対応手順書。当番が慌てず動くために使う。</p>
           <a class="kw-page" href="runbook.html">P.503</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="incident.html">インシデント</a></div>
-          <p class="kw-desc">オンコール と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">当番が対応する障害。</p>
           <a class="kw-page" href="incident.html">P.500</a>
         </div>
       </div>

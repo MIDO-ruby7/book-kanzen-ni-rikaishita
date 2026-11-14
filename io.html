@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>入力と出力、そのやり取り。</p>
+        <p>プログラムと外部の間で、データを入れ出しすること。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>計算より待ちが支配することがある。</p>
+          <p>CPUが速くなる一方で、ディスクやネットワークとのやり取りは遅いままだった。<br>
+             処理時間の大半を、I/O待ちが占める場面が多い。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>I/Oが終わるまで、処理を止めて待つのが当たり前だった。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">I/O</th></tr>
+            <tr><th></th><th>待ち続ける</th><th class="h-docker">I/O</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">待ち時間</td><td>処理が止まる</td><td class="h-docker">別の処理を進められる</td></tr>
+            <tr><td class="rowhead">方式</td><td>ブロッキングI/O</td><td class="h-docker">非同期I/O</td></tr>
+            <tr><td class="rowhead">多数の接続</td><td>接続ごとにスレッド</td><td class="h-docker">少ないスレッドで処理</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>I/O で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">I/O を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-swap"/></svg><div class="cap">入力と出力のやり取り</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-clock"/></svg><div class="cap">待ち時間が性能を左右</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-sync"/></svg><div class="cap">非同期で待ちを隠す</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>ディスクI/O等。</p>
+      <p>料理でいう買い出しや皿洗いの待ち時間のようなもの。<br>
+         「I/Oバウンド」は、計算ではなくI/O待ちが遅さの原因という意味。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="storage-device.html">ストレージ</a></div>
-          <p class="kw-desc">I/O と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">ディスクI/Oの相手。</p>
           <a class="kw-page" href="storage-device.html">P.455</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="network.html">ネットワーク</a></div>
-          <p class="kw-desc">I/O と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">ネットワークI/Oの相手。</p>
           <a class="kw-page" href="network.html">P.253</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="perf-tuning.html">パフォーマンスチューニング</a></div>
-          <p class="kw-desc">I/O と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">I/O待ちの削減は定番の改善。</p>
           <a class="kw-page" href="perf-tuning.html">P.451</a>
         </div>
       </div>

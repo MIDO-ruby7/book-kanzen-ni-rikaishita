@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>ソースを都度解釈して実行する方式。</p>
+        <p>ソースコードを1行ずつ解釈しながら実行する方式。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>コンパイルなしで試しやすい。</p>
+          <p>コンパイルは変更のたびに時間がかかり、試行錯誤に向かなかった。<br>
+             書いてすぐ実行できる方式として、インタープリタが広まった。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>修正のたびに、コンパイルしてから実行していた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">インタープリタ</th></tr>
+            <tr><th></th><th>毎回コンパイル</th><th class="h-docker">インタープリタ</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">実行まで</td><td>コンパイルを待つ</td><td class="h-docker">書いてすぐ実行</td></tr>
+            <tr><td class="rowhead">実行速度</td><td>速い</td><td class="h-docker">一般に遅め</td></tr>
+            <tr><td class="rowhead">試行錯誤</td><td>やや手間</td><td class="h-docker">対話的に試せる</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>インタープリタ で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">インタープリタ を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-terminal"/></svg><div class="cap">1行ずつ解釈して実行</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-bolt"/></svg><div class="cap">書いてすぐ試せる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-clock"/></svg><div class="cap">実行速度は遅めになりがち</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>Python等が代表イメージ。</p>
+      <p>同時通訳のようなもの。<br>
+         コンパイルが翻訳本を作る方式なら、こちらはその場で訳す。RubyやPythonが代表例。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="compile.html">コンパイル</a></div>
-          <p class="kw-desc">インタープリタ と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">先に全体を変換する対の方式。</p>
           <a class="kw-page" href="compile.html">P.461</a>
         </div>
       </div>
       <div class="kw">
         <div>
           <div class="kw-name">ランタイム</div>
-          <p class="kw-desc">インタープリタ と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">インタープリタが動く実行環境。</p>
           
         </div>
       </div>
       <div class="kw">
         <div>
           <div class="kw-name">スクリプト</div>
-          <p class="kw-desc">インタープリタ と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">インタープリタで動かすことが多いプログラム。</p>
           
         </div>
       </div>

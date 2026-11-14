@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>インシデント後の振り返り文書・会議。</p>
+        <p>障害の収束後に、原因と再発防止策をまとめる振り返り。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>再発防止を個人攻撃なしで進めたい。</p>
+          <p>同じ障害が繰り返されるのは、原因が共有・記録されないからだ。<br>
+             「死後の検証」を意味する語を借りて、振り返りの手法になった。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>障害が収まると、原因を共有せず通常業務に戻ることが多かった。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">ポストモーテム</th></tr>
+            <tr><th></th><th>対応して終わり</th><th class="h-docker">ポストモーテム</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">記録</td><td>口頭や記憶頼り</td><td class="h-docker">文書として残る</td></tr>
+            <tr><td class="rowhead">再発防止</td><td>担当者任せ</td><td class="h-docker">対策を担当付きで管理</td></tr>
+            <tr><td class="rowhead">責任追及</td><td>犯人探しになりがち</td><td class="h-docker">仕組みの改善に集中</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>ポストモーテム で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">ポストモーテム を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-book"/></svg><div class="cap">原因と経緯を文書化</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-undo"/></svg><div class="cap">再発防止策を決める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-users"/></svg><div class="cap">個人を責めず改善できる</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>責めない文化が鍵。</p>
+      <p>「誰が悪いか」でなく「なぜ仕組みで防げなかったか」を探る場。<br>
+         責めない（blameless）形式で書くのが一般的。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="incident.html">インシデント</a></div>
-          <p class="kw-desc">ポストモーテム と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">振り返りの題材になる障害。</p>
           <a class="kw-page" href="incident.html">P.500</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="retro.html">レトロスペクティブ</a></div>
-          <p class="kw-desc">ポストモーテム と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">チームの定期的な振り返り。障害時に限らない。</p>
           <a class="kw-page" href="retro.html">P.281</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="runbook.html">ランブック</a></div>
-          <p class="kw-desc">ポストモーテム と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">対応手順書。振り返りで見直す。</p>
           <a class="kw-page" href="runbook.html">P.503</a>
         </div>
       </div>

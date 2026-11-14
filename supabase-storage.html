@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>Supabaseのファイルストレージ。</p>
+        <p>Supabaseのファイル保存サービス。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>DBと同じプロジェクトでファイルも扱いたい。</p>
+          <p>DBと別にファイル置き場を探すと、認証や権限をそれぞれ用意することになる。<br>
+             DBと同じ枠でファイルも扱いたい要望が生まれた。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>ファイル用に別のサービスを契約し、権限を別々に管理していた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">Supabase Storage</th></tr>
+            <tr><th></th><th>別サービス</th><th class="h-docker">Storage</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">置き場所</td><td>別の契約・別管理</td><td class="h-docker">DBと同じプロジェクト</td></tr>
+            <tr><td class="rowhead">整理</td><td>フォルダで管理</td><td class="h-docker">バケット単位</td></tr>
+            <tr><td class="rowhead">権限</td><td>別々に設定</td><td class="h-docker">Authと連動・ポリシー</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>Supabase Storage で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">Supabase Storage を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-package"/></svg><div class="cap">バケット単位で管理</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-link"/></svg><div class="cap">DBや認証と同じ枠で使う</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-lock"/></svg><div class="cap">ポリシーでアクセス制御</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>バケット管理。</p>
+      <p>Supabase Storageは、同じ建物にあるファイル倉庫。<br>
+         DBと同じ入館証で入れるので、鍵の管理が一つで済む。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="supabase-auth.html">Supabase Auth</a></div>
-          <p class="kw-desc">Supabase Storage と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">ログイン状態に応じて、アクセス可否を決める。</p>
           <a class="kw-page" href="supabase-auth.html">P.353</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="object-storage.html">Object Storage</a></div>
-          <p class="kw-desc">Supabase Storage と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">ファイルをオブジェクトとして扱う保存方式の総称。</p>
           <a class="kw-page" href="object-storage.html">P.294</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="cdn.html">CDN</a></div>
-          <p class="kw-desc">Supabase Storage と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">公開ファイルを速く配る仕組み。</p>
           <a class="kw-page" href="cdn.html">P.293</a>
         </div>
       </div>

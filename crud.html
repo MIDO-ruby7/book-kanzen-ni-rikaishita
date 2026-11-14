@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>Create/Read/Update/Deleteの基本操作。</p>
+        <p>作成・参照・更新・削除という、データの4つの基本操作。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>データアプリの最小セット。</p>
+          <p>データを扱うアプリは、作る、見る、直す、消すの操作に行き着く。<br>
+             それを4語にまとめ、設計や会話の共通語にした。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>操作の種類を、画面ごとに別々の呼び名で扱っていた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">CRUD</th></tr>
+            <tr><th></th><th>個別の名称</th><th class="h-docker">CRUD</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">4操作</td><td>画面ごとに名称が違う</td><td class="h-docker">作成・参照・更新・削除</td></tr>
+            <tr><td class="rowhead">対応</td><td>呼び名がばらばら</td><td class="h-docker">SQL・HTTPメソッドに対応</td></tr>
+            <tr><td class="rowhead">使い方</td><td>画面ごとに設計</td><td class="h-docker">基本形で本当の難所は別</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>CRUD で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">CRUD を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-list"/></svg><div class="cap">4つの基本操作</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-database"/></svg><div class="cap">SQLやHTTPと対応する</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-puzzle"/></svg><div class="cap">最初に作る基本形</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>RESTの動詞と対応しがち。</p>
+      <p>Railsのscaffoldは、CRUDの画面を一式自動で作る。<br>
+         ただし実務のアプリは、CRUDだけでは終わらない。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="api.html">API</a></div>
-          <p class="kw-desc">CRUD と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">CRUDを、外部へ提供する入口。</p>
           <a class="kw-page" href="api.html">P.69</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="sql.html">SQL</a></div>
-          <p class="kw-desc">CRUD と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">CRUDの操作を、DBへ伝える言語。</p>
           <a class="kw-page" href="sql.html">P.89</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="mvc.html">MVC</a></div>
-          <p class="kw-desc">CRUD と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">CRUDを役割で整理する設計の型。</p>
           <a class="kw-page" href="mvc.html">P.490</a>
         </div>
       </div>

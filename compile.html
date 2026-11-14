@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>ソースを機械が実行しやすい形へ変換すること。</p>
+        <p>ソースコードを機械語など実行しやすい形に変換すること。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>言語によって要否が違う。</p>
+          <p>CPUが直接理解できるのは機械語だけで、人が機械語を書くのは大変だった。<br>
+             そこで、人に読みやすい言語を翻訳するコンパイラが生まれた。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>機械語やアセンブリを、人が直接書いていた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">コンパイル</th></tr>
+            <tr><th></th><th>機械語手書き</th><th class="h-docker">コンパイル</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">書く言語</td><td>機械語・アセンブリ</td><td class="h-docker">人が読みやすい言語</td></tr>
+            <tr><td class="rowhead">CPU対応</td><td>CPUごとに書き直し</td><td class="h-docker">コンパイラが機種別に変換</td></tr>
+            <tr><td class="rowhead">最適化</td><td>人の腕次第</td><td class="h-docker">コンパイラが自動で実施</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>コンパイル で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">コンパイル を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-translate"/></svg><div class="cap">人の言葉を機械語へ翻訳</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-package"/></svg><div class="cap">実行ファイルを生成</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-bug"/></svg><div class="cap">文法ミスを実行前に検出</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>ビルドの一部。</p>
+      <p>本を外国語に翻訳してから出版するようなもの。<br>
+         実行前に全体を訳すので、文法ミスも先に分かる。「コンパイル通った」は第一関門の合格。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="interpreter.html">インタープリタ</a></div>
-          <p class="kw-desc">コンパイル と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">翻訳せず逐次実行する対の方式。</p>
           <a class="kw-page" href="interpreter.html">P.462</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="build.html">Build</a></div>
-          <p class="kw-desc">コンパイル と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">コンパイルを含む成果物作りの工程。</p>
           <a class="kw-page" href="build.html">P.260</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="binary-data.html">バイナリ</a></div>
-          <p class="kw-desc">コンパイル と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">コンパイルで得られる機械語。</p>
           <a class="kw-page" href="binary-data.html">P.459</a>
         </div>
       </div>

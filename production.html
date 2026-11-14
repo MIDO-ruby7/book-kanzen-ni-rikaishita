@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>確認用と混ざると事故る。</p>
+          <p>利用者が実際に使うサービスは、止まったり壊れたりすると影響が大きい。<br>
+             そのため開発や検証の環境とは分けて、厳重に管理する必要がある。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>開発用と公開用を分けず、同じ環境で作業と運用をしていた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">本番</th></tr>
+            <tr><th></th><th>環境を分けない運用</th><th class="h-docker">本番</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">利用者</td><td>作業中の状態を見る</td><td class="h-docker">安定した版だけ見る</td></tr>
+            <tr><td class="rowhead">変更の影響</td><td>即座に表に出る</td><td class="h-docker">手順を経て反映</td></tr>
+            <tr><td class="rowhead">データ</td><td>テスト用と混在</td><td class="h-docker">実データのみ</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>本番 で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">本番 を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-users"/></svg><div class="cap">実ユーザーが安定して利用</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-lock"/></svg><div class="cap">変更を手順に沿って反映</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-server"/></svg><div class="cap">稼働状態を監視して運用</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>prod / production。</p>
+      <p>お店でいえば「営業中の売り場」で、ローカルやステージングは「バックヤード」。<br>
+         現場では prod と略す。本番作業が慎重に扱われるのはこのため。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="staging.html">ステージング</a></div>
-          <p class="kw-desc">本番 と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">本番の一つ手前にある、確認用の環境。</p>
           <a class="kw-page" href="staging.html">P.258</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="rollback.html">ロールバック</a></div>
-          <p class="kw-desc">本番 と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">本番で問題が出た時に前の版へ戻す操作。</p>
           <a class="kw-page" href="rollback.html">P.34</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="ci-cd.html">CI/CD</a></div>
-          <p class="kw-desc">本番 と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">本番への反映を自動化する仕組み。</p>
           <a class="kw-page" href="ci-cd.html">P.256</a>
         </div>
       </div>

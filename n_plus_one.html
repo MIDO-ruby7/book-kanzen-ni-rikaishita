@@ -51,7 +51,7 @@
             <tr><th></th><th>気づかず書いたコード</th><th class="h-docker">eager loadingで対策</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">発行されるクエリ数</td><td>1＋N回</td><td class="h-docker">1〜2回</td></tr>
+            <tr><td class="rowhead">クエリ発行数</td><td>1＋N回</td><td class="h-docker">1〜2回</td></tr>
             <tr><td class="rowhead">表示速度</td><td>件数に比例して遅くなる</td><td class="h-docker">件数が増えてもほぼ一定</td></tr>
             <tr><td class="rowhead">気づき方</td><td>本番で遅くなって発覚しがち</td><td class="h-docker">gemやログで事前に検出できる</td></tr>
           </tbody>
@@ -97,7 +97,7 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="connection_pool.html">コネクションプール</a></div>
-          <p class="kw-desc">クエリが増えると接続数の上限にも響いてくる。</p>
+          <p class="kw-desc">DB接続を使い回す仕組み。クエリが増えると枯渇しやすい。</p>
           <a class="kw-page" href="connection_pool.html">P.114</a>
         </div>
       </div>

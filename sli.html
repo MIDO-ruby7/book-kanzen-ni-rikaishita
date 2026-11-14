@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>SLOを測る具体指標。</p>
+        <p>サービスの調子を測る具体的な数値で、SLOの達成を判断するもの。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>測れない目標は運用できない。</p>
+          <p>「安定させよう」と言うだけでは、何を測り何を直すかが決まらない。<br>
+             測れる数値にして初めて、目標として運用できる。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>サーバーのCPUなど機械の状態を見るのみで、利用者が受ける品質は測られなかった。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">SLI</th></tr>
+            <tr><th></th><th>機械の状態監視</th><th class="h-docker">SLI</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">測るもの</td><td>CPUやメモリ</td><td class="h-docker">利用者の体感に近い値</td></tr>
+            <tr><td class="rowhead">代表例</td><td>機械の稼働状況</td><td class="h-docker">成功率・応答時間</td></tr>
+            <tr><td class="rowhead">位置づけ</td><td>監視の数値のみ</td><td class="h-docker">測定する値そのもの</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>SLI で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">SLI を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-chart"/></svg><div class="cap">利用者の体感を数値にする</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-search"/></svg><div class="cap">測定して状況を知る</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-target"/></svg><div class="cap">SLOと照らして判断</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>レイテンシやエラー率など。</p>
+      <p>よく使われるのは、リクエストの成功率と応答時間。<br>
+         平均だけでなく、遅い方の1〜5%を見ると実態に近づく。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="slo.html">SLO</a></div>
-          <p class="kw-desc">SLI と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">SLIの値を使って達成を判断する目標。</p>
           <a class="kw-page" href="slo.html">P.303</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="metrics.html">Metrics</a></div>
-          <p class="kw-desc">SLI と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">SLIの元になる計測値のデータ。</p>
           <a class="kw-page" href="metrics.html">P.441</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="monitoring.html">Monitoring</a></div>
-          <p class="kw-desc">SLI と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">SLIを継続的に測り、異常を知らせる活動。</p>
           <a class="kw-page" href="monitoring.html">P.443</a>
         </div>
       </div>

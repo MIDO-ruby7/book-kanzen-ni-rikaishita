@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>配布しやすい形にファイルをまとめること。</p>
+        <p>多数のファイルを、配信しやすい少数のファイルにまとめること。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>バラけた資産は配信コストが高い。</p>
+          <p>JSは多数のファイルに分けて書くが、1つずつ取得すると読み込みが遅くなりやすい。<br>
+             そこで配信用に1つにまとめる処理が普及した。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>scriptタグで複数のJSファイルを、順番に手で読み込んでいた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">Bundle</th></tr>
+            <tr><th></th><th>scriptタグ列挙</th><th class="h-docker">Bundle</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">読み込み回数</td><td>ファイルの数だけ</td><td class="h-docker">少数にまとまる</td></tr>
+            <tr><td class="rowhead">依存の順序</td><td>手書きで管理</td><td class="h-docker">ツールが解決</td></tr>
+            <tr><td class="rowhead">不要コード</td><td>そのまま残る</td><td class="h-docker">未使用分を削れる</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>Bundle で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">Bundle を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-layers"/></svg><div class="cap">複数ファイルを1つに集約</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-link"/></svg><div class="cap">依存関係を自動で解決</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-bolt"/></svg><div class="cap">配信ファイル数を削減</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>bundler とセットで出る。</p>
+      <p>引っ越しで荷物を段ボールにまとめるイメージ。<br>
+         まとめる道具は bundler（Vite、webpackなど）と呼ばれ、Buildの一部として動く。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="build.html">Build</a></div>
-          <p class="kw-desc">Bundle と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">ソースから成果物を作る工程全体。</p>
           <a class="kw-page" href="build.html">P.260</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="artifact.html">Artifact</a></div>
-          <p class="kw-desc">Bundle と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">バンドルの出力は成果物の一種。</p>
           <a class="kw-page" href="artifact.html">P.262</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="vite.html">Vite</a></div>
-          <p class="kw-desc">Bundle と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">バンドルを行うフロント向けのビルドツール。</p>
           <a class="kw-page" href="vite.html">P.145</a>
         </div>
       </div>

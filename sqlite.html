@@ -51,8 +51,8 @@
             <tr><th></th><th>サーバー型RDB</th><th class="h-docker">SQLite</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">セットアップの手軽さ</td><td>サーバーの起動・設定が必要</td><td class="h-docker">ファイル1つで即使える</td></tr>
-            <tr><td class="rowhead">同時書き込みへの強さ</td><td>複数接続の同時書き込みに強い</td><td class="h-docker">同時書き込みは苦手</td></tr>
+            <tr><td class="rowhead">導入の手軽さ</td><td>サーバーの起動・設定が必要</td><td class="h-docker">ファイル1つで即使える</td></tr>
+            <tr><td class="rowhead">同時書き込み</td><td>複数接続の同時書き込みに強い</td><td class="h-docker">同時書き込みは苦手</td></tr>
             <tr><td class="rowhead">向いている用途</td><td>本番の複数人利用</td><td class="h-docker">試作・テスト・小規模用途</td></tr>
           </tbody>
         </table>
@@ -76,7 +76,7 @@
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
       <p>SQLiteは「試作・テスト・小規模」の相棒。<br>
-         同時アクセスが多い本番サービスでは、素直にMySQLやPostgreSQLに切り替えた方がいい。</p>
+         同時書き込みが多い本番サービスでは、MySQLやPostgreSQLを検討した方がいい。</p>
     </div>
 
   </div>

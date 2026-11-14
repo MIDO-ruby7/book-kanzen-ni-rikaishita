@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>モジュール同士の依存の強さ。</p>
+        <p>モジュール同士が、どれだけ互いに依存しているかの度合い。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>強い結合は変更が連鎖する。</p>
+          <p>ある部品を直すと他の部品が次々壊れる問題が、大規模化で増えた。<br>
+             その原因を測る尺度として、結合度が使われる。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>他の部品の中身を直接参照して、動かしていた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">結合度</th></tr>
+            <tr><th></th><th>直接参照</th><th class="h-docker">結合度</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">変更の影響</td><td>連鎖して壊れる</td><td class="h-docker">相手は無事</td></tr>
+            <tr><td class="rowhead">つなぎ方</td><td>内部まで知る</td><td class="h-docker">公開窓口のみ</td></tr>
+            <tr><td class="rowhead">目標</td><td>意識なし</td><td class="h-docker">弱く見えやすく</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>結合度 で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">結合度 を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-link"/></svg><div class="cap">依存の強さを表す</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-alert"/></svg><div class="cap">変更が連鎖する危険度</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-target"/></svg><div class="cap">低く保つのが目標</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>低く保つのが目標になりやすい。</p>
+      <p>結合度は「ケーブルの絡まり具合」のようなもの。<br>
+         1本抜くだけで済むか、全部ほどく必要があるかが分かれ目。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="cohesion.html">凝集度</a></div>
-          <p class="kw-desc">結合度 と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">対になる、中身のまとまりの指標。</p>
           <a class="kw-page" href="cohesion.html">P.425</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="circular-dependency.html">循環依存</a></div>
-          <p class="kw-desc">結合度 と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">結合が悪化した典型的な状態。</p>
           <a class="kw-page" href="circular-dependency.html">P.426</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="separation-of-concerns.html">関心の分離</a></div>
-          <p class="kw-desc">結合度 と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">結合を弱めるための基本の考え方。</p>
           <a class="kw-page" href="separation-of-concerns.html">P.423</a>
         </div>
       </div>

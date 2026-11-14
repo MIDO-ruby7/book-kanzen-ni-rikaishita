@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>Kubernetesのパッケージ管理。</p>
+        <p>Kubernetesのアプリを配布・導入するパッケージ管理ツール。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>YAMLの山を配りやすくする。</p>
+          <p>Kubernetesでは、アプリ1つに何枚ものYAMLが必要になる。<br>
+             これを一式にまとめて配り、環境ごとに設定を変えたかった。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>必要なYAMLを一枚ずつ書き写し、環境ごとに手で書き換えていた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">Helm</th></tr>
+            <tr><th></th><th>YAML手管理</th><th class="h-docker">Helm</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">配布単位</td><td>YAMLファイルの山</td><td class="h-docker">チャートで一式化</td></tr>
+            <tr><td class="rowhead">環境ごとの差</td><td>YAMLを手で書換</td><td class="h-docker">values.yamlの差替え</td></tr>
+            <tr><td class="rowhead">更新・戻し</td><td>手作業で再適用</td><td class="h-docker">リリース管理・巻戻し</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>Helm で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">Helm を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-package"/></svg><div class="cap">YAML一式をチャートに</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">値の差し替えで環境対応</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-undo"/></svg><div class="cap">リリース単位で巻き戻し</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>チャート。</p>
+      <p>Helmは、Kubernetes用のアプリストアと設定フォームの組み合わせ。<br>
+         チャートが商品で、values.yamlが注文書にあたる。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="089-kubernetes.html">Kubernetes</a></div>
-          <p class="kw-desc">Helm と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">Helmが操作する、コンテナ運用の基盤。</p>
           <a class="kw-page" href="089-kubernetes.html">P.286</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="gke.html">GKE</a></div>
-          <p class="kw-desc">Helm と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">GoogleのマネージドKubernetes。Helmで導入する先の一つ。</p>
           <a class="kw-page" href="gke.html">P.334</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="iac.html">IaC</a></div>
-          <p class="kw-desc">Helm と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">構成をコードで管理する考え方。HelmもKubernetesの設定をコード化する。</p>
           <a class="kw-page" href="iac.html">P.305</a>
         </div>
       </div>

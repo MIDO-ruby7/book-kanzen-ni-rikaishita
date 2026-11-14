@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>データを固定長の指紋に変換すること。</p>
+        <p>データを元に戻せない固定長の値に変換すること。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>パスワードをそのまま保存したくない。</p>
+          <p>パスワードをそのまま保存すると、DBが漏れたときに全員分が丸見えになる。<br>
+             元に戻せないが、照合はできる形で保存する必要が生まれた。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>パスワードを平文のまま、DBに保存していた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">Hash</th></tr>
+            <tr><th></th><th>平文保存</th><th class="h-docker">Hash</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">保存するもの</td><td>パスワードそのもの</td><td class="h-docker">ハッシュ値</td></tr>
+            <tr><td class="rowhead">復元</td><td>そのまま見える</td><td class="h-docker">戻せない一方通行</td></tr>
+            <tr><td class="rowhead">出力の長さ</td><td>入力しだい</td><td class="h-docker">固定長</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>Hash で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">Hash を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-file"/></svg><div class="cap">固定長の値に変換</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-lock"/></svg><div class="cap">元に戻せない</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">一致で照合できる</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>逆変換できない一方通行。</p>
+      <p>「暗号化」と混同されやすいが、ハッシュは戻せない。パスワードにはbcryptなど専用の遅いハッシュを使う。<br>
+         ファイルの改ざん検知にも使われる。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="salt.html">Salt</a></div>
-          <p class="kw-desc">Hash と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">ハッシュの前に足す乱数。使い回しの推測を防ぐ。</p>
           <a class="kw-page" href="salt.html">P.374</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="encryption.html">Encryption</a></div>
-          <p class="kw-desc">Hash と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">元に戻せる変換。ハッシュとは別物。</p>
           <a class="kw-page" href="encryption.html">P.372</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="jwt.html">JWT</a></div>
-          <p class="kw-desc">Hash と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">署名にハッシュ計算が使われている。</p>
           <a class="kw-page" href="jwt.html">P.51</a>
         </div>
       </div>

@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>本番直入れの失敗は被害が大きい。</p>
+          <p>ローカルで動いても、本番のサーバーや設定では動かないことがある。<br>
+             そこで本番とほぼ同じ構成の確認用環境が置かれるようになった。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>ローカルで確認した変更を、そのまま本番に反映していた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">ステージング</th></tr>
+            <tr><th></th><th>本番へ直接反映</th><th class="h-docker">ステージング</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">確認の環境</td><td>開発者のPCのみ</td><td class="h-docker">本番に近い構成</td></tr>
+            <tr><td class="rowhead">不具合の発見</td><td>公開後に判明</td><td class="h-docker">公開前に判明</td></tr>
+            <tr><td class="rowhead">利用者への影響</td><td>障害として表に出る</td><td class="h-docker">利用者には届かない</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>ステージング で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">ステージング を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">公開前に本番相当で確認</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-bug"/></svg><div class="cap">環境差の不具合を事前発見</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-shield"/></svg><div class="cap">利用者に影響せず検証</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>stg / staging。</p>
+      <p>劇場の「ゲネプロ（本番同様の通し稽古）」にあたる。<br>
+         現場では stg と略す。本番と設定やデータが違うと確認の意味が薄れる。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="local-env.html">ローカル</a></div>
-          <p class="kw-desc">ステージング と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">開発者の手元の環境。ステージングの前段。</p>
           <a class="kw-page" href="local-env.html">P.257</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="production.html">本番</a></div>
-          <p class="kw-desc">ステージング と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">ステージングで確認した後に公開する環境。</p>
           <a class="kw-page" href="production.html">P.259</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="release.html">Release</a></div>
-          <p class="kw-desc">ステージング と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">確認済みの版を利用者へ公開すること。</p>
           <a class="kw-page" href="release.html">P.263</a>
         </div>
       </div>

@@ -51,9 +51,9 @@
             <tr><th></th><th>DB1台に集中</th><th class="h-docker">レプリケーション（複製して分散）</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">読み取りの負荷分散</td><td>1台に集中する</td><td class="h-docker">複数台に分散できる</td></tr>
+            <tr><td class="rowhead">読み取り負荷</td><td>1台に集中する</td><td class="h-docker">複数台に分散できる</td></tr>
             <tr><td class="rowhead">障害時の切り替え</td><td>1台が落ちると止まる</td><td class="h-docker">他のレプリカで継続できる</td></tr>
-            <tr><td class="rowhead">データ反映のタイムラグ</td><td>発生しない</td><td class="h-docker">わずかな遅延が発生しうる</td></tr>
+            <tr><td class="rowhead">反映の遅れ</td><td>発生しない</td><td class="h-docker">わずかな遅延が発生しうる</td></tr>
           </tbody>
         </table>
       </div>
@@ -67,7 +67,7 @@
         <div class="trio">
           <div class="cell"><svg><use href="icons.svg#ic-split"/></svg><div class="cap">読み取りアクセスを分散できる</div></div>
           <div class="cell"><svg><use href="icons.svg#ic-shield"/></svg><div class="cap">1台が落ちても他で継続できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-undo"/></svg><div class="cap">バックアップとしても使える</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-undo"/></svg><div class="cap">本番を触らず集計に使える</div></div>
         </div>
       </div>
     </section>
@@ -75,7 +75,7 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>レプリケーションは万能ではなく、複製が反映されるまでのわずかなズレ（レプリケーション遅延）は必ず起きる。<br>
+      <p>レプリケーションは万能ではなく、複製が反映されるまでのわずかなズレ（レプリケーション遅延）は起こりうる。<br>
          「更新した直後に自分で見るデータ」は特に注意が必要。</p>
     </div>
 

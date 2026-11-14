@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>数値で状態を測る指標。</p>
+        <p>システムの状態を数値の時系列で測った指標。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>感覚ではなく量で見たい。</p>
+          <p>サービスが大きくなると、感覚だけでは健康状態を判断できなくなった。<br>
+             数値で記録すれば、変化や異常を客観的に比べられる。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>体感やログの目視で、システムの調子を判断していた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">Metrics</th></tr>
+            <tr><th></th><th>体感・目視</th><th class="h-docker">Metrics</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">把握の仕方</td><td>体感・ログを目視</td><td class="h-docker">数値の推移をグラフで確認</td></tr>
+            <tr><td class="rowhead">判断の基準</td><td>人によって違う</td><td class="h-docker">しきい値で誰でも同じ判断</td></tr>
+            <tr><td class="rowhead">傾向の把握</td><td>過去との比較が難しい</td><td class="h-docker">時系列で増減を追える</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>Metrics で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">Metrics を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-chart"/></svg><div class="cap">数値で状態を可視化</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-clock"/></svg><div class="cap">時系列で変化を追跡</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-alert"/></svg><div class="cap">しきい値で異常を判定</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>CPUやレイテンシ等。</p>
+      <p>Metricsは車のメーターのようなもの。<br>
+         CPU使用率やレイテンシ、エラー率が代表で、ログより軽く長期保存しやすい。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="monitoring.html">Monitoring</a></div>
-          <p class="kw-desc">Metrics と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">メトリクスを見続ける活動。</p>
           <a class="kw-page" href="monitoring.html">P.443</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="alerting.html">Alerting</a></div>
-          <p class="kw-desc">Metrics と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">しきい値を超えたら通知する仕組み。</p>
           <a class="kw-page" href="alerting.html">P.444</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="sli.html">SLI</a></div>
-          <p class="kw-desc">Metrics と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">メトリクスのうち、品質を表す指標。</p>
           <a class="kw-page" href="sli.html">P.304</a>
         </div>
       </div>

@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>DB変更などを購読しライブ更新する仕組み。</p>
+        <p>DBの変更などを購読して、画面へ即時に反映する仕組み。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>ポーリングで最新化すると無駄が多い。</p>
+          <p>最新の情報を得るために何度も問い合わせると、通信とサーバーの負荷がむだに増える。<br>
+             変化があったときだけ受け取る仕組みが求められた。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>一定の間隔でサーバーに問い合わせて、最新の状態を確認していた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">Realtime</th></tr>
+            <tr><th></th><th>ポーリング</th><th class="h-docker">Realtime</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">更新の取得</td><td>自分から何度も確認</td><td class="h-docker">変更時のみ届く</td></tr>
+            <tr><td class="rowhead">通信</td><td>変化なしでも発生</td><td class="h-docker">変化なしなら少ない</td></tr>
+            <tr><td class="rowhead">使いどころ</td><td>更新頻度が低い画面</td><td class="h-docker">チャット・共同編集</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>Realtime で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">Realtime を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-sync"/></svg><div class="cap">変更を即座に反映</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-send"/></svg><div class="cap">変化があったときだけ受信</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-users"/></svg><div class="cap">チャットや共同編集に活用</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>チャットや共同編集で活躍。</p>
+      <p>Realtimeは、何度も確認に行くのをやめて、郵便受けの通知を待つ形。<br>
+         新着が入ったときだけ、知らせが届く。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="supabase-database.html">Supabase Database</a></div>
-          <p class="kw-desc">Realtime と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">変更の通知元となる、PostgreSQLのDB。</p>
           <a class="kw-page" href="supabase-database.html">P.352</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="websocket.html">WebSocket</a></div>
-          <p class="kw-desc">Realtime と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">常時つながる通信の仕組み。Realtimeの土台だ。</p>
           <a class="kw-page" href="websocket.html">P.77</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="firestore.html">Firestore</a></div>
-          <p class="kw-desc">Realtime と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">FirebaseのDBにも同じ発想のリスナー機能がある。</p>
           <a class="kw-page" href="firestore.html">P.347</a>
         </div>
       </div>

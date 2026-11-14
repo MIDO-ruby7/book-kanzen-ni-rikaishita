@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>高速なLLM推論サーバ実装。</p>
+        <p>LLMを高速かつ効率よく動かす推論サーバー。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>吞吐を上げて載せたい。</p>
+          <p>LLMは使うメモリが大きく、同時に多くの要求をさばくと遅くなった。<br>
+             メモリを効率化し、多くのリクエストを処理するために作られた。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>素朴な実装では、メモリを無駄にして同時処理数が伸びなかった。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">vLLM</th></tr>
+            <tr><th></th><th>素朴な実装</th><th class="h-docker">vLLM</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">メモリ管理</td><td>大きな領域を確保しがち</td><td class="h-docker">PagedAttentionで小分けに管理</td></tr>
+            <tr><td class="rowhead">同時処理</td><td>少ない人数で頭打ち</td><td class="h-docker">多数のリクエストをまとめて処理</td></tr>
+            <tr><td class="rowhead">使い方</td><td>自作が必要</td><td class="h-docker">OpenAI互換APIで公開できる</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>vLLM で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">vLLM を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-bolt"/></svg><div class="cap">高速に推論</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-server"/></svg><div class="cap">サーバーで運用</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-users"/></svg><div class="cap">同時アクセスに強い</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>本番推論で名前が出る。</p>
+      <p>LLMの「エンジン」にあたるもの。<br>
+         Ollamaが手元用なら、vLLMは多人数向けで主にGPUサーバーで使う。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="ollama.html">Ollama</a></div>
-          <p class="kw-desc">vLLM と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">手元で試す用途向けの対比。</p>
           <a class="kw-page" href="ollama.html">P.405</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="llama.html">Llama</a></div>
-          <p class="kw-desc">vLLM と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">vLLMで動かすモデルの例。</p>
           <a class="kw-page" href="llama.html">P.404</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="gpu.html">GPU</a></div>
-          <p class="kw-desc">vLLM と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">推論を速くする計算装置。</p>
           <a class="kw-page" href="gpu.html">P.453</a>
         </div>
       </div>

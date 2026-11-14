@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>Cloudflareのオブジェクトストレージ。</p>
+        <p>Cloudflareのオブジェクトストレージ。S3互換で転送料無料。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>S3互換寄りでegressを抑えたい話が有名。</p>
+          <p>クラウドのストレージは、データを外へ出すときの転送料が負担になる。<br>
+             転送料を取らず、S3と同じ使い方ができる置き場として登場した。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>AWSのS3などに置き、外へ出す通信量に応じて料金を払っていた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">R2</th></tr>
+            <tr><th></th><th>S3など</th><th class="h-docker">R2</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">転送料</td><td>外へ出す通信に課金</td><td class="h-docker">egress無料</td></tr>
+            <tr><td class="rowhead">API</td><td>各社独自</td><td class="h-docker">S3互換</td></tr>
+            <tr><td class="rowhead">連携</td><td>他社サービスとつなぐ</td><td class="h-docker">Workersと直結</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>R2 で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">R2 を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-database"/></svg><div class="cap">S3互換のストレージ</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-chart"/></svg><div class="cap">転送料がかからない</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-link"/></svg><div class="cap">Workersから直接アクセス</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>画像や資産置き場。</p>
+      <p>R2は、持ち出し料のかからない貸し倉庫。<br>
+         荷物の出し入れは、S3の倉庫と同じ手順で行える。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="cf-workers.html">Workers</a></div>
-          <p class="kw-desc">R2 と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">R2へ直接アクセスし、ファイル配信などを実装できる。</p>
           <a class="kw-page" href="cf-workers.html">P.357</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="kv.html">KV</a></div>
-          <p class="kw-desc">R2 と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">小さな値向け。大きなファイルはR2へ置く。</p>
           <a class="kw-page" href="kv.html">P.361</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="object-storage.html">Object Storage</a></div>
-          <p class="kw-desc">R2 と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">ファイルをオブジェクトとして扱う保存方式の総称。</p>
           <a class="kw-page" href="object-storage.html">P.294</a>
         </div>
       </div>

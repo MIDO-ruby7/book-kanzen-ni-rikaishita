@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>毎回書く定型の土台コード。</p>
+        <p>どのプロジェクトでも書く、定型の土台コード。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>始めの手間を減らしたい／逆に邪魔にも。</p>
+          <p>設定や初期構成は、多くの開発で毎回ほぼ同じ内容を書く。<br>
+             手間を省くため、雛形として切り出して使い回すようになった。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>新しい開発のたびに、一から書くか前の物を写していた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">Boilerplate</th></tr>
+            <tr><th></th><th>毎回書く</th><th class="h-docker">Boilerplate</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">中身</td><td>都度手書き</td><td class="h-docker">ほぼ同じ内容の定型部分</td></tr>
+            <tr><td class="rowhead">使い方</td><td>前の物をコピー</td><td class="h-docker">テンプレートで生成</td></tr>
+            <tr><td class="rowhead">悪い面</td><td>手間がかかる</td><td class="h-docker">不要な部分も混入</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>Boilerplate で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">Boilerplate を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-file"/></svg><div class="cap">毎回同じ定型コード</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-package"/></svg><div class="cap">テンプレートで生成</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-alert"/></svg><div class="cap">不要な部分も入りがち</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>生成と削除がテーマ。</p>
+      <p>始めの手間は減るが、中身を理解せず使うと、後で直せなくなる。<br>
+         生成した後、不要な部分を削る作業も必要になる。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="sdk.html">SDK</a></div>
-          <p class="kw-desc">Boilerplate と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">定型コードを減らす、部品一式。</p>
           <a class="kw-page" href="sdk.html">P.481</a>
         </div>
       </div>
       <div class="kw">
         <div>
           <div class="kw-name">テンプレート</div>
-          <p class="kw-desc">Boilerplate と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">ボイラープレートを生成する元の雛形。</p>
           
         </div>
       </div>
       <div class="kw">
         <div>
           <div class="kw-name">スキャフォールド</div>
-          <p class="kw-desc">Boilerplate と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">定型のコードを自動生成する機能。</p>
           
         </div>
       </div>

@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>時系列メトリクスの収集・問い合わせシステム。</p>
+        <p>時系列メトリクスを収集・保存・検索するOSS。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>自前で指標を貯めたい。</p>
+          <p>コンテナやサーバーが増減する環境では、固定の監視設定が追いつかなかった。<br>
+             時系列データを集めて柔軟に検索できる仕組みが生まれた。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>サーバーごとに、監視項目を手作業で登録していた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">Prometheus</th></tr>
+            <tr><th></th><th>手作業登録</th><th class="h-docker">Prometheus</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">収集</td><td>監視対象ごとに設定</td><td class="h-docker">対象を自動発見して収集</td></tr>
+            <tr><td class="rowhead">方式</td><td>対象から送信してもらう</td><td class="h-docker">サーバーが取りに行くpull型</td></tr>
+            <tr><td class="rowhead">検索</td><td>固定の画面のみ</td><td class="h-docker">PromQLで自由に集計</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>Prometheus で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">Prometheus を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-database"/></svg><div class="cap">時系列データを保存</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-search"/></svg><div class="cap">PromQLで自由に検索</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-sync"/></svg><div class="cap">対象から定期的に取得</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>pull型が有名。</p>
+      <p>定期的に各所を見回って数字を記録する巡回係のようなもの。<br>
+         グラフ表示は得意でないため、普通はGrafanaと組み合わせる。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="grafana.html">Grafana</a></div>
-          <p class="kw-desc">Prometheus と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">取り込んだデータを見せる画面側。</p>
           <a class="kw-page" href="grafana.html">P.449</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="alerting.html">Alerting</a></div>
-          <p class="kw-desc">Prometheus と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">条件で通知する機能と連携する。</p>
           <a class="kw-page" href="alerting.html">P.444</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="metrics.html">Metrics</a></div>
-          <p class="kw-desc">Prometheus と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">Prometheusが集める対象。</p>
           <a class="kw-page" href="metrics.html">P.441</a>
         </div>
       </div>

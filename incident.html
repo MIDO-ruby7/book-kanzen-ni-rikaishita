@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>サービスに影響する障害事象。</p>
+        <p>サービスの利用に影響が出ている障害や異常事態。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>普通のバグ対応と切り分けたい。</p>
+          <p>障害のたびに場当たり的に動くと、対応が遅れ被害が広がる。<br>
+             通常のバグ修正と区別し、緊急対応として扱う概念が生まれた。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>障害もバグ報告と同じ列に並べ、手が空いた人が対応していた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">インシデント</th></tr>
+            <tr><th></th><th>通常の課題管理</th><th class="h-docker">インシデント</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">優先度</td><td>他の課題と同列</td><td class="h-docker">重大度で最優先</td></tr>
+            <tr><td class="rowhead">担当</td><td>手の空いた人</td><td class="h-docker">指揮役を決める</td></tr>
+            <tr><td class="rowhead">記録</td><td>残らないことも</td><td class="h-docker">時系列で残す</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>インシデント で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">インシデント を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-alert"/></svg><div class="cap">障害を重大度で分類</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-users"/></svg><div class="cap">役割を決めて対応</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-list"/></svg><div class="cap">経緯を時系列で記録</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>重大度で分類。</p>
+      <p>火事の通報のように、普段の業務を止めて動く事象。<br>
+         重大度の呼び方（SEV1など）は会社ごとに違う。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="postmortem.html">ポストモーテム</a></div>
-          <p class="kw-desc">インシデント と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">収束後の振り返り。再発防止につなげる。</p>
           <a class="kw-page" href="postmortem.html">P.501</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="oncall.html">オンコール</a></div>
-          <p class="kw-desc">インシデント と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">障害の一次対応を行う当番。</p>
           <a class="kw-page" href="oncall.html">P.502</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="alerting.html">Alerting</a></div>
-          <p class="kw-desc">インシデント と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">異常を検知して通知する仕組み。</p>
           <a class="kw-page" href="alerting.html">P.444</a>
         </div>
       </div>

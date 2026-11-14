@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>ローカルでLLMを手軽に回すツール。</p>
+        <p>LLMを自分のPCで手軽に動かすためのツール。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>クラウドAPIなしで試したい。</p>
+          <p>LLMをローカルで動かすには、環境構築とモデル変換に手間がかかった。<br>
+             コマンドひとつで取得して動かせる形にまとめたのが始まり。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>ローカルで動かすには、設定やモデル変換を自分で行った。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">Ollama</th></tr>
+            <tr><th></th><th>手動構築</th><th class="h-docker">Ollama</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">導入</td><td>環境を自分で構築</td><td class="h-docker">インストールして1コマンド</td></tr>
+            <tr><td class="rowhead">モデル取得</td><td>配布元から探して変換</td><td class="h-docker">名前を指定して取得</td></tr>
+            <tr><td class="rowhead">連携</td><td>個別に実装</td><td class="h-docker">ローカルAPIとして呼べる</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>Ollama で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">Ollama を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-laptop"/></svg><div class="cap">自分のPCで動かす</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-terminal"/></svg><div class="cap">コマンドで操作</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-lock"/></svg><div class="cap">外部に送らず試せる</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>モデル取得が簡単。</p>
+      <p>モデルの置き場兼起動役。<br>
+         PCのメモリやGPU次第で動かせる大きさが決まり、クラウド上の大型モデルと同じ性能は出ない。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="llama.html">Llama</a></div>
-          <p class="kw-desc">Ollama と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">Ollamaで動かせる代表的なモデル。</p>
           <a class="kw-page" href="llama.html">P.404</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="vllm.html">vLLM</a></div>
-          <p class="kw-desc">Ollama と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">サーバー向けの別の実行基盤。</p>
           <a class="kw-page" href="vllm.html">P.406</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="llm.html">LLM</a></div>
-          <p class="kw-desc">Ollama と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">動かす対象の言語モデル。</p>
           <a class="kw-page" href="llm.html">P.383</a>
         </div>
       </div>

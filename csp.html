@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>ブラウザに、読み込み元の制限を指示するセキュリティポリシー。</p>
+        <p>ブラウザに、読み込んでよい元を指示するセキュリティ機能。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>XSSの被害を限定したい。</p>
+          <p>XSSで悪意のあるスクリプトを仕込まれると、通常は止める手段がなかった。<br>
+             そこで、サーバー側が実行を許す範囲を宣言する仕組みが作られた。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>入力のエスケープだけで、XSSを防ごうとしていた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">CSP</th></tr>
+            <tr><th></th><th>エスケープのみ</th><th class="h-docker">CSP</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">守り方</td><td>出力時の対策のみ</td><td class="h-docker">出力対策と実行制限</td></tr>
+            <tr><td class="rowhead">万一の被害</td><td>スクリプトが動く</td><td class="h-docker">許可外は動かない</td></tr>
+            <tr><td class="rowhead">設定方法</td><td>エスケープ実装</td><td class="h-docker">レスポンスヘッダ</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>CSP で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">CSP を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-filter"/></svg><div class="cap">読み込み元を制限</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-shield"/></svg><div class="cap">XSSの被害を限定</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-code"/></svg><div class="cap">ヘッダで指定する</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>Content Security Policy。</p>
+      <p>Content Security Policy。対策の本命は入力処理で、CSPは二重の守りという位置づけ。<br>
+         インラインスクリプトを禁止すると既存の画面が壊れやすいので、段階的に導入する。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="xss.html">XSS</a></div>
-          <p class="kw-desc">CSP と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">CSPが被害を抑えようとする、代表的な攻撃。</p>
           <a class="kw-page" href="xss.html">P.366</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="https.html">HTTPS</a></div>
-          <p class="kw-desc">CSP と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">CSPと合わせて使うことが多い、通信の暗号化。</p>
           <a class="kw-page" href="https.html">P.44</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="header.html">Header</a></div>
-          <p class="kw-desc">CSP と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">CSPを指定する、HTTPレスポンスの付加情報。</p>
           <a class="kw-page" href="header.html">P.52</a>
         </div>
       </div>

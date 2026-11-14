@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>コードと同じ場所で自動検証したい。</p>
+          <p>コードを置くGitHubとは別にCIサービスを設定するのは手間だった。<br>
+             そこでGitHub自身が、イベントを契機に処理を走らせる機能を持った。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,16 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>外部のCIサービスや、自前のサーバーでCIを動かしていた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">GitHub Actions</th></tr>
+            <tr><th></th><th>外部CI・自前CI</th><th class="h-docker">Actions</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">設定場所</td><td>別サービスの画面</td><td class="h-docker">リポジトリ内YAML</td></tr>
+            <tr><td class="rowhead">連携の手間</td><td>GitHubとの連携設定</td><td class="h-docker">最初から統合済み</td></tr>
+            <tr><td class="rowhead">起動の契機</td><td>pollingやhook設定</td><td class="h-docker">push・PR等のイベント</td></tr>
+            <tr><td class="rowhead">運用</td><td>サーバーの管理</td><td class="h-docker">GitHubが環境を提供</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +67,9 @@
       <h2>GitHub Actions で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">GitHub Actions を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-branch"/></svg><div class="cap">pushやPRで自動実行</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-code"/></svg><div class="cap">YAMLで処理をコード管理</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">PR上でテスト結果を確認</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +77,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>workflow YAMLが基本。</p>
+      <p>ワークフローは .github/workflows 配下のYAMLに書く。<br>
+         「Actions」「GHA」と略される。無料枠には上限があり、超えると課金対象になる。</p>
     </div>
 
   </div>
@@ -89,21 +91,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="ci-cd.html">CI/CD</a></div>
-          <p class="kw-desc">GitHub Actions と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">変更を自動で検証し届ける考え方。</p>
           <a class="kw-page" href="ci-cd.html">P.256</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="pipeline.html">Pipeline</a></div>
-          <p class="kw-desc">GitHub Actions と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">Actionsのworkflowが定義する工程の流れ。</p>
           <a class="kw-page" href="pipeline.html">P.264</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="github.html">GitHub</a></div>
-          <p class="kw-desc">GitHub Actions と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">Actionsを提供する、コード管理のサービス。</p>
           <a class="kw-page" href="github.html">P.17</a>
         </div>
       </div>

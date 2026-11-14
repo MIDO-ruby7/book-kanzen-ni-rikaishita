@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>自動化ワークフローツール（AI連携も多い）。</p>
+        <p>画面で他サービスをつなぎ自動化できるツール。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>API連携をコードなしでつなぎたい。</p>
+          <p>サービス間のデータ連携を毎回コードで書くのは手間がかかる。<br>
+             コードなしで、必要なら書き足せる形で自動化したかった。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>サービス間の連携は、スクリプトを書くか手作業で行っていた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">n8n</th></tr>
+            <tr><th></th><th>手作業・自作</th><th class="h-docker">n8n</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">作り方</td><td>連携ごとにコードを書く</td><td class="h-docker">画面でノードを線でつなぐ</td></tr>
+            <tr><td class="rowhead">きっかけ</td><td>cronなどを自分で設定</td><td class="h-docker">Webhookや定期実行で開始</td></tr>
+            <tr><td class="rowhead">運用</td><td>サーバーを自分で管理</td><td class="h-docker">クラウド版か自ホストを選べる</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>n8n で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">n8n を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-link"/></svg><div class="cap">サービスをつなぐ</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-sync"/></svg><div class="cap">処理を自動で実行</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-server"/></svg><div class="cap">自ホストもできる</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>Zapier的。</p>
+      <p>ZapierやMakeの仲間で、自ホストできる点が違い。<br>
+         名前はnodemationの略で、nとnの間が8文字。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="ai-workflow.html">Workflow</a></div>
-          <p class="kw-desc">n8n と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">n8nで組み立てる自動化の流れ。</p>
           <a class="kw-page" href="ai-workflow.html">P.393</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="webhook.html">Webhook</a></div>
-          <p class="kw-desc">n8n と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">他のサービスから起動する入り口。</p>
           <a class="kw-page" href="webhook.html">P.78</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="api.html">API</a></div>
-          <p class="kw-desc">n8n と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">つなぐ先の機能の窓口。</p>
           <a class="kw-page" href="api.html">P.69</a>
         </div>
       </div>

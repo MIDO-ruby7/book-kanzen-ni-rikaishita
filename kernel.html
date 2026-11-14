@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>権限や資源管理の本丸として生まれた。</p>
+          <p>アプリがハードを直接操作すると、互いに衝突して全体が不安定になる。<br>
+             資源や権限を一手に管理する中核として、カーネルが置かれた。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>プログラムが、ハードウェアを直接操作していた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">カーネル</th></tr>
+            <tr><th></th><th>直接操作</th><th class="h-docker">カーネル</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">ハードの操作</td><td>アプリが直接行う</td><td class="h-docker">カーネルが仲介</td></tr>
+            <tr><td class="rowhead">資源の分配</td><td>アプリ同士が奪い合う</td><td class="h-docker">CPUやメモリを公平に割当</td></tr>
+            <tr><td class="rowhead">障害</td><td>1つの暴走が全体に波及</td><td class="h-docker">アプリごとに隔離できる</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>カーネル で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">カーネルを自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-layers"/></svg><div class="cap">OSの中核にあたる層</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-key"/></svg><div class="cap">ハードへの権限を管理</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-shield"/></svg><div class="cap">アプリ同士を隔離</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>アプリはシステムコール経由でだけ触れる。パニックはマシン全体に波及する。</p>
+      <p>ホテルのフロントのようなもの。<br>
+         客のアプリは設備に直接触れず、システムコール経由で頼む。カーネルパニックはマシン全体が止まる。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="shell.html">Shell</a></div>
-          <p class="kw-desc">カーネルと一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">ユーザーがカーネルに命令する窓口。</p>
           <a class="kw-page" href="shell.html">P.229</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="process.html">Process</a></div>
-          <p class="kw-desc">カーネルと一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">カーネルが管理する実行単位。</p>
           <a class="kw-page" href="process.html">P.235</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="cpu.html">CPU</a></div>
-          <p class="kw-desc">カーネルと一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">カーネルがアプリに割り当てて管理する。</p>
           <a class="kw-page" href="cpu.html">P.452</a>
         </div>
       </div>

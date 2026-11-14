@@ -35,7 +35,7 @@
       <div class="body">
         <div class="with-fig">
           <p>package.json などの範囲指定だけだと、日が変わると別バージョンが入ることがある。<br>
-             チームとCIで完全に同じ木が欲しかった。</p>
+             チームとCIで完全に同じ依存ツリーが欲しかった。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -52,7 +52,7 @@
             <tr><th></th><th>範囲指定だけ</th><th class="h-docker">ロックファイルあり</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">再現性</td><td>インストール時点に依存</td><td class="h-docker">同じ結果を再現しやすい</td></tr>
+            <tr><td class="rowhead">再現性</td><td>入れた時期で変わる</td><td class="h-docker">同じ結果を再現しやすい</td></tr>
             <tr><td class="rowhead">CI</td><td>揺れる</td><td class="h-docker">固定できる</td></tr>
             <tr><td class="rowhead">レビュー</td><td>何が入るか見えにくい</td><td class="h-docker">差分で更新内容が見える</td></tr>
             <tr><td class="rowhead">コミット</td><td>し忘れることも</td><td class="h-docker">リポジトリに含めるのが基本</td></tr>

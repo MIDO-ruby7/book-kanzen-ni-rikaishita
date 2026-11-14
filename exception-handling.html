@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>異常系を捕まえて扱うこと。</p>
+        <p>実行中のエラーを捕まえて、止めずに処理する仕組み。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>エラーでプロセスを雑に落としたくない。</p>
+          <p>エラーのたびに戻り値を調べる書き方は、確認漏れでプログラムが壊れやすい。<br>
+             異常を通常の流れと分けて扱う仕組みが言語に用意された。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>関数の戻り値でエラーを返し、呼び出し側が毎回確認していた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">例外処理</th></tr>
+            <tr><th></th><th>戻り値で返す</th><th class="h-docker">例外処理</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">伝え方</td><td>戻り値のコード</td><td class="h-docker">例外を投げる</td></tr>
+            <tr><td class="rowhead">確認漏れ</td><td>無視すると進む</td><td class="h-docker">放置すると上へ伝わる</td></tr>
+            <tr><td class="rowhead">通常処理</td><td>確認が混ざる</td><td class="h-docker">try内に集約</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>例外処理 で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">例外処理 を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-shield"/></svg><div class="cap">異常時も落とさず処理</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-split"/></svg><div class="cap">通常と異常を分離</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-alert"/></svg><div class="cap">エラー内容を記録・通知</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>try/catch等。</p>
+      <p>try/catchは「落ちたら下のネットで受ける」安全網のイメージ。<br>
+         何もせず握りつぶすcatchは、原因が追えなくなるので避ける。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="nageru.html">投げる</a></div>
-          <p class="kw-desc">例外処理 と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">エラーを例外として発生させること。</p>
           <a class="kw-page" href="nageru.html">P.465</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="log.html">ログ</a></div>
-          <p class="kw-desc">例外処理 と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">動作の記録。捕まえた例外の内容を残す。</p>
           <a class="kw-page" href="log.html">P.210</a>
         </div>
       </div>
       <div class="kw">
         <div>
           <div class="kw-name">エラー</div>
-          <p class="kw-desc">例外処理 と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">例外は、エラーを扱う方法の一つ。</p>
           
         </div>
       </div>

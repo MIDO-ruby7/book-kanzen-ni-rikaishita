@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>Azureの関数サーバレス実行。</p>
+        <p>イベントを受けて関数を動かすAzureのサーバーレス実行環境。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>常時サーバなしでイベント処理したい。</p>
+          <p>一日に数回しか動かない処理のためにサーバーを常時動かすのは無駄だ。<br>
+             呼ばれたときだけコードを実行し、使った分だけ払う形が生まれた。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>処理のたびに起動しておくサーバーを用意し、常時稼働させていた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">Azure Functions</th></tr>
+            <tr><th></th><th>常時サーバー</th><th class="h-docker">Functions</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">動く条件</td><td>常時起動して待機</td><td class="h-docker">トリガーで起動</td></tr>
+            <tr><td class="rowhead">課金</td><td>稼働時間ぶん</td><td class="h-docker">実行回数と時間</td></tr>
+            <tr><td class="rowhead">スケール</td><td>台数を自分で調整</td><td class="h-docker">負荷で自動増加</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>Azure Functions で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">Azure Functions を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-bolt"/></svg><div class="cap">イベントを受けて起動</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-code"/></svg><div class="cap">関数のコードだけ用意</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-chart"/></svg><div class="cap">使った分だけ課金</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>Lambda相当。</p>
+      <p>Azure Functionsは、呼び鈴が鳴ったときだけ出てくる店員のようなもの。<br>
+         玄関に立たせ続けなくても、客が来れば対応する。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="container-apps.html">Container Apps</a></div>
-          <p class="kw-desc">Azure Functions と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">コンテナ単位で動かす、もう一つのサーバーレス。</p>
           <a class="kw-page" href="container-apps.html">P.340</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="blob-storage.html">Blob Storage</a></div>
-          <p class="kw-desc">Azure Functions と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">ファイルの追加をきっかけに関数を起動できる。</p>
           <a class="kw-page" href="blob-storage.html">P.342</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="ci-cd.html">CI/CD</a></div>
-          <p class="kw-desc">Azure Functions と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">コードの変更を自動でデプロイする仕組み。</p>
           <a class="kw-page" href="ci-cd.html">P.256</a>
         </div>
       </div>

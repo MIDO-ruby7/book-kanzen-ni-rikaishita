@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>ソースから実行可能な成果物を作る工程。</p>
+        <p>ソースコードを実行・配布できる形に変換する工程。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>書いたままでは配れないことが多い。</p>
+          <p>書いたコードは、そのままでは実行環境で動かせないことが多い。<br>
+             コンパイルや変換、まとめ作業を一括で行う工程が必要になった。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>コンパイルやファイルの変換を、人が手順どおりに手で実行していた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">Build</th></tr>
+            <tr><th></th><th>手作業の変換</th><th class="h-docker">Build</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">実行の手間</td><td>コマンドを個別に実行</td><td class="h-docker">一括で実行</td></tr>
+            <tr><td class="rowhead">手順の再現</td><td>人の記憶に依存</td><td class="h-docker">スクリプトに記録</td></tr>
+            <tr><td class="rowhead">失敗の発見</td><td>動かして初めて判明</td><td class="h-docker">ビルド時に判明</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>Build で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">Build を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">変換を一括で自動実行</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">ビルド時に失敗を発見</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-package"/></svg><div class="cap">配布用の成果物を生成</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>ビルドが通るかが最初の門。</p>
+      <p>材料（ソース）を料理（成果物）に仕上げる工程。<br>
+         「ビルドが通らない」は、この工程でエラーが出ている状態を指す。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="bundle.html">Bundle</a></div>
-          <p class="kw-desc">Build と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">ファイルを1つにまとめる。ビルドの一部。</p>
           <a class="kw-page" href="bundle.html">P.261</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="artifact.html">Artifact</a></div>
-          <p class="kw-desc">Build と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">ビルドで生まれる成果物そのもの。</p>
           <a class="kw-page" href="artifact.html">P.262</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="ci-cd.html">CI/CD</a></div>
-          <p class="kw-desc">Build と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">pushのたびにビルドを自動実行する。</p>
           <a class="kw-page" href="ci-cd.html">P.256</a>
         </div>
       </div>

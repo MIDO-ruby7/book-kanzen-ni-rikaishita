@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>埋め込みベクトルを保存・検索するDB。</p>
+        <p>ベクトルを保存し、近いものを素早く探すためのDB。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>意味の近い文書を高速に探したい。</p>
+          <p>数百〜数千次元のベクトルを、通常のDBで全件比較すると遅すぎる。<br>
+             そこで、近いベクトルを高速に探すことに特化したDBが作られた。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>通常のDBでは、LIKE検索や完全一致で探していた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">Vector Database</th></tr>
+            <tr><th></th><th>通常のDB</th><th class="h-docker">ベクトルDB</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">検索の基準</td><td>値が一致するか</td><td class="h-docker">意味の近さ</td></tr>
+            <tr><td class="rowhead">速さ</td><td>全件比較で遅い</td><td class="h-docker">ANNで高速</td></tr>
+            <tr><td class="rowhead">製品例</td><td>MySQLなど</td><td class="h-docker">Qdrant・pgvectorなど</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>Vector Database で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">Vector Database を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-database"/></svg><div class="cap">ベクトルを保存</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-search"/></svg><div class="cap">近いものを探す</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-bolt"/></svg><div class="cap">大量でも高速</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>Qdrant等。</p>
+      <p>RAGの検索役として登場することが多い。件数が少ないうちは、専用のDBでなくpgvectorでも足りる。<br>
+         製品選びは、規模と運用の手間で決める。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="embedding.html">Embedding</a></div>
-          <p class="kw-desc">Vector Database と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">DBに保存するベクトルを作る変換。</p>
           <a class="kw-page" href="embedding.html">P.387</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="rag.html">RAG</a></div>
-          <p class="kw-desc">Vector Database と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">ベクトルDBを検索役に使う、代表的な手法。</p>
           <a class="kw-page" href="rag.html">P.388</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="pinecone.html">Pinecone</a></div>
-          <p class="kw-desc">Vector Database と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">マネージドで提供される、ベクトルDBのサービス。</p>
           <a class="kw-page" href="pinecone.html">P.408</a>
         </div>
       </div>

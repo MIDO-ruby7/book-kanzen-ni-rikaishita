@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>条件を満たしたら通知すること。</p>
+        <p>条件を満たしたら、担当者へ自動で通知すること。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>見ていないと気づけない。</p>
+          <p>画面を見続けるわけにはいかず、夜間や休日の異常に気づけなかった。<br>
+             条件を決めて自動で知らせる仕組みが必要になった。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>担当者がダッシュボードを定期的に見に行っていた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">Alerting</th></tr>
+            <tr><th></th><th>目視巡回</th><th class="h-docker">Alerting</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">気づく手段</td><td>自分で画面を見に行く</td><td class="h-docker">向こうから通知が届く</td></tr>
+            <tr><td class="rowhead">夜間・休日</td><td>気づけない</td><td class="h-docker">オンコール担当へ連絡</td></tr>
+            <tr><td class="rowhead">よくある課題</td><td>見落とし</td><td class="h-docker">通知が多すぎて埋もれる</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>Alerting で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">Alerting を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-alert"/></svg><div class="cap">条件を満たすと通知</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-send"/></svg><div class="cap">Slackや電話に即連絡</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-filter"/></svg><div class="cap">重要なものだけに絞る</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>ノイズとの戦い。</p>
+      <p>Alertingは火災報知器のようなもの。<br>
+         鳴らなければ危険だが、鳴りすぎると誰も反応しなくなる。絞り込みが運用の腕の見せどころ。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="monitoring.html">Monitoring</a></div>
-          <p class="kw-desc">Alerting と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">アラートの元になる監視。</p>
           <a class="kw-page" href="monitoring.html">P.443</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="oncall.html">オンコール</a></div>
-          <p class="kw-desc">Alerting と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">通知を受けて対応する当番制。</p>
           <a class="kw-page" href="oncall.html">P.502</a>
         </div>
       </div>
       <div class="kw">
         <div>
           <div class="kw-name">Pager</div>
-          <p class="kw-desc">Alerting と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">呼び出し通知の仕組み。PagerDutyが有名。</p>
           
         </div>
       </div>

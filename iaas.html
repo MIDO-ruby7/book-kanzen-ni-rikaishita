@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>インフラ部品を借りる層。</p>
+        <p>仮想サーバーやネットワークなど、インフラの部品を借りるサービス層。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>OS以上は自分で決めたい。</p>
+          <p>OSやミドルウェアは自分で選びたいが、物理設備は持ちたくない。<br>
+             そこで機械そのものだけを借りる形が生まれた。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>サーバーを買って設置し、OSの導入から全て自社で行っていた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">IaaS</th></tr>
+            <tr><th></th><th>物理サーバー</th><th class="h-docker">IaaS</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">借りる範囲</td><td>設備一式を購入</td><td class="h-docker">仮想サーバー等を借りる</td></tr>
+            <tr><td class="rowhead">OS</td><td>自社で導入</td><td class="h-docker">利用者が導入・設定</td></tr>
+            <tr><td class="rowhead">責任範囲</td><td>設備からOSまで自社</td><td class="h-docker">OS以上が利用者</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>IaaS で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">IaaS を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-server"/></svg><div class="cap">仮想サーバーを借りる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">OSから自分で設定</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-scale"/></svg><div class="cap">自由度が高い</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>EC2等が近い。</p>
+      <p>IaaS・PaaS・SaaSは、どこまで任せるかの度合いの違い。<br>
+         IaaSは任せる範囲が最も狭く、自由度が最も高い。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="paas.html">PaaS</a></div>
-          <p class="kw-desc">IaaS と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">IaaSよりさらに多くを任せる層。</p>
           <a class="kw-page" href="paas.html">P.290</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="saas.html">SaaS</a></div>
-          <p class="kw-desc">IaaS と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">最も多くを任せ、完成品を使う層。</p>
           <a class="kw-page" href="saas.html">P.291</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="015-vm.html">VM</a></div>
-          <p class="kw-desc">IaaS と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">IaaSで借りる単位となる仮想マシン。</p>
           <a class="kw-page" href="015-vm.html">P.285</a>
         </div>
       </div>

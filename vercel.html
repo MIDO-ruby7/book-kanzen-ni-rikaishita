@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>フロント系アプリをGit連携で公開しやすい基盤。</p>
+        <p>Gitにpushするだけで、フロントエンドのアプリを公開できる基盤。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>SSR/静的の本番を自前で組むのが重い。</p>
+          <p>公開にはサーバーやCDN、HTTPSの設定が必要で、手間が大きかった。<br>
+             それらを任せ、pushだけで公開できるサービスが求められた。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>サーバーを借りて、ビルド成果物の配置や設定を自分で行っていた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">Vercel</th></tr>
+            <tr><th></th><th>自前でサーバー運用</th><th class="h-docker">Vercel</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">公開の手順</td><td>サーバーへ手動配置</td><td class="h-docker">Git pushで自動公開</td></tr>
+            <tr><td class="rowhead">確認用URL</td><td>自分で環境を用意</td><td class="h-docker">PRごとに自動発行</td></tr>
+            <tr><td class="rowhead">HTTPS等</td><td>個別に設定</td><td class="h-docker">標準で提供</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>Vercel で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">Vercel を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">pushするだけで公開</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-eye"/></svg><div class="cap">PRごとにプレビュー確認</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-globe"/></svg><div class="cap">CDNで世界へ配信</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>Next.jsとよく組む。</p>
+      <p>Next.jsを開発している会社が運営している。<br>
+         「Vercelにデプロイ」は決まり文句だが、他のフレームワークも動かせる。無料枠の範囲に注意。</p>
     </div>
 
   </div>
@@ -89,22 +90,22 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="netlify.html">Netlify</a></div>
-          <p class="kw-desc">Vercel と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">同じ用途で比較される競合サービス。</p>
           <a class="kw-page" href="netlify.html">P.270</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
-          <div class="kw-name"><a class="kw-link" href="ci-cd.html">CI/CD</a></div>
-          <p class="kw-desc">Vercel と一緒に出てきたときの手がかり。</p>
-          <a class="kw-page" href="ci-cd.html">P.256</a>
+          <div class="kw-name"><a class="kw-link" href="nextjs.html">Next.js</a></div>
+          <p class="kw-desc">Vercelの会社が開発するReactフレームワーク。</p>
+          <a class="kw-page" href="nextjs.html">P.143</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
-          <div class="kw-name"><a class="kw-link" href="nextjs.html">Next.js</a></div>
-          <p class="kw-desc">Vercel と一緒に出てきたときの手がかり。</p>
-          <a class="kw-page" href="nextjs.html">P.143</a>
+          <div class="kw-name"><a class="kw-link" href="ci-cd.html">CI/CD</a></div>
+          <p class="kw-desc">pushを契機にビルドと公開を自動化する。</p>
+          <a class="kw-page" href="ci-cd.html">P.256</a>
         </div>
       </div>
     </div>

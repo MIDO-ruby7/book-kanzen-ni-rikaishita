@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>検索で取った情報を添えて回答させる手法。</p>
+        <p>検索で見つけた資料を添えて、LLMに回答させる手法。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>モデル単体の知識不足を補いたい。</p>
+          <p>LLMは学習していない社内情報や最新情報には答えられず、誤答も起きる。<br>
+             そこで、答える前に資料を探して渡す方法が考えられた。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>学習し直すか、資料を丸ごとプロンプトに貼っていた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">RAG</th></tr>
+            <tr><th></th><th>単体利用</th><th class="h-docker">RAG</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">知識の出どころ</td><td>学習済みの内容のみ</td><td class="h-docker">検索した資料も参照</td></tr>
+            <tr><td class="rowhead">新情報の反映</td><td>再学習が必要</td><td class="h-docker">資料の差し替えのみ</td></tr>
+            <tr><td class="rowhead">流れ</td><td>質問から回答</td><td class="h-docker">質問→検索→回答</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>RAG で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">RAG を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-search"/></svg><div class="cap">まず関連資料を検索</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-link"/></svg><div class="cap">資料を添えて回答させる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">根拠を示しやすくなる</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>Retrieval-Augmented Generation。</p>
+      <p>Retrieval-Augmented Generation。社内FAQボットなどで定番の構成。<br>
+         誤答がなくなるわけではなく、検索が外れれば答えも外れる。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="embedding.html">Embedding</a></div>
-          <p class="kw-desc">RAG と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">意味で検索するための、ベクトル変換。</p>
           <a class="kw-page" href="embedding.html">P.387</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="vector-database.html">Vector Database</a></div>
-          <p class="kw-desc">RAG と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">検索対象の文書のベクトルを保存するDB。</p>
           <a class="kw-page" href="vector-database.html">P.389</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="prompt.html">Prompt</a></div>
-          <p class="kw-desc">RAG と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">取得した資料を添えて、LLMに渡す指示文。</p>
           <a class="kw-page" href="prompt.html">P.386</a>
         </div>
       </div>

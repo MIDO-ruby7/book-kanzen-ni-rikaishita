@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>0と1の世界、またはテキストでないデータ。</p>
+        <p>テキストではない生のデータ。0と1で表された形式。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>画像や実行ファイルの話で出る。</p>
+          <p>コンピュータの内部はすべて0と1で、画像や実行ファイルは文字では表せない。<br>
+             こうしたデータを、テキストと区別してバイナリと呼ぶ。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>データを、人が読めるテキスト形式で扱っていた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">バイナリ</th></tr>
+            <tr><th></th><th>テキスト形式</th><th class="h-docker">バイナリ</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">読める人</td><td>人間が直接読める</td><td class="h-docker">専用ソフトで解釈する</td></tr>
+            <tr><td class="rowhead">サイズ</td><td>大きくなりがち</td><td class="h-docker">コンパクト</td></tr>
+            <tr><td class="rowhead">例</td><td>CSV、JSON、ソースコード</td><td class="h-docker">画像・実行ファイル・zip</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>バイナリ で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">バイナリ を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-file"/></svg><div class="cap">人が直接読めない形式</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-image"/></svg><div class="cap">画像や実行ファイルに使用</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-package"/></svg><div class="cap">小さく効率よく保存</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>テキストと対。</p>
+      <p>テキストが人の読む文章なら、バイナリはバーコードのようなもの。<br>
+         機械は読めるが、エディタで開くと文字化けしたような表示になる。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="charset.html">文字コード</a></div>
-          <p class="kw-desc">バイナリ と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">バイナリをテキストに直す約束。</p>
           <a class="kw-page" href="charset.html">P.457</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="build.html">Build</a></div>
-          <p class="kw-desc">バイナリ と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">ビルドの成果物はバイナリになる。</p>
           <a class="kw-page" href="build.html">P.260</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="artifact.html">Artifact</a></div>
-          <p class="kw-desc">バイナリ と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">ビルドで作られる成果物の呼び名。</p>
           <a class="kw-page" href="artifact.html">P.262</a>
         </div>
       </div>

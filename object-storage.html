@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>オブジェクトとして大容量保存する形態。</p>
+        <p>ファイルを「オブジェクト」として大量に保存する、クラウドの保管庫。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>ディスク運用がつらい。</p>
+          <p>画像や動画が増え続け、ディスクの容量管理や故障対応が重くなった。<br>
+             容量を気にせず置ける保管場所として生まれた。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>サーバーのディスクを増設し、容量の監視やバックアップを自分で行っていた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">Object Storage</th></tr>
+            <tr><th></th><th>ディスク運用</th><th class="h-docker">Object Storage</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">容量</td><td>増設が必要</td><td class="h-docker">実質無制限</td></tr>
+            <tr><td class="rowhead">扱い方</td><td>フォルダで階層管理</td><td class="h-docker">キーとデータの組で保存</td></tr>
+            <tr><td class="rowhead">耐久性</td><td>自前で冗長化</td><td class="h-docker">複数の場所に自動複製</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>Object Storage で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">Object Storage を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-database"/></svg><div class="cap">大量のファイルを置く</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-link"/></svg><div class="cap">URLで出し入れする</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-shield"/></svg><div class="cap">複製されて消えにくい</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>S3が代表。</p>
+      <p>AWSではS3、Google CloudではCloud Storageが代表例。<br>
+         Webサイトの画像やバックアップの置き場として、実務で最もよく使う。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="s3.html">S3</a></div>
-          <p class="kw-desc">Object Storage と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">AWSのオブジェクトストレージのサービス名。</p>
           <a class="kw-page" href="s3.html">P.321</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="cloud-storage.html">Cloud Storage</a></div>
-          <p class="kw-desc">Object Storage と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">Google Cloudの同種のサービス。</p>
           <a class="kw-page" href="cloud-storage.html">P.335</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="cdn.html">CDN</a></div>
-          <p class="kw-desc">Object Storage と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">保存したファイルを世界へ配信する仕組みと組み合わせる。</p>
           <a class="kw-page" href="cdn.html">P.293</a>
         </div>
       </div>

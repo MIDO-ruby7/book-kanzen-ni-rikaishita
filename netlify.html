@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>Jamstack/静的寄りの公開・プレビューが得意な基盤。</p>
+        <p>静的サイトやフロントエンドをGit連携で公開できるホスティング基盤。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>手動アップロード運用がつらい。</p>
+          <p>静的サイトの公開は、FTPなどで手作業でアップロードするのが一般的だった。<br>
+             Git連携でビルドから公開までを自動化するサービスが生まれた。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>FTPなどで、ビルドしたファイルを手動でアップロードしていた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">Netlify</th></tr>
+            <tr><th></th><th>手動アップロード</th><th class="h-docker">Netlify</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">公開の手順</td><td>FTPで手動配置</td><td class="h-docker">pushで自動公開</td></tr>
+            <tr><td class="rowhead">確認用URL</td><td>用意しにくい</td><td class="h-docker">PRごとにプレビュー</td></tr>
+            <tr><td class="rowhead">フォーム等</td><td>サーバー側を自作</td><td class="h-docker">機能が用意されている</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>Netlify で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">Netlify を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">pushからビルド・公開</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-eye"/></svg><div class="cap">PRごとにプレビュー確認</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-globe"/></svg><div class="cap">静的ファイルをCDN配信</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>PRプレビューが便利。</p>
+      <p>Jamstack（JS・API・事前ビルドの構成）の文脈でよく名前が挙がる。<br>
+         Vercelと比較されるが、どちらもGit連携の自動公開が基本。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="vercel.html">Vercel</a></div>
-          <p class="kw-desc">Netlify と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">同じ用途で比較される競合サービス。</p>
           <a class="kw-page" href="vercel.html">P.269</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="ci-cd.html">CI/CD</a></div>
-          <p class="kw-desc">Netlify と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">pushを契機に自動でビルド・公開する。</p>
           <a class="kw-page" href="ci-cd.html">P.256</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="cdn.html">CDN</a></div>
-          <p class="kw-desc">Netlify と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">ファイルを世界各地から配信する仕組み。</p>
           <a class="kw-page" href="cdn.html">P.293</a>
         </div>
       </div>

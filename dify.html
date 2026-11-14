@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>LLMアプリを組むワークフロー／プラットフォーム。</p>
+        <p>画面操作でLLMアプリを組み立てるOSSの開発基盤。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>GUIでRAGやエージェントを組みたい。</p>
+          <p>RAGやエージェントを使うAIアプリをコードで一から作ると手間がかかる。<br>
+             画面上でつなぎ、素早く試せる場として作られた。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>LLMアプリは、各機能をコードで実装して作っていた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">Dify</th></tr>
+            <tr><th></th><th>コードで実装</th><th class="h-docker">Dify</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">作り方</td><td>全部をコードで記述</td><td class="h-docker">画面で部品をつなぐ</td></tr>
+            <tr><td class="rowhead">RAG</td><td>検索基盤を自前で用意</td><td class="h-docker">知識ベースを画面で設定</td></tr>
+            <tr><td class="rowhead">運用</td><td>自前で構築</td><td class="h-docker">クラウド版か自ホストを選べる</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>Dify で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">Dify を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-puzzle"/></svg><div class="cap">部品をつないで構築</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-database"/></svg><div class="cap">知識ベースを管理</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-server"/></svg><div class="cap">自ホストもできる</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>自ホストも話題。</p>
+      <p>AIアプリ用の「ノーコード工場」。<br>
+         細かい制御はコードに劣るため、試作はDify、本番は自前実装と分ける例もある。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="ai-workflow.html">Workflow</a></div>
-          <p class="kw-desc">Dify と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">Difyで組み立てる中心機能。</p>
           <a class="kw-page" href="ai-workflow.html">P.393</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="rag.html">RAG</a></div>
-          <p class="kw-desc">Dify と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">知識ベースの検索機能に使われる。</p>
           <a class="kw-page" href="rag.html">P.388</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="agent.html">Agent</a></div>
-          <p class="kw-desc">Dify と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">ツールを使うAIも作れる。</p>
           <a class="kw-page" href="agent.html">P.392</a>
         </div>
       </div>

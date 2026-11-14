@@ -52,7 +52,7 @@
             <tr><th></th><th>旧来のサーバーレンダリング</th><th class="h-docker">CSR</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">初回表示までの流れ</td><td>サーバーが完成形のHTMLを返す</td><td class="h-docker">空に近いHTMLを返し、JSが画面を組み立てる</td></tr>
+            <tr><td class="rowhead">初回表示の流れ</td><td>サーバーが完成形のHTMLを返す</td><td class="h-docker">空に近いHTMLを返し、JSが画面を組み立てる</td></tr>
             <tr><td class="rowhead">画面遷移</td><td>ページごとにサーバーへリクエスト</td><td class="h-docker">遷移後の差分だけJSが書き換え</td></tr>
             <tr><td class="rowhead">サーバーの負荷</td><td>表示のたびにHTMLを生成</td><td class="h-docker">初回以降はデータだけ返せばよい</td></tr>
           </tbody>
@@ -68,7 +68,7 @@
         <div class="trio">
           <div class="cell"><svg><use href="icons.svg#ic-bolt"/></svg><div class="cap">ページ遷移がヌルサクになる</div></div>
           <div class="cell"><svg><use href="icons.svg#ic-puzzle"/></svg><div class="cap">Component中心に作りやすい</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-clock"/></svg><div class="cap">初期表示にはJS読み込みの時間がかかる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-clock"/></svg><div class="cap">初回はJS読み込みが必要</div></div>
         </div>
       </div>
     </section>

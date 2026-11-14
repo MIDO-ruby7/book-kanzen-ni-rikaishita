@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>障害時等の手順書。</p>
+        <p>障害時などの対応手順をまとめた手順書。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>慌てても同じ手順で動けるように。</p>
+          <p>障害中は焦って判断を誤りやすく、詳しい人しか対応できなかった。<br>
+             誰でも同じ手順で動けるよう、事前に書いておく文書が必要になった。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>手順は詳しい人の頭の中にあり、その人に聞いて対応していた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">ランブック</th></tr>
+            <tr><th></th><th>属人的な知識</th><th class="h-docker">ランブック</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">手順の所在</td><td>担当者の記憶</td><td class="h-docker">文書として共有</td></tr>
+            <tr><td class="rowhead">対応の品質</td><td>人によって差</td><td class="h-docker">手順で揃う</td></tr>
+            <tr><td class="rowhead">自動化</td><td>進めにくい</td><td class="h-docker">スクリプト化しやすい</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>ランブック で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">ランブック を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-list"/></svg><div class="cap">手順どおり対応できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-users"/></svg><div class="cap">誰でも同じ品質で対応</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">手順を自動化の起点に</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>遊びのない手順が理想。</p>
+      <p>料理のレシピのように、考えずになぞれば動ける状態が理想。<br>
+         障害のたびに更新しないと古くなり、役に立たなくなる。</p>
     </div>
 
   </div>
@@ -89,22 +90,22 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="oncall.html">オンコール</a></div>
-          <p class="kw-desc">ランブック と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">当番の人が参照する。</p>
           <a class="kw-page" href="oncall.html">P.502</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="incident.html">インシデント</a></div>
-          <p class="kw-desc">ランブック と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">起きた障害ごとに対応手順を整える。</p>
           <a class="kw-page" href="incident.html">P.500</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
-          <div class="kw-name"><a class="kw-link" href="ci-cd.html">CI/CD</a></div>
-          <p class="kw-desc">ランブック と一緒に出てきたときの手がかり。</p>
-          <a class="kw-page" href="ci-cd.html">P.256</a>
+          <div class="kw-name"><a class="kw-link" href="postmortem.html">ポストモーテム</a></div>
+          <p class="kw-desc">振り返りで手順の不足を見つけて更新する。</p>
+          <a class="kw-page" href="postmortem.html">P.501</a>
         </div>
       </div>
     </div>

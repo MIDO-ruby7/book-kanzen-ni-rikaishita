@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>LLMアプリを組むための枠組み。</p>
+        <p>LLMアプリの部品をつなぎ合わせて組むための枠組み。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>プロンプトとツールをつなぐコードを定型化したい。</p>
+          <p>LLMアプリは、プロンプト整形やツール呼び出しを毎回自作していた。<br>
+             共通部分を部品化し、つないで作れるようにした。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>LLMのAPIを直接呼び、前後の処理を自前で書いていた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">LangChain</th></tr>
+            <tr><th></th><th>API直叩き</th><th class="h-docker">LangChain</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">部品</td><td>案件ごとに自作</td><td class="h-docker">交換可能な部品</td></tr>
+            <tr><td class="rowhead">モデル切替</td><td>書き直し</td><td class="h-docker">同じ書き方で差替</td></tr>
+            <tr><td class="rowhead">評判</td><td>薄く直接書く派も</td><td class="h-docker">エコシステムは大きい</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>LangChain で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">LangChain を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-puzzle"/></svg><div class="cap">LLMアプリの部品をつなぐ</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-swap"/></svg><div class="cap">モデルを差し替えやすい</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-network"/></svg><div class="cap">検索やツールと連携</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>エコシステムが大きい。</p>
+      <p>LangChainは「LLM用のレゴブロック」。<br>
+         ブロックは豊富だが、積みすぎると全体像が見えにくくなる。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="agent.html">Agent</a></div>
-          <p class="kw-desc">LangChain と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">LLMが道具を選んで動く仕組み。</p>
           <a class="kw-page" href="agent.html">P.392</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="rag.html">RAG</a></div>
-          <p class="kw-desc">LangChain と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">検索結果を渡して回答させる手法。</p>
           <a class="kw-page" href="rag.html">P.388</a>
         </div>
       </div>
       <div class="kw">
         <div>
           <div class="kw-name">LangGraph</div>
-          <p class="kw-desc">LangChain と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">同じ開発元の、処理の流れをグラフで組む部品。</p>
           
         </div>
       </div>

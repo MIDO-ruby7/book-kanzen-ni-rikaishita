@@ -51,8 +51,8 @@
             <tr><th></th><th>個別にSQL実行</th><th class="h-docker">トランザクションでまとめる</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">途中で失敗したときの挙動</td><td>中途半端な状態が残る</td><td class="h-docker">全部なかったことにできる</td></tr>
-            <tr><td class="rowhead">同時アクセス時の安全性</td><td>データが壊れる可能性がある</td><td class="h-docker">独立性が保たれる</td></tr>
+            <tr><td class="rowhead">途中失敗時</td><td>中途半端な状態が残る</td><td class="h-docker">全部なかったことにできる</td></tr>
+            <tr><td class="rowhead">同時アクセス時</td><td>データが壊れる可能性がある</td><td class="h-docker">独立性が保たれる</td></tr>
             <tr><td class="rowhead">障害後のデータ</td><td>消える可能性がある</td><td class="h-docker">永続性が保証される</td></tr>
           </tbody>
         </table>

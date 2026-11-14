@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>小さなサービス群に分割して作る形態。</p>
+        <p>小さなサービス群に分割して作るシステム形態。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>チームとスケールを独立させたい。</p>
+          <p>アプリが巨大になり、1つの変更で全体の再デプロイが必要になっていた。<br>
+             そこで、機能ごとに分けて独立して動かす構成が広まった。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>全機能を1つにまとめ、全体を一度に配布していた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">Microservice</th></tr>
+            <tr><th></th><th>モノリス</th><th class="h-docker">Microservice</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">配布</td><td>全体を一括</td><td class="h-docker">サービスごと個別</td></tr>
+            <tr><td class="rowhead">増強</td><td>全体を増やす</td><td class="h-docker">必要な所だけ</td></tr>
+            <tr><td class="rowhead">代償</td><td>特になし</td><td class="h-docker">通信失敗・整合性の難しさ</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>Microservice で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">Microservice を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">個別にデプロイできる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-chart"/></svg><div class="cap">必要な所だけ増やせる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-network"/></svg><div class="cap">分散ゆえの複雑さが増す</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>分散の複雑さとセット。</p>
+      <p>マイクロサービスは「専門店が並ぶ商店街」のようなもの。<br>
+         各店は独立して動けるが、店同士の連携には手間がかかる。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="monolith.html">Monolith</a></div>
-          <p class="kw-desc">Microservice と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">分割しない従来の形態。</p>
           <a class="kw-page" href="monolith.html">P.434</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="api.html">API</a></div>
-          <p class="kw-desc">Microservice と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">サービス同士が会話する窓口。</p>
           <a class="kw-page" href="api.html">P.69</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="ci-cd.html">CI/CD</a></div>
-          <p class="kw-desc">Microservice と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">多数のサービスの配布を自動化する仕組み。</p>
           <a class="kw-page" href="ci-cd.html">P.256</a>
         </div>
       </div>

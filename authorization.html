@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>その人が何をしてよいかを決めること（認可）。</p>
+        <p>認証済みの相手に、何をしてよいかを決めること（認可）。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>ログインできても権限は別問題。</p>
+          <p>ログインできる人が増えると、全員に同じ操作を許すわけにいかなくなった。<br>
+             閲覧だけ、編集もできる、管理者など、権限を分ける必要が出た。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>ログインできれば、基本的にどの操作もできる設計だった。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">Authorization</th></tr>
+            <tr><th></th><th>全員同権限</th><th class="h-docker">認可</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">操作の範囲</td><td>ログインすれば全部</td><td class="h-docker">人ごとに決まる</td></tr>
+            <tr><td class="rowhead">管理の単位</td><td>個人に直接設定</td><td class="h-docker">ロール・グループ</td></tr>
+            <tr><td class="rowhead">確認頻度</td><td>ログイン時だけ</td><td class="h-docker">操作のたび</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>Authorization で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">Authorization を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-list"/></svg><div class="cap">操作ごとの権限を決める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-lock"/></svg><div class="cap">許可のない操作を拒否</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-users"/></svg><div class="cap">役割ごとに権限を分ける</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>AuthZ。</p>
+      <p>略してAuthZ。「ログインできた＝何でも見られる」は典型的な誤解で、権限チェック漏れは脆弱性になる。<br>
+         ボタンを隠すだけでなく、サーバー側でも必ず判定する。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="authentication.html">Authentication</a></div>
-          <p class="kw-desc">Authorization と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">認可の前提となる、誰かを確かめる段階。</p>
           <a class="kw-page" href="authentication.html">P.368</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="iam.html">IAM</a></div>
-          <p class="kw-desc">Authorization と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">AWSなどで、誰に何を許すかを管理する仕組み。</p>
           <a class="kw-page" href="iam.html">P.326</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="oauth.html">OAuth</a></div>
-          <p class="kw-desc">Authorization と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">他サービスへ権限を委譲するための枠組み。</p>
           <a class="kw-page" href="oauth.html">P.370</a>
         </div>
       </div>

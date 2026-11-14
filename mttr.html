@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>復旧までの平均時間。</p>
+        <p>障害から復旧するまでにかかった時間の平均。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>長く止まると被害が増える。</p>
+          <p>障害が起きたとき、どれだけ早く戻せたかを数字で測る必要があった。<br>
+             平均を取ることで、改善の効果を比べられる。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>復旧の速さは「早かった」「遅かった」と感覚で語られていた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">MTTR</th></tr>
+            <tr><th></th><th>感覚での評価</th><th class="h-docker">MTTR</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">評価方法</td><td>担当者の印象</td><td class="h-docker">復旧時間の平均値</td></tr>
+            <tr><td class="rowhead">改善の確認</td><td>比べられない</td><td class="h-docker">数値で前後比較</td></tr>
+            <tr><td class="rowhead">目標設定</td><td>難しい</td><td class="h-docker">時間で目標化</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>MTTR で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">MTTR を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-clock"/></svg><div class="cap">復旧の速さを数値化</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-chart"/></svg><div class="cap">改善の効果を比較</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-target"/></svg><div class="cap">復旧時間の目標を設定</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>Mean Time To Recovery。</p>
+      <p>救急車が現場に着くまでの時間のように、短いほど被害が小さい。<br>
+         RはRecoveryやRepairなど複数の読みがあり、計測範囲は組織ごとに決める。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="mtbf.html">MTBF</a></div>
-          <p class="kw-desc">MTTR と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">故障の間隔の平均。MTTRと対で使う。</p>
           <a class="kw-page" href="mtbf.html">P.505</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="incident.html">インシデント</a></div>
-          <p class="kw-desc">MTTR と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">MTTRで測る対象の障害。</p>
           <a class="kw-page" href="incident.html">P.500</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="availability.html">可用性</a></div>
-          <p class="kw-desc">MTTR と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">動き続けられる割合。MTTRが短いほど高い。</p>
           <a class="kw-page" href="availability.html">P.301</a>
         </div>
       </div>

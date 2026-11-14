@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>公開前に手元で動かして確かめたい。</p>
+          <p>本番で試すと利用者に影響が出るため、まず手元で動かして確かめる場所が必要になった。<br>
+             壊しても困らない、自分専用の環境が求められた。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>動作確認を、実際に公開しているサーバー上で直接行っていた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">ローカル</th></tr>
+            <tr><th></th><th>本番で直接確認</th><th class="h-docker">ローカル</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">影響範囲</td><td>利用者に直接及ぶ</td><td class="h-docker">自分のPCだけ</td></tr>
+            <tr><td class="rowhead">失敗の扱い</td><td>即障害になる</td><td class="h-docker">壊しても作り直せる</td></tr>
+            <tr><td class="rowhead">確認の速さ</td><td>反映に手間がかかる</td><td class="h-docker">保存してすぐ確認</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>ローカル で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">ローカル を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-laptop"/></svg><div class="cap">手元で自由に動作確認</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-bug"/></svg><div class="cap">本番に影響せず失敗できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-undo"/></svg><div class="cap">壊しても作り直せる</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>ローカルと本番の差がバグの温床。</p>
+      <p>自分の机の上の「試作台」のようなもの。<br>
+         「ローカルでは動くのに」は、設定や依存の差から起きる定番の不具合。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="staging.html">ステージング</a></div>
-          <p class="kw-desc">ローカル と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">本番に近い設定で確認する、次段階の環境。</p>
           <a class="kw-page" href="staging.html">P.258</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="production.html">本番</a></div>
-          <p class="kw-desc">ローカル と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">ローカルで確認した後に届ける最終の環境。</p>
           <a class="kw-page" href="production.html">P.259</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="ci-cd.html">CI/CD</a></div>
-          <p class="kw-desc">ローカル と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">手元の変更を自動で検証し届ける仕組み。</p>
           <a class="kw-page" href="ci-cd.html">P.256</a>
         </div>
       </div>

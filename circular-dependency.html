@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>A→B→Aのように依存が輪になる状態。</p>
+        <p>A→B→Aのように、依存が輪になっている状態。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>ビルドや理解が破綻する。</p>
+          <p>AがBを使い、BもAを使うと、どちらも単独で動かせなくなる。<br>
+             この状態は、ビルドの失敗や理解の困難を招く。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>困った時に、互いの機能を気軽に呼び合っていた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">循環依存</th></tr>
+            <tr><th></th><th>相互参照</th><th class="h-docker">循環依存</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">単独利用</td><td>片方だけ使える</td><td class="h-docker">必ずセットで必要</td></tr>
+            <tr><td class="rowhead">読み込み</td><td>問題なし</td><td class="h-docker">エラーや未定義</td></tr>
+            <tr><td class="rowhead">直し方</td><td>特になし</td><td class="h-docker">共通部を切り出す</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>循環依存 で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">循環依存 を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-link"/></svg><div class="cap">依存が輪になる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-alert"/></svg><div class="cap">単独で動かせない</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-split"/></svg><div class="cap">共通部分を切り出す</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>向きを揃えて切る。</p>
+      <p>循環依存は「お互いに先を譲り合う二人」のようなもの。<br>
+         先に出る人が決まらず、どちらも動けなくなる。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="coupling.html">結合度</a></div>
-          <p class="kw-desc">循環依存 と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">循環は強い結合の一例。</p>
           <a class="kw-page" href="coupling.html">P.424</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="package.html">パッケージ</a></div>
-          <p class="kw-desc">循環依存 と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">輪になりやすい、まとまりの単位。</p>
           <a class="kw-page" href="package.html">P.211</a>
         </div>
       </div>
       <div class="kw">
         <div>
           <div class="kw-name">モジュール</div>
-          <p class="kw-desc">循環依存 と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">依存関係を見る単位。</p>
           
         </div>
       </div>

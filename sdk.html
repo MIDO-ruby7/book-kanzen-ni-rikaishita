@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>開発に必要な部品一式。</p>
+        <p>あるサービスや環境の開発に必要な部品を、まとめたもの。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>ゼロから連携を書きたくない。</p>
+          <p>外部サービスのAPIを使うたび、認証や通信処理を自分で書くのは手間だった。<br>
+             そこで、必要な部品を一式にして配る形が広まった。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>HTTPリクエストを自分で組み立てて、APIを呼んでいた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">SDK</th></tr>
+            <tr><th></th><th>自前で実装</th><th class="h-docker">SDK</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">中身</td><td>自前のコード</td><td class="h-docker">ライブラリ・ツールの一式</td></tr>
+            <tr><td class="rowhead">手間</td><td>認証や通信を実装</td><td class="h-docker">メソッド一つでAPI呼び出し</td></tr>
+            <tr><td class="rowhead">注意点</td><td>仕様変更に自力で追従</td><td class="h-docker">更新で挙動が変わる恐れ</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>SDK で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">SDK を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-package"/></svg><div class="cap">部品を一式にまとめる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-code"/></svg><div class="cap">呼び出しが簡単になる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-alert"/></svg><div class="cap">更新で挙動が変わる</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>Software Development Kit。</p>
+      <p>Software Development Kitの略。iOS SDKやAWS SDKなど、対象ごとにある。<br>
+         ライブラリより広く、周辺の道具まで含めて指すことが多い。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="api.html">API</a></div>
-          <p class="kw-desc">SDK と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">SDKが呼び出しを助ける、外部の入口。</p>
           <a class="kw-page" href="api.html">P.69</a>
         </div>
       </div>
       <div class="kw">
         <div>
           <div class="kw-name">ライブラリ</div>
-          <p class="kw-desc">SDK と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">SDKの中心になる、再利用できる部品。</p>
           
         </div>
       </div>
       <div class="kw">
         <div>
           <div class="kw-name">ドキュメント</div>
-          <p class="kw-desc">SDK と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">SDKの使い方を知るための一次情報。</p>
           
         </div>
       </div>

@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>Firebaseの静的ホスティング。</p>
+        <p>Firebaseの静的ファイル公開サービス。CDN付き。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>フロントをすぐ公開したい。</p>
+          <p>フロントエンドを公開するためだけに、Webサーバーを立てて保守するのは重い。<br>
+             ファイルを置けばHTTPSで世界に配信される仕組みが求められた。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>Webサーバーを借りて、ファイルを置いて公開していた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">Firebase Hosting</th></tr>
+            <tr><th></th><th>自前Web</th><th class="h-docker">Hosting</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">公開</td><td>サーバーを用意して配置</td><td class="h-docker">deployコマンド</td></tr>
+            <tr><td class="rowhead">配信</td><td>サーバーから直接</td><td class="h-docker">CDNで配信</td></tr>
+            <tr><td class="rowhead">HTTPS</td><td>証明書を自分で更新</td><td class="h-docker">発行・更新を自動</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>Firebase Hosting で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">Firebase Hosting を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">コマンド1つで公開</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-globe"/></svg><div class="cap">CDNで世界へ配信</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-lock"/></svg><div class="cap">HTTPSを自動で用意</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>CDN付き。</p>
+      <p>Firebase Hostingは、店舗の棚に商品を並べるだけで売れる貸し売り場。<br>
+         店舗の運営や配送は、すべてサービス側が行う。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="firebase-functions.html">Firebase Functions</a></div>
-          <p class="kw-desc">Firebase Hosting と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">動的な処理はこちら。URLを結びつけて使える。</p>
           <a class="kw-page" href="firebase-functions.html">P.351</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="cdn.html">CDN</a></div>
-          <p class="kw-desc">Firebase Hosting と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">世界各地のエッジから配信する仕組み。</p>
           <a class="kw-page" href="cdn.html">P.293</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="ci-cd.html">CI/CD</a></div>
-          <p class="kw-desc">Firebase Hosting と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">push時に自動でデプロイする構成が定番。</p>
           <a class="kw-page" href="ci-cd.html">P.256</a>
         </div>
       </div>

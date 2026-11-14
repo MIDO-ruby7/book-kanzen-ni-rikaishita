@@ -52,7 +52,7 @@
             <tr><th></th><th>DOMを直接操作</th><th class="h-docker">Virtual DOM経由</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">更新の単位</td><td>変更のたびに本物のDOMを書き換え</td><td class="h-docker">メモリ上の仮想ツリーで差分を計算してからまとめて反映</td></tr>
+            <tr><td class="rowhead">更新の単位</td><td>変更のたびに本物のDOMを書き換え</td><td class="h-docker">仮想ツリーで差分を計算して反映</td></tr>
             <tr><td class="rowhead">パフォーマンス</td><td>更新が多いと重くなりやすい</td><td class="h-docker">差分だけ反映するので効率的</td></tr>
             <tr><td class="rowhead">書き方</td><td>DOM操作を自分で細かく制御</td><td class="h-docker">Stateの変化を宣言するだけで反映は任せられる</td></tr>
           </tbody>

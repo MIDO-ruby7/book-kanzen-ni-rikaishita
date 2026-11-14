@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>許容できる不具合の残量。</p>
+        <p>SLOから逆算した、許容できる不具合や停止の残り枠。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>リリース速度と安定のバランスを取りたい。</p>
+          <p>信頼性を100%にしようとすると、新機能のリリースが進まなくなる。<br>
+             あえて許容する失敗の量を決め、開発と安定の折り合いをつける。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>「止めるな」と「早く出せ」の対立を、話し合いで決めていた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">エラーバジェット</th></tr>
+            <tr><th></th><th>個別の交渉</th><th class="h-docker">エラーバジェット</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">判断材料</td><td>担当者の主張</td><td class="h-docker">残り枠の数値</td></tr>
+            <tr><td class="rowhead">リリース判断</td><td>感覚で交渉</td><td class="h-docker">数値で合意</td></tr>
+            <tr><td class="rowhead">対立</td><td>開発と運用で発生</td><td class="h-docker">共通の指標で解消</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>エラーバジェット で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">エラーバジェット を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-chart"/></svg><div class="cap">不具合の許容量を数値化</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-scale"/></svg><div class="cap">リリース速度と安定を調整</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-alert"/></svg><div class="cap">使い切る前に警告できる</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>使い切ると変更を抑える判断も。</p>
+      <p>お小遣いのように、期間ごとの「使っていい失敗」の枠。<br>
+         枠が残れば攻めてよく、使い切ったら変更を控えて安定に回す。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="slo.html">SLO</a></div>
-          <p class="kw-desc">エラーバジェット と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">目標の信頼性。100%との差が枠になる。</p>
           <a class="kw-page" href="slo.html">P.303</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="sre.html">SRE</a></div>
-          <p class="kw-desc">エラーバジェット と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">信頼性を工学的に扱う実践。枠はその道具。</p>
           <a class="kw-page" href="sre.html">P.498</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="release.html">Release</a></div>
-          <p class="kw-desc">エラーバジェット と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">新バージョンを出すこと。枠が判断材料。</p>
           <a class="kw-page" href="release.html">P.263</a>
         </div>
       </div>

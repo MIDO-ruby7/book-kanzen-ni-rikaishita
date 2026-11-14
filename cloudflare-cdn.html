@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>Cloudflare経由のコンテンツ配信・キャッシュ。</p>
+        <p>世界各地の拠点にコピーを置き、近くから素早く配信する仕組み。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>オリジン負荷と遅延を下げたい。</p>
+          <p>利用者が世界中に広がると、遠いサーバーへの通信が遅くなる。<br>
+             アクセスが集中すると、元のサーバーの負荷も大きくなった。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>すべてのアクセスを、元のサーバー1か所で受けていた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">Cloudflare CDN</th></tr>
+            <tr><th></th><th>オリジン直接</th><th class="h-docker">Cloudflare CDN</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">配信元</td><td>1か所のサーバー</td><td class="h-docker">最寄りのエッジ</td></tr>
+            <tr><td class="rowhead">負荷</td><td>全アクセスが集中</td><td class="h-docker">エッジがキャッシュ返却</td></tr>
+            <tr><td class="rowhead">導入</td><td>構成を作り込む</td><td class="h-docker">DNSを向けるだけ</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>Cloudflare CDN で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">Cloudflare CDN を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-globe"/></svg><div class="cap">近くの拠点から配信</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-bolt"/></svg><div class="cap">表示が速くなる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-server"/></svg><div class="cap">元サーバーの負荷を軽減</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>DNSとセットで導入されやすい。</p>
+      <p>よくある誤解は「更新したのに古い画面が出る」現象。原因はキャッシュで、現場では「キャッシュを消して」「パージして」と言う。<br>
+         動的な内容はキャッシュしない設定にする。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="cdn.html">CDN</a></div>
-          <p class="kw-desc">Cloudflare CDN と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">配信を近くの拠点に分散する仕組みの総称。</p>
           <a class="kw-page" href="cdn.html">P.293</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="cf-pages.html">Pages</a></div>
-          <p class="kw-desc">Cloudflare CDN と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">Cloudflareの静的サイトホスティング。CDNで配信される。</p>
           <a class="kw-page" href="cf-pages.html">P.358</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="https.html">HTTPS</a></div>
-          <p class="kw-desc">Cloudflare CDN と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">Cloudflare経由でも通信の暗号化は設定で扱える。</p>
           <a class="kw-page" href="https.html">P.44</a>
         </div>
       </div>

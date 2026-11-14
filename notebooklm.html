@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>Googleの、資料を元に対話できるノートブック型AI。</p>
+        <p>資料を読み込ませて対話できる、Googleのノート型AI。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>ドキュメント理解を助けてほしい。</p>
+          <p>大量の資料を読み解いたり要約したりするのは時間がかかる。<br>
+             アップロードした資料だけを根拠に、出典付きで答える形が作られた。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>資料を自分で読み、手作業で要点をまとめていた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">NotebookLM</th></tr>
+            <tr><th></th><th>手作業で読解</th><th class="h-docker">NotebookLM</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">読み方</td><td>全文を順に読む</td><td class="h-docker">質問して該当箇所へ</td></tr>
+            <tr><td class="rowhead">根拠</td><td>自分で探す</td><td class="h-docker">出典の箇所を示して回答</td></tr>
+            <tr><td class="rowhead">範囲</td><td>資料の外も調べる</td><td class="h-docker">基本は与えた資料の範囲</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>NotebookLM で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">NotebookLM を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-file"/></svg><div class="cap">資料を読み込む</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-link"/></svg><div class="cap">出典付きで回答</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-book"/></svg><div class="cap">要約を作る</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>出典付きが売り。</p>
+      <p>資料に詳しい助手に質問する感覚。<br>
+         Geminiのモデルを土台にしており、音声での解説なども作れる。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="rag.html">RAG</a></div>
-          <p class="kw-desc">NotebookLM と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">資料を検索して答える考え方に近い。</p>
           <a class="kw-page" href="rag.html">P.388</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="gemini.html">Gemini</a></div>
-          <p class="kw-desc">NotebookLM と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">土台として使われるモデル。</p>
           <a class="kw-page" href="gemini.html">P.403</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="prompt.html">Prompt</a></div>
-          <p class="kw-desc">NotebookLM と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">質問や指示を伝える文。</p>
           <a class="kw-page" href="prompt.html">P.386</a>
         </div>
       </div>

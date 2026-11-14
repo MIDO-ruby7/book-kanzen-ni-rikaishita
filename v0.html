@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>UIを生成する系のAIツール。</p>
+        <p>Vercelが提供する、画面とコードを生成するAI。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>画面の初速を上げたい。</p>
+          <p>新しい画面を作る時、レイアウトやコードを一から書くと着手が遅い。<br>
+             文章で指示すると画面を作る道具として登場した。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>画面は、デザインを見ながら手でコードを書いていた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">v0</th></tr>
+            <tr><th></th><th>手書き</th><th class="h-docker">v0</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">出発点</td><td>白紙から実装</td><td class="h-docker">文章や画像から下書き</td></tr>
+            <tr><td class="rowhead">出力</td><td>自分で書いたコード</td><td class="h-docker">React＋Tailwind CSSなどのコード</td></tr>
+            <tr><td class="rowhead">仕上げ</td><td>そのまま実装</td><td class="h-docker">人が確認・調整して使う</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>v0 で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">v0 を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-monitor"/></svg><div class="cap">画面を生成</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-code"/></svg><div class="cap">コードも出力</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-eye"/></svg><div class="cap">確認して手直し</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>Vercel周辺。</p>
+      <p>デザインの下書きを素早く作る助手。<br>
+         出力はそのまま本番に使わず、アクセシビリティや保守性を人が確認したい。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="prompt.html">Prompt</a></div>
-          <p class="kw-desc">v0 と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">画面の内容を伝える指示文。</p>
           <a class="kw-page" href="prompt.html">P.386</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="react.html">React</a></div>
-          <p class="kw-desc">v0 と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">生成されるコードの主な技術。</p>
           <a class="kw-page" href="react.html">P.141</a>
         </div>
       </div>
       <div class="kw">
         <div>
           <div class="kw-name">UI</div>
-          <p class="kw-desc">v0 と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">生成する対象となる画面。</p>
           
         </div>
       </div>

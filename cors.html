@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>ブラウザが他オリジンへアクセスするときの制約と許可の仕組み。</p>
+        <p>別ドメインのAPIをブラウザから呼べるか決める仕組み。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>フロントとAPIのドメインが違うと詰まる。</p>
+          <p>ブラウザは、別オリジンへのアクセスを標準で制限している。<br>
+             ただ、フロントとAPIを別ドメインで作る構成が増え、許可の方法が必要になった。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>同じドメインから配信し、別オリジンへの通信を避けていた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">CORS</th></tr>
+            <tr><th></th><th>同一オリジン</th><th class="h-docker">CORS</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">通信先</td><td>同一ドメインのみ</td><td class="h-docker">別オリジンも可</td></tr>
+            <tr><td class="rowhead">許可の出し方</td><td>不要</td><td class="h-docker">サーバーがヘッダで許可</td></tr>
+            <tr><td class="rowhead">エラー原因</td><td>発生しない</td><td class="h-docker">サーバー側の許可不足</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>CORS で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">CORS を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-globe"/></svg><div class="cap">別オリジンの通信を制御</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-send"/></svg><div class="cap">サーバーが許可を返す</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-shield"/></svg><div class="cap">勝手な読み取りを防ぐ</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>サーバ側の許可ヘッダ。</p>
+      <p>「CORSエラー」と呼ばれ、新人がよく詰まる。制限をかけるのはブラウザで、curlなどでは起きない。<br>
+         「*」で全許可にすると、安全面で問題になる場合がある。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="csrf.html">CSRF</a></div>
-          <p class="kw-desc">CORS と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">別サイトからの勝手な送信。CORSでは防げない。</p>
           <a class="kw-page" href="csrf.html">P.375</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="http.html">HTTP</a></div>
-          <p class="kw-desc">CORS と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">許可ヘッダをやり取りする通信の約束事。</p>
           <a class="kw-page" href="http.html">P.43</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="api.html">API</a></div>
-          <p class="kw-desc">CORS と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">CORSで呼び出し可否が決まる、外から使う窓口。</p>
           <a class="kw-page" href="api.html">P.69</a>
         </div>
       </div>

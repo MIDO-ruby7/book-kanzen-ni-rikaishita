@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>Firebaseのサーバレス関数。</p>
+        <p>Firebaseのイベント駆動サーバーレス関数。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>クライアントから秘密処理を剥がしたい。</p>
+          <p>秘密の処理や重い計算をアプリ側に置くと、改ざんや情報漏れの危険がある。<br>
+             自前サーバーなしで、サーバー側の処理を足せる仕組みが必要になった。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>APIサーバーを自分で用意し、サーバー側の処理を載せていた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">Firebase Functions</th></tr>
+            <tr><th></th><th>自前APIサーバー</th><th class="h-docker">Functions</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">動く場所</td><td>アプリ側(端末)</td><td class="h-docker">クラウド側</td></tr>
+            <tr><td class="rowhead">起動条件</td><td>常時起動して待機</td><td class="h-docker">HTTPやDB書込み等</td></tr>
+            <tr><td class="rowhead">秘密情報</td><td>端末に置く</td><td class="h-docker">クラウド側で利用</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>Firebase Functions で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">Firebase Functions を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-bolt"/></svg><div class="cap">イベントをきっかけに起動</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-lock"/></svg><div class="cap">秘密の処理をサーバー側へ</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-cloud"/></svg><div class="cap">サーバー管理は不要</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>イベント駆動。</p>
+      <p>Firebase Functionsは、裏方で待機している専属スタッフ。<br>
+         表の窓口（アプリ）には出せない仕事を、代わりにこなす。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="firestore.html">Firestore</a></div>
-          <p class="kw-desc">Firebase Functions と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">データの変更をきっかけに関数を動かせる。</p>
           <a class="kw-page" href="firestore.html">P.347</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="firebase-auth.html">Firebase Auth</a></div>
-          <p class="kw-desc">Firebase Functions と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">新規登録時に、関数で初期処理を行える。</p>
           <a class="kw-page" href="firebase-auth.html">P.348</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="cloud-functions.html">Cloud Functions</a></div>
-          <p class="kw-desc">Firebase Functions と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">Google Cloudの関数サービス。実体はこちら。</p>
           <a class="kw-page" href="cloud-functions.html">P.337</a>
         </div>
       </div>

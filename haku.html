@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>「エラー吐いてる」で調査開始。</p>
+          <p>プログラムは異常時に、内部の状況を外へ文字として出力する。<br>
+             その様子を「吐く」と言う表現が、現場で広まった。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>エラーの有無を、画面の挙動だけで判断していた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">吐く</th></tr>
+            <tr><th></th><th>画面で判断</th><th class="h-docker">吐く</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">出力先</td><td>画面表示のみ</td><td class="h-docker">標準出力・ログ</td></tr>
+            <tr><td class="rowhead">調査の入口</td><td>挙動からの推測</td><td class="h-docker">ログの文面</td></tr>
+            <tr><td class="rowhead">注意点</td><td>出力が見えない</td><td class="h-docker">情報漏えいの恐れ</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>吐く で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">吐く を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-file"/></svg><div class="cap">文字として出力される</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-search"/></svg><div class="cap">調査の手がかりになる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-lock"/></svg><div class="cap">機密は吐かない</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>emit。</p>
+      <p>「このSQL、警告を吐いてるよ」のように、エラー以外の出力にも使う。<br>
+         吐かれた内容を読めるかどうかが、調査の速さを分ける。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="log.html">ログ</a></div>
-          <p class="kw-desc">吐く と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">吐かれた内容が記録される先。</p>
           <a class="kw-page" href="log.html">P.210</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="debug.html">デバッグ</a></div>
-          <p class="kw-desc">吐く と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">吐かれたエラーを手掛かりに原因を探る。</p>
           <a class="kw-page" href="debug.html">P.194</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="monitoring.html">Monitoring</a></div>
-          <p class="kw-desc">吐く と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">吐かれたエラーを集めて検知する仕組み。</p>
           <a class="kw-page" href="monitoring.html">P.443</a>
         </div>
       </div>

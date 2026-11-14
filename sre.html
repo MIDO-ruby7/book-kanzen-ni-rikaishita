@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>信頼性をエンジニアリングする実践／役割。</p>
+        <p>信頼性をソフトウェア開発の手法で高める実践と、その担当役割。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>運用を人海戦術だけで回したくない。</p>
+          <p>サービスが大きくなり、運用を手作業で回すのが限界になった。<br>
+             Googleが、運用をソフトウェアで自動化する考え方を広めた。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,16 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>開発と運用のチームが分かれ、運用は手作業が中心だった。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">SRE</th></tr>
+            <tr><th></th><th>運用チーム</th><th class="h-docker">SRE</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">担い手</td><td>運用専任のチーム</td><td class="h-docker">開発の技術者が担う</td></tr>
+            <tr><td class="rowhead">日々の作業</td><td>手作業の対応</td><td class="h-docker">自動化で減らす</td></tr>
+            <tr><td class="rowhead">判断基準</td><td>経験と勘</td><td class="h-docker">SLOなど数値目標</td></tr>
+            <tr><td class="rowhead">開発との関係</td><td>分断されがち</td><td class="h-docker">目標を共有</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +67,9 @@
       <h2>SRE で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">SRE を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-chart"/></svg><div class="cap">信頼性を数値で管理</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">運用作業を自動化</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-scale"/></svg><div class="cap">速度と安定を両立</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +77,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>Site Reliability Engineering。</p>
+      <p>橋が落ちないよう、点検だけでなく設計で支える土木に近い発想。<br>
+         役職名のSREと、考え方・実践としてのSREの両方の意味で使われる。</p>
     </div>
 
   </div>
@@ -89,21 +91,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="slo.html">SLO</a></div>
-          <p class="kw-desc">SRE と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">サービスの信頼性の目標値。判断基準になる。</p>
           <a class="kw-page" href="slo.html">P.303</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="error-budget.html">エラーバジェット</a></div>
-          <p class="kw-desc">SRE と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">SLOから決める、許容できる不具合の量。</p>
           <a class="kw-page" href="error-budget.html">P.499</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="oncall.html">オンコール</a></div>
-          <p class="kw-desc">SRE と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">当番で障害対応する。SREの業務の一つ。</p>
           <a class="kw-page" href="oncall.html">P.502</a>
         </div>
       </div>

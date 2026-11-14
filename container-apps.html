@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>Azure上でコンテナをサーバレス寄りに動かすサービス。</p>
+        <p>Azure上でコンテナをサーバーレスに動かすサービス。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>K8sまで重いがコンテナは使いたい。</p>
+          <p>コンテナを動かしたいが、Kubernetesの運用は手間が大きい。<br>
+             管理を任せてコンテナだけ載せられるサービスが求められた。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>仮想マシンを用意するか、Kubernetesのクラスターを自分で運用していた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">Container Apps</th></tr>
+            <tr><th></th><th>VM・K8s</th><th class="h-docker">Container</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">管理範囲</td><td>サーバー・クラスター</td><td class="h-docker">Azure側が管理</td></tr>
+            <tr><td class="rowhead">スケール</td><td>自前で設定</td><td class="h-docker">自動増減・0台まで</td></tr>
+            <tr><td class="rowhead">立ち位置</td><td>VMかAKSの二択</td><td class="h-docker">App Runner相当</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>Container Apps で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">Container Apps を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-package"/></svg><div class="cap">コンテナだけ載せて動かす</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-sync"/></svg><div class="cap">負荷に応じて自動で増減</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-cloud"/></svg><div class="cap">クラスター管理はAzureに任せる</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>Cloud Run的ポジション。</p>
+      <p>Container Appsは、荷物（コンテナ）だけ渡せば運んでくれる宅配便。<br>
+         トラックの整備（クラスター運用）は考えなくてよい。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="aks.html">AKS</a></div>
-          <p class="kw-desc">Container Apps と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">AzureのマネージドKubernetes。細かく制御したいときに使う。</p>
           <a class="kw-page" href="aks.html">P.344</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="azure-functions.html">Azure Functions</a></div>
-          <p class="kw-desc">Container Apps と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">関数単位で動かすサーバーレス。こちらはコード単位だ。</p>
           <a class="kw-page" href="azure-functions.html">P.341</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="index.html">Docker</a></div>
-          <p class="kw-desc">Container Apps と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">コンテナイメージを作る土台となる技術。</p>
           <a class="kw-page" href="index.html">P.249</a>
         </div>
       </div>

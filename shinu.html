@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>プロセスやサーバーが停止すること。</p>
+        <p>プロセスやサーバーが予期せず停止すること。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>「プロセス死んだ」で状況共有。</p>
+          <p>障害時に「異常終了した」と書くと長く、状況を短く共有したかった。<br>
+             擬人化した一言が、現場の共通語として定着した。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>状況を正式な言い回しで、細かく説明していた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">死ぬ</th></tr>
+            <tr><th></th><th>正式な表現</th><th class="h-docker">死ぬ</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">意味</td><td>異常終了の報告</td><td class="h-docker">動作中の突然の停止</td></tr>
+            <tr><td class="rowhead">使う場面</td><td>経緯を文章で報告</td><td class="h-docker">一言で全員に共有</td></tr>
+            <tr><td class="rowhead">注意点</td><td>原因まで記載</td><td class="h-docker">結果のみで原因はログ</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>死ぬ で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">死ぬ を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-alert"/></svg><div class="cap">予期せず止まった状態</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-users"/></svg><div class="cap">短く状況を共有</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-search"/></svg><div class="cap">原因はログで調べる</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>落ちたと同義寄り。</p>
+      <p>「サーバーが死んだ」は、動いていたものが急に応答しなくなった様子を指す。<br>
+         メモリ不足でOSに止められた場合も、同じように言う。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="korosu.html">殺す</a></div>
-          <p class="kw-desc">死ぬ と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">こちらから意図して止めること。</p>
           <a class="kw-page" href="korosu.html">P.467</a>
         </div>
       </div>
       <div class="kw">
         <div>
           <div class="kw-name">再起動</div>
-          <p class="kw-desc">死ぬ と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">死んだ後に立ち上げ直す対処。</p>
           
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="monitoring.html">Monitoring</a></div>
-          <p class="kw-desc">死ぬ と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">死んだことを検知して知らせる仕組み。</p>
           <a class="kw-page" href="monitoring.html">P.443</a>
         </div>
       </div>

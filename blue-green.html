@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>新旧環境を切り替えて出す手法。</p>
+        <p>新旧2つの環境を用意し、接続先を切り替えて新版を公開する手法。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>更新中の停止や切り戻しがつらい。</p>
+          <p>稼働中の環境を直接更新すると、更新中に止まり、戻すにも時間がかかる。<br>
+             そこで新環境を別に用意し、切り替える方法が生まれた。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,16 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>稼働中のサーバーに、直接新版を入れ替えて更新していた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">Blue/Green Deployment</th></tr>
+            <tr><th></th><th>その場で更新</th><th class="h-docker">Blue/Green</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">更新中の状態</td><td>停止や不安定になる</td><td class="h-docker">現行は動いたまま</td></tr>
+            <tr><td class="rowhead">切り替え</td><td>入れ替え作業中に反映</td><td class="h-docker">接続先の変更で一瞬</td></tr>
+            <tr><td class="rowhead">戻し方</td><td>再度入れ替える</td><td class="h-docker">接続先を戻すだけ</td></tr>
+            <tr><td class="rowhead">必要な資源</td><td>1環境</td><td class="h-docker">2環境分</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +67,9 @@
       <h2>Blue/Green Deployment で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">Blue/Green Deployment を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-swap"/></svg><div class="cap">接続先の切り替えで公開</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-undo"/></svg><div class="cap">問題時は旧環境へ即戻す</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-clock"/></svg><div class="cap">更新中の停止を抑える</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +77,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>色で現行/新を呼ぶ。</p>
+      <p>現行をBlue、新版をGreenと呼ぶのが一般的だが、色の割り当ては現場次第。<br>
+         ロードバランサーの向き先を切り替える。環境が2つ要るので費用は増える。</p>
     </div>
 
   </div>
@@ -89,21 +91,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="canary-release.html">Canary Release</a></div>
-          <p class="kw-desc">Blue/Green Deployment と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">少数から段階的に広げる別の手法。</p>
           <a class="kw-page" href="canary-release.html">P.265</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="load-balancer.html">Load Balancer</a></div>
-          <p class="kw-desc">Blue/Green Deployment と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">通信の向き先を振り分け、切り替えに使う。</p>
           <a class="kw-page" href="load-balancer.html">P.313</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="rollback.html">ロールバック</a></div>
-          <p class="kw-desc">Blue/Green Deployment と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">向き先を旧環境へ戻すことで実現できる。</p>
           <a class="kw-page" href="rollback.html">P.34</a>
         </div>
       </div>

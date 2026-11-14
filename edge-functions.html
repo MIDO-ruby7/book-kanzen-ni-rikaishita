@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>エッジで動かす軽量サーバレス関数（Supabase等）。</p>
+        <p>利用者に近いエッジ拠点で動く軽量なサーバーレス関数。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>ユーザー近くで短い処理をしたい。</p>
+          <p>世界の利用者が遠い地域のサーバーを呼ぶと、応答が遅くなる。<br>
+             利用者の近くで短い処理を済ませる仕組みが求められた。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>特定の地域にあるサーバーで、すべてのリクエストを処理していた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">Edge Functions</th></tr>
+            <tr><th></th><th>単一地域</th><th class="h-docker">Edge Func</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">動く場所</td><td>一か所のサーバー</td><td class="h-docker">世界各地のエッジ</td></tr>
+            <tr><td class="rowhead">実行環境</td><td>製品ごとに異なる</td><td class="h-docker">Deno・TypeScript</td></tr>
+            <tr><td class="rowhead">向く処理</td><td>何でも</td><td class="h-docker">認可・Webhookなど軽い処理</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>Edge Functions で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">Edge Functions を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-globe"/></svg><div class="cap">利用者の近くで実行</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-bolt"/></svg><div class="cap">短い処理を素早く返す</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-code"/></svg><div class="cap">TypeScriptで関数を書く</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>Deno系など実装は製品依存。</p>
+      <p>Edge Functionsは、各地の駅に置かれた小さな案内所。<br>
+         本社まで問い合わせず、その場で用が済む。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="supabase-database.html">Supabase Database</a></div>
-          <p class="kw-desc">Edge Functions と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">関数からDBを呼び出して処理することが多い。</p>
           <a class="kw-page" href="supabase-database.html">P.352</a>
         </div>
       </div>
       <div class="kw">
         <div>
           <div class="kw-name">Cloudflare Workers</div>
-          <p class="kw-desc">Edge Functions と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">同じ考え方で動く、他社のエッジ関数。</p>
           
         </div>
       </div>
       <div class="kw">
         <div>
           <div class="kw-name">Serverless</div>
-          <p class="kw-desc">Edge Functions と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">サーバー管理を意識しない実行形態。</p>
           
         </div>
       </div>

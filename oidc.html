@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>OAuthの上に、ログイン（認証）を載せる仕様。</p>
+        <p>OAuthの上に、「誰がログインしたか」を伝える仕組みを足した仕様。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>認可だけでなく「誰か」も受け取りたい。</p>
+          <p>OAuthは権限を渡す仕組みで、利用者が誰かを確実に伝えるものではなかった。<br>
+             各社が独自にログイン情報を扱い、実装がばらばらになった。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>OAuthを流用して、各社が独自にユーザー情報を取得していた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">OpenID Connect</th></tr>
+            <tr><th></th><th>OAuth単体</th><th class="h-docker">OIDC</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">わかること</td><td>権限の有無</td><td class="h-docker">権限と本人情報</td></tr>
+            <tr><td class="rowhead">受け取るもの</td><td>アクセストークン</td><td class="h-docker">IDトークンも追加</td></tr>
+            <tr><td class="rowhead">実装</td><td>各社バラバラ</td><td class="h-docker">手順が標準化</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>OpenID Connect で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">OpenID Connect を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-users"/></svg><div class="cap">誰かを確実に受け取る</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-file"/></svg><div class="cap">IDトークンで本人情報を伝達</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-puzzle"/></svg><div class="cap">ログイン方式を標準化</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>OIDC。IDトークン。</p>
+      <p>略してOIDC。「OAuthの認証版」と説明されることが多く、実際はOAuthを拡張した仕様。<br>
+         外部サービスのログインを自前で作らず任せるときに使う。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="oauth.html">OAuth</a></div>
-          <p class="kw-desc">OpenID Connect と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">OIDCの土台になる、認可の委譲の枠組み。</p>
           <a class="kw-page" href="oauth.html">P.370</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="jwt.html">JWT</a></div>
-          <p class="kw-desc">OpenID Connect と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">IDトークンの形式として使われる。</p>
           <a class="kw-page" href="jwt.html">P.51</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="authentication.html">Authentication</a></div>
-          <p class="kw-desc">OpenID Connect と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">OIDCが実現する、本人確認の段階。</p>
           <a class="kw-page" href="authentication.html">P.368</a>
         </div>
       </div>

@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>計算を実行する装置。</p>
+        <p>プログラムの命令を実際に計算して実行する装置。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>プログラムは結局ここで動く。</p>
+          <p>コンピュータが計算するには、命令を順に処理する中心の部品が必要になる。<br>
+             プログラムは、最終的にすべてここで実行される。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>用途ごとに作った専用の回路で計算していた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">CPU</th></tr>
+            <tr><th></th><th>専用回路</th><th class="h-docker">CPU</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">仕組み</td><td>用途ごとに回路を作る</td><td class="h-docker">命令を読んで何でも実行</td></tr>
+            <tr><td class="rowhead">変更</td><td>配線を作り直す</td><td class="h-docker">プログラムを入れ替える</td></tr>
+            <tr><td class="rowhead">汎用性</td><td>1つの用途のみ</td><td class="h-docker">1台で多様な処理</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>CPU で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">CPU を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">命令を順に実行</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-bolt"/></svg><div class="cap">クロックで速さが決まる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-split"/></svg><div class="cap">コアで並列に処理</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>コア数等が話題。</p>
+      <p>コンピュータの頭脳にあたる部品。<br>
+         性能は「コア数」「GHz」で語られる。CPU使用率100%は、計算待ちの仕事が詰まった状態。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="gpu.html">GPU</a></div>
-          <p class="kw-desc">CPU と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">並列計算に特化した別の処理装置。</p>
           <a class="kw-page" href="gpu.html">P.453</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="memory-ram.html">メモリ</a></div>
-          <p class="kw-desc">CPU と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">CPUが作業中のデータを置く場所。</p>
           <a class="kw-page" href="memory-ram.html">P.454</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="process.html">プロセス</a></div>
-          <p class="kw-desc">CPU と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">CPUで実行中のプログラム。</p>
           <a class="kw-page" href="process.html">P.235</a>
         </div>
       </div>

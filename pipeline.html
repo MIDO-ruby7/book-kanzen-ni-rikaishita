@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>ビルド〜デプロイ等をつないだ自動の流れ。</p>
+        <p>ビルド・テスト・デプロイなどの工程を、順につないだ自動の流れ。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>手作業工程は抜け漏れやすい。</p>
+          <p>ビルドやテスト、公開を手作業で行うと、抜けや順序の間違いが起きやすい。<br>
+             工程を定義して自動で順に実行する仕組みが必要になった。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,16 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>ビルド、テスト、公開を、担当者が手順書を見て順に行っていた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">Pipeline</th></tr>
+            <tr><th></th><th>手順書での手作業</th><th class="h-docker">Pipeline</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">実行の主体</td><td>担当者</td><td class="h-docker">自動実行</td></tr>
+            <tr><td class="rowhead">工程の抜け</td><td>忘れて飛ばす恐れ</td><td class="h-docker">定義どおりに実行</td></tr>
+            <tr><td class="rowhead">失敗時の動き</td><td>気付くまで進む</td><td class="h-docker">失敗した時点で停止</td></tr>
+            <tr><td class="rowhead">実行の記録</td><td>人の記憶頼み</td><td class="h-docker">履歴が残る</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +67,9 @@
       <h2>Pipeline で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">Pipeline を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-sync"/></svg><div class="cap">工程を順に自動実行</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-alert"/></svg><div class="cap">失敗した時点で検知</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-list"/></svg><div class="cap">実行履歴を残して追跡</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +77,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>CI/CDの配管。</p>
+      <p>工場のベルトコンベアのように、工程が順に流れる。<br>
+         CI/CDの中身を指す言葉で、GitHub Actionsのworkflowはその定義にあたる。</p>
     </div>
 
   </div>
@@ -89,21 +91,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="ci-cd.html">CI/CD</a></div>
-          <p class="kw-desc">Pipeline と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">パイプラインで実現する自動化の考え方。</p>
           <a class="kw-page" href="ci-cd.html">P.256</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="build.html">Build</a></div>
-          <p class="kw-desc">Pipeline と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">パイプラインの最初に置かれる工程。</p>
           <a class="kw-page" href="build.html">P.260</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="github-actions.html">GitHub Actions</a></div>
-          <p class="kw-desc">Pipeline と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">パイプラインを定義し実行できるサービス。</p>
           <a class="kw-page" href="github-actions.html">P.267</a>
         </div>
       </div>

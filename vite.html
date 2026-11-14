@@ -34,8 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>従来のビルドツールは、ファイルを1つ書き換えるたびに<br>
-             プロジェクト全体をバンドルし直す必要があり、待ち時間が長かった。</p>
+          <p>従来のビルドツールは、起動時にプロジェクト全体を<br>
+             バンドルする必要があり、大きくなるほど待ち時間が長かった。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -54,7 +54,7 @@
           <tbody>
             <tr><td class="rowhead">開発時の起動</td><td>全体をバンドルしてから起動</td><td class="h-docker">ESモジュールでそのまま配信</td></tr>
             <tr><td class="rowhead">変更の反映</td><td>変更範囲によって再バンドル</td><td class="h-docker">変更ファイルだけ即時反映（高速HMR）</td></tr>
-            <tr><td class="rowhead">本番ビルド</td><td>同じ仕組みでビルド</td><td class="h-docker">Rollupで最適化ビルド</td></tr>
+            <tr><td class="rowhead">本番ビルド</td><td>同じ仕組みでビルド</td><td class="h-docker">Rollup/Rolldownで最適化</td></tr>
           </tbody>
         </table>
       </div>

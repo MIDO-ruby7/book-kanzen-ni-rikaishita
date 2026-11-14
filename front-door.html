@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>Azureのグローバルな入口・配信寄りサービス。</p>
+        <p>Azureの世界規模の入口となる配信・負荷分散サービス。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>世界向けの入口と加速が欲しい。</p>
+          <p>世界中のユーザーが遠い拠点のサーバーに直接つなぐと、遅くなる。<br>
+             近い入口で受けて、速く安全にさばく仕組みが必要になった。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>CDN、ロードバランサー、WAFを別々に用意して組み合わせていた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">Front Door</th></tr>
+            <tr><th></th><th>個別構成</th><th class="h-docker">Front Door</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">入口</td><td>拠点ごとに用意</td><td class="h-docker">最寄りエッジで受付</td></tr>
+            <tr><td class="rowhead">役割</td><td>CDN・LB・WAFを別々</td><td class="h-docker">一つにまとめて提供</td></tr>
+            <tr><td class="rowhead">障害時</td><td>手動で切り替え</td><td class="h-docker">自動で正常拠点へ</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>Front Door で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">Front Door を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-globe"/></svg><div class="cap">世界各地の入口で受ける</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-scale"/></svg><div class="cap">正常な拠点へ振り分け</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-shield"/></svg><div class="cap">WAFで攻撃を防ぐ</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>CDN/入口の統合に近い。</p>
+      <p>Front Doorは、世界中に支店を持つ総合受付のようなもの。<br>
+         来客は最寄りの受付で案内を受け、担当の部署へ回される。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="cdn.html">CDN</a></div>
-          <p class="kw-desc">Front Door と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">ファイルを近い拠点から配る仕組み。Front Doorが内包する。</p>
           <a class="kw-page" href="cdn.html">P.293</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="dns.html">DNS</a></div>
-          <p class="kw-desc">Front Door と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">名前から接続先を引く仕組み。入口の手前で使われる。</p>
           <a class="kw-page" href="dns.html">P.45</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="load-balancer.html">Load Balancer</a></div>
-          <p class="kw-desc">Front Door と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">複数のサーバーへ振り分ける装置。</p>
           <a class="kw-page" href="load-balancer.html">P.313</a>
         </div>
       </div>

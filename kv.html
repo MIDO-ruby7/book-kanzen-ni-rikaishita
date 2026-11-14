@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>Cloudflareのキーバリューストア。</p>
+        <p>Cloudflareのキーバリュー型データストア。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>エッジで速い簡易データを持ちたい。</p>
+          <p>設定値などを毎回DBへ問い合わせると、エッジの速さが活かせない。<br>
+             世界中の拠点から、小さな値を素早く引ける置き場が求められた。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>設定値やセッションを、遠くにあるDBやRedisから毎回取得していた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">KV</th></tr>
+            <tr><th></th><th>遠隔DB</th><th class="h-docker">KV</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">データの形</td><td>テーブルとSQL</td><td class="h-docker">キーと値のペア</td></tr>
+            <tr><td class="rowhead">読み取り</td><td>毎回DBへ問合せ</td><td class="h-docker">拠点キャッシュで高速</td></tr>
+            <tr><td class="rowhead">書き込み</td><td>すぐ全体へ反映</td><td class="h-docker">結果整合性・反映に遅延</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>KV で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">KV を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-database"/></svg><div class="cap">キーと値で保存</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-bolt"/></svg><div class="cap">読み取りが速い</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-sync"/></svg><div class="cap">反映には時間がかかる</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>設定やセッション寄り。</p>
+      <p>KVは、各地の店舗に貼られた掲示板のようなもの。<br>
+         読むのは速いが、貼り替えが全店に行き渡るには少し時間がいる。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="cf-workers.html">Workers</a></div>
-          <p class="kw-desc">KV と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">KVを読み書きする、エッジの実行環境。</p>
           <a class="kw-page" href="cf-workers.html">P.357</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="r2.html">R2</a></div>
-          <p class="kw-desc">KV と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">大きなファイルはこちらへ置く。</p>
           <a class="kw-page" href="r2.html">P.359</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="redis.html">Redis</a></div>
-          <p class="kw-desc">KV と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">強い整合性が必要ならRedisなど別の手段もある。</p>
           <a class="kw-page" href="redis.html">P.107</a>
         </div>
       </div>

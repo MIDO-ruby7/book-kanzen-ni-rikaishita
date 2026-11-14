@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>Meta発のオープン寄りLLM系列。</p>
+        <p>Metaが公開している、重みを入手できるLLM系列。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>自前ホストや研究で使いたい。</p>
+          <p>高性能なLLMはAPIでしか使えず、中身を調べたり改良したりしにくかった。<br>
+             Metaが重みを公開したことで、研究や自前運用が広がった。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>LLMは提供元のAPIを通してしか使えなかった。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">Llama</th></tr>
+            <tr><th></th><th>API利用のみ</th><th class="h-docker">Llama</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">入手</td><td>提供元のサーバー経由</td><td class="h-docker">重みをダウンロード</td></tr>
+            <tr><td class="rowhead">運用場所</td><td>提供元のクラウド</td><td class="h-docker">自分のPCやサーバー</td></tr>
+            <tr><td class="rowhead">注意</td><td>規約はAPI利用のもの</td><td class="h-docker">独自ライセンスに従う</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>Llama で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">Llama を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-package"/></svg><div class="cap">重みを公開</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-server"/></svg><div class="cap">自前の環境で動かす</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-branch"/></svg><div class="cap">派生モデルが多い</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>派生モデルが多い。</p>
+      <p>「オープン」と言われるが、独自ライセンスで条件があり、厳密にはOSSではない。<br>
+         初期は「LLaMA」と表記された。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="ollama.html">Ollama</a></div>
-          <p class="kw-desc">Llama と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">Llamaを手元で動かす簡単なツール。</p>
           <a class="kw-page" href="ollama.html">P.405</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="vllm.html">vLLM</a></div>
-          <p class="kw-desc">Llama と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">サーバーで高速に動かす実装。</p>
           <a class="kw-page" href="vllm.html">P.406</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="llm.html">LLM</a></div>
-          <p class="kw-desc">Llama と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">Llamaが属する種類のモデル。</p>
           <a class="kw-page" href="llm.html">P.383</a>
         </div>
       </div>

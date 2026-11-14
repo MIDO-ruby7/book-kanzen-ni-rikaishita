@@ -53,7 +53,7 @@
           <tbody>
             <tr><td class="rowhead">受け渡し</td><td>その場で実行</td><td class="h-docker">キューに入れて後で処理</td></tr>
             <tr><td class="rowhead">ピーク</td><td>サーバーが落ちる</td><td class="h-docker">溜めてならせる</td></tr>
-            <tr><td class="rowhead">再試行</td><td>自前</td><td class="h-docker">可視性タイムアウト等で再配信</td></tr>
+            <tr><td class="rowhead">再試行</td><td>自前</td><td class="h-docker">失敗しても再配信できる</td></tr>
             <tr><td class="rowhead">結合</td><td>強い</td><td class="h-docker">生産者と消費者を分けられる</td></tr>
           </tbody>
         </table>
@@ -77,7 +77,7 @@
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
       <p>Simple Queue Service。<br>
-         Pub/SubのSNSと組み合わせることも多い。</p>
+         Pub/Sub型のSNSと組み合わせることも多い。</p>
     </div>
 
   </div>

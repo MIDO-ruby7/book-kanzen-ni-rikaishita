@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>AzureのマネージドKubernetes。</p>
+        <p>Azureが管理するKubernetesのクラスター。</p>
       </div>
     </div>
 
@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>自前K8s運用がつらい。</p>
+          <p>Kubernetesは強力だが、クラスターの構築や更新を自前で行うのは難しい。<br>
+             管理の難しい部分をクラウドに任せる形が求められた。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>サーバーを用意し、Kubernetesを自分で構築・更新・監視していた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">AKS</th></tr>
+            <tr><th></th><th>自前K8s</th><th class="h-docker">AKS</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">制御部</td><td>自分で構築・運用</td><td class="h-docker">Azureが管理</td></tr>
+            <tr><td class="rowhead">更新</td><td>手順を自分で組む</td><td class="h-docker">更新機能あり</td></tr>
+            <tr><td class="rowhead">同種サービス</td><td>なし</td><td class="h-docker">GKE・EKS相当</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>AKS で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">AKS を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-layers"/></svg><div class="cap">Kubernetesを管理付きで提供</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-sync"/></svg><div class="cap">更新作業を支援</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-cloud"/></svg><div class="cap">Azureの他サービスと連携</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>GKE/EKS相当。</p>
+      <p>AKSは、管制塔の運営をAzureが引き受けてくれる空港。<br>
+         利用者は飛行機（アプリ）の運航に集中できる。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="089-kubernetes.html">Kubernetes</a></div>
-          <p class="kw-desc">AKS と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">AKSの中身となる、コンテナ運用の仕組み。</p>
           <a class="kw-page" href="089-kubernetes.html">P.286</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="container-apps.html">Container Apps</a></div>
-          <p class="kw-desc">AKS と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">K8sを意識せず使える、より手軽な選択肢。</p>
           <a class="kw-page" href="container-apps.html">P.340</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="helm.html">Helm</a></div>
-          <p class="kw-desc">AKS と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">AKSにアプリを導入するときによく使うツール。</p>
           <a class="kw-page" href="helm.html">P.310</a>
         </div>
       </div>

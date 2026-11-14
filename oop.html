@@ -34,7 +34,8 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>巨大な手続きだけだと整理しにくい。</p>
+          <p>プログラムが大きくなると、手続きとデータが散らばって管理しきれなくなった。<br>
+             そこで、データと処理を1つにまとめて扱う方法が生まれた。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +46,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>データと、それを扱う関数を別々に書いていた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">OOP</th></tr>
+            <tr><th></th><th>手続き型</th><th class="h-docker">OOP</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">まとめ方</td><td>処理の順番</td><td class="h-docker">データと操作を一体化</td></tr>
+            <tr><td class="rowhead">変更の影響</td><td>全体へ波及</td><td class="h-docker">担当内に収まる</td></tr>
+            <tr><td class="rowhead">柱</td><td>関数中心</td><td class="h-docker">カプセル化・継承など</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>OOP で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">OOP を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-package"/></svg><div class="cap">データと処理をまとめる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-users"/></svg><div class="cap">オブジェクトが協力する</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-puzzle"/></svg><div class="cap">部品として組み立てる</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,8 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>Object-Oriented Programming。</p>
+      <p>OOPは「役割を持った社員が協力する会社」のようなもの。<br>
+         経理は経理の仕事だけ、と任せ合って全体を回す。</p>
     </div>
 
   </div>
@@ -89,21 +90,21 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="inheritance-oop.html">継承</a></div>
-          <p class="kw-desc">OOP と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">OOPの機能の1つ。</p>
           <a class="kw-page" href="inheritance-oop.html">P.429</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="encapsulation.html">カプセル化</a></div>
-          <p class="kw-desc">OOP と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">OOPの柱の1つ。</p>
           <a class="kw-page" href="encapsulation.html">P.430</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="solid.html">SOLID</a></div>
-          <p class="kw-desc">OOP と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">OOPの設計を良くする原則。</p>
           <a class="kw-page" href="solid.html">P.419</a>
         </div>
       </div>
