@@ -301,7 +301,7 @@ module.exports = {
     'vpc.html',                        // 292 VPC (Ch16)
     'cdn.html',                        // 293 CDN (Ch16)
     'object-storage.html',             // 294 Object Storage (Ch16)
-    'serverless.html',                 // 295 Serverless (Ch16)
+    'serverless.html',                 // 295 サーバレスアーキテクチャ (Ch16)
     'reverse-proxy.html',              // 296 Reverse Proxy (Ch16)
     'nginx.html',                      // 297 Nginx (Ch16)
     'topology.html',                   // 298 トポロジー (Ch16)

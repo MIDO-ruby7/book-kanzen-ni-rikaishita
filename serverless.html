@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<title>エンジニア用語辞典 — Serverless</title>
+<title>エンジニア用語辞典 — サーバレスアーキテクチャ</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,14 +17,14 @@
     <div class="title-row">
       <div class="num-col"><div class="number">295</div></div>
       <div class="titles">
-        <h1 style="font-size:32pt"><ruby>Serverless<rt>サーバレス</rt></ruby></h1>
+        <h1 class="two-line" style="font-size:29pt">サーバレス<br>アーキテクチャ</h1>
       </div>
     </div>
 
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>サーバー常時管理を薄くする考え方。</p>
+        <p>サーバーの用意や運用をクラウド側に任せ、イベントが来たときだけ処理を動かすアーキテクチャの考え方。</p>
       </div>
     </div>
 
@@ -34,7 +34,7 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>暇な常時稼働がもったいない。</p>
+          <p>常時サーバーを立てておくと、トラフィックが少ない時間帯も料金と運用コストがかかる。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +45,16 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。</p>
+        <p>EC2やVMのように、OSごとサーバーを借りて常時稼働させる構成が一般的だった。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>あいまいなまま</th><th class="h-docker">Serverless</th></tr>
+            <tr><th></th><th>常時稼働サーバー</th><th class="h-docker">サーバレス</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">共有</td><td>人ごとに意味が違う</td><td class="h-docker">共通語として話せる</td></tr>
-            <tr><td class="rowhead">判断</td><td>感覚頼み</td><td class="h-docker">観点が揃う</td></tr>
-            <tr><td class="rowhead">学習</td><td>点で終わる</td><td class="h-docker">周辺語へ広げやすい</td></tr>
-            <tr><td class="rowhead">実務</td><td>その場しのぎ</td><td class="h-docker">次の行動に移しやすい</td></tr>
+            <tr><td class="rowhead">サーバー管理</td><td>OS・パッチ・容量を自分で面倒見</td><td class="h-docker">クラウド側が面倒見</td></tr>
+            <tr><td class="rowhead">課金</td><td>起動している時間分を払う</td><td class="h-docker">実行時間・リクエスト数に応じて</td></tr>
+            <tr><td class="rowhead">スケール</td><td>手動設定や別途の仕組みが必要</td><td class="h-docker">イベント量に応じて自動で増減</td></tr>
+            <tr><td class="rowhead">向いている用途</td><td>常時接続が必要なアプリ</td><td class="h-docker">断続的・突発的な処理</td></tr>
           </tbody>
         </table>
       </div>
@@ -63,12 +63,12 @@
     <!-- ③ -->
     <section class="qa">
       <span class="badge">3</span>
-      <h2>Serverless で何ができるようになった？</h2>
+      <h2>サーバレスアーキテクチャ で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-check"/></svg><div class="cap">Serverless を自分の言葉で説明できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">現場の会話やドキュメントについていける</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-gear"/></svg><div class="cap">関連する次の言葉へ進める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-cloud"/></svg><div class="cap">APIやバッチをイベント駆動で動かせる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-clock"/></svg><div class="cap">アイドル時間の運用コストを抑えられる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">小さく始めて需要に合わせて広げやすい</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,7 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>見えないだけでサーバーはある。</p>
+      <p>サーバーがないわけではなく、管理を見えなくした設計。LambdaやCloud Functionsが代表例。</p>
     </div>
 
   </div>
@@ -86,24 +86,42 @@
     <h2 class="side-title">関連キーワード</h2>
     
     <div class="side-group">
+      <div class="group-label">比較する構成</div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="015-vm.html">VM</a></div>
+          <p class="kw-desc">OSごと借りて常時動かす従来型。</p>
+          <a class="kw-page" href="015-vm.html">P.285</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="089-kubernetes.html">Kubernetes</a></div>
+          <p class="kw-desc">コンテナを常時管理する別アプローチ。</p>
+          <a class="kw-page" href="089-kubernetes.html">P.286</a>
+        </div>
+      </div>
+    </div>
+    <div class="side-group">
+      <div class="group-label">一緒に覚えたい言葉</div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="lambda.html">Lambda</a></div>
-          <p class="kw-desc">Serverless と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">AWSの代表的なサーバレス実行環境。</p>
           <a class="kw-page" href="lambda.html">P.320</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="fargate.html">Fargate</a></div>
-          <p class="kw-desc">Serverless と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">コンテナをサーバレスに近い形で動かす。</p>
           <a class="kw-page" href="fargate.html">P.319</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="cloud-functions.html">Cloud Functions</a></div>
-          <p class="kw-desc">Serverless と一緒に出てきたときの手がかり。</p>
+          <p class="kw-desc">GCPの関数実行サービス。</p>
           <a class="kw-page" href="cloud-functions.html">P.337</a>
         </div>
       </div>

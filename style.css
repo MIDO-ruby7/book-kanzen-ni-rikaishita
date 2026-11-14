@@ -152,7 +152,7 @@ body { margin: 0; }
 
 /* ②：比較表 */
 .cmp { width: 100%; border-collapse: collapse; margin-top: 3mm; font-size: 7.6pt; table-layout: fixed; }
-.cmp th, .cmp td { border: 1px solid var(--rule-strong); padding: 1.5mm 2.5mm; text-align: center; vertical-align: middle; }
+.cmp th, .cmp td { border: 1px solid var(--rule-strong); padding: 1.5mm 2.5mm; text-align: left; vertical-align: middle; }
 .cmp thead th { font-weight: 700; }
 .cmp thead th.h-docker { background: var(--teal-panel); color: var(--teal-dark); }
 .cmp td.h-docker { background: var(--teal-panel); }
