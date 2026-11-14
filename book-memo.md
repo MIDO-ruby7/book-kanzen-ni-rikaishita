@@ -292,7 +292,7 @@ SRE / エラーバジェット / インシデント / ポストモーテム /
 ### 追加語（第4次）
 - Ch 2 Webのしくみ：イントラネット（インターネットとの対比）
 - Ch 18 AWS：ダイレクトコネクト / トランジットゲートウェイ（コネクト）
-- Ch 23 セキュリティ：FDE（Full Disk Encryption）
+- Ch 32 チームとロール：FDE（Forward Deployed Engineer）※Full Disk Encryptionとは別
 - SSH は Ch 12 に既出。派生（SSH鍵・SSHトンネル）は要確認
 
 ### 新章：IT業界のしくみ（開発プロセスの隣）

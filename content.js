@@ -61,23 +61,19 @@ module.exports = {
               "items": [
                 {
                   "name": "Clone",
-                  "desc": "リポジトリを丸ごと手元にコピーすること。",
-                  "page": 2
+                  "desc": "リポジトリを丸ごと手元にコピーすること。"
                 },
                 {
                   "name": "Commit",
-                  "desc": "変更を記録として保存する単位。",
-                  "page": 5
+                  "desc": "変更を記録として保存する単位。"
                 },
                 {
                   "name": "GitHub",
-                  "desc": "リモートリポジトリを置いておけるWebサービス。",
-                  "page": 17
+                  "desc": "リモートリポジトリを置いておけるWebサービス。"
                 },
                 {
                   "name": "Working Tree",
-                  "desc": "今実際に作業しているファイル群のこと。",
-                  "page": 18
+                  "desc": "今実際に作業しているファイル群のこと。"
                 }
               ]
             }
@@ -140,23 +136,19 @@ module.exports = {
               "items": [
                 {
                   "name": "Repository",
-                  "desc": "変更履歴をまとめて記録する保管庫。",
-                  "page": 1
+                  "desc": "変更履歴をまとめて記録する保管庫。"
                 },
                 {
                   "name": "Pull",
-                  "desc": "クローン後、最新の変更を取り込む操作。",
-                  "page": 7
+                  "desc": "クローン後、最新の変更を取り込む操作。"
                 },
                 {
                   "name": "Origin",
-                  "desc": "cloneした際に自動で付くリモートの標準名。",
-                  "page": 19
+                  "desc": "cloneした際に自動で付くリモートの標準名。"
                 },
                 {
                   "name": "SSH",
-                  "desc": "安全に通信するための鍵認証の仕組み。",
-                  "page": 605
+                  "desc": "安全に通信するための鍵認証の仕組み。"
                 }
               ]
             }
@@ -219,23 +211,19 @@ module.exports = {
               "items": [
                 {
                   "name": "OSS",
-                  "desc": "ソースコードが公開されたソフトウェア。",
-                  "page": 15
+                  "desc": "ソースコードが公開されたソフトウェア。"
                 },
                 {
                   "name": "コントリビュート",
-                  "desc": "プロジェクトへ改善を還元すること。",
-                  "page": 16
+                  "desc": "プロジェクトへ改善を還元すること。"
                 },
                 {
                   "name": "Pull Request",
-                  "desc": "変更を元のリポジトリに取り込んでもらう提案。",
-                  "page": 20
+                  "desc": "変更を元のリポジトリに取り込んでもらう提案。"
                 },
                 {
                   "name": "Upstream",
-                  "desc": "フォーク元の本家リポジトリを指す言葉。",
-                  "page": 21
+                  "desc": "フォーク元の本家リポジトリを指す言葉。"
                 }
               ]
             }
@@ -298,23 +286,19 @@ module.exports = {
               "items": [
                 {
                   "name": "Commit",
-                  "desc": "ブランチ上に積み重ねる変更の記録。",
-                  "page": 5
+                  "desc": "ブランチ上に積み重ねる変更の記録。"
                 },
                 {
                   "name": "Merge",
-                  "desc": "分かれたブランチをひとつに統合する操作。",
-                  "page": 8
+                  "desc": "分かれたブランチをひとつに統合する操作。"
                 },
                 {
                   "name": "main / master",
-                  "desc": "プロジェクトの本流となるブランチの名前。",
-                  "page": 25
+                  "desc": "プロジェクトの本流となるブランチの名前。"
                 },
                 {
                   "name": "Checkout",
-                  "desc": "作業対象のブランチを切り替える操作。",
-                  "page": 24
+                  "desc": "作業対象のブランチを切り替える操作。"
                 }
               ]
             }
@@ -377,23 +361,19 @@ module.exports = {
               "items": [
                 {
                   "name": "Branch",
-                  "desc": "コミットを積み重ねる並行世界。",
-                  "page": 4
+                  "desc": "コミットを積み重ねる並行世界。"
                 },
                 {
                   "name": "Push",
-                  "desc": "コミットをリモートに送る操作。",
-                  "page": 6
+                  "desc": "コミットをリモートに送る操作。"
                 },
                 {
                   "name": "Staging Area",
-                  "desc": "コミットする変更を仮に置いておく場所。",
-                  "page": 22
+                  "desc": "コミットする変更を仮に置いておく場所。"
                 },
                 {
                   "name": "Diff",
-                  "desc": "変更前後の差分を表示する仕組み。",
-                  "page": 23
+                  "desc": "変更前後の差分を表示する仕組み。"
                 }
               ]
             }
@@ -456,23 +436,19 @@ module.exports = {
               "items": [
                 {
                   "name": "Commit",
-                  "desc": "pushする変更の記録の単位。",
-                  "page": 5
+                  "desc": "pushする変更の記録の単位。"
                 },
                 {
                   "name": "Pull",
-                  "desc": "逆にリモートの変更を取り込む操作。",
-                  "page": 7
+                  "desc": "逆にリモートの変更を取り込む操作。"
                 },
                 {
                   "name": "CI/CD",
-                  "desc": "pushをきっかけに自動テスト・デプロイする仕組み。",
-                  "page": 705
+                  "desc": "pushをきっかけに自動テスト・デプロイする仕組み。"
                 },
                 {
                   "name": "Force Push",
-                  "desc": "履歴を強制的に上書きするpush。取り扱い注意。",
-                  "page": 27
+                  "desc": "履歴を強制的に上書きするpush。取り扱い注意。"
                 }
               ]
             }
@@ -535,23 +511,19 @@ module.exports = {
               "items": [
                 {
                   "name": "Push",
-                  "desc": "自分の変更をリモートに送る操作。",
-                  "page": 6
+                  "desc": "自分の変更をリモートに送る操作。"
                 },
                 {
                   "name": "Merge",
-                  "desc": "pull の中で行われている統合処理。",
-                  "page": 8
+                  "desc": "pull の中で行われている統合処理。"
                 },
                 {
                   "name": "Fetch",
-                  "desc": "リモートの変更を取得だけしてmergeしない操作。",
-                  "page": 26
+                  "desc": "リモートの変更を取得だけしてmergeしない操作。"
                 },
                 {
                   "name": "Pull Request",
-                  "desc": "コードレビューを経て取り込む提案の仕組み。",
-                  "page": 20
+                  "desc": "コードレビューを経て取り込む提案の仕組み。"
                 }
               ]
             }
@@ -614,23 +586,19 @@ module.exports = {
               "items": [
                 {
                   "name": "Branch",
-                  "desc": "mergeで統合される側の並行世界。",
-                  "page": 4
+                  "desc": "mergeで統合される側の並行世界。"
                 },
                 {
                   "name": "Rebase",
-                  "desc": "mergeとは別の、もう一つの統合方法。",
-                  "page": 9
+                  "desc": "mergeとは別の、もう一つの統合方法。"
                 },
                 {
                   "name": "Conflict",
-                  "desc": "自動で統合できず人の判断が必要になる状態。",
-                  "page": 11
+                  "desc": "自動で統合できず人の判断が必要になる状態。"
                 },
                 {
                   "name": "Fast-forward",
-                  "desc": "分岐がない場合に、そのままつなげる統合方法。",
-                  "page": 28
+                  "desc": "分岐がない場合に、そのままつなげる統合方法。"
                 }
               ]
             }
@@ -693,23 +661,19 @@ module.exports = {
               "items": [
                 {
                   "name": "Merge",
-                  "desc": "rebaseと並ぶ、もう一つの統合方法。",
-                  "page": 8
+                  "desc": "rebaseと並ぶ、もう一つの統合方法。"
                 },
                 {
                   "name": "Branch",
-                  "desc": "土台を乗せ替える対象そのもの。",
-                  "page": 4
+                  "desc": "土台を乗せ替える対象そのもの。"
                 },
                 {
                   "name": "HEAD",
-                  "desc": "今いるコミットの位置を指す目印。",
-                  "page": 29
+                  "desc": "今いるコミットの位置を指す目印。"
                 },
                 {
                   "name": "Squash",
-                  "desc": "複数のコミットを1つにまとめる操作。",
-                  "page": 30
+                  "desc": "複数のコミットを1つにまとめる操作。"
                 }
               ]
             }
@@ -772,23 +736,19 @@ module.exports = {
               "items": [
                 {
                   "name": "Commit",
-                  "desc": "cherry-pickで摘み取る対象の単位。",
-                  "page": 5
+                  "desc": "cherry-pickで摘み取る対象の単位。"
                 },
                 {
                   "name": "Branch",
-                  "desc": "摘み取った先の並行世界。",
-                  "page": 4
+                  "desc": "摘み取った先の並行世界。"
                 },
                 {
                   "name": "Hotfix",
-                  "desc": "本番の緊急バグを直すための修正のこと。",
-                  "page": 31
+                  "desc": "本番の緊急バグを直すための修正のこと。"
                 },
                 {
                   "name": "SHA",
-                  "desc": "コミットを一意に識別するハッシュ値。",
-                  "page": 32
+                  "desc": "コミットを一意に識別するハッシュ値。"
                 }
               ]
             }
@@ -851,23 +811,19 @@ module.exports = {
               "items": [
                 {
                   "name": "Merge",
-                  "desc": "コンフリクトが表面化しやすい統合操作。",
-                  "page": 8
+                  "desc": "コンフリクトが表面化しやすい統合操作。"
                 },
                 {
                   "name": "Pull",
-                  "desc": "コンフリクトが判明するもう一つの場面。",
-                  "page": 7
+                  "desc": "コンフリクトが判明するもう一つの場面。"
                 },
                 {
                   "name": "マージツール",
-                  "desc": "衝突箇所を見比べながら解決を助けるツール。",
-                  "page": 33
+                  "desc": "衝突箇所を見比べながら解決を助けるツール。"
                 },
                 {
                   "name": "Diff",
-                  "desc": "変更前後の違いを比較する表示形式。",
-                  "page": 23
+                  "desc": "変更前後の違いを比較する表示形式。"
                 }
               ]
             }
@@ -930,18 +886,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Reset",
-                  "desc": "revertとよく比較される巻き戻し操作。",
-                  "page": 13
+                  "desc": "revertとよく比較される巻き戻し操作。"
                 },
                 {
                   "name": "Commit",
-                  "desc": "revertが打ち消す対象の単位。",
-                  "page": 5
+                  "desc": "revertが打ち消す対象の単位。"
                 },
                 {
                   "name": "ロールバック",
-                  "desc": "システムを以前の状態に戻す一般的な言葉。",
-                  "page": 34
+                  "desc": "システムを以前の状態に戻す一般的な言葉。"
                 }
               ]
             }
@@ -1004,23 +957,19 @@ module.exports = {
               "items": [
                 {
                   "name": "Revert",
-                  "desc": "resetより安全な、共有履歴向けの巻き戻し。",
-                  "page": 12
+                  "desc": "resetより安全な、共有履歴向けの巻き戻し。"
                 },
                 {
                   "name": "Commit",
-                  "desc": "resetで戻す先を指定する単位。",
-                  "page": 5
+                  "desc": "resetで戻す先を指定する単位。"
                 },
                 {
                   "name": "HEAD",
-                  "desc": "今いるコミットの位置を指す目印。",
-                  "page": 29
+                  "desc": "今いるコミットの位置を指す目印。"
                 },
                 {
                   "name": "Working Tree",
-                  "desc": "今実際に作業しているファイル群のこと。",
-                  "page": 18
+                  "desc": "今実際に作業しているファイル群のこと。"
                 }
               ]
             }
@@ -1083,23 +1032,19 @@ module.exports = {
               "items": [
                 {
                   "name": "Commit",
-                  "desc": "タグを貼り付ける対象そのもの。",
-                  "page": 5
+                  "desc": "タグを貼り付ける対象そのもの。"
                 },
                 {
                   "name": "Repository",
-                  "desc": "タグごと履歴を保管する場所。",
-                  "page": 1
+                  "desc": "タグごと履歴を保管する場所。"
                 },
                 {
                   "name": "セマンティックバージョニング",
-                  "desc": "v1.2.3のようにバージョンを意味づけて付けるルール。",
-                  "page": 552
+                  "desc": "v1.2.3のようにバージョンを意味づけて付けるルール。"
                 },
                 {
                   "name": "リリースノート",
-                  "desc": "そのバージョンで何が変わったかをまとめた文書。",
-                  "page": 35
+                  "desc": "そのバージョンで何が変わったかをまとめた文書。"
                 }
               ]
             }
@@ -1162,23 +1107,19 @@ module.exports = {
               "items": [
                 {
                   "name": "Fork",
-                  "desc": "OSSに手を加えるための最初の一歩。",
-                  "page": 3
+                  "desc": "OSSに手を加えるための最初の一歩。"
                 },
                 {
                   "name": "コントリビュート",
-                  "desc": "OSSに改善を還元する行為そのもの。",
-                  "page": 16
+                  "desc": "OSSに改善を還元する行為そのもの。"
                 },
                 {
                   "name": "ライセンス",
-                  "desc": "そのソフトウェアの利用・改変・再配布のルール。",
-                  "page": 36
+                  "desc": "そのソフトウェアの利用・改変・再配布のルール。"
                 },
                 {
                   "name": "メンテナー",
-                  "desc": "OSSプロジェクトの管理・運営を担う人。",
-                  "page": 37
+                  "desc": "OSSプロジェクトの管理・運営を担う人。"
                 }
               ]
             }
@@ -1240,23 +1181,19 @@ module.exports = {
               "items": [
                 {
                   "name": "Fork",
-                  "desc": "コントリビュートの第一歩となる複製。",
-                  "page": 3
+                  "desc": "コントリビュートの第一歩となる複製。"
                 },
                 {
                   "name": "OSS",
-                  "desc": "コントリビュートの対象になるプロジェクト。",
-                  "page": 15
+                  "desc": "コントリビュートの対象になるプロジェクト。"
                 },
                 {
                   "name": "Pull Request",
-                  "desc": "変更を提案してレビューしてもらう仕組み。",
-                  "page": 20
+                  "desc": "変更を提案してレビューしてもらう仕組み。"
                 },
                 {
                   "name": "Issue",
-                  "desc": "バグ報告や要望を管理する場所。",
-                  "page": 38
+                  "desc": "バグ報告や要望を管理する場所。"
                 }
               ]
             }
@@ -1320,18 +1257,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Repository",
-                  "desc": "GitHub上に置く対象。",
-                  "page": 1
+                  "desc": "GitHub上に置く対象。"
                 },
                 {
                   "name": "Pull Request",
-                  "desc": "変更を取り込む提案。",
-                  "page": 20
+                  "desc": "変更を取り込む提案。"
                 },
                 {
                   "name": "Issue",
-                  "desc": "要望やバグの受け皿。",
-                  "page": 38
+                  "desc": "要望やバグの受け皿。"
                 }
               ]
             }
@@ -1395,18 +1329,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Staging Area",
-                  "desc": "コミット直前の仮置き場。",
-                  "page": 22
+                  "desc": "コミット直前の仮置き場。"
                 },
                 {
                   "name": "Commit",
-                  "desc": "確定した履歴の単位。",
-                  "page": 5
+                  "desc": "確定した履歴の単位。"
                 },
                 {
                   "name": "Reset",
-                  "desc": "作業ツリーやHEADを動かす操作。",
-                  "page": 13
+                  "desc": "作業ツリーやHEADを動かす操作。"
                 }
               ]
             }
@@ -1470,18 +1401,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Clone",
-                  "desc": "originが作られる入口。",
-                  "page": 2
+                  "desc": "originが作られる入口。"
                 },
                 {
                   "name": "Push",
-                  "desc": "originへ送る操作。",
-                  "page": 6
+                  "desc": "originへ送る操作。"
                 },
                 {
                   "name": "Upstream",
-                  "desc": "fork元など、もう一つのリモート名。",
-                  "page": 21
+                  "desc": "fork元など、もう一つのリモート名。"
                 }
               ]
             }
@@ -1545,18 +1473,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Fork",
-                  "desc": "本家と別に作業するときに使う。",
-                  "page": 3
+                  "desc": "本家と別に作業するときに使う。"
                 },
                 {
                   "name": "Branch",
-                  "desc": "PRの土台になる作業枝。",
-                  "page": 4
+                  "desc": "PRの土台になる作業枝。"
                 },
                 {
                   "name": "Merge",
-                  "desc": "PRが通ったあとの取り込み。",
-                  "page": 8
+                  "desc": "PRが通ったあとの取り込み。"
                 }
               ]
             }
@@ -1620,18 +1545,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Fork",
-                  "desc": "upstreamを意識する典型シーン。",
-                  "page": 3
+                  "desc": "upstreamを意識する典型シーン。"
                 },
                 {
                   "name": "Origin",
-                  "desc": "自分のリモート側の名前。",
-                  "page": 19
+                  "desc": "自分のリモート側の名前。"
                 },
                 {
                   "name": "Pull Request",
-                  "desc": "upstreamへ返す提案。",
-                  "page": 20
+                  "desc": "upstreamへ返す提案。"
                 }
               ]
             }
@@ -1695,18 +1617,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Commit",
-                  "desc": "ステージした内容を確定する。",
-                  "page": 5
+                  "desc": "ステージした内容を確定する。"
                 },
                 {
                   "name": "Working Tree",
-                  "desc": "まだステージしていない作業中の状態。",
-                  "page": 18
+                  "desc": "まだステージしていない作業中の状態。"
                 },
                 {
                   "name": "Diff",
-                  "desc": "ステージ前後の差分を見る。",
-                  "page": 23
+                  "desc": "ステージ前後の差分を見る。"
                 }
               ]
             }
@@ -1770,18 +1689,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Commit",
-                  "desc": "差分が固まった単位。",
-                  "page": 5
+                  "desc": "差分が固まった単位。"
                 },
                 {
                   "name": "Conflict",
-                  "desc": "差分がぶつかり合う状態。",
-                  "page": 11
+                  "desc": "差分がぶつかり合う状態。"
                 },
                 {
                   "name": "Pull Request",
-                  "desc": "diffをレビューする場。",
-                  "page": 20
+                  "desc": "diffをレビューする場。"
                 }
               ]
             }
@@ -1845,18 +1761,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Branch",
-                  "desc": "checkoutで切り替える対象。",
-                  "page": 4
+                  "desc": "checkoutで切り替える対象。"
                 },
                 {
                   "name": "Working Tree",
-                  "desc": "切り替え後に並ぶファイル群。",
-                  "page": 18
+                  "desc": "切り替え後に並ぶファイル群。"
                 },
                 {
                   "name": "HEAD",
-                  "desc": "今いる位置を示すポインタ。",
-                  "page": 29
+                  "desc": "今いる位置を示すポインタ。"
                 }
               ]
             }
@@ -1920,18 +1833,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Branch",
-                  "desc": "main/masterもブランチの一種。",
-                  "page": 4
+                  "desc": "main/masterもブランチの一種。"
                 },
                 {
                   "name": "Merge",
-                  "desc": "本流へ取り込む操作。",
-                  "page": 8
+                  "desc": "本流へ取り込む操作。"
                 },
                 {
                   "name": "Pull Request",
-                  "desc": "本流へ入れる提案。",
-                  "page": 20
+                  "desc": "本流へ入れる提案。"
                 }
               ]
             }
@@ -1995,18 +1905,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Pull",
-                  "desc": "取得して取り込む一連の操作。",
-                  "page": 7
+                  "desc": "取得して取り込む一連の操作。"
                 },
                 {
                   "name": "Merge",
-                  "desc": "fetchのあとに選べる統合。",
-                  "page": 8
+                  "desc": "fetchのあとに選べる統合。"
                 },
                 {
                   "name": "Origin",
-                  "desc": "fetchする相手の名前。",
-                  "page": 19
+                  "desc": "fetchする相手の名前。"
                 }
               ]
             }
@@ -2070,18 +1977,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Push",
-                  "desc": "通常の送信。",
-                  "page": 6
+                  "desc": "通常の送信。"
                 },
                 {
                   "name": "Rebase",
-                  "desc": "force pushが必要になりやすい操作。",
-                  "page": 9
+                  "desc": "force pushが必要になりやすい操作。"
                 },
                 {
                   "name": "main / master",
-                  "desc": "通常は保護して禁ずる対象。",
-                  "page": 25
+                  "desc": "通常は保護して禁ずる対象。"
                 }
               ]
             }
@@ -2145,18 +2049,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Merge",
-                  "desc": "fast-forwardもmergeの一種。",
-                  "page": 8
+                  "desc": "fast-forwardもmergeの一種。"
                 },
                 {
                   "name": "Branch",
-                  "desc": "分岐の有無で可否が変わる。",
-                  "page": 4
+                  "desc": "分岐の有無で可否が変わる。"
                 },
                 {
                   "name": "Rebase",
-                  "desc": "一直線に保つ別手法。",
-                  "page": 9
+                  "desc": "一直線に保つ別手法。"
                 }
               ]
             }
@@ -2220,18 +2121,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Checkout",
-                  "desc": "HEADを動かす操作。",
-                  "page": 24
+                  "desc": "HEADを動かす操作。"
                 },
                 {
                   "name": "Reset",
-                  "desc": "HEADの位置を付け替える。",
-                  "page": 13
+                  "desc": "HEADの位置を付け替える。"
                 },
                 {
                   "name": "Rebase",
-                  "desc": "HEADの履歴を付け替える操作。",
-                  "page": 9
+                  "desc": "HEADの履歴を付け替える操作。"
                 }
               ]
             }
@@ -2295,18 +2193,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Rebase",
-                  "desc": "interactive rebaseでsquashできる。",
-                  "page": 9
+                  "desc": "interactive rebaseでsquashできる。"
                 },
                 {
                   "name": "Commit",
-                  "desc": "まとめた結果の単位。",
-                  "page": 5
+                  "desc": "まとめた結果の単位。"
                 },
                 {
                   "name": "Pull Request",
-                  "desc": "マージ時squashする運用も多い。",
-                  "page": 20
+                  "desc": "マージ時squashする運用も多い。"
                 }
               ]
             }
@@ -2370,18 +2265,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Cherry-pick",
-                  "desc": "hotfixコミットの移植によく使う。",
-                  "page": 10
+                  "desc": "hotfixコミットの移植によく使う。"
                 },
                 {
                   "name": "Branch",
-                  "desc": "hotfix専用枝を切ることが多い。",
-                  "page": 4
+                  "desc": "hotfix専用枝を切ることが多い。"
                 },
                 {
                   "name": "Tag",
-                  "desc": "修正リリースの目印。",
-                  "page": 14
+                  "desc": "修正リリースの目印。"
                 }
               ]
             }
@@ -2445,18 +2337,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Commit",
-                  "desc": "SHAが付く本体。",
-                  "page": 5
+                  "desc": "SHAが付く本体。"
                 },
                 {
                   "name": "Cherry-pick",
-                  "desc": "SHAを指定して取り込む。",
-                  "page": 10
+                  "desc": "SHAを指定して取り込む。"
                 },
                 {
                   "name": "Revert",
-                  "desc": "打ち消す対象もSHAで指せる。",
-                  "page": 12
+                  "desc": "打ち消す対象もSHAで指せる。"
                 }
               ]
             }
@@ -2520,18 +2409,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Conflict",
-                  "desc": "マージツールの出番。",
-                  "page": 11
+                  "desc": "マージツールの出番。"
                 },
                 {
                   "name": "Diff",
-                  "desc": "比較表示の基本。",
-                  "page": 23
+                  "desc": "比較表示の基本。"
                 },
                 {
                   "name": "Merge",
-                  "desc": "衝突が起きうる操作。",
-                  "page": 8
+                  "desc": "衝突が起きうる操作。"
                 }
               ]
             }
@@ -2595,18 +2481,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Revert",
-                  "desc": "Git上で変更を打ち消す操作。",
-                  "page": 12
+                  "desc": "Git上で変更を打ち消す操作。"
                 },
                 {
                   "name": "Reset",
-                  "desc": "履歴の位置を付け替える操作。",
-                  "page": 13
+                  "desc": "履歴の位置を付け替える操作。"
                 },
                 {
                   "name": "Tag",
-                  "desc": "戻す先の目印になる。",
-                  "page": 14
+                  "desc": "戻す先の目印になる。"
                 }
               ]
             }
@@ -2670,18 +2553,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Tag",
-                  "desc": "ノートが紐づくバージョン目印。",
-                  "page": 14
+                  "desc": "ノートが紐づくバージョン目印。"
                 },
                 {
                   "name": "セマンティックバージョニング",
-                  "desc": "番号の意味づけ。",
-                  "page": 552
+                  "desc": "番号の意味づけ。"
                 },
                 {
                   "name": "Commit",
-                  "desc": "ノートの材料になる履歴。",
-                  "page": 5
+                  "desc": "ノートの材料になる履歴。"
                 }
               ]
             }
@@ -2745,18 +2625,15 @@ module.exports = {
               "items": [
                 {
                   "name": "OSS",
-                  "desc": "ライセンスとセットで語られる。",
-                  "page": 15
+                  "desc": "ライセンスとセットで語られる。"
                 },
                 {
                   "name": "コントリビュート",
-                  "desc": "貢献時もライセンスに従う。",
-                  "page": 16
+                  "desc": "貢献時もライセンスに従う。"
                 },
                 {
                   "name": "メンテナー",
-                  "desc": "プロジェクト側の管理者。",
-                  "page": 37
+                  "desc": "プロジェクト側の管理者。"
                 }
               ]
             }
@@ -2820,18 +2697,15 @@ module.exports = {
               "items": [
                 {
                   "name": "OSS",
-                  "desc": "メンテナーが支える対象。",
-                  "page": 15
+                  "desc": "メンテナーが支える対象。"
                 },
                 {
                   "name": "コントリビュート",
-                  "desc": "メンテナーがレビューする側。",
-                  "page": 16
+                  "desc": "メンテナーがレビューする側。"
                 },
                 {
                   "name": "Issue",
-                  "desc": "メンテ業務の入口。",
-                  "page": 38
+                  "desc": "メンテ業務の入口。"
                 }
               ]
             }
@@ -2895,18 +2769,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Pull Request",
-                  "desc": "Issueを閉じる実装提案。",
-                  "page": 20
+                  "desc": "Issueを閉じる実装提案。"
                 },
                 {
                   "name": "コントリビュート",
-                  "desc": "Issue起票も貢献の入口。",
-                  "page": 16
+                  "desc": "Issue起票も貢献の入口。"
                 },
                 {
                   "name": "GitHub",
-                  "desc": "Issueが付いている代表サービス。",
-                  "page": 17
+                  "desc": "Issueが付いている代表サービス。"
                 }
               ]
             }
@@ -2920,7 +2791,7 @@ module.exports = {
       "entries": [
         {
           "id": "client",
-          "page": 43,
+          "page": 39,
           "term": "Client",
           "reading": "クライアント",
           "category": "ネットワークの基本",
@@ -2970,8 +2841,7 @@ module.exports = {
               "items": [
                 {
                   "name": "Server",
-                  "desc": "クライアントからの要求を受け取り、処理して返す側。",
-                  "page": 44
+                  "desc": "クライアントからの要求を受け取り、処理して返す側。"
                 }
               ]
             },
@@ -2980,13 +2850,11 @@ module.exports = {
               "items": [
                 {
                   "name": "Request",
-                  "desc": "クライアントがサーバーに送る依頼のデータ。",
-                  "page": 45
+                  "desc": "クライアントがサーバーに送る依頼のデータ。"
                 },
                 {
                   "name": "Response",
-                  "desc": "サーバーがリクエストに対して返す結果。",
-                  "page": 46
+                  "desc": "サーバーがリクエストに対して返す結果。"
                 }
               ]
             }
@@ -2994,7 +2862,7 @@ module.exports = {
         },
         {
           "id": "server",
-          "page": 44,
+          "page": 40,
           "term": "Server",
           "reading": "サーバー",
           "category": "ネットワークの基本",
@@ -3044,8 +2912,7 @@ module.exports = {
               "items": [
                 {
                   "name": "Client",
-                  "desc": "サーバーに要求を送る側。ブラウザやアプリなど。",
-                  "page": 43
+                  "desc": "サーバーに要求を送る側。ブラウザやアプリなど。"
                 }
               ]
             },
@@ -3054,8 +2921,7 @@ module.exports = {
               "items": [
                 {
                   "name": "Request",
-                  "desc": "クライアントがサーバーに送る依頼のデータ。",
-                  "page": 45
+                  "desc": "クライアントがサーバーに送る依頼のデータ。"
                 }
               ]
             }
@@ -3063,7 +2929,7 @@ module.exports = {
         },
         {
           "id": "request",
-          "page": 45,
+          "page": 41,
           "term": "Request",
           "reading": "リクエスト",
           "category": "HTTP通信",
@@ -3113,8 +2979,7 @@ module.exports = {
               "items": [
                 {
                   "name": "Response",
-                  "desc": "リクエストに対してサーバーが返す結果。",
-                  "page": 46
+                  "desc": "リクエストに対してサーバーが返す結果。"
                 }
               ]
             },
@@ -3123,8 +2988,7 @@ module.exports = {
               "items": [
                 {
                   "name": "Header",
-                  "desc": "リクエストやレスポンスに添える付加情報。",
-                  "page": 56
+                  "desc": "リクエストやレスポンスに添える付加情報。"
                 }
               ]
             }
@@ -3132,7 +2996,7 @@ module.exports = {
         },
         {
           "id": "response",
-          "page": 46,
+          "page": 42,
           "term": "Response",
           "reading": "レスポンス",
           "category": "HTTP通信",
@@ -3182,8 +3046,7 @@ module.exports = {
               "items": [
                 {
                   "name": "Request",
-                  "desc": "クライアントがサーバーに送る依頼のデータ。",
-                  "page": 45
+                  "desc": "クライアントがサーバーに送る依頼のデータ。"
                 }
               ]
             },
@@ -3192,8 +3055,7 @@ module.exports = {
               "items": [
                 {
                   "name": "HTTP",
-                  "desc": "リクエスト・レスポンスをやり取りする共通ルール。",
-                  "page": 47
+                  "desc": "リクエスト・レスポンスをやり取りする共通ルール。"
                 }
               ]
             }
@@ -3201,7 +3063,7 @@ module.exports = {
         },
         {
           "id": "http",
-          "page": 47,
+          "page": 43,
           "term": "HTTP",
           "reading": "エイチティーティーピー",
           "category": "通信プロトコル",
@@ -3251,8 +3113,7 @@ module.exports = {
               "items": [
                 {
                   "name": "HTTPS",
-                  "desc": "HTTPに暗号化（TLS）を追加した安全な通信。",
-                  "page": 48
+                  "desc": "HTTPに暗号化（TLS）を追加した安全な通信。"
                 }
               ]
             },
@@ -3261,13 +3122,11 @@ module.exports = {
               "items": [
                 {
                   "name": "Request",
-                  "desc": "クライアントがサーバーに送る依頼のデータ。",
-                  "page": 45
+                  "desc": "クライアントがサーバーに送る依頼のデータ。"
                 },
                 {
                   "name": "Response",
-                  "desc": "サーバーがリクエストに対して返す結果。",
-                  "page": 46
+                  "desc": "サーバーがリクエストに対して返す結果。"
                 }
               ]
             }
@@ -3275,7 +3134,7 @@ module.exports = {
         },
         {
           "id": "https",
-          "page": 48,
+          "page": 44,
           "term": "HTTPS",
           "reading": "エイチティーティーピーエス",
           "category": "通信プロトコル",
@@ -3325,8 +3184,7 @@ module.exports = {
               "items": [
                 {
                   "name": "HTTP",
-                  "desc": "暗号化されていない通信プロトコル。",
-                  "page": 47
+                  "desc": "暗号化されていない通信プロトコル。"
                 }
               ]
             },
@@ -3335,13 +3193,11 @@ module.exports = {
               "items": [
                 {
                   "name": "TLS",
-                  "desc": "HTTPSの暗号化・認証を担う仕組み。",
-                  "page": 59
+                  "desc": "HTTPSの暗号化・認証を担う仕組み。"
                 },
                 {
                   "name": "SSL証明書",
-                  "desc": "通信相手が本物であることを証明する電子証明書。",
-                  "page": 60
+                  "desc": "通信相手が本物であることを証明する電子証明書。"
                 }
               ]
             }
@@ -3349,7 +3205,7 @@ module.exports = {
         },
         {
           "id": "dns",
-          "page": 49,
+          "page": 45,
           "term": "DNS",
           "reading": "ディーエヌエス",
           "category": "名前解決",
@@ -3399,13 +3255,11 @@ module.exports = {
               "items": [
                 {
                   "name": "Domain",
-                  "desc": "DNSで管理される、覚えやすい名前そのもの。",
-                  "page": 50
+                  "desc": "DNSで管理される、覚えやすい名前そのもの。"
                 },
                 {
                   "name": "IP Address",
-                  "desc": "DNSが変換した先にある、機械の住所。",
-                  "page": 51
+                  "desc": "DNSが変換した先にある、機械の住所。"
                 }
               ]
             }
@@ -3413,7 +3267,7 @@ module.exports = {
         },
         {
           "id": "domain",
-          "page": 50,
+          "page": 46,
           "term": "Domain",
           "reading": "ドメイン",
           "category": "名前解決",
@@ -3463,13 +3317,11 @@ module.exports = {
               "items": [
                 {
                   "name": "DNS",
-                  "desc": "ドメイン名をIPアドレスに変換する仕組み。",
-                  "page": 49
+                  "desc": "ドメイン名をIPアドレスに変換する仕組み。"
                 },
                 {
                   "name": "SSL証明書",
-                  "desc": "ドメインが本物であることを証明する電子証明書。",
-                  "page": 60
+                  "desc": "ドメインが本物であることを証明する電子証明書。"
                 }
               ]
             }
@@ -3477,7 +3329,7 @@ module.exports = {
         },
         {
           "id": "ip-address",
-          "page": 51,
+          "page": 47,
           "term": "IP Address",
           "reading": "アイピーアドレス",
           "category": "名前解決",
@@ -3527,18 +3379,15 @@ module.exports = {
               "items": [
                 {
                   "name": "DNS",
-                  "desc": "ドメイン名をIPアドレスに変換する仕組み。",
-                  "page": 49
+                  "desc": "ドメイン名をIPアドレスに変換する仕組み。"
                 },
                 {
                   "name": "Port",
-                  "desc": "同じIPアドレスの中で、アプリを区別する番号。",
-                  "page": 52
+                  "desc": "同じIPアドレスの中で、アプリを区別する番号。"
                 },
                 {
                   "name": "NAT",
-                  "desc": "プライベートIPとグローバルIPを変換する仕組み。",
-                  "page": 63
+                  "desc": "プライベートIPとグローバルIPを変換する仕組み。"
                 }
               ]
             }
@@ -3546,7 +3395,7 @@ module.exports = {
         },
         {
           "id": "port",
-          "page": 52,
+          "page": 48,
           "term": "Port",
           "reading": "ポート",
           "category": "名前解決",
@@ -3596,13 +3445,11 @@ module.exports = {
               "items": [
                 {
                   "name": "IP Address",
-                  "desc": "機器そのものの住所。ポートはその中の区分け。",
-                  "page": 51
+                  "desc": "機器そのものの住所。ポートはその中の区分け。"
                 },
                 {
                   "name": "TCP",
-                  "desc": "ポート番号を使って通信を確立するプロトコル。",
-                  "page": 57
+                  "desc": "ポート番号を使って通信を確立するプロトコル。"
                 }
               ]
             }
@@ -3610,7 +3457,7 @@ module.exports = {
         },
         {
           "id": "cookie",
-          "page": 53,
+          "page": 49,
           "term": "Cookie",
           "reading": "クッキー",
           "category": "状態管理・認証",
@@ -3660,13 +3507,11 @@ module.exports = {
               "items": [
                 {
                   "name": "Session",
-                  "desc": "Cookieを使って実現される、ログイン状態などの管理。",
-                  "page": 54
+                  "desc": "Cookieを使って実現される、ログイン状態などの管理。"
                 },
                 {
                   "name": "JWT",
-                  "desc": "署名付きトークンでログイン情報を持ち運ぶ方式。",
-                  "page": 55
+                  "desc": "署名付きトークンでログイン情報を持ち運ぶ方式。"
                 }
               ]
             }
@@ -3674,7 +3519,7 @@ module.exports = {
         },
         {
           "id": "session",
-          "page": 54,
+          "page": 50,
           "term": "Session",
           "reading": "セッション",
           "category": "状態管理・認証",
@@ -3724,13 +3569,11 @@ module.exports = {
               "items": [
                 {
                   "name": "Cookie",
-                  "desc": "セッションIDなどを保存する、ブラウザ側の小さなデータ。",
-                  "page": 53
+                  "desc": "セッションIDなどを保存する、ブラウザ側の小さなデータ。"
                 },
                 {
                   "name": "JWT",
-                  "desc": "サーバー側に状態を持たない、別の認証情報の持ち方。",
-                  "page": 55
+                  "desc": "サーバー側に状態を持たない、別の認証情報の持ち方。"
                 }
               ]
             }
@@ -3738,7 +3581,7 @@ module.exports = {
         },
         {
           "id": "jwt",
-          "page": 55,
+          "page": 51,
           "term": "JWT",
           "reading": "ジェイダブリューティー",
           "category": "状態管理・認証",
@@ -3788,18 +3631,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Session",
-                  "desc": "サーバー側で状態を管理する、もう一つの方式。",
-                  "page": 54
+                  "desc": "サーバー側で状態を管理する、もう一つの方式。"
                 },
                 {
                   "name": "Cookie",
-                  "desc": "JWTをブラウザに保存する際の入れ物としても使われる。",
-                  "page": 53
+                  "desc": "JWTをブラウザに保存する際の入れ物としても使われる。"
                 },
                 {
                   "name": "Header",
-                  "desc": "JWTは多くの場合Authorizationヘッダーに載せて送る。",
-                  "page": 56
+                  "desc": "JWTは多くの場合Authorizationヘッダーに載せて送る。"
                 }
               ]
             }
@@ -3807,7 +3647,7 @@ module.exports = {
         },
         {
           "id": "header",
-          "page": 56,
+          "page": 52,
           "term": "Header",
           "reading": "ヘッダー",
           "category": "HTTP通信",
@@ -3857,13 +3697,11 @@ module.exports = {
               "items": [
                 {
                   "name": "Request",
-                  "desc": "ヘッダーが付加される、依頼データそのもの。",
-                  "page": 45
+                  "desc": "ヘッダーが付加される、依頼データそのもの。"
                 },
                 {
                   "name": "JWT",
-                  "desc": "Authorizationヘッダーに載せて送る認証トークン。",
-                  "page": 55
+                  "desc": "Authorizationヘッダーに載せて送る認証トークン。"
                 }
               ]
             }
@@ -3871,7 +3709,7 @@ module.exports = {
         },
         {
           "id": "tcp",
-          "page": 57,
+          "page": 53,
           "term": "TCP",
           "reading": "ティーシーピー",
           "category": "トランスポート層",
@@ -3921,8 +3759,7 @@ module.exports = {
               "items": [
                 {
                   "name": "UDP",
-                  "desc": "確認を取らず、とにかく速さを優先するプロトコル。",
-                  "page": 58
+                  "desc": "確認を取らず、とにかく速さを優先するプロトコル。"
                 }
               ]
             },
@@ -3931,8 +3768,7 @@ module.exports = {
               "items": [
                 {
                   "name": "Port",
-                  "desc": "TCPが通信相手のアプリを特定するために使う番号。",
-                  "page": 52
+                  "desc": "TCPが通信相手のアプリを特定するために使う番号。"
                 }
               ]
             }
@@ -3940,7 +3776,7 @@ module.exports = {
         },
         {
           "id": "udp",
-          "page": 58,
+          "page": 54,
           "term": "UDP",
           "reading": "ユーディーピー",
           "category": "トランスポート層",
@@ -3990,8 +3826,7 @@ module.exports = {
               "items": [
                 {
                   "name": "TCP",
-                  "desc": "確認を取りながら確実に届けるプロトコル。",
-                  "page": 57
+                  "desc": "確認を取りながら確実に届けるプロトコル。"
                 }
               ]
             }
@@ -3999,7 +3834,7 @@ module.exports = {
         },
         {
           "id": "tls",
-          "page": 59,
+          "page": 55,
           "term": "TLS",
           "reading": "ティーエルエス",
           "category": "暗号化・証明書",
@@ -4049,18 +3884,15 @@ module.exports = {
               "items": [
                 {
                   "name": "HTTPS",
-                  "desc": "TLSによって暗号化されたHTTP通信。",
-                  "page": 48
+                  "desc": "TLSによって暗号化されたHTTP通信。"
                 },
                 {
                   "name": "SSL証明書",
-                  "desc": "TLS通信で相手の身元を証明する電子証明書。",
-                  "page": 60
+                  "desc": "TLS通信で相手の身元を証明する電子証明書。"
                 },
                 {
                   "name": "Let's Encrypt",
-                  "desc": "無料でSSL証明書を発行してくれる認証局。",
-                  "page": 61
+                  "desc": "無料でSSL証明書を発行してくれる認証局。"
                 }
               ]
             }
@@ -4068,7 +3900,7 @@ module.exports = {
         },
         {
           "id": "ssl-certificate",
-          "page": 60,
+          "page": 56,
           "term": "SSL証明書",
           "reading": "エスエスエルしょうめいしょ",
           "category": "暗号化・証明書",
@@ -4118,13 +3950,11 @@ module.exports = {
               "items": [
                 {
                   "name": "TLS",
-                  "desc": "この証明書を使って暗号化通信を行う仕組み。",
-                  "page": 59
+                  "desc": "この証明書を使って暗号化通信を行う仕組み。"
                 },
                 {
                   "name": "Let's Encrypt",
-                  "desc": "この証明書を無料・自動で発行してくれるサービス。",
-                  "page": 61
+                  "desc": "この証明書を無料・自動で発行してくれるサービス。"
                 }
               ]
             }
@@ -4132,7 +3962,7 @@ module.exports = {
         },
         {
           "id": "lets-encrypt",
-          "page": 61,
+          "page": 57,
           "term": "Let's Encrypt",
           "reading": "レッツエンクリプト",
           "category": "暗号化・証明書",
@@ -4182,13 +4012,11 @@ module.exports = {
               "items": [
                 {
                   "name": "SSL証明書",
-                  "desc": "Let's Encryptが発行してくれる証明書そのもの。",
-                  "page": 60
+                  "desc": "Let's Encryptが発行してくれる証明書そのもの。"
                 },
                 {
                   "name": "HTTPS",
-                  "desc": "この証明書によって実現される暗号化通信。",
-                  "page": 48
+                  "desc": "この証明書によって実現される暗号化通信。"
                 }
               ]
             }
@@ -4196,7 +4024,7 @@ module.exports = {
         },
         {
           "id": "vpn",
-          "page": 62,
+          "page": 58,
           "term": "VPN",
           "reading": "ブイピーエヌ",
           "category": "ネットワーク構成",
@@ -4246,13 +4074,11 @@ module.exports = {
               "items": [
                 {
                   "name": "NAT",
-                  "desc": "プライベートIPとグローバルIPを変換する仕組み。",
-                  "page": 63
+                  "desc": "プライベートIPとグローバルIPを変換する仕組み。"
                 },
                 {
                   "name": "Proxy",
-                  "desc": "クライアントの代わりに通信を中継する仕組み。",
-                  "page": 65
+                  "desc": "クライアントの代わりに通信を中継する仕組み。"
                 }
               ]
             }
@@ -4260,7 +4086,7 @@ module.exports = {
         },
         {
           "id": "nat",
-          "page": 63,
+          "page": 59,
           "term": "NAT",
           "reading": "ナット",
           "category": "ネットワーク構成",
@@ -4310,13 +4136,11 @@ module.exports = {
               "items": [
                 {
                   "name": "IP Address",
-                  "desc": "NATが変換する対象、プライベート/グローバルの住所。",
-                  "page": 51
+                  "desc": "NATが変換する対象、プライベート/グローバルの住所。"
                 },
                 {
                   "name": "Subnet",
-                  "desc": "プライベートIPを整理して区切る仕組み。",
-                  "page": 64
+                  "desc": "プライベートIPを整理して区切る仕組み。"
                 }
               ]
             }
@@ -4324,7 +4148,7 @@ module.exports = {
         },
         {
           "id": "subnet",
-          "page": 64,
+          "page": 60,
           "term": "Subnet",
           "category": "ネットワーク構成",
           "icon": "ic-layers",
@@ -4373,13 +4197,11 @@ module.exports = {
               "items": [
                 {
                   "name": "IP Address",
-                  "desc": "サブネットが分割の対象とする住所そのもの。",
-                  "page": 51
+                  "desc": "サブネットが分割の対象とする住所そのもの。"
                 },
                 {
                   "name": "NAT",
-                  "desc": "プライベートIPとグローバルIPを変換する仕組み。",
-                  "page": 63
+                  "desc": "プライベートIPとグローバルIPを変換する仕組み。"
                 }
               ]
             }
@@ -4388,7 +4210,7 @@ module.exports = {
         },
         {
           "id": "proxy",
-          "page": 65,
+          "page": 61,
           "term": "Proxy",
           "compact": true,
           "reading": "プロキシ",
@@ -4439,13 +4261,11 @@ module.exports = {
               "items": [
                 {
                   "name": "VPN",
-                  "desc": "暗号化されたトンネルで社内ネットワークに接続する仕組み。",
-                  "page": 62
+                  "desc": "暗号化されたトンネルで社内ネットワークに接続する仕組み。"
                 },
                 {
                   "name": "NAT",
-                  "desc": "プライベートIPとグローバルIPを変換する仕組み。",
-                  "page": 63
+                  "desc": "プライベートIPとグローバルIPを変換する仕組み。"
                 }
               ]
             }
@@ -4462,7 +4282,7 @@ module.exports = {
         },
         {
           "id": "intranet",
-          "page": 66,
+          "page": 62,
           "term": "イントラネット",
           "category": "ネットワーク構成",
           "icon": "ic-network",
@@ -4516,13 +4336,11 @@ module.exports = {
               "items": [
                 {
                   "name": "VPN",
-                  "desc": "外からイントラネットへ安全に入るトンネル。",
-                  "page": 62
+                  "desc": "外からイントラネットへ安全に入るトンネル。"
                 },
                 {
                   "name": "Proxy",
-                  "desc": "社内から外へ出るときの中継役。",
-                  "page": 65
+                  "desc": "社内から外へ出るときの中継役。"
                 }
               ]
             }
@@ -4536,7 +4354,7 @@ module.exports = {
       "entries": [
         {
           "id": "json",
-          "page": 73,
+          "page": 63,
           "term": "JSON",
           "reading": "ジェイソン",
           "category": "データフォーマット",
@@ -4586,13 +4404,11 @@ module.exports = {
               "items": [
                 {
                   "name": "XML",
-                  "desc": "タグで構造を表現する古参フォーマット。今も設定や仕様書で現役。",
-                  "page": 76
+                  "desc": "タグで構造を表現する古参フォーマット。今も設定や仕様書で現役。"
                 },
                 {
                   "name": "YAML",
-                  "desc": "インデントで構造を表す、設定ファイル向けの書き方。",
-                  "page": 74
+                  "desc": "インデントで構造を表す、設定ファイル向けの書き方。"
                 }
               ]
             },
@@ -4601,8 +4417,7 @@ module.exports = {
               "items": [
                 {
                   "name": "API",
-                  "desc": "JSONはAPIのレスポンス形式として最も広く使われている。",
-                  "page": 83
+                  "desc": "JSONはAPIのレスポンス形式として最も広く使われている。"
                 }
               ]
             }
@@ -4610,7 +4425,7 @@ module.exports = {
         },
         {
           "id": "yaml",
-          "page": 74,
+          "page": 64,
           "term": "YAML",
           "reading": "ヤムル",
           "category": "データフォーマット",
@@ -4660,13 +4475,11 @@ module.exports = {
               "items": [
                 {
                   "name": "JSON",
-                  "desc": "括弧で構造を表すデータ形式。APIレスポンスで定番。",
-                  "page": 73
+                  "desc": "括弧で構造を表すデータ形式。APIレスポンスで定番。"
                 },
                 {
                   "name": "TOML",
-                  "desc": "YAMLよりシンプルな階層表現を目指した設定形式。",
-                  "page": 75
+                  "desc": "YAMLよりシンプルな階層表現を目指した設定形式。"
                 }
               ]
             }
@@ -4674,7 +4487,7 @@ module.exports = {
         },
         {
           "id": "toml",
-          "page": 75,
+          "page": 65,
           "term": "TOML",
           "reading": "トムル",
           "category": "データフォーマット",
@@ -4724,13 +4537,11 @@ module.exports = {
               "items": [
                 {
                   "name": "YAML",
-                  "desc": "インデントで階層構造を表す設定ファイル形式。",
-                  "page": 74
+                  "desc": "インデントで階層構造を表す設定ファイル形式。"
                 },
                 {
                   "name": "JSON",
-                  "desc": "括弧で構造を表すデータ形式。プログラムからの生成向き。",
-                  "page": 73
+                  "desc": "括弧で構造を表すデータ形式。プログラムからの生成向き。"
                 }
               ]
             }
@@ -4738,7 +4549,7 @@ module.exports = {
         },
         {
           "id": "xml",
-          "page": 76,
+          "page": 66,
           "term": "XML",
           "reading": "エックスエムエル",
           "category": "データフォーマット",
@@ -4788,13 +4599,11 @@ module.exports = {
               "items": [
                 {
                   "name": "JSON",
-                  "desc": "括弧で構造を表す軽量なデータ形式。今のAPIの主流。",
-                  "page": 73
+                  "desc": "括弧で構造を表す軽量なデータ形式。今のAPIの主流。"
                 },
                 {
                   "name": "Schema",
-                  "desc": "データの形を定義し、正しいかどうかを検証する仕組み。",
-                  "page": 78
+                  "desc": "データの形を定義し、正しいかどうかを検証する仕組み。"
                 }
               ]
             }
@@ -4802,7 +4611,7 @@ module.exports = {
         },
         {
           "id": "csv",
-          "page": 77,
+          "page": 67,
           "term": "CSV",
           "reading": "シーエスブイ",
           "category": "データフォーマット",
@@ -4852,8 +4661,7 @@ module.exports = {
               "items": [
                 {
                   "name": "JSON",
-                  "desc": "括弧で構造を表す軽量なデータ形式。ネスト構造も表現できる。",
-                  "page": 73
+                  "desc": "括弧で構造を表す軽量なデータ形式。ネスト構造も表現できる。"
                 }
               ]
             }
@@ -4861,7 +4669,7 @@ module.exports = {
         },
         {
           "id": "schema",
-          "page": 78,
+          "page": 68,
           "term": "Schema",
           "category": "データフォーマット",
           "icon": "ic-scale",
@@ -4910,13 +4718,11 @@ module.exports = {
               "items": [
                 {
                   "name": "XML",
-                  "desc": "タグで構造を表現するデータ形式。DTD/XSDというスキーマ機構を持つ。",
-                  "page": 76
+                  "desc": "タグで構造を表現するデータ形式。DTD/XSDというスキーマ機構を持つ。"
                 },
                 {
                   "name": "OpenAPI",
-                  "desc": "APIの入出力の形をスキーマとして定義する仕様。",
-                  "page": 87
+                  "desc": "APIの入出力の形をスキーマとして定義する仕様。"
                 }
               ]
             }
@@ -4931,7 +4737,7 @@ module.exports = {
       "entries": [
         {
           "id": "api",
-          "page": 83,
+          "page": 69,
           "term": "API",
           "reading": "エーピーアイ",
           "category": "API",
@@ -4981,18 +4787,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Endpoint",
-                  "desc": "APIの窓口の中の、個別の入り口となるURL。",
-                  "page": 84
+                  "desc": "APIの窓口の中の、個別の入り口となるURL。"
                 },
                 {
                   "name": "REST",
-                  "desc": "APIの設計スタイルの1つ。URLと動詞で操作を表す。",
-                  "page": 85
+                  "desc": "APIの設計スタイルの1つ。URLと動詞で操作を表す。"
                 },
                 {
                   "name": "GraphQL",
-                  "desc": "必要なデータだけを1回で取得できるAPIの仕組み。",
-                  "page": 86
+                  "desc": "必要なデータだけを1回で取得できるAPIの仕組み。"
                 }
               ]
             }
@@ -5000,7 +4803,7 @@ module.exports = {
         },
         {
           "id": "endpoint",
-          "page": 84,
+          "page": 70,
           "term": "Endpoint",
           "reading": "エンドポイント",
           "category": "API",
@@ -5050,18 +4853,15 @@ module.exports = {
               "items": [
                 {
                   "name": "API",
-                  "desc": "アプリ同士がやり取りするための窓口全体。",
-                  "page": 83
+                  "desc": "アプリ同士がやり取りするための窓口全体。"
                 },
                 {
                   "name": "slug",
-                  "desc": "URLの一部に使われる、人にも読める識別子。",
-                  "page": 89
+                  "desc": "URLの一部に使われる、人にも読める識別子。"
                 },
                 {
                   "name": "REST",
-                  "desc": "URLと動詞で操作を表現するAPI設計スタイル。",
-                  "page": 85
+                  "desc": "URLと動詞で操作を表現するAPI設計スタイル。"
                 }
               ]
             }
@@ -5069,7 +4869,7 @@ module.exports = {
         },
         {
           "id": "rest",
-          "page": 85,
+          "page": 71,
           "term": "REST",
           "reading": "レスト",
           "category": "API",
@@ -5119,8 +4919,7 @@ module.exports = {
               "items": [
                 {
                   "name": "GraphQL",
-                  "desc": "必要なデータだけを1つのエンドポイントで取得できる設計。",
-                  "page": 86
+                  "desc": "必要なデータだけを1つのエンドポイントで取得できる設計。"
                 }
               ]
             },
@@ -5129,13 +4928,11 @@ module.exports = {
               "items": [
                 {
                   "name": "Endpoint",
-                  "desc": "RESTのURL設計の対象になる、個々の入り口。",
-                  "page": 84
+                  "desc": "RESTのURL設計の対象になる、個々の入り口。"
                 },
                 {
                   "name": "Status Code",
-                  "desc": "REST APIのレスポンスで結果を伝える3桁の数字。",
-                  "page": 88
+                  "desc": "REST APIのレスポンスで結果を伝える3桁の数字。"
                 }
               ]
             }
@@ -5143,7 +4940,7 @@ module.exports = {
         },
         {
           "id": "graphql",
-          "page": 86,
+          "page": 72,
           "term": "GraphQL",
           "reading": "グラフキューエル",
           "category": "API",
@@ -5193,8 +4990,7 @@ module.exports = {
               "items": [
                 {
                   "name": "REST",
-                  "desc": "URLと動詞で操作を表現するAPI設計スタイル。",
-                  "page": 85
+                  "desc": "URLと動詞で操作を表現するAPI設計スタイル。"
                 }
               ]
             },
@@ -5203,8 +4999,7 @@ module.exports = {
               "items": [
                 {
                   "name": "Schema",
-                  "desc": "GraphQLでもデータの形を定義するために使われる。",
-                  "page": 78
+                  "desc": "GraphQLでもデータの形を定義するために使われる。"
                 }
               ]
             }
@@ -5212,7 +5007,7 @@ module.exports = {
         },
         {
           "id": "openapi",
-          "page": 87,
+          "page": 73,
           "term": "OpenAPI",
           "reading": "オープンエーピーアイ",
           "category": "API",
@@ -5262,13 +5057,11 @@ module.exports = {
               "items": [
                 {
                   "name": "API",
-                  "desc": "OpenAPIはこのAPIの仕様を記述するためのフォーマット。",
-                  "page": 83
+                  "desc": "OpenAPIはこのAPIの仕様を記述するためのフォーマット。"
                 },
                 {
                   "name": "Schema",
-                  "desc": "OpenAPIの中でリクエスト・レスポンスの形を定義する仕組み。",
-                  "page": 78
+                  "desc": "OpenAPIの中でリクエスト・レスポンスの形を定義する仕組み。"
                 }
               ]
             }
@@ -5276,7 +5069,7 @@ module.exports = {
         },
         {
           "id": "status_code",
-          "page": 88,
+          "page": 74,
           "term": "Status Code",
           "reading": "ステータスコード",
           "category": "API",
@@ -5326,8 +5119,7 @@ module.exports = {
               "items": [
                 {
                   "name": "REST",
-                  "desc": "Status CodeはREST APIのレスポンスで結果を伝える手段。",
-                  "page": 85
+                  "desc": "Status CodeはREST APIのレスポンスで結果を伝える手段。"
                 }
               ]
             }
@@ -5335,7 +5127,7 @@ module.exports = {
         },
         {
           "id": "slug",
-          "page": 89,
+          "page": 75,
           "term": "slug",
           "reading": "スラッグ",
           "category": "API",
@@ -5385,8 +5177,7 @@ module.exports = {
               "items": [
                 {
                   "name": "Endpoint",
-                  "desc": "slugはエンドポイントのURLの一部として使われることが多い。",
-                  "page": 84
+                  "desc": "slugはエンドポイントのURLの一部として使われることが多い。"
                 }
               ]
             }
@@ -5400,7 +5191,7 @@ module.exports = {
       "entries": [
         {
           "id": "grpc",
-          "page": 93,
+          "page": 76,
           "term": "gRPC",
           "reading": "ジーアールピーシー",
           "category": "通信プロトコル",
@@ -5450,13 +5241,11 @@ module.exports = {
               "items": [
                 {
                   "name": "REST",
-                  "desc": "URLと動詞で操作を表現する、人にも読みやすいAPI設計。",
-                  "page": 85
+                  "desc": "URLと動詞で操作を表現する、人にも読みやすいAPI設計。"
                 },
                 {
                   "name": "Schema",
-                  "desc": "gRPCも通信するデータの形をスキーマとして定義する。",
-                  "page": 78
+                  "desc": "gRPCも通信するデータの形をスキーマとして定義する。"
                 }
               ]
             }
@@ -5464,7 +5253,7 @@ module.exports = {
         },
         {
           "id": "websocket",
-          "page": 94,
+          "page": 77,
           "term": "WebSocket",
           "reading": "ウェブソケット",
           "category": "通信プロトコル",
@@ -5514,13 +5303,11 @@ module.exports = {
               "items": [
                 {
                   "name": "Pub/Sub",
-                  "desc": "変化があった相手に自動で知らせる、より広い仕組み。",
-                  "page": 96
+                  "desc": "変化があった相手に自動で知らせる、より広い仕組み。"
                 },
                 {
                   "name": "Webhook",
-                  "desc": "こちらもイベント発生時に通知する仕組みだが、通信の形が異なる。",
-                  "page": 95
+                  "desc": "こちらもイベント発生時に通知する仕組みだが、通信の形が異なる。"
                 }
               ]
             }
@@ -5528,7 +5315,7 @@ module.exports = {
         },
         {
           "id": "webhook",
-          "page": 95,
+          "page": 78,
           "term": "Webhook",
           "reading": "ウェブフック",
           "category": "通信プロトコル",
@@ -5578,13 +5365,11 @@ module.exports = {
               "items": [
                 {
                   "name": "Pub/Sub",
-                  "desc": "Webhookと同じく通知の仕組みだが、間に仲介役を挟む点が異なる。",
-                  "page": 96
+                  "desc": "Webhookと同じく通知の仕組みだが、間に仲介役を挟む点が異なる。"
                 },
                 {
                   "name": "Endpoint",
-                  "desc": "Webhookの通知を受け取るための窓口として自分のAPIに用意する。",
-                  "page": 84
+                  "desc": "Webhookの通知を受け取るための窓口として自分のAPIに用意する。"
                 }
               ]
             }
@@ -5592,7 +5377,7 @@ module.exports = {
         },
         {
           "id": "pubsub",
-          "page": 96,
+          "page": 79,
           "term": "Pub/Sub",
           "reading": "パブサブ",
           "category": "通信プロトコル",
@@ -5642,13 +5427,11 @@ module.exports = {
               "items": [
                 {
                   "name": "Webhook",
-                  "desc": "こちらは送信元が受信先を直接知っている、1対1に近い通知方式。",
-                  "page": 95
+                  "desc": "こちらは送信元が受信先を直接知っている、1対1に近い通知方式。"
                 },
                 {
                   "name": "WebSocket",
-                  "desc": "こちらは接続を保ったまま双方向にやり取りする通信方式。",
-                  "page": 94
+                  "desc": "こちらは接続を保ったまま双方向にやり取りする通信方式。"
                 }
               ]
             }
@@ -5662,7 +5445,7 @@ module.exports = {
       "entries": [
         {
           "id": "database",
-          "page": 103,
+          "page": 80,
           "term": "Database",
           "reading": "データベース",
           "category": "データベース・基礎",
@@ -5712,13 +5495,11 @@ module.exports = {
               "items": [
                 {
                   "name": "RDB",
-                  "desc": "表同士を関係で結びつけて管理する方式。",
-                  "page": 104
+                  "desc": "表同士を関係で結びつけて管理する方式。"
                 },
                 {
                   "name": "NoSQL",
-                  "desc": "表の形にこだわらない柔軟なデータベース。",
-                  "page": 106
+                  "desc": "表の形にこだわらない柔軟なデータベース。"
                 }
               ]
             },
@@ -5727,8 +5508,7 @@ module.exports = {
               "items": [
                 {
                   "name": "Table",
-                  "desc": "データを行と列で整理する表そのもの。",
-                  "page": 107
+                  "desc": "データを行と列で整理する表そのもの。"
                 }
               ]
             }
@@ -5736,7 +5516,7 @@ module.exports = {
         },
         {
           "id": "rdb",
-          "page": 104,
+          "page": 81,
           "term": "RDB",
           "reading": "アールディービー",
           "category": "データベース・基礎",
@@ -5786,13 +5566,11 @@ module.exports = {
               "items": [
                 {
                   "name": "RDBMS",
-                  "desc": "RDBの考え方を実装したソフトウェア。",
-                  "page": 105
+                  "desc": "RDBの考え方を実装したソフトウェア。"
                 },
                 {
                   "name": "NoSQL",
-                  "desc": "表の形にこだわらない別のアプローチ。",
-                  "page": 106
+                  "desc": "表の形にこだわらない別のアプローチ。"
                 }
               ]
             },
@@ -5801,13 +5579,11 @@ module.exports = {
               "items": [
                 {
                   "name": "Table",
-                  "desc": "行と列でデータを整理する表。",
-                  "page": 107
+                  "desc": "行と列でデータを整理する表。"
                 },
                 {
                   "name": "Foreign Key",
-                  "desc": "表同士の関係を表すキー。",
-                  "page": 110
+                  "desc": "表同士の関係を表すキー。"
                 }
               ]
             }
@@ -5815,7 +5591,7 @@ module.exports = {
         },
         {
           "id": "rdbms",
-          "page": 105,
+          "page": 82,
           "term": "RDBMS",
           "reading": "アールディービーエムエス",
           "category": "データベース・基礎",
@@ -5865,8 +5641,7 @@ module.exports = {
               "items": [
                 {
                   "name": "RDB",
-                  "desc": "表同士を関係で結びつけるデータの考え方。",
-                  "page": 104
+                  "desc": "表同士を関係で結びつけるデータの考え方。"
                 }
               ]
             },
@@ -5875,8 +5650,7 @@ module.exports = {
               "items": [
                 {
                   "name": "SQL",
-                  "desc": "RDBMSに指示を出すための共通言語。",
-                  "page": 112
+                  "desc": "RDBMSに指示を出すための共通言語。"
                 }
               ]
             },
@@ -5885,13 +5659,11 @@ module.exports = {
               "items": [
                 {
                   "name": "MySQL",
-                  "desc": "世界で広く使われるRDBMS製品。",
-                  "page": 127
+                  "desc": "世界で広く使われるRDBMS製品。"
                 },
                 {
                   "name": "PostgreSQL",
-                  "desc": "機能が豊富なRDBMS製品。",
-                  "page": 128
+                  "desc": "機能が豊富なRDBMS製品。"
                 }
               ]
             }
@@ -5899,7 +5671,7 @@ module.exports = {
         },
         {
           "id": "nosql",
-          "page": 106,
+          "page": 83,
           "term": "NoSQL",
           "reading": "ノーエスキューエル",
           "category": "データベース・基礎",
@@ -5949,13 +5721,11 @@ module.exports = {
               "items": [
                 {
                   "name": "RDB",
-                  "desc": "表同士を関係で結びつけるデータの考え方。",
-                  "page": 104
+                  "desc": "表同士を関係で結びつけるデータの考え方。"
                 },
                 {
                   "name": "RDBMS",
-                  "desc": "RDBを実装したソフトウェア。",
-                  "page": 105
+                  "desc": "RDBを実装したソフトウェア。"
                 }
               ]
             },
@@ -5964,13 +5734,11 @@ module.exports = {
               "items": [
                 {
                   "name": "Redis",
-                  "desc": "高速なキー・バリュー型データベース。",
-                  "page": 130
+                  "desc": "高速なキー・バリュー型データベース。"
                 },
                 {
                   "name": "MongoDB",
-                  "desc": "柔軟なドキュメント型データベース。",
-                  "page": 131
+                  "desc": "柔軟なドキュメント型データベース。"
                 }
               ]
             }
@@ -5978,7 +5746,7 @@ module.exports = {
         },
         {
           "id": "table",
-          "page": 107,
+          "page": 84,
           "term": "Table",
           "reading": "テーブル",
           "category": "データベース・構造",
@@ -6028,18 +5796,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Record",
-                  "desc": "テーブルの1行分のデータ。",
-                  "page": 108
+                  "desc": "テーブルの1行分のデータ。"
                 },
                 {
                   "name": "Primary Key",
-                  "desc": "1件を一意に特定する値。",
-                  "page": 109
+                  "desc": "1件を一意に特定する値。"
                 },
                 {
                   "name": "Foreign Key",
-                  "desc": "他の表とつながりを持たせるキー。",
-                  "page": 110
+                  "desc": "他の表とつながりを持たせるキー。"
                 }
               ]
             }
@@ -6047,7 +5812,7 @@ module.exports = {
         },
         {
           "id": "record",
-          "page": 108,
+          "page": 85,
           "term": "Record",
           "reading": "レコード",
           "category": "データベース・構造",
@@ -6097,13 +5862,11 @@ module.exports = {
               "items": [
                 {
                   "name": "Table",
-                  "desc": "レコードが積まれる表そのもの。",
-                  "page": 107
+                  "desc": "レコードが積まれる表そのもの。"
                 },
                 {
                   "name": "Primary Key",
-                  "desc": "レコードを一意に特定する値。",
-                  "page": 109
+                  "desc": "レコードを一意に特定する値。"
                 }
               ]
             }
@@ -6111,7 +5874,7 @@ module.exports = {
         },
         {
           "id": "primary-key",
-          "page": 109,
+          "page": 86,
           "term": "Primary Key",
           "reading": "プライマリーキー",
           "category": "データベース・構造",
@@ -6161,13 +5924,11 @@ module.exports = {
               "items": [
                 {
                   "name": "Record",
-                  "desc": "主キーで特定される1件分のデータ。",
-                  "page": 108
+                  "desc": "主キーで特定される1件分のデータ。"
                 },
                 {
                   "name": "Foreign Key",
-                  "desc": "主キーを他の表から参照するキー。",
-                  "page": 110
+                  "desc": "主キーを他の表から参照するキー。"
                 }
               ]
             }
@@ -6175,7 +5936,7 @@ module.exports = {
         },
         {
           "id": "foreign-key",
-          "page": 110,
+          "page": 87,
           "term": "Foreign Key",
           "reading": "フォーリンキー",
           "category": "データベース・構造",
@@ -6225,13 +5986,11 @@ module.exports = {
               "items": [
                 {
                   "name": "Table",
-                  "desc": "キーで関係づけられる表同士。",
-                  "page": 107
+                  "desc": "キーで関係づけられる表同士。"
                 },
                 {
                   "name": "Primary Key",
-                  "desc": "外部キーが参照する側のキー。",
-                  "page": 109
+                  "desc": "外部キーが参照する側のキー。"
                 }
               ]
             }
@@ -6239,7 +5998,7 @@ module.exports = {
         },
         {
           "id": "db-index",
-          "page": 111,
+          "page": 88,
           "term": "Index",
           "reading": "インデックス",
           "category": "データベース・構造",
@@ -6289,13 +6048,11 @@ module.exports = {
               "items": [
                 {
                   "name": "Table",
-                  "desc": "インデックスが張られる表。",
-                  "page": 107
+                  "desc": "インデックスが張られる表。"
                 },
                 {
                   "name": "Primary Key",
-                  "desc": "通常は自動でインデックスが張られる。",
-                  "page": 109
+                  "desc": "通常は自動でインデックスが張られる。"
                 }
               ]
             }
@@ -6303,7 +6060,7 @@ module.exports = {
         },
         {
           "id": "sql",
-          "page": 112,
+          "page": 89,
           "term": "SQL",
           "reading": "エスキューエル",
           "category": "データベース・操作",
@@ -6353,13 +6110,11 @@ module.exports = {
               "items": [
                 {
                   "name": "RDBMS",
-                  "desc": "SQLで操作する対象のソフトウェア。",
-                  "page": 105
+                  "desc": "SQLで操作する対象のソフトウェア。"
                 },
                 {
                   "name": "ORM",
-                  "desc": "SQLを直接書かずに操作する仕組み。",
-                  "page": 113
+                  "desc": "SQLを直接書かずに操作する仕組み。"
                 }
               ]
             }
@@ -6367,7 +6122,7 @@ module.exports = {
         },
         {
           "id": "orm",
-          "page": 113,
+          "page": 90,
           "term": "ORM",
           "reading": "オーアールエム",
           "category": "データベース・操作",
@@ -6417,13 +6172,11 @@ module.exports = {
               "items": [
                 {
                   "name": "SQL",
-                  "desc": "ORMが裏側で組み立てている言語。",
-                  "page": 112
+                  "desc": "ORMが裏側で組み立てている言語。"
                 },
                 {
                   "name": "RDBMS",
-                  "desc": "ORMが最終的に操作するソフトウェア。",
-                  "page": 105
+                  "desc": "ORMが最終的に操作するソフトウェア。"
                 }
               ]
             }
@@ -6431,7 +6184,7 @@ module.exports = {
         },
         {
           "id": "migration",
-          "page": 114,
+          "page": 91,
           "term": "Migration",
           "reading": "マイグレーション",
           "category": "データベース・運用",
@@ -6481,8 +6234,7 @@ module.exports = {
               "items": [
                 {
                   "name": "Seeder",
-                  "desc": "確認用データを自動投入する仕組み。",
-                  "page": 115
+                  "desc": "確認用データを自動投入する仕組み。"
                 }
               ]
             },
@@ -6491,8 +6243,7 @@ module.exports = {
               "items": [
                 {
                   "name": "RDBMS",
-                  "desc": "マイグレーションで変更する対象。",
-                  "page": 105
+                  "desc": "マイグレーションで変更する対象。"
                 }
               ]
             }
@@ -6500,7 +6251,7 @@ module.exports = {
         },
         {
           "id": "seeder",
-          "page": 115,
+          "page": 92,
           "term": "Seeder",
           "reading": "シーダー",
           "category": "データベース・運用",
@@ -6550,8 +6301,7 @@ module.exports = {
               "items": [
                 {
                   "name": "Migration",
-                  "desc": "テーブルの構造そのものを変更する仕組み。",
-                  "page": 114
+                  "desc": "テーブルの構造そのものを変更する仕組み。"
                 }
               ]
             }
@@ -6559,7 +6309,7 @@ module.exports = {
         },
         {
           "id": "transaction",
-          "page": 116,
+          "page": 93,
           "term": "Transaction",
           "reading": "トランザクション",
           "category": "データベース・運用",
@@ -6609,8 +6359,7 @@ module.exports = {
               "items": [
                 {
                   "name": "Lock",
-                  "desc": "同時アクセスの衝突を防ぐ仕組み。",
-                  "page": 117
+                  "desc": "同時アクセスの衝突を防ぐ仕組み。"
                 }
               ]
             },
@@ -6619,8 +6368,7 @@ module.exports = {
               "items": [
                 {
                   "name": "RDBMS",
-                  "desc": "トランザクションを保証するソフトウェア。",
-                  "page": 105
+                  "desc": "トランザクションを保証するソフトウェア。"
                 }
               ]
             }
@@ -6628,7 +6376,7 @@ module.exports = {
         },
         {
           "id": "lock",
-          "page": 117,
+          "page": 94,
           "term": "Lock",
           "reading": "ロック",
           "category": "データベース・排他制御",
@@ -6678,8 +6426,7 @@ module.exports = {
               "items": [
                 {
                   "name": "Transaction",
-                  "desc": "複数の処理を1つの単位にまとめる仕組み。",
-                  "page": 116
+                  "desc": "複数の処理を1つの単位にまとめる仕組み。"
                 }
               ]
             },
@@ -6688,18 +6435,15 @@ module.exports = {
               "items": [
                 {
                   "name": "行ロック",
-                  "desc": "更新中の1行だけをロックする方式。",
-                  "page": 118
+                  "desc": "更新中の1行だけをロックする方式。"
                 },
                 {
                   "name": "テーブルロック",
-                  "desc": "テーブル全体をロックする方式。",
-                  "page": 119
+                  "desc": "テーブル全体をロックする方式。"
                 },
                 {
                   "name": "デッドロック",
-                  "desc": "ロック同士が待ち合って止まる状態。",
-                  "page": 120
+                  "desc": "ロック同士が待ち合って止まる状態。"
                 }
               ]
             }
@@ -6707,7 +6451,7 @@ module.exports = {
         },
         {
           "id": "row-lock",
-          "page": 118,
+          "page": 95,
           "term": "行ロック",
           "reading": "ぎょうロック",
           "category": "データベース・排他制御",
@@ -6758,13 +6502,11 @@ module.exports = {
               "items": [
                 {
                   "name": "Lock",
-                  "desc": "同時アクセスの衝突を防ぐ仕組み全般。",
-                  "page": 117
+                  "desc": "同時アクセスの衝突を防ぐ仕組み全般。"
                 },
                 {
                   "name": "テーブルロック",
-                  "desc": "表全体を対象にする粗いロック。",
-                  "page": 119
+                  "desc": "表全体を対象にする粗いロック。"
                 }
               ]
             }
@@ -6772,7 +6514,7 @@ module.exports = {
         },
         {
           "id": "table-lock",
-          "page": 119,
+          "page": 96,
           "term": "テーブルロック",
           "category": "データベース・排他制御",
           "icon": "ic-layers",
@@ -6822,13 +6564,11 @@ module.exports = {
               "items": [
                 {
                   "name": "行ロック",
-                  "desc": "該当する行だけを対象にする細かいロック。",
-                  "page": 118
+                  "desc": "該当する行だけを対象にする細かいロック。"
                 },
                 {
                   "name": "Lock",
-                  "desc": "同時アクセスの衝突を防ぐ仕組み全般。",
-                  "page": 117
+                  "desc": "同時アクセスの衝突を防ぐ仕組み全般。"
                 }
               ]
             }
@@ -6836,7 +6576,7 @@ module.exports = {
         },
         {
           "id": "deadlock",
-          "page": 120,
+          "page": 97,
           "term": "デッドロック",
           "category": "データベース・排他制御",
           "icon": "ic-network",
@@ -6886,18 +6626,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Lock",
-                  "desc": "同時アクセスの衝突を防ぐ仕組み全般。",
-                  "page": 117
+                  "desc": "同時アクセスの衝突を防ぐ仕組み全般。"
                 },
                 {
                   "name": "行ロック",
-                  "desc": "デッドロックが起きうる細かいロック単位。",
-                  "page": 118
+                  "desc": "デッドロックが起きうる細かいロック単位。"
                 },
                 {
                   "name": "テーブルロック",
-                  "desc": "デッドロックが起きうる粗いロック単位。",
-                  "page": 119
+                  "desc": "デッドロックが起きうる粗いロック単位。"
                 }
               ]
             }
@@ -6905,7 +6642,7 @@ module.exports = {
         },
         {
           "id": "n_plus_one",
-          "page": 121,
+          "page": 98,
           "term": "N+1",
           "reading": "エヌプラスワン",
           "category": "データベース・パフォーマンス",
@@ -6955,13 +6692,11 @@ module.exports = {
               "items": [
                 {
                   "name": "Cache",
-                  "desc": "同じ問い合わせを何度もしないための一時保管。",
-                  "page": 122
+                  "desc": "同じ問い合わせを何度もしないための一時保管。"
                 },
                 {
                   "name": "コネクションプール",
-                  "desc": "クエリが増えると接続数の上限にも響いてくる。",
-                  "page": 137
+                  "desc": "クエリが増えると接続数の上限にも響いてくる。"
                 }
               ]
             }
@@ -6969,7 +6704,7 @@ module.exports = {
         },
         {
           "id": "cache",
-          "page": 122,
+          "page": 99,
           "term": "Cache",
           "reading": "キャッシュ",
           "category": "データベース・パフォーマンス",
@@ -7019,13 +6754,11 @@ module.exports = {
               "items": [
                 {
                   "name": "Redis",
-                  "desc": "メモリ上で動く、キャッシュの置き場所として定番。",
-                  "page": 130
+                  "desc": "メモリ上で動く、キャッシュの置き場所として定番。"
                 },
                 {
                   "name": "N+1",
-                  "desc": "ループ内クエリの多発も、キャッシュで緩和できることがある。",
-                  "page": 121
+                  "desc": "ループ内クエリの多発も、キャッシュで緩和できることがある。"
                 }
               ]
             }
@@ -7033,7 +6766,7 @@ module.exports = {
         },
         {
           "id": "normalization",
-          "page": 123,
+          "page": 100,
           "term": "正規化",
           "reading": "せいきか",
           "category": "データベース・設計",
@@ -7083,8 +6816,7 @@ module.exports = {
               "items": [
                 {
                   "name": "非正規化",
-                  "desc": "あえて重複を持たせて読み取りを速くする、正規化の逆張り。",
-                  "page": 124
+                  "desc": "あえて重複を持たせて読み取りを速くする、正規化の逆張り。"
                 }
               ]
             },
@@ -7093,8 +6825,7 @@ module.exports = {
               "items": [
                 {
                   "name": "ER図",
-                  "desc": "正規化した結果のテーブル関係を絵にしたもの。",
-                  "page": 125
+                  "desc": "正規化した結果のテーブル関係を絵にしたもの。"
                 }
               ]
             }
@@ -7102,7 +6833,7 @@ module.exports = {
         },
         {
           "id": "denormalization",
-          "page": 124,
+          "page": 101,
           "term": "非正規化",
           "reading": "ひせいきか",
           "category": "データベース・設計",
@@ -7152,8 +6883,7 @@ module.exports = {
               "items": [
                 {
                   "name": "正規化",
-                  "desc": "重複を減らし、更新漏れを防ぐための基本の設計手法。",
-                  "page": 123
+                  "desc": "重複を減らし、更新漏れを防ぐための基本の設計手法。"
                 }
               ]
             },
@@ -7162,8 +6892,7 @@ module.exports = {
               "items": [
                 {
                   "name": "Cache",
-                  "desc": "非正規化と同じく、読み取り速度を優先する手段のひとつ。",
-                  "page": 122
+                  "desc": "非正規化と同じく、読み取り速度を優先する手段のひとつ。"
                 }
               ]
             }
@@ -7171,7 +6900,7 @@ module.exports = {
         },
         {
           "id": "er_diagram",
-          "page": 125,
+          "page": 102,
           "term": "ER図",
           "reading": "イーアールず",
           "category": "データベース・設計",
@@ -7221,13 +6950,11 @@ module.exports = {
               "items": [
                 {
                   "name": "正規化",
-                  "desc": "ER図に描かれるテーブル分割の考え方そのもの。",
-                  "page": 123
+                  "desc": "ER図に描かれるテーブル分割の考え方そのもの。"
                 },
                 {
                   "name": "非正規化",
-                  "desc": "正規化した図をあえて崩す判断も、ER図の上で検討する。",
-                  "page": 124
+                  "desc": "正規化した図をあえて崩す判断も、ER図の上で検討する。"
                 }
               ]
             }
@@ -7235,7 +6962,7 @@ module.exports = {
         },
         {
           "id": "uuid",
-          "page": 126,
+          "page": 103,
           "term": "UUID",
           "reading": "ユーユーアイディー",
           "category": "データベース・設計",
@@ -7285,8 +7012,7 @@ module.exports = {
               "items": [
                 {
                   "name": "ER図",
-                  "desc": "Primary KeyをUUIDにするかは設計段階で決めておきたい。",
-                  "page": 125
+                  "desc": "Primary KeyをUUIDにするかは設計段階で決めておきたい。"
                 }
               ]
             }
@@ -7294,7 +7020,7 @@ module.exports = {
         },
         {
           "id": "mysql",
-          "page": 127,
+          "page": 104,
           "term": "MySQL",
           "reading": "マイエスキューエル",
           "category": "データベース・RDBMS",
@@ -7344,13 +7070,11 @@ module.exports = {
               "items": [
                 {
                   "name": "PostgreSQL",
-                  "desc": "機能の豊富さで選ばれることが多いRDB。",
-                  "page": 128
+                  "desc": "機能の豊富さで選ばれることが多いRDB。"
                 },
                 {
                   "name": "SQLite",
-                  "desc": "サーバー不要で、小規模用途に向くRDB。",
-                  "page": 129
+                  "desc": "サーバー不要で、小規模用途に向くRDB。"
                 }
               ]
             }
@@ -7358,7 +7082,7 @@ module.exports = {
         },
         {
           "id": "postgresql",
-          "page": 128,
+          "page": 105,
           "term": "PostgreSQL",
           "reading": "ポストグレスキューエル",
           "category": "データベース・RDBMS",
@@ -7408,8 +7132,7 @@ module.exports = {
               "items": [
                 {
                   "name": "MySQL",
-                  "desc": "情報量と実績の多さで選ばれることが多いRDB。",
-                  "page": 127
+                  "desc": "情報量と実績の多さで選ばれることが多いRDB。"
                 }
               ]
             }
@@ -7417,7 +7140,7 @@ module.exports = {
         },
         {
           "id": "sqlite",
-          "page": 129,
+          "page": 106,
           "term": "SQLite",
           "reading": "エスキューライト",
           "category": "データベース・RDBMS",
@@ -7467,13 +7190,11 @@ module.exports = {
               "items": [
                 {
                   "name": "MySQL",
-                  "desc": "本番の複数人利用に向く定番RDB。",
-                  "page": 127
+                  "desc": "本番の複数人利用に向く定番RDB。"
                 },
                 {
                   "name": "PostgreSQL",
-                  "desc": "機能重視ならこちらのRDB。",
-                  "page": 128
+                  "desc": "機能重視ならこちらのRDB。"
                 }
               ]
             }
@@ -7481,7 +7202,7 @@ module.exports = {
         },
         {
           "id": "redis",
-          "page": 130,
+          "page": 107,
           "term": "Redis",
           "reading": "レディス",
           "category": "データベース・NoSQL",
@@ -7531,13 +7252,11 @@ module.exports = {
               "items": [
                 {
                   "name": "Cache",
-                  "desc": "Redisはキャッシュの保存先として使われることが多い。",
-                  "page": 122
+                  "desc": "Redisはキャッシュの保存先として使われることが多い。"
                 },
                 {
                   "name": "MongoDB",
-                  "desc": "同じNoSQLでも、こちらはドキュメント指向データベース。",
-                  "page": 131
+                  "desc": "同じNoSQLでも、こちらはドキュメント指向データベース。"
                 }
               ]
             }
@@ -7545,7 +7264,7 @@ module.exports = {
         },
         {
           "id": "mongodb",
-          "page": 131,
+          "page": 108,
           "term": "MongoDB",
           "reading": "モンゴディービー",
           "category": "データベース・NoSQL",
@@ -7595,13 +7314,11 @@ module.exports = {
               "items": [
                 {
                   "name": "正規化",
-                  "desc": "RDBの正規化とは対照的な、構造を固定しない考え方。",
-                  "page": 123
+                  "desc": "RDBの正規化とは対照的な、構造を固定しない考え方。"
                 },
                 {
                   "name": "Redis",
-                  "desc": "同じNoSQLでも、こちらはインメモリのキー・バリュー型。",
-                  "page": 130
+                  "desc": "同じNoSQLでも、こちらはインメモリのキー・バリュー型。"
                 }
               ]
             }
@@ -7609,7 +7326,7 @@ module.exports = {
         },
         {
           "id": "view",
-          "page": 132,
+          "page": 109,
           "term": "View",
           "category": "データベース・RDBMS",
           "icon": "ic-image",
@@ -7658,13 +7375,11 @@ module.exports = {
               "items": [
                 {
                   "name": "Stored Procedure",
-                  "desc": "SELECT文だけでなく、処理そのものをDB側に置く仕組み。",
-                  "page": 133
+                  "desc": "SELECT文だけでなく、処理そのものをDB側に置く仕組み。"
                 },
                 {
                   "name": "Cache",
-                  "desc": "重い集計を都度計算させたくない点はビューと共通。",
-                  "page": 122
+                  "desc": "重い集計を都度計算させたくない点はビューと共通。"
                 }
               ]
             }
@@ -7673,7 +7388,7 @@ module.exports = {
         },
         {
           "id": "stored_procedure",
-          "page": 133,
+          "page": 110,
           "term": "Stored Procedure",
           "reading": "ストアドプロシージャ",
           "category": "データベース・RDBMS",
@@ -7723,8 +7438,7 @@ module.exports = {
               "items": [
                 {
                   "name": "View",
-                  "desc": "処理ではなく、SELECT文をまとめて名前をつける仕組み。",
-                  "page": 132
+                  "desc": "処理ではなく、SELECT文をまとめて名前をつける仕組み。"
                 }
               ]
             }
@@ -7732,7 +7446,7 @@ module.exports = {
         },
         {
           "id": "acid",
-          "page": 134,
+          "page": 111,
           "term": "ACID",
           "reading": "アシッド",
           "category": "データベース・トランザクション",
@@ -7782,13 +7496,11 @@ module.exports = {
               "items": [
                 {
                   "name": "MongoDB",
-                  "desc": "ACIDの厳格さより、柔軟さ・速度を優先することが多い。",
-                  "page": 131
+                  "desc": "ACIDの厳格さより、柔軟さ・速度を優先することが多い。"
                 },
                 {
                   "name": "Sharding",
-                  "desc": "DBを分割すると、ACIDを保つ難易度も上がる。",
-                  "page": 135
+                  "desc": "DBを分割すると、ACIDを保つ難易度も上がる。"
                 }
               ]
             }
@@ -7796,7 +7508,7 @@ module.exports = {
         },
         {
           "id": "sharding",
-          "page": 135,
+          "page": 112,
           "term": "Sharding",
           "reading": "シャーディング",
           "category": "データベース・スケーリング",
@@ -7846,13 +7558,11 @@ module.exports = {
               "items": [
                 {
                   "name": "レプリケーション",
-                  "desc": "分割ではなく複製で負荷を分散する、もう1つの手段。",
-                  "page": 136
+                  "desc": "分割ではなく複製で負荷を分散する、もう1つの手段。"
                 },
                 {
                   "name": "ACID",
-                  "desc": "DBを分割するほど、この4性質を保つのが難しくなる。",
-                  "page": 134
+                  "desc": "DBを分割するほど、この4性質を保つのが難しくなる。"
                 }
               ]
             }
@@ -7860,7 +7570,7 @@ module.exports = {
         },
         {
           "id": "replication",
-          "page": 136,
+          "page": 113,
           "term": "レプリケーション",
           "category": "データベース・スケーリング",
           "icon": "ic-network",
@@ -7909,8 +7619,7 @@ module.exports = {
               "items": [
                 {
                   "name": "Sharding",
-                  "desc": "複製ではなく分割で負荷を分散する、もう1つの手段。",
-                  "page": 135
+                  "desc": "複製ではなく分割で負荷を分散する、もう1つの手段。"
                 }
               ]
             }
@@ -7918,7 +7627,7 @@ module.exports = {
         },
         {
           "id": "connection_pool",
-          "page": 137,
+          "page": 114,
           "term": "コネクションプール",
           "category": "データベース・パフォーマンス",
           "icon": "ic-package",
@@ -7967,13 +7676,11 @@ module.exports = {
               "items": [
                 {
                   "name": "N+1",
-                  "desc": "クエリ数が増えるほど、接続の使い回し方も重要になる。",
-                  "page": 121
+                  "desc": "クエリ数が増えるほど、接続の使い回し方も重要になる。"
                 },
                 {
                   "name": "Cache",
-                  "desc": "接続や問い合わせそのものを減らす、もう1つの手段。",
-                  "page": 122
+                  "desc": "接続や問い合わせそのものを減らす、もう1つの手段。"
                 }
               ]
             }
@@ -7981,7 +7688,7 @@ module.exports = {
         },
         {
           "id": "dump",
-          "page": 138,
+          "page": 115,
           "term": "Dump",
           "category": "データベース・運用",
           "icon": "ic-file",
@@ -8035,13 +7742,11 @@ module.exports = {
               "items": [
                 {
                   "name": "Migration",
-                  "desc": "スキーマ変更をコードとして管理する仕組み。",
-                  "page": 114
+                  "desc": "スキーマ変更をコードとして管理する仕組み。"
                 },
                 {
                   "name": "Seeder",
-                  "desc": "初期データやテスト用データを流し込む仕組み。",
-                  "page": 115
+                  "desc": "初期データやテスト用データを流し込む仕組み。"
                 }
               ]
             }
@@ -8056,7 +7761,7 @@ module.exports = {
       "entries": [
         {
           "id": "html",
-          "page": 143,
+          "page": 116,
           "term": "HTML",
           "reading": "エイチティーエムエル",
           "category": "フロントエンド・基礎技術",
@@ -8106,18 +7811,15 @@ module.exports = {
               "items": [
                 {
                   "name": "CSS",
-                  "desc": "HTMLの見た目を整える言語。",
-                  "page": 144
+                  "desc": "HTMLの見た目を整える言語。"
                 },
                 {
                   "name": "JavaScript",
-                  "desc": "HTMLに動きを与える言語。",
-                  "page": 145
+                  "desc": "HTMLに動きを与える言語。"
                 },
                 {
                   "name": "DOM",
-                  "desc": "HTMLをJSから操作できる形にしたもの。",
-                  "page": 149
+                  "desc": "HTMLをJSから操作できる形にしたもの。"
                 }
               ]
             }
@@ -8125,7 +7827,7 @@ module.exports = {
         },
         {
           "id": "css",
-          "page": 144,
+          "page": 117,
           "term": "CSS",
           "reading": "シーエスエス",
           "category": "フロントエンド・基礎技術",
@@ -8175,13 +7877,11 @@ module.exports = {
               "items": [
                 {
                   "name": "HTML",
-                  "desc": "CSSが見た目を整える対象の文書構造。",
-                  "page": 143
+                  "desc": "CSSが見た目を整える対象の文書構造。"
                 },
                 {
                   "name": "CSSフレームワーク",
-                  "desc": "よく使うCSSをあらかじめ用意した道具箱。",
-                  "page": 163
+                  "desc": "よく使うCSSをあらかじめ用意した道具箱。"
                 }
               ]
             }
@@ -8189,7 +7889,7 @@ module.exports = {
         },
         {
           "id": "javascript",
-          "page": 145,
+          "page": 118,
           "term": "JavaScript",
           "reading": "ジャバスクリプト",
           "category": "フロントエンド・基礎技術",
@@ -8239,23 +7939,19 @@ module.exports = {
               "items": [
                 {
                   "name": "HTML",
-                  "desc": "JavaScriptが操作する対象の構造。",
-                  "page": 143
+                  "desc": "JavaScriptが操作する対象の構造。"
                 },
                 {
                   "name": "CSS",
-                  "desc": "JavaScriptが書き換える対象の見た目。",
-                  "page": 144
+                  "desc": "JavaScriptが書き換える対象の見た目。"
                 },
                 {
                   "name": "TypeScript",
-                  "desc": "JavaScriptに型を追加した言語。",
-                  "page": 146
+                  "desc": "JavaScriptに型を追加した言語。"
                 },
                 {
                   "name": "DOM",
-                  "desc": "JavaScriptから操作するHTMLの木構造。",
-                  "page": 149
+                  "desc": "JavaScriptから操作するHTMLの木構造。"
                 }
               ]
             }
@@ -8263,7 +7959,7 @@ module.exports = {
         },
         {
           "id": "typescript",
-          "page": 146,
+          "page": 119,
           "term": "TypeScript",
           "reading": "タイプスクリプト",
           "category": "フロントエンド・基礎技術",
@@ -8313,13 +8009,11 @@ module.exports = {
               "items": [
                 {
                   "name": "JavaScript",
-                  "desc": "TypeScriptのベースになった言語。",
-                  "page": 145
+                  "desc": "TypeScriptのベースになった言語。"
                 },
                 {
                   "name": "Vanilla JS",
-                  "desc": "型を付けない素のJavaScriptで書くこと。",
-                  "page": 147
+                  "desc": "型を付けない素のJavaScriptで書くこと。"
                 }
               ]
             }
@@ -8327,7 +8021,7 @@ module.exports = {
         },
         {
           "id": "vanilla-js",
-          "page": 147,
+          "page": 120,
           "term": "Vanilla JS",
           "category": "フロントエンド・基礎技術",
           "icon": "ic-package",
@@ -8376,13 +8070,11 @@ module.exports = {
               "items": [
                 {
                   "name": "JavaScript",
-                  "desc": "バニラJSの元になる標準言語。",
-                  "page": 145
+                  "desc": "バニラJSの元になる標準言語。"
                 },
                 {
                   "name": "DOM",
-                  "desc": "バニラJSが標準APIで直接操作する対象。",
-                  "page": 149
+                  "desc": "バニラJSが標準APIで直接操作する対象。"
                 }
               ]
             }
@@ -8391,7 +8083,7 @@ module.exports = {
         },
         {
           "id": "es-modules",
-          "page": 148,
+          "page": 121,
           "term": "ES Modules",
           "reading": "イーエスモジュール",
           "category": "フロントエンド・基礎技術",
@@ -8441,8 +8133,7 @@ module.exports = {
               "items": [
                 {
                   "name": "JavaScript",
-                  "desc": "ES Modulesが分割対象とする言語。",
-                  "page": 145
+                  "desc": "ES Modulesが分割対象とする言語。"
                 }
               ]
             }
@@ -8450,7 +8141,7 @@ module.exports = {
         },
         {
           "id": "dom",
-          "page": 149,
+          "page": 122,
           "term": "DOM",
           "reading": "ドム",
           "category": "フロントエンド・基礎技術",
@@ -8500,18 +8191,15 @@ module.exports = {
               "items": [
                 {
                   "name": "HTML",
-                  "desc": "DOMのもとになる文書構造。",
-                  "page": 143
+                  "desc": "DOMのもとになる文書構造。"
                 },
                 {
                   "name": "Event",
-                  "desc": "DOMの要素に取り付ける反応の仕組み。",
-                  "page": 150
+                  "desc": "DOMの要素に取り付ける反応の仕組み。"
                 },
                 {
                   "name": "Virtual DOM",
-                  "desc": "本物のDOMの代わりに使う仮想の木。",
-                  "page": 159
+                  "desc": "本物のDOMの代わりに使う仮想の木。"
                 }
               ]
             }
@@ -8519,7 +8207,7 @@ module.exports = {
         },
         {
           "id": "event",
-          "page": 150,
+          "page": 123,
           "term": "Event",
           "reading": "イベント",
           "category": "フロントエンド・基礎技術",
@@ -8569,18 +8257,15 @@ module.exports = {
               "items": [
                 {
                   "name": "DOM",
-                  "desc": "Eventを取り付ける対象の要素。",
-                  "page": 149
+                  "desc": "Eventを取り付ける対象の要素。"
                 },
                 {
                   "name": "非同期",
-                  "desc": "Eventの発生を待つ考え方の土台。",
-                  "page": 160
+                  "desc": "Eventの発生を待つ考え方の土台。"
                 },
                 {
                   "name": "Component",
-                  "desc": "Eventへの反応をまとめて持つ部品。",
-                  "page": 151
+                  "desc": "Eventへの反応をまとめて持つ部品。"
                 }
               ]
             }
@@ -8588,7 +8273,7 @@ module.exports = {
         },
         {
           "id": "component",
-          "page": 151,
+          "page": 124,
           "term": "Component",
           "reading": "コンポーネント",
           "category": "フロントエンド・UI設計",
@@ -8638,18 +8323,15 @@ module.exports = {
               "items": [
                 {
                   "name": "State",
-                  "desc": "Componentが内部に持つ今の状態。",
-                  "page": 152
+                  "desc": "Componentが内部に持つ今の状態。"
                 },
                 {
                   "name": "Props",
-                  "desc": "親から子のComponentへ渡す値。",
-                  "page": 153
+                  "desc": "親から子のComponentへ渡す値。"
                 },
                 {
                   "name": "Virtual DOM",
-                  "desc": "Componentの変化を効率よく反映する仕組み。",
-                  "page": 159
+                  "desc": "Componentの変化を効率よく反映する仕組み。"
                 }
               ]
             }
@@ -8657,7 +8339,7 @@ module.exports = {
         },
         {
           "id": "state",
-          "page": 152,
+          "page": 125,
           "term": "State",
           "reading": "ステート",
           "category": "フロントエンド・UI設計",
@@ -8707,18 +8389,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Component",
-                  "desc": "Stateを内部に持つ部品。",
-                  "page": 151
+                  "desc": "Stateを内部に持つ部品。"
                 },
                 {
                   "name": "Props",
-                  "desc": "Stateを子に渡すときの形。",
-                  "page": 153
+                  "desc": "Stateを子に渡すときの形。"
                 },
                 {
                   "name": "Virtual DOM",
-                  "desc": "Stateの変化を効率よく反映する仕組み。",
-                  "page": 159
+                  "desc": "Stateの変化を効率よく反映する仕組み。"
                 }
               ]
             }
@@ -8726,7 +8405,7 @@ module.exports = {
         },
         {
           "id": "props",
-          "page": 153,
+          "page": 126,
           "term": "Props",
           "reading": "プロップス",
           "category": "フロントエンド・UI設計",
@@ -8776,13 +8455,11 @@ module.exports = {
               "items": [
                 {
                   "name": "Component",
-                  "desc": "Propsを受け取る部品。",
-                  "page": 151
+                  "desc": "Propsを受け取る部品。"
                 },
                 {
                   "name": "State",
-                  "desc": "Propsのもとになることが多いデータ。",
-                  "page": 152
+                  "desc": "Propsのもとになることが多いデータ。"
                 }
               ]
             }
@@ -8790,7 +8467,7 @@ module.exports = {
         },
         {
           "id": "csr",
-          "page": 154,
+          "page": 127,
           "term": "CSR",
           "reading": "シーエスアール",
           "category": "フロントエンド・レンダリング",
@@ -8840,18 +8517,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Component",
-                  "desc": "CSRで画面を組み立てる部品の単位。",
-                  "page": 151
+                  "desc": "CSRで画面を組み立てる部品の単位。"
                 },
                 {
                   "name": "SSR",
-                  "desc": "サーバー側で先にHTMLを完成させる方式。",
-                  "page": 155
+                  "desc": "サーバー側で先にHTMLを完成させる方式。"
                 },
                 {
                   "name": "Hydration",
-                  "desc": "届いたHTMLにあとから動きを与える処理。",
-                  "page": 158
+                  "desc": "届いたHTMLにあとから動きを与える処理。"
                 }
               ]
             }
@@ -8859,7 +8533,7 @@ module.exports = {
         },
         {
           "id": "ssr",
-          "page": 155,
+          "page": 128,
           "term": "SSR",
           "reading": "エスエスアール",
           "category": "フロントエンド・レンダリング",
@@ -8909,18 +8583,15 @@ module.exports = {
               "items": [
                 {
                   "name": "CSR",
-                  "desc": "ブラウザ側でHTMLを組み立てる方式。",
-                  "page": 154
+                  "desc": "ブラウザ側でHTMLを組み立てる方式。"
                 },
                 {
                   "name": "SSG",
-                  "desc": "ビルド時にあらかじめHTMLを作る方式。",
-                  "page": 156
+                  "desc": "ビルド時にあらかじめHTMLを作る方式。"
                 },
                 {
                   "name": "Hydration",
-                  "desc": "SSRで届いたHTMLにあとから動きを与える処理。",
-                  "page": 158
+                  "desc": "SSRで届いたHTMLにあとから動きを与える処理。"
                 }
               ]
             }
@@ -8928,7 +8599,7 @@ module.exports = {
         },
         {
           "id": "ssg",
-          "page": 156,
+          "page": 129,
           "term": "SSG",
           "reading": "エスエスジー",
           "category": "フロントエンド・レンダリング",
@@ -8978,13 +8649,11 @@ module.exports = {
               "items": [
                 {
                   "name": "SSR",
-                  "desc": "アクセスのたびにHTMLを生成する方式。",
-                  "page": 155
+                  "desc": "アクセスのたびにHTMLを生成する方式。"
                 },
                 {
                   "name": "ISR",
-                  "desc": "SSGを裏側で少しずつ更新する方式。",
-                  "page": 157
+                  "desc": "SSGを裏側で少しずつ更新する方式。"
                 }
               ]
             }
@@ -8992,7 +8661,7 @@ module.exports = {
         },
         {
           "id": "isr",
-          "page": 157,
+          "page": 130,
           "term": "ISR",
           "reading": "アイエスアール",
           "category": "フロントエンド・レンダリング",
@@ -9042,13 +8711,11 @@ module.exports = {
               "items": [
                 {
                   "name": "SSG",
-                  "desc": "ビルド時にHTMLを事前生成する方式。",
-                  "page": 156
+                  "desc": "ビルド時にHTMLを事前生成する方式。"
                 },
                 {
                   "name": "SSR",
-                  "desc": "アクセスのたびにHTMLを生成する方式。",
-                  "page": 155
+                  "desc": "アクセスのたびにHTMLを生成する方式。"
                 }
               ]
             }
@@ -9056,7 +8723,7 @@ module.exports = {
         },
         {
           "id": "hydration",
-          "page": 158,
+          "page": 131,
           "term": "Hydration",
           "reading": "ハイドレーション",
           "category": "フロントエンド・レンダリング",
@@ -9106,18 +8773,15 @@ module.exports = {
               "items": [
                 {
                   "name": "SSR",
-                  "desc": "Hydrationが必要になる方式のひとつ。",
-                  "page": 155
+                  "desc": "Hydrationが必要になる方式のひとつ。"
                 },
                 {
                   "name": "SSG",
-                  "desc": "Hydrationが必要になる方式のひとつ。",
-                  "page": 156
+                  "desc": "Hydrationが必要になる方式のひとつ。"
                 },
                 {
                   "name": "CSR",
-                  "desc": "HydrationではなくJSが最初から画面を組み立てる方式。",
-                  "page": 154
+                  "desc": "HydrationではなくJSが最初から画面を組み立てる方式。"
                 }
               ]
             }
@@ -9125,7 +8789,7 @@ module.exports = {
         },
         {
           "id": "virtual-dom",
-          "page": 159,
+          "page": 132,
           "term": "Virtual DOM",
           "reading": "バーチャルドム",
           "category": "フロントエンド・レンダリング",
@@ -9175,18 +8839,15 @@ module.exports = {
               "items": [
                 {
                   "name": "DOM",
-                  "desc": "Virtual DOMが最終的に反映する本物の木構造。",
-                  "page": 149
+                  "desc": "Virtual DOMが最終的に反映する本物の木構造。"
                 },
                 {
                   "name": "State",
-                  "desc": "Virtual DOMが差分を計算するきっかけになるデータ。",
-                  "page": 152
+                  "desc": "Virtual DOMが差分を計算するきっかけになるデータ。"
                 },
                 {
                   "name": "Component",
-                  "desc": "Virtual DOMを使って更新される部品の単位。",
-                  "page": 151
+                  "desc": "Virtual DOMを使って更新される部品の単位。"
                 }
               ]
             }
@@ -9194,7 +8855,7 @@ module.exports = {
         },
         {
           "id": "async",
-          "page": 160,
+          "page": 133,
           "term": "非同期",
           "reading": "ひどうき",
           "category": "JavaScript・非同期処理",
@@ -9244,18 +8905,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Promise",
-                  "desc": "非同期処理の結果をまとめて扱うオブジェクト。",
-                  "page": 161
+                  "desc": "非同期処理の結果をまとめて扱うオブジェクト。"
                 },
                 {
                   "name": "async・await",
-                  "desc": "Promiseを同期処理のように書ける構文。",
-                  "page": 162
+                  "desc": "Promiseを同期処理のように書ける構文。"
                 },
                 {
                   "name": "Event",
-                  "desc": "非同期の発生をきっかけにする仕組み。",
-                  "page": 150
+                  "desc": "非同期の発生をきっかけにする仕組み。"
                 }
               ]
             }
@@ -9272,7 +8930,7 @@ module.exports = {
         },
         {
           "id": "promise",
-          "page": 161,
+          "page": 134,
           "term": "Promise",
           "reading": "プロミス",
           "category": "JavaScript・非同期処理",
@@ -9322,13 +8980,11 @@ module.exports = {
               "items": [
                 {
                   "name": "非同期",
-                  "desc": "Promiseが扱う処理そのものの考え方。",
-                  "page": 160
+                  "desc": "Promiseが扱う処理そのものの考え方。"
                 },
                 {
                   "name": "async・await",
-                  "desc": "Promiseを読みやすく書くための構文。",
-                  "page": 162
+                  "desc": "Promiseを読みやすく書くための構文。"
                 }
               ]
             }
@@ -9336,7 +8992,7 @@ module.exports = {
         },
         {
           "id": "async-await",
-          "page": 162,
+          "page": 135,
           "term": "async・await",
           "reading": "エイシンクアウェイト",
           "category": "JavaScript・非同期処理",
@@ -9386,13 +9042,11 @@ module.exports = {
               "items": [
                 {
                   "name": "Promise",
-                  "desc": "async・awaitの土台になっているオブジェクト。",
-                  "page": 161
+                  "desc": "async・awaitの土台になっているオブジェクト。"
                 },
                 {
                   "name": "非同期",
-                  "desc": "async・awaitが扱う処理の考え方。",
-                  "page": 160
+                  "desc": "async・awaitが扱う処理の考え方。"
                 }
               ]
             }
@@ -9400,7 +9054,7 @@ module.exports = {
         },
         {
           "id": "css-framework",
-          "page": 163,
+          "page": 136,
           "term": "CSSフレームワーク",
           "reading": "シーエスエスフレームワーク",
           "category": "フロントエンド・スタイリング",
@@ -9450,13 +9104,11 @@ module.exports = {
               "items": [
                 {
                   "name": "CSS",
-                  "desc": "CSSフレームワークの土台になる言語。",
-                  "page": 144
+                  "desc": "CSSフレームワークの土台になる言語。"
                 },
                 {
                   "name": "UIコンポーネントライブラリ",
-                  "desc": "見た目に加えて動きまで含む部品を提供するもの。",
-                  "page": 164
+                  "desc": "見た目に加えて動きまで含む部品を提供するもの。"
                 }
               ]
             }
@@ -9464,7 +9116,7 @@ module.exports = {
         },
         {
           "id": "ui-component-library",
-          "page": 164,
+          "page": 137,
           "term": "UIコンポーネントライブラリ",
           "compact": true,
           "reading": "ユーアイコンポーネントライブラリ",
@@ -9515,18 +9167,15 @@ module.exports = {
               "items": [
                 {
                   "name": "CSSフレームワーク",
-                  "desc": "見た目の材料を提供するもの。",
-                  "page": 163
+                  "desc": "見た目の材料を提供するもの。"
                 },
                 {
                   "name": "Component",
-                  "desc": "UIコンポーネントライブラリが提供する部品の単位。",
-                  "page": 151
+                  "desc": "UIコンポーネントライブラリが提供する部品の単位。"
                 },
                 {
                   "name": "Props",
-                  "desc": "UIコンポーネントライブラリの部品を調整する手段。",
-                  "page": 153
+                  "desc": "UIコンポーネントライブラリの部品を調整する手段。"
                 }
               ]
             }
@@ -9543,7 +9192,7 @@ module.exports = {
         },
         {
           "id": "nodejs",
-          "page": 165,
+          "page": 138,
           "term": "Node.js",
           "reading": "ノードジェイエス",
           "category": "ランタイム",
@@ -9593,13 +9242,11 @@ module.exports = {
               "items": [
                 {
                   "name": "Bun",
-                  "desc": "Node.js互換で起動・実行をまるごと高速化。",
-                  "page": 166
+                  "desc": "Node.js互換で起動・実行をまるごと高速化。"
                 },
                 {
                   "name": "Deno",
-                  "desc": "Node.js作者が作り直した安全志向のランタイム。",
-                  "page": 167
+                  "desc": "Node.js作者が作り直した安全志向のランタイム。"
                 }
               ]
             }
@@ -9607,7 +9254,7 @@ module.exports = {
         },
         {
           "id": "bun",
-          "page": 166,
+          "page": 139,
           "term": "Bun",
           "reading": "バン",
           "category": "ランタイム",
@@ -9657,13 +9304,11 @@ module.exports = {
               "items": [
                 {
                   "name": "Node.js",
-                  "desc": "JSをブラウザの外で動かす元祖ランタイム。",
-                  "page": 165
+                  "desc": "JSをブラウザの外で動かす元祖ランタイム。"
                 },
                 {
                   "name": "Deno",
-                  "desc": "安全性を重視したもう1つの後継ランタイム。",
-                  "page": 167
+                  "desc": "安全性を重視したもう1つの後継ランタイム。"
                 }
               ]
             }
@@ -9671,7 +9316,7 @@ module.exports = {
         },
         {
           "id": "deno",
-          "page": 167,
+          "page": 140,
           "term": "Deno",
           "reading": "ディーノ",
           "category": "ランタイム",
@@ -9721,13 +9366,11 @@ module.exports = {
               "items": [
                 {
                   "name": "Node.js",
-                  "desc": "JSをブラウザの外で動かす元祖ランタイム。",
-                  "page": 165
+                  "desc": "JSをブラウザの外で動かす元祖ランタイム。"
                 },
                 {
                   "name": "Bun",
-                  "desc": "Node.js互換で速さに振り切ったランタイム。",
-                  "page": 166
+                  "desc": "Node.js互換で速さに振り切ったランタイム。"
                 }
               ]
             }
@@ -9735,7 +9378,7 @@ module.exports = {
         },
         {
           "id": "react",
-          "page": 168,
+          "page": 141,
           "term": "React",
           "reading": "リアクト",
           "category": "フレームワーク",
@@ -9785,8 +9428,7 @@ module.exports = {
               "items": [
                 {
                   "name": "Vue",
-                  "desc": "HTMLに近い書き味で始められるフレームワーク。",
-                  "page": 169
+                  "desc": "HTMLに近い書き味で始められるフレームワーク。"
                 }
               ]
             },
@@ -9795,13 +9437,11 @@ module.exports = {
               "items": [
                 {
                   "name": "Next.js",
-                  "desc": "Reactにルーティングなどを標準搭載したフレームワーク。",
-                  "page": 170
+                  "desc": "Reactにルーティングなどを標準搭載したフレームワーク。"
                 },
                 {
                   "name": "Redux",
-                  "desc": "アプリ全体の状態を1箇所にまとめる状態管理。",
-                  "page": 185
+                  "desc": "アプリ全体の状態を1箇所にまとめる状態管理。"
                 }
               ]
             }
@@ -9809,7 +9449,7 @@ module.exports = {
         },
         {
           "id": "vue",
-          "page": 169,
+          "page": 142,
           "term": "Vue",
           "reading": "ビュー",
           "category": "フレームワーク",
@@ -9859,8 +9499,7 @@ module.exports = {
               "items": [
                 {
                   "name": "React",
-                  "desc": "状態からUIを再計算するコンポーネント指向ライブラリ。",
-                  "page": 168
+                  "desc": "状態からUIを再計算するコンポーネント指向ライブラリ。"
                 }
               ]
             },
@@ -9869,13 +9508,11 @@ module.exports = {
               "items": [
                 {
                   "name": "Nuxt.js",
-                  "desc": "Vueにルーティングなどを標準搭載したフレームワーク。",
-                  "page": 171
+                  "desc": "Vueにルーティングなどを標準搭載したフレームワーク。"
                 },
                 {
                   "name": "Pinia",
-                  "desc": "Vue公式が推奨する状態管理ライブラリ。",
-                  "page": 187
+                  "desc": "Vue公式が推奨する状態管理ライブラリ。"
                 }
               ]
             }
@@ -9883,7 +9520,7 @@ module.exports = {
         },
         {
           "id": "nextjs",
-          "page": 170,
+          "page": 143,
           "term": "Next.js",
           "reading": "ネクストジェイエス",
           "category": "フレームワーク",
@@ -9933,8 +9570,7 @@ module.exports = {
               "items": [
                 {
                   "name": "React",
-                  "desc": "コンポーネント単位でUIを組み立てるライブラリ。",
-                  "page": 168
+                  "desc": "コンポーネント単位でUIを組み立てるライブラリ。"
                 }
               ]
             },
@@ -9943,8 +9579,7 @@ module.exports = {
               "items": [
                 {
                   "name": "Nuxt.js",
-                  "desc": "VueにとってのNext.js的な存在。",
-                  "page": 171
+                  "desc": "VueにとってのNext.js的な存在。"
                 }
               ]
             }
@@ -9952,7 +9587,7 @@ module.exports = {
         },
         {
           "id": "nuxtjs",
-          "page": 171,
+          "page": 144,
           "term": "Nuxt.js",
           "reading": "ナクストジェイエス",
           "category": "フレームワーク",
@@ -10002,8 +9637,7 @@ module.exports = {
               "items": [
                 {
                   "name": "Vue",
-                  "desc": "HTMLに近い書き味のコンポーネント指向フレームワーク。",
-                  "page": 169
+                  "desc": "HTMLに近い書き味のコンポーネント指向フレームワーク。"
                 }
               ]
             },
@@ -10012,8 +9646,7 @@ module.exports = {
               "items": [
                 {
                   "name": "Next.js",
-                  "desc": "ReactにとってのNuxt.js的な存在。",
-                  "page": 170
+                  "desc": "ReactにとってのNuxt.js的な存在。"
                 }
               ]
             }
@@ -10021,7 +9654,7 @@ module.exports = {
         },
         {
           "id": "vite",
-          "page": 172,
+          "page": 145,
           "term": "Vite",
           "reading": "ヴィート",
           "category": "ツール",
@@ -10071,13 +9704,11 @@ module.exports = {
               "items": [
                 {
                   "name": "React",
-                  "desc": "Viteの定番テンプレートの1つ。",
-                  "page": 168
+                  "desc": "Viteの定番テンプレートの1つ。"
                 },
                 {
                   "name": "ESLint",
-                  "desc": "開発時のコードチェックを担うLinter。",
-                  "page": 173
+                  "desc": "開発時のコードチェックを担うLinter。"
                 }
               ]
             }
@@ -10085,7 +9716,7 @@ module.exports = {
         },
         {
           "id": "eslint",
-          "page": 173,
+          "page": 146,
           "term": "ESLint",
           "reading": "イーエスリント",
           "category": "ツール",
@@ -10135,13 +9766,11 @@ module.exports = {
               "items": [
                 {
                   "name": "Biome",
-                  "desc": "Lintと整形をRustで1本にまとめたツール。",
-                  "page": 174
+                  "desc": "Lintと整形をRustで1本にまとめたツール。"
                 },
                 {
                   "name": "OXC",
-                  "desc": "パーサーからRustで作り直すプロジェクト。",
-                  "page": 175
+                  "desc": "パーサーからRustで作り直すプロジェクト。"
                 }
               ]
             }
@@ -10149,7 +9778,7 @@ module.exports = {
         },
         {
           "id": "biome",
-          "page": 174,
+          "page": 147,
           "term": "Biome",
           "reading": "バイオーム",
           "category": "ツール",
@@ -10199,13 +9828,11 @@ module.exports = {
               "items": [
                 {
                   "name": "ESLint",
-                  "desc": "JS実装の老舗Linter。",
-                  "page": 173
+                  "desc": "JS実装の老舗Linter。"
                 },
                 {
                   "name": "OXC",
-                  "desc": "パース処理からRustで高速化する次の一手。",
-                  "page": 175
+                  "desc": "パース処理からRustで高速化する次の一手。"
                 }
               ]
             }
@@ -10213,7 +9840,7 @@ module.exports = {
         },
         {
           "id": "oxc",
-          "page": 175,
+          "page": 148,
           "term": "OXC",
           "reading": "オーエックスシー",
           "category": "ツール",
@@ -10263,13 +9890,11 @@ module.exports = {
               "items": [
                 {
                   "name": "ESLint",
-                  "desc": "JS実装の老舗Linter。",
-                  "page": 173
+                  "desc": "JS実装の老舗Linter。"
                 },
                 {
                   "name": "Biome",
-                  "desc": "Rustで1本化した中継地点。",
-                  "page": 174
+                  "desc": "Rustで1本化した中継地点。"
                 }
               ]
             }
@@ -10277,7 +9902,7 @@ module.exports = {
         },
         {
           "id": "tailwindcss",
-          "page": 176,
+          "page": 149,
           "term": "Tailwind CSS",
           "reading": "テイルウィンドシーエスエス",
           "category": "ツール",
@@ -10327,13 +9952,11 @@ module.exports = {
               "items": [
                 {
                   "name": "MUI",
-                  "desc": "既製のUI部品ごと使えるコンポーネント集。",
-                  "page": 177
+                  "desc": "既製のUI部品ごと使えるコンポーネント集。"
                 },
                 {
                   "name": "shadcn/ui",
-                  "desc": "コードをコピーして使うUI集。",
-                  "page": 178
+                  "desc": "コードをコピーして使うUI集。"
                 }
               ]
             }
@@ -10341,7 +9964,7 @@ module.exports = {
         },
         {
           "id": "mui",
-          "page": 177,
+          "page": 150,
           "term": "MUI",
           "reading": "エムユーアイ",
           "category": "ツール",
@@ -10391,13 +10014,11 @@ module.exports = {
               "items": [
                 {
                   "name": "Tailwind CSS",
-                  "desc": "ユーティリティクラスでスタイルを組み立てる。",
-                  "page": 176
+                  "desc": "ユーティリティクラスでスタイルを組み立てる。"
                 },
                 {
                   "name": "shadcn/ui",
-                  "desc": "コードをコピーして使う別解のUI集。",
-                  "page": 178
+                  "desc": "コードをコピーして使う別解のUI集。"
                 }
               ]
             }
@@ -10405,7 +10026,7 @@ module.exports = {
         },
         {
           "id": "shadcn-ui",
-          "page": 178,
+          "page": 151,
           "term": "shadcn/ui",
           "reading": "シャドシーエヌユーアイ",
           "category": "ツール",
@@ -10455,13 +10076,11 @@ module.exports = {
               "items": [
                 {
                   "name": "MUI",
-                  "desc": "既製部品をライブラリとして利用する方式。",
-                  "page": 177
+                  "desc": "既製部品をライブラリとして利用する方式。"
                 },
                 {
                   "name": "Tailwind CSS",
-                  "desc": "見た目を組み立てるユーティリティCSS。",
-                  "page": 176
+                  "desc": "見た目を組み立てるユーティリティCSS。"
                 }
               ]
             }
@@ -10469,7 +10088,7 @@ module.exports = {
         },
         {
           "id": "electron",
-          "page": 179,
+          "page": 152,
           "term": "Electron",
           "reading": "エレクトロン",
           "category": "ツール",
@@ -10519,8 +10138,7 @@ module.exports = {
               "items": [
                 {
                   "name": "PWA",
-                  "desc": "ストア審査なしでアプリっぽさを出す別解。",
-                  "page": 180
+                  "desc": "ストア審査なしでアプリっぽさを出す別解。"
                 }
               ]
             }
@@ -10528,7 +10146,7 @@ module.exports = {
         },
         {
           "id": "pwa",
-          "page": 180,
+          "page": 153,
           "term": "PWA",
           "reading": "ピーダブリューエー",
           "category": "Web技術",
@@ -10578,8 +10196,7 @@ module.exports = {
               "items": [
                 {
                   "name": "Electron",
-                  "desc": "Web技術でデスクトップアプリを作る仕組み。",
-                  "page": 179
+                  "desc": "Web技術でデスクトップアプリを作る仕組み。"
                 }
               ]
             },
@@ -10588,8 +10205,7 @@ module.exports = {
               "items": [
                 {
                   "name": "Core Web Vitals",
-                  "desc": "ページの体感品質を数値化する指標。",
-                  "page": 184
+                  "desc": "ページの体感品質を数値化する指標。"
                 }
               ]
             }
@@ -10597,7 +10213,7 @@ module.exports = {
         },
         {
           "id": "webassembly",
-          "page": 181,
+          "page": 154,
           "term": "WebAssembly",
           "reading": "ウェブアセンブリ",
           "category": "Web技術",
@@ -10647,8 +10263,7 @@ module.exports = {
               "items": [
                 {
                   "name": "Core Web Vitals",
-                  "desc": "速度も含めたページ品質を測る指標。",
-                  "page": 184
+                  "desc": "速度も含めたページ品質を測る指標。"
                 }
               ]
             }
@@ -10656,7 +10271,7 @@ module.exports = {
         },
         {
           "id": "a11y",
-          "page": 182,
+          "page": 155,
           "term": "a11y",
           "reading": "エーイレブンワイ",
           "category": "Web品質",
@@ -10706,13 +10321,11 @@ module.exports = {
               "items": [
                 {
                   "name": "i18n",
-                  "desc": "言語や地域による差分を吸収する対応。",
-                  "page": 183
+                  "desc": "言語や地域による差分を吸収する対応。"
                 },
                 {
                   "name": "Core Web Vitals",
-                  "desc": "速度など体感品質を測る指標。",
-                  "page": 184
+                  "desc": "速度など体感品質を測る指標。"
                 }
               ]
             }
@@ -10729,7 +10342,7 @@ module.exports = {
         },
         {
           "id": "i18n",
-          "page": 183,
+          "page": 156,
           "term": "i18n",
           "reading": "アイエイティーンエヌ",
           "category": "Web品質",
@@ -10779,8 +10392,7 @@ module.exports = {
               "items": [
                 {
                   "name": "a11y",
-                  "desc": "誰もが使える設計にするための視点。",
-                  "page": 182
+                  "desc": "誰もが使える設計にするための視点。"
                 }
               ]
             }
@@ -10797,7 +10409,7 @@ module.exports = {
         },
         {
           "id": "core-web-vitals",
-          "page": 184,
+          "page": 157,
           "term": "Core Web Vitals",
           "reading": "コアウェブバイタルズ",
           "category": "Web品質",
@@ -10847,13 +10459,11 @@ module.exports = {
               "items": [
                 {
                   "name": "PWA",
-                  "desc": "アプリっぽい体験を実現する技術。",
-                  "page": 180
+                  "desc": "アプリっぽい体験を実現する技術。"
                 },
                 {
                   "name": "a11y",
-                  "desc": "誰もが使える設計にするための視点。",
-                  "page": 182
+                  "desc": "誰もが使える設計にするための視点。"
                 }
               ]
             }
@@ -10861,7 +10471,7 @@ module.exports = {
         },
         {
           "id": "redux",
-          "page": 185,
+          "page": 158,
           "term": "Redux",
           "reading": "リダックス",
           "category": "状態管理",
@@ -10911,8 +10521,7 @@ module.exports = {
               "items": [
                 {
                   "name": "React",
-                  "desc": "コンポーネント単位でUIを組み立てるライブラリ。",
-                  "page": 168
+                  "desc": "コンポーネント単位でUIを組み立てるライブラリ。"
                 }
               ]
             },
@@ -10921,8 +10530,7 @@ module.exports = {
               "items": [
                 {
                   "name": "Zustand",
-                  "desc": "手順の少ない軽量な状態管理。",
-                  "page": 186
+                  "desc": "手順の少ない軽量な状態管理。"
                 }
               ]
             }
@@ -10930,7 +10538,7 @@ module.exports = {
         },
         {
           "id": "zustand",
-          "page": 186,
+          "page": 159,
           "term": "Zustand",
           "reading": "ツースタンド",
           "category": "状態管理",
@@ -10980,13 +10588,11 @@ module.exports = {
               "items": [
                 {
                   "name": "Redux",
-                  "desc": "手順は多いが予測可能性の高い状態管理。",
-                  "page": 185
+                  "desc": "手順は多いが予測可能性の高い状態管理。"
                 },
                 {
                   "name": "Pinia",
-                  "desc": "Vue版の似た立ち位置の状態管理。",
-                  "page": 187
+                  "desc": "Vue版の似た立ち位置の状態管理。"
                 }
               ]
             }
@@ -10994,7 +10600,7 @@ module.exports = {
         },
         {
           "id": "pinia",
-          "page": 187,
+          "page": 160,
           "term": "Pinia",
           "reading": "ピーニャ",
           "category": "状態管理",
@@ -11044,8 +10650,7 @@ module.exports = {
               "items": [
                 {
                   "name": "Vue",
-                  "desc": "HTMLに近い書き味のコンポーネント指向フレームワーク。",
-                  "page": 169
+                  "desc": "HTMLに近い書き味のコンポーネント指向フレームワーク。"
                 }
               ]
             },
@@ -11054,8 +10659,7 @@ module.exports = {
               "items": [
                 {
                   "name": "Zustand",
-                  "desc": "React版の似た立ち位置の状態管理。",
-                  "page": 186
+                  "desc": "React版の似た立ち位置の状態管理。"
                 }
               ]
             }
@@ -11069,7 +10673,7 @@ module.exports = {
       "entries": [
         {
           "id": "ruby",
-          "page": 193,
+          "page": 161,
           "term": "Ruby",
           "reading": "ルビー",
           "category": "プログラミング言語",
@@ -11124,8 +10728,7 @@ module.exports = {
               "items": [
                 {
                   "name": "Rails",
-                  "desc": "RubyのWebフレームワーク。設定より規約の思想で作られている。",
-                  "page": 199
+                  "desc": "RubyのWebフレームワーク。設定より規約の思想で作られている。"
                 }
               ]
             },
@@ -11134,8 +10737,7 @@ module.exports = {
               "items": [
                 {
                   "name": "Python",
-                  "desc": "同じく書きやすさを重視するスクリプト言語。",
-                  "page": 194
+                  "desc": "同じく書きやすさを重視するスクリプト言語。"
                 }
               ]
             }
@@ -11143,7 +10745,7 @@ module.exports = {
         },
         {
           "id": "python",
-          "page": 194,
+          "page": 162,
           "term": "Python",
           "reading": "パイソン",
           "category": "プログラミング言語",
@@ -11198,18 +10800,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Django",
-                  "desc": "電池付属の思想を持つフルスタックフレームワーク。",
-                  "page": 202
+                  "desc": "電池付属の思想を持つフルスタックフレームワーク。"
                 },
                 {
                   "name": "FastAPI",
-                  "desc": "型ヒントを活かした高速なAPIフレームワーク。",
-                  "page": 203
+                  "desc": "型ヒントを活かした高速なAPIフレームワーク。"
                 },
                 {
                   "name": "Flask",
-                  "desc": "必要な機能だけを足していく軽量フレームワーク。",
-                  "page": 204
+                  "desc": "必要な機能だけを足していく軽量フレームワーク。"
                 }
               ]
             },
@@ -11218,8 +10817,7 @@ module.exports = {
               "items": [
                 {
                   "name": "Ruby",
-                  "desc": "同じく書きやすさを重視するスクリプト言語。",
-                  "page": 193
+                  "desc": "同じく書きやすさを重視するスクリプト言語。"
                 }
               ]
             }
@@ -11227,7 +10825,7 @@ module.exports = {
         },
         {
           "id": "go",
-          "page": 195,
+          "page": 163,
           "term": "Go",
           "reading": "ゴー",
           "category": "プログラミング言語",
@@ -11282,8 +10880,7 @@ module.exports = {
               "items": [
                 {
                   "name": "Gin",
-                  "desc": "Goの速さを活かしたシンプルなWebフレームワーク。",
-                  "page": 205
+                  "desc": "Goの速さを活かしたシンプルなWebフレームワーク。"
                 }
               ]
             },
@@ -11292,8 +10889,7 @@ module.exports = {
               "items": [
                 {
                   "name": "Rust",
-                  "desc": "速度に加えてメモリ安全性をコンパイル時に保証する言語。",
-                  "page": 198
+                  "desc": "速度に加えてメモリ安全性をコンパイル時に保証する言語。"
                 }
               ]
             }
@@ -11301,7 +10897,7 @@ module.exports = {
         },
         {
           "id": "php",
-          "page": 196,
+          "page": 164,
           "term": "PHP",
           "reading": "ピーエイチピー",
           "category": "プログラミング言語",
@@ -11356,8 +10952,7 @@ module.exports = {
               "items": [
                 {
                   "name": "Laravel",
-                  "desc": "PHPをモダンにしたフルスタックフレームワーク。",
-                  "page": 206
+                  "desc": "PHPをモダンにしたフルスタックフレームワーク。"
                 }
               ]
             },
@@ -11366,8 +10961,7 @@ module.exports = {
               "items": [
                 {
                   "name": "Ruby",
-                  "desc": "同じく書きやすさを軸にしたスクリプト言語。",
-                  "page": 193
+                  "desc": "同じく書きやすさを軸にしたスクリプト言語。"
                 }
               ]
             }
@@ -11375,7 +10969,7 @@ module.exports = {
         },
         {
           "id": "java",
-          "page": 197,
+          "page": 165,
           "term": "Java",
           "reading": "ジャバ",
           "category": "プログラミング言語",
@@ -11430,8 +11024,7 @@ module.exports = {
               "items": [
                 {
                   "name": "Spring Boot",
-                  "desc": "Javaの設定を自動化し、すぐに動くアプリを作れるフレームワーク。",
-                  "page": 207
+                  "desc": "Javaの設定を自動化し、すぐに動くアプリを作れるフレームワーク。"
                 }
               ]
             },
@@ -11440,8 +11033,7 @@ module.exports = {
               "items": [
                 {
                   "name": "Go",
-                  "desc": "シンプルさと並行処理のしやすさを重視した言語。",
-                  "page": 195
+                  "desc": "シンプルさと並行処理のしやすさを重視した言語。"
                 }
               ]
             }
@@ -11449,7 +11041,7 @@ module.exports = {
         },
         {
           "id": "rust",
-          "page": 198,
+          "page": 166,
           "term": "Rust",
           "reading": "ラスト",
           "category": "プログラミング言語",
@@ -11504,8 +11096,7 @@ module.exports = {
               "items": [
                 {
                   "name": "Go",
-                  "desc": "シンプルさと開発速度を重視した言語。",
-                  "page": 195
+                  "desc": "シンプルさと開発速度を重視した言語。"
                 }
               ]
             }
@@ -11513,7 +11104,7 @@ module.exports = {
         },
         {
           "id": "rails",
-          "page": 199,
+          "page": 167,
           "term": "Rails",
           "reading": "レイルズ",
           "category": "Webフレームワーク",
@@ -11568,8 +11159,7 @@ module.exports = {
               "items": [
                 {
                   "name": "Ruby",
-                  "desc": "書きやすさ・読みやすさを重視するプログラミング言語。",
-                  "page": 193
+                  "desc": "書きやすさ・読みやすさを重視するプログラミング言語。"
                 }
               ]
             },
@@ -11578,13 +11168,11 @@ module.exports = {
               "items": [
                 {
                   "name": "Laravel",
-                  "desc": "PHP版のフルスタックフレームワーク。",
-                  "page": 206
+                  "desc": "PHP版のフルスタックフレームワーク。"
                 },
                 {
                   "name": "Django",
-                  "desc": "Python版のフルスタックフレームワーク。",
-                  "page": 202
+                  "desc": "Python版のフルスタックフレームワーク。"
                 }
               ]
             }
@@ -11592,7 +11180,7 @@ module.exports = {
         },
         {
           "id": "express",
-          "page": 200,
+          "page": 168,
           "term": "Express",
           "reading": "エクスプレス",
           "category": "Webフレームワーク",
@@ -11647,8 +11235,7 @@ module.exports = {
               "items": [
                 {
                   "name": "Hono",
-                  "desc": "Edge環境向けに生まれた、より軽量なフレームワーク。",
-                  "page": 201
+                  "desc": "Edge環境向けに生まれた、より軽量なフレームワーク。"
                 }
               ]
             }
@@ -11656,7 +11243,7 @@ module.exports = {
         },
         {
           "id": "hono",
-          "page": 201,
+          "page": 169,
           "term": "Hono",
           "reading": "ホノ",
           "category": "Webフレームワーク",
@@ -11711,8 +11298,7 @@ module.exports = {
               "items": [
                 {
                   "name": "Express",
-                  "desc": "Node.js向けの定番の軽量フレームワーク。",
-                  "page": 200
+                  "desc": "Node.js向けの定番の軽量フレームワーク。"
                 }
               ]
             }
@@ -11720,7 +11306,7 @@ module.exports = {
         },
         {
           "id": "django",
-          "page": 202,
+          "page": 170,
           "term": "Django",
           "reading": "ジャンゴ",
           "category": "Webフレームワーク",
@@ -11775,8 +11361,7 @@ module.exports = {
               "items": [
                 {
                   "name": "Python",
-                  "desc": "シンプルな文法を持つプログラミング言語。",
-                  "page": 194
+                  "desc": "シンプルな文法を持つプログラミング言語。"
                 }
               ]
             },
@@ -11785,18 +11370,15 @@ module.exports = {
               "items": [
                 {
                   "name": "FastAPI",
-                  "desc": "型ヒントを活かした高速なAPIフレームワーク。",
-                  "page": 203
+                  "desc": "型ヒントを活かした高速なAPIフレームワーク。"
                 },
                 {
                   "name": "Flask",
-                  "desc": "必要な機能だけを足していく軽量フレームワーク。",
-                  "page": 204
+                  "desc": "必要な機能だけを足していく軽量フレームワーク。"
                 },
                 {
                   "name": "Rails",
-                  "desc": "Ruby版のフルスタックフレームワーク。",
-                  "page": 199
+                  "desc": "Ruby版のフルスタックフレームワーク。"
                 }
               ]
             }
@@ -11804,7 +11386,7 @@ module.exports = {
         },
         {
           "id": "fastapi",
-          "page": 203,
+          "page": 171,
           "term": "FastAPI",
           "reading": "ファストエーピーアイ",
           "category": "Webフレームワーク",
@@ -11859,8 +11441,7 @@ module.exports = {
               "items": [
                 {
                   "name": "Python",
-                  "desc": "シンプルな文法を持つプログラミング言語。",
-                  "page": 194
+                  "desc": "シンプルな文法を持つプログラミング言語。"
                 }
               ]
             },
@@ -11869,13 +11450,11 @@ module.exports = {
               "items": [
                 {
                   "name": "Django",
-                  "desc": "電池付属の思想を持つフルスタックフレームワーク。",
-                  "page": 202
+                  "desc": "電池付属の思想を持つフルスタックフレームワーク。"
                 },
                 {
                   "name": "Flask",
-                  "desc": "必要な機能だけを足していく軽量フレームワーク。",
-                  "page": 204
+                  "desc": "必要な機能だけを足していく軽量フレームワーク。"
                 }
               ]
             }
@@ -11883,7 +11462,7 @@ module.exports = {
         },
         {
           "id": "flask",
-          "page": 204,
+          "page": 172,
           "term": "Flask",
           "reading": "フラスク",
           "category": "Webフレームワーク",
@@ -11938,8 +11517,7 @@ module.exports = {
               "items": [
                 {
                   "name": "Python",
-                  "desc": "シンプルな文法を持つプログラミング言語。",
-                  "page": 194
+                  "desc": "シンプルな文法を持つプログラミング言語。"
                 }
               ]
             },
@@ -11948,13 +11526,11 @@ module.exports = {
               "items": [
                 {
                   "name": "Django",
-                  "desc": "電池付属の思想を持つフルスタックフレームワーク。",
-                  "page": 202
+                  "desc": "電池付属の思想を持つフルスタックフレームワーク。"
                 },
                 {
                   "name": "FastAPI",
-                  "desc": "型ヒントを活かした高速なAPIフレームワーク。",
-                  "page": 203
+                  "desc": "型ヒントを活かした高速なAPIフレームワーク。"
                 }
               ]
             }
@@ -11962,7 +11538,7 @@ module.exports = {
         },
         {
           "id": "gin",
-          "page": 205,
+          "page": 173,
           "term": "Gin",
           "reading": "ジン",
           "category": "Webフレームワーク",
@@ -12017,8 +11593,7 @@ module.exports = {
               "items": [
                 {
                   "name": "Go",
-                  "desc": "並行処理を得意とするシンプルな言語。",
-                  "page": 195
+                  "desc": "並行処理を得意とするシンプルな言語。"
                 }
               ]
             }
@@ -12026,7 +11601,7 @@ module.exports = {
         },
         {
           "id": "laravel",
-          "page": 206,
+          "page": 174,
           "term": "Laravel",
           "reading": "ララベル",
           "category": "Webフレームワーク",
@@ -12081,8 +11656,7 @@ module.exports = {
               "items": [
                 {
                   "name": "PHP",
-                  "desc": "HTMLに埋め込んで使えるサーバーサイド言語。",
-                  "page": 196
+                  "desc": "HTMLに埋め込んで使えるサーバーサイド言語。"
                 }
               ]
             },
@@ -12091,8 +11665,7 @@ module.exports = {
               "items": [
                 {
                   "name": "Rails",
-                  "desc": "Ruby版のフルスタックフレームワーク。",
-                  "page": 199
+                  "desc": "Ruby版のフルスタックフレームワーク。"
                 }
               ]
             }
@@ -12100,7 +11673,7 @@ module.exports = {
         },
         {
           "id": "spring-boot",
-          "page": 207,
+          "page": 175,
           "term": "Spring Boot",
           "compact": true,
           "reading": "スプリングブート",
@@ -12156,8 +11729,7 @@ module.exports = {
               "items": [
                 {
                   "name": "Java",
-                  "desc": "JVM上で動作し、OSを問わず動かせる言語。",
-                  "page": 197
+                  "desc": "JVM上で動作し、OSを問わず動かせる言語。"
                 }
               ]
             }
@@ -12171,7 +11743,7 @@ module.exports = {
       "entries": [
         {
           "id": "ios",
-          "page": 450,
+          "page": 176,
           "term": "iOS",
           "reading": "アイオーエス",
           "category": "モバイル・プラットフォーム",
@@ -12226,18 +11798,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Swift",
-                  "desc": "iOSアプリ開発の第一言語。",
-                  "page": 457
+                  "desc": "iOSアプリ開発の第一言語。"
                 },
                 {
                   "name": "ネイティブアプリ",
-                  "desc": "OSの正式APIで作るアプリ。",
-                  "page": 452
+                  "desc": "OSの正式APIで作るアプリ。"
                 },
                 {
                   "name": "Android",
-                  "desc": "対になるもう一方の巨大プラットフォーム。",
-                  "page": 451
+                  "desc": "対になるもう一方の巨大プラットフォーム。"
                 }
               ]
             }
@@ -12245,7 +11814,7 @@ module.exports = {
         },
         {
           "id": "android",
-          "page": 451,
+          "page": 177,
           "term": "Android",
           "reading": "アンドロイド",
           "category": "モバイル・プラットフォーム",
@@ -12300,18 +11869,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Kotlin",
-                  "desc": "Android公式が推す第一言語。",
-                  "page": 458
+                  "desc": "Android公式が推す第一言語。"
                 },
                 {
                   "name": "iOS",
-                  "desc": "もう一方の巨大プラットフォーム。",
-                  "page": 450
+                  "desc": "もう一方の巨大プラットフォーム。"
                 },
                 {
                   "name": "Flutter",
-                  "desc": "Android/iOSをまとめて書く選択肢。",
-                  "page": 455
+                  "desc": "Android/iOSをまとめて書く選択肢。"
                 }
               ]
             }
@@ -12319,7 +11885,7 @@ module.exports = {
         },
         {
           "id": "native-app",
-          "page": 452,
+          "page": 178,
           "term": "ネイティブアプリ",
           "category": "モバイル・アプリ形態",
           "icon": "ic-cube",
@@ -12373,18 +11939,15 @@ module.exports = {
               "items": [
                 {
                   "name": "ハイブリッドアプリ",
-                  "desc": "Web技術を包んでアプリにする方式。",
-                  "page": 453
+                  "desc": "Web技術を包んでアプリにする方式。"
                 },
                 {
                   "name": "React Native",
-                  "desc": "JSでネイティブUIを描く枠組み。",
-                  "page": 454
+                  "desc": "JSでネイティブUIを描く枠組み。"
                 },
                 {
                   "name": "Swift",
-                  "desc": "iOSネイティブの主力言語。",
-                  "page": 457
+                  "desc": "iOSネイティブの主力言語。"
                 }
               ]
             }
@@ -12392,7 +11955,7 @@ module.exports = {
         },
         {
           "id": "hybrid-app",
-          "page": 453,
+          "page": 179,
           "term": "ハイブリッドアプリ",
           "category": "モバイル・アプリ形態",
           "icon": "ic-layers",
@@ -12446,18 +12009,15 @@ module.exports = {
               "items": [
                 {
                   "name": "ネイティブアプリ",
-                  "desc": "OS公式APIで作る本流。",
-                  "page": 452
+                  "desc": "OS公式APIで作る本流。"
                 },
                 {
                   "name": "React Native",
-                  "desc": "WebViewではなくネイティブ部品を使う道。",
-                  "page": 454
+                  "desc": "WebViewではなくネイティブ部品を使う道。"
                 },
                 {
                   "name": "PWA",
-                  "desc": "インストール感をWebのまま近づける別路線。",
-                  "page": 180
+                  "desc": "インストール感をWebのまま近づける別路線。"
                 }
               ]
             }
@@ -12465,7 +12025,7 @@ module.exports = {
         },
         {
           "id": "react-native",
-          "page": 454,
+          "page": 180,
           "term": "React Native",
           "reading": "リアクトネイティブ",
           "category": "クロスプラットフォーム",
@@ -12520,18 +12080,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Flutter",
-                  "desc": "Dartで自前描画するライバル枠。",
-                  "page": 455
+                  "desc": "Dartで自前描画するライバル枠。"
                 },
                 {
                   "name": "React",
-                  "desc": "発想の原点であるWebのUIライブラリ。",
-                  "page": 168
+                  "desc": "発想の原点であるWebのUIライブラリ。"
                 },
                 {
                   "name": "ネイティブアプリ",
-                  "desc": "最終的に触っている先の世界。",
-                  "page": 452
+                  "desc": "最終的に触っている先の世界。"
                 }
               ]
             }
@@ -12539,7 +12096,7 @@ module.exports = {
         },
         {
           "id": "flutter",
-          "page": 455,
+          "page": 181,
           "term": "Flutter",
           "reading": "フラッター",
           "category": "クロスプラットフォーム",
@@ -12594,18 +12151,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Dart",
-                  "desc": "Flutter公式の言語。",
-                  "page": 456
+                  "desc": "Flutter公式の言語。"
                 },
                 {
                   "name": "React Native",
-                  "desc": "JSでネイティブUIを駆動する別路線。",
-                  "page": 454
+                  "desc": "JSでネイティブUIを駆動する別路線。"
                 },
                 {
                   "name": "Android",
-                  "desc": "配布先の一大プラットフォーム。",
-                  "page": 451
+                  "desc": "配布先の一大プラットフォーム。"
                 }
               ]
             }
@@ -12613,7 +12167,7 @@ module.exports = {
         },
         {
           "id": "dart",
-          "page": 456,
+          "page": 182,
           "term": "Dart",
           "reading": "ダート",
           "category": "モバイル・言語",
@@ -12668,18 +12222,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Flutter",
-                  "desc": "Dartの最大の活躍の場。",
-                  "page": 455
+                  "desc": "Dartの最大の活躍の場。"
                 },
                 {
                   "name": "Swift",
-                  "desc": "iOSネイティブ側の言語。",
-                  "page": 457
+                  "desc": "iOSネイティブ側の言語。"
                 },
                 {
                   "name": "Kotlin",
-                  "desc": "Androidネイティブ側の言語。",
-                  "page": 458
+                  "desc": "Androidネイティブ側の言語。"
                 }
               ]
             }
@@ -12687,7 +12238,7 @@ module.exports = {
         },
         {
           "id": "swift",
-          "page": 457,
+          "page": 183,
           "term": "Swift",
           "reading": "スウィフト",
           "category": "モバイル・言語",
@@ -12742,18 +12293,15 @@ module.exports = {
               "items": [
                 {
                   "name": "iOS",
-                  "desc": "Swiftが最も活躍するOS。",
-                  "page": 450
+                  "desc": "Swiftが最も活躍するOS。"
                 },
                 {
                   "name": "Kotlin",
-                  "desc": "Android側の対になる言語。",
-                  "page": 458
+                  "desc": "Android側の対になる言語。"
                 },
                 {
                   "name": "ネイティブアプリ",
-                  "desc": "Swiftで作る典型的な成果物。",
-                  "page": 452
+                  "desc": "Swiftで作る典型的な成果物。"
                 }
               ]
             }
@@ -12761,7 +12309,7 @@ module.exports = {
         },
         {
           "id": "kotlin",
-          "page": 458,
+          "page": 184,
           "term": "Kotlin",
           "reading": "コトリン",
           "category": "モバイル・言語",
@@ -12816,18 +12364,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Android",
-                  "desc": "Kotlinが本領を発揮するOS。",
-                  "page": 451
+                  "desc": "Kotlinが本領を発揮するOS。"
                 },
                 {
                   "name": "Swift",
-                  "desc": "iOS側の対になる言語。",
-                  "page": 457
+                  "desc": "iOS側の対になる言語。"
                 },
                 {
                   "name": "Java",
-                  "desc": "互換と歴史のパートナー。",
-                  "page": 197
+                  "desc": "互換と歴史のパートナー。"
                 }
               ]
             }
@@ -12841,7 +12386,7 @@ module.exports = {
       "entries": [
         {
           "id": "unit-test",
-          "page": 500,
+          "page": 185,
           "term": "Unit Test",
           "reading": "ユニットテスト",
           "category": "テストの種類",
@@ -12896,18 +12441,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Integration Test",
-                  "desc": "部品をつないだ状態で確かめる。",
-                  "page": 501
+                  "desc": "部品をつないだ状態で確かめる。"
                 },
                 {
                   "name": "Mock",
-                  "desc": "依存を偽物に差し替える道具。",
-                  "page": 503
+                  "desc": "依存を偽物に差し替える道具。"
                 },
                 {
                   "name": "Jest",
-                  "desc": "JS界隈でよく使うテストランナー。",
-                  "page": 518
+                  "desc": "JS界隈でよく使うテストランナー。"
                 }
               ]
             }
@@ -12915,7 +12457,7 @@ module.exports = {
         },
         {
           "id": "integration-test",
-          "page": 501,
+          "page": 186,
           "term": "Integration Test",
           "reading": "インテグレーションテスト",
           "category": "テストの種類",
@@ -12970,18 +12512,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Unit Test",
-                  "desc": "もっと小さい単位のテスト。",
-                  "page": 500
+                  "desc": "もっと小さい単位のテスト。"
                 },
                 {
                   "name": "E2E Test",
-                  "desc": "ユーザー操作に近い端到端のテスト。",
-                  "page": 502
+                  "desc": "ユーザー操作に近い端到端のテスト。"
                 },
                 {
                   "name": "Fixture",
-                  "desc": "結合時に使う固定の試験データ。",
-                  "page": 505
+                  "desc": "結合時に使う固定の試験データ。"
                 }
               ]
             }
@@ -12989,7 +12528,7 @@ module.exports = {
         },
         {
           "id": "e2e-test",
-          "page": 502,
+          "page": 187,
           "term": "E2E Test",
           "reading": "イーツーイーテスト",
           "category": "テストの種類",
@@ -13044,18 +12583,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Playwright",
-                  "desc": "モダンなE2E自動化ツール。",
-                  "page": 520
+                  "desc": "モダンなE2E自動化ツール。"
                 },
                 {
                   "name": "Puppeteer",
-                  "desc": "Chromeを操作する自動化ライブラリ。",
-                  "page": 521
+                  "desc": "Chromeを操作する自動化ライブラリ。"
                 },
                 {
                   "name": "スモークテスト",
-                  "desc": "「とりあえず起動するか」の薄い確認。",
-                  "page": 512
+                  "desc": "「とりあえず起動するか」の薄い確認。"
                 }
               ]
             }
@@ -13063,7 +12599,7 @@ module.exports = {
         },
         {
           "id": "mock",
-          "page": 503,
+          "page": 188,
           "term": "Mock",
           "reading": "モック",
           "category": "テストダブル",
@@ -13118,18 +12654,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Stub",
-                  "desc": "決まった値を返すことに寄せた代役。",
-                  "page": 504
+                  "desc": "決まった値を返すことに寄せた代役。"
                 },
                 {
                   "name": "Unit Test",
-                  "desc": "Mockの出番が多い土俵。",
-                  "page": 500
+                  "desc": "Mockの出番が多い土俵。"
                 },
                 {
                   "name": "Fixture",
-                  "desc": "入力データ側の固定化。",
-                  "page": 505
+                  "desc": "入力データ側の固定化。"
                 }
               ]
             }
@@ -13137,7 +12670,7 @@ module.exports = {
         },
         {
           "id": "stub",
-          "page": 504,
+          "page": 189,
           "term": "Stub",
           "reading": "スタブ",
           "category": "テストダブル",
@@ -13192,18 +12725,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Mock",
-                  "desc": "呼び出しまで検証する寄り。",
-                  "page": 503
+                  "desc": "呼び出しまで検証する寄り。"
                 },
                 {
                   "name": "Fixture",
-                  "desc": "データ側の固定セット。",
-                  "page": 505
+                  "desc": "データ側の固定セット。"
                 },
                 {
                   "name": "Unit Test",
-                  "desc": "Stubがよく出る場所。",
-                  "page": 500
+                  "desc": "Stubがよく出る場所。"
                 }
               ]
             }
@@ -13211,7 +12741,7 @@ module.exports = {
         },
         {
           "id": "fixture",
-          "page": 505,
+          "page": 190,
           "term": "Fixture",
           "reading": "フィクスチャ",
           "category": "テストの基盤",
@@ -13266,18 +12796,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Seeder",
-                  "desc": "アプリ側の初期データ投入に近い概念。",
-                  "page": 115
+                  "desc": "アプリ側の初期データ投入に近い概念。"
                 },
                 {
                   "name": "Integration Test",
-                  "desc": "Fixtureの出番が多い層。",
-                  "page": 501
+                  "desc": "Fixtureの出番が多い層。"
                 },
                 {
                   "name": "Factory",
-                  "desc": "動的にテストデータを作る派（一緒に覚えたい）。",
-                  "page": 522
+                  "desc": "動的にテストデータを作る派（一緒に覚えたい）。"
                 }
               ]
             }
@@ -13285,7 +12812,7 @@ module.exports = {
         },
         {
           "id": "tdd",
-          "page": 506,
+          "page": 191,
           "term": "TDD",
           "reading": "ティーディーディー",
           "category": "テストの進め方",
@@ -13340,18 +12867,15 @@ module.exports = {
               "items": [
                 {
                   "name": "BDD",
-                  "desc": "振る舞い・事例の言葉で仕様を書く寄り。",
-                  "page": 507
+                  "desc": "振る舞い・事例の言葉で仕様を書く寄り。"
                 },
                 {
                   "name": "Unit Test",
-                  "desc": "TDDで最もよく回す粒度。",
-                  "page": 500
+                  "desc": "TDDで最もよく回す粒度。"
                 },
                 {
                   "name": "リファクタリング",
-                  "desc": "緑のあとに必ず来る工程（設計章）。",
-                  "page": 524
+                  "desc": "緑のあとに必ず来る工程（設計章）。"
                 }
               ]
             }
@@ -13359,7 +12883,7 @@ module.exports = {
         },
         {
           "id": "bdd",
-          "page": 507,
+          "page": 192,
           "term": "BDD",
           "reading": "ビーディーディー",
           "category": "テストの進め方",
@@ -13414,18 +12938,15 @@ module.exports = {
               "items": [
                 {
                   "name": "TDD",
-                  "desc": "テスト先行のサイクル。BDDと併記されやすい。",
-                  "page": 506
+                  "desc": "テスト先行のサイクル。BDDと併記されやすい。"
                 },
                 {
                   "name": "E2E Test",
-                  "desc": "振る舞いシナリオの実行場所になりやすい。",
-                  "page": 502
+                  "desc": "振る舞いシナリオの実行場所になりやすい。"
                 },
                 {
                   "name": "テスト設計",
-                  "desc": "何を書くかを決める上流。",
-                  "page": 517
+                  "desc": "何を書くかを決める上流。"
                 }
               ]
             }
@@ -13433,7 +12954,7 @@ module.exports = {
         },
         {
           "id": "coverage",
-          "page": 508,
+          "page": 193,
           "term": "カバレッジ",
           "category": "テストの指標",
           "icon": "ic-scale",
@@ -13487,18 +13008,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Unit Test",
-                  "desc": "カバレッジ計測の主戦場。",
-                  "page": 500
+                  "desc": "カバレッジ計測の主戦場。"
                 },
                 {
                   "name": "ホワイトボックステスト",
-                  "desc": "内部構造を見て網羅を考える。",
-                  "page": 515
+                  "desc": "内部構造を見て網羅を考える。"
                 },
                 {
                   "name": "Jest",
-                  "desc": "カバレッジ計測がしやすいランナー例。",
-                  "page": 518
+                  "desc": "カバレッジ計測がしやすいランナー例。"
                 }
               ]
             }
@@ -13506,7 +13024,7 @@ module.exports = {
         },
         {
           "id": "debug",
-          "page": 509,
+          "page": 194,
           "term": "デバッグ",
           "category": "不具合対応",
           "icon": "ic-pen",
@@ -13560,18 +13078,15 @@ module.exports = {
               "items": [
                 {
                   "name": "ログ",
-                  "desc": "本番でデバッグするときの手がかり（観測章へ）。",
-                  "page": 525
+                  "desc": "本番でデバッグするときの手がかり（観測章へ）。"
                 },
                 {
                   "name": "回帰テスト",
-                  "desc": "直した穴が再び開かないか確認。",
-                  "page": 511
+                  "desc": "直した穴が再び開かないか確認。"
                 },
                 {
                   "name": "Unit Test",
-                  "desc": "仮説検証を高速にする道具。",
-                  "page": 500
+                  "desc": "仮説検証を高速にする道具。"
                 }
               ]
             }
@@ -13579,7 +13094,7 @@ module.exports = {
         },
         {
           "id": "snapshot-test",
-          "page": 510,
+          "page": 195,
           "term": "スナップショットテスト",
           "category": "テストの種類",
           "icon": "ic-image",
@@ -13633,18 +13148,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Jest",
-                  "desc": "toMatchSnapshot が有名。",
-                  "page": 518
+                  "desc": "toMatchSnapshot が有名。"
                 },
                 {
                   "name": "Vitest",
-                  "desc": "同様の機能を持つ高速ランナー。",
-                  "page": 519
+                  "desc": "同様の機能を持つ高速ランナー。"
                 },
                 {
                   "name": "回帰テスト",
-                  "desc": "変化検知という目的が近い。",
-                  "page": 511
+                  "desc": "変化検知という目的が近い。"
                 }
               ]
             }
@@ -13652,7 +13164,7 @@ module.exports = {
         },
         {
           "id": "regression-test",
-          "page": 511,
+          "page": 196,
           "term": "回帰テスト",
           "reading": "かいきテスト",
           "category": "テストの種類",
@@ -13707,18 +13219,15 @@ module.exports = {
               "items": [
                 {
                   "name": "スモークテスト",
-                  "desc": "もっと薄い「死んでないか」確認。",
-                  "page": 512
+                  "desc": "もっと薄い「死んでないか」確認。"
                 },
                 {
                   "name": "E2E Test",
-                  "desc": "回帰の実行形態のひとつ。",
-                  "page": 502
+                  "desc": "回帰の実行形態のひとつ。"
                 },
                 {
                   "name": "デバッグ",
-                  "desc": "回帰で落ちたあと必ず来る工程。",
-                  "page": 509
+                  "desc": "回帰で落ちたあと必ず来る工程。"
                 }
               ]
             }
@@ -13726,7 +13235,7 @@ module.exports = {
         },
         {
           "id": "smoke-test",
-          "page": 512,
+          "page": 197,
           "term": "スモークテスト",
           "category": "テストの種類",
           "icon": "ic-rocket",
@@ -13780,18 +13289,15 @@ module.exports = {
               "items": [
                 {
                   "name": "E2E Test",
-                  "desc": "もっと厚いシナリオ確認。",
-                  "page": 502
+                  "desc": "もっと厚いシナリオ確認。"
                 },
                 {
                   "name": "回帰テスト",
-                  "desc": "広さ・深さのある再確認。",
-                  "page": 511
+                  "desc": "広さ・深さのある再確認。"
                 },
                 {
                   "name": "CI/CD",
-                  "desc": "スモークを自動で回す場所（Ch14）。",
-                  "page": 705
+                  "desc": "スモークを自動で回す場所（Ch14）。"
                 }
               ]
             }
@@ -13799,7 +13305,7 @@ module.exports = {
         },
         {
           "id": "boundary-value",
-          "page": 513,
+          "page": 198,
           "term": "境界値分析",
           "reading": "きょうかいちぶんせき",
           "category": "テスト設計技法",
@@ -13854,18 +13360,15 @@ module.exports = {
               "items": [
                 {
                   "name": "同値分割",
-                  "desc": "同じ扱いのグループから代表を取る技法。",
-                  "page": 514
+                  "desc": "同じ扱いのグループから代表を取る技法。"
                 },
                 {
                   "name": "ブラックボックステスト",
-                  "desc": "仕様ベースで境界を見る立場。",
-                  "page": 516
+                  "desc": "仕様ベースで境界を見る立場。"
                 },
                 {
                   "name": "テスト設計",
-                  "desc": "技法を組み合わせる上流工程。",
-                  "page": 517
+                  "desc": "技法を組み合わせる上流工程。"
                 }
               ]
             }
@@ -13873,7 +13376,7 @@ module.exports = {
         },
         {
           "id": "equivalence-partitioning",
-          "page": 514,
+          "page": 199,
           "term": "同値分割",
           "reading": "どうちぶんかつ",
           "category": "テスト設計技法",
@@ -13928,18 +13431,15 @@ module.exports = {
               "items": [
                 {
                   "name": "境界値分析",
-                  "desc": "区画の端を突く姉妹技法。",
-                  "page": 513
+                  "desc": "区画の端を突く姉妹技法。"
                 },
                 {
                   "name": "テスト設計",
-                  "desc": "これらの技法を使う工程。",
-                  "page": 517
+                  "desc": "これらの技法を使う工程。"
                 },
                 {
                   "name": "ブラックボックステスト",
-                  "desc": "内部を見ずに仕様から区画する。",
-                  "page": 516
+                  "desc": "内部を見ずに仕様から区画する。"
                 }
               ]
             }
@@ -13947,7 +13447,7 @@ module.exports = {
         },
         {
           "id": "white-box-test",
-          "page": 515,
+          "page": 200,
           "term": "ホワイトボックステスト",
           "category": "テストの立場",
           "icon": "ic-layers",
@@ -14001,18 +13501,15 @@ module.exports = {
               "items": [
                 {
                   "name": "ブラックボックステスト",
-                  "desc": "中を見ない対の立場。",
-                  "page": 516
+                  "desc": "中を見ない対の立場。"
                 },
                 {
                   "name": "カバレッジ",
-                  "desc": "構造網羅の指標。",
-                  "page": 508
+                  "desc": "構造網羅の指標。"
                 },
                 {
                   "name": "Unit Test",
-                  "desc": "白箱になりやすい粒度。",
-                  "page": 500
+                  "desc": "白箱になりやすい粒度。"
                 }
               ]
             }
@@ -14020,7 +13517,7 @@ module.exports = {
         },
         {
           "id": "black-box-test",
-          "page": 516,
+          "page": 201,
           "term": "ブラックボックステスト",
           "category": "テストの立場",
           "icon": "ic-monitor",
@@ -14074,18 +13571,15 @@ module.exports = {
               "items": [
                 {
                   "name": "ホワイトボックステスト",
-                  "desc": "中身を見る対の立場。",
-                  "page": 515
+                  "desc": "中身を見る対の立場。"
                 },
                 {
                   "name": "同値分割",
-                  "desc": "黒箱で使う代表技法。",
-                  "page": 514
+                  "desc": "黒箱で使う代表技法。"
                 },
                 {
                   "name": "E2E Test",
-                  "desc": "黒箱で回すことが多い層。",
-                  "page": 502
+                  "desc": "黒箱で回すことが多い層。"
                 }
               ]
             }
@@ -14093,7 +13587,7 @@ module.exports = {
         },
         {
           "id": "test-design",
-          "page": 517,
+          "page": 202,
           "term": "テスト設計",
           "reading": "テストせっけい",
           "category": "テストの進め方",
@@ -14148,18 +13642,15 @@ module.exports = {
               "items": [
                 {
                   "name": "境界値分析",
-                  "desc": "設計で使う代表技法。",
-                  "page": 513
+                  "desc": "設計で使う代表技法。"
                 },
                 {
                   "name": "同値分割",
-                  "desc": "同じく代表技法。",
-                  "page": 514
+                  "desc": "同じく代表技法。"
                 },
                 {
                   "name": "BDD",
-                  "desc": "振る舞いの言葉で設計する流派。",
-                  "page": 507
+                  "desc": "振る舞いの言葉で設計する流派。"
                 }
               ]
             }
@@ -14167,7 +13658,7 @@ module.exports = {
         },
         {
           "id": "jest",
-          "page": 518,
+          "page": 203,
           "term": "Jest",
           "reading": "ジェスト",
           "category": "テストツール",
@@ -14222,18 +13713,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Vitest",
-                  "desc": "Vite親和の高速オルタナティブ。",
-                  "page": 519
+                  "desc": "Vite親和の高速オルタナティブ。"
                 },
                 {
                   "name": "Unit Test",
-                  "desc": "Jestの主戦場。",
-                  "page": 500
+                  "desc": "Jestの主戦場。"
                 },
                 {
                   "name": "スナップショットテスト",
-                  "desc": "Jestが広めた手法の一つ。",
-                  "page": 510
+                  "desc": "Jestが広めた手法の一つ。"
                 }
               ]
             }
@@ -14241,7 +13729,7 @@ module.exports = {
         },
         {
           "id": "vitest",
-          "page": 519,
+          "page": 204,
           "term": "Vitest",
           "reading": "ヴィーテスト",
           "category": "テストツール",
@@ -14296,18 +13784,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Jest",
-                  "desc": "比較対象であり互換の参照点。",
-                  "page": 518
+                  "desc": "比較対象であり互換の参照点。"
                 },
                 {
                   "name": "Vite",
-                  "desc": "同じ思想圏のバンドラ／devサーバ。",
-                  "page": 172
+                  "desc": "同じ思想圏のバンドラ／devサーバ。"
                 },
                 {
                   "name": "Unit Test",
-                  "desc": "主に回すテストの種類。",
-                  "page": 500
+                  "desc": "主に回すテストの種類。"
                 }
               ]
             }
@@ -14315,7 +13800,7 @@ module.exports = {
         },
         {
           "id": "playwright",
-          "page": 520,
+          "page": 205,
           "term": "Playwright",
           "reading": "プレイライト",
           "category": "テストツール",
@@ -14370,18 +13855,15 @@ module.exports = {
               "items": [
                 {
                   "name": "E2E Test",
-                  "desc": "Playwrightの主用途。",
-                  "page": 502
+                  "desc": "Playwrightの主用途。"
                 },
                 {
                   "name": "Puppeteer",
-                  "desc": "Chrome操作の先輩格。",
-                  "page": 521
+                  "desc": "Chrome操作の先輩格。"
                 },
                 {
                   "name": "スモークテスト",
-                  "desc": "薄いE2Eとして回すことも。",
-                  "page": 512
+                  "desc": "薄いE2Eとして回すことも。"
                 }
               ]
             }
@@ -14389,7 +13871,7 @@ module.exports = {
         },
         {
           "id": "puppeteer",
-          "page": 521,
+          "page": 206,
           "term": "Puppeteer",
           "reading": "パペティア",
           "category": "テストツール",
@@ -14444,18 +13926,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Playwright",
-                  "desc": "多ブラウザE2Eの有力株。",
-                  "page": 520
+                  "desc": "多ブラウザE2Eの有力株。"
                 },
                 {
                   "name": "E2E Test",
-                  "desc": "用途のひとつ。",
-                  "page": 502
+                  "desc": "用途のひとつ。"
                 },
                 {
                   "name": "ヘッドレス",
-                  "desc": "画面なしでブラウザを走らせるモード。",
-                  "page": 523
+                  "desc": "画面なしでブラウザを走らせるモード。"
                 }
               ]
             }
@@ -14466,7 +13945,7 @@ module.exports = {
           "icon": "ic-gear",
           "compact": true,
           "id": "factory",
-          "page": 522,
+          "page": 207,
           "term": "Factory",
           "reading": "ファクトリ",
           "oneline": "テスト用データを、必要な形で動的に生成するための仕組み・パターン。",
@@ -14519,18 +13998,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Fixture",
-                  "desc": "静的寄りのテストデータ。",
-                  "page": 505
+                  "desc": "静的寄りのテストデータ。"
                 },
                 {
                   "name": "Unit Test",
-                  "desc": "Factoryの出番が多い層。",
-                  "page": 500
+                  "desc": "Factoryの出番が多い層。"
                 },
                 {
                   "name": "Seeder",
-                  "desc": "アプリ側の初期データ投入。",
-                  "page": 115
+                  "desc": "アプリ側の初期データ投入。"
                 }
               ]
             }
@@ -14541,7 +14017,7 @@ module.exports = {
           "icon": "ic-monitor",
           "compact": true,
           "id": "headless",
-          "page": 523,
+          "page": 208,
           "term": "ヘッドレス",
           "reading": "ヘッドレス",
           "oneline": "画面（GUI）を出さずに、ブラウザやアプリを裏側で動かすモード。",
@@ -14594,18 +14070,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Puppeteer",
-                  "desc": "ヘッドレスChrome操作の代表。",
-                  "page": 521
+                  "desc": "ヘッドレスChrome操作の代表。"
                 },
                 {
                   "name": "Playwright",
-                  "desc": "同様にヘッドレスで回せる。",
-                  "page": 520
+                  "desc": "同様にヘッドレスで回せる。"
                 },
                 {
                   "name": "E2E Test",
-                  "desc": "ヘッドレスと相性が良い層。",
-                  "page": 502
+                  "desc": "ヘッドレスと相性が良い層。"
                 }
               ]
             }
@@ -14616,7 +14089,7 @@ module.exports = {
           "icon": "ic-gear",
           "compact": true,
           "id": "refactoring",
-          "page": 524,
+          "page": 209,
           "term": "リファクタリング",
           "reading": "リファクタリング",
           "oneline": "外部から見た振る舞いを変えずに、内部の構造を読みやすく・変えやすく整えること。",
@@ -14669,18 +14142,15 @@ module.exports = {
               "items": [
                 {
                   "name": "TDD",
-                  "desc": "リファクタを前提にした開発サイクル。",
-                  "page": 506
+                  "desc": "リファクタを前提にした開発サイクル。"
                 },
                 {
                   "name": "Unit Test",
-                  "desc": "安全に直すための網。",
-                  "page": 500
+                  "desc": "安全に直すための網。"
                 },
                 {
                   "name": "デバッグ",
-                  "desc": "直す前に原因を掴む工程。",
-                  "page": 509
+                  "desc": "直す前に原因を掴む工程。"
                 }
               ]
             }
@@ -14691,7 +14161,7 @@ module.exports = {
           "icon": "ic-list",
           "compact": true,
           "id": "log",
-          "page": 525,
+          "page": 210,
           "term": "ログ",
           "reading": "ログ",
           "oneline": "プログラムが残す動作の記録。障害調査やデバッグの手がかりになる。",
@@ -14744,18 +14214,15 @@ module.exports = {
               "items": [
                 {
                   "name": "デバッグ",
-                  "desc": "ログを読んで原因に近づく。",
-                  "page": 509
+                  "desc": "ログを読んで原因に近づく。"
                 },
                 {
                   "name": "E2E Test",
-                  "desc": "失敗時のログが頼りになる。",
-                  "page": 502
+                  "desc": "失敗時のログが頼りになる。"
                 },
                 {
                   "name": "CI/CD",
-                  "desc": "パイプラインのログも調査対象。",
-                  "page": 705
+                  "desc": "パイプラインのログも調査対象。"
                 }
               ]
             }
@@ -14769,7 +14236,7 @@ module.exports = {
       "entries": [
         {
           "id": "package",
-          "page": 550,
+          "page": 211,
           "term": "パッケージ",
           "category": "パッケージ管理",
           "icon": "ic-package",
@@ -14823,18 +14290,15 @@ module.exports = {
               "items": [
                 {
                   "name": "依存関係",
-                  "desc": "パッケージが必要とする他パッケージ。",
-                  "page": 551
+                  "desc": "パッケージが必要とする他パッケージ。"
                 },
                 {
                   "name": "セマンティックバージョニング",
-                  "desc": "バージョン番号の約束事。",
-                  "page": 552
+                  "desc": "バージョン番号の約束事。"
                 },
                 {
                   "name": "npm",
-                  "desc": "JSの代表的なパッケージマネージャ。",
-                  "page": 554
+                  "desc": "JSの代表的なパッケージマネージャ。"
                 }
               ]
             }
@@ -14842,7 +14306,7 @@ module.exports = {
         },
         {
           "id": "dependency",
-          "page": 551,
+          "page": 212,
           "term": "依存関係",
           "reading": "いぞんかんけい",
           "category": "パッケージ管理",
@@ -14897,18 +14361,15 @@ module.exports = {
               "items": [
                 {
                   "name": "パッケージ",
-                  "desc": "依存の単位。",
-                  "page": 550
+                  "desc": "依存の単位。"
                 },
                 {
                   "name": "ロックファイル",
-                  "desc": "解決結果を固定するファイル。",
-                  "page": 553
+                  "desc": "解決結果を固定するファイル。"
                 },
                 {
                   "name": "セマンティックバージョニング",
-                  "desc": "互換の期待値を番号で表す。",
-                  "page": 552
+                  "desc": "互換の期待値を番号で表す。"
                 }
               ]
             }
@@ -14916,7 +14377,7 @@ module.exports = {
         },
         {
           "id": "semver",
-          "page": 552,
+          "page": 213,
           "term": "セマンティックバージョニング",
           "category": "バージョン管理",
           "icon": "ic-scale",
@@ -14970,18 +14431,15 @@ module.exports = {
               "items": [
                 {
                   "name": "ロックファイル",
-                  "desc": "SemVer範囲の解決結果を固定。",
-                  "page": 553
+                  "desc": "SemVer範囲の解決結果を固定。"
                 },
                 {
                   "name": "依存関係",
-                  "desc": "バージョン範囲が効く場所。",
-                  "page": 551
+                  "desc": "バージョン範囲が効く場所。"
                 },
                 {
                   "name": "npm",
-                  "desc": "SemVerが日常になる世界。",
-                  "page": 554
+                  "desc": "SemVerが日常になる世界。"
                 }
               ]
             }
@@ -14997,7 +14455,7 @@ module.exports = {
         },
         {
           "id": "lockfile",
-          "page": 553,
+          "page": 214,
           "term": "ロックファイル",
           "category": "パッケージ管理",
           "icon": "ic-file",
@@ -15051,18 +14509,15 @@ module.exports = {
               "items": [
                 {
                   "name": "依存関係",
-                  "desc": "ロックされる対象。",
-                  "page": 551
+                  "desc": "ロックされる対象。"
                 },
                 {
                   "name": "npm",
-                  "desc": "package-lock.json の世界。",
-                  "page": 554
+                  "desc": "package-lock.json の世界。"
                 },
                 {
                   "name": "pnpm",
-                  "desc": "pnpm-lock.yaml の世界。",
-                  "page": 556
+                  "desc": "pnpm-lock.yaml の世界。"
                 }
               ]
             }
@@ -15070,7 +14525,7 @@ module.exports = {
         },
         {
           "id": "npm",
-          "page": 554,
+          "page": 215,
           "term": "npm",
           "reading": "エヌピーエム",
           "category": "言語別パッケージマネージャ",
@@ -15125,18 +14580,15 @@ module.exports = {
               "items": [
                 {
                   "name": "yarn",
-                  "desc": "代替クライアントの代表格。",
-                  "page": 555
+                  "desc": "代替クライアントの代表格。"
                 },
                 {
                   "name": "pnpm",
-                  "desc": "ディスク効率に振る代替。",
-                  "page": 556
+                  "desc": "ディスク効率に振る代替。"
                 },
                 {
                   "name": "ロックファイル",
-                  "desc": "package-lock.json。",
-                  "page": 553
+                  "desc": "package-lock.json。"
                 }
               ]
             }
@@ -15144,7 +14596,7 @@ module.exports = {
         },
         {
           "id": "yarn",
-          "page": 555,
+          "page": 216,
           "term": "yarn",
           "reading": "ヤーン",
           "category": "言語別パッケージマネージャ",
@@ -15199,18 +14651,15 @@ module.exports = {
               "items": [
                 {
                   "name": "npm",
-                  "desc": "比較対象でありエコシステムの中心。",
-                  "page": 554
+                  "desc": "比較対象でありエコシステムの中心。"
                 },
                 {
                   "name": "pnpm",
-                  "desc": "もう一つの有力代替。",
-                  "page": 556
+                  "desc": "もう一つの有力代替。"
                 },
                 {
                   "name": "ロックファイル",
-                  "desc": "yarn.lock。",
-                  "page": 553
+                  "desc": "yarn.lock。"
                 }
               ]
             }
@@ -15218,7 +14667,7 @@ module.exports = {
         },
         {
           "id": "pnpm",
-          "page": 556,
+          "page": 217,
           "term": "pnpm",
           "reading": "ピーエヌピーエム",
           "category": "言語別パッケージマネージャ",
@@ -15273,18 +14722,15 @@ module.exports = {
               "items": [
                 {
                   "name": "npm",
-                  "desc": "エコシステムの基準点。",
-                  "page": 554
+                  "desc": "エコシステムの基準点。"
                 },
                 {
                   "name": "依存関係",
-                  "desc": "厳格さの対象。",
-                  "page": 551
+                  "desc": "厳格さの対象。"
                 },
                 {
                   "name": "ロックファイル",
-                  "desc": "pnpm-lock.yaml。",
-                  "page": 553
+                  "desc": "pnpm-lock.yaml。"
                 }
               ]
             }
@@ -15292,7 +14738,7 @@ module.exports = {
         },
         {
           "id": "pip",
-          "page": 557,
+          "page": 218,
           "term": "pip",
           "reading": "ピップ",
           "category": "言語別パッケージマネージャ",
@@ -15347,18 +14793,15 @@ module.exports = {
               "items": [
                 {
                   "name": "pyenv",
-                  "desc": "Python本体のバージョン管理。",
-                  "page": 566
+                  "desc": "Python本体のバージョン管理。"
                 },
                 {
                   "name": "パッケージ",
-                  "desc": "pipが扱う単位。",
-                  "page": 550
+                  "desc": "pipが扱う単位。"
                 },
                 {
                   "name": "ロックファイル",
-                  "desc": "詩やuvなど上位ツール側で強化されがち。",
-                  "page": 553
+                  "desc": "詩やuvなど上位ツール側で強化されがち。"
                 }
               ]
             }
@@ -15366,7 +14809,7 @@ module.exports = {
         },
         {
           "id": "gem",
-          "page": 558,
+          "page": 219,
           "term": "gem",
           "reading": "ジェム",
           "category": "言語別パッケージマネージャ",
@@ -15421,18 +14864,15 @@ module.exports = {
               "items": [
                 {
                   "name": "rbenv",
-                  "desc": "Ruby本体のバージョン管理。",
-                  "page": 565
+                  "desc": "Ruby本体のバージョン管理。"
                 },
                 {
                   "name": "ロックファイル",
-                  "desc": "Gemfile.lock。",
-                  "page": 553
+                  "desc": "Gemfile.lock。"
                 },
                 {
                   "name": "Rails",
-                  "desc": "gem生態系の巨大ユーザー。",
-                  "page": 199
+                  "desc": "gem生態系の巨大ユーザー。"
                 }
               ]
             }
@@ -15440,7 +14880,7 @@ module.exports = {
         },
         {
           "id": "cargo",
-          "page": 559,
+          "page": 220,
           "term": "cargo",
           "reading": "カーゴ",
           "category": "言語別パッケージマネージャ",
@@ -15495,18 +14935,15 @@ module.exports = {
               "items": [
                 {
                   "name": "パッケージ",
-                  "desc": "crateと呼ばれる単位。",
-                  "page": 550
+                  "desc": "crateと呼ばれる単位。"
                 },
                 {
                   "name": "ロックファイル",
-                  "desc": "Cargo.lock。",
-                  "page": 553
+                  "desc": "Cargo.lock。"
                 },
                 {
                   "name": "Rust",
-                  "desc": "cargoの宿主言語。",
-                  "page": 198
+                  "desc": "cargoの宿主言語。"
                 }
               ]
             }
@@ -15514,7 +14951,7 @@ module.exports = {
         },
         {
           "id": "go-mod",
-          "page": 560,
+          "page": 221,
           "term": "go mod",
           "reading": "ゴーモッド",
           "category": "言語別パッケージマネージャ",
@@ -15569,18 +15006,15 @@ module.exports = {
               "items": [
                 {
                   "name": "依存関係",
-                  "desc": "go.modに書く対象。",
-                  "page": 551
+                  "desc": "go.modに書く対象。"
                 },
                 {
                   "name": "セマンティックバージョニング",
-                  "desc": "モジュール版の基本感覚。",
-                  "page": 552
+                  "desc": "モジュール版の基本感覚。"
                 },
                 {
                   "name": "Go",
-                  "desc": "宿主言語。",
-                  "page": 195
+                  "desc": "宿主言語。"
                 }
               ]
             }
@@ -15588,7 +15022,7 @@ module.exports = {
         },
         {
           "id": "homebrew",
-          "page": 561,
+          "page": 222,
           "term": "Homebrew",
           "reading": "ホームブリュー",
           "category": "OSパッケージマネージャ",
@@ -15643,18 +15077,15 @@ module.exports = {
               "items": [
                 {
                   "name": "apt",
-                  "desc": "Debian/Ubuntu側の定番。",
-                  "page": 562
+                  "desc": "Debian/Ubuntu側の定番。"
                 },
                 {
                   "name": "mise",
-                  "desc": "言語ランタイム版管理の上位互換寄り。",
-                  "page": 563
+                  "desc": "言語ランタイム版管理の上位互換寄り。"
                 },
                 {
                   "name": "パッケージ",
-                  "desc": "brewが配る単位。",
-                  "page": 550
+                  "desc": "brewが配る単位。"
                 }
               ]
             }
@@ -15662,7 +15093,7 @@ module.exports = {
         },
         {
           "id": "apt",
-          "page": 562,
+          "page": 223,
           "term": "apt",
           "reading": "アプト",
           "category": "OSパッケージマネージャ",
@@ -15717,18 +15148,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Homebrew",
-                  "desc": "Mac側の類似体験。",
-                  "page": 561
+                  "desc": "Mac側の類似体験。"
                 },
                 {
                   "name": "パッケージ",
-                  "desc": "debなどの単位。",
-                  "page": 550
+                  "desc": "debなどの単位。"
                 },
                 {
                   "name": "Shell",
-                  "desc": "aptを叩く場所（Ch12）。",
-                  "page": 601
+                  "desc": "aptを叩く場所（Ch12）。"
                 }
               ]
             }
@@ -15736,7 +15164,7 @@ module.exports = {
         },
         {
           "id": "mise",
-          "page": 563,
+          "page": 224,
           "term": "mise",
           "reading": "ミーズ",
           "category": "ランタイムバージョン管理",
@@ -15791,18 +15219,15 @@ module.exports = {
               "items": [
                 {
                   "name": "nvm",
-                  "desc": "Node特化の先輩。",
-                  "page": 564
+                  "desc": "Node特化の先輩。"
                 },
                 {
                   "name": "rbenv",
-                  "desc": "Ruby特化。",
-                  "page": 565
+                  "desc": "Ruby特化。"
                 },
                 {
                   "name": "pyenv",
-                  "desc": "Python特化。",
-                  "page": 566
+                  "desc": "Python特化。"
                 }
               ]
             }
@@ -15810,7 +15235,7 @@ module.exports = {
         },
         {
           "id": "nvm",
-          "page": 564,
+          "page": 225,
           "term": "nvm",
           "reading": "エヌブイエム",
           "category": "ランタイムバージョン管理",
@@ -15865,18 +15290,15 @@ module.exports = {
               "items": [
                 {
                   "name": "mise",
-                  "desc": "多言語をまとめる上位互換寄り。",
-                  "page": 563
+                  "desc": "多言語をまとめる上位互換寄り。"
                 },
                 {
                   "name": "npm",
-                  "desc": "切り替えたNodeに付いてくるマネージャ。",
-                  "page": 554
+                  "desc": "切り替えたNodeに付いてくるマネージャ。"
                 },
                 {
                   "name": "Node.js",
-                  "desc": "対象ランタイム。",
-                  "page": 165
+                  "desc": "対象ランタイム。"
                 }
               ]
             }
@@ -15884,7 +15306,7 @@ module.exports = {
         },
         {
           "id": "rbenv",
-          "page": 565,
+          "page": 226,
           "term": "rbenv",
           "reading": "アールビーエンブ",
           "category": "ランタイムバージョン管理",
@@ -15939,18 +15361,15 @@ module.exports = {
               "items": [
                 {
                   "name": "gem",
-                  "desc": "Rubyパッケージ側。",
-                  "page": 558
+                  "desc": "Rubyパッケージ側。"
                 },
                 {
                   "name": "mise",
-                  "desc": "rbenv代替になりうる統合ツール。",
-                  "page": 563
+                  "desc": "rbenv代替になりうる統合ツール。"
                 },
                 {
                   "name": "Rails",
-                  "desc": "版固定が重要な代表アプリ。",
-                  "page": 199
+                  "desc": "版固定が重要な代表アプリ。"
                 }
               ]
             }
@@ -15958,7 +15377,7 @@ module.exports = {
         },
         {
           "id": "pyenv",
-          "page": 566,
+          "page": 227,
           "term": "pyenv",
           "reading": "パイエンブ",
           "category": "ランタイムバージョン管理",
@@ -16013,18 +15432,15 @@ module.exports = {
               "items": [
                 {
                   "name": "pip",
-                  "desc": "入れたPythonの上で動くインストーラ。",
-                  "page": 557
+                  "desc": "入れたPythonの上で動くインストーラ。"
                 },
                 {
                   "name": "mise",
-                  "desc": "統合版管理。",
-                  "page": 563
+                  "desc": "統合版管理。"
                 },
                 {
                   "name": "Python",
-                  "desc": "対象言語。",
-                  "page": 194
+                  "desc": "対象言語。"
                 }
               ]
             }
@@ -16038,7 +15454,7 @@ module.exports = {
       "entries": [
         {
           "id": "terminal",
-          "page": 600,
+          "page": 228,
           "term": "Terminal",
           "reading": "ターミナル",
           "category": "ターミナル基礎",
@@ -16093,18 +15509,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Shell",
-                  "desc": "コマンドを解釈して実行するプログラム。",
-                  "page": 601
+                  "desc": "コマンドを解釈して実行するプログラム。"
                 },
                 {
                   "name": "Bash",
-                  "desc": "定番のシェル。",
-                  "page": 602
+                  "desc": "定番のシェル。"
                 },
                 {
                   "name": "Ghostty",
-                  "desc": "端末エミュレータの一例。",
-                  "page": 617
+                  "desc": "端末エミュレータの一例。"
                 }
               ]
             }
@@ -16112,7 +15525,7 @@ module.exports = {
         },
         {
           "id": "shell",
-          "page": 601,
+          "page": 229,
           "term": "Shell",
           "reading": "シェル",
           "category": "ターミナル基礎",
@@ -16167,18 +15580,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Bash",
-                  "desc": "広く使われるシェル。",
-                  "page": 602
+                  "desc": "広く使われるシェル。"
                 },
                 {
                   "name": "Zsh",
-                  "desc": "macOSデフォルトになったシェル。",
-                  "page": 603
+                  "desc": "macOSデフォルトになったシェル。"
                 },
                 {
                   "name": "PATH",
-                  "desc": "コマンド検索パス。",
-                  "page": 604
+                  "desc": "コマンド検索パス。"
                 }
               ]
             }
@@ -16186,7 +15596,7 @@ module.exports = {
         },
         {
           "id": "bash",
-          "page": 602,
+          "page": 230,
           "term": "Bash",
           "reading": "バッシュ",
           "category": "シェル",
@@ -16241,18 +15651,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Zsh",
-                  "desc": "対話体験で選ばれやすい兄弟。",
-                  "page": 603
+                  "desc": "対話体験で選ばれやすい兄弟。"
                 },
                 {
                   "name": "Shell",
-                  "desc": "上位概念。",
-                  "page": 601
+                  "desc": "上位概念。"
                 },
                 {
                   "name": "Cron",
-                  "desc": "Bashスクリプトの実行タイミング役。",
-                  "page": 609
+                  "desc": "Bashスクリプトの実行タイミング役。"
                 }
               ]
             }
@@ -16260,7 +15667,7 @@ module.exports = {
         },
         {
           "id": "zsh",
-          "page": 603,
+          "page": 231,
           "term": "Zsh",
           "reading": "ゼットシェル",
           "category": "シェル",
@@ -16315,18 +15722,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Bash",
-                  "desc": "スクリプト共通語。",
-                  "page": 602
+                  "desc": "スクリプト共通語。"
                 },
                 {
                   "name": "Terminal",
-                  "desc": "Zshを表示する窓。",
-                  "page": 600
+                  "desc": "Zshを表示する窓。"
                 },
                 {
                   "name": "PATH",
-                  "desc": "設定をいじりがちな場所。",
-                  "page": 604
+                  "desc": "設定をいじりがちな場所。"
                 }
               ]
             }
@@ -16334,7 +15738,7 @@ module.exports = {
         },
         {
           "id": "path",
-          "page": 604,
+          "page": 232,
           "term": "PATH",
           "reading": "パス",
           "category": "環境",
@@ -16389,18 +15793,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Environment Variable",
-                  "desc": "PATHもその一種。",
-                  "page": 606
+                  "desc": "PATHもその一種。"
                 },
                 {
                   "name": "Shell",
-                  "desc": "PATHを見てコマンドを探す主体。",
-                  "page": 601
+                  "desc": "PATHを見てコマンドを探す主体。"
                 },
                 {
                   "name": "mise",
-                  "desc": "shim経由でPATH体験に介入（Ch11）。",
-                  "page": 563
+                  "desc": "shim経由でPATH体験に介入（Ch11）。"
                 }
               ]
             }
@@ -16408,7 +15809,7 @@ module.exports = {
         },
         {
           "id": "ssh",
-          "page": 605,
+          "page": 233,
           "term": "SSH",
           "reading": "エスエスエイチ",
           "category": "リモートアクセス",
@@ -16463,18 +15864,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Terminal",
-                  "desc": "SSHセッションを映す窓。",
-                  "page": 600
+                  "desc": "SSHセッションを映す窓。"
                 },
                 {
                   "name": "VPN",
-                  "desc": "網全体をトンネルする別手段（Ch2）。",
-                  "page": 62
+                  "desc": "網全体をトンネルする別手段（Ch2）。"
                 },
                 {
                   "name": "Daemon",
-                  "desc": "sshd として常駐する側。",
-                  "page": 610
+                  "desc": "sshd として常駐する側。"
                 }
               ]
             }
@@ -16482,7 +15880,7 @@ module.exports = {
         },
         {
           "id": "environment-variable",
-          "page": 606,
+          "page": 234,
           "term": "Environment Variable",
           "reading": "エンバイロメントバリアブル",
           "category": "環境",
@@ -16537,18 +15935,15 @@ module.exports = {
               "items": [
                 {
                   "name": ".env",
-                  "desc": "環境変数をファイルで扱う慣習。",
-                  "page": 618
+                  "desc": "環境変数をファイルで扱う慣習。"
                 },
                 {
                   "name": "PATH",
-                  "desc": "代表的な環境変数。",
-                  "page": 604
+                  "desc": "代表的な環境変数。"
                 },
                 {
                   "name": "Process",
-                  "desc": "変数を受け取る実行主体。",
-                  "page": 607
+                  "desc": "変数を受け取る実行主体。"
                 }
               ]
             }
@@ -16566,7 +15961,7 @@ module.exports = {
         },
         {
           "id": "process",
-          "page": 607,
+          "page": 235,
           "term": "Process",
           "reading": "プロセス",
           "category": "OSの実行単位",
@@ -16621,18 +16016,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Thread",
-                  "desc": "プロセスの中の実行の流れ。",
-                  "page": 608
+                  "desc": "プロセスの中の実行の流れ。"
                 },
                 {
                   "name": "Daemon",
-                  "desc": "常駐するプロセスの形態。",
-                  "page": 610
+                  "desc": "常駐するプロセスの形態。"
                 },
                 {
                   "name": "SSH",
-                  "desc": "遠隔でプロセスを扱う入口。",
-                  "page": 605
+                  "desc": "遠隔でプロセスを扱う入口。"
                 }
               ]
             }
@@ -16640,7 +16032,7 @@ module.exports = {
         },
         {
           "id": "thread",
-          "page": 608,
+          "page": 236,
           "term": "Thread",
           "reading": "スレッド",
           "category": "OSの実行単位",
@@ -16695,18 +16087,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Process",
-                  "desc": "スレッドの入れ物。",
-                  "page": 607
+                  "desc": "スレッドの入れ物。"
                 },
                 {
                   "name": "Lock",
-                  "desc": "共有資源の交通整理（Ch6）。",
-                  "page": 117
+                  "desc": "共有資源の交通整理（Ch6）。"
                 },
                 {
                   "name": "非同期",
-                  "desc": "並行の別モデル（Ch7）。",
-                  "page": 160
+                  "desc": "並行の別モデル（Ch7）。"
                 }
               ]
             }
@@ -16714,7 +16103,7 @@ module.exports = {
         },
         {
           "id": "cron",
-          "page": 609,
+          "page": 237,
           "term": "Cron",
           "reading": "クーロン",
           "category": "ジョブスケジューラ",
@@ -16769,18 +16158,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Daemon",
-                  "desc": "cron自体も常駐サービス。",
-                  "page": 610
+                  "desc": "cron自体も常駐サービス。"
                 },
                 {
                   "name": "Bash",
-                  "desc": "よく実行されるスクリプトの中身。",
-                  "page": 602
+                  "desc": "よく実行されるスクリプトの中身。"
                 },
                 {
                   "name": "Process",
-                  "desc": "起動される実行主体。",
-                  "page": 607
+                  "desc": "起動される実行主体。"
                 }
               ]
             }
@@ -16788,7 +16174,7 @@ module.exports = {
         },
         {
           "id": "daemon",
-          "page": 610,
+          "page": 238,
           "term": "Daemon",
           "reading": "デーモン",
           "category": "OSの実行形態",
@@ -16843,18 +16229,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Process",
-                  "desc": "デーモンもプロセスの一種。",
-                  "page": 607
+                  "desc": "デーモンもプロセスの一種。"
                 },
                 {
                   "name": "SSH",
-                  "desc": "sshd が代表例。",
-                  "page": 605
+                  "desc": "sshd が代表例。"
                 },
                 {
                   "name": "Cron",
-                  "desc": "定期実行のデーモン利用。",
-                  "page": 609
+                  "desc": "定期実行のデーモン利用。"
                 }
               ]
             }
@@ -16862,7 +16245,7 @@ module.exports = {
         },
         {
           "id": "regex",
-          "page": 611,
+          "page": 239,
           "term": "正規表現",
           "reading": "せいきひょうげん",
           "category": "テキスト処理",
@@ -16917,18 +16300,15 @@ module.exports = {
               "items": [
                 {
                   "name": "grep",
-                  "desc": "正規表現検索の代表コマンド（近い言葉）。",
-                  "page": 619
+                  "desc": "正規表現検索の代表コマンド（近い言葉）。"
                 },
                 {
                   "name": "Vim",
-                  "desc": "正規表現置換が強い編集器。",
-                  "page": 615
+                  "desc": "正規表現置換が強い編集器。"
                 },
                 {
                   "name": "Shell",
-                  "desc": "パイプと組み合わせて使う舞台。",
-                  "page": 601
+                  "desc": "パイプと組み合わせて使う舞台。"
                 }
               ]
             }
@@ -16936,7 +16316,7 @@ module.exports = {
         },
         {
           "id": "permission",
-          "page": 612,
+          "page": 240,
           "term": "パーミッション",
           "category": "権限",
           "icon": "ic-scale",
@@ -16990,18 +16370,15 @@ module.exports = {
               "items": [
                 {
                   "name": "SSH",
-                  "desc": "秘密鍵ファイルの権限が厳しい。",
-                  "page": 605
+                  "desc": "秘密鍵ファイルの権限が厳しい。"
                 },
                 {
                   "name": ".env",
-                  "desc": "中身を守る権限設計が重要。",
-                  "page": 618
+                  "desc": "中身を守る権限設計が重要。"
                 },
                 {
                   "name": "Process",
-                  "desc": "どのユーザー権限で走るかが効く。",
-                  "page": 607
+                  "desc": "どのユーザー権限で走るかが効く。"
                 }
               ]
             }
@@ -17009,7 +16386,7 @@ module.exports = {
         },
         {
           "id": "ping",
-          "page": 613,
+          "page": 241,
           "term": "ping",
           "reading": "ピング",
           "category": "ネットワーク診断",
@@ -17064,18 +16441,15 @@ module.exports = {
               "items": [
                 {
                   "name": "curl",
-                  "desc": "アプリ層の到達確認。",
-                  "page": 614
+                  "desc": "アプリ層の到達確認。"
                 },
                 {
                   "name": "IP Address",
-                  "desc": "pingの宛先（Ch2）。",
-                  "page": 51
+                  "desc": "pingの宛先（Ch2）。"
                 },
                 {
                   "name": "DNS",
-                  "desc": "名前解決の次に疑うポイント（Ch2）。",
-                  "page": 49
+                  "desc": "名前解決の次に疑うポイント（Ch2）。"
                 }
               ]
             }
@@ -17083,7 +16457,7 @@ module.exports = {
         },
         {
           "id": "curl",
-          "page": 614,
+          "page": 242,
           "term": "curl",
           "reading": "カール",
           "category": "ネットワーク診断",
@@ -17138,18 +16512,15 @@ module.exports = {
               "items": [
                 {
                   "name": "HTTP",
-                  "desc": "curlが最もよく話す相手（Ch2）。",
-                  "page": 47
+                  "desc": "curlが最もよく話す相手（Ch2）。"
                 },
                 {
                   "name": "ping",
-                  "desc": "もっと下の層の生存確認。",
-                  "page": 613
+                  "desc": "もっと下の層の生存確認。"
                 },
                 {
                   "name": "API",
-                  "desc": "curlで試す対象（Ch4）。",
-                  "page": 83
+                  "desc": "curlで試す対象（Ch4）。"
                 }
               ]
             }
@@ -17157,7 +16528,7 @@ module.exports = {
         },
         {
           "id": "vim",
-          "page": 615,
+          "page": 243,
           "term": "Vim",
           "reading": "ビム",
           "category": "開発ツール",
@@ -17212,18 +16583,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Terminal",
-                  "desc": "Vimが動く場所。",
-                  "page": 600
+                  "desc": "Vimが動く場所。"
                 },
                 {
                   "name": "SSH",
-                  "desc": "Vimが真価を発揮する遠隔作業。",
-                  "page": 605
+                  "desc": "Vimが真価を発揮する遠隔作業。"
                 },
                 {
                   "name": "正規表現",
-                  "desc": "置換でよく使う道具。",
-                  "page": 611
+                  "desc": "置換でよく使う道具。"
                 }
               ]
             }
@@ -17231,7 +16599,7 @@ module.exports = {
         },
         {
           "id": "markdown",
-          "page": 616,
+          "page": 244,
           "term": "Markdown",
           "reading": "マークダウン",
           "category": "開発ツール",
@@ -17286,18 +16654,15 @@ module.exports = {
               "items": [
                 {
                   "name": "HTML",
-                  "desc": "よく変換される先（Ch7）。",
-                  "page": 143
+                  "desc": "よく変換される先（Ch7）。"
                 },
                 {
                   "name": "Vim",
-                  "desc": "Markdownを編集する道具の一例。",
-                  "page": 615
+                  "desc": "Markdownを編集する道具の一例。"
                 },
                 {
                   "name": "Repository",
-                  "desc": "README.mdの置き場（Ch1）。",
-                  "page": 1
+                  "desc": "README.mdの置き場（Ch1）。"
                 }
               ]
             }
@@ -17305,7 +16670,7 @@ module.exports = {
         },
         {
           "id": "ghostty",
-          "page": 617,
+          "page": 245,
           "term": "Ghostty",
           "reading": "ゴースティ",
           "category": "開発ツール",
@@ -17360,18 +16725,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Terminal",
-                  "desc": "Ghosttyが実装する役割。",
-                  "page": 600
+                  "desc": "Ghosttyが実装する役割。"
                 },
                 {
                   "name": "Shell",
-                  "desc": "中で動く通訳。",
-                  "page": 601
+                  "desc": "中で動く通訳。"
                 },
                 {
                   "name": "Zsh",
-                  "desc": "きれいなプロンプトと相性良し。",
-                  "page": 603
+                  "desc": "きれいなプロンプトと相性良し。"
                 }
               ]
             }
@@ -17379,7 +16741,7 @@ module.exports = {
         },
         {
           "id": "dotenv",
-          "page": 618,
+          "page": 246,
           "term": ".env",
           "reading": "ドットエンブ",
           "category": "環境",
@@ -17434,18 +16796,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Environment Variable",
-                  "desc": ".envが注入する先。",
-                  "page": 606
+                  "desc": ".envが注入する先。"
                 },
                 {
                   "name": "パーミッション",
-                  "desc": "ファイルを守る権限。",
-                  "page": 612
+                  "desc": "ファイルを守る権限。"
                 },
                 {
                   "name": "Secret",
-                  "desc": "本番での本式管理（セキュリティ章）。",
-                  "page": 620
+                  "desc": "本番での本式管理（セキュリティ章）。"
                 }
               ]
             }
@@ -17456,7 +16815,7 @@ module.exports = {
           "icon": "ic-file",
           "compact": true,
           "id": "grep",
-          "page": 619,
+          "page": 247,
           "term": "grep",
           "reading": "グレップ",
           "oneline": "テキストの中から、条件に合う行を探し出す定番コマンド（系）。",
@@ -17509,18 +16868,15 @@ module.exports = {
               "items": [
                 {
                   "name": "正規表現",
-                  "desc": "grepの条件記述に使う。",
-                  "page": 611
+                  "desc": "grepの条件記述に使う。"
                 },
                 {
                   "name": "Terminal",
-                  "desc": "grepを打つ場所。",
-                  "page": 600
+                  "desc": "grepを打つ場所。"
                 },
                 {
                   "name": "ログ",
-                  "desc": "grepの代表的な検索対象。",
-                  "page": 525
+                  "desc": "grepの代表的な検索対象。"
                 }
               ]
             }
@@ -17531,7 +16887,7 @@ module.exports = {
           "icon": "ic-cube",
           "compact": true,
           "id": "secret",
-          "page": 620,
+          "page": 248,
           "term": "Secret",
           "reading": "シークレット",
           "oneline": "APIキーやパスワードなど、外に出してはいけない機密情報の扱い・置き場。",
@@ -17584,18 +16940,15 @@ module.exports = {
               "items": [
                 {
                   "name": ".env",
-                  "desc": "ローカルでの変数読み込み。",
-                  "page": 618
+                  "desc": "ローカルでの変数読み込み。"
                 },
                 {
                   "name": "Environment Variable",
-                  "desc": "Secretの注入先になりやすい。",
-                  "page": 606
+                  "desc": "Secretの注入先になりやすい。"
                 },
                 {
                   "name": "CI/CD",
-                  "desc": "パイプライン変数としても扱う。",
-                  "page": 705
+                  "desc": "パイプライン変数としても扱う。"
                 }
               ]
             }
@@ -17610,30 +16963,30 @@ module.exports = {
         {
           "id": "docker-existing",
           "existing_file": "index.html",
-          "page": 301,
+          "page": 249,
           "term": "Docker"
         },
         {
           "id": "image-existing",
           "existing_file": "019-image.html",
-          "page": 305,
+          "page": 250,
           "term": "Image"
         },
         {
           "id": "container-existing",
           "existing_file": "021-container.html",
-          "page": 309,
+          "page": 251,
           "term": "Container"
         },
         {
           "id": "volume-existing",
           "existing_file": "065-volume.html",
-          "page": 313,
+          "page": 252,
           "term": "Volume"
         },
         {
           "id": "network",
-          "page": 317,
+          "page": 253,
           "term": "Network",
           "reading": "ネットワーク",
           "category": "コンテナ・ネットワーク",
@@ -17688,18 +17041,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Container",
-                  "desc": "実際に動いているプロセスの箱。",
-                  "page": 309
+                  "desc": "実際に動いているプロセスの箱。"
                 },
                 {
                   "name": "Docker Compose",
-                  "desc": "複数コンテナとネットワークをまとめて定義。",
-                  "page": 321
+                  "desc": "複数コンテナとネットワークをまとめて定義。"
                 },
                 {
                   "name": "Volume",
-                  "desc": "データをコンテナの外に残す仕組み。",
-                  "page": 313
+                  "desc": "データをコンテナの外に残す仕組み。"
                 }
               ]
             }
@@ -17708,7 +17058,7 @@ module.exports = {
         {
           "id": "compose-existing",
           "existing_file": "042-compose.html",
-          "page": 321,
+          "page": 254,
           "term": "Docker Compose"
         }
       ]
@@ -17720,7 +17070,7 @@ module.exports = {
         {
           "id": "devops-existing",
           "existing_file": "014-devops.html",
-          "page": 701,
+          "page": 255,
           "term": "DevOps"
         },
         {
@@ -17728,7 +17078,7 @@ module.exports = {
           "icon": "ic-rocket",
           "compact": true,
           "id": "ci-cd",
-          "page": 705,
+          "page": 256,
           "term": "CI/CD",
           "reading": "シーアイ／シーディー",
           "oneline": "変更のたびに自動で検証し（CI）、続けて自動で届ける（CD）仕組み。",
@@ -17781,18 +17131,15 @@ module.exports = {
               "items": [
                 {
                   "name": "DevOps",
-                  "desc": "CI/CDを支える文化・実践。",
-                  "page": 701
+                  "desc": "CI/CDを支える文化・実践。"
                 },
                 {
                   "name": "Push",
-                  "desc": "CIを起動する典型トリガー。",
-                  "page": 6
+                  "desc": "CIを起動する典型トリガー。"
                 },
                 {
                   "name": "スモークテスト",
-                  "desc": "パイプラインに載せやすい薄いテスト。",
-                  "page": 512
+                  "desc": "パイプラインに載せやすい薄いテスト。"
                 }
               ]
             }
@@ -17800,7 +17147,7 @@ module.exports = {
         },
         {
           "id": "local-env",
-          "page": 706,
+          "page": 257,
           "term": "ローカル",
           "reading": "",
           "category": "デプロイ・CI/CD",
@@ -17856,18 +17203,15 @@ module.exports = {
               "items": [
                 {
                   "name": "ステージング",
-                  "desc": "ローカル と一緒に出てきたときの手がかり。",
-                  "page": 707
+                  "desc": "ローカル と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "本番",
-                  "desc": "ローカル と一緒に出てきたときの手がかり。",
-                  "page": 708
+                  "desc": "ローカル と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "CI/CD",
-                  "desc": "ローカル と一緒に出てきたときの手がかり。",
-                  "page": 705
+                  "desc": "ローカル と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -17875,7 +17219,7 @@ module.exports = {
         },
         {
           "id": "staging",
-          "page": 707,
+          "page": 258,
           "term": "ステージング",
           "reading": "",
           "category": "デプロイ・CI/CD",
@@ -17931,18 +17275,15 @@ module.exports = {
               "items": [
                 {
                   "name": "ローカル",
-                  "desc": "ステージング と一緒に出てきたときの手がかり。",
-                  "page": 706
+                  "desc": "ステージング と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "本番",
-                  "desc": "ステージング と一緒に出てきたときの手がかり。",
-                  "page": 708
+                  "desc": "ステージング と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Release",
-                  "desc": "ステージング と一緒に出てきたときの手がかり。",
-                  "page": 712
+                  "desc": "ステージング と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -17950,7 +17291,7 @@ module.exports = {
         },
         {
           "id": "production",
-          "page": 708,
+          "page": 259,
           "term": "本番",
           "reading": "",
           "category": "デプロイ・CI/CD",
@@ -18006,18 +17347,15 @@ module.exports = {
               "items": [
                 {
                   "name": "ステージング",
-                  "desc": "本番 と一緒に出てきたときの手がかり。",
-                  "page": 707
+                  "desc": "本番 と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "ロールバック",
-                  "desc": "本番 と一緒に出てきたときの手がかり。",
-                  "page": 34
+                  "desc": "本番 と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "CI/CD",
-                  "desc": "本番 と一緒に出てきたときの手がかり。",
-                  "page": 705
+                  "desc": "本番 と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -18025,7 +17363,7 @@ module.exports = {
         },
         {
           "id": "build",
-          "page": 709,
+          "page": 260,
           "term": "Build",
           "reading": "ビルド",
           "category": "デプロイ・CI/CD",
@@ -18081,18 +17419,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Bundle",
-                  "desc": "Build と一緒に出てきたときの手がかり。",
-                  "page": 710
+                  "desc": "Build と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Artifact",
-                  "desc": "Build と一緒に出てきたときの手がかり。",
-                  "page": 711
+                  "desc": "Build と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "CI/CD",
-                  "desc": "Build と一緒に出てきたときの手がかり。",
-                  "page": 705
+                  "desc": "Build と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -18100,7 +17435,7 @@ module.exports = {
         },
         {
           "id": "bundle",
-          "page": 710,
+          "page": 261,
           "term": "Bundle",
           "reading": "バンドル",
           "category": "デプロイ・CI/CD",
@@ -18156,18 +17491,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Build",
-                  "desc": "Bundle と一緒に出てきたときの手がかり。",
-                  "page": 709
+                  "desc": "Bundle と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Artifact",
-                  "desc": "Bundle と一緒に出てきたときの手がかり。",
-                  "page": 711
+                  "desc": "Bundle と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Vite",
-                  "desc": "Bundle と一緒に出てきたときの手がかり。",
-                  "page": 172
+                  "desc": "Bundle と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -18175,7 +17507,7 @@ module.exports = {
         },
         {
           "id": "artifact",
-          "page": 711,
+          "page": 262,
           "term": "Artifact",
           "reading": "アーティファクト",
           "category": "デプロイ・CI/CD",
@@ -18231,18 +17563,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Build",
-                  "desc": "Artifact と一緒に出てきたときの手がかり。",
-                  "page": 709
+                  "desc": "Artifact と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Release",
-                  "desc": "Artifact と一緒に出てきたときの手がかり。",
-                  "page": 712
+                  "desc": "Artifact と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "CI/CD",
-                  "desc": "Artifact と一緒に出てきたときの手がかり。",
-                  "page": 705
+                  "desc": "Artifact と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -18250,7 +17579,7 @@ module.exports = {
         },
         {
           "id": "release",
-          "page": 712,
+          "page": 263,
           "term": "Release",
           "reading": "リリース",
           "category": "デプロイ・CI/CD",
@@ -18306,18 +17635,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Artifact",
-                  "desc": "Release と一緒に出てきたときの手がかり。",
-                  "page": 711
+                  "desc": "Release と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Tag",
-                  "desc": "Release と一緒に出てきたときの手がかり。",
-                  "page": 14
+                  "desc": "Release と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "ロールバック",
-                  "desc": "Release と一緒に出てきたときの手がかり。",
-                  "page": 34
+                  "desc": "Release と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -18325,7 +17651,7 @@ module.exports = {
         },
         {
           "id": "pipeline",
-          "page": 713,
+          "page": 264,
           "term": "Pipeline",
           "reading": "パイプライン",
           "category": "デプロイ・CI/CD",
@@ -18381,18 +17707,15 @@ module.exports = {
               "items": [
                 {
                   "name": "CI/CD",
-                  "desc": "Pipeline と一緒に出てきたときの手がかり。",
-                  "page": 705
+                  "desc": "Pipeline と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Build",
-                  "desc": "Pipeline と一緒に出てきたときの手がかり。",
-                  "page": 709
+                  "desc": "Pipeline と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "GitHub Actions",
-                  "desc": "Pipeline と一緒に出てきたときの手がかり。",
-                  "page": 716
+                  "desc": "Pipeline と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -18400,7 +17723,7 @@ module.exports = {
         },
         {
           "id": "canary-release",
-          "page": 714,
+          "page": 265,
           "term": "Canary Release",
           "reading": "カナリアリリース",
           "category": "デプロイ・CI/CD",
@@ -18456,18 +17779,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Blue/Green Deployment",
-                  "desc": "Canary Release と一緒に出てきたときの手がかり。",
-                  "page": 715
+                  "desc": "Canary Release と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "ロールバック",
-                  "desc": "Canary Release と一緒に出てきたときの手がかり。",
-                  "page": 34
+                  "desc": "Canary Release と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Monitoring",
-                  "desc": "Canary Release と一緒に出てきたときの手がかり。",
-                  "page": 1203
+                  "desc": "Canary Release と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -18475,7 +17795,7 @@ module.exports = {
         },
         {
           "id": "blue-green",
-          "page": 715,
+          "page": 266,
           "term": "Blue/Green Deployment",
           "reading": "ブルーグリーンデプロイメント",
           "category": "デプロイ・CI/CD",
@@ -18531,18 +17851,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Canary Release",
-                  "desc": "Blue/Green Deployment と一緒に出てきたときの手がかり。",
-                  "page": 714
+                  "desc": "Blue/Green Deployment と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Load Balancer",
-                  "desc": "Blue/Green Deployment と一緒に出てきたときの手がかり。",
-                  "page": 802
+                  "desc": "Blue/Green Deployment と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "ロールバック",
-                  "desc": "Blue/Green Deployment と一緒に出てきたときの手がかり。",
-                  "page": 34
+                  "desc": "Blue/Green Deployment と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -18550,7 +17867,7 @@ module.exports = {
         },
         {
           "id": "github-actions",
-          "page": 716,
+          "page": 267,
           "term": "GitHub Actions",
           "reading": "ギットハブアクションズ",
           "category": "デプロイ・CI/CD",
@@ -18606,18 +17923,15 @@ module.exports = {
               "items": [
                 {
                   "name": "CI/CD",
-                  "desc": "GitHub Actions と一緒に出てきたときの手がかり。",
-                  "page": 705
+                  "desc": "GitHub Actions と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Pipeline",
-                  "desc": "GitHub Actions と一緒に出てきたときの手がかり。",
-                  "page": 713
+                  "desc": "GitHub Actions と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "GitHub",
-                  "desc": "GitHub Actions と一緒に出てきたときの手がかり。",
-                  "page": 17
+                  "desc": "GitHub Actions と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -18625,7 +17939,7 @@ module.exports = {
         },
         {
           "id": "circleci",
-          "page": 717,
+          "page": 268,
           "term": "CircleCI",
           "reading": "サークルシーアイ",
           "category": "デプロイ・CI/CD",
@@ -18681,18 +17995,15 @@ module.exports = {
               "items": [
                 {
                   "name": "CI/CD",
-                  "desc": "CircleCI と一緒に出てきたときの手がかり。",
-                  "page": 705
+                  "desc": "CircleCI と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Pipeline",
-                  "desc": "CircleCI と一緒に出てきたときの手がかり。",
-                  "page": 713
+                  "desc": "CircleCI と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "GitHub Actions",
-                  "desc": "CircleCI と一緒に出てきたときの手がかり。",
-                  "page": 716
+                  "desc": "CircleCI と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -18700,7 +18011,7 @@ module.exports = {
         },
         {
           "id": "vercel",
-          "page": 718,
+          "page": 269,
           "term": "Vercel",
           "reading": "バーセル",
           "category": "デプロイ・CI/CD",
@@ -18756,18 +18067,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Netlify",
-                  "desc": "Vercel と一緒に出てきたときの手がかり。",
-                  "page": 719
+                  "desc": "Vercel と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "CI/CD",
-                  "desc": "Vercel と一緒に出てきたときの手がかり。",
-                  "page": 705
+                  "desc": "Vercel と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Next.js",
-                  "desc": "Vercel と一緒に出てきたときの手がかり。",
-                  "page": 170
+                  "desc": "Vercel と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -18775,7 +18083,7 @@ module.exports = {
         },
         {
           "id": "netlify",
-          "page": 719,
+          "page": 270,
           "term": "Netlify",
           "reading": "ネットリファイ",
           "category": "デプロイ・CI/CD",
@@ -18831,18 +18139,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Vercel",
-                  "desc": "Netlify と一緒に出てきたときの手がかり。",
-                  "page": 718
+                  "desc": "Netlify と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "CI/CD",
-                  "desc": "Netlify と一緒に出てきたときの手がかり。",
-                  "page": 705
+                  "desc": "Netlify と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "CDN",
-                  "desc": "Netlify と一緒に出てきたときの手がかり。",
-                  "page": 408
+                  "desc": "Netlify と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -18856,7 +18161,7 @@ module.exports = {
       "entries": [
         {
           "id": "pmbok",
-          "page": 750,
+          "page": 271,
           "term": "PMBOK",
           "reading": "ピンボック",
           "category": "開発プロセス",
@@ -18912,18 +18217,15 @@ module.exports = {
               "items": [
                 {
                   "name": "ウォーターフォール",
-                  "desc": "PMBOK と一緒に出てきたときの手がかり。",
-                  "page": 751
+                  "desc": "PMBOK と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "スコープ",
-                  "desc": "PMBOK と一緒に出てきたときの手がかり。",
-                  "page": 1605
+                  "desc": "PMBOK と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "マイルストーン",
-                  "desc": "PMBOK と一緒に出てきたときの手がかり。",
-                  "page": 754
+                  "desc": "PMBOK と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -18931,7 +18233,7 @@ module.exports = {
         },
         {
           "id": "waterfall",
-          "page": 751,
+          "page": 272,
           "term": "ウォーターフォール",
           "reading": "",
           "category": "開発プロセス",
@@ -18987,18 +18289,15 @@ module.exports = {
               "items": [
                 {
                   "name": "アジャイル",
-                  "desc": "ウォーターフォール と一緒に出てきたときの手がかり。",
-                  "page": 757
+                  "desc": "ウォーターフォール と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "WBS",
-                  "desc": "ウォーターフォール と一緒に出てきたときの手がかり。",
-                  "page": 752
+                  "desc": "ウォーターフォール と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "マイルストーン",
-                  "desc": "ウォーターフォール と一緒に出てきたときの手がかり。",
-                  "page": 754
+                  "desc": "ウォーターフォール と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -19006,7 +18305,7 @@ module.exports = {
         },
         {
           "id": "wbs",
-          "page": 752,
+          "page": 273,
           "term": "WBS",
           "reading": "ダブリュービーエス",
           "category": "開発プロセス",
@@ -19062,18 +18361,15 @@ module.exports = {
               "items": [
                 {
                   "name": "ガントチャート",
-                  "desc": "WBS と一緒に出てきたときの手がかり。",
-                  "page": 753
+                  "desc": "WBS と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "工数",
-                  "desc": "WBS と一緒に出てきたときの手がかり。",
-                  "page": 1810
+                  "desc": "WBS と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "見積もり",
-                  "desc": "WBS と一緒に出てきたときの手がかり。",
-                  "page": 1811
+                  "desc": "WBS と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -19081,7 +18377,7 @@ module.exports = {
         },
         {
           "id": "gantt",
-          "page": 753,
+          "page": 274,
           "term": "ガントチャート",
           "reading": "",
           "category": "開発プロセス",
@@ -19137,18 +18433,15 @@ module.exports = {
               "items": [
                 {
                   "name": "WBS",
-                  "desc": "ガントチャート と一緒に出てきたときの手がかり。",
-                  "page": 752
+                  "desc": "ガントチャート と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "マイルストーン",
-                  "desc": "ガントチャート と一緒に出てきたときの手がかり。",
-                  "page": 754
+                  "desc": "ガントチャート と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "スプリント",
-                  "desc": "ガントチャート と一緒に出てきたときの手がかり。",
-                  "page": 759
+                  "desc": "ガントチャート と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -19156,7 +18449,7 @@ module.exports = {
         },
         {
           "id": "milestone",
-          "page": 754,
+          "page": 275,
           "term": "マイルストーン",
           "reading": "",
           "category": "開発プロセス",
@@ -19212,18 +18505,15 @@ module.exports = {
               "items": [
                 {
                   "name": "ガントチャート",
-                  "desc": "マイルストーン と一緒に出てきたときの手がかり。",
-                  "page": 753
+                  "desc": "マイルストーン と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Release",
-                  "desc": "マイルストーン と一緒に出てきたときの手がかり。",
-                  "page": 712
+                  "desc": "マイルストーン と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "スプリント",
-                  "desc": "マイルストーン と一緒に出てきたときの手がかり。",
-                  "page": 759
+                  "desc": "マイルストーン と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -19231,7 +18521,7 @@ module.exports = {
         },
         {
           "id": "stakeholder",
-          "page": 755,
+          "page": 276,
           "term": "ステークホルダー",
           "reading": "",
           "category": "開発プロセス",
@@ -19287,13 +18577,11 @@ module.exports = {
               "items": [
                 {
                   "name": "スコープ",
-                  "desc": "ステークホルダー と一緒に出てきたときの手がかり。",
-                  "page": 1605
+                  "desc": "ステークホルダー と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "PM",
-                  "desc": "ステークホルダー と一緒に出てきたときの手がかり。",
-                  "page": 1704
+                  "desc": "ステークホルダー と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "要件",
@@ -19305,7 +18593,7 @@ module.exports = {
         },
         {
           "id": "project-scope",
-          "page": 756,
+          "page": 277,
           "term": "スコープ",
           "reading": "",
           "category": "開発プロセス",
@@ -19361,18 +18649,15 @@ module.exports = {
               "items": [
                 {
                   "name": "ステークホルダー",
-                  "desc": "スコープ と一緒に出てきたときの手がかり。",
-                  "page": 755
+                  "desc": "スコープ と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "見積もり",
-                  "desc": "スコープ と一緒に出てきたときの手がかり。",
-                  "page": 1811
+                  "desc": "スコープ と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "アジャイル",
-                  "desc": "スコープ と一緒に出てきたときの手がかり。",
-                  "page": 757
+                  "desc": "スコープ と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -19380,7 +18665,7 @@ module.exports = {
         },
         {
           "id": "agile",
-          "page": 757,
+          "page": 278,
           "term": "アジャイル",
           "reading": "",
           "category": "開発プロセス",
@@ -19436,18 +18721,15 @@ module.exports = {
               "items": [
                 {
                   "name": "スクラム",
-                  "desc": "アジャイル と一緒に出てきたときの手がかり。",
-                  "page": 758
+                  "desc": "アジャイル と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "スプリント",
-                  "desc": "アジャイル と一緒に出てきたときの手がかり。",
-                  "page": 759
+                  "desc": "アジャイル と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "ウォーターフォール",
-                  "desc": "アジャイル と一緒に出てきたときの手がかり。",
-                  "page": 751
+                  "desc": "アジャイル と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -19455,7 +18737,7 @@ module.exports = {
         },
         {
           "id": "scrum",
-          "page": 758,
+          "page": 279,
           "term": "スクラム",
           "reading": "",
           "category": "開発プロセス",
@@ -19511,18 +18793,15 @@ module.exports = {
               "items": [
                 {
                   "name": "スプリント",
-                  "desc": "スクラム と一緒に出てきたときの手がかり。",
-                  "page": 759
+                  "desc": "スクラム と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "レトロスペクティブ",
-                  "desc": "スクラム と一緒に出てきたときの手がかり。",
-                  "page": 760
+                  "desc": "スクラム と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "ベロシティ",
-                  "desc": "スクラム と一緒に出てきたときの手がかり。",
-                  "page": 761
+                  "desc": "スクラム と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -19530,7 +18809,7 @@ module.exports = {
         },
         {
           "id": "sprint",
-          "page": 759,
+          "page": 280,
           "term": "スプリント",
           "reading": "",
           "category": "開発プロセス",
@@ -19586,18 +18865,15 @@ module.exports = {
               "items": [
                 {
                   "name": "スクラム",
-                  "desc": "スプリント と一緒に出てきたときの手がかり。",
-                  "page": 758
+                  "desc": "スプリント と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "ベロシティ",
-                  "desc": "スプリント と一緒に出てきたときの手がかり。",
-                  "page": 761
+                  "desc": "スプリント と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "レトロスペクティブ",
-                  "desc": "スプリント と一緒に出てきたときの手がかり。",
-                  "page": 760
+                  "desc": "スプリント と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -19605,7 +18881,7 @@ module.exports = {
         },
         {
           "id": "retro",
-          "page": 760,
+          "page": 281,
           "term": "レトロスペクティブ",
           "reading": "",
           "category": "開発プロセス",
@@ -19661,18 +18937,15 @@ module.exports = {
               "items": [
                 {
                   "name": "スプリント",
-                  "desc": "レトロスペクティブ と一緒に出てきたときの手がかり。",
-                  "page": 759
+                  "desc": "レトロスペクティブ と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "スクラム",
-                  "desc": "レトロスペクティブ と一緒に出てきたときの手がかり。",
-                  "page": 758
+                  "desc": "レトロスペクティブ と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "ポストモーテム",
-                  "desc": "レトロスペクティブ と一緒に出てきたときの手がかり。",
-                  "page": 1353
+                  "desc": "レトロスペクティブ と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -19680,7 +18953,7 @@ module.exports = {
         },
         {
           "id": "velocity",
-          "page": 761,
+          "page": 282,
           "term": "ベロシティ",
           "reading": "",
           "category": "開発プロセス",
@@ -19736,18 +19009,15 @@ module.exports = {
               "items": [
                 {
                   "name": "スプリント",
-                  "desc": "ベロシティ と一緒に出てきたときの手がかり。",
-                  "page": 759
+                  "desc": "ベロシティ と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "見積もり",
-                  "desc": "ベロシティ と一緒に出てきたときの手がかり。",
-                  "page": 1811
+                  "desc": "ベロシティ と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "スクラム",
-                  "desc": "ベロシティ と一緒に出てきたときの手がかり。",
-                  "page": 758
+                  "desc": "ベロシティ と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -19755,7 +19025,7 @@ module.exports = {
         },
         {
           "id": "code-review",
-          "page": 762,
+          "page": 283,
           "term": "コードレビュー",
           "reading": "",
           "category": "開発プロセス",
@@ -19811,18 +19081,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Pull Request",
-                  "desc": "コードレビュー と一緒に出てきたときの手がかり。",
-                  "page": 20
+                  "desc": "コードレビュー と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "ペアプロ",
-                  "desc": "コードレビュー と一緒に出てきたときの手がかり。",
-                  "page": 763
+                  "desc": "コードレビュー と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "CI/CD",
-                  "desc": "コードレビュー と一緒に出てきたときの手がかり。",
-                  "page": 705
+                  "desc": "コードレビュー と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -19830,7 +19097,7 @@ module.exports = {
         },
         {
           "id": "pair-pro",
-          "page": 763,
+          "page": 284,
           "term": "ペアプロ",
           "reading": "ペアプログラミング",
           "category": "開発プロセス",
@@ -19886,18 +19153,15 @@ module.exports = {
               "items": [
                 {
                   "name": "コードレビュー",
-                  "desc": "ペアプロ と一緒に出てきたときの手がかり。",
-                  "page": 762
+                  "desc": "ペアプロ と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "スクラム",
-                  "desc": "ペアプロ と一緒に出てきたときの手がかり。",
-                  "page": 758
+                  "desc": "ペアプロ と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "テックリード",
-                  "desc": "ペアプロ と一緒に出てきたときの手がかり。",
-                  "page": 1700
+                  "desc": "ペアプロ と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -19912,18 +19176,18 @@ module.exports = {
         {
           "id": "vm-existing",
           "existing_file": "015-vm.html",
-          "page": 401,
+          "page": 285,
           "term": "VM"
         },
         {
           "id": "kubernetes-existing",
           "existing_file": "089-kubernetes.html",
-          "page": 441,
+          "page": 286,
           "term": "Kubernetes"
         },
         {
           "id": "cloud",
-          "page": 402,
+          "page": 287,
           "term": "Cloud",
           "reading": "クラウド",
           "category": "クラウド・インフラ",
@@ -19979,18 +19243,15 @@ module.exports = {
               "items": [
                 {
                   "name": "オンプレミス",
-                  "desc": "Cloud と一緒に出てきたときの手がかり。",
-                  "page": 403
+                  "desc": "Cloud と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "IaaS",
-                  "desc": "Cloud と一緒に出てきたときの手がかり。",
-                  "page": 404
+                  "desc": "Cloud と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "PaaS",
-                  "desc": "Cloud と一緒に出てきたときの手がかり。",
-                  "page": 405
+                  "desc": "Cloud と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -19998,7 +19259,7 @@ module.exports = {
         },
         {
           "id": "onprem",
-          "page": 403,
+          "page": 288,
           "term": "オンプレミス",
           "reading": "",
           "category": "クラウド・インフラ",
@@ -20054,18 +19315,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Cloud",
-                  "desc": "オンプレミス と一緒に出てきたときの手がかり。",
-                  "page": 402
+                  "desc": "オンプレミス と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "IaaS",
-                  "desc": "オンプレミス と一緒に出てきたときの手がかり。",
-                  "page": 404
+                  "desc": "オンプレミス と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "VPN",
-                  "desc": "オンプレミス と一緒に出てきたときの手がかり。",
-                  "page": 62
+                  "desc": "オンプレミス と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -20073,7 +19331,7 @@ module.exports = {
         },
         {
           "id": "iaas",
-          "page": 404,
+          "page": 289,
           "term": "IaaS",
           "reading": "イアース",
           "category": "クラウド・インフラ",
@@ -20129,18 +19387,15 @@ module.exports = {
               "items": [
                 {
                   "name": "PaaS",
-                  "desc": "IaaS と一緒に出てきたときの手がかり。",
-                  "page": 405
+                  "desc": "IaaS と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "SaaS",
-                  "desc": "IaaS と一緒に出てきたときの手がかり。",
-                  "page": 406
+                  "desc": "IaaS と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "VM",
-                  "desc": "IaaS と一緒に出てきたときの手がかり。",
-                  "page": 401
+                  "desc": "IaaS と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -20148,7 +19403,7 @@ module.exports = {
         },
         {
           "id": "paas",
-          "page": 405,
+          "page": 290,
           "term": "PaaS",
           "reading": "パース",
           "category": "クラウド・インフラ",
@@ -20204,18 +19459,15 @@ module.exports = {
               "items": [
                 {
                   "name": "IaaS",
-                  "desc": "PaaS と一緒に出てきたときの手がかり。",
-                  "page": 404
+                  "desc": "PaaS と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "SaaS",
-                  "desc": "PaaS と一緒に出てきたときの手がかり。",
-                  "page": 406
+                  "desc": "PaaS と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Serverless",
-                  "desc": "PaaS と一緒に出てきたときの手がかり。",
-                  "page": 410
+                  "desc": "PaaS と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -20223,7 +19475,7 @@ module.exports = {
         },
         {
           "id": "saas",
-          "page": 406,
+          "page": 291,
           "term": "SaaS",
           "reading": "サース",
           "category": "クラウド・インフラ",
@@ -20279,18 +19531,15 @@ module.exports = {
               "items": [
                 {
                   "name": "PaaS",
-                  "desc": "SaaS と一緒に出てきたときの手がかり。",
-                  "page": 405
+                  "desc": "SaaS と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "IaaS",
-                  "desc": "SaaS と一緒に出てきたときの手がかり。",
-                  "page": 404
+                  "desc": "SaaS と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Cloud",
-                  "desc": "SaaS と一緒に出てきたときの手がかり。",
-                  "page": 402
+                  "desc": "SaaS と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -20298,7 +19547,7 @@ module.exports = {
         },
         {
           "id": "vpc",
-          "page": 407,
+          "page": 292,
           "term": "VPC",
           "reading": "ブイピーシー",
           "category": "クラウド・インフラ",
@@ -20358,13 +19607,11 @@ module.exports = {
                 },
                 {
                   "name": "VPN",
-                  "desc": "VPC と一緒に出てきたときの手がかり。",
-                  "page": 62
+                  "desc": "VPC と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "リージョン",
-                  "desc": "VPC と一緒に出てきたときの手がかり。",
-                  "page": 414
+                  "desc": "VPC と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -20372,7 +19619,7 @@ module.exports = {
         },
         {
           "id": "cdn",
-          "page": 408,
+          "page": 293,
           "term": "CDN",
           "reading": "シーディーエヌ",
           "category": "クラウド・インフラ",
@@ -20428,18 +19675,15 @@ module.exports = {
               "items": [
                 {
                   "name": "CloudFront",
-                  "desc": "CDN と一緒に出てきたときの手がかり。",
-                  "page": 813
+                  "desc": "CDN と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Object Storage",
-                  "desc": "CDN と一緒に出てきたときの手がかり。",
-                  "page": 409
+                  "desc": "CDN と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Cloud CDN",
-                  "desc": "CDN と一緒に出てきたときの手がかり。",
-                  "page": 855
+                  "desc": "CDN と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -20447,7 +19691,7 @@ module.exports = {
         },
         {
           "id": "object-storage",
-          "page": 409,
+          "page": 294,
           "term": "Object Storage",
           "reading": "オブジェクトストレージ",
           "category": "クラウド・インフラ",
@@ -20503,18 +19747,15 @@ module.exports = {
               "items": [
                 {
                   "name": "S3",
-                  "desc": "Object Storage と一緒に出てきたときの手がかり。",
-                  "page": 810
+                  "desc": "Object Storage と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Cloud Storage",
-                  "desc": "Object Storage と一緒に出てきたときの手がかり。",
-                  "page": 852
+                  "desc": "Object Storage と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "CDN",
-                  "desc": "Object Storage と一緒に出てきたときの手がかり。",
-                  "page": 408
+                  "desc": "Object Storage と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -20522,7 +19763,7 @@ module.exports = {
         },
         {
           "id": "serverless",
-          "page": 410,
+          "page": 295,
           "term": "Serverless",
           "reading": "サーバレス",
           "category": "クラウド・インフラ",
@@ -20578,18 +19819,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Lambda",
-                  "desc": "Serverless と一緒に出てきたときの手がかり。",
-                  "page": 809
+                  "desc": "Serverless と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Fargate",
-                  "desc": "Serverless と一緒に出てきたときの手がかり。",
-                  "page": 808
+                  "desc": "Serverless と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Cloud Functions",
-                  "desc": "Serverless と一緒に出てきたときの手がかり。",
-                  "page": 854
+                  "desc": "Serverless と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -20597,7 +19835,7 @@ module.exports = {
         },
         {
           "id": "reverse-proxy",
-          "page": 411,
+          "page": 296,
           "term": "Reverse Proxy",
           "reading": "リバースプロキシ",
           "category": "クラウド・インフラ",
@@ -20653,18 +19891,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Nginx",
-                  "desc": "Reverse Proxy と一緒に出てきたときの手がかり。",
-                  "page": 412
+                  "desc": "Reverse Proxy と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Load Balancer",
-                  "desc": "Reverse Proxy と一緒に出てきたときの手がかり。",
-                  "page": 802
+                  "desc": "Reverse Proxy と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Proxy",
-                  "desc": "Reverse Proxy と一緒に出てきたときの手がかり。",
-                  "page": 65
+                  "desc": "Reverse Proxy と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -20672,7 +19907,7 @@ module.exports = {
         },
         {
           "id": "nginx",
-          "page": 412,
+          "page": 297,
           "term": "Nginx",
           "reading": "エンジンエックス",
           "category": "クラウド・インフラ",
@@ -20728,18 +19963,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Reverse Proxy",
-                  "desc": "Nginx と一緒に出てきたときの手がかり。",
-                  "page": 411
+                  "desc": "Nginx と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "HTTPS",
-                  "desc": "Nginx と一緒に出てきたときの手がかり。",
-                  "page": 48
+                  "desc": "Nginx と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Load Balancer",
-                  "desc": "Nginx と一緒に出てきたときの手がかり。",
-                  "page": 802
+                  "desc": "Nginx と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -20747,7 +19979,7 @@ module.exports = {
         },
         {
           "id": "topology",
-          "page": 413,
+          "page": 298,
           "term": "トポロジー",
           "reading": "",
           "category": "クラウド・インフラ",
@@ -20803,18 +20035,15 @@ module.exports = {
               "items": [
                 {
                   "name": "VPC",
-                  "desc": "トポロジー と一緒に出てきたときの手がかり。",
-                  "page": 407
+                  "desc": "トポロジー と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "DNS",
-                  "desc": "トポロジー と一緒に出てきたときの手がかり。",
-                  "page": 49
+                  "desc": "トポロジー と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Load Balancer",
-                  "desc": "トポロジー と一緒に出てきたときの手がかり。",
-                  "page": 802
+                  "desc": "トポロジー と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -20822,7 +20051,7 @@ module.exports = {
         },
         {
           "id": "region",
-          "page": 414,
+          "page": 299,
           "term": "リージョン",
           "reading": "",
           "category": "クラウド・インフラ",
@@ -20878,18 +20107,15 @@ module.exports = {
               "items": [
                 {
                   "name": "AZ",
-                  "desc": "リージョン と一緒に出てきたときの手がかり。",
-                  "page": 415
+                  "desc": "リージョン と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "可用性",
-                  "desc": "リージョン と一緒に出てきたときの手がかり。",
-                  "page": 416
+                  "desc": "リージョン と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Cloud",
-                  "desc": "リージョン と一緒に出てきたときの手がかり。",
-                  "page": 402
+                  "desc": "リージョン と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -20897,7 +20123,7 @@ module.exports = {
         },
         {
           "id": "az",
-          "page": 415,
+          "page": 300,
           "term": "AZ",
           "reading": "エーゼット",
           "category": "クラウド・インフラ",
@@ -20953,18 +20179,15 @@ module.exports = {
               "items": [
                 {
                   "name": "リージョン",
-                  "desc": "AZ と一緒に出てきたときの手がかり。",
-                  "page": 414
+                  "desc": "AZ と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "可用性",
-                  "desc": "AZ と一緒に出てきたときの手がかり。",
-                  "page": 416
+                  "desc": "AZ と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "RDS",
-                  "desc": "AZ と一緒に出てきたときの手がかり。",
-                  "page": 811
+                  "desc": "AZ と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -20972,7 +20195,7 @@ module.exports = {
         },
         {
           "id": "availability",
-          "page": 416,
+          "page": 301,
           "term": "可用性",
           "reading": "",
           "category": "クラウド・インフラ",
@@ -21028,18 +20251,15 @@ module.exports = {
               "items": [
                 {
                   "name": "SLA",
-                  "desc": "可用性 と一緒に出てきたときの手がかり。",
-                  "page": 417
+                  "desc": "可用性 と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "SLO",
-                  "desc": "可用性 と一緒に出てきたときの手がかり。",
-                  "page": 418
+                  "desc": "可用性 と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "AZ",
-                  "desc": "可用性 と一緒に出てきたときの手がかり。",
-                  "page": 415
+                  "desc": "可用性 と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -21047,7 +20267,7 @@ module.exports = {
         },
         {
           "id": "sla",
-          "page": 417,
+          "page": 302,
           "term": "SLA",
           "reading": "エスエルエー",
           "category": "クラウド・インフラ",
@@ -21103,18 +20323,15 @@ module.exports = {
               "items": [
                 {
                   "name": "SLO",
-                  "desc": "SLA と一緒に出てきたときの手がかり。",
-                  "page": 418
+                  "desc": "SLA と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "SLI",
-                  "desc": "SLA と一緒に出てきたときの手がかり。",
-                  "page": 419
+                  "desc": "SLA と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "可用性",
-                  "desc": "SLA と一緒に出てきたときの手がかり。",
-                  "page": 416
+                  "desc": "SLA と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -21122,7 +20339,7 @@ module.exports = {
         },
         {
           "id": "slo",
-          "page": 418,
+          "page": 303,
           "term": "SLO",
           "reading": "エスエルオー",
           "category": "クラウド・インフラ",
@@ -21178,18 +20395,15 @@ module.exports = {
               "items": [
                 {
                   "name": "SLI",
-                  "desc": "SLO と一緒に出てきたときの手がかり。",
-                  "page": 419
+                  "desc": "SLO と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "SLA",
-                  "desc": "SLO と一緒に出てきたときの手がかり。",
-                  "page": 417
+                  "desc": "SLO と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "エラーバジェット",
-                  "desc": "SLO と一緒に出てきたときの手がかり。",
-                  "page": 1351
+                  "desc": "SLO と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -21197,7 +20411,7 @@ module.exports = {
         },
         {
           "id": "sli",
-          "page": 419,
+          "page": 304,
           "term": "SLI",
           "reading": "エスエルアイ",
           "category": "クラウド・インフラ",
@@ -21253,18 +20467,15 @@ module.exports = {
               "items": [
                 {
                   "name": "SLO",
-                  "desc": "SLI と一緒に出てきたときの手がかり。",
-                  "page": 418
+                  "desc": "SLI と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Metrics",
-                  "desc": "SLI と一緒に出てきたときの手がかり。",
-                  "page": 1201
+                  "desc": "SLI と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Monitoring",
-                  "desc": "SLI と一緒に出てきたときの手がかり。",
-                  "page": 1203
+                  "desc": "SLI と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -21278,7 +20489,7 @@ module.exports = {
       "entries": [
         {
           "id": "iac",
-          "page": 730,
+          "page": 305,
           "term": "IaC",
           "reading": "アイエーシー",
           "category": "IaC",
@@ -21334,18 +20545,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Terraform",
-                  "desc": "IaC と一緒に出てきたときの手がかり。",
-                  "page": 733
+                  "desc": "IaC と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "宣言的構成",
-                  "desc": "IaC と一緒に出てきたときの手がかり。",
-                  "page": 731
+                  "desc": "IaC と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "冪等性",
-                  "desc": "IaC と一緒に出てきたときの手がかり。",
-                  "page": 732
+                  "desc": "IaC と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -21353,7 +20561,7 @@ module.exports = {
         },
         {
           "id": "declarative-config",
-          "page": 731,
+          "page": 306,
           "term": "宣言的構成",
           "reading": "せんげんてきこうせい",
           "category": "IaC",
@@ -21409,18 +20617,15 @@ module.exports = {
               "items": [
                 {
                   "name": "IaC",
-                  "desc": "宣言的構成 と一緒に出てきたときの手がかり。",
-                  "page": 730
+                  "desc": "宣言的構成 と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "冪等性",
-                  "desc": "宣言的構成 と一緒に出てきたときの手がかり。",
-                  "page": 732
+                  "desc": "宣言的構成 と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Terraform",
-                  "desc": "宣言的構成 と一緒に出てきたときの手がかり。",
-                  "page": 733
+                  "desc": "宣言的構成 と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -21428,7 +20633,7 @@ module.exports = {
         },
         {
           "id": "idempotency",
-          "page": 732,
+          "page": 307,
           "term": "冪等性",
           "reading": "べきとうせい",
           "category": "IaC",
@@ -21484,18 +20689,15 @@ module.exports = {
               "items": [
                 {
                   "name": "IaC",
-                  "desc": "冪等性 と一緒に出てきたときの手がかり。",
-                  "page": 730
+                  "desc": "冪等性 と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Ansible",
-                  "desc": "冪等性 と一緒に出てきたときの手がかり。",
-                  "page": 734
+                  "desc": "冪等性 と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "宣言的構成",
-                  "desc": "冪等性 と一緒に出てきたときの手がかり。",
-                  "page": 731
+                  "desc": "冪等性 と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -21503,7 +20705,7 @@ module.exports = {
         },
         {
           "id": "terraform",
-          "page": 733,
+          "page": 308,
           "term": "Terraform",
           "reading": "テラフォーム",
           "category": "IaC",
@@ -21559,18 +20761,15 @@ module.exports = {
               "items": [
                 {
                   "name": "IaC",
-                  "desc": "Terraform と一緒に出てきたときの手がかり。",
-                  "page": 730
+                  "desc": "Terraform と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Ansible",
-                  "desc": "Terraform と一緒に出てきたときの手がかり。",
-                  "page": 734
+                  "desc": "Terraform と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Pulumi",
-                  "desc": "Terraform と一緒に出てきたときの手がかり。",
-                  "page": 736
+                  "desc": "Terraform と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -21578,7 +20777,7 @@ module.exports = {
         },
         {
           "id": "ansible",
-          "page": 734,
+          "page": 309,
           "term": "Ansible",
           "reading": "アンシブル",
           "category": "IaC",
@@ -21634,18 +20833,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Terraform",
-                  "desc": "Ansible と一緒に出てきたときの手がかり。",
-                  "page": 733
+                  "desc": "Ansible と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "冪等性",
-                  "desc": "Ansible と一緒に出てきたときの手がかり。",
-                  "page": 732
+                  "desc": "Ansible と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "IaC",
-                  "desc": "Ansible と一緒に出てきたときの手がかり。",
-                  "page": 730
+                  "desc": "Ansible と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -21653,7 +20849,7 @@ module.exports = {
         },
         {
           "id": "helm",
-          "page": 735,
+          "page": 310,
           "term": "Helm",
           "reading": "ヘルム",
           "category": "IaC",
@@ -21709,18 +20905,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Kubernetes",
-                  "desc": "Helm と一緒に出てきたときの手がかり。",
-                  "page": 441
+                  "desc": "Helm と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "GKE",
-                  "desc": "Helm と一緒に出てきたときの手がかり。",
-                  "page": 851
+                  "desc": "Helm と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "IaC",
-                  "desc": "Helm と一緒に出てきたときの手がかり。",
-                  "page": 730
+                  "desc": "Helm と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -21728,7 +20921,7 @@ module.exports = {
         },
         {
           "id": "pulumi",
-          "page": 736,
+          "page": 311,
           "term": "Pulumi",
           "reading": "パルーミ",
           "category": "IaC",
@@ -21784,18 +20977,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Terraform",
-                  "desc": "Pulumi と一緒に出てきたときの手がかり。",
-                  "page": 733
+                  "desc": "Pulumi と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "IaC",
-                  "desc": "Pulumi と一緒に出てきたときの手がかり。",
-                  "page": 730
+                  "desc": "Pulumi と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "宣言的構成",
-                  "desc": "Pulumi と一緒に出てきたときの手がかり。",
-                  "page": 731
+                  "desc": "Pulumi と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -21809,7 +20999,7 @@ module.exports = {
       "entries": [
         {
           "id": "alb",
-          "page": 801,
+          "page": 312,
           "term": "ALB",
           "reading": "エーエルビー",
           "category": "AWS",
@@ -21864,33 +21054,27 @@ module.exports = {
               "items": [
                 {
                   "name": "Server",
-                  "desc": "リクエストを受け取って処理を返すコンピュータ。",
-                  "page": 44
+                  "desc": "リクエストを受け取って処理を返すコンピュータ。"
                 },
                 {
                   "name": "HTTPS",
-                  "desc": "HTTPをTLSで暗号化した通信。",
-                  "page": 48
+                  "desc": "HTTPをTLSで暗号化した通信。"
                 },
                 {
                   "name": "WAF",
-                  "desc": "Webアプリへの攻撃を手前で止める防御壁。",
-                  "page": 901
+                  "desc": "Webアプリへの攻撃を手前で止める防御壁。"
                 },
                 {
                   "name": "Load Balancer",
-                  "desc": "アクセスを複数のサーバーに振り分ける仕組みの総称。",
-                  "page": 802
+                  "desc": "アクセスを複数のサーバーに振り分ける仕組みの総称。"
                 },
                 {
                   "name": "ヘルスチェック",
-                  "desc": "サーバーが正常に応答するかを定期的に確かめること。",
-                  "page": 803
+                  "desc": "サーバーが正常に応答するかを定期的に確かめること。"
                 },
                 {
                   "name": "ターゲットグループ",
-                  "desc": "ALBの振り分け先になるサーバーのまとまり。",
-                  "page": 804
+                  "desc": "ALBの振り分け先になるサーバーのまとまり。"
                 }
               ]
             }
@@ -21901,7 +21085,7 @@ module.exports = {
           "icon": "ic-network",
           "compact": true,
           "id": "load-balancer",
-          "page": 802,
+          "page": 313,
           "term": "Load Balancer",
           "reading": "ロードバランサー",
           "oneline": "来るアクセスを、複数のサーバーへ振り分けて負荷を分散する仕組みの総称。",
@@ -21954,18 +21138,15 @@ module.exports = {
               "items": [
                 {
                   "name": "ALB",
-                  "desc": "AWSの代表的なLB。",
-                  "page": 801
+                  "desc": "AWSの代表的なLB。"
                 },
                 {
                   "name": "ヘルスチェック",
-                  "desc": "振り分け先の生死確認。",
-                  "page": 803
+                  "desc": "振り分け先の生死確認。"
                 },
                 {
                   "name": "ターゲットグループ",
-                  "desc": "振り分け先のまとまり。",
-                  "page": 804
+                  "desc": "振り分け先のまとまり。"
                 }
               ]
             }
@@ -21976,7 +21157,7 @@ module.exports = {
           "icon": "ic-check",
           "compact": true,
           "id": "health-check",
-          "page": 803,
+          "page": 314,
           "term": "ヘルスチェック",
           "reading": "ヘルスチェック",
           "oneline": "サーバーやコンテナが正常に応答しているかを、定期的に確かめること。",
@@ -22029,18 +21210,15 @@ module.exports = {
               "items": [
                 {
                   "name": "ALB",
-                  "desc": "ヘルスチェック結果で振り分ける。",
-                  "page": 801
+                  "desc": "ヘルスチェック結果で振り分ける。"
                 },
                 {
                   "name": "Load Balancer",
-                  "desc": "総称側。",
-                  "page": 802
+                  "desc": "総称側。"
                 },
                 {
                   "name": "ターゲットグループ",
-                  "desc": "チェック対象のまとまり。",
-                  "page": 804
+                  "desc": "チェック対象のまとまり。"
                 }
               ]
             }
@@ -22051,7 +21229,7 @@ module.exports = {
           "icon": "ic-server",
           "compact": true,
           "id": "target-group",
-          "page": 804,
+          "page": 315,
           "term": "ターゲットグループ",
           "reading": "ターゲットグループ",
           "oneline": "ロードバランサーが振り分け先として扱う、サーバーやコンテナのまとまり。",
@@ -22104,18 +21282,15 @@ module.exports = {
               "items": [
                 {
                   "name": "ALB",
-                  "desc": "ターゲットグループを使うLB。",
-                  "page": 801
+                  "desc": "ターゲットグループを使うLB。"
                 },
                 {
                   "name": "ヘルスチェック",
-                  "desc": "グループ内の生死確認。",
-                  "page": 803
+                  "desc": "グループ内の生死確認。"
                 },
                 {
                   "name": "Load Balancer",
-                  "desc": "上位の総称。",
-                  "page": 802
+                  "desc": "上位の総称。"
                 }
               ]
             }
@@ -22125,7 +21300,7 @@ module.exports = {
           "icon": "ic-server",
           "compact": true,
           "id": "ec2",
-          "page": 805,
+          "page": 316,
           "term": "EC2",
           "reading": "イーシーツー",
           "category": "AWS",
@@ -22179,18 +21354,15 @@ module.exports = {
               "items": [
                 {
                   "name": "IAM",
-                  "desc": "誰がEC2を操作できるかの権限。",
-                  "page": 815
+                  "desc": "誰がEC2を操作できるかの権限。"
                 },
                 {
                   "name": "ALB",
-                  "desc": "複数EC2への振り分け。",
-                  "page": 801
+                  "desc": "複数EC2への振り分け。"
                 },
                 {
                   "name": "CloudWatch",
-                  "desc": "CPUなどメトリクスの監視。",
-                  "page": 818
+                  "desc": "CPUなどメトリクスの監視。"
                 }
               ]
             }
@@ -22200,7 +21372,7 @@ module.exports = {
           "icon": "ic-package",
           "compact": true,
           "id": "ecs",
-          "page": 806,
+          "page": 317,
           "term": "ECS",
           "reading": "イーシーエス",
           "category": "AWS",
@@ -22254,18 +21426,15 @@ module.exports = {
               "items": [
                 {
                   "name": "ECR",
-                  "desc": "コンテナイメージの置き場。",
-                  "page": 807
+                  "desc": "コンテナイメージの置き場。"
                 },
                 {
                   "name": "Fargate",
-                  "desc": "サーバー管理を薄くする実行形態。",
-                  "page": 808
+                  "desc": "サーバー管理を薄くする実行形態。"
                 },
                 {
                   "name": "Kubernetes",
-                  "desc": "別系統のコンテナ運用。",
-                  "page": 441
+                  "desc": "別系統のコンテナ運用。"
                 }
               ]
             }
@@ -22275,7 +21444,7 @@ module.exports = {
           "icon": "ic-package",
           "compact": true,
           "id": "ecr",
-          "page": 807,
+          "page": 318,
           "term": "ECR",
           "reading": "イーシーアール",
           "category": "AWS",
@@ -22329,18 +21498,15 @@ module.exports = {
               "items": [
                 {
                   "name": "ECS",
-                  "desc": "ECRのイメージを動かする先。",
-                  "page": 806
+                  "desc": "ECRのイメージを動かする先。"
                 },
                 {
                   "name": "Docker",
-                  "desc": "イメージを作る側の道具。",
-                  "page": 301
+                  "desc": "イメージを作る側の道具。"
                 },
                 {
                   "name": "IAM",
-                  "desc": "レジストリ操作の権限。",
-                  "page": 815
+                  "desc": "レジストリ操作の権限。"
                 }
               ]
             }
@@ -22350,7 +21516,7 @@ module.exports = {
           "icon": "ic-rocket",
           "compact": true,
           "id": "fargate",
-          "page": 808,
+          "page": 319,
           "term": "Fargate",
           "reading": "ファーゲート",
           "category": "AWS",
@@ -22404,18 +21570,15 @@ module.exports = {
               "items": [
                 {
                   "name": "ECS",
-                  "desc": "Fargateを使う土台のサービス。",
-                  "page": 806
+                  "desc": "Fargateを使う土台のサービス。"
                 },
                 {
                   "name": "Lambda",
-                  "desc": "もっと短い処理向けのサーバレス。",
-                  "page": 809
+                  "desc": "もっと短い処理向けのサーバレス。"
                 },
                 {
                   "name": "ECR",
-                  "desc": "動かすイメージの置き場。",
-                  "page": 807
+                  "desc": "動かすイメージの置き場。"
                 }
               ]
             }
@@ -22425,7 +21588,7 @@ module.exports = {
           "icon": "ic-bolt",
           "compact": true,
           "id": "lambda",
-          "page": 809,
+          "page": 320,
           "term": "Lambda",
           "reading": "ラムダ",
           "category": "AWS",
@@ -22479,18 +21642,15 @@ module.exports = {
               "items": [
                 {
                   "name": "API Gateway",
-                  "desc": "HTTPの入口としてよく組む。",
-                  "page": 816
+                  "desc": "HTTPの入口としてよく組む。"
                 },
                 {
                   "name": "S3",
-                  "desc": "アップロードイベントの定番トリガー。",
-                  "page": 810
+                  "desc": "アップロードイベントの定番トリガー。"
                 },
                 {
                   "name": "CloudWatch",
-                  "desc": "ログやメトリクスの受け皿。",
-                  "page": 818
+                  "desc": "ログやメトリクスの受け皿。"
                 }
               ]
             }
@@ -22500,7 +21660,7 @@ module.exports = {
           "icon": "ic-package",
           "compact": true,
           "id": "s3",
-          "page": 810,
+          "page": 321,
           "term": "S3",
           "reading": "エススリー",
           "category": "AWS",
@@ -22554,18 +21714,15 @@ module.exports = {
               "items": [
                 {
                   "name": "CloudFront",
-                  "desc": "S3の前段CDN。",
-                  "page": 813
+                  "desc": "S3の前段CDN。"
                 },
                 {
                   "name": "IAM",
-                  "desc": "バケット操作の権限。",
-                  "page": 815
+                  "desc": "バケット操作の権限。"
                 },
                 {
                   "name": "Lambda",
-                  "desc": "オブジェクト作成をトリガーにできる。",
-                  "page": 809
+                  "desc": "オブジェクト作成をトリガーにできる。"
                 }
               ]
             }
@@ -22575,7 +21732,7 @@ module.exports = {
           "icon": "ic-database",
           "compact": true,
           "id": "rds",
-          "page": 811,
+          "page": 322,
           "term": "RDS",
           "reading": "アールディーエス",
           "category": "AWS",
@@ -22629,18 +21786,15 @@ module.exports = {
               "items": [
                 {
                   "name": "PostgreSQL",
-                  "desc": "RDSで選べるエンジンの一例。",
-                  "page": 128
+                  "desc": "RDSで選べるエンジンの一例。"
                 },
                 {
                   "name": "MySQL",
-                  "desc": "同様に選べるエンジン。",
-                  "page": 127
+                  "desc": "同様に選べるエンジン。"
                 },
                 {
                   "name": "DynamoDB",
-                  "desc": "マネージドNoSQL側の代表。",
-                  "page": 812
+                  "desc": "マネージドNoSQL側の代表。"
                 }
               ]
             }
@@ -22650,7 +21804,7 @@ module.exports = {
           "icon": "ic-database",
           "compact": true,
           "id": "dynamodb",
-          "page": 812,
+          "page": 323,
           "term": "DynamoDB",
           "reading": "ダイナモディービー",
           "category": "AWS",
@@ -22704,18 +21858,15 @@ module.exports = {
               "items": [
                 {
                   "name": "RDS",
-                  "desc": "マネージドRDBとの対比。",
-                  "page": 811
+                  "desc": "マネージドRDBとの対比。"
                 },
                 {
                   "name": "NoSQL",
-                  "desc": "上位の考え方。",
-                  "page": 106
+                  "desc": "上位の考え方。"
                 },
                 {
                   "name": "Lambda",
-                  "desc": "よく一緒に組む計算側。",
-                  "page": 809
+                  "desc": "よく一緒に組む計算側。"
                 }
               ]
             }
@@ -22725,7 +21876,7 @@ module.exports = {
           "icon": "ic-network",
           "compact": true,
           "id": "cloudfront",
-          "page": 813,
+          "page": 324,
           "term": "CloudFront",
           "reading": "クラウドフロント",
           "category": "AWS",
@@ -22779,18 +21930,15 @@ module.exports = {
               "items": [
                 {
                   "name": "S3",
-                  "desc": "オリジンの定番。",
-                  "page": 810
+                  "desc": "オリジンの定番。"
                 },
                 {
                   "name": "Route 53",
-                  "desc": "ドメイン側の名前解決。",
-                  "page": 814
+                  "desc": "ドメイン側の名前解決。"
                 },
                 {
                   "name": "ALB",
-                  "desc": "動的オリジンになりうる。",
-                  "page": 801
+                  "desc": "動的オリジンになりうる。"
                 }
               ]
             }
@@ -22800,7 +21948,7 @@ module.exports = {
           "icon": "ic-network",
           "compact": true,
           "id": "route53",
-          "page": 814,
+          "page": 325,
           "term": "Route 53",
           "reading": "ルートフィフティスリー",
           "category": "AWS",
@@ -22854,18 +22002,15 @@ module.exports = {
               "items": [
                 {
                   "name": "DNS",
-                  "desc": "上位のしくみ。",
-                  "page": 49
+                  "desc": "上位のしくみ。"
                 },
                 {
                   "name": "CloudFront",
-                  "desc": "よく向ける先。",
-                  "page": 813
+                  "desc": "よく向ける先。"
                 },
                 {
                   "name": "ALB",
-                  "desc": "アプリ入口の向き先。",
-                  "page": 801
+                  "desc": "アプリ入口の向き先。"
                 }
               ]
             }
@@ -22875,7 +22020,7 @@ module.exports = {
           "icon": "ic-users",
           "compact": true,
           "id": "iam",
-          "page": 815,
+          "page": 326,
           "term": "IAM",
           "reading": "アイエーエム",
           "category": "AWS",
@@ -22929,18 +22074,15 @@ module.exports = {
               "items": [
                 {
                   "name": "EC2",
-                  "desc": "インスタンスにロールを付ける。",
-                  "page": 805
+                  "desc": "インスタンスにロールを付ける。"
                 },
                 {
                   "name": "S3",
-                  "desc": "バケットポリシーと合わせて使う。",
-                  "page": 810
+                  "desc": "バケットポリシーと合わせて使う。"
                 },
                 {
                   "name": "Lambda",
-                  "desc": "実行ロールが必須級。",
-                  "page": 809
+                  "desc": "実行ロールが必須級。"
                 }
               ]
             }
@@ -22950,7 +22092,7 @@ module.exports = {
           "icon": "ic-network",
           "compact": true,
           "id": "api-gateway",
-          "page": 816,
+          "page": 327,
           "term": "API Gateway",
           "reading": "エーピーアイゲートウェイ",
           "category": "AWS",
@@ -23004,18 +22146,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Lambda",
-                  "desc": "裏側の処理の定番。",
-                  "page": 809
+                  "desc": "裏側の処理の定番。"
                 },
                 {
                   "name": "API",
-                  "desc": "届ける対象の概念。",
-                  "page": 83
+                  "desc": "届ける対象の概念。"
                 },
                 {
                   "name": "IAM",
-                  "desc": "呼び出し権限の管理。",
-                  "page": 815
+                  "desc": "呼び出し権限の管理。"
                 }
               ]
             }
@@ -23025,7 +22164,7 @@ module.exports = {
           "icon": "ic-layers",
           "compact": true,
           "id": "sqs",
-          "page": 817,
+          "page": 328,
           "term": "SQS",
           "reading": "エスキューエス",
           "category": "AWS",
@@ -23079,18 +22218,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Lambda",
-                  "desc": "キューをトリガーに実行できる。",
-                  "page": 809
+                  "desc": "キューをトリガーに実行できる。"
                 },
                 {
                   "name": "Pub/Sub",
-                  "desc": "近い非同期の考え方。",
-                  "page": 96
+                  "desc": "近い非同期の考え方。"
                 },
                 {
                   "name": "Webhook",
-                  "desc": "受けた通知をキューへ逃がすこともある。",
-                  "page": 95
+                  "desc": "受けた通知をキューへ逃がすこともある。"
                 }
               ]
             }
@@ -23100,7 +22236,7 @@ module.exports = {
           "icon": "ic-monitor",
           "compact": true,
           "id": "cloudwatch",
-          "page": 818,
+          "page": 329,
           "term": "CloudWatch",
           "reading": "クラウドウォッチ",
           "category": "AWS",
@@ -23154,18 +22290,15 @@ module.exports = {
               "items": [
                 {
                   "name": "X-Ray",
-                  "desc": "リクエストの追跡（トレーシング）。",
-                  "page": 819
+                  "desc": "リクエストの追跡（トレーシング）。"
                 },
                 {
                   "name": "ログ",
-                  "desc": "一般概念としての記録。",
-                  "page": 525
+                  "desc": "一般概念としての記録。"
                 },
                 {
                   "name": "Lambda",
-                  "desc": "ログがCloudWatchに流れやすい。",
-                  "page": 809
+                  "desc": "ログがCloudWatchに流れやすい。"
                 }
               ]
             }
@@ -23175,7 +22308,7 @@ module.exports = {
           "icon": "ic-network",
           "compact": true,
           "id": "x-ray",
-          "page": 819,
+          "page": 330,
           "term": "X-Ray",
           "reading": "エックスレイ",
           "category": "AWS",
@@ -23229,18 +22362,15 @@ module.exports = {
               "items": [
                 {
                   "name": "CloudWatch",
-                  "desc": "監視の兄弟分。",
-                  "page": 818
+                  "desc": "監視の兄弟分。"
                 },
                 {
                   "name": "API Gateway",
-                  "desc": "トレースの入口になりやすい。",
-                  "page": 816
+                  "desc": "トレースの入口になりやすい。"
                 },
                 {
                   "name": "Lambda",
-                  "desc": "計装対象の定番。",
-                  "page": 809
+                  "desc": "計装対象の定番。"
                 }
               ]
             }
@@ -23250,7 +22380,7 @@ module.exports = {
           "icon": "ic-network",
           "compact": true,
           "id": "direct-connect",
-          "page": 820,
+          "page": 331,
           "term": "ダイレクトコネクト",
           "reading": "ダイレクトコネクト",
           "category": "AWS",
@@ -23304,18 +22434,15 @@ module.exports = {
               "items": [
                 {
                   "name": "VPN",
-                  "desc": "もっと手軽な接続手段。",
-                  "page": 62
+                  "desc": "もっと手軽な接続手段。"
                 },
                 {
                   "name": "トランジットゲートウェイ",
-                  "desc": "多数VPC接続のハブ。",
-                  "page": 821
+                  "desc": "多数VPC接続のハブ。"
                 },
                 {
                   "name": "VM",
-                  "desc": "つなぐ先の計算資源の一例。",
-                  "page": 401
+                  "desc": "つなぐ先の計算資源の一例。"
                 }
               ]
             }
@@ -23325,7 +22452,7 @@ module.exports = {
           "icon": "ic-network",
           "compact": true,
           "id": "transit-gateway",
-          "page": 821,
+          "page": 332,
           "term": "トランジットゲートウェイ",
           "reading": "トランジットゲートウェイ",
           "category": "AWS",
@@ -23379,18 +22506,15 @@ module.exports = {
               "items": [
                 {
                   "name": "ダイレクトコネクト",
-                  "desc": "オンプレ側からハブへ入る道。",
-                  "page": 820
+                  "desc": "オンプレ側からハブへ入る道。"
                 },
                 {
                   "name": "VPN",
-                  "desc": "もう一つの入り口。",
-                  "page": 62
+                  "desc": "もう一つの入り口。"
                 },
                 {
                   "name": "ALB",
-                  "desc": "アプリ入口とは別レイヤの話。",
-                  "page": 801
+                  "desc": "アプリ入口とは別レイヤの話。"
                 }
               ]
             }
@@ -23406,7 +22530,7 @@ module.exports = {
           "icon": "ic-rocket",
           "compact": true,
           "id": "cloud-run",
-          "page": 850,
+          "page": 333,
           "term": "Cloud Run",
           "reading": "クラウドラン",
           "category": "GCP",
@@ -23460,18 +22584,15 @@ module.exports = {
               "items": [
                 {
                   "name": "GKE",
-                  "desc": "もっと制御したいときのK8s。",
-                  "page": 851
+                  "desc": "もっと制御したいときのK8s。"
                 },
                 {
                   "name": "Cloud Functions",
-                  "desc": "もっと小さい関数単位。",
-                  "page": 854
+                  "desc": "もっと小さい関数単位。"
                 },
                 {
                   "name": "Artifact Registry",
-                  "desc": "イメージの置き場。",
-                  "page": 856
+                  "desc": "イメージの置き場。"
                 }
               ]
             }
@@ -23481,7 +22602,7 @@ module.exports = {
           "icon": "ic-package",
           "compact": true,
           "id": "gke",
-          "page": 851,
+          "page": 334,
           "term": "GKE",
           "reading": "ジーケーイー",
           "category": "GCP",
@@ -23535,18 +22656,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Kubernetes",
-                  "desc": "GKEが預かる仕組み本体。",
-                  "page": 441
+                  "desc": "GKEが預かる仕組み本体。"
                 },
                 {
                   "name": "Cloud Run",
-                  "desc": "より簡易なコンテナ実行。",
-                  "page": 850
+                  "desc": "より簡易なコンテナ実行。"
                 },
                 {
                   "name": "Artifact Registry",
-                  "desc": "イメージ供給元。",
-                  "page": 856
+                  "desc": "イメージ供給元。"
                 }
               ]
             }
@@ -23556,7 +22674,7 @@ module.exports = {
           "icon": "ic-package",
           "compact": true,
           "id": "cloud-storage",
-          "page": 852,
+          "page": 335,
           "term": "Cloud Storage",
           "reading": "クラウドストレージ",
           "category": "GCP",
@@ -23610,18 +22728,15 @@ module.exports = {
               "items": [
                 {
                   "name": "S3",
-                  "desc": "AWS側の対応サービス。",
-                  "page": 810
+                  "desc": "AWS側の対応サービス。"
                 },
                 {
                   "name": "Cloud CDN",
-                  "desc": "配信を速くする前段。",
-                  "page": 855
+                  "desc": "配信を速くする前段。"
                 },
                 {
                   "name": "Cloud Functions",
-                  "desc": "オブジェクトイベントで起動することも。",
-                  "page": 854
+                  "desc": "オブジェクトイベントで起動することも。"
                 }
               ]
             }
@@ -23631,7 +22746,7 @@ module.exports = {
           "icon": "ic-database",
           "compact": true,
           "id": "cloud-sql",
-          "page": 853,
+          "page": 336,
           "term": "Cloud SQL",
           "reading": "クラウドエスキューエル",
           "category": "GCP",
@@ -23685,18 +22800,15 @@ module.exports = {
               "items": [
                 {
                   "name": "RDS",
-                  "desc": "AWS側の対応。",
-                  "page": 811
+                  "desc": "AWS側の対応。"
                 },
                 {
                   "name": "PostgreSQL",
-                  "desc": "選べるエンジンの一例。",
-                  "page": 128
+                  "desc": "選べるエンジンの一例。"
                 },
                 {
                   "name": "Cloud Run",
-                  "desc": "アプリ側の実行環境例。",
-                  "page": 850
+                  "desc": "アプリ側の実行環境例。"
                 }
               ]
             }
@@ -23706,7 +22818,7 @@ module.exports = {
           "icon": "ic-rocket",
           "compact": true,
           "id": "cloud-functions",
-          "page": 854,
+          "page": 337,
           "term": "Cloud Functions",
           "reading": "クラウドファンクションズ",
           "category": "GCP",
@@ -23760,18 +22872,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Lambda",
-                  "desc": "AWS側の対応。",
-                  "page": 809
+                  "desc": "AWS側の対応。"
                 },
                 {
                   "name": "Cloud Run",
-                  "desc": "コンテナ単位の近い選択肢。",
-                  "page": 850
+                  "desc": "コンテナ単位の近い選択肢。"
                 },
                 {
                   "name": "Cloud Storage",
-                  "desc": "トリガー元の一例。",
-                  "page": 852
+                  "desc": "トリガー元の一例。"
                 }
               ]
             }
@@ -23781,7 +22890,7 @@ module.exports = {
           "icon": "ic-network",
           "compact": true,
           "id": "cloud-cdn",
-          "page": 855,
+          "page": 338,
           "term": "Cloud CDN",
           "reading": "クラウドシーディーエヌ",
           "category": "GCP",
@@ -23835,18 +22944,15 @@ module.exports = {
               "items": [
                 {
                   "name": "CloudFront",
-                  "desc": "AWS側の対応。",
-                  "page": 813
+                  "desc": "AWS側の対応。"
                 },
                 {
                   "name": "Cloud Storage",
-                  "desc": "静的オリジンの一例。",
-                  "page": 852
+                  "desc": "静的オリジンの一例。"
                 },
                 {
                   "name": "Cloud Run",
-                  "desc": "動的オリジンの一例。",
-                  "page": 850
+                  "desc": "動的オリジンの一例。"
                 }
               ]
             }
@@ -23856,7 +22962,7 @@ module.exports = {
           "icon": "ic-package",
           "compact": true,
           "id": "artifact-registry",
-          "page": 856,
+          "page": 339,
           "term": "Artifact Registry",
           "reading": "アーティファクトレジストリ",
           "category": "GCP",
@@ -23910,18 +23016,15 @@ module.exports = {
               "items": [
                 {
                   "name": "ECR",
-                  "desc": "AWS側のコンテナレジストリ。",
-                  "page": 807
+                  "desc": "AWS側のコンテナレジストリ。"
                 },
                 {
                   "name": "Cloud Run",
-                  "desc": "イメージの実行先。",
-                  "page": 850
+                  "desc": "イメージの実行先。"
                 },
                 {
                   "name": "GKE",
-                  "desc": "イメージの実行先。",
-                  "page": 851
+                  "desc": "イメージの実行先。"
                 }
               ]
             }
@@ -23935,7 +23038,7 @@ module.exports = {
       "entries": [
         {
           "id": "container-apps",
-          "page": 870,
+          "page": 340,
           "term": "Container Apps",
           "reading": "コンテナアップス",
           "category": "Azure",
@@ -23991,18 +23094,15 @@ module.exports = {
               "items": [
                 {
                   "name": "AKS",
-                  "desc": "Container Apps と一緒に出てきたときの手がかり。",
-                  "page": 874
+                  "desc": "Container Apps と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Azure Functions",
-                  "desc": "Container Apps と一緒に出てきたときの手がかり。",
-                  "page": 871
+                  "desc": "Container Apps と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Docker",
-                  "desc": "Container Apps と一緒に出てきたときの手がかり。",
-                  "page": 301
+                  "desc": "Container Apps と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -24010,7 +23110,7 @@ module.exports = {
         },
         {
           "id": "azure-functions",
-          "page": 871,
+          "page": 341,
           "term": "Azure Functions",
           "reading": "アジュールファンクションズ",
           "category": "Azure",
@@ -24066,18 +23166,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Container Apps",
-                  "desc": "Azure Functions と一緒に出てきたときの手がかり。",
-                  "page": 870
+                  "desc": "Azure Functions と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Blob Storage",
-                  "desc": "Azure Functions と一緒に出てきたときの手がかり。",
-                  "page": 872
+                  "desc": "Azure Functions と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "CI/CD",
-                  "desc": "Azure Functions と一緒に出てきたときの手がかり。",
-                  "page": 705
+                  "desc": "Azure Functions と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -24085,7 +23182,7 @@ module.exports = {
         },
         {
           "id": "blob-storage",
-          "page": 872,
+          "page": 342,
           "term": "Blob Storage",
           "reading": "ブロブストレージ",
           "category": "Azure",
@@ -24141,18 +23238,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Azure Functions",
-                  "desc": "Blob Storage と一緒に出てきたときの手がかり。",
-                  "page": 871
+                  "desc": "Blob Storage と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "CDN",
-                  "desc": "Blob Storage と一緒に出てきたときの手がかり。",
-                  "page": 408
+                  "desc": "Blob Storage と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Object Storage",
-                  "desc": "Blob Storage と一緒に出てきたときの手がかり。",
-                  "page": 409
+                  "desc": "Blob Storage と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -24160,7 +23254,7 @@ module.exports = {
         },
         {
           "id": "azure-sql",
-          "page": 873,
+          "page": 343,
           "term": "Azure SQL",
           "reading": "アジュールエスキューエル",
           "category": "Azure",
@@ -24216,18 +23310,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Blob Storage",
-                  "desc": "Azure SQL と一緒に出てきたときの手がかり。",
-                  "page": 872
+                  "desc": "Azure SQL と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Authentication",
-                  "desc": "Azure SQL と一緒に出てきたときの手がかり。",
-                  "page": 905
+                  "desc": "Azure SQL と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "PaaS",
-                  "desc": "Azure SQL と一緒に出てきたときの手がかり。",
-                  "page": 405
+                  "desc": "Azure SQL と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -24235,7 +23326,7 @@ module.exports = {
         },
         {
           "id": "aks",
-          "page": 874,
+          "page": 344,
           "term": "AKS",
           "reading": "エーケーエス",
           "category": "Azure",
@@ -24291,18 +23382,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Kubernetes",
-                  "desc": "AKS と一緒に出てきたときの手がかり。",
-                  "page": 441
+                  "desc": "AKS と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Container Apps",
-                  "desc": "AKS と一緒に出てきたときの手がかり。",
-                  "page": 870
+                  "desc": "AKS と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Helm",
-                  "desc": "AKS と一緒に出てきたときの手がかり。",
-                  "page": 735
+                  "desc": "AKS と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -24310,7 +23398,7 @@ module.exports = {
         },
         {
           "id": "front-door",
-          "page": 875,
+          "page": 345,
           "term": "Front Door",
           "reading": "フロントドア",
           "category": "Azure",
@@ -24366,18 +23454,15 @@ module.exports = {
               "items": [
                 {
                   "name": "CDN",
-                  "desc": "Front Door と一緒に出てきたときの手がかり。",
-                  "page": 408
+                  "desc": "Front Door と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "DNS",
-                  "desc": "Front Door と一緒に出てきたときの手がかり。",
-                  "page": 49
+                  "desc": "Front Door と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Load Balancer",
-                  "desc": "Front Door と一緒に出てきたときの手がかり。",
-                  "page": 802
+                  "desc": "Front Door と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -24385,7 +23470,7 @@ module.exports = {
         },
         {
           "id": "entra-id",
-          "page": 876,
+          "page": 346,
           "term": "Entra ID",
           "reading": "エントラアイディー",
           "category": "Azure",
@@ -24441,18 +23526,15 @@ module.exports = {
               "items": [
                 {
                   "name": "OAuth",
-                  "desc": "Entra ID と一緒に出てきたときの手がかり。",
-                  "page": 907
+                  "desc": "Entra ID と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Authentication",
-                  "desc": "Entra ID と一緒に出てきたときの手がかり。",
-                  "page": 905
+                  "desc": "Entra ID と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "IAM",
-                  "desc": "Entra ID と一緒に出てきたときの手がかり。",
-                  "page": 815
+                  "desc": "Entra ID と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -24466,7 +23548,7 @@ module.exports = {
       "entries": [
         {
           "id": "firestore",
-          "page": 880,
+          "page": 347,
           "term": "Firestore",
           "reading": "ファイアストア",
           "category": "Firebase・Supabase",
@@ -24522,18 +23604,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Firebase Auth",
-                  "desc": "Firestore と一緒に出てきたときの手がかり。",
-                  "page": 881
+                  "desc": "Firestore と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Firebase Functions",
-                  "desc": "Firestore と一緒に出てきたときの手がかり。",
-                  "page": 884
+                  "desc": "Firestore と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "NoSQL",
-                  "desc": "Firestore と一緒に出てきたときの手がかり。",
-                  "page": 106
+                  "desc": "Firestore と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -24541,7 +23620,7 @@ module.exports = {
         },
         {
           "id": "firebase-auth",
-          "page": 881,
+          "page": 348,
           "term": "Firebase Auth",
           "reading": "ファイアベースオース",
           "category": "Firebase・Supabase",
@@ -24597,18 +23676,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Firestore",
-                  "desc": "Firebase Auth と一緒に出てきたときの手がかり。",
-                  "page": 880
+                  "desc": "Firebase Auth と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "OAuth",
-                  "desc": "Firebase Auth と一緒に出てきたときの手がかり。",
-                  "page": 907
+                  "desc": "Firebase Auth と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Authentication",
-                  "desc": "Firebase Auth と一緒に出てきたときの手がかり。",
-                  "page": 905
+                  "desc": "Firebase Auth と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -24616,7 +23692,7 @@ module.exports = {
         },
         {
           "id": "firebase-storage",
-          "page": 882,
+          "page": 349,
           "term": "Firebase Storage",
           "reading": "ファイアベースストレージ",
           "category": "Firebase・Supabase",
@@ -24672,18 +23748,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Firestore",
-                  "desc": "Firebase Storage と一緒に出てきたときの手がかり。",
-                  "page": 880
+                  "desc": "Firebase Storage と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Firebase Auth",
-                  "desc": "Firebase Storage と一緒に出てきたときの手がかり。",
-                  "page": 881
+                  "desc": "Firebase Storage と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Object Storage",
-                  "desc": "Firebase Storage と一緒に出てきたときの手がかり。",
-                  "page": 409
+                  "desc": "Firebase Storage と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -24691,7 +23764,7 @@ module.exports = {
         },
         {
           "id": "firebase-hosting",
-          "page": 883,
+          "page": 350,
           "term": "Firebase Hosting",
           "reading": "ファイアベースホスティング",
           "category": "Firebase・Supabase",
@@ -24747,18 +23820,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Firebase Functions",
-                  "desc": "Firebase Hosting と一緒に出てきたときの手がかり。",
-                  "page": 884
+                  "desc": "Firebase Hosting と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "CDN",
-                  "desc": "Firebase Hosting と一緒に出てきたときの手がかり。",
-                  "page": 408
+                  "desc": "Firebase Hosting と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "CI/CD",
-                  "desc": "Firebase Hosting と一緒に出てきたときの手がかり。",
-                  "page": 705
+                  "desc": "Firebase Hosting と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -24766,7 +23836,7 @@ module.exports = {
         },
         {
           "id": "firebase-functions",
-          "page": 884,
+          "page": 351,
           "term": "Firebase Functions",
           "reading": "ファイアベースファンクションズ",
           "category": "Firebase・Supabase",
@@ -24822,18 +23892,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Firestore",
-                  "desc": "Firebase Functions と一緒に出てきたときの手がかり。",
-                  "page": 880
+                  "desc": "Firebase Functions と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Firebase Auth",
-                  "desc": "Firebase Functions と一緒に出てきたときの手がかり。",
-                  "page": 881
+                  "desc": "Firebase Functions と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Cloud Functions",
-                  "desc": "Firebase Functions と一緒に出てきたときの手がかり。",
-                  "page": 854
+                  "desc": "Firebase Functions と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -24841,7 +23908,7 @@ module.exports = {
         },
         {
           "id": "supabase-database",
-          "page": 885,
+          "page": 352,
           "term": "Supabase Database",
           "reading": "スーパーベースデータベース",
           "category": "Firebase・Supabase",
@@ -24897,18 +23964,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Supabase Auth",
-                  "desc": "Supabase Database と一緒に出てきたときの手がかり。",
-                  "page": 886
+                  "desc": "Supabase Database と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "PostgreSQL",
-                  "desc": "Supabase Database と一緒に出てきたときの手がかり。",
-                  "page": 128
+                  "desc": "Supabase Database と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Realtime",
-                  "desc": "Supabase Database と一緒に出てきたときの手がかり。",
-                  "page": 889
+                  "desc": "Supabase Database と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -24916,7 +23980,7 @@ module.exports = {
         },
         {
           "id": "supabase-auth",
-          "page": 886,
+          "page": 353,
           "term": "Supabase Auth",
           "reading": "スーパーベースオース",
           "category": "Firebase・Supabase",
@@ -24972,18 +24036,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Supabase Database",
-                  "desc": "Supabase Auth と一緒に出てきたときの手がかり。",
-                  "page": 885
+                  "desc": "Supabase Auth と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Authentication",
-                  "desc": "Supabase Auth と一緒に出てきたときの手がかり。",
-                  "page": 905
+                  "desc": "Supabase Auth と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "OAuth",
-                  "desc": "Supabase Auth と一緒に出てきたときの手がかり。",
-                  "page": 907
+                  "desc": "Supabase Auth と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -24991,7 +24052,7 @@ module.exports = {
         },
         {
           "id": "supabase-storage",
-          "page": 887,
+          "page": 354,
           "term": "Supabase Storage",
           "reading": "スーパーベースストレージ",
           "category": "Firebase・Supabase",
@@ -25047,18 +24108,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Supabase Auth",
-                  "desc": "Supabase Storage と一緒に出てきたときの手がかり。",
-                  "page": 886
+                  "desc": "Supabase Storage と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Object Storage",
-                  "desc": "Supabase Storage と一緒に出てきたときの手がかり。",
-                  "page": 409
+                  "desc": "Supabase Storage と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "CDN",
-                  "desc": "Supabase Storage と一緒に出てきたときの手がかり。",
-                  "page": 408
+                  "desc": "Supabase Storage と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -25066,7 +24124,7 @@ module.exports = {
         },
         {
           "id": "edge-functions",
-          "page": 888,
+          "page": 355,
           "term": "Edge Functions",
           "reading": "エッジファンクションズ",
           "category": "Firebase・Supabase",
@@ -25122,8 +24180,7 @@ module.exports = {
               "items": [
                 {
                   "name": "Supabase Database",
-                  "desc": "Edge Functions と一緒に出てきたときの手がかり。",
-                  "page": 885
+                  "desc": "Edge Functions と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Cloudflare Workers",
@@ -25131,8 +24188,7 @@ module.exports = {
                 },
                 {
                   "name": "Serverless",
-                  "desc": "Edge Functions と一緒に出てきたときの手がかり。",
-                  "page": 410
+                  "desc": "Edge Functions と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -25140,7 +24196,7 @@ module.exports = {
         },
         {
           "id": "supabase-realtime",
-          "page": 889,
+          "page": 356,
           "term": "Realtime",
           "reading": "リアルタイム",
           "category": "Firebase・Supabase",
@@ -25196,18 +24252,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Supabase Database",
-                  "desc": "Realtime と一緒に出てきたときの手がかり。",
-                  "page": 885
+                  "desc": "Realtime と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "WebSocket",
-                  "desc": "Realtime と一緒に出てきたときの手がかり。",
-                  "page": 94
+                  "desc": "Realtime と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Firestore",
-                  "desc": "Realtime と一緒に出てきたときの手がかり。",
-                  "page": 880
+                  "desc": "Realtime と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -25221,7 +24274,7 @@ module.exports = {
       "entries": [
         {
           "id": "cf-workers",
-          "page": 890,
+          "page": 357,
           "term": "Workers",
           "reading": "ワーカーズ",
           "category": "Cloudflare",
@@ -25277,18 +24330,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Pages",
-                  "desc": "Workers と一緒に出てきたときの手がかり。",
-                  "page": 891
+                  "desc": "Workers と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "KV",
-                  "desc": "Workers と一緒に出てきたときの手がかり。",
-                  "page": 894
+                  "desc": "Workers と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "R2",
-                  "desc": "Workers と一緒に出てきたときの手がかり。",
-                  "page": 892
+                  "desc": "Workers と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -25296,7 +24346,7 @@ module.exports = {
         },
         {
           "id": "cf-pages",
-          "page": 891,
+          "page": 358,
           "term": "Pages",
           "reading": "ページズ",
           "category": "Cloudflare",
@@ -25352,18 +24402,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Workers",
-                  "desc": "Pages と一緒に出てきたときの手がかり。",
-                  "page": 890
+                  "desc": "Pages と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "CDN",
-                  "desc": "Pages と一緒に出てきたときの手がかり。",
-                  "page": 408
+                  "desc": "Pages と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "CI/CD",
-                  "desc": "Pages と一緒に出てきたときの手がかり。",
-                  "page": 705
+                  "desc": "Pages と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -25371,7 +24418,7 @@ module.exports = {
         },
         {
           "id": "r2",
-          "page": 892,
+          "page": 359,
           "term": "R2",
           "reading": "アールツー",
           "category": "Cloudflare",
@@ -25427,18 +24474,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Workers",
-                  "desc": "R2 と一緒に出てきたときの手がかり。",
-                  "page": 890
+                  "desc": "R2 と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "KV",
-                  "desc": "R2 と一緒に出てきたときの手がかり。",
-                  "page": 894
+                  "desc": "R2 と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Object Storage",
-                  "desc": "R2 と一緒に出てきたときの手がかり。",
-                  "page": 409
+                  "desc": "R2 と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -25446,7 +24490,7 @@ module.exports = {
         },
         {
           "id": "d1",
-          "page": 893,
+          "page": 360,
           "term": "D1",
           "reading": "ディーワン",
           "category": "Cloudflare",
@@ -25502,18 +24546,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Workers",
-                  "desc": "D1 と一緒に出てきたときの手がかり。",
-                  "page": 890
+                  "desc": "D1 と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "KV",
-                  "desc": "D1 と一緒に出てきたときの手がかり。",
-                  "page": 894
+                  "desc": "D1 と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "SQLite",
-                  "desc": "D1 と一緒に出てきたときの手がかり。",
-                  "page": 129
+                  "desc": "D1 と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -25521,7 +24562,7 @@ module.exports = {
         },
         {
           "id": "kv",
-          "page": 894,
+          "page": 361,
           "term": "KV",
           "reading": "ケーブイ",
           "category": "Cloudflare",
@@ -25577,18 +24618,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Workers",
-                  "desc": "KV と一緒に出てきたときの手がかり。",
-                  "page": 890
+                  "desc": "KV と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "R2",
-                  "desc": "KV と一緒に出てきたときの手がかり。",
-                  "page": 892
+                  "desc": "KV と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Redis",
-                  "desc": "KV と一緒に出てきたときの手がかり。",
-                  "page": 130
+                  "desc": "KV と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -25596,7 +24634,7 @@ module.exports = {
         },
         {
           "id": "zero-trust",
-          "page": 895,
+          "page": 362,
           "term": "Zero Trust",
           "reading": "ゼロトラスト",
           "category": "Cloudflare",
@@ -25652,18 +24690,15 @@ module.exports = {
               "items": [
                 {
                   "name": "VPN",
-                  "desc": "Zero Trust と一緒に出てきたときの手がかり。",
-                  "page": 62
+                  "desc": "Zero Trust と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Authentication",
-                  "desc": "Zero Trust と一緒に出てきたときの手がかり。",
-                  "page": 905
+                  "desc": "Zero Trust と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "ファイアウォール",
-                  "desc": "Zero Trust と一緒に出てきたときの手がかり。",
-                  "page": 904
+                  "desc": "Zero Trust と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -25671,7 +24706,7 @@ module.exports = {
         },
         {
           "id": "cloudflare-cdn",
-          "page": 896,
+          "page": 363,
           "term": "Cloudflare CDN",
           "reading": "クラウドフレアシーディーエヌ",
           "category": "Cloudflare",
@@ -25727,18 +24762,15 @@ module.exports = {
               "items": [
                 {
                   "name": "CDN",
-                  "desc": "Cloudflare CDN と一緒に出てきたときの手がかり。",
-                  "page": 408
+                  "desc": "Cloudflare CDN と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Pages",
-                  "desc": "Cloudflare CDN と一緒に出てきたときの手がかり。",
-                  "page": 891
+                  "desc": "Cloudflare CDN と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "HTTPS",
-                  "desc": "Cloudflare CDN と一緒に出てきたときの手がかり。",
-                  "page": 48
+                  "desc": "Cloudflare CDN と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -25752,7 +24784,7 @@ module.exports = {
       "entries": [
         {
           "id": "waf",
-          "page": 901,
+          "page": 364,
           "term": "WAF",
           "reading": "ワフ",
           "category": "セキュリティ",
@@ -25807,33 +24839,27 @@ module.exports = {
               "items": [
                 {
                   "name": "HTTP",
-                  "desc": "Webブラウザとサーバーがやりとりするためのルール。",
-                  "page": 47
+                  "desc": "Webブラウザとサーバーがやりとりするためのルール。"
                 },
                 {
                   "name": "Proxy",
-                  "desc": "通信の間に入って中継するサーバー。",
-                  "page": 65
+                  "desc": "通信の間に入って中継するサーバー。"
                 },
                 {
                   "name": "ALB",
-                  "desc": "WAFを付けて使うことが多いAWSのロードバランサー。",
-                  "page": 801
+                  "desc": "WAFを付けて使うことが多いAWSのロードバランサー。"
                 },
                 {
                   "name": "SQL Injection",
-                  "desc": "入力欄にSQLを紛れ込ませてDBを不正に操作する攻撃。",
-                  "page": 902
+                  "desc": "入力欄にSQLを紛れ込ませてDBを不正に操作する攻撃。"
                 },
                 {
                   "name": "XSS",
-                  "desc": "ページに悪意のあるスクリプトを埋め込む攻撃。",
-                  "page": 903
+                  "desc": "ページに悪意のあるスクリプトを埋め込む攻撃。"
                 },
                 {
                   "name": "ファイアウォール",
-                  "desc": "IPやポート単位で通信を許可・遮断する仕組み。",
-                  "page": 904
+                  "desc": "IPやポート単位で通信を許可・遮断する仕組み。"
                 }
               ]
             }
@@ -25844,7 +24870,7 @@ module.exports = {
           "icon": "ic-database",
           "compact": true,
           "id": "sql-injection",
-          "page": 902,
+          "page": 365,
           "term": "SQL Injection",
           "reading": "エスキューエルインジェクション",
           "oneline": "入力欄にSQL文を紛れ込ませ、データベースを不正に操作する攻撃。",
@@ -25897,18 +24923,15 @@ module.exports = {
               "items": [
                 {
                   "name": "WAF",
-                  "desc": "攻撃通信を検知・遮断する層。",
-                  "page": 901
+                  "desc": "攻撃通信を検知・遮断する層。"
                 },
                 {
                   "name": "SQL",
-                  "desc": "注入の対象になる言語。",
-                  "page": 112
+                  "desc": "注入の対象になる言語。"
                 },
                 {
                   "name": "XSS",
-                  "desc": "別系統の代表的なWeb攻撃。",
-                  "page": 903
+                  "desc": "別系統の代表的なWeb攻撃。"
                 }
               ]
             }
@@ -25919,7 +24942,7 @@ module.exports = {
           "icon": "ic-code",
           "compact": true,
           "id": "xss",
-          "page": 903,
+          "page": 366,
           "term": "XSS",
           "reading": "クロスサイトスクリプティング",
           "oneline": "サイトに悪意のあるスクリプトを埋め込み、他人のブラウザ上で実行させる攻撃。",
@@ -25972,18 +24995,15 @@ module.exports = {
               "items": [
                 {
                   "name": "WAF",
-                  "desc": "XSS攻撃の検知・遮断を助ける。",
-                  "page": 901
+                  "desc": "XSS攻撃の検知・遮断を助ける。"
                 },
                 {
                   "name": "SQL Injection",
-                  "desc": "並んで語られる代表攻撃。",
-                  "page": 902
+                  "desc": "並んで語られる代表攻撃。"
                 },
                 {
                   "name": "Cookie",
-                  "desc": "XSSの被害対象になりやすい。",
-                  "page": 53
+                  "desc": "XSSの被害対象になりやすい。"
                 }
               ]
             }
@@ -25994,7 +25014,7 @@ module.exports = {
           "icon": "ic-server",
           "compact": true,
           "id": "firewall",
-          "page": 904,
+          "page": 367,
           "term": "ファイアウォール",
           "reading": "ファイアウォール",
           "oneline": "IPやポートなどの条件で、通信を許可・遮断する防御の仕組み。",
@@ -26047,18 +25067,15 @@ module.exports = {
               "items": [
                 {
                   "name": "WAF",
-                  "desc": "Web向けの応用防火壁。",
-                  "page": 901
+                  "desc": "Web向けの応用防火壁。"
                 },
                 {
                   "name": "Port",
-                  "desc": "許可・遮断の単位になりやすい。",
-                  "page": 52
+                  "desc": "許可・遮断の単位になりやすい。"
                 },
                 {
                   "name": "VPN",
-                  "desc": "閉じた通信路を作る別手段。",
-                  "page": 62
+                  "desc": "閉じた通信路を作る別手段。"
                 }
               ]
             }
@@ -26066,7 +25083,7 @@ module.exports = {
         },
         {
           "id": "authentication",
-          "page": 905,
+          "page": 368,
           "term": "Authentication",
           "reading": "オーセンティケーション",
           "category": "セキュリティ",
@@ -26122,18 +25139,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Authorization",
-                  "desc": "Authentication と一緒に出てきたときの手がかり。",
-                  "page": 906
+                  "desc": "Authentication と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "OAuth",
-                  "desc": "Authentication と一緒に出てきたときの手がかり。",
-                  "page": 907
+                  "desc": "Authentication と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Secret",
-                  "desc": "Authentication と一緒に出てきたときの手がかり。",
-                  "page": 620
+                  "desc": "Authentication と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -26141,7 +25155,7 @@ module.exports = {
         },
         {
           "id": "authorization",
-          "page": 906,
+          "page": 369,
           "term": "Authorization",
           "reading": "オーソリゼーション",
           "category": "セキュリティ",
@@ -26197,18 +25211,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Authentication",
-                  "desc": "Authorization と一緒に出てきたときの手がかり。",
-                  "page": 905
+                  "desc": "Authorization と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "IAM",
-                  "desc": "Authorization と一緒に出てきたときの手がかり。",
-                  "page": 815
+                  "desc": "Authorization と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "OAuth",
-                  "desc": "Authorization と一緒に出てきたときの手がかり。",
-                  "page": 907
+                  "desc": "Authorization と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -26216,7 +25227,7 @@ module.exports = {
         },
         {
           "id": "oauth",
-          "page": 907,
+          "page": 370,
           "term": "OAuth",
           "reading": "オーオース",
           "category": "セキュリティ",
@@ -26272,18 +25283,15 @@ module.exports = {
               "items": [
                 {
                   "name": "OpenID Connect",
-                  "desc": "OAuth と一緒に出てきたときの手がかり。",
-                  "page": 908
+                  "desc": "OAuth と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Authentication",
-                  "desc": "OAuth と一緒に出てきたときの手がかり。",
-                  "page": 905
+                  "desc": "OAuth と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "JWT",
-                  "desc": "OAuth と一緒に出てきたときの手がかり。",
-                  "page": 55
+                  "desc": "OAuth と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -26291,7 +25299,7 @@ module.exports = {
         },
         {
           "id": "oidc",
-          "page": 908,
+          "page": 371,
           "term": "OpenID Connect",
           "reading": "オープンアイディーコネクト",
           "category": "セキュリティ",
@@ -26347,18 +25355,15 @@ module.exports = {
               "items": [
                 {
                   "name": "OAuth",
-                  "desc": "OpenID Connect と一緒に出てきたときの手がかり。",
-                  "page": 907
+                  "desc": "OpenID Connect と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "JWT",
-                  "desc": "OpenID Connect と一緒に出てきたときの手がかり。",
-                  "page": 55
+                  "desc": "OpenID Connect と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Authentication",
-                  "desc": "OpenID Connect と一緒に出てきたときの手がかり。",
-                  "page": 905
+                  "desc": "OpenID Connect と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -26366,7 +25371,7 @@ module.exports = {
         },
         {
           "id": "encryption",
-          "page": 909,
+          "page": 372,
           "term": "Encryption",
           "reading": "エンクリプション",
           "category": "セキュリティ",
@@ -26422,18 +25427,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Hash",
-                  "desc": "Encryption と一緒に出てきたときの手がかり。",
-                  "page": 910
+                  "desc": "Encryption と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "TLS",
-                  "desc": "Encryption と一緒に出てきたときの手がかり。",
-                  "page": 59
+                  "desc": "Encryption と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "HTTPS",
-                  "desc": "Encryption と一緒に出てきたときの手がかり。",
-                  "page": 48
+                  "desc": "Encryption と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -26441,7 +25443,7 @@ module.exports = {
         },
         {
           "id": "hash",
-          "page": 910,
+          "page": 373,
           "term": "Hash",
           "reading": "ハッシュ",
           "category": "セキュリティ",
@@ -26497,18 +25499,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Salt",
-                  "desc": "Hash と一緒に出てきたときの手がかり。",
-                  "page": 911
+                  "desc": "Hash と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Encryption",
-                  "desc": "Hash と一緒に出てきたときの手がかり。",
-                  "page": 909
+                  "desc": "Hash と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "JWT",
-                  "desc": "Hash と一緒に出てきたときの手がかり。",
-                  "page": 55
+                  "desc": "Hash と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -26516,7 +25515,7 @@ module.exports = {
         },
         {
           "id": "salt",
-          "page": 911,
+          "page": 374,
           "term": "Salt",
           "reading": "ソルト",
           "category": "セキュリティ",
@@ -26572,18 +25571,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Hash",
-                  "desc": "Salt と一緒に出てきたときの手がかり。",
-                  "page": 910
+                  "desc": "Salt と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Secret",
-                  "desc": "Salt と一緒に出てきたときの手がかり。",
-                  "page": 620
+                  "desc": "Salt と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Authentication",
-                  "desc": "Salt と一緒に出てきたときの手がかり。",
-                  "page": 905
+                  "desc": "Salt と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -26591,7 +25587,7 @@ module.exports = {
         },
         {
           "id": "csrf",
-          "page": 912,
+          "page": 375,
           "term": "CSRF",
           "reading": "シーサーフ",
           "category": "セキュリティ",
@@ -26647,18 +25643,15 @@ module.exports = {
               "items": [
                 {
                   "name": "CORS",
-                  "desc": "CSRF と一緒に出てきたときの手がかり。",
-                  "page": 913
+                  "desc": "CSRF と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Cookie",
-                  "desc": "CSRF と一緒に出てきたときの手がかり。",
-                  "page": 53
+                  "desc": "CSRF と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "XSS",
-                  "desc": "CSRF と一緒に出てきたときの手がかり。",
-                  "page": 903
+                  "desc": "CSRF と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -26666,7 +25659,7 @@ module.exports = {
         },
         {
           "id": "cors",
-          "page": 913,
+          "page": 376,
           "term": "CORS",
           "reading": "コース",
           "category": "セキュリティ",
@@ -26722,18 +25715,15 @@ module.exports = {
               "items": [
                 {
                   "name": "CSRF",
-                  "desc": "CORS と一緒に出てきたときの手がかり。",
-                  "page": 912
+                  "desc": "CORS と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "HTTP",
-                  "desc": "CORS と一緒に出てきたときの手がかり。",
-                  "page": 47
+                  "desc": "CORS と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "API",
-                  "desc": "CORS と一緒に出てきたときの手がかり。",
-                  "page": 83
+                  "desc": "CORS と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -26741,7 +25731,7 @@ module.exports = {
         },
         {
           "id": "owasp",
-          "page": 914,
+          "page": 377,
           "term": "OWASP",
           "reading": "オワスプ",
           "category": "セキュリティ",
@@ -26797,18 +25787,15 @@ module.exports = {
               "items": [
                 {
                   "name": "ZAP",
-                  "desc": "OWASP と一緒に出てきたときの手がかり。",
-                  "page": 915
+                  "desc": "OWASP と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "XSS",
-                  "desc": "OWASP と一緒に出てきたときの手がかり。",
-                  "page": 903
+                  "desc": "OWASP と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "SQL Injection",
-                  "desc": "OWASP と一緒に出てきたときの手がかり。",
-                  "page": 902
+                  "desc": "OWASP と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -26816,7 +25803,7 @@ module.exports = {
         },
         {
           "id": "zap",
-          "page": 915,
+          "page": 378,
           "term": "ZAP",
           "reading": "ザップ",
           "category": "セキュリティ",
@@ -26872,18 +25859,15 @@ module.exports = {
               "items": [
                 {
                   "name": "OWASP",
-                  "desc": "ZAP と一緒に出てきたときの手がかり。",
-                  "page": 914
+                  "desc": "ZAP と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "ペネトレーションテスト",
-                  "desc": "ZAP と一緒に出てきたときの手がかり。",
-                  "page": 918
+                  "desc": "ZAP と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "CI/CD",
-                  "desc": "ZAP と一緒に出てきたときの手がかり。",
-                  "page": 705
+                  "desc": "ZAP と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -26891,7 +25875,7 @@ module.exports = {
         },
         {
           "id": "two-fa",
-          "page": 916,
+          "page": 379,
           "term": "2FA",
           "reading": "ツーエフエー",
           "category": "セキュリティ",
@@ -26947,18 +25931,15 @@ module.exports = {
               "items": [
                 {
                   "name": "MFA",
-                  "desc": "2FA と一緒に出てきたときの手がかり。",
-                  "page": 917
+                  "desc": "2FA と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Authentication",
-                  "desc": "2FA と一緒に出てきたときの手がかり。",
-                  "page": 905
+                  "desc": "2FA と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Secret",
-                  "desc": "2FA と一緒に出てきたときの手がかり。",
-                  "page": 620
+                  "desc": "2FA と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -26966,7 +25947,7 @@ module.exports = {
         },
         {
           "id": "mfa",
-          "page": 917,
+          "page": 380,
           "term": "MFA",
           "reading": "エムエフエー",
           "category": "セキュリティ",
@@ -27022,18 +26003,15 @@ module.exports = {
               "items": [
                 {
                   "name": "2FA",
-                  "desc": "MFA と一緒に出てきたときの手がかり。",
-                  "page": 916
+                  "desc": "MFA と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Authentication",
-                  "desc": "MFA と一緒に出てきたときの手がかり。",
-                  "page": 905
+                  "desc": "MFA と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "OAuth",
-                  "desc": "MFA と一緒に出てきたときの手がかり。",
-                  "page": 907
+                  "desc": "MFA と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -27041,7 +26019,7 @@ module.exports = {
         },
         {
           "id": "pentest",
-          "page": 918,
+          "page": 381,
           "term": "ペネトレーションテスト",
           "reading": "",
           "category": "セキュリティ",
@@ -27097,18 +26075,15 @@ module.exports = {
               "items": [
                 {
                   "name": "OWASP",
-                  "desc": "ペネトレーションテスト と一緒に出てきたときの手がかり。",
-                  "page": 914
+                  "desc": "ペネトレーションテスト と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "ZAP",
-                  "desc": "ペネトレーションテスト と一緒に出てきたときの手がかり。",
-                  "page": 915
+                  "desc": "ペネトレーションテスト と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "WAF",
-                  "desc": "ペネトレーションテスト と一緒に出てきたときの手がかり。",
-                  "page": 901
+                  "desc": "ペネトレーションテスト と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -27116,7 +26091,7 @@ module.exports = {
         },
         {
           "id": "csp",
-          "page": 919,
+          "page": 382,
           "term": "CSP",
           "reading": "シーエスピー",
           "category": "セキュリティ",
@@ -27172,92 +26147,15 @@ module.exports = {
               "items": [
                 {
                   "name": "XSS",
-                  "desc": "CSP と一緒に出てきたときの手がかり。",
-                  "page": 903
+                  "desc": "CSP と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "HTTPS",
-                  "desc": "CSP と一緒に出てきたときの手がかり。",
-                  "page": 48
+                  "desc": "CSP と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Header",
-                  "desc": "CSP と一緒に出てきたときの手がかり。",
-                  "page": 56
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "fde",
-          "page": 920,
-          "term": "FDE",
-          "reading": "エフディーイー",
-          "category": "セキュリティ",
-          "icon": "ic-file",
-          "compact": true,
-          "oneline": "ディスク全体を暗号化すること。",
-          "q1_text": "端末紛失時にデータを守りたい。",
-          "q2_intro": "言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。",
-          "q2_table": {
-            "col_before": "あいまいなまま",
-            "col_after": "FDE",
-            "rows": [
-              [
-                "共有",
-                "人ごとに意味が違う",
-                "共通語として話せる"
-              ],
-              [
-                "判断",
-                "感覚頼み",
-                "観点が揃う"
-              ],
-              [
-                "学習",
-                "点で終わる",
-                "周辺語へ広げやすい"
-              ],
-              [
-                "実務",
-                "その場しのぎ",
-                "次の行動に移しやすい"
-              ]
-            ]
-          },
-          "q3_cells": [
-            {
-              "icon": "ic-check",
-              "cap": "FDE を自分の言葉で説明できる"
-            },
-            {
-              "icon": "ic-rocket",
-              "cap": "現場の会話やドキュメントについていける"
-            },
-            {
-              "icon": "ic-gear",
-              "cap": "関連する次の言葉へ進める"
-            }
-          ],
-          "memo": "Full Disk Encryption。",
-          "sidebar_groups": [
-            {
-              "label": "関連キーワード",
-              "items": [
-                {
-                  "name": "Encryption",
-                  "desc": "FDE と一緒に出てきたときの手がかり。",
-                  "page": 909
-                },
-                {
-                  "name": "Secret",
-                  "desc": "FDE と一緒に出てきたときの手がかり。",
-                  "page": 620
-                },
-                {
-                  "name": "セキュリティ",
-                  "desc": "FDE と一緒に出てきたときの手がかり。"
+                  "desc": "CSP と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -27271,7 +26169,7 @@ module.exports = {
       "entries": [
         {
           "id": "llm",
-          "page": 1000,
+          "page": 383,
           "term": "LLM",
           "reading": "エルエルエム",
           "category": "AI・LLM",
@@ -27327,18 +26225,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Prompt",
-                  "desc": "LLM と一緒に出てきたときの手がかり。",
-                  "page": 1003
+                  "desc": "LLM と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Token",
-                  "desc": "LLM と一緒に出てきたときの手がかり。",
-                  "page": 1001
+                  "desc": "LLM と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "GPT",
-                  "desc": "LLM と一緒に出てきたときの手がかり。",
-                  "page": 1018
+                  "desc": "LLM と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -27346,7 +26241,7 @@ module.exports = {
         },
         {
           "id": "token",
-          "page": 1001,
+          "page": 384,
           "term": "Token",
           "reading": "トークン",
           "category": "AI・LLM",
@@ -27402,18 +26297,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Context Window",
-                  "desc": "Token と一緒に出てきたときの手がかり。",
-                  "page": 1002
+                  "desc": "Token と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "LLM",
-                  "desc": "Token と一緒に出てきたときの手がかり。",
-                  "page": 1000
+                  "desc": "Token と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Prompt",
-                  "desc": "Token と一緒に出てきたときの手がかり。",
-                  "page": 1003
+                  "desc": "Token と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -27421,7 +26313,7 @@ module.exports = {
         },
         {
           "id": "context-window",
-          "page": 1002,
+          "page": 385,
           "term": "Context Window",
           "reading": "コンテキストウィンドウ",
           "category": "AI・LLM",
@@ -27477,18 +26369,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Token",
-                  "desc": "Context Window と一緒に出てきたときの手がかり。",
-                  "page": 1001
+                  "desc": "Context Window と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "RAG",
-                  "desc": "Context Window と一緒に出てきたときの手がかり。",
-                  "page": 1005
+                  "desc": "Context Window と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Memory",
-                  "desc": "Context Window と一緒に出てきたときの手がかり。",
-                  "page": 1011
+                  "desc": "Context Window と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -27496,7 +26385,7 @@ module.exports = {
         },
         {
           "id": "prompt",
-          "page": 1003,
+          "page": 386,
           "term": "Prompt",
           "reading": "プロンプト",
           "category": "AI・LLM",
@@ -27552,18 +26441,15 @@ module.exports = {
               "items": [
                 {
                   "name": "LLM",
-                  "desc": "Prompt と一緒に出てきたときの手がかり。",
-                  "page": 1000
+                  "desc": "Prompt と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Token",
-                  "desc": "Prompt と一緒に出てきたときの手がかり。",
-                  "page": 1001
+                  "desc": "Prompt と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Agent",
-                  "desc": "Prompt と一緒に出てきたときの手がかり。",
-                  "page": 1009
+                  "desc": "Prompt と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -27571,7 +26457,7 @@ module.exports = {
         },
         {
           "id": "embedding",
-          "page": 1004,
+          "page": 387,
           "term": "Embedding",
           "reading": "エンベディング",
           "category": "AI・LLM",
@@ -27627,18 +26513,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Vector Database",
-                  "desc": "Embedding と一緒に出てきたときの手がかり。",
-                  "page": 1006
+                  "desc": "Embedding と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "RAG",
-                  "desc": "Embedding と一緒に出てきたときの手がかり。",
-                  "page": 1005
+                  "desc": "Embedding と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "LLM",
-                  "desc": "Embedding と一緒に出てきたときの手がかり。",
-                  "page": 1000
+                  "desc": "Embedding と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -27646,7 +26529,7 @@ module.exports = {
         },
         {
           "id": "rag",
-          "page": 1005,
+          "page": 388,
           "term": "RAG",
           "reading": "ラグ",
           "category": "AI・LLM",
@@ -27702,18 +26585,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Embedding",
-                  "desc": "RAG と一緒に出てきたときの手がかり。",
-                  "page": 1004
+                  "desc": "RAG と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Vector Database",
-                  "desc": "RAG と一緒に出てきたときの手がかり。",
-                  "page": 1006
+                  "desc": "RAG と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Prompt",
-                  "desc": "RAG と一緒に出てきたときの手がかり。",
-                  "page": 1003
+                  "desc": "RAG と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -27721,7 +26601,7 @@ module.exports = {
         },
         {
           "id": "vector-database",
-          "page": 1006,
+          "page": 389,
           "term": "Vector Database",
           "reading": "ベクトルデータベース",
           "category": "AI・LLM",
@@ -27777,18 +26657,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Embedding",
-                  "desc": "Vector Database と一緒に出てきたときの手がかり。",
-                  "page": 1004
+                  "desc": "Vector Database と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "RAG",
-                  "desc": "Vector Database と一緒に出てきたときの手がかり。",
-                  "page": 1005
+                  "desc": "Vector Database と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Pinecone",
-                  "desc": "Vector Database と一緒に出てきたときの手がかり。",
-                  "page": 1025
+                  "desc": "Vector Database と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -27796,7 +26673,7 @@ module.exports = {
         },
         {
           "id": "mcp",
-          "page": 1007,
+          "page": 390,
           "term": "MCP",
           "reading": "エムシーピー",
           "category": "AI・LLM",
@@ -27852,18 +26729,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Tool Calling",
-                  "desc": "MCP と一緒に出てきたときの手がかり。",
-                  "page": 1008
+                  "desc": "MCP と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Agent",
-                  "desc": "MCP と一緒に出てきたときの手がかり。",
-                  "page": 1009
+                  "desc": "MCP と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "LLM",
-                  "desc": "MCP と一緒に出てきたときの手がかり。",
-                  "page": 1000
+                  "desc": "MCP と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -27871,7 +26745,7 @@ module.exports = {
         },
         {
           "id": "tool-calling",
-          "page": 1008,
+          "page": 391,
           "term": "Tool Calling",
           "reading": "ツールコーリング",
           "category": "AI・LLM",
@@ -27927,18 +26801,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Agent",
-                  "desc": "Tool Calling と一緒に出てきたときの手がかり。",
-                  "page": 1009
+                  "desc": "Tool Calling と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "MCP",
-                  "desc": "Tool Calling と一緒に出てきたときの手がかり。",
-                  "page": 1007
+                  "desc": "Tool Calling と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "API",
-                  "desc": "Tool Calling と一緒に出てきたときの手がかり。",
-                  "page": 83
+                  "desc": "Tool Calling と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -27946,7 +26817,7 @@ module.exports = {
         },
         {
           "id": "agent",
-          "page": 1009,
+          "page": 392,
           "term": "Agent",
           "reading": "エージェント",
           "category": "AI・LLM",
@@ -28002,18 +26873,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Tool Calling",
-                  "desc": "Agent と一緒に出てきたときの手がかり。",
-                  "page": 1008
+                  "desc": "Agent と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Workflow",
-                  "desc": "Agent と一緒に出てきたときの手がかり。",
-                  "page": 1010
+                  "desc": "Agent と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Memory",
-                  "desc": "Agent と一緒に出てきたときの手がかり。",
-                  "page": 1011
+                  "desc": "Agent と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -28021,7 +26889,7 @@ module.exports = {
         },
         {
           "id": "ai-workflow",
-          "page": 1010,
+          "page": 393,
           "term": "Workflow",
           "reading": "ワークフロー",
           "category": "AI・LLM",
@@ -28077,18 +26945,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Agent",
-                  "desc": "Workflow と一緒に出てきたときの手がかり。",
-                  "page": 1009
+                  "desc": "Workflow と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Pipeline",
-                  "desc": "Workflow と一緒に出てきたときの手がかり。",
-                  "page": 713
+                  "desc": "Workflow と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Prompt",
-                  "desc": "Workflow と一緒に出てきたときの手がかり。",
-                  "page": 1003
+                  "desc": "Workflow と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -28096,7 +26961,7 @@ module.exports = {
         },
         {
           "id": "ai-memory",
-          "page": 1011,
+          "page": 394,
           "term": "Memory",
           "reading": "メモリ",
           "category": "AI・LLM",
@@ -28152,18 +27017,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Agent",
-                  "desc": "Memory と一緒に出てきたときの手がかり。",
-                  "page": 1009
+                  "desc": "Memory と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Context Window",
-                  "desc": "Memory と一緒に出てきたときの手がかり。",
-                  "page": 1002
+                  "desc": "Memory と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "RAG",
-                  "desc": "Memory と一緒に出てきたときの手がかり。",
-                  "page": 1005
+                  "desc": "Memory と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -28171,7 +27033,7 @@ module.exports = {
         },
         {
           "id": "reasoning",
-          "page": 1012,
+          "page": 395,
           "term": "Reasoning",
           "reading": "リーズニング",
           "category": "AI・LLM",
@@ -28227,18 +27089,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Prompt",
-                  "desc": "Reasoning と一緒に出てきたときの手がかり。",
-                  "page": 1003
+                  "desc": "Reasoning と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "LLM",
-                  "desc": "Reasoning と一緒に出てきたときの手がかり。",
-                  "page": 1000
+                  "desc": "Reasoning と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Hallucination",
-                  "desc": "Reasoning と一緒に出てきたときの手がかり。",
-                  "page": 1013
+                  "desc": "Reasoning と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -28246,7 +27105,7 @@ module.exports = {
         },
         {
           "id": "hallucination",
-          "page": 1013,
+          "page": 396,
           "term": "Hallucination",
           "reading": "ハルシネーション",
           "category": "AI・LLM",
@@ -28302,18 +27161,15 @@ module.exports = {
               "items": [
                 {
                   "name": "RAG",
-                  "desc": "Hallucination と一緒に出てきたときの手がかり。",
-                  "page": 1005
+                  "desc": "Hallucination と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Reasoning",
-                  "desc": "Hallucination と一緒に出てきたときの手がかり。",
-                  "page": 1012
+                  "desc": "Hallucination と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "LLM",
-                  "desc": "Hallucination と一緒に出てきたときの手がかり。",
-                  "page": 1000
+                  "desc": "Hallucination と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -28321,7 +27177,7 @@ module.exports = {
         },
         {
           "id": "openai",
-          "page": 1014,
+          "page": 397,
           "term": "OpenAI",
           "reading": "オープンエーアイ",
           "category": "AI・LLM",
@@ -28377,18 +27233,15 @@ module.exports = {
               "items": [
                 {
                   "name": "GPT",
-                  "desc": "OpenAI と一緒に出てきたときの手がかり。",
-                  "page": 1018
+                  "desc": "OpenAI と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Anthropic",
-                  "desc": "OpenAI と一緒に出てきたときの手がかり。",
-                  "page": 1015
+                  "desc": "OpenAI と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "API",
-                  "desc": "OpenAI と一緒に出てきたときの手がかり。",
-                  "page": 83
+                  "desc": "OpenAI と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -28396,7 +27249,7 @@ module.exports = {
         },
         {
           "id": "anthropic",
-          "page": 1015,
+          "page": 398,
           "term": "Anthropic",
           "reading": "アンスロピック",
           "category": "AI・LLM",
@@ -28452,18 +27305,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Claude",
-                  "desc": "Anthropic と一緒に出てきたときの手がかり。",
-                  "page": 1019
+                  "desc": "Anthropic と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "OpenAI",
-                  "desc": "Anthropic と一緒に出てきたときの手がかり。",
-                  "page": 1014
+                  "desc": "Anthropic と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "LLM",
-                  "desc": "Anthropic と一緒に出てきたときの手がかり。",
-                  "page": 1000
+                  "desc": "Anthropic と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -28471,7 +27321,7 @@ module.exports = {
         },
         {
           "id": "google-ai",
-          "page": 1016,
+          "page": 399,
           "term": "Google AI",
           "reading": "グーグルエーアイ",
           "category": "AI・LLM",
@@ -28527,8 +27377,7 @@ module.exports = {
               "items": [
                 {
                   "name": "Gemini",
-                  "desc": "Google AI と一緒に出てきたときの手がかり。",
-                  "page": 1020
+                  "desc": "Google AI と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Vertex AI",
@@ -28536,8 +27385,7 @@ module.exports = {
                 },
                 {
                   "name": "LLM",
-                  "desc": "Google AI と一緒に出てきたときの手がかり。",
-                  "page": 1000
+                  "desc": "Google AI と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -28545,7 +27393,7 @@ module.exports = {
         },
         {
           "id": "alibaba",
-          "page": 1017,
+          "page": 400,
           "term": "Alibaba",
           "reading": "アリババ",
           "category": "AI・LLM",
@@ -28601,18 +27449,15 @@ module.exports = {
               "items": [
                 {
                   "name": "LLM",
-                  "desc": "Alibaba と一緒に出てきたときの手がかり。",
-                  "page": 1000
+                  "desc": "Alibaba と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Llama",
-                  "desc": "Alibaba と一緒に出てきたときの手がかり。",
-                  "page": 1021
+                  "desc": "Alibaba と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "GPT",
-                  "desc": "Alibaba と一緒に出てきたときの手がかり。",
-                  "page": 1018
+                  "desc": "Alibaba と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -28620,7 +27465,7 @@ module.exports = {
         },
         {
           "id": "gpt",
-          "page": 1018,
+          "page": 401,
           "term": "GPT",
           "reading": "ジーピーティー",
           "category": "AI・LLM",
@@ -28676,18 +27521,15 @@ module.exports = {
               "items": [
                 {
                   "name": "OpenAI",
-                  "desc": "GPT と一緒に出てきたときの手がかり。",
-                  "page": 1014
+                  "desc": "GPT と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Claude",
-                  "desc": "GPT と一緒に出てきたときの手がかり。",
-                  "page": 1019
+                  "desc": "GPT と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "LLM",
-                  "desc": "GPT と一緒に出てきたときの手がかり。",
-                  "page": 1000
+                  "desc": "GPT と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -28695,7 +27537,7 @@ module.exports = {
         },
         {
           "id": "claude",
-          "page": 1019,
+          "page": 402,
           "term": "Claude",
           "reading": "クロード",
           "category": "AI・LLM",
@@ -28751,18 +27593,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Anthropic",
-                  "desc": "Claude と一緒に出てきたときの手がかり。",
-                  "page": 1015
+                  "desc": "Claude と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "GPT",
-                  "desc": "Claude と一緒に出てきたときの手がかり。",
-                  "page": 1018
+                  "desc": "Claude と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Agent",
-                  "desc": "Claude と一緒に出てきたときの手がかり。",
-                  "page": 1009
+                  "desc": "Claude と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -28770,7 +27609,7 @@ module.exports = {
         },
         {
           "id": "gemini",
-          "page": 1020,
+          "page": 403,
           "term": "Gemini",
           "reading": "ジェミニ",
           "category": "AI・LLM",
@@ -28826,18 +27665,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Google AI",
-                  "desc": "Gemini と一緒に出てきたときの手がかり。",
-                  "page": 1016
+                  "desc": "Gemini と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "GPT",
-                  "desc": "Gemini と一緒に出てきたときの手がかり。",
-                  "page": 1018
+                  "desc": "Gemini と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "LLM",
-                  "desc": "Gemini と一緒に出てきたときの手がかり。",
-                  "page": 1000
+                  "desc": "Gemini と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -28845,7 +27681,7 @@ module.exports = {
         },
         {
           "id": "llama",
-          "page": 1021,
+          "page": 404,
           "term": "Llama",
           "reading": "ラマ",
           "category": "AI・LLM",
@@ -28901,18 +27737,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Ollama",
-                  "desc": "Llama と一緒に出てきたときの手がかり。",
-                  "page": 1022
+                  "desc": "Llama と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "vLLM",
-                  "desc": "Llama と一緒に出てきたときの手がかり。",
-                  "page": 1023
+                  "desc": "Llama と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "LLM",
-                  "desc": "Llama と一緒に出てきたときの手がかり。",
-                  "page": 1000
+                  "desc": "Llama と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -28920,7 +27753,7 @@ module.exports = {
         },
         {
           "id": "ollama",
-          "page": 1022,
+          "page": 405,
           "term": "Ollama",
           "reading": "オラマ",
           "category": "AI・LLM",
@@ -28976,18 +27809,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Llama",
-                  "desc": "Ollama と一緒に出てきたときの手がかり。",
-                  "page": 1021
+                  "desc": "Ollama と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "vLLM",
-                  "desc": "Ollama と一緒に出てきたときの手がかり。",
-                  "page": 1023
+                  "desc": "Ollama と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "LLM",
-                  "desc": "Ollama と一緒に出てきたときの手がかり。",
-                  "page": 1000
+                  "desc": "Ollama と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -28995,7 +27825,7 @@ module.exports = {
         },
         {
           "id": "vllm",
-          "page": 1023,
+          "page": 406,
           "term": "vLLM",
           "reading": "ブイエルエルエム",
           "category": "AI・LLM",
@@ -29051,18 +27881,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Ollama",
-                  "desc": "vLLM と一緒に出てきたときの手がかり。",
-                  "page": 1022
+                  "desc": "vLLM と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Llama",
-                  "desc": "vLLM と一緒に出てきたときの手がかり。",
-                  "page": 1021
+                  "desc": "vLLM と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "GPU",
-                  "desc": "vLLM と一緒に出てきたときの手がかり。",
-                  "page": 1301
+                  "desc": "vLLM と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -29070,7 +27897,7 @@ module.exports = {
         },
         {
           "id": "qdrant",
-          "page": 1024,
+          "page": 407,
           "term": "Qdrant",
           "reading": "クドラント",
           "category": "AI・LLM",
@@ -29126,18 +27953,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Pinecone",
-                  "desc": "Qdrant と一緒に出てきたときの手がかり。",
-                  "page": 1025
+                  "desc": "Qdrant と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Vector Database",
-                  "desc": "Qdrant と一緒に出てきたときの手がかり。",
-                  "page": 1006
+                  "desc": "Qdrant と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "RAG",
-                  "desc": "Qdrant と一緒に出てきたときの手がかり。",
-                  "page": 1005
+                  "desc": "Qdrant と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -29145,7 +27969,7 @@ module.exports = {
         },
         {
           "id": "pinecone",
-          "page": 1025,
+          "page": 408,
           "term": "Pinecone",
           "reading": "パインコーン",
           "category": "AI・LLM",
@@ -29201,18 +28025,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Qdrant",
-                  "desc": "Pinecone と一緒に出てきたときの手がかり。",
-                  "page": 1024
+                  "desc": "Pinecone と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Vector Database",
-                  "desc": "Pinecone と一緒に出てきたときの手がかり。",
-                  "page": 1006
+                  "desc": "Pinecone と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Embedding",
-                  "desc": "Pinecone と一緒に出てきたときの手がかり。",
-                  "page": 1004
+                  "desc": "Pinecone と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -29220,7 +28041,7 @@ module.exports = {
         },
         {
           "id": "mastra",
-          "page": 1026,
+          "page": 409,
           "term": "Mastra",
           "reading": "マストラ",
           "category": "AI・LLM",
@@ -29276,18 +28097,15 @@ module.exports = {
               "items": [
                 {
                   "name": "AI SDK",
-                  "desc": "Mastra と一緒に出てきたときの手がかり。",
-                  "page": 1027
+                  "desc": "Mastra と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Agent",
-                  "desc": "Mastra と一緒に出てきたときの手がかり。",
-                  "page": 1009
+                  "desc": "Mastra と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Workflow",
-                  "desc": "Mastra と一緒に出てきたときの手がかり。",
-                  "page": 1010
+                  "desc": "Mastra と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -29295,7 +28113,7 @@ module.exports = {
         },
         {
           "id": "ai-sdk",
-          "page": 1027,
+          "page": 410,
           "term": "AI SDK",
           "reading": "エーアイエスディーケー",
           "category": "AI・LLM",
@@ -29351,18 +28169,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Prompt",
-                  "desc": "AI SDK と一緒に出てきたときの手がかり。",
-                  "page": 1003
+                  "desc": "AI SDK と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Next.js",
-                  "desc": "AI SDK と一緒に出てきたときの手がかり。",
-                  "page": 170
+                  "desc": "AI SDK と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "OpenAI",
-                  "desc": "AI SDK と一緒に出てきたときの手がかり。",
-                  "page": 1014
+                  "desc": "AI SDK と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -29370,7 +28185,7 @@ module.exports = {
         },
         {
           "id": "herdr",
-          "page": 1028,
+          "page": 411,
           "term": "Herdr",
           "reading": "ハード",
           "category": "AI・LLM",
@@ -29426,18 +28241,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Agent",
-                  "desc": "Herdr と一緒に出てきたときの手がかり。",
-                  "page": 1009
+                  "desc": "Herdr と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Workflow",
-                  "desc": "Herdr と一緒に出てきたときの手がかり。",
-                  "page": 1010
+                  "desc": "Herdr と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "CLI",
-                  "desc": "Herdr と一緒に出てきたときの手がかり。",
-                  "page": 1500
+                  "desc": "Herdr と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -29445,7 +28257,7 @@ module.exports = {
         },
         {
           "id": "notebooklm",
-          "page": 1029,
+          "page": 412,
           "term": "NotebookLM",
           "reading": "ノートブックエルエム",
           "category": "AI・LLM",
@@ -29501,18 +28313,15 @@ module.exports = {
               "items": [
                 {
                   "name": "RAG",
-                  "desc": "NotebookLM と一緒に出てきたときの手がかり。",
-                  "page": 1005
+                  "desc": "NotebookLM と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Gemini",
-                  "desc": "NotebookLM と一緒に出てきたときの手がかり。",
-                  "page": 1020
+                  "desc": "NotebookLM と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Prompt",
-                  "desc": "NotebookLM と一緒に出てきたときの手がかり。",
-                  "page": 1003
+                  "desc": "NotebookLM と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -29520,7 +28329,7 @@ module.exports = {
         },
         {
           "id": "dify",
-          "page": 1030,
+          "page": 413,
           "term": "Dify",
           "reading": "ディファイ",
           "category": "AI・LLM",
@@ -29576,18 +28385,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Workflow",
-                  "desc": "Dify と一緒に出てきたときの手がかり。",
-                  "page": 1010
+                  "desc": "Dify と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "RAG",
-                  "desc": "Dify と一緒に出てきたときの手がかり。",
-                  "page": 1005
+                  "desc": "Dify と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Agent",
-                  "desc": "Dify と一緒に出てきたときの手がかり。",
-                  "page": 1009
+                  "desc": "Dify と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -29595,7 +28401,7 @@ module.exports = {
         },
         {
           "id": "n8n",
-          "page": 1031,
+          "page": 414,
           "term": "n8n",
           "reading": "エヌエイトエヌ",
           "category": "AI・LLM",
@@ -29651,18 +28457,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Workflow",
-                  "desc": "n8n と一緒に出てきたときの手がかり。",
-                  "page": 1010
+                  "desc": "n8n と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Webhook",
-                  "desc": "n8n と一緒に出てきたときの手がかり。",
-                  "page": 95
+                  "desc": "n8n と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "API",
-                  "desc": "n8n と一緒に出てきたときの手がかり。",
-                  "page": 83
+                  "desc": "n8n と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -29670,7 +28473,7 @@ module.exports = {
         },
         {
           "id": "v0",
-          "page": 1032,
+          "page": 415,
           "term": "v0",
           "reading": "ブイゼロ",
           "category": "AI・LLM",
@@ -29726,13 +28529,11 @@ module.exports = {
               "items": [
                 {
                   "name": "Prompt",
-                  "desc": "v0 と一緒に出てきたときの手がかり。",
-                  "page": 1003
+                  "desc": "v0 と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "React",
-                  "desc": "v0 と一緒に出てきたときの手がかり。",
-                  "page": 168
+                  "desc": "v0 と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "UI",
@@ -29744,7 +28545,7 @@ module.exports = {
         },
         {
           "id": "langchain",
-          "page": 1033,
+          "page": 416,
           "term": "LangChain",
           "reading": "ラングチェーン",
           "category": "AI・LLM",
@@ -29800,13 +28601,11 @@ module.exports = {
               "items": [
                 {
                   "name": "Agent",
-                  "desc": "LangChain と一緒に出てきたときの手がかり。",
-                  "page": 1009
+                  "desc": "LangChain と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "RAG",
-                  "desc": "LangChain と一緒に出てきたときの手がかり。",
-                  "page": 1005
+                  "desc": "LangChain と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "LangGraph",
@@ -29818,7 +28617,7 @@ module.exports = {
         },
         {
           "id": "openhands",
-          "page": 1034,
+          "page": 417,
           "term": "OpenHands",
           "reading": "オープンハンズ",
           "category": "AI・LLM",
@@ -29874,18 +28673,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Agent",
-                  "desc": "OpenHands と一緒に出てきたときの手がかり。",
-                  "page": 1009
+                  "desc": "OpenHands と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Tool Calling",
-                  "desc": "OpenHands と一緒に出てきたときの手がかり。",
-                  "page": 1008
+                  "desc": "OpenHands と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "CLI",
-                  "desc": "OpenHands と一緒に出てきたときの手がかり。",
-                  "page": 1500
+                  "desc": "OpenHands と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -29893,7 +28689,7 @@ module.exports = {
         },
         {
           "id": "g-cert",
-          "page": 1035,
+          "page": 418,
           "term": "G検定",
           "reading": "ジーケンテイ",
           "category": "AI・LLM",
@@ -29949,8 +28745,7 @@ module.exports = {
               "items": [
                 {
                   "name": "LLM",
-                  "desc": "G検定 と一緒に出てきたときの手がかり。",
-                  "page": 1000
+                  "desc": "G検定 と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "機械学習",
@@ -29958,8 +28753,7 @@ module.exports = {
                 },
                 {
                   "name": "Prompt",
-                  "desc": "G検定 と一緒に出てきたときの手がかり。",
-                  "page": 1003
+                  "desc": "G検定 と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -29973,7 +28767,7 @@ module.exports = {
       "entries": [
         {
           "id": "solid",
-          "page": 1100,
+          "page": 419,
           "term": "SOLID",
           "reading": "ソリッド",
           "category": "設計原則",
@@ -30029,18 +28823,15 @@ module.exports = {
               "items": [
                 {
                   "name": "DRY",
-                  "desc": "SOLID と一緒に出てきたときの手がかり。",
-                  "page": 1101
+                  "desc": "SOLID と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "OOP",
-                  "desc": "SOLID と一緒に出てきたときの手がかり。",
-                  "page": 1109
+                  "desc": "SOLID と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "デザインパターン",
-                  "desc": "SOLID と一緒に出てきたときの手がかり。",
-                  "page": 1114
+                  "desc": "SOLID と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -30048,7 +28839,7 @@ module.exports = {
         },
         {
           "id": "dry",
-          "page": 1101,
+          "page": 420,
           "term": "DRY",
           "reading": "ドライ",
           "category": "設計原則",
@@ -30104,18 +28895,15 @@ module.exports = {
               "items": [
                 {
                   "name": "KISS",
-                  "desc": "DRY と一緒に出てきたときの手がかり。",
-                  "page": 1103
+                  "desc": "DRY と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "YAGNI",
-                  "desc": "DRY と一緒に出てきたときの手がかり。",
-                  "page": 1102
+                  "desc": "DRY と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "リファクタリング",
-                  "desc": "DRY と一緒に出てきたときの手がかり。",
-                  "page": 524
+                  "desc": "DRY と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -30123,7 +28911,7 @@ module.exports = {
         },
         {
           "id": "yagni",
-          "page": 1102,
+          "page": 421,
           "term": "YAGNI",
           "reading": "ヤグニ",
           "category": "設計原則",
@@ -30179,18 +28967,15 @@ module.exports = {
               "items": [
                 {
                   "name": "KISS",
-                  "desc": "YAGNI と一緒に出てきたときの手がかり。",
-                  "page": 1103
+                  "desc": "YAGNI と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "DRY",
-                  "desc": "YAGNI と一緒に出てきたときの手がかり。",
-                  "page": 1101
+                  "desc": "YAGNI と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "スコープ",
-                  "desc": "YAGNI と一緒に出てきたときの手がかり。",
-                  "page": 1605
+                  "desc": "YAGNI と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -30198,7 +28983,7 @@ module.exports = {
         },
         {
           "id": "kiss",
-          "page": 1103,
+          "page": 422,
           "term": "KISS",
           "reading": "キス",
           "category": "設計原則",
@@ -30254,18 +29039,15 @@ module.exports = {
               "items": [
                 {
                   "name": "YAGNI",
-                  "desc": "KISS と一緒に出てきたときの手がかり。",
-                  "page": 1102
+                  "desc": "KISS と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "DRY",
-                  "desc": "KISS と一緒に出てきたときの手がかり。",
-                  "page": 1101
+                  "desc": "KISS と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "リファクタリング",
-                  "desc": "KISS と一緒に出てきたときの手がかり。",
-                  "page": 524
+                  "desc": "KISS と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -30273,7 +29055,7 @@ module.exports = {
         },
         {
           "id": "separation-of-concerns",
-          "page": 1104,
+          "page": 423,
           "term": "関心の分離",
           "reading": "かんしんのぶんり",
           "category": "設計原則",
@@ -30329,13 +29111,11 @@ module.exports = {
               "items": [
                 {
                   "name": "クリーンアーキテクチャ",
-                  "desc": "関心の分離 と一緒に出てきたときの手がかり。",
-                  "page": 1112
+                  "desc": "関心の分離 と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "レイヤードアーキテクチャ",
-                  "desc": "関心の分離 と一緒に出てきたときの手がかり。",
-                  "page": 1113
+                  "desc": "関心の分離 と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "モジュール",
@@ -30347,7 +29127,7 @@ module.exports = {
         },
         {
           "id": "coupling",
-          "page": 1105,
+          "page": 424,
           "term": "結合度",
           "reading": "けつごうど",
           "category": "設計原則",
@@ -30403,18 +29183,15 @@ module.exports = {
               "items": [
                 {
                   "name": "凝集度",
-                  "desc": "結合度 と一緒に出てきたときの手がかり。",
-                  "page": 1106
+                  "desc": "結合度 と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "循環依存",
-                  "desc": "結合度 と一緒に出てきたときの手がかり。",
-                  "page": 1107
+                  "desc": "結合度 と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "関心の分離",
-                  "desc": "結合度 と一緒に出てきたときの手がかり。",
-                  "page": 1104
+                  "desc": "結合度 と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -30422,7 +29199,7 @@ module.exports = {
         },
         {
           "id": "cohesion",
-          "page": 1106,
+          "page": 425,
           "term": "凝集度",
           "reading": "ぎょうしゅうど",
           "category": "設計原則",
@@ -30478,18 +29255,15 @@ module.exports = {
               "items": [
                 {
                   "name": "結合度",
-                  "desc": "凝集度 と一緒に出てきたときの手がかり。",
-                  "page": 1105
+                  "desc": "凝集度 と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "関心の分離",
-                  "desc": "凝集度 と一緒に出てきたときの手がかり。",
-                  "page": 1104
+                  "desc": "凝集度 と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "SOLID",
-                  "desc": "凝集度 と一緒に出てきたときの手がかり。",
-                  "page": 1100
+                  "desc": "凝集度 と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -30497,7 +29271,7 @@ module.exports = {
         },
         {
           "id": "circular-dependency",
-          "page": 1107,
+          "page": 426,
           "term": "循環依存",
           "reading": "じゅんかんいぞん",
           "category": "設計原則",
@@ -30553,13 +29327,11 @@ module.exports = {
               "items": [
                 {
                   "name": "結合度",
-                  "desc": "循環依存 と一緒に出てきたときの手がかり。",
-                  "page": 1105
+                  "desc": "循環依存 と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "パッケージ",
-                  "desc": "循環依存 と一緒に出てきたときの手がかり。",
-                  "page": 550
+                  "desc": "循環依存 と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "モジュール",
@@ -30571,7 +29343,7 @@ module.exports = {
         },
         {
           "id": "business-logic",
-          "page": 1108,
+          "page": 427,
           "term": "ビジネスロジック",
           "reading": "",
           "category": "設計原則",
@@ -30627,13 +29399,11 @@ module.exports = {
               "items": [
                 {
                   "name": "クリーンアーキテクチャ",
-                  "desc": "ビジネスロジック と一緒に出てきたときの手がかり。",
-                  "page": 1112
+                  "desc": "ビジネスロジック と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "レイヤードアーキテクチャ",
-                  "desc": "ビジネスロジック と一緒に出てきたときの手がかり。",
-                  "page": 1113
+                  "desc": "ビジネスロジック と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "サービス",
@@ -30645,7 +29415,7 @@ module.exports = {
         },
         {
           "id": "oop",
-          "page": 1109,
+          "page": 428,
           "term": "OOP",
           "reading": "オーオーピー",
           "category": "設計原則",
@@ -30701,18 +29471,15 @@ module.exports = {
               "items": [
                 {
                   "name": "継承",
-                  "desc": "OOP と一緒に出てきたときの手がかり。",
-                  "page": 1110
+                  "desc": "OOP と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "カプセル化",
-                  "desc": "OOP と一緒に出てきたときの手がかり。",
-                  "page": 1111
+                  "desc": "OOP と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "SOLID",
-                  "desc": "OOP と一緒に出てきたときの手がかり。",
-                  "page": 1100
+                  "desc": "OOP と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -30720,7 +29487,7 @@ module.exports = {
         },
         {
           "id": "inheritance-oop",
-          "page": 1110,
+          "page": 429,
           "term": "継承",
           "reading": "けいしょう",
           "category": "設計原則",
@@ -30776,18 +29543,15 @@ module.exports = {
               "items": [
                 {
                   "name": "OOP",
-                  "desc": "継承 と一緒に出てきたときの手がかり。",
-                  "page": 1109
+                  "desc": "継承 と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "カプセル化",
-                  "desc": "継承 と一緒に出てきたときの手がかり。",
-                  "page": 1111
+                  "desc": "継承 と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "デザインパターン",
-                  "desc": "継承 と一緒に出てきたときの手がかり。",
-                  "page": 1114
+                  "desc": "継承 と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -30795,7 +29559,7 @@ module.exports = {
         },
         {
           "id": "encapsulation",
-          "page": 1111,
+          "page": 430,
           "term": "カプセル化",
           "reading": "",
           "category": "設計原則",
@@ -30851,18 +29615,15 @@ module.exports = {
               "items": [
                 {
                   "name": "OOP",
-                  "desc": "カプセル化 と一緒に出てきたときの手がかり。",
-                  "page": 1109
+                  "desc": "カプセル化 と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "関心の分離",
-                  "desc": "カプセル化 と一緒に出てきたときの手がかり。",
-                  "page": 1104
+                  "desc": "カプセル化 と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "API",
-                  "desc": "カプセル化 と一緒に出てきたときの手がかり。",
-                  "page": 83
+                  "desc": "カプセル化 と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -30870,7 +29631,7 @@ module.exports = {
         },
         {
           "id": "clean-architecture",
-          "page": 1112,
+          "page": 431,
           "term": "クリーンアーキテクチャ",
           "reading": "",
           "category": "設計原則",
@@ -30926,18 +29687,15 @@ module.exports = {
               "items": [
                 {
                   "name": "レイヤードアーキテクチャ",
-                  "desc": "クリーンアーキテクチャ と一緒に出てきたときの手がかり。",
-                  "page": 1113
+                  "desc": "クリーンアーキテクチャ と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "ビジネスロジック",
-                  "desc": "クリーンアーキテクチャ と一緒に出てきたときの手がかり。",
-                  "page": 1108
+                  "desc": "クリーンアーキテクチャ と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "関心の分離",
-                  "desc": "クリーンアーキテクチャ と一緒に出てきたときの手がかり。",
-                  "page": 1104
+                  "desc": "クリーンアーキテクチャ と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -30945,7 +29703,7 @@ module.exports = {
         },
         {
           "id": "layered-architecture",
-          "page": 1113,
+          "page": 432,
           "term": "レイヤードアーキテクチャ",
           "reading": "",
           "category": "設計原則",
@@ -31001,18 +29759,15 @@ module.exports = {
               "items": [
                 {
                   "name": "クリーンアーキテクチャ",
-                  "desc": "レイヤードアーキテクチャ と一緒に出てきたときの手がかり。",
-                  "page": 1112
+                  "desc": "レイヤードアーキテクチャ と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "関心の分離",
-                  "desc": "レイヤードアーキテクチャ と一緒に出てきたときの手がかり。",
-                  "page": 1104
+                  "desc": "レイヤードアーキテクチャ と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "MVC",
-                  "desc": "レイヤードアーキテクチャ と一緒に出てきたときの手がかり。",
-                  "page": 1601
+                  "desc": "レイヤードアーキテクチャ と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -31020,7 +29775,7 @@ module.exports = {
         },
         {
           "id": "design-pattern",
-          "page": 1114,
+          "page": 433,
           "term": "デザインパターン",
           "reading": "",
           "category": "設計原則",
@@ -31076,18 +29831,15 @@ module.exports = {
               "items": [
                 {
                   "name": "OOP",
-                  "desc": "デザインパターン と一緒に出てきたときの手がかり。",
-                  "page": 1109
+                  "desc": "デザインパターン と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "SOLID",
-                  "desc": "デザインパターン と一緒に出てきたときの手がかり。",
-                  "page": 1100
+                  "desc": "デザインパターン と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "リファクタリング",
-                  "desc": "デザインパターン と一緒に出てきたときの手がかり。",
-                  "page": 524
+                  "desc": "デザインパターン と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -31095,7 +29847,7 @@ module.exports = {
         },
         {
           "id": "monolith",
-          "page": 1115,
+          "page": 434,
           "term": "Monolith",
           "reading": "モノリス",
           "category": "設計原則",
@@ -31151,8 +29903,7 @@ module.exports = {
               "items": [
                 {
                   "name": "Microservice",
-                  "desc": "Monolith と一緒に出てきたときの手がかり。",
-                  "page": 1116
+                  "desc": "Monolith と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "モジュール",
@@ -31168,7 +29919,7 @@ module.exports = {
         },
         {
           "id": "microservice",
-          "page": 1116,
+          "page": 435,
           "term": "Microservice",
           "reading": "マイクロサービス",
           "category": "設計原則",
@@ -31224,18 +29975,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Monolith",
-                  "desc": "Microservice と一緒に出てきたときの手がかり。",
-                  "page": 1115
+                  "desc": "Microservice と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "API",
-                  "desc": "Microservice と一緒に出てきたときの手がかり。",
-                  "page": 83
+                  "desc": "Microservice と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "CI/CD",
-                  "desc": "Microservice と一緒に出てきたときの手がかり。",
-                  "page": 705
+                  "desc": "Microservice と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -31243,7 +29991,7 @@ module.exports = {
         },
         {
           "id": "uml",
-          "page": 1117,
+          "page": 436,
           "term": "UML",
           "reading": "ユーエムエル",
           "category": "設計原則",
@@ -31299,13 +30047,11 @@ module.exports = {
               "items": [
                 {
                   "name": "Mermaid",
-                  "desc": "UML と一緒に出てきたときの手がかり。",
-                  "page": 1118
+                  "desc": "UML と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "PlantUML",
-                  "desc": "UML と一緒に出てきたときの手がかり。",
-                  "page": 1119
+                  "desc": "UML と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "シーケンス",
@@ -31317,7 +30063,7 @@ module.exports = {
         },
         {
           "id": "mermaid",
-          "page": 1118,
+          "page": 437,
           "term": "Mermaid",
           "reading": "マーメイド",
           "category": "設計原則",
@@ -31373,13 +30119,11 @@ module.exports = {
               "items": [
                 {
                   "name": "PlantUML",
-                  "desc": "Mermaid と一緒に出てきたときの手がかり。",
-                  "page": 1119
+                  "desc": "Mermaid と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "UML",
-                  "desc": "Mermaid と一緒に出てきたときの手がかり。",
-                  "page": 1117
+                  "desc": "Mermaid と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "ドキュメント",
@@ -31391,7 +30135,7 @@ module.exports = {
         },
         {
           "id": "plantuml",
-          "page": 1119,
+          "page": 438,
           "term": "PlantUML",
           "reading": "プラントユーエムエル",
           "category": "設計原則",
@@ -31447,18 +30191,15 @@ module.exports = {
               "items": [
                 {
                   "name": "UML",
-                  "desc": "PlantUML と一緒に出てきたときの手がかり。",
-                  "page": 1117
+                  "desc": "PlantUML と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Mermaid",
-                  "desc": "PlantUML と一緒に出てきたときの手がかり。",
-                  "page": 1118
+                  "desc": "PlantUML と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "CI/CD",
-                  "desc": "PlantUML と一緒に出てきたときの手がかり。",
-                  "page": 705
+                  "desc": "PlantUML と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -31466,7 +30207,7 @@ module.exports = {
         },
         {
           "id": "concrete-abstract",
-          "page": 1120,
+          "page": 439,
           "term": "具体と抽象",
           "reading": "ぐたいとちゅうしょう",
           "category": "設計原則",
@@ -31522,18 +30263,15 @@ module.exports = {
               "items": [
                 {
                   "name": "リファクタリング",
-                  "desc": "具体と抽象 と一緒に出てきたときの手がかり。",
-                  "page": 524
+                  "desc": "具体と抽象 と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "関心の分離",
-                  "desc": "具体と抽象 と一緒に出てきたときの手がかり。",
-                  "page": 1104
+                  "desc": "具体と抽象 と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "型",
-                  "desc": "具体と抽象 と一緒に出てきたときの手がかり。",
-                  "page": 1603
+                  "desc": "具体と抽象 と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -31547,7 +30285,7 @@ module.exports = {
       "entries": [
         {
           "id": "logging",
-          "page": 1200,
+          "page": 440,
           "term": "Logging",
           "reading": "ロギング",
           "category": "オブザーバビリティ",
@@ -31603,18 +30341,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Metrics",
-                  "desc": "Logging と一緒に出てきたときの手がかり。",
-                  "page": 1201
+                  "desc": "Logging と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Tracing",
-                  "desc": "Logging と一緒に出てきたときの手がかり。",
-                  "page": 1202
+                  "desc": "Logging と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "ログ",
-                  "desc": "Logging と一緒に出てきたときの手がかり。",
-                  "page": 525
+                  "desc": "Logging と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -31622,7 +30357,7 @@ module.exports = {
         },
         {
           "id": "metrics",
-          "page": 1201,
+          "page": 441,
           "term": "Metrics",
           "reading": "メトリクス",
           "category": "オブザーバビリティ",
@@ -31678,18 +30413,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Monitoring",
-                  "desc": "Metrics と一緒に出てきたときの手がかり。",
-                  "page": 1203
+                  "desc": "Metrics と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Alerting",
-                  "desc": "Metrics と一緒に出てきたときの手がかり。",
-                  "page": 1204
+                  "desc": "Metrics と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "SLI",
-                  "desc": "Metrics と一緒に出てきたときの手がかり。",
-                  "page": 419
+                  "desc": "Metrics と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -31697,7 +30429,7 @@ module.exports = {
         },
         {
           "id": "tracing",
-          "page": 1202,
+          "page": 442,
           "term": "Tracing",
           "reading": "トレーシング",
           "category": "オブザーバビリティ",
@@ -31753,18 +30485,15 @@ module.exports = {
               "items": [
                 {
                   "name": "X-Ray",
-                  "desc": "Tracing と一緒に出てきたときの手がかり。",
-                  "page": 819
+                  "desc": "Tracing と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "OpenTelemetry",
-                  "desc": "Tracing と一緒に出てきたときの手がかり。",
-                  "page": 1205
+                  "desc": "Tracing と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Logging",
-                  "desc": "Tracing と一緒に出てきたときの手がかり。",
-                  "page": 1200
+                  "desc": "Tracing と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -31772,7 +30501,7 @@ module.exports = {
         },
         {
           "id": "monitoring",
-          "page": 1203,
+          "page": 443,
           "term": "Monitoring",
           "reading": "モニタリング",
           "category": "オブザーバビリティ",
@@ -31828,18 +30557,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Alerting",
-                  "desc": "Monitoring と一緒に出てきたときの手がかり。",
-                  "page": 1204
+                  "desc": "Monitoring と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Metrics",
-                  "desc": "Monitoring と一緒に出てきたときの手がかり。",
-                  "page": 1201
+                  "desc": "Monitoring と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "CloudWatch",
-                  "desc": "Monitoring と一緒に出てきたときの手がかり。",
-                  "page": 818
+                  "desc": "Monitoring と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -31847,7 +30573,7 @@ module.exports = {
         },
         {
           "id": "alerting",
-          "page": 1204,
+          "page": 444,
           "term": "Alerting",
           "reading": "アラーティング",
           "category": "オブザーバビリティ",
@@ -31903,13 +30629,11 @@ module.exports = {
               "items": [
                 {
                   "name": "Monitoring",
-                  "desc": "Alerting と一緒に出てきたときの手がかり。",
-                  "page": 1203
+                  "desc": "Alerting と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "オンコール",
-                  "desc": "Alerting と一緒に出てきたときの手がかり。",
-                  "page": 1354
+                  "desc": "Alerting と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Pager",
@@ -31921,7 +30645,7 @@ module.exports = {
         },
         {
           "id": "opentelemetry",
-          "page": 1205,
+          "page": 445,
           "term": "OpenTelemetry",
           "reading": "オープンテレメトリー",
           "category": "オブザーバビリティ",
@@ -31977,18 +30701,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Tracing",
-                  "desc": "OpenTelemetry と一緒に出てきたときの手がかり。",
-                  "page": 1202
+                  "desc": "OpenTelemetry と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Metrics",
-                  "desc": "OpenTelemetry と一緒に出てきたときの手がかり。",
-                  "page": 1201
+                  "desc": "OpenTelemetry と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Logging",
-                  "desc": "OpenTelemetry と一緒に出てきたときの手がかり。",
-                  "page": 1200
+                  "desc": "OpenTelemetry と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -31996,7 +30717,7 @@ module.exports = {
         },
         {
           "id": "golden-signals",
-          "page": 1206,
+          "page": 446,
           "term": "4 Golden Signals",
           "reading": "フォーゴールデンシグナルズ",
           "category": "オブザーバビリティ",
@@ -32052,18 +30773,15 @@ module.exports = {
               "items": [
                 {
                   "name": "SLI",
-                  "desc": "4 Golden Signals と一緒に出てきたときの手がかり。",
-                  "page": 419
+                  "desc": "4 Golden Signals と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Monitoring",
-                  "desc": "4 Golden Signals と一緒に出てきたときの手がかり。",
-                  "page": 1203
+                  "desc": "4 Golden Signals と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Metrics",
-                  "desc": "4 Golden Signals と一緒に出てきたときの手がかり。",
-                  "page": 1201
+                  "desc": "4 Golden Signals と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -32071,7 +30789,7 @@ module.exports = {
         },
         {
           "id": "datadog",
-          "page": 1207,
+          "page": 447,
           "term": "Datadog",
           "reading": "データドッグ",
           "category": "オブザーバビリティ",
@@ -32127,18 +30845,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Sentry",
-                  "desc": "Datadog と一緒に出てきたときの手がかり。",
-                  "page": 1208
+                  "desc": "Datadog と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Grafana",
-                  "desc": "Datadog と一緒に出てきたときの手がかり。",
-                  "page": 1209
+                  "desc": "Datadog と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Monitoring",
-                  "desc": "Datadog と一緒に出てきたときの手がかり。",
-                  "page": 1203
+                  "desc": "Datadog と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -32146,7 +30861,7 @@ module.exports = {
         },
         {
           "id": "sentry",
-          "page": 1208,
+          "page": 448,
           "term": "Sentry",
           "reading": "セントリー",
           "category": "オブザーバビリティ",
@@ -32202,18 +30917,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Datadog",
-                  "desc": "Sentry と一緒に出てきたときの手がかり。",
-                  "page": 1207
+                  "desc": "Sentry と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Logging",
-                  "desc": "Sentry と一緒に出てきたときの手がかり。",
-                  "page": 1200
+                  "desc": "Sentry と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "デバッグ",
-                  "desc": "Sentry と一緒に出てきたときの手がかり。",
-                  "page": 509
+                  "desc": "Sentry と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -32221,7 +30933,7 @@ module.exports = {
         },
         {
           "id": "grafana",
-          "page": 1209,
+          "page": 449,
           "term": "Grafana",
           "reading": "グラファナ",
           "category": "オブザーバビリティ",
@@ -32277,18 +30989,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Prometheus",
-                  "desc": "Grafana と一緒に出てきたときの手がかり。",
-                  "page": 1210
+                  "desc": "Grafana と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Metrics",
-                  "desc": "Grafana と一緒に出てきたときの手がかり。",
-                  "page": 1201
+                  "desc": "Grafana と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Monitoring",
-                  "desc": "Grafana と一緒に出てきたときの手がかり。",
-                  "page": 1203
+                  "desc": "Grafana と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -32296,7 +31005,7 @@ module.exports = {
         },
         {
           "id": "prometheus",
-          "page": 1210,
+          "page": 450,
           "term": "Prometheus",
           "reading": "プロメテウス",
           "category": "オブザーバビリティ",
@@ -32352,18 +31061,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Grafana",
-                  "desc": "Prometheus と一緒に出てきたときの手がかり。",
-                  "page": 1209
+                  "desc": "Prometheus と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Alerting",
-                  "desc": "Prometheus と一緒に出てきたときの手がかり。",
-                  "page": 1204
+                  "desc": "Prometheus と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Metrics",
-                  "desc": "Prometheus と一緒に出てきたときの手がかり。",
-                  "page": 1201
+                  "desc": "Prometheus と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -32371,7 +31077,7 @@ module.exports = {
         },
         {
           "id": "perf-tuning",
-          "page": 1211,
+          "page": 451,
           "term": "パフォーマンスチューニング",
           "reading": "",
           "category": "オブザーバビリティ",
@@ -32427,13 +31133,11 @@ module.exports = {
               "items": [
                 {
                   "name": "Metrics",
-                  "desc": "パフォーマンスチューニング と一緒に出てきたときの手がかり。",
-                  "page": 1201
+                  "desc": "パフォーマンスチューニング と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Tracing",
-                  "desc": "パフォーマンスチューニング と一緒に出てきたときの手がかり。",
-                  "page": 1202
+                  "desc": "パフォーマンスチューニング と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "キャッシュ",
@@ -32451,7 +31155,7 @@ module.exports = {
       "entries": [
         {
           "id": "cpu",
-          "page": 1300,
+          "page": 452,
           "term": "CPU",
           "reading": "シーピーユー",
           "category": "CS基礎",
@@ -32507,13 +31211,11 @@ module.exports = {
               "items": [
                 {
                   "name": "GPU",
-                  "desc": "CPU と一緒に出てきたときの手がかり。",
-                  "page": 1301
+                  "desc": "CPU と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "メモリ",
-                  "desc": "CPU と一緒に出てきたときの手がかり。",
-                  "page": 1302
+                  "desc": "CPU と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "プロセス",
@@ -32525,7 +31227,7 @@ module.exports = {
         },
         {
           "id": "gpu",
-          "page": 1301,
+          "page": 453,
           "term": "GPU",
           "reading": "ジーピーユー",
           "category": "CS基礎",
@@ -32581,18 +31283,15 @@ module.exports = {
               "items": [
                 {
                   "name": "CPU",
-                  "desc": "GPU と一緒に出てきたときの手がかり。",
-                  "page": 1300
+                  "desc": "GPU と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "vLLM",
-                  "desc": "GPU と一緒に出てきたときの手がかり。",
-                  "page": 1023
+                  "desc": "GPU と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "メモリ",
-                  "desc": "GPU と一緒に出てきたときの手がかり。",
-                  "page": 1302
+                  "desc": "GPU と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -32600,7 +31299,7 @@ module.exports = {
         },
         {
           "id": "memory-ram",
-          "page": 1302,
+          "page": 454,
           "term": "メモリ",
           "reading": "",
           "category": "CS基礎",
@@ -32656,13 +31355,11 @@ module.exports = {
               "items": [
                 {
                   "name": "CPU",
-                  "desc": "メモリ と一緒に出てきたときの手がかり。",
-                  "page": 1300
+                  "desc": "メモリ と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "ストレージ",
-                  "desc": "メモリ と一緒に出てきたときの手がかり。",
-                  "page": 1303
+                  "desc": "メモリ と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "プロセス",
@@ -32674,7 +31371,7 @@ module.exports = {
         },
         {
           "id": "storage-device",
-          "page": 1303,
+          "page": 455,
           "term": "ストレージ",
           "reading": "",
           "category": "CS基礎",
@@ -32730,18 +31427,15 @@ module.exports = {
               "items": [
                 {
                   "name": "メモリ",
-                  "desc": "ストレージ と一緒に出てきたときの手がかり。",
-                  "page": 1302
+                  "desc": "ストレージ と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Object Storage",
-                  "desc": "ストレージ と一緒に出てきたときの手がかり。",
-                  "page": 409
+                  "desc": "ストレージ と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "I/O",
-                  "desc": "ストレージ と一緒に出てきたときの手がかり。",
-                  "page": 1304
+                  "desc": "ストレージ と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -32749,7 +31443,7 @@ module.exports = {
         },
         {
           "id": "io",
-          "page": 1304,
+          "page": 456,
           "term": "I/O",
           "reading": "アイオー",
           "category": "CS基礎",
@@ -32805,8 +31499,7 @@ module.exports = {
               "items": [
                 {
                   "name": "ストレージ",
-                  "desc": "I/O と一緒に出てきたときの手がかり。",
-                  "page": 1303
+                  "desc": "I/O と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "ネットワーク",
@@ -32814,8 +31507,7 @@ module.exports = {
                 },
                 {
                   "name": "パフォーマンスチューニング",
-                  "desc": "I/O と一緒に出てきたときの手がかり。",
-                  "page": 1211
+                  "desc": "I/O と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -32823,7 +31515,7 @@ module.exports = {
         },
         {
           "id": "charset",
-          "page": 1305,
+          "page": 457,
           "term": "文字コード",
           "reading": "もじコード",
           "category": "CS基礎",
@@ -32879,18 +31571,15 @@ module.exports = {
               "items": [
                 {
                   "name": "HTTP",
-                  "desc": "文字コード と一緒に出てきたときの手がかり。",
-                  "page": 47
+                  "desc": "文字コード と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "JSON",
-                  "desc": "文字コード と一緒に出てきたときの手がかり。",
-                  "page": 73
+                  "desc": "文字コード と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "バイナリ",
-                  "desc": "文字コード と一緒に出てきたときの手がかり。",
-                  "page": 1307
+                  "desc": "文字コード と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -32898,7 +31587,7 @@ module.exports = {
         },
         {
           "id": "atomic-op",
-          "page": 1306,
+          "page": 458,
           "term": "アトミック",
           "reading": "",
           "category": "CS基礎",
@@ -32970,7 +31659,7 @@ module.exports = {
         },
         {
           "id": "binary-data",
-          "page": 1307,
+          "page": 459,
           "term": "バイナリ",
           "reading": "",
           "category": "CS基礎",
@@ -33026,18 +31715,15 @@ module.exports = {
               "items": [
                 {
                   "name": "文字コード",
-                  "desc": "バイナリ と一緒に出てきたときの手がかり。",
-                  "page": 1305
+                  "desc": "バイナリ と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Build",
-                  "desc": "バイナリ と一緒に出てきたときの手がかり。",
-                  "page": 709
+                  "desc": "バイナリ と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Artifact",
-                  "desc": "バイナリ と一緒に出てきたときの手がかり。",
-                  "page": 711
+                  "desc": "バイナリ と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -33045,7 +31731,7 @@ module.exports = {
         },
         {
           "id": "bit-byte",
-          "page": 1308,
+          "page": 460,
           "term": "ビットとバイト",
           "reading": "",
           "category": "CS基礎",
@@ -33101,13 +31787,11 @@ module.exports = {
               "items": [
                 {
                   "name": "バイナリ",
-                  "desc": "ビットとバイト と一緒に出てきたときの手がかり。",
-                  "page": 1307
+                  "desc": "ビットとバイト と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "メモリ",
-                  "desc": "ビットとバイト と一緒に出てきたときの手がかり。",
-                  "page": 1302
+                  "desc": "ビットとバイト と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "ネットワーク",
@@ -33119,7 +31803,7 @@ module.exports = {
         },
         {
           "id": "compile",
-          "page": 1310,
+          "page": 461,
           "term": "コンパイル",
           "reading": "",
           "category": "CS基礎",
@@ -33175,18 +31859,15 @@ module.exports = {
               "items": [
                 {
                   "name": "インタープリタ",
-                  "desc": "コンパイル と一緒に出てきたときの手がかり。",
-                  "page": 1311
+                  "desc": "コンパイル と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Build",
-                  "desc": "コンパイル と一緒に出てきたときの手がかり。",
-                  "page": 709
+                  "desc": "コンパイル と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "バイナリ",
-                  "desc": "コンパイル と一緒に出てきたときの手がかり。",
-                  "page": 1307
+                  "desc": "コンパイル と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -33194,7 +31875,7 @@ module.exports = {
         },
         {
           "id": "interpreter",
-          "page": 1311,
+          "page": 462,
           "term": "インタープリタ",
           "reading": "",
           "category": "CS基礎",
@@ -33250,8 +31931,7 @@ module.exports = {
               "items": [
                 {
                   "name": "コンパイル",
-                  "desc": "インタープリタ と一緒に出てきたときの手がかり。",
-                  "page": 1310
+                  "desc": "インタープリタ と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "ランタイム",
@@ -33265,9 +31945,9 @@ module.exports = {
             }
           ]
         },
-                {
+        {
           "id": "kernel",
-          "page": 1311,
+          "page": 463,
           "term": "カーネル",
           "reading": "",
           "category": "CS基礎",
@@ -33345,7 +32025,7 @@ module.exports = {
       "entries": [
         {
           "id": "tataku",
-          "page": 1400,
+          "page": 464,
           "term": "叩く",
           "reading": "たたく",
           "category": "エンジニアの語彙",
@@ -33401,18 +32081,15 @@ module.exports = {
               "items": [
                 {
                   "name": "投げる",
-                  "desc": "叩く と一緒に出てきたときの手がかり。",
-                  "page": 1401
+                  "desc": "叩く と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "API",
-                  "desc": "叩く と一緒に出てきたときの手がかり。",
-                  "page": 83
+                  "desc": "叩く と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Request",
-                  "desc": "叩く と一緒に出てきたときの手がかり。",
-                  "page": 45
+                  "desc": "叩く と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -33420,7 +32097,7 @@ module.exports = {
         },
         {
           "id": "nageru",
-          "page": 1401,
+          "page": 465,
           "term": "投げる",
           "reading": "なげる",
           "category": "エンジニアの語彙",
@@ -33476,13 +32153,11 @@ module.exports = {
               "items": [
                 {
                   "name": "叩く",
-                  "desc": "投げる と一緒に出てきたときの手がかり。",
-                  "page": 1400
+                  "desc": "投げる と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "例外処理",
-                  "desc": "投げる と一緒に出てきたときの手がかり。",
-                  "page": 1604
+                  "desc": "投げる と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Error",
@@ -33494,7 +32169,7 @@ module.exports = {
         },
         {
           "id": "shinu",
-          "page": 1402,
+          "page": 466,
           "term": "死ぬ",
           "reading": "しぬ",
           "category": "エンジニアの語彙",
@@ -33550,8 +32225,7 @@ module.exports = {
               "items": [
                 {
                   "name": "殺す",
-                  "desc": "死ぬ と一緒に出てきたときの手がかり。",
-                  "page": 1403
+                  "desc": "死ぬ と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "再起動",
@@ -33559,8 +32233,7 @@ module.exports = {
                 },
                 {
                   "name": "Monitoring",
-                  "desc": "死ぬ と一緒に出てきたときの手がかり。",
-                  "page": 1203
+                  "desc": "死ぬ と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -33568,7 +32241,7 @@ module.exports = {
         },
         {
           "id": "korosu",
-          "page": 1403,
+          "page": 467,
           "term": "殺す",
           "reading": "ころす",
           "category": "エンジニアの語彙",
@@ -33624,8 +32297,7 @@ module.exports = {
               "items": [
                 {
                   "name": "死ぬ",
-                  "desc": "殺す と一緒に出てきたときの手がかり。",
-                  "page": 1402
+                  "desc": "殺す と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "プロセス",
@@ -33633,8 +32305,7 @@ module.exports = {
                 },
                 {
                   "name": "デバッグ",
-                  "desc": "殺す と一緒に出てきたときの手がかり。",
-                  "page": 509
+                  "desc": "殺す と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -33642,7 +32313,7 @@ module.exports = {
         },
         {
           "id": "haku",
-          "page": 1404,
+          "page": 468,
           "term": "吐く",
           "reading": "はく",
           "category": "エンジニアの語彙",
@@ -33698,18 +32369,15 @@ module.exports = {
               "items": [
                 {
                   "name": "ログ",
-                  "desc": "吐く と一緒に出てきたときの手がかり。",
-                  "page": 525
+                  "desc": "吐く と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "デバッグ",
-                  "desc": "吐く と一緒に出てきたときの手がかり。",
-                  "page": 509
+                  "desc": "吐く と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Monitoring",
-                  "desc": "吐く と一緒に出てきたときの手がかり。",
-                  "page": 1203
+                  "desc": "吐く と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -33717,7 +32385,7 @@ module.exports = {
         },
         {
           "id": "tateru",
-          "page": 1405,
+          "page": 469,
           "term": "立てる",
           "reading": "たてる",
           "category": "エンジニアの語彙",
@@ -33773,8 +32441,7 @@ module.exports = {
               "items": [
                 {
                   "name": "ローカル",
-                  "desc": "立てる と一緒に出てきたときの手がかり。",
-                  "page": 706
+                  "desc": "立てる と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "デプロイ",
@@ -33782,8 +32449,7 @@ module.exports = {
                 },
                 {
                   "name": "Docker",
-                  "desc": "立てる と一緒に出てきたときの手がかり。",
-                  "page": 301
+                  "desc": "立てる と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -33791,7 +32457,7 @@ module.exports = {
         },
         {
           "id": "watasu",
-          "page": 1406,
+          "page": 470,
           "term": "渡す",
           "reading": "わたす",
           "category": "エンジニアの語彙",
@@ -33847,18 +32513,15 @@ module.exports = {
               "items": [
                 {
                   "name": "API",
-                  "desc": "渡す と一緒に出てきたときの手がかり。",
-                  "page": 83
+                  "desc": "渡す と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Props",
-                  "desc": "渡す と一緒に出てきたときの手がかり。",
-                  "page": 153
+                  "desc": "渡す と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Authorization",
-                  "desc": "渡す と一緒に出てきたときの手がかり。",
-                  "page": 906
+                  "desc": "渡す と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -33866,7 +32529,7 @@ module.exports = {
         },
         {
           "id": "nigiritubusu",
-          "page": 1407,
+          "page": 471,
           "term": "握りつぶす",
           "reading": "にぎりつぶす",
           "category": "エンジニアの語彙",
@@ -33922,18 +32585,15 @@ module.exports = {
               "items": [
                 {
                   "name": "例外処理",
-                  "desc": "握りつぶす と一緒に出てきたときの手がかり。",
-                  "page": 1604
+                  "desc": "握りつぶす と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "ログ",
-                  "desc": "握りつぶす と一緒に出てきたときの手がかり。",
-                  "page": 525
+                  "desc": "握りつぶす と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "デバッグ",
-                  "desc": "握りつぶす と一緒に出てきたときの手がかり。",
-                  "page": 509
+                  "desc": "握りつぶす と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -33941,7 +32601,7 @@ module.exports = {
         },
         {
           "id": "haritsuku",
-          "page": 1408,
+          "page": 472,
           "term": "張り付く",
           "reading": "はりつく",
           "category": "エンジニアの語彙",
@@ -33997,18 +32657,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Monitoring",
-                  "desc": "張り付く と一緒に出てきたときの手がかり。",
-                  "page": 1203
+                  "desc": "張り付く と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "オンコール",
-                  "desc": "張り付く と一緒に出てきたときの手がかり。",
-                  "page": 1354
+                  "desc": "張り付く と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Alerting",
-                  "desc": "張り付く と一緒に出てきたときの手がかり。",
-                  "page": 1204
+                  "desc": "張り付く と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -34016,7 +32673,7 @@ module.exports = {
         },
         {
           "id": "hayasu",
-          "page": 1409,
+          "page": 473,
           "term": "生やす",
           "reading": "はやす",
           "category": "エンジニアの語彙",
@@ -34072,13 +32729,11 @@ module.exports = {
               "items": [
                 {
                   "name": "Migration",
-                  "desc": "生やす と一緒に出てきたときの手がかり。",
-                  "page": 114
+                  "desc": "生やす と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "API",
-                  "desc": "生やす と一緒に出てきたときの手がかり。",
-                  "page": 83
+                  "desc": "生やす と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "スキーマ",
@@ -34090,7 +32745,7 @@ module.exports = {
         },
         {
           "id": "sasaru",
-          "page": 1410,
+          "page": 474,
           "term": "刺さる",
           "reading": "ささる",
           "category": "エンジニアの語彙",
@@ -34162,7 +32817,7 @@ module.exports = {
         },
         {
           "id": "tokeru",
-          "page": 1411,
+          "page": 475,
           "term": "溶ける",
           "reading": "とける",
           "category": "エンジニアの語彙",
@@ -34218,18 +32873,15 @@ module.exports = {
               "items": [
                 {
                   "name": "見積もり",
-                  "desc": "溶ける と一緒に出てきたときの手がかり。",
-                  "page": 1811
+                  "desc": "溶ける と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "デスマーチ",
-                  "desc": "溶ける と一緒に出てきたときの手がかり。",
-                  "page": 1812
+                  "desc": "溶ける と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "スコープ",
-                  "desc": "溶ける と一緒に出てきたときの手がかり。",
-                  "page": 1605
+                  "desc": "溶ける と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -34237,7 +32889,7 @@ module.exports = {
         },
         {
           "id": "technically-possible",
-          "page": 1412,
+          "page": 476,
           "term": "技術的には可能です",
           "reading": "ぎじゅつてきにはかのうです",
           "category": "エンジニアの語彙",
@@ -34293,13 +32945,11 @@ module.exports = {
               "items": [
                 {
                   "name": "見積もり",
-                  "desc": "技術的には可能です と一緒に出てきたときの手がかり。",
-                  "page": 1811
+                  "desc": "技術的には可能です と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "スコープ",
-                  "desc": "技術的には可能です と一緒に出てきたときの手がかり。",
-                  "page": 1605
+                  "desc": "技術的には可能です と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "トレードオフ",
@@ -34311,7 +32961,7 @@ module.exports = {
         },
         {
           "id": "pafochu",
-          "page": 1413,
+          "page": 477,
           "term": "パフォチュー",
           "reading": "",
           "category": "エンジニアの語彙",
@@ -34367,13 +33017,11 @@ module.exports = {
               "items": [
                 {
                   "name": "パフォーマンスチューニング",
-                  "desc": "パフォチュー と一緒に出てきたときの手がかり。",
-                  "page": 1211
+                  "desc": "パフォチュー と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Metrics",
-                  "desc": "パフォチュー と一緒に出てきたときの手がかり。",
-                  "page": 1201
+                  "desc": "パフォチュー と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "キャッシュ",
@@ -34385,7 +33033,7 @@ module.exports = {
         },
         {
           "id": "kanzen-ni-rikaishita",
-          "page": 1414,
+          "page": 478,
           "term": "完全に理解した",
           "reading": "かんぜんにりかいした",
           "category": "エンジニアの語彙",
@@ -34449,8 +33097,7 @@ module.exports = {
                 },
                 {
                   "name": "具体と抽象",
-                  "desc": "完全に理解した と一緒に出てきたときの手がかり。",
-                  "page": 1120
+                  "desc": "完全に理解した と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -34464,7 +33111,7 @@ module.exports = {
       "entries": [
         {
           "id": "cli",
-          "page": 1500,
+          "page": 479,
           "term": "CLI",
           "reading": "シーエルアイ",
           "category": "Appendix",
@@ -34520,18 +33167,15 @@ module.exports = {
               "items": [
                 {
                   "name": "GUI",
-                  "desc": "CLI と一緒に出てきたときの手がかり。",
-                  "page": 1501
+                  "desc": "CLI と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Terminal",
-                  "desc": "CLI と一緒に出てきたときの手がかり。",
-                  "page": 600
+                  "desc": "CLI と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Shell",
-                  "desc": "CLI と一緒に出てきたときの手がかり。",
-                  "page": 601
+                  "desc": "CLI と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -34539,7 +33183,7 @@ module.exports = {
         },
         {
           "id": "gui",
-          "page": 1501,
+          "page": 480,
           "term": "GUI",
           "reading": "ジーユーアイ",
           "category": "Appendix",
@@ -34595,8 +33239,7 @@ module.exports = {
               "items": [
                 {
                   "name": "CLI",
-                  "desc": "GUI と一緒に出てきたときの手がかり。",
-                  "page": 1500
+                  "desc": "GUI と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "UX",
@@ -34612,7 +33255,7 @@ module.exports = {
         },
         {
           "id": "sdk",
-          "page": 1502,
+          "page": 481,
           "term": "SDK",
           "reading": "エスディーケー",
           "category": "Appendix",
@@ -34668,8 +33311,7 @@ module.exports = {
               "items": [
                 {
                   "name": "API",
-                  "desc": "SDK と一緒に出てきたときの手がかり。",
-                  "page": 83
+                  "desc": "SDK と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "ライブラリ",
@@ -34685,7 +33327,7 @@ module.exports = {
         },
         {
           "id": "rfc",
-          "page": 1503,
+          "page": 482,
           "term": "RFC",
           "reading": "アールエフシー",
           "category": "Appendix",
@@ -34741,8 +33383,7 @@ module.exports = {
               "items": [
                 {
                   "name": "HTTP",
-                  "desc": "RFC と一緒に出てきたときの手がかり。",
-                  "page": 47
+                  "desc": "RFC と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "標準",
@@ -34758,7 +33399,7 @@ module.exports = {
         },
         {
           "id": "ide",
-          "page": 1504,
+          "page": 483,
           "term": "IDE",
           "reading": "アイディーイー",
           "category": "Appendix",
@@ -34814,18 +33455,15 @@ module.exports = {
               "items": [
                 {
                   "name": "VSCode",
-                  "desc": "IDE と一緒に出てきたときの手がかり。",
-                  "page": 1505
+                  "desc": "IDE と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "デバッグ",
-                  "desc": "IDE と一緒に出てきたときの手がかり。",
-                  "page": 509
+                  "desc": "IDE と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Linter",
-                  "desc": "IDE と一緒に出てきたときの手がかり。",
-                  "page": 1506
+                  "desc": "IDE と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -34833,7 +33471,7 @@ module.exports = {
         },
         {
           "id": "vscode",
-          "page": 1505,
+          "page": 484,
           "term": "VSCode",
           "reading": "ブイエスコード",
           "category": "Appendix",
@@ -34889,13 +33527,11 @@ module.exports = {
               "items": [
                 {
                   "name": "IDE",
-                  "desc": "VSCode と一緒に出てきたときの手がかり。",
-                  "page": 1504
+                  "desc": "VSCode と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Linter",
-                  "desc": "VSCode と一緒に出てきたときの手がかり。",
-                  "page": 1506
+                  "desc": "VSCode と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Git",
@@ -34907,7 +33543,7 @@ module.exports = {
         },
         {
           "id": "linter",
-          "page": 1506,
+          "page": 485,
           "term": "Linter",
           "reading": "リンター",
           "category": "Appendix",
@@ -34963,18 +33599,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Formatter",
-                  "desc": "Linter と一緒に出てきたときの手がかり。",
-                  "page": 1507
+                  "desc": "Linter と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "CI/CD",
-                  "desc": "Linter と一緒に出てきたときの手がかり。",
-                  "page": 705
+                  "desc": "Linter と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "ESLint",
-                  "desc": "Linter と一緒に出てきたときの手がかり。",
-                  "page": 173
+                  "desc": "Linter と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -34982,7 +33615,7 @@ module.exports = {
         },
         {
           "id": "formatter",
-          "page": 1507,
+          "page": 486,
           "term": "Formatter",
           "reading": "フォーマッタ",
           "category": "Appendix",
@@ -35038,13 +33671,11 @@ module.exports = {
               "items": [
                 {
                   "name": "Linter",
-                  "desc": "Formatter と一緒に出てきたときの手がかり。",
-                  "page": 1506
+                  "desc": "Formatter と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "CI/CD",
-                  "desc": "Formatter と一緒に出てきたときの手がかり。",
-                  "page": 705
+                  "desc": "Formatter と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "EditorConfig",
@@ -35056,7 +33687,7 @@ module.exports = {
         },
         {
           "id": "boilerplate",
-          "page": 1508,
+          "page": 487,
           "term": "Boilerplate",
           "reading": "ボイラープレート",
           "category": "Appendix",
@@ -35112,8 +33743,7 @@ module.exports = {
               "items": [
                 {
                   "name": "SDK",
-                  "desc": "Boilerplate と一緒に出てきたときの手がかり。",
-                  "page": 1502
+                  "desc": "Boilerplate と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "テンプレート",
@@ -35129,7 +33759,7 @@ module.exports = {
         },
         {
           "id": "tech-debt",
-          "page": 1509,
+          "page": 488,
           "term": "Technical Debt",
           "reading": "テクニカルデット",
           "category": "Appendix",
@@ -35185,8 +33815,7 @@ module.exports = {
               "items": [
                 {
                   "name": "リファクタリング",
-                  "desc": "Technical Debt と一緒に出てきたときの手がかり。",
-                  "page": 524
+                  "desc": "Technical Debt と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "優先度",
@@ -35194,8 +33823,7 @@ module.exports = {
                 },
                 {
                   "name": "見積もり",
-                  "desc": "Technical Debt と一緒に出てきたときの手がかり。",
-                  "page": 1811
+                  "desc": "Technical Debt と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -35209,7 +33837,7 @@ module.exports = {
       "entries": [
         {
           "id": "crud",
-          "page": 1600,
+          "page": 489,
           "term": "CRUD",
           "reading": "クラッド",
           "category": "プログラミング基礎",
@@ -35265,18 +33893,15 @@ module.exports = {
               "items": [
                 {
                   "name": "API",
-                  "desc": "CRUD と一緒に出てきたときの手がかり。",
-                  "page": 83
+                  "desc": "CRUD と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "SQL",
-                  "desc": "CRUD と一緒に出てきたときの手がかり。",
-                  "page": 112
+                  "desc": "CRUD と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "MVC",
-                  "desc": "CRUD と一緒に出てきたときの手がかり。",
-                  "page": 1601
+                  "desc": "CRUD と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -35284,7 +33909,7 @@ module.exports = {
         },
         {
           "id": "mvc",
-          "page": 1601,
+          "page": 490,
           "term": "MVC",
           "reading": "エムブイシー",
           "category": "プログラミング基礎",
@@ -35340,18 +33965,15 @@ module.exports = {
               "items": [
                 {
                   "name": "レイヤードアーキテクチャ",
-                  "desc": "MVC と一緒に出てきたときの手がかり。",
-                  "page": 1113
+                  "desc": "MVC と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "CRUD",
-                  "desc": "MVC と一緒に出てきたときの手がかり。",
-                  "page": 1600
+                  "desc": "MVC と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Rails",
-                  "desc": "MVC と一緒に出てきたときの手がかり。",
-                  "page": 199
+                  "desc": "MVC と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -35359,7 +33981,7 @@ module.exports = {
         },
         {
           "id": "null-undefined",
-          "page": 1602,
+          "page": 491,
           "term": "nullとundefined",
           "reading": "ナルとアンデファインド",
           "category": "プログラミング基礎",
@@ -35415,18 +34037,15 @@ module.exports = {
               "items": [
                 {
                   "name": "型",
-                  "desc": "nullとundefined と一緒に出てきたときの手がかり。",
-                  "page": 1603
+                  "desc": "nullとundefined と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "例外処理",
-                  "desc": "nullとundefined と一緒に出てきたときの手がかり。",
-                  "page": 1604
+                  "desc": "nullとundefined と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "JavaScript",
-                  "desc": "nullとundefined と一緒に出てきたときの手がかり。",
-                  "page": 145
+                  "desc": "nullとundefined と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -35434,7 +34053,7 @@ module.exports = {
         },
         {
           "id": "typing",
-          "page": 1603,
+          "page": 492,
           "term": "型",
           "reading": "かた",
           "category": "プログラミング基礎",
@@ -35490,18 +34109,15 @@ module.exports = {
               "items": [
                 {
                   "name": "TypeScript",
-                  "desc": "型 と一緒に出てきたときの手がかり。",
-                  "page": 146
+                  "desc": "型 と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "コンパイル",
-                  "desc": "型 と一緒に出てきたときの手がかり。",
-                  "page": 1310
+                  "desc": "型 と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "具体と抽象",
-                  "desc": "型 と一緒に出てきたときの手がかり。",
-                  "page": 1120
+                  "desc": "型 と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -35509,7 +34125,7 @@ module.exports = {
         },
         {
           "id": "exception-handling",
-          "page": 1604,
+          "page": 493,
           "term": "例外処理",
           "reading": "れいがいしょり",
           "category": "プログラミング基礎",
@@ -35565,13 +34181,11 @@ module.exports = {
               "items": [
                 {
                   "name": "投げる",
-                  "desc": "例外処理 と一緒に出てきたときの手がかり。",
-                  "page": 1401
+                  "desc": "例外処理 と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "ログ",
-                  "desc": "例外処理 と一緒に出てきたときの手がかり。",
-                  "page": 525
+                  "desc": "例外処理 と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "エラー",
@@ -35583,7 +34197,7 @@ module.exports = {
         },
         {
           "id": "closure",
-          "page": 1606,
+          "page": 494,
           "term": "クロージャ",
           "reading": "",
           "category": "プログラミング基礎",
@@ -35639,8 +34253,7 @@ module.exports = {
               "items": [
                 {
                   "name": "スコープ",
-                  "desc": "クロージャ と一緒に出てきたときの手がかり。",
-                  "page": 1605
+                  "desc": "クロージャ と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "関数",
@@ -35648,8 +34261,7 @@ module.exports = {
                 },
                 {
                   "name": "JavaScript",
-                  "desc": "クロージャ と一緒に出てきたときの手がかり。",
-                  "page": 145
+                  "desc": "クロージャ と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -35657,7 +34269,7 @@ module.exports = {
         },
         {
           "id": "recursion",
-          "page": 1607,
+          "page": 495,
           "term": "再帰",
           "reading": "さいき",
           "category": "プログラミング基礎",
@@ -35721,8 +34333,7 @@ module.exports = {
                 },
                 {
                   "name": "計算量",
-                  "desc": "再帰 と一緒に出てきたときの手がかり。",
-                  "page": 1608
+                  "desc": "再帰 と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -35730,7 +34341,7 @@ module.exports = {
         },
         {
           "id": "complexity",
-          "page": 1608,
+          "page": 496,
           "term": "計算量",
           "reading": "けいさんりょう",
           "category": "プログラミング基礎",
@@ -35790,8 +34401,7 @@ module.exports = {
                 },
                 {
                   "name": "パフォーマンスチューニング",
-                  "desc": "計算量 と一緒に出てきたときの手がかり。",
-                  "page": 1211
+                  "desc": "計算量 と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "構造",
@@ -35801,9 +34411,9 @@ module.exports = {
             }
           ]
         },
-                {
+        {
           "id": "scope-lang",
-          "page": 1608,
+          "page": 497,
           "term": "スコープ（言語）",
           "reading": "",
           "category": "プログラミング基礎",
@@ -35881,7 +34491,7 @@ module.exports = {
       "entries": [
         {
           "id": "sre",
-          "page": 1350,
+          "page": 498,
           "term": "SRE",
           "reading": "エスアールイー",
           "category": "SRE・信頼性",
@@ -35937,18 +34547,15 @@ module.exports = {
               "items": [
                 {
                   "name": "SLO",
-                  "desc": "SRE と一緒に出てきたときの手がかり。",
-                  "page": 418
+                  "desc": "SRE と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "エラーバジェット",
-                  "desc": "SRE と一緒に出てきたときの手がかり。",
-                  "page": 1351
+                  "desc": "SRE と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "オンコール",
-                  "desc": "SRE と一緒に出てきたときの手がかり。",
-                  "page": 1354
+                  "desc": "SRE と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -35956,7 +34563,7 @@ module.exports = {
         },
         {
           "id": "error-budget",
-          "page": 1351,
+          "page": 499,
           "term": "エラーバジェット",
           "reading": "",
           "category": "SRE・信頼性",
@@ -36012,18 +34619,15 @@ module.exports = {
               "items": [
                 {
                   "name": "SLO",
-                  "desc": "エラーバジェット と一緒に出てきたときの手がかり。",
-                  "page": 418
+                  "desc": "エラーバジェット と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "SRE",
-                  "desc": "エラーバジェット と一緒に出てきたときの手がかり。",
-                  "page": 1350
+                  "desc": "エラーバジェット と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Release",
-                  "desc": "エラーバジェット と一緒に出てきたときの手がかり。",
-                  "page": 712
+                  "desc": "エラーバジェット と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -36031,7 +34635,7 @@ module.exports = {
         },
         {
           "id": "incident",
-          "page": 1352,
+          "page": 500,
           "term": "インシデント",
           "reading": "",
           "category": "SRE・信頼性",
@@ -36087,18 +34691,15 @@ module.exports = {
               "items": [
                 {
                   "name": "ポストモーテム",
-                  "desc": "インシデント と一緒に出てきたときの手がかり。",
-                  "page": 1353
+                  "desc": "インシデント と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "オンコール",
-                  "desc": "インシデント と一緒に出てきたときの手がかり。",
-                  "page": 1354
+                  "desc": "インシデント と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "Alerting",
-                  "desc": "インシデント と一緒に出てきたときの手がかり。",
-                  "page": 1204
+                  "desc": "インシデント と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -36106,7 +34707,7 @@ module.exports = {
         },
         {
           "id": "postmortem",
-          "page": 1353,
+          "page": 501,
           "term": "ポストモーテム",
           "reading": "",
           "category": "SRE・信頼性",
@@ -36162,18 +34763,15 @@ module.exports = {
               "items": [
                 {
                   "name": "インシデント",
-                  "desc": "ポストモーテム と一緒に出てきたときの手がかり。",
-                  "page": 1352
+                  "desc": "ポストモーテム と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "レトロスペクティブ",
-                  "desc": "ポストモーテム と一緒に出てきたときの手がかり。",
-                  "page": 760
+                  "desc": "ポストモーテム と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "ランブック",
-                  "desc": "ポストモーテム と一緒に出てきたときの手がかり。",
-                  "page": 1355
+                  "desc": "ポストモーテム と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -36181,7 +34779,7 @@ module.exports = {
         },
         {
           "id": "oncall",
-          "page": 1354,
+          "page": 502,
           "term": "オンコール",
           "reading": "",
           "category": "SRE・信頼性",
@@ -36237,18 +34835,15 @@ module.exports = {
               "items": [
                 {
                   "name": "Alerting",
-                  "desc": "オンコール と一緒に出てきたときの手がかり。",
-                  "page": 1204
+                  "desc": "オンコール と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "ランブック",
-                  "desc": "オンコール と一緒に出てきたときの手がかり。",
-                  "page": 1355
+                  "desc": "オンコール と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "インシデント",
-                  "desc": "オンコール と一緒に出てきたときの手がかり。",
-                  "page": 1352
+                  "desc": "オンコール と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -36256,7 +34851,7 @@ module.exports = {
         },
         {
           "id": "runbook",
-          "page": 1355,
+          "page": 503,
           "term": "ランブック",
           "reading": "",
           "category": "SRE・信頼性",
@@ -36312,18 +34907,15 @@ module.exports = {
               "items": [
                 {
                   "name": "オンコール",
-                  "desc": "ランブック と一緒に出てきたときの手がかり。",
-                  "page": 1354
+                  "desc": "ランブック と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "インシデント",
-                  "desc": "ランブック と一緒に出てきたときの手がかり。",
-                  "page": 1352
+                  "desc": "ランブック と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "CI/CD",
-                  "desc": "ランブック と一緒に出てきたときの手がかり。",
-                  "page": 705
+                  "desc": "ランブック と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -36331,7 +34923,7 @@ module.exports = {
         },
         {
           "id": "mttr",
-          "page": 1356,
+          "page": 504,
           "term": "MTTR",
           "reading": "エムティーティーアール",
           "category": "SRE・信頼性",
@@ -36387,18 +34979,15 @@ module.exports = {
               "items": [
                 {
                   "name": "MTBF",
-                  "desc": "MTTR と一緒に出てきたときの手がかり。",
-                  "page": 1357
+                  "desc": "MTTR と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "インシデント",
-                  "desc": "MTTR と一緒に出てきたときの手がかり。",
-                  "page": 1352
+                  "desc": "MTTR と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "可用性",
-                  "desc": "MTTR と一緒に出てきたときの手がかり。",
-                  "page": 416
+                  "desc": "MTTR と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -36406,7 +34995,7 @@ module.exports = {
         },
         {
           "id": "mtbf",
-          "page": 1357,
+          "page": 505,
           "term": "MTBF",
           "reading": "エムティービーエフ",
           "category": "SRE・信頼性",
@@ -36462,18 +35051,15 @@ module.exports = {
               "items": [
                 {
                   "name": "MTTR",
-                  "desc": "MTBF と一緒に出てきたときの手がかり。",
-                  "page": 1356
+                  "desc": "MTBF と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "可用性",
-                  "desc": "MTBF と一緒に出てきたときの手がかり。",
-                  "page": 416
+                  "desc": "MTBF と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "SLO",
-                  "desc": "MTBF と一緒に出てきたときの手がかり。",
-                  "page": 418
+                  "desc": "MTBF と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -36487,7 +35073,7 @@ module.exports = {
       "entries": [
         {
           "id": "tech-lead",
-          "page": 1700,
+          "page": 506,
           "term": "テックリード",
           "reading": "",
           "category": "チームとロール",
@@ -36543,13 +35129,11 @@ module.exports = {
               "items": [
                 {
                   "name": "コードレビュー",
-                  "desc": "テックリード と一緒に出てきたときの手がかり。",
-                  "page": 762
+                  "desc": "テックリード と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "PM",
-                  "desc": "テックリード と一緒に出てきたときの手がかり。",
-                  "page": 1704
+                  "desc": "テックリード と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "アーキテクチャ",
@@ -36561,7 +35145,7 @@ module.exports = {
         },
         {
           "id": "devops-engineer",
-          "page": 1701,
+          "page": 507,
           "term": "DevOpsエンジニア",
           "reading": "デブオプスエンジニア",
           "category": "チームとロール",
@@ -36617,18 +35201,15 @@ module.exports = {
               "items": [
                 {
                   "name": "CI/CD",
-                  "desc": "DevOpsエンジニア と一緒に出てきたときの手がかり。",
-                  "page": 705
+                  "desc": "DevOpsエンジニア と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "SRE",
-                  "desc": "DevOpsエンジニア と一緒に出てきたときの手がかり。",
-                  "page": 1350
+                  "desc": "DevOpsエンジニア と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "IaC",
-                  "desc": "DevOpsエンジニア と一緒に出てきたときの手がかり。",
-                  "page": 730
+                  "desc": "DevOpsエンジニア と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -36636,7 +35217,7 @@ module.exports = {
         },
         {
           "id": "data-engineer",
-          "page": 1702,
+          "page": 508,
           "term": "データエンジニア",
           "reading": "",
           "category": "チームとロール",
@@ -36700,8 +35281,7 @@ module.exports = {
                 },
                 {
                   "name": "SQL",
-                  "desc": "データエンジニア と一緒に出てきたときの手がかり。",
-                  "page": 112
+                  "desc": "データエンジニア と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -36709,7 +35289,7 @@ module.exports = {
         },
         {
           "id": "ml-engineer",
-          "page": 1703,
+          "page": 509,
           "term": "MLエンジニア",
           "reading": "エムエルエンジニア",
           "category": "チームとロール",
@@ -36765,18 +35345,15 @@ module.exports = {
               "items": [
                 {
                   "name": "LLM",
-                  "desc": "MLエンジニア と一緒に出てきたときの手がかり。",
-                  "page": 1000
+                  "desc": "MLエンジニア と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "データエンジニア",
-                  "desc": "MLエンジニア と一緒に出てきたときの手がかり。",
-                  "page": 1702
+                  "desc": "MLエンジニア と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "GPU",
-                  "desc": "MLエンジニア と一緒に出てきたときの手がかり。",
-                  "page": 1301
+                  "desc": "MLエンジニア と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -36784,7 +35361,7 @@ module.exports = {
         },
         {
           "id": "pm-role",
-          "page": 1704,
+          "page": 510,
           "term": "PM",
           "reading": "ピーエム",
           "category": "チームとロール",
@@ -36840,18 +35417,15 @@ module.exports = {
               "items": [
                 {
                   "name": "スコープ",
-                  "desc": "PM と一緒に出てきたときの手がかり。",
-                  "page": 1605
+                  "desc": "PM と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "ステークホルダー",
-                  "desc": "PM と一緒に出てきたときの手がかり。",
-                  "page": 755
+                  "desc": "PM と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "マイルストーン",
-                  "desc": "PM と一緒に出てきたときの手がかり。",
-                  "page": 754
+                  "desc": "PM と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -36859,7 +35433,7 @@ module.exports = {
         },
         {
           "id": "sre-role",
-          "page": 1705,
+          "page": 511,
           "term": "SRE役職",
           "reading": "エスアールイーやくしょく",
           "category": "チームとロール",
@@ -36915,18 +35489,87 @@ module.exports = {
               "items": [
                 {
                   "name": "SRE",
-                  "desc": "SRE役職 と一緒に出てきたときの手がかり。",
-                  "page": 1350
+                  "desc": "SRE役職 と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "オンコール",
-                  "desc": "SRE役職 と一緒に出てきたときの手がかり。",
-                  "page": 1354
+                  "desc": "SRE役職 と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "SLO",
-                  "desc": "SRE役職 と一緒に出てきたときの手がかり。",
-                  "page": 418
+                  "desc": "SRE役職 と一緒に出てきたときの手がかり。"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "fde",
+          "page": 512,
+          "term": "FDE",
+          "reading": "エフディーイー",
+          "category": "チームとロール",
+          "icon": "ic-file",
+          "compact": true,
+          "oneline": "顧客の現場に入り込み、プロダクトを実装・定着させるエンジニア。",
+          "q1_text": "本社の開発だけだと、現場の課題に届かない。",
+          "q2_intro": "言葉の定義が共有されないまま進めると、認識ズレが積み上がっていた。",
+          "q2_table": {
+            "col_before": "あいまいなまま",
+            "col_after": "FDE",
+            "rows": [
+              [
+                "共有",
+                "人ごとに意味が違う",
+                "共通語として話せる"
+              ],
+              [
+                "判断",
+                "感覚頼み",
+                "観点が揃う"
+              ],
+              [
+                "学習",
+                "点で終わる",
+                "周辺語へ広げやすい"
+              ],
+              [
+                "実務",
+                "その場しのぎ",
+                "次の行動に移しやすい"
+              ]
+            ]
+          },
+          "q3_cells": [
+            {
+              "icon": "ic-check",
+              "cap": "FDE を自分の言葉で説明できる"
+            },
+            {
+              "icon": "ic-rocket",
+              "cap": "現場の会話やドキュメントについていける"
+            },
+            {
+              "icon": "ic-gear",
+              "cap": "関連する次の言葉へ進める"
+            }
+          ],
+          "memo": "Forward Deployed Engineer。Full Disk Encryption（ディスク暗号化）とは別物。Palantir発の職種名として広まった。",
+          "sidebar_groups": [
+            {
+              "label": "関連キーワード",
+              "items": [
+                {
+                  "name": "テックリード",
+                  "desc": "技術方針側のロール。"
+                },
+                {
+                  "name": "PM",
+                  "desc": "要件・優先度側のロール。"
+                },
+                {
+                  "name": "常駐",
+                  "desc": "顧客先で働く形態との接点。"
                 }
               ]
             }
@@ -36940,7 +35583,7 @@ module.exports = {
       "entries": [
         {
           "id": "jutaku",
-          "page": 1800,
+          "page": 513,
           "term": "受託開発",
           "reading": "じゅたくかいはつ",
           "category": "IT業界のしくみ",
@@ -36996,18 +35639,15 @@ module.exports = {
               "items": [
                 {
                   "name": "請負契約",
-                  "desc": "受託開発 と一緒に出てきたときの手がかり。",
-                  "page": 1806
+                  "desc": "受託開発 と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "準委任契約",
-                  "desc": "受託開発 と一緒に出てきたときの手がかり。",
-                  "page": 1805
+                  "desc": "受託開発 と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "SES",
-                  "desc": "受託開発 と一緒に出てきたときの手がかり。",
-                  "page": 1802
+                  "desc": "受託開発 と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -37015,7 +35655,7 @@ module.exports = {
         },
         {
           "id": "jisha",
-          "page": 1801,
+          "page": 514,
           "term": "自社開発",
           "reading": "じしゃかいはつ",
           "category": "IT業界のしくみ",
@@ -37071,18 +35711,15 @@ module.exports = {
               "items": [
                 {
                   "name": "PMF",
-                  "desc": "自社開発 と一緒に出てきたときの手がかり。",
-                  "page": 1821
+                  "desc": "自社開発 と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "チャーン",
-                  "desc": "自社開発 と一緒に出てきたときの手がかり。",
-                  "page": 1814
+                  "desc": "自社開発 と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "受託開発",
-                  "desc": "自社開発 と一緒に出てきたときの手がかり。",
-                  "page": 1800
+                  "desc": "自社開発 と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -37090,7 +35727,7 @@ module.exports = {
         },
         {
           "id": "ses",
-          "page": 1802,
+          "page": 515,
           "term": "SES",
           "reading": "エスイーエス",
           "category": "IT業界のしくみ",
@@ -37146,18 +35783,15 @@ module.exports = {
               "items": [
                 {
                   "name": "常駐",
-                  "desc": "SES と一緒に出てきたときの手がかり。",
-                  "page": 1807
+                  "desc": "SES と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "準委任契約",
-                  "desc": "SES と一緒に出てきたときの手がかり。",
-                  "page": 1805
+                  "desc": "SES と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "受託開発",
-                  "desc": "SES と一緒に出てきたときの手がかり。",
-                  "page": 1800
+                  "desc": "SES と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -37165,7 +35799,7 @@ module.exports = {
         },
         {
           "id": "labo",
-          "page": 1803,
+          "page": 516,
           "term": "ラボ型",
           "reading": "",
           "category": "IT業界のしくみ",
@@ -37221,13 +35855,11 @@ module.exports = {
               "items": [
                 {
                   "name": "受託開発",
-                  "desc": "ラボ型 と一緒に出てきたときの手がかり。",
-                  "page": 1800
+                  "desc": "ラボ型 と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "スクラム",
-                  "desc": "ラボ型 と一緒に出てきたときの手がかり。",
-                  "page": 758
+                  "desc": "ラボ型 と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "契約",
@@ -37239,7 +35871,7 @@ module.exports = {
         },
         {
           "id": "ikkatsu",
-          "page": 1804,
+          "page": 517,
           "term": "一括請負",
           "reading": "いっかつうけおい",
           "category": "IT業界のしくみ",
@@ -37295,18 +35927,15 @@ module.exports = {
               "items": [
                 {
                   "name": "請負契約",
-                  "desc": "一括請負 と一緒に出てきたときの手がかり。",
-                  "page": 1806
+                  "desc": "一括請負 と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "ウォーターフォール",
-                  "desc": "一括請負 と一緒に出てきたときの手がかり。",
-                  "page": 751
+                  "desc": "一括請負 と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "見積もり",
-                  "desc": "一括請負 と一緒に出てきたときの手がかり。",
-                  "page": 1811
+                  "desc": "一括請負 と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -37314,7 +35943,7 @@ module.exports = {
         },
         {
           "id": "juninin",
-          "page": 1805,
+          "page": 518,
           "term": "準委任契約",
           "reading": "じゅんいにんけいやく",
           "category": "IT業界のしくみ",
@@ -37370,18 +35999,15 @@ module.exports = {
               "items": [
                 {
                   "name": "請負契約",
-                  "desc": "準委任契約 と一緒に出てきたときの手がかり。",
-                  "page": 1806
+                  "desc": "準委任契約 と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "SES",
-                  "desc": "準委任契約 と一緒に出てきたときの手がかり。",
-                  "page": 1802
+                  "desc": "準委任契約 と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "常駐",
-                  "desc": "準委任契約 と一緒に出てきたときの手がかり。",
-                  "page": 1807
+                  "desc": "準委任契約 と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -37389,7 +36015,7 @@ module.exports = {
         },
         {
           "id": "ukeoi",
-          "page": 1806,
+          "page": 519,
           "term": "請負契約",
           "reading": "うけおいけいやく",
           "category": "IT業界のしくみ",
@@ -37445,18 +36071,15 @@ module.exports = {
               "items": [
                 {
                   "name": "準委任契約",
-                  "desc": "請負契約 と一緒に出てきたときの手がかり。",
-                  "page": 1805
+                  "desc": "請負契約 と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "一括請負",
-                  "desc": "請負契約 と一緒に出てきたときの手がかり。",
-                  "page": 1804
+                  "desc": "請負契約 と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "受託開発",
-                  "desc": "請負契約 と一緒に出てきたときの手がかり。",
-                  "page": 1800
+                  "desc": "請負契約 と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -37464,7 +36087,7 @@ module.exports = {
         },
         {
           "id": "jochu",
-          "page": 1807,
+          "page": 520,
           "term": "常駐",
           "reading": "じょうちゅう",
           "category": "IT業界のしくみ",
@@ -37520,13 +36143,11 @@ module.exports = {
               "items": [
                 {
                   "name": "SES",
-                  "desc": "常駐 と一緒に出てきたときの手がかり。",
-                  "page": 1802
+                  "desc": "常駐 と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "準委任契約",
-                  "desc": "常駐 と一緒に出てきたときの手がかり。",
-                  "page": 1805
+                  "desc": "常駐 と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "チーム",
@@ -37538,7 +36159,7 @@ module.exports = {
         },
         {
           "id": "shitauke",
-          "page": 1808,
+          "page": 521,
           "term": "下請け",
           "reading": "したうけ",
           "category": "IT業界のしくみ",
@@ -37594,13 +36215,11 @@ module.exports = {
               "items": [
                 {
                   "name": "受託開発",
-                  "desc": "下請け と一緒に出てきたときの手がかり。",
-                  "page": 1800
+                  "desc": "下請け と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "人月計算",
-                  "desc": "下請け と一緒に出てきたときの手がかり。",
-                  "page": 1809
+                  "desc": "下請け と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "契約",
@@ -37612,7 +36231,7 @@ module.exports = {
         },
         {
           "id": "ningetsu",
-          "page": 1809,
+          "page": 522,
           "term": "人月計算",
           "reading": "にんげつけいさん",
           "category": "IT業界のしくみ",
@@ -37668,18 +36287,15 @@ module.exports = {
               "items": [
                 {
                   "name": "工数",
-                  "desc": "人月計算 と一緒に出てきたときの手がかり。",
-                  "page": 1810
+                  "desc": "人月計算 と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "見積もり",
-                  "desc": "人月計算 と一緒に出てきたときの手がかり。",
-                  "page": 1811
+                  "desc": "人月計算 と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "デスマーチ",
-                  "desc": "人月計算 と一緒に出てきたときの手がかり。",
-                  "page": 1812
+                  "desc": "人月計算 と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -37687,7 +36303,7 @@ module.exports = {
         },
         {
           "id": "kousu",
-          "page": 1810,
+          "page": 523,
           "term": "工数",
           "reading": "こうすう",
           "category": "IT業界のしくみ",
@@ -37743,18 +36359,15 @@ module.exports = {
               "items": [
                 {
                   "name": "見積もり",
-                  "desc": "工数 と一緒に出てきたときの手がかり。",
-                  "page": 1811
+                  "desc": "工数 と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "ベロシティ",
-                  "desc": "工数 と一緒に出てきたときの手がかり。",
-                  "page": 761
+                  "desc": "工数 と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "人月計算",
-                  "desc": "工数 と一緒に出てきたときの手がかり。",
-                  "page": 1809
+                  "desc": "工数 と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -37762,7 +36375,7 @@ module.exports = {
         },
         {
           "id": "mitsumori",
-          "page": 1811,
+          "page": 524,
           "term": "見積もり",
           "reading": "みつもり",
           "category": "IT業界のしくみ",
@@ -37818,13 +36431,11 @@ module.exports = {
               "items": [
                 {
                   "name": "スコープ",
-                  "desc": "見積もり と一緒に出てきたときの手がかり。",
-                  "page": 1605
+                  "desc": "見積もり と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "工数",
-                  "desc": "見積もり と一緒に出てきたときの手がかり。",
-                  "page": 1810
+                  "desc": "見積もり と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "リスク",
@@ -37836,7 +36447,7 @@ module.exports = {
         },
         {
           "id": "death-march",
-          "page": 1812,
+          "page": 525,
           "term": "デスマーチ",
           "reading": "",
           "category": "IT業界のしくみ",
@@ -37892,18 +36503,15 @@ module.exports = {
               "items": [
                 {
                   "name": "見積もり",
-                  "desc": "デスマーチ と一緒に出てきたときの手がかり。",
-                  "page": 1811
+                  "desc": "デスマーチ と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "スコープ",
-                  "desc": "デスマーチ と一緒に出てきたときの手がかり。",
-                  "page": 1605
+                  "desc": "デスマーチ と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "溶ける",
-                  "desc": "デスマーチ と一緒に出てきたときの手がかり。",
-                  "page": 1411
+                  "desc": "デスマーチ と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -37911,7 +36519,7 @@ module.exports = {
         },
         {
           "id": "upsell",
-          "page": 1813,
+          "page": 526,
           "term": "アップセル",
           "reading": "",
           "category": "IT業界のしくみ",
@@ -37967,18 +36575,15 @@ module.exports = {
               "items": [
                 {
                   "name": "チャーン",
-                  "desc": "アップセル と一緒に出てきたときの手がかり。",
-                  "page": 1814
+                  "desc": "アップセル と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "LTV",
-                  "desc": "アップセル と一緒に出てきたときの手がかり。",
-                  "page": 1817
+                  "desc": "アップセル と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "MRR",
-                  "desc": "アップセル と一緒に出てきたときの手がかり。",
-                  "page": 1815
+                  "desc": "アップセル と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -37986,7 +36591,7 @@ module.exports = {
         },
         {
           "id": "churn",
-          "page": 1814,
+          "page": 527,
           "term": "チャーン",
           "reading": "",
           "category": "IT業界のしくみ",
@@ -38042,18 +36647,15 @@ module.exports = {
               "items": [
                 {
                   "name": "LTV",
-                  "desc": "チャーン と一緒に出てきたときの手がかり。",
-                  "page": 1817
+                  "desc": "チャーン と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "MRR",
-                  "desc": "チャーン と一緒に出てきたときの手がかり。",
-                  "page": 1815
+                  "desc": "チャーン と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "PMF",
-                  "desc": "チャーン と一緒に出てきたときの手がかり。",
-                  "page": 1821
+                  "desc": "チャーン と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -38061,7 +36663,7 @@ module.exports = {
         },
         {
           "id": "mrr",
-          "page": 1815,
+          "page": 528,
           "term": "MRR",
           "reading": "エムアールアール",
           "category": "IT業界のしくみ",
@@ -38117,18 +36719,15 @@ module.exports = {
               "items": [
                 {
                   "name": "ARR",
-                  "desc": "MRR と一緒に出てきたときの手がかり。",
-                  "page": 1816
+                  "desc": "MRR と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "チャーン",
-                  "desc": "MRR と一緒に出てきたときの手がかり。",
-                  "page": 1814
+                  "desc": "MRR と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "LTV",
-                  "desc": "MRR と一緒に出てきたときの手がかり。",
-                  "page": 1817
+                  "desc": "MRR と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -38136,7 +36735,7 @@ module.exports = {
         },
         {
           "id": "arr",
-          "page": 1816,
+          "page": 529,
           "term": "ARR",
           "reading": "エーアールアール",
           "category": "IT業界のしくみ",
@@ -38192,18 +36791,15 @@ module.exports = {
               "items": [
                 {
                   "name": "MRR",
-                  "desc": "ARR と一緒に出てきたときの手がかり。",
-                  "page": 1815
+                  "desc": "ARR と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "LTV",
-                  "desc": "ARR と一緒に出てきたときの手がかり。",
-                  "page": 1817
+                  "desc": "ARR と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "チャーン",
-                  "desc": "ARR と一緒に出てきたときの手がかり。",
-                  "page": 1814
+                  "desc": "ARR と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -38211,7 +36807,7 @@ module.exports = {
         },
         {
           "id": "ltv",
-          "page": 1817,
+          "page": 530,
           "term": "LTV",
           "reading": "エルティーブイ",
           "category": "IT業界のしくみ",
@@ -38267,13 +36863,11 @@ module.exports = {
               "items": [
                 {
                   "name": "チャーン",
-                  "desc": "LTV と一緒に出てきたときの手がかり。",
-                  "page": 1814
+                  "desc": "LTV と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "MRR",
-                  "desc": "LTV と一緒に出てきたときの手がかり。",
-                  "page": 1815
+                  "desc": "LTV と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "CAC",
@@ -38285,7 +36879,7 @@ module.exports = {
         },
         {
           "id": "dau",
-          "page": 1818,
+          "page": 531,
           "term": "DAU",
           "reading": "ディーエーユー",
           "category": "IT業界のしくみ",
@@ -38341,13 +36935,11 @@ module.exports = {
               "items": [
                 {
                   "name": "MAU",
-                  "desc": "DAU と一緒に出てきたときの手がかり。",
-                  "page": 1819
+                  "desc": "DAU と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "PMF",
-                  "desc": "DAU と一緒に出てきたときの手がかり。",
-                  "page": 1821
+                  "desc": "DAU と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "メトリクス",
@@ -38359,7 +36951,7 @@ module.exports = {
         },
         {
           "id": "mau",
-          "page": 1819,
+          "page": 532,
           "term": "MAU",
           "reading": "エムエーユー",
           "category": "IT業界のしくみ",
@@ -38415,18 +37007,15 @@ module.exports = {
               "items": [
                 {
                   "name": "DAU",
-                  "desc": "MAU と一緒に出てきたときの手がかり。",
-                  "page": 1818
+                  "desc": "MAU と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "チャーン",
-                  "desc": "MAU と一緒に出てきたときの手がかり。",
-                  "page": 1814
+                  "desc": "MAU と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "PMF",
-                  "desc": "MAU と一緒に出てきたときの手がかり。",
-                  "page": 1821
+                  "desc": "MAU と一緒に出てきたときの手がかり。"
                 }
               ]
             }
@@ -38434,7 +37023,7 @@ module.exports = {
         },
         {
           "id": "cvr",
-          "page": 1820,
+          "page": 533,
           "term": "コンバージョン率",
           "reading": "",
           "category": "IT業界のしくみ",
@@ -38490,13 +37079,11 @@ module.exports = {
               "items": [
                 {
                   "name": "PMF",
-                  "desc": "コンバージョン率 と一緒に出てきたときの手がかり。",
-                  "page": 1821
+                  "desc": "コンバージョン率 と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "DAU",
-                  "desc": "コンバージョン率 と一緒に出てきたときの手がかり。",
-                  "page": 1818
+                  "desc": "コンバージョン率 と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "計測",
@@ -38508,7 +37095,7 @@ module.exports = {
         },
         {
           "id": "pmf",
-          "page": 1821,
+          "page": 534,
           "term": "PMF",
           "reading": "ピーエムエフ",
           "category": "IT業界のしくみ",
@@ -38564,13 +37151,11 @@ module.exports = {
               "items": [
                 {
                   "name": "チャーン",
-                  "desc": "PMF と一緒に出てきたときの手がかり。",
-                  "page": 1814
+                  "desc": "PMF と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "MAU",
-                  "desc": "PMF と一緒に出てきたときの手がかり。",
-                  "page": 1819
+                  "desc": "PMF と一緒に出てきたときの手がかり。"
                 },
                 {
                   "name": "仮説検証",
