@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>JSON型や高度な検索機能など、機能の豊富さに定評があるオープンソースリレーショナルデータベース。</p>
+        <p>型や拡張が豊富で、標準SQLに忠実なオープンソースのリレーショナルデータベース。</p>
       </div>
     </div>
 
@@ -34,7 +34,7 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>複雑な検索条件や位置情報検索、柔軟なデータ型など、標準的なRDBの機能だけでは対応しづらい要件が出てきた。</p>
+          <p>Web系ではMySQLが定番になる一方、複雑な型・全文検索・位置情報など、標準的な表操作だけでは足りない要件が増えた。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,15 +45,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>MySQL一択だと思っていたが、要件によっては機能面で足りないことに気づいた。</p>
+        <p>オープンソースRDBとしてはMySQLが広く使われ、機能不足をアプリ側の工夫や別システムで補うことが多かった。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>MySQL</th><th class="h-docker">PostgreSQL</th></tr>
+            <tr><th></th><th>MySQL中心の構成</th><th class="h-docker">PostgreSQL</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">型の豊富さ</td><td>基本的な型が中心</td><td class="h-docker">JSON型・配列型なども扱える</td></tr>
-            <tr><td class="rowhead">拡張機能</td><td>標準機能が中心</td><td class="h-docker">全文検索・GIS対応</td></tr>
-            <tr><td class="rowhead">標準SQL準拠</td><td>独自拡張が多い</td><td class="h-docker">標準SQLに忠実で挙動が読みやすい</td></tr>
+            <tr><td class="rowhead">データ型</td><td>基本的な型が中心</td><td class="h-docker">JSON・配列など豊富な型を扱える</td></tr>
+            <tr><td class="rowhead">拡張</td><td>本体機能の範囲で賄うことが多い</td><td class="h-docker">全文検索・GISなどを拡張で足せる</td></tr>
+            <tr><td class="rowhead">SQLの振る舞い</td><td>独自拡張に寄りやすい</td><td class="h-docker">標準SQLに忠実で移植・学習がしやすい</td></tr>
           </tbody>
         </table>
       </div>
@@ -65,9 +65,9 @@
       <h2>PostgreSQL で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-database"/></svg><div class="cap">複雑なデータ構造も保存できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-puzzle"/></svg><div class="cap">拡張機能で高度な検索ができる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-book"/></svg><div class="cap">SQL標準準拠で挙動を追いやすい</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-database"/></svg><div class="cap">複雑なデータ構造もDB側で表現できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-puzzle"/></svg><div class="cap">拡張で高度な検索や分析に踏み込める</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-book"/></svg><div class="cap">標準SQL準拠で挙動を追いやすい</div></div>
         </div>
       </div>
     </section>
@@ -75,8 +75,7 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>「MySQLかPostgreSQLか」は宗教論争になりがちだが、<br>
-         実際はプロジェクトの要件（欲しい機能・チームの知見）で決めればいい話。</p>
+      <p>PostgreSQLは「MySQLの次に選ばれる高機能なOSS RDB」として広がった。先にあったのは商用RDBと、Web定番のMySQL。</p>
     </div>
 
   </div>
@@ -90,8 +89,15 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="mysql.html">MySQL</a></div>
-          <p class="kw-desc">情報量と実績の多さで選ばれることが多いRDB。</p>
+          <p class="kw-desc">Web用途で先に広く普及したOSS RDB。</p>
           <a class="kw-page" href="mysql.html">P.104</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="rdbms.html">RDBMS</a></div>
+          <p class="kw-desc">PostgreSQLもその一種である製品カテゴリ。</p>
+          <a class="kw-page" href="rdbms.html">P.82</a>
         </div>
       </div>
     </div>

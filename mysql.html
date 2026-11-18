@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>世界中の現場で長く使われてきた、実績重視のオープンソースリレーショナルデータベース。</p>
+        <p>Web時代に広がった、軽量で始めやすいオープンソースのリレーショナルデータベース。</p>
       </div>
     </div>
 
@@ -34,7 +34,7 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>新規プロジェクトでDBを選定する際、社内外に知見や情報が豊富で、トラブル時にも解決策を見つけやすい製品が求められた。</p>
+          <p>Webサイトや掲示板のような読み取り中心のサービスが増え、高額な商用DBではなく、手軽に立てて回せるRDBが必要になった。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,15 +45,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>DB選定を経験する前は、DBの違いを意識せず「なんとなく有名だから」で決めていた。</p>
+        <p>OracleやSQL Serverなどの商用RDBが主流で、ライセンス費用や導入・運用の重さが、小規模なWeb用途には負担だった。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>なんとなく選ぶ</th><th class="h-docker">理由を言語化して選ぶ</th></tr>
+            <tr><th></th><th>商用RDB（Oracleなど）</th><th class="h-docker">MySQL</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">情報量・実績</td><td>意識していなかった</td><td class="h-docker">困ったときの情報が見つかりやすい</td></tr>
-            <tr><td class="rowhead">提供環境の多さ</td><td>意識していなかった</td><td class="h-docker">クラウド・レンタルサーバーで広くサポート</td></tr>
-            <tr><td class="rowhead">機能の豊富さ</td><td>意識していなかった</td><td class="h-docker">基本機能は十分そろっている</td></tr>
+            <tr><td class="rowhead">費用</td><td>高額なライセンスが前提</td><td class="h-docker">オープンソースで始められる</td></tr>
+            <tr><td class="rowhead">導入・運用</td><td>専任や重いセットアップが必要になりやすい</td><td class="h-docker">軽く立ててすぐ使える</td></tr>
+            <tr><td class="rowhead">広がった理由</td><td>基幹システム向けの高機能・信頼性</td><td class="h-docker">LAMP構成でWeb開発に乗りやすかった</td></tr>
           </tbody>
         </table>
       </div>
@@ -65,9 +65,9 @@
       <h2>MySQL で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-search"/></svg><div class="cap">困ったときの情報が見つかりやすい</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-globe"/></svg><div class="cap">幅広い環境でサポートされている</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-shield"/></svg><div class="cap">中〜大規模まで実績で安心できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-rocket"/></svg><div class="cap">低コストでRDBを使い始められる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-globe"/></svg><div class="cap">レンタルサーバーやクラウドで扱いやすい</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-users"/></svg><div class="cap">Web開発の定番として知見が溜まりやすい</div></div>
         </div>
       </div>
     </section>
@@ -75,8 +75,7 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>MySQLは「みんな使っているから安心」を選定理由にできる数少ない技術。<br>
-         とはいえPostgreSQLとの機能差は年々縮まっているので、都度比較する癖はつけておきたい。</p>
+      <p>MySQLの前にはOracleなどの商用RDBがあった。安く・軽く・Webに載せやすい点が、LAMP時代の普及につながった。</p>
     </div>
 
   </div>
@@ -90,15 +89,22 @@
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="postgresql.html">PostgreSQL</a></div>
-          <p class="kw-desc">機能の豊富さで選ばれることが多いRDB。</p>
+          <p class="kw-desc">機能や標準SQL準拠で選ばれることが多いRDB。</p>
           <a class="kw-page" href="postgresql.html">P.105</a>
         </div>
       </div>
       <div class="kw kw-linked">
         <div>
           <div class="kw-name"><a class="kw-link" href="sqlite.html">SQLite</a></div>
-          <p class="kw-desc">サーバー不要で、小規模用途に向くRDB。</p>
+          <p class="kw-desc">サーバー不要の、さらに軽いRDB。</p>
           <a class="kw-page" href="sqlite.html">P.106</a>
+        </div>
+      </div>
+      <div class="kw kw-linked">
+        <div>
+          <div class="kw-name"><a class="kw-link" href="rdbms.html">RDBMS</a></div>
+          <p class="kw-desc">MySQLもその一種である製品カテゴリ。</p>
+          <a class="kw-page" href="rdbms.html">P.82</a>
         </div>
       </div>
     </div>
