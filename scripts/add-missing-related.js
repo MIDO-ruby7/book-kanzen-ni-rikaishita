@@ -608,7 +608,7 @@ const ch1Extras = [
       { icon: 'ic-check', cap: '貢献の受け入れ窓口になる' },
       { icon: 'ic-gear', cap: 'リリースや方針を継続できる' },
     ],
-    memo: 'メンテナーは「偉い人」というより、世話を焼く人。\nIssue対応も立派なメンテ業務。',
+    memo: 'マージ権限やリリース判断を担う運営役。Issue対応やレビューも日常の仕事に含まれる。',
     sidebar_groups: related([
       { name: 'OSS', desc: 'メンテナーが支える対象。' },
       { name: 'コントリビュート', desc: 'メンテナーがレビューする側。' },

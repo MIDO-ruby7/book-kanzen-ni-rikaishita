@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>今エディタで触っている、実際のファイルの状態（作業ディレクトリ）のこと。</p>
+        <p>Gitリポジトリの中で、いま実際に編集しているファイル群のこと。作業ディレクトリとも呼ばれる。</p>
       </div>
     </div>
 
@@ -34,7 +34,7 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>「コミットした内容」と「今ディスク上にあるファイル」がズレると、何を保存したのか分からなくなる。</p>
+          <p>履歴として確定した内容と、いま手元で直している内容を分けて扱わないと、「どれが最新の作業中か」が分からなくなる。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,16 +45,16 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>保存＝確定、の感覚だけで進めていた。</p>
+        <p>ファイルを上書き保存した時点で「確定」と考え、履歴と作業中の区別がなかった。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>ファイル＝真実</th><th class="h-docker">Working Tree</th></tr>
+            <tr><th></th><th>上書き保存だけ</th><th class="h-docker">Working Tree</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">今の状態</td><td>開いているファイル</td><td class="h-docker">作業ツリーとして区別する</td></tr>
-            <tr><td class="rowhead">確定前</td><td>上書き保存のみ</td><td class="h-docker">ステージやコミットと分離</td></tr>
-            <tr><td class="rowhead">戻す</td><td>バックアップ頼み</td><td class="h-docker">checkoutやrestoreで戻せる</td></tr>
-            <tr><td class="rowhead">差分</td><td>目視</td><td class="h-docker">作業ツリーとHEADのdiff</td></tr>
+            <tr><td class="rowhead">指すもの</td><td>いま開いているファイル全般</td><td class="h-docker">リポジトリ内の作業中ファイル群</td></tr>
+            <tr><td class="rowhead">確定との関係</td><td>保存＝確定に近い感覚</td><td class="h-docker">まだコミットしていない状態も含む</td></tr>
+            <tr><td class="rowhead">変更の扱い</td><td>バックアップで戻す</td><td class="h-docker">差分を見て戻せる</td></tr>
+            <tr><td class="rowhead">位置づけ</td><td>ファイル＝すべて</td><td class="h-docker">履歴・ステージの手前の層</td></tr>
           </tbody>
         </table>
       </div>
@@ -66,9 +66,9 @@
       <h2>Working Tree で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-laptop"/></svg><div class="cap">今の作業状態を言葉にできる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-file"/></svg><div class="cap">未コミット変更の居場所が分かる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-undo"/></svg><div class="cap">作業中の変更だけ戻せる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-laptop"/></svg><div class="cap">いま触っているファイル群を指せる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-file"/></svg><div class="cap">未コミットの変更がある場所が分かる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-undo"/></svg><div class="cap">作業中の変更だけ取り消せる</div></div>
         </div>
       </div>
     </section>
@@ -76,7 +76,7 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>Working Tree / Staging Area / Repository（コミット履歴）の三段が分かると、Gitが急に読みやすくなる。</p>
+      <p>Working Tree（作業中）→ Staging Area（仮置き）→ Commit（確定）の順で覚えると分かりやすい。</p>
     </div>
 
   </div>
