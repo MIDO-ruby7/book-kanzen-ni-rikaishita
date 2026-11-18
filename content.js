@@ -3328,8 +3328,70 @@ module.exports = {
           ]
         },
         {
-          "id": "ip-address",
+          "id": "slug",
           "page": 47,
+          "term": "slug",
+          "reading": "スラッグ",
+          "category": "URL",
+          "icon": "ic-pen",
+          "oneline": "記事やページを識別するために使う、URLに埋め込める短い文字列（例: /posts/how-to-use-docker）。",
+          "q1_text": "記事やページのURLを数字のIDだけで構成すると、人間にもクローラーにも内容が伝わらず、検索結果での見え方にも不利だった。",
+          "q2_intro": "IDだけをURLに使っていると、人間にもクローラーにもそのページの中身が伝わらない。",
+          "q2_table": {
+            "col_before": "IDだけのURL",
+            "col_after": "slugを使ったURL",
+            "rows": [
+              [
+                "見た目",
+                "/posts/1024",
+                "/posts/how-to-use-docker"
+              ],
+              [
+                "人への伝わり方",
+                "中身が推測できない",
+                "タイトルの内容が一目で分かる"
+              ],
+              [
+                "SEOへの影響",
+                "キーワードが含まれない",
+                "URLにもキーワードが含まれる"
+              ]
+            ]
+          },
+          "q3_cells": [
+            {
+              "icon": "ic-eye",
+              "cap": "URLに人が読める文字列を埋め込める"
+            },
+            {
+              "icon": "ic-tag",
+              "cap": "ページや記事をURLで識別できる"
+            },
+            {
+              "icon": "ic-chart",
+              "cap": "SEOやシェア時の見た目が改善する"
+            }
+          ],
+          "memo": "slugは基本的に「小文字・半角英数・ハイフン区切り」で作るのが定番。\n日本語タイトルをそのままslugにするとURLが読みにくくなるため、英訳やローマ字化して使うことが多い。",
+          "sidebar_groups": [
+            {
+              "label": "関連する語",
+              "items": [
+                {
+                  "name": "Domain",
+                  "desc": "ホスト名の読みやすい名前。slugはパス側の読みやすい識別子。"
+                },
+                {
+                  "name": "Endpoint",
+                  "desc": "APIのURLにslugが含まれることもある。"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ip-address",
+          "page": 48,
           "term": "IP Address",
           "reading": "アイピーアドレス",
           "category": "名前解決",
@@ -3395,7 +3457,7 @@ module.exports = {
         },
         {
           "id": "port",
-          "page": 48,
+          "page": 49,
           "term": "Port",
           "reading": "ポート",
           "category": "名前解決",
@@ -3457,7 +3519,7 @@ module.exports = {
         },
         {
           "id": "cookie",
-          "page": 49,
+          "page": 50,
           "term": "Cookie",
           "reading": "クッキー",
           "category": "状態管理・認証",
@@ -3519,7 +3581,7 @@ module.exports = {
         },
         {
           "id": "session",
-          "page": 50,
+          "page": 51,
           "term": "Session",
           "reading": "セッション",
           "category": "状態管理・認証",
@@ -3581,7 +3643,7 @@ module.exports = {
         },
         {
           "id": "jwt",
-          "page": 51,
+          "page": 52,
           "term": "JWT",
           "reading": "ジェイダブリューティー",
           "category": "状態管理・認証",
@@ -3647,7 +3709,7 @@ module.exports = {
         },
         {
           "id": "header",
-          "page": 52,
+          "page": 53,
           "term": "Header",
           "reading": "ヘッダー",
           "category": "HTTP通信",
@@ -3709,7 +3771,7 @@ module.exports = {
         },
         {
           "id": "tcp",
-          "page": 53,
+          "page": 54,
           "term": "TCP",
           "reading": "ティーシーピー",
           "category": "トランスポート層",
@@ -3776,7 +3838,7 @@ module.exports = {
         },
         {
           "id": "udp",
-          "page": 54,
+          "page": 55,
           "term": "UDP",
           "reading": "ユーディーピー",
           "category": "トランスポート層",
@@ -3834,7 +3896,7 @@ module.exports = {
         },
         {
           "id": "tls",
-          "page": 55,
+          "page": 56,
           "term": "TLS",
           "reading": "ティーエルエス",
           "category": "暗号化・証明書",
@@ -3900,7 +3962,7 @@ module.exports = {
         },
         {
           "id": "ssl-certificate",
-          "page": 56,
+          "page": 57,
           "term": "SSL証明書",
           "reading": "エスエスエルしょうめいしょ",
           "category": "暗号化・証明書",
@@ -3962,7 +4024,7 @@ module.exports = {
         },
         {
           "id": "lets-encrypt",
-          "page": 57,
+          "page": 58,
           "term": "Let's Encrypt",
           "reading": "レッツエンクリプト",
           "category": "暗号化・証明書",
@@ -4024,7 +4086,7 @@ module.exports = {
         },
         {
           "id": "vpn",
-          "page": 58,
+          "page": 59,
           "term": "VPN",
           "reading": "ブイピーエヌ",
           "category": "ネットワーク構成",
@@ -4086,7 +4148,7 @@ module.exports = {
         },
         {
           "id": "nat",
-          "page": 59,
+          "page": 60,
           "term": "NAT",
           "reading": "ナット",
           "category": "ネットワーク構成",
@@ -4148,7 +4210,7 @@ module.exports = {
         },
         {
           "id": "subnet",
-          "page": 60,
+          "page": 61,
           "term": "Subnet",
           "category": "ネットワーク構成",
           "icon": "ic-layers",
@@ -4210,7 +4272,7 @@ module.exports = {
         },
         {
           "id": "proxy",
-          "page": 61,
+          "page": 62,
           "term": "Proxy",
           "compact": true,
           "reading": "プロキシ",
@@ -4282,7 +4344,7 @@ module.exports = {
         },
         {
           "id": "intranet",
-          "page": 62,
+          "page": 63,
           "term": "イントラネット",
           "category": "ネットワーク構成",
           "icon": "ic-network",
@@ -4354,7 +4416,7 @@ module.exports = {
       "entries": [
         {
           "id": "json",
-          "page": 63,
+          "page": 64,
           "term": "JSON",
           "reading": "ジェイソン",
           "category": "データフォーマット",
@@ -4425,7 +4487,7 @@ module.exports = {
         },
         {
           "id": "yaml",
-          "page": 64,
+          "page": 65,
           "term": "YAML",
           "reading": "ヤムル",
           "category": "データフォーマット",
@@ -4487,7 +4549,7 @@ module.exports = {
         },
         {
           "id": "toml",
-          "page": 65,
+          "page": 66,
           "term": "TOML",
           "reading": "トムル",
           "category": "データフォーマット",
@@ -4549,7 +4611,7 @@ module.exports = {
         },
         {
           "id": "xml",
-          "page": 66,
+          "page": 67,
           "term": "XML",
           "reading": "エックスエムエル",
           "category": "データフォーマット",
@@ -4611,7 +4673,7 @@ module.exports = {
         },
         {
           "id": "csv",
-          "page": 67,
+          "page": 68,
           "term": "CSV",
           "reading": "シーエスブイ",
           "category": "データフォーマット",
@@ -4669,7 +4731,7 @@ module.exports = {
         },
         {
           "id": "schema",
-          "page": 68,
+          "page": 69,
           "term": "Schema",
           "category": "データフォーマット",
           "icon": "ic-scale",
@@ -4737,7 +4799,7 @@ module.exports = {
       "entries": [
         {
           "id": "api",
-          "page": 69,
+          "page": 70,
           "term": "API",
           "reading": "エーピーアイ",
           "category": "API",
@@ -4803,7 +4865,7 @@ module.exports = {
         },
         {
           "id": "endpoint",
-          "page": 70,
+          "page": 71,
           "term": "Endpoint",
           "reading": "エンドポイント",
           "category": "API",
@@ -4869,7 +4931,7 @@ module.exports = {
         },
         {
           "id": "rest",
-          "page": 71,
+          "page": 72,
           "term": "REST",
           "reading": "レスト",
           "category": "API",
@@ -4940,7 +5002,7 @@ module.exports = {
         },
         {
           "id": "graphql",
-          "page": 72,
+          "page": 73,
           "term": "GraphQL",
           "reading": "グラフキューエル",
           "category": "API",
@@ -5007,7 +5069,7 @@ module.exports = {
         },
         {
           "id": "openapi",
-          "page": 73,
+          "page": 74,
           "term": "OpenAPI",
           "reading": "オープンエーピーアイ",
           "category": "API",
@@ -5069,7 +5131,7 @@ module.exports = {
         },
         {
           "id": "status_code",
-          "page": 74,
+          "page": 75,
           "term": "Status Code",
           "reading": "ステータスコード",
           "category": "API",
@@ -5120,64 +5182,6 @@ module.exports = {
                 {
                   "name": "REST",
                   "desc": "Status CodeはREST APIのレスポンスで結果を伝える手段。"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "slug",
-          "page": 75,
-          "term": "slug",
-          "reading": "スラッグ",
-          "category": "API",
-          "icon": "ic-pen",
-          "oneline": "記事やページを識別するために使う、URLに埋め込める短い文字列（例: /posts/how-to-use-docker）。",
-          "q1_text": "記事やページのURLを数字のIDだけで構成すると、人間にもクローラーにも内容が伝わらず、検索結果での見え方にも不利だった。",
-          "q2_intro": "IDだけをURLに使っていると、人間にもクローラーにもそのページの中身が伝わらない。",
-          "q2_table": {
-            "col_before": "IDだけのURL",
-            "col_after": "slugを使ったURL",
-            "rows": [
-              [
-                "見た目",
-                "/posts/1024",
-                "/posts/how-to-use-docker"
-              ],
-              [
-                "人への伝わり方",
-                "中身が推測できない",
-                "タイトルの内容が一目で分かる"
-              ],
-              [
-                "SEOへの影響",
-                "キーワードが含まれない",
-                "URLにもキーワードが含まれる"
-              ]
-            ]
-          },
-          "q3_cells": [
-            {
-              "icon": "ic-eye",
-              "cap": "URLに人が読める文字列を埋め込める"
-            },
-            {
-              "icon": "ic-tag",
-              "cap": "Endpointの一部として識別子に使える"
-            },
-            {
-              "icon": "ic-chart",
-              "cap": "SEOやシェア時の見た目が改善する"
-            }
-          ],
-          "memo": "slugは基本的に「小文字・半角英数・ハイフン区切り」で作るのが定番。\n日本語タイトルをそのままslugにするとURLが読みにくくなるため、英訳やローマ字化して使うことが多い。",
-          "sidebar_groups": [
-            {
-              "label": "関連する語",
-              "items": [
-                {
-                  "name": "Endpoint",
-                  "desc": "slugはエンドポイントのURLの一部として使われることが多い。"
                 }
               ]
             }
