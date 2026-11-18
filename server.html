@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>クライアントからの要求（リクエスト）を受け取り、処理して結果を返す側のプログラムや機械。</p>
+        <p>依頼を受け取り、処理して結果を返す側のプログラムやコンピュータ。WebサーバーやAPIサーバーなどが典型。</p>
       </div>
     </div>
 
@@ -34,7 +34,7 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>1台のマシンの中で要求を受け付ける役割と処理する役割が混在していると、負荷が集中した際にどこがボトルネックかを切り分けにくかった。</p>
+          <p>同じ処理や同じデータを、複数の端末から共通して使いたい需要が増えた。待ち受けて応答する側が必要になった。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,15 +45,16 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>「重い処理をしてくれる場所」という程度の理解にとどまり、担うべき役割が明確に定義されていなかった。</p>
+        <p>各端末のアプリが、それぞれ独自にデータや処理を持っていた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>ふわっとした理解</th><th class="h-docker">サーバーの役割で理解</th></tr>
+            <tr><th></th><th>端末ごとの完結</th><th class="h-docker">Server</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">正体</td><td>ブラックボックス</td><td class="h-docker">要求に応えるプログラム</td></tr>
-            <tr><td class="rowhead">形</td><td>1台の機械だと思い込む</td><td class="h-docker">クラウド上の仮想サーバーのことも多い</td></tr>
-            <tr><td class="rowhead">落ちる原因</td><td>わからず終い</td><td class="h-docker">プロセス停止・資源枯渇などに絞れる</td></tr>
+            <tr><td class="rowhead">役割</td><td>端末内で全部処理</td><td class="h-docker">依頼を受けて処理・応答する</td></tr>
+            <tr><td class="rowhead">実体</td><td>手元のアプリ</td><td class="h-docker">常時動くプログラム／マシン</td></tr>
+            <tr><td class="rowhead">利用者</td><td>自分一人向け</td><td class="h-docker">複数クライアントから同時利用</td></tr>
+            <tr><td class="rowhead">配置</td><td>端末の中</td><td class="h-docker">データセンターやクラウド上も多い</td></tr>
           </tbody>
         </table>
       </div>
@@ -65,9 +66,9 @@
       <h2>Server で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-server"/></svg><div class="cap">リクエストを受け取って処理できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-users"/></svg><div class="cap">複数クライアントに同時対応できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-cloud"/></svg><div class="cap">クラウド上でも同じ役割を果たせる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-server"/></svg><div class="cap">リクエストを受けて処理できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-users"/></svg><div class="cap">複数のクライアントに同時対応できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-cloud"/></svg><div class="cap">共通のデータや処理を一か所に置ける</div></div>
         </div>
       </div>
     </section>
@@ -75,8 +76,7 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>サーバーは「場所」ではなく「役割」。<br>
-         同じマシンでも、動かすプログラム次第でクライアントにもサーバーにもなれると知って霧が晴れた。</p>
+      <p>サーバーは「場所の名前」だけでなく「依頼に応える役割」も指す。同じマシンでも、動かすプログラム次第でクライアントにもサーバーにもなる。</p>
     </div>
 
   </div>

@@ -48,12 +48,12 @@
         <p>接続する機器1台ごとに個別のグローバルIPアドレスを割り当てる前提で運用されていた。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>1台1グローバルIPだと思う頃</th><th class="h-docker">NATとして理解</th></tr>
+            <tr><th></th><th>1台ごとにグローバルIP</th><th class="h-docker">NAT</th></tr>
           </thead>
           <tbody>
             <tr><td class="rowhead">IPの割り当て</td><td>機器ごとに別のグローバルIPが必要</td><td class="h-docker">内側はプライベートIP、外は共通IP</td></tr>
-            <tr><td class="rowhead">IPアドレス不足</td><td>特に意識しない</td><td class="h-docker">限られたグローバルIPを節約できる</td></tr>
-            <tr><td class="rowhead">見え方</td><td>各機器が別々に見えると思う</td><td class="h-docker">外からは同じ1つのIPに見える</td></tr>
+            <tr><td class="rowhead">IPアドレス不足</td><td>台数分のグローバルIPが必要</td><td class="h-docker">限られたグローバルIPを節約できる</td></tr>
+            <tr><td class="rowhead">見え方</td><td>各機器が別々に見える</td><td class="h-docker">外からは同じ1つのIPに見える</td></tr>
           </tbody>
         </table>
       </div>

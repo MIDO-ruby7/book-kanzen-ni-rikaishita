@@ -45,15 +45,15 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>宛先がIPアドレスだけだと、1台のマシンで複数のサービスを動かしても、どのサービス宛か区別できなかった。</p>
+        <p>宛先がIPアドレスだけだと、1台のマシンで複数のサービスを動かしても、どのサービス宛かを区別できなかった。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>ポートを意識しない頃</th><th class="h-docker">ポートとして理解</th></tr>
+            <tr><th></th><th>IPアドレスだけで宛先指定</th><th class="h-docker">Port</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">宛先の指定</td><td>IPアドレスだけで届くと思う</td><td class="h-docker">IPアドレス＋ポート番号で届く</td></tr>
-            <tr><td class="rowhead">複数サービス</td><td>1台1サービスだと思う</td><td class="h-docker">同じ機械で複数サービスを同時待受</td></tr>
-            <tr><td class="rowhead">トラブル対応</td><td>原因不明</td><td class="h-docker">ポート番号の衝突・未開放に気づける</td></tr>
+            <tr><td class="rowhead">宛先の指定</td><td>IPアドレスだけ</td><td class="h-docker">IPアドレス＋ポート番号</td></tr>
+            <tr><td class="rowhead">複数サービス</td><td>1台につき1サービスが前提</td><td class="h-docker">同じ機械で複数サービスを同時待受</td></tr>
+            <tr><td class="rowhead">トラブル対応</td><td>原因を特定しにくい</td><td class="h-docker">ポート番号の衝突・未開放を切り分けられる</td></tr>
           </tbody>
         </table>
       </div>

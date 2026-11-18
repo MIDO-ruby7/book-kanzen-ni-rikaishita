@@ -24,7 +24,7 @@
     <div class="head-lower">
       <div class="oneline">
         <div class="lbl">ひとことでいうと</div>
-        <p>サーバーに要求（リクエスト）を送る側。ブラウザやスマホアプリなど、ユーザーが直接操作するプログラムのこと。</p>
+        <p>相手に「処理して」と頼む側のプログラム。ブラウザ、スマホアプリ、コマンドラインツールなどが典型。</p>
       </div>
     </div>
 
@@ -34,7 +34,7 @@
       <h2>なぜ生まれた？</h2>
       <div class="body">
         <div class="with-fig">
-          <p>アプリケーションを「要求する側」と「処理する側」に分けずに設計すると、機能が増えるほど役割の境界があいまいになり、どこで何を処理しているかを追いにくくなっていた。</p>
+          <p>計算やデータ保管を全部手元で抱えると、端末の性能や更新の手間がボトルネックになる。必要な処理だけ外部に頼む形が求められた。</p>
           <span class="fig"><svg><use href="icons.svg#ic-scribble"/></svg></span>
         </div>
       </div>
@@ -45,15 +45,16 @@
       <span class="badge">2</span>
       <h2>それまでどうしていた？</h2>
       <div class="body">
-        <p>システムを役割分担のない一枚岩として扱い、要求する部分と応答する部分を明確に区別していなかった。</p>
+        <p>アプリが自分の中で表示も計算もデータも完結させる作りが多かった。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>区別しない頃</th><th class="h-docker">クライアント/サーバーで理解</th></tr>
+            <tr><th></th><th>全部自分でやるアプリ</th><th class="h-docker">Client</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">見え方</td><td>システム全体がひとかたまり</td><td class="h-docker">要求する側＝クライアントと分かる</td></tr>
-            <tr><td class="rowhead">実体</td><td>漠然としたイメージ</td><td class="h-docker">ブラウザ・アプリ・CLIなど具体的な形</td></tr>
-            <tr><td class="rowhead">役割</td><td>切り分けられない</td><td class="h-docker">表示・入力・要求の送信を担当</td></tr>
+            <tr><td class="rowhead">役割</td><td>表示も処理も自分持ち</td><td class="h-docker">表示・入力・依頼の送信が中心</td></tr>
+            <tr><td class="rowhead">実体</td><td>単体ソフト</td><td class="h-docker">ブラウザやアプリなど</td></tr>
+            <tr><td class="rowhead">通信</td><td>必須ではない</td><td class="h-docker">サーバーへリクエストを送る</td></tr>
+            <tr><td class="rowhead">更新</td><td>端末ごとに入れ直す</td><td class="h-docker">サーバー側の変更を受け取れる</td></tr>
           </tbody>
         </table>
       </div>
@@ -65,9 +66,9 @@
       <h2>Client で何ができるようになった？</h2>
       <div class="body">
         <div class="trio">
-          <div class="cell"><svg><use href="icons.svg#ic-monitor"/></svg><div class="cap">画面の表示や入力を担当できる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-send"/></svg><div class="cap">サーバーに要求を送れる</div></div>
-          <div class="cell"><svg><use href="icons.svg#ic-split"/></svg><div class="cap">サーバーとの役割分担を説明できる</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-monitor"/></svg><div class="cap">画面表示と入力を担当する</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-send"/></svg><div class="cap">サーバーへリクエストを送る</div></div>
+          <div class="cell"><svg><use href="icons.svg#ic-split"/></svg><div class="cap">処理の重い部分を外部に任せられる</div></div>
         </div>
       </div>
     </section>
@@ -75,8 +76,7 @@
     <!-- ひとことメモ -->
     <div class="memo">
       <div class="lbl"><svg><use href="icons.svg#ic-pen"/></svg>ひとことメモ</div>
-      <p>クライアントは「使う人」ではなく「要求するプログラム」。<br>
-         人間ではなくブラウザやアプリを指すと知ってから、先輩との会話がかみ合うようになった。</p>
+      <p>「クライアント＝利用者本人」ではなく、利用者が操作するプログラムを指すことが多い。</p>
     </div>
 
   </div>

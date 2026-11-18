@@ -48,12 +48,12 @@
         <p>データを送りっぱなしにしており、途中で欠落したり順序が入れ替わったりしても検知・再送する手段がなかった。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>確認する仕組みを知らない頃</th><th class="h-docker">TCPとして理解</th></tr>
+            <tr><th></th><th>送りっぱなしの通信</th><th class="h-docker">TCP</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">届いたかの確認</td><td>考えたことがない</td><td class="h-docker">受信確認（ACK）をしながら通信する</td></tr>
-            <tr><td class="rowhead">順序</td><td>気にしていない</td><td class="h-docker">送った順番通りに届くよう保証する</td></tr>
-            <tr><td class="rowhead">速度と引き換えに</td><td>特に意識しない</td><td class="h-docker">確認作業がある分、UDPより多少遅い</td></tr>
+            <tr><td class="rowhead">届いたかの確認</td><td>確認しない</td><td class="h-docker">受信確認（ACK）をしながら通信する</td></tr>
+            <tr><td class="rowhead">順序</td><td>到着順の保証なし</td><td class="h-docker">送った順番通りに届くよう保証する</td></tr>
+            <tr><td class="rowhead">速度との関係</td><td>確認なしで軽い</td><td class="h-docker">確認がある分、UDPより多少遅い</td></tr>
           </tbody>
         </table>
       </div>
