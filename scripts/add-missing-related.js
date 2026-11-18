@@ -95,7 +95,7 @@ const ch1Extras = [
       { icon: 'ic-file', cap: '未コミット変更の居場所が分かる' },
       { icon: 'ic-undo', cap: '作業中の変更だけ戻せる' },
     ],
-    memo: 'Working Tree / Staging Area / Repository（コミット履歴）の三段が分かると、Gitが急に読みやすくなる。',
+    memo: 'Working Tree（作業中）→ Staging Area（仮置き）→ Commit（確定）の順で覚えると分かりやすい。',
     sidebar_groups: related([
       { name: 'Staging Area', desc: 'コミット直前の仮置き場。' },
       { name: 'Commit', desc: '確定した履歴の単位。' },
@@ -608,7 +608,7 @@ const ch1Extras = [
       { icon: 'ic-check', cap: '貢献の受け入れ窓口になる' },
       { icon: 'ic-gear', cap: 'リリースや方針を継続できる' },
     ],
-    memo: 'メンテナーは「偉い人」というより、世話を焼く人。\nIssue対応も立派なメンテ業務。',
+    memo: 'マージ権限やリリース判断を担う運営役。Issue対応やレビューも日常の仕事に含まれる。',
     sidebar_groups: related([
       { name: 'OSS', desc: 'メンテナーが支える対象。' },
       { name: 'コントリビュート', desc: 'メンテナーがレビューする側。' },

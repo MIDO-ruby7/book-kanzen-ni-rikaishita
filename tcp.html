@@ -7,7 +7,7 @@
 </head>
 <body>
 
-<article class="entry recto">
+<article class="entry verso">
 
   <!-- ===== 本文 ===== -->
   <div class="main">
@@ -15,7 +15,7 @@
     <div class="chapter"><b>Chapter 2</b>Webのしくみ</div>
 
     <div class="title-row">
-      <div class="num-col"><div class="number">53</div></div>
+      <div class="num-col"><div class="number">54</div></div>
       <div class="titles">
         <h1><ruby>TCP<rt>ティーシーピー</rt></ruby></h1>
       </div>
@@ -48,12 +48,12 @@
         <p>データを送りっぱなしにしており、途中で欠落したり順序が入れ替わったりしても検知・再送する手段がなかった。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>確認する仕組みを知らない頃</th><th class="h-docker">TCPとして理解</th></tr>
+            <tr><th></th><th>送りっぱなしの通信</th><th class="h-docker">TCP</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">届いたかの確認</td><td>考えたことがない</td><td class="h-docker">受信確認（ACK）をしながら通信する</td></tr>
-            <tr><td class="rowhead">順序</td><td>気にしていない</td><td class="h-docker">送った順番通りに届くよう保証する</td></tr>
-            <tr><td class="rowhead">速度と引き換えに</td><td>特に意識しない</td><td class="h-docker">確認作業がある分、UDPより多少遅い</td></tr>
+            <tr><td class="rowhead">届いたかの確認</td><td>確認しない</td><td class="h-docker">受信確認（ACK）をしながら通信する</td></tr>
+            <tr><td class="rowhead">順序</td><td>到着順の保証なし</td><td class="h-docker">送った順番通りに届くよう保証する</td></tr>
+            <tr><td class="rowhead">速度との関係</td><td>確認なしで軽い</td><td class="h-docker">確認がある分、UDPより多少遅い</td></tr>
           </tbody>
         </table>
       </div>
@@ -91,7 +91,7 @@
         <div>
           <div class="kw-name"><a class="kw-link" href="udp.html">UDP</a></div>
           <p class="kw-desc">確認を取らず、とにかく速さを優先するプロトコル。</p>
-          <a class="kw-page" href="udp.html">P.54</a>
+          <a class="kw-page" href="udp.html">P.55</a>
         </div>
       </div>
     </div>
@@ -100,7 +100,7 @@
         <div>
           <div class="kw-name"><a class="kw-link" href="port.html">Port</a></div>
           <p class="kw-desc">TCPが通信相手のアプリを特定するために使う番号。</p>
-          <a class="kw-page" href="port.html">P.48</a>
+          <a class="kw-page" href="port.html">P.49</a>
         </div>
       </div>
     </div>
@@ -108,7 +108,7 @@
 
   <!-- ===== フッター ===== -->
   <footer class="page-foot">
-    <span class="folio">53</span>
+    <span class="folio">54</span>
     <span>エンジニア用語辞典</span>
   </footer>
 

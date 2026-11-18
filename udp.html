@@ -7,7 +7,7 @@
 </head>
 <body>
 
-<article class="entry verso">
+<article class="entry recto">
 
   <!-- ===== 本文 ===== -->
   <div class="main">
@@ -15,7 +15,7 @@
     <div class="chapter"><b>Chapter 2</b>Webのしくみ</div>
 
     <div class="title-row">
-      <div class="num-col"><div class="number">54</div></div>
+      <div class="num-col"><div class="number">55</div></div>
       <div class="titles">
         <h1><ruby>UDP<rt>ユーディーピー</rt></ruby></h1>
       </div>
@@ -48,12 +48,12 @@
         <p>TCPのように確認応答を取りながら通信しており、リアルタイム性が求められる用途では確認のオーバーヘッドが遅延として無視できなかった。</p>
         <table class="cmp">
           <thead>
-            <tr><th></th><th>TCPの発想しか知らない頃</th><th class="h-docker">UDPとして理解</th></tr>
+            <tr><th></th><th>必ず確認しながら送る</th><th class="h-docker">UDP</th></tr>
           </thead>
           <tbody>
-            <tr><td class="rowhead">届いたかの確認</td><td>必ず確認するものだと思う</td><td class="h-docker">確認せず送りっぱなしにできる</td></tr>
-            <tr><td class="rowhead">速度</td><td>確認作業の分、多少遅れると思う</td><td class="h-docker">確認がない分、遅延が小さい</td></tr>
-            <tr><td class="rowhead">向いている場面</td><td>特に区別しない</td><td class="h-docker">動画配信・通話・ゲームなど</td></tr>
+            <tr><td class="rowhead">届いたかの確認</td><td>必ず確認する</td><td class="h-docker">確認せず送りっぱなしにできる</td></tr>
+            <tr><td class="rowhead">速度</td><td>確認の分だけ遅れる</td><td class="h-docker">確認がない分、遅延が小さい</td></tr>
+            <tr><td class="rowhead">向いている場面</td><td>信頼性優先の通信全般</td><td class="h-docker">動画配信・通話・ゲームなど</td></tr>
           </tbody>
         </table>
       </div>
@@ -91,7 +91,7 @@
         <div>
           <div class="kw-name"><a class="kw-link" href="tcp.html">TCP</a></div>
           <p class="kw-desc">確認を取りながら確実に届けるプロトコル。</p>
-          <a class="kw-page" href="tcp.html">P.53</a>
+          <a class="kw-page" href="tcp.html">P.54</a>
         </div>
       </div>
     </div>
@@ -99,7 +99,7 @@
 
   <!-- ===== フッター ===== -->
   <footer class="page-foot">
-    <span class="folio">54</span>
+    <span class="folio">55</span>
     <span>エンジニア用語辞典</span>
   </footer>
 
