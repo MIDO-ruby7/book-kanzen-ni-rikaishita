@@ -173,7 +173,7 @@ module.exports = {
     'php.html',                        // 164 PHP (Ch8)
     'java.html',                       // 165 Java (Ch8)
     'rust.html',                       // 166 Rust (Ch8)
-    'rails.html',                      // 167 Rails (Ch8)
+    'rails.html',                      // 167 Ruby on Rails (Ch8)
     'express.html',                    // 168 Express (Ch8)
     'hono.html',                       // 169 Hono (Ch8)
     'django.html',                     // 170 Django (Ch8)

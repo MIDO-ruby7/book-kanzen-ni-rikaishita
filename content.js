@@ -10749,7 +10749,7 @@ module.exports = {
               "label": "関連する技術",
               "items": [
                 {
-                  "name": "Rails",
+                  "name": "Ruby on Rails",
                   "desc": "RubyのWebフレームワーク。設定より規約の思想で作られている。"
                 }
               ]
@@ -11127,16 +11127,16 @@ module.exports = {
         {
           "id": "rails",
           "page": 167,
-          "term": "Rails",
-          "reading": "レイルズ",
+          "term": "Ruby on Rails",
+          "reading": "ルビーオンレイルズ",
           "category": "Webフレームワーク",
           "icon": "ic-server",
-          "oneline": "Ruby製のWebフレームワーク。「設定より規約（CoC）」の思想で、少ないコードでWebアプリを組み立てられる。",
+          "oneline": "Rubyで書かれたWebアプリケーションフレームワーク。「設定より規約（CoC）」の思想で、少ないコードからWebアプリを組み立てられる。",
           "q1_text": "Webアプリを作るたびに、ルーティングやDB接続など同じような設定を毎回書く必要があった。\nこの繰り返しをなくすため、DHH（デイビッド・ハイネマイヤー・ハンソン）がRubyの表現力を活かして開発した。",
           "q2_intro": "それまでのWebアプリ開発では、フレームワークごとに細かい設定ファイルを書き、命名やディレクトリ構成も一から決める必要があった。",
           "q2_table": {
             "col_before": "設定ベースのフレームワーク",
-            "col_after": "Rails",
+            "col_after": "Ruby on Rails",
             "rows": [
               [
                 "開発方針",
@@ -11174,7 +11174,7 @@ module.exports = {
               "cap": "gemで機能を簡単に追加できる"
             }
           ],
-          "memo": "Railsの「設定より規約」は、迷う時間を減らすための思想。\n決まったやり方に乗れば、あとはビジネスロジックに集中できる。",
+          "memo": "正式名称は Ruby on Rails。略して Rails とも呼ばれる。「設定より規約」に乗れば、迷う時間を減らしてビジネスロジックに集中できる。",
           "sidebar_groups": [
             {
               "label": "関連する技術",
@@ -11399,7 +11399,7 @@ module.exports = {
                   "desc": "必要な機能だけを足していく軽量フレームワーク。"
                 },
                 {
-                  "name": "Rails",
+                  "name": "Ruby on Rails",
                   "desc": "Ruby版のフルスタックフレームワーク。"
                 }
               ]
@@ -11686,7 +11686,7 @@ module.exports = {
               "label": "比較するフレームワーク",
               "items": [
                 {
-                  "name": "Rails",
+                  "name": "Ruby on Rails",
                   "desc": "Ruby版のフルスタックフレームワーク。"
                 }
               ]
@@ -14893,7 +14893,7 @@ module.exports = {
                   "desc": "Gemfile.lock。"
                 },
                 {
-                  "name": "Rails",
+                  "name": "Ruby on Rails",
                   "desc": "gem生態系の巨大ユーザー。"
                 }
               ]
@@ -15390,7 +15390,7 @@ module.exports = {
                   "desc": "rbenv代替になりうる統合ツール。"
                 },
                 {
-                  "name": "Rails",
+                  "name": "Ruby on Rails",
                   "desc": "版固定が重要な代表アプリ。"
                 }
               ]
@@ -19778,7 +19778,7 @@ module.exports = {
       "title": "プログラミング基礎",
       "entries": [
         {"id":"crud","page":489,"term":"CRUD","reading":"クラッド","category":"プログラミング基礎","icon":"ic-file","compact":true,"oneline":"作成・参照・更新・削除という、データの4つの基本操作。","q1_text":"データを扱うアプリは、作る、見る、直す、消すの操作に行き着く。\nそれを4語にまとめ、設計や会話の共通語にした。","q2_intro":"操作の種類を、画面ごとに別々の呼び名で扱っていた。","q2_table":{"col_before":"個別の名称","col_after":"CRUD","rows":[["4操作","画面ごとに名称が違う","作成・参照・更新・削除"],["対応","呼び名がばらばら","SQL・HTTPメソッドに対応"],["使い方","画面ごとに設計","基本形で本当の難所は別"]]},"q3_cells":[{"icon":"ic-list","cap":"4つの基本操作"},{"icon":"ic-database","cap":"SQLやHTTPと対応する"},{"icon":"ic-puzzle","cap":"最初に作る基本形"}],"memo":"Railsのscaffoldは、CRUDの画面を一式自動で作る。\nただし実務のアプリは、CRUDだけでは終わらない。","sidebar_groups":[{"label":"関連キーワード","items":[{"name":"API","desc":"CRUDを、外部へ提供する入口。"},{"name":"SQL","desc":"CRUDの操作を、DBへ伝える言語。"},{"name":"MVC","desc":"CRUDを役割で整理する設計の型。"}]}]},
-        {"id":"mvc","page":490,"term":"MVC","reading":"エムブイシー","category":"プログラミング基礎","icon":"ic-file","compact":true,"oneline":"処理をModel・View・Controllerの3役に分ける設計。","q1_text":"画面とデータと操作が1か所に混ざると、変更の影響が読めなくなる。\nそこで役割を3つに分ける設計が、1970年代のSmalltalkで生まれた。","q2_intro":"画面もDBも処理も、1つのファイルに書いていた。","q2_table":{"col_before":"1か所に集約","col_after":"MVC","rows":[["役割分担","全部を一つに記述","MVCの3役割"],["Railsでは","混在した記述","app配下の3ディレクトリ"],["誤解","処理はControllerに","業務ルールはModelへ"]]},"q3_cells":[{"icon":"ic-layers","cap":"3つの役割に分ける"},{"icon":"ic-gear","cap":"Railsの基本の型"},{"icon":"ic-alert","cap":"Controllerを太らせない"}],"memo":"MVCはフレームワークによって、細部の解釈が少しずつ違う。\n厳密さより、役割を分ける考え方をつかむことが大切だ。","sidebar_groups":[{"label":"関連キーワード","items":[{"name":"レイヤードアーキテクチャ","desc":"役割で層に分ける、より大きな考え方。"},{"name":"CRUD","desc":"MVCの中で実現する、基本のデータ操作。"},{"name":"Rails","desc":"MVCを基本の型にしたフレームワーク。"}]}]},
+        {"id":"mvc","page":490,"term":"MVC","reading":"エムブイシー","category":"プログラミング基礎","icon":"ic-file","compact":true,"oneline":"処理をModel・View・Controllerの3役に分ける設計。","q1_text":"画面とデータと操作が1か所に混ざると、変更の影響が読めなくなる。\nそこで役割を3つに分ける設計が、1970年代のSmalltalkで生まれた。","q2_intro":"画面もDBも処理も、1つのファイルに書いていた。","q2_table":{"col_before":"1か所に集約","col_after":"MVC","rows":[["役割分担","全部を一つに記述","MVCの3役割"],["Railsでは","混在した記述","app配下の3ディレクトリ"],["誤解","処理はControllerに","業務ルールはModelへ"]]},"q3_cells":[{"icon":"ic-layers","cap":"3つの役割に分ける"},{"icon":"ic-gear","cap":"Railsの基本の型"},{"icon":"ic-alert","cap":"Controllerを太らせない"}],"memo":"MVCはフレームワークによって、細部の解釈が少しずつ違う。\n厳密さより、役割を分ける考え方をつかむことが大切だ。","sidebar_groups":[{"label":"関連キーワード","items":[{"name":"レイヤードアーキテクチャ","desc":"役割で層に分ける、より大きな考え方。"},{"name":"CRUD","desc":"MVCの中で実現する、基本のデータ操作。"},{"name":"Ruby on Rails","desc":"MVCを基本の型にしたフレームワーク。"}]}]},
         {"id":"null-undefined","page":491,"term":"nullとundefined","reading":"ナルとアンデファインド","category":"プログラミング基礎","icon":"ic-file","compact":true,"oneline":"「値がない」を表す2つの特別な値。JavaScriptでは両方ある。","q1_text":"変数に「まだ値がない」状態を表す方法が必要になった。\nJavaScriptでは「意図した空」と「未設定」を別の値で表す。","q2_intro":"値がないことを、0や-1などの目印の値で代用していた。","q2_table":{"col_before":"目印の値","col_after":"nullとundefined","rows":[["表現","0や-1などの目印","nullで空を明示"],["意味の区別","本物の値と混同","2つの値で区別"],["未代入の変数","言語により不定","undefinedになる"]]},"q3_cells":[{"icon":"ic-check","cap":"値がないことを明示"},{"icon":"ic-search","cap":"未設定かを判定できる"},{"icon":"ic-bug","cap":"空参照の原因を絞れる"}],"memo":"nullは「空だと自分で書いた」、undefinedは「まだ何も入れていない」というイメージ。\nどちらの値にもプロパティを読むとTypeErrorになる。","sidebar_groups":[{"label":"関連キーワード","items":[{"name":"型","desc":"値の種類の分類。両方とも特別な値を指す。"},{"name":"例外処理","desc":"エラーを捕まえる仕組み。空参照が原因になる。"},{"name":"JavaScript","desc":"nullとundefinedを両方持つ言語。"}]}]},
         {"id":"typing","page":492,"term":"型","reading":"かた","category":"プログラミング基礎","icon":"ic-file","compact":true,"oneline":"値の種類と、その値に許される操作を決める約束事。","q1_text":"数値と文字列の取り違えなど、値の扱いの誤りが実行時に発覚していた。\nそこで値の種類を明示し、事前に誤りを見つける考え方が広まった。","q2_intro":"型を明示せず、実行して初めて型の誤りが分かる書き方があった。","q2_table":{"col_before":"動的型付け","col_after":"型","rows":[["誤りの発見","実行したとき","実行前に警告"],["書き方","型を書かない","変数や引数に型を付ける"],["入力補完","効きにくい","エディタで効く"]]},"q3_cells":[{"icon":"ic-bug","cap":"型の誤りを実行前に検出"},{"icon":"ic-code","cap":"エディタで入力補完"},{"icon":"ic-book","cap":"引数と戻り値を明示"}],"memo":"型は「部品の差し込み口の形」のようなもの。合わない部品は差せない。\nPythonなどは実行時に判定する動的型付け、Javaなどは静的型付けが基本。","sidebar_groups":[{"label":"関連キーワード","items":[{"name":"TypeScript","desc":"JavaScriptに静的な型を足した言語。"},{"name":"コンパイル","desc":"プログラムの変換工程。型の検査も行う。"},{"name":"nullとundefined","desc":"型として扱いに注意が要る特別な値。"}]}]},
         {"id":"exception-handling","page":493,"term":"例外処理","reading":"れいがいしょり","category":"プログラミング基礎","icon":"ic-file","compact":true,"oneline":"実行中のエラーを捕まえて、止めずに処理する仕組み。","q1_text":"エラーのたびに戻り値を調べる書き方は、確認漏れでプログラムが壊れやすい。\n異常を通常の流れと分けて扱う仕組みが言語に用意された。","q2_intro":"関数の戻り値でエラーを返し、呼び出し側が毎回確認していた。","q2_table":{"col_before":"戻り値で返す","col_after":"例外処理","rows":[["伝え方","戻り値のコード","例外を投げる"],["確認漏れ","無視すると進む","放置すると上へ伝わる"],["通常処理","確認が混ざる","try内に集約"]]},"q3_cells":[{"icon":"ic-shield","cap":"異常時も落とさず処理"},{"icon":"ic-split","cap":"通常と異常を分離"},{"icon":"ic-alert","cap":"エラー内容を記録・通知"}],"memo":"try/catchは「落ちたら下のネットで受ける」安全網のイメージ。\n何もせず握りつぶすcatchは、原因が追えなくなるので避ける。","sidebar_groups":[{"label":"関連キーワード","items":[{"name":"投げる","desc":"エラーを例外として発生させること。"},{"name":"ログ","desc":"動作の記録。捕まえた例外の内容を残す。"},{"name":"エラー","desc":"例外は、エラーを扱う方法の一つ。"}]}]},
